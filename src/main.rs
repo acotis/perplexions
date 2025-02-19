@@ -60,6 +60,10 @@ mod game {
             let tile_slot_size = width / self.field.len() as f32;
             let tile_size = tile_slot_size * 0.8;
             let outline_thickness = tile_slot_size * 0.05;
+            let select_line_width = tile_slot_size * 0.1;
+
+            let map_x = |x: f32| origin.0 + tile_slot_size * (0.5 + x);
+            let map_y = |y: f32| origin.1 - tile_slot_size * (0.5 + y);
 
             // Draw the debug border if requested.
 
@@ -71,13 +75,13 @@ mod game {
 
             for (column, tiles) in self.field.iter().enumerate() {
                 for (row, tile) in tiles.iter().enumerate() {
-                    let center_x = origin.0 + tile_slot_size * (0.5 + column as f32);
-                    let center_y = origin.1 - tile_slot_size * (0.5 + row as f32);
+                    let center_x = map_x(column as f32);
+                    let center_y = map_y(row as f32);
 
                     draw::square(
                         window,
                         (center_x, center_y),
-                        tile_size * 2.0f32.sqrt()/2.0,
+                        tile_size * 0.5_f32.sqrt(),
                         sfml::graphics::Color::WHITE,
                         outline_thickness,
                         sfml::graphics::Color::BLACK,
@@ -87,7 +91,33 @@ mod game {
 
             // Draw the selection line.
 
-            
+            for &(x, y) in self.select_path.iter() {
+                let center_x = map_x(x as f32);
+                let center_y = map_y(y as f32);
+
+                draw::circle_plain(
+                    window,
+                    (center_x, center_y),
+                    select_line_width / 2.0,
+                    sfml::graphics::Color::RED
+                );
+            }
+
+            for item in self.select_path.windows(2) {
+                let &[(x1, y1), (x2, y2)] = item else {panic!()};
+                let center_x1 = map_x(x1 as f32);
+                let center_y1 = map_y(y1 as f32);
+                let center_x2 = map_x(x2 as f32);
+                let center_y2 = map_y(y2 as f32);
+
+                draw::line(
+                    window,
+                    (center_x1, center_y1),
+                    (center_x2, center_y2),
+                    sfml::graphics::Color::RED,
+                    select_line_width,
+                );
+            }
         }
 
         fn draw_debug_border(
@@ -121,6 +151,9 @@ fn main() {
     println!("Hello, world!");
 
     let mut game = Game::new();
+    game.add_to_select_path(0, 0);
+    game.add_to_select_path(0, 1);
+    game.add_to_select_path(1, 0);
 
     let mut window = RenderWindow::new(
         (800, 600),
