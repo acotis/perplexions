@@ -1,7 +1,8 @@
 
+mod draw;
+
 use sfml::window::*;
 use sfml::graphics::*;
-use sfml::graphics::RenderWindow;
 use sfml::window::Event::Resized;
 use sfml::window::Event::Closed;
 use sfml::system::Vector2f;
@@ -53,32 +54,40 @@ mod game {
             width: f32,         // width on screen of game
             debug_border: bool,
         ) {
+
+            // Pre-compute some useful values.
+
             let tile_slot_size = width / self.field.len() as f32;
             let tile_size = tile_slot_size * 0.8;
             let outline_thickness = tile_slot_size * 0.05;
+
+            // Draw the debug border if requested.
 
             if debug_border {
                 self.draw_debug_border(window, origin, width, outline_thickness);
             }
 
+            // Draw the game tiles.
+
             for (column, tiles) in self.field.iter().enumerate() {
                 for (row, tile) in tiles.iter().enumerate() {
-                    let mut rs = RectangleShape::new();
-                    rs.set_size(Vector2f::new(tile_size, tile_size));
-                    rs.set_origin(Vector2f::new(
-                        tile_size / 2.0,
-                        tile_size / 2.0,
-                    ));
-                    rs.set_position(Vector2f::new(
-                        origin.0 + tile_slot_size * (0.5 + column as f32),
-                        origin.1 - tile_slot_size * (0.5 + row as f32),
-                    ));
-                    rs.set_fill_color(sfml::graphics::Color::WHITE);
-                    rs.set_outline_color(sfml::graphics::Color::BLACK);
-                    rs.set_outline_thickness(outline_thickness);
-                    window.draw(&rs);
+                    let center_x = origin.0 + tile_slot_size * (0.5 + column as f32);
+                    let center_y = origin.1 - tile_slot_size * (0.5 + row as f32);
+
+                    draw::square(
+                        window,
+                        (center_x, center_y),
+                        tile_size * 2.0f32.sqrt()/2.0,
+                        sfml::graphics::Color::WHITE,
+                        outline_thickness,
+                        sfml::graphics::Color::BLACK,
+                    );
                 }
             }
+
+            // Draw the selection line.
+
+            
         }
 
         fn draw_debug_border(
@@ -130,7 +139,7 @@ fn main() {
                 Closed => {window.close();}
 
                 Resized {..} => {
-                    update_view(&mut window);
+                    draw::update_view(&mut window);
                 }
 
                 _ => {}
@@ -170,13 +179,3 @@ fn min(a: f32, b: f32) -> f32 {
     a.min(b)
 }
 
-// Utility function to update the "view" of the window. Call this
-// after a resize event to stop it from getting all stretched out.
-
-fn update_view(win: &mut RenderWindow) {
-    let size = win.size();
-    win.set_view(
-        &View::from_rect(
-            FloatRect::new(0.0, 0.0, size.x as f32, size.y as f32)
-        ).expect("couldn't create view"));
-}
