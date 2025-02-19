@@ -31,20 +31,58 @@ pub fn polygon(win: &mut RenderWindow, side_count: u32, rotation: f32,
 }
 
 // Proxy functions to put calls in to draw_polygon.
+// Specific shapes (often implemented with calls to polygon()).
+
+pub fn rectangle(
+    win: &mut RenderWindow,
+    center: (f32, f32),
+    width: f32,
+    height: f32,
+    color: Color,
+    outline_thickness: f32,
+    outline_color: Color,
+) {
+    let mut rs = RectangleShape::new();
+    rs.set_size(Vector2f::new(width, height));
+    rs.set_origin(Vector2f::new(width / 2.0, height / 2.0));
+    rs.set_position(Vector2f::new(center.0, center.1));
+    rs.set_fill_color(color);
+    rs.set_outline_color(outline_color);
+    rs.set_outline_thickness(outline_thickness);
+    win.draw(&rs);
+}
+
+pub fn rectangle_plain(
+    win: &mut RenderWindow,
+    center: (f32, f32),
+    width: f32,
+    height: f32,
+    color: Color
+) {
+    rectangle(
+        win,
+        center,
+        width,
+        height,
+        color,
+        0.0,
+        sfml::graphics::Color::TRANSPARENT,
+    );
+}
 
 pub fn square(
     win: &mut RenderWindow,
     center: (f32, f32),
-    radius: f32,
+    side_length: f32,
     color: Color,
     outline_thickness: f32,
     outline_color: Color
 ) {
-    polygon(win,
-        4,
-        0.125,
+    rectangle(
+        win,
         center,
-        radius,
+        side_length,
+        side_length,
         color,
         outline_thickness,
         outline_color
@@ -54,13 +92,13 @@ pub fn square(
 pub fn square_plain(
     win: &mut RenderWindow,
     center: (f32, f32),
-    radius: f32,
+    side_length: f32,
     color: Color
 ) {
     square(
         win,
         center,
-        radius,
+        side_length,
         color,
         0.0,
         Color::TRANSPARENT

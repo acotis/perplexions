@@ -68,7 +68,20 @@ mod game {
             // Draw the debug border if requested.
 
             if debug_border {
-                self.draw_debug_border(window, origin, width, outline_thickness);
+                let debug_border_width = width;
+                let debug_border_height = width * self.aspect_ratio();
+                let debug_border_center_x = origin.0 + debug_border_width * 0.5;
+                let debug_border_center_y = origin.1 - debug_border_height * 0.5;
+
+                draw::rectangle(
+                    window,
+                    (debug_border_center_x, debug_border_center_y),
+                    debug_border_width,
+                    debug_border_height,
+                    sfml::graphics::Color::WHITE,
+                    outline_thickness,
+                    sfml::graphics::Color::RED,
+                );
             }
 
             // Draw the game tiles.
@@ -81,7 +94,7 @@ mod game {
                     draw::square(
                         window,
                         (center_x, center_y),
-                        tile_size * 0.5_f32.sqrt(),
+                        tile_size,
                         sfml::graphics::Color::WHITE,
                         outline_thickness,
                         sfml::graphics::Color::BLACK,
@@ -105,6 +118,7 @@ mod game {
 
             for item in self.select_path.windows(2) {
                 let &[(x1, y1), (x2, y2)] = item else {panic!()};
+
                 let center_x1 = map_x(x1 as f32);
                 let center_y1 = map_y(y1 as f32);
                 let center_x2 = map_x(x2 as f32);
@@ -118,31 +132,6 @@ mod game {
                     select_line_width,
                 );
             }
-        }
-
-        fn draw_debug_border(
-            &self,
-            window: &mut RenderWindow,
-            origin: (f32, f32),
-            width: f32,
-            outline_thickness: f32,
-        ) {
-            let debug_border_width = width;
-            let debug_border_height = width * self.aspect_ratio();
-            let mut rs = RectangleShape::new();
-            rs.set_size(Vector2f::new(
-                debug_border_width,
-                debug_border_height,
-            ));
-            rs.set_origin(Vector2f::new(
-                0.0,
-                debug_border_height,
-            ));
-            rs.set_position(Vector2f::new(origin.0, origin.1));
-            rs.set_fill_color(sfml::graphics::Color::WHITE);
-            rs.set_outline_color(sfml::graphics::Color::RED);
-            rs.set_outline_thickness(outline_thickness);
-            window.draw(&rs);
         }
     }
 }
