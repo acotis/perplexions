@@ -10,6 +10,7 @@ pub struct Game {
     field: Vec<Vec<Tile>>,
     select_path: Vec<(usize, usize)>,
     dimensions: Dimensions,
+    last_mouse_pos: (f32, f32),
 }
 
 impl Game {
@@ -43,12 +44,14 @@ impl Game {
 
 impl Game {
     pub fn mouse_down(&mut self, x: f32, y: f32) {
+        self.last_mouse_pos = (x, y);
         if let Some((point, _distance)) = self.tile_at_screen_point(x, y) {
             self.select_path.push(point);
         }
     }
 
     pub fn mouse_moved(&mut self, x: f32, y: f32) {
+        self.last_mouse_pos = (x, y);
         if !self.select_path.is_empty() {
             if let Some((point, distance)) = self.tile_at_screen_point(x,y) {
                 let last_point = self.select_path[self.select_path.len()-1];
@@ -88,6 +91,7 @@ impl Game {
             ],
             select_path: vec![],
             dimensions: Dimensions::new(5, 3),
+            last_mouse_pos: (0.0, 0.0),
         }
     }
 }
@@ -131,22 +135,34 @@ impl Game {
 
         // Draw the selection line.
 
-        for &(x, y) in self.select_path.iter() {
+        let path_points = 
+            self.select_path
+                .iter()
+                .map(|&(x,y)| self.dimensions.local_to_screen((x as f32, y as f32)))
+                .chain(std::iter::once(self.last_mouse_pos))
+                .collect::<Vec<_>>();
+
+        for item in path_points.windows(2) {
+            let &[(x1, y1), (x2, y2)] = item else {panic!()};
+            
             draw::circle_plain(
                 window,
-                self.dimensions.local_to_screen((x as f32, y as f32)),
+                (x1, y1),
                 select_line_width / 2.0,
                 sfml::graphics::Color::RED
             );
-        }
 
-        for item in self.select_path.windows(2) {
-            let &[(x1, y1), (x2, y2)] = item else {panic!()};
+            draw::circle_plain(
+                window,
+                (x2, y2),
+                select_line_width / 2.0,
+                sfml::graphics::Color::RED
+            );
 
             draw::line(
                 window,
-                self.dimensions.local_to_screen((x1 as f32, y1 as f32)),
-                self.dimensions.local_to_screen((x2 as f32, y2 as f32)),
+                (x1, y1),
+                (x2, y2),
                 sfml::graphics::Color::RED,
                 select_line_width,
             );

@@ -36,8 +36,6 @@ impl Dimensions {
         self.height = self.width * self.aspect_ratio();
         self.tile_size = self.width / self.columns as f32;
         self.aspect_ratio = self.rows as f32 / self.columns as f32;
-
-        println!("{self:?}");
     }
 
     pub fn aspect_ratio(&self) -> f32 {
