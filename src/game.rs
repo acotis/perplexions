@@ -4,6 +4,7 @@ use sfml::graphics::*;
 use crate::draw;
 use crate::dimensions::Dimensions;
 
+#[derive(Clone)]
 struct Tile {}
 
 pub struct Game {
@@ -20,7 +21,7 @@ impl Game {
         let mut ret = Self {
             field: vec![],
             select_path: vec![],
-            dimensions: Dimensions::new(5, 3),
+            dimensions: Dimensions::new(6, 9),
             last_mouse_pos: (0.0, 0.0),
         };
         
@@ -30,11 +31,12 @@ impl Game {
 
     pub fn reset(&mut self) {
         self.field = vec![
-            vec![Tile {}, Tile {}],
-            vec![Tile {}],
-            vec![Tile {}, Tile {}, Tile {}],
-            vec![],
-            vec![Tile {}, Tile {}],
+            vec![Tile {}; 9],
+            vec![Tile {}; 4],
+            vec![Tile {}; 5],
+            vec![Tile {}; 3],
+            vec![Tile {}; 8],
+            vec![Tile {}; 7],
         ];
     }
 }
@@ -54,7 +56,7 @@ impl Game {
         if !self.select_path.is_empty() {
             if let Some((point, distance)) = self.tile_at_screen_point(x,y) {
                 let last_point = self.select_path[self.select_path.len()-1];
-                if distance < 0.3
+                if distance < 0.5
                 && !self.select_path.contains(&point)
                 && usize::abs_diff(point.0, last_point.0) <= 1
                 && usize::abs_diff(point.1, last_point.1) <= 1 {
