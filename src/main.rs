@@ -4,8 +4,8 @@ mod game;
 
 use sfml::window::*;
 use sfml::graphics::*;
-use sfml::window::Event::Resized;
-use sfml::window::Event::Closed;
+use sfml::window::Event::*;
+use sfml::window::mouse::Button::*;
 
 use crate::game::Game;
 
@@ -32,6 +32,10 @@ fn main() {
                 // Universal event handling.
 
                 Closed => {window.close();}
+
+                MouseButtonReleased {button: Left, ..} => {
+                    game.mouse_up();
+                }
 
                 Resized {..} => {
                     draw::update_view(&mut window);

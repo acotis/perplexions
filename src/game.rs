@@ -17,8 +17,15 @@ impl Game {
         self.select_path.push((x, y));
     }
 
-    pub fn attempt_delete_selection(&mut self) {
+    pub fn mouse_up(&mut self) {
+        self.select_path.sort();    // Put the selected tile coords in
+        self.select_path.reverse(); // reverse order by col, then row.
 
+        for &(column, row) in &self.select_path {
+            self.field[column].remove(row);
+        }
+
+        self.select_path.clear();
     }
 }
 
