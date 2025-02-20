@@ -18,9 +18,41 @@ impl Game {
         self.select_path.push((x, y));
     }
 
-    pub fn mouse_down(&mut self, x: f32, y: f32) {
+    fn tile_at_screen_point(&self, x: f32, y: f32) -> Option<((usize, usize), f32)> {
+        let (local_c, local_r) = self.dimensions.screen_to_local((x, y));
+
+        dbg!(local_c);
+        dbg!(local_r);
         
+        let snapped_c = local_c.round();
+        let snapped_r = local_r.round();
+        let distance = f32::hypot(
+            local_c - snapped_c,
+            local_r - snapped_r,
+        );
+
+        let c = snapped_c as usize;
+        let r = snapped_r as usize;
+
+        if 0 <= c && c < self.field.len() {
+            if 0 <= r && r < self.field[c].len() {
+                return Some(((c, r), distance));
+            }
+        }
+
+        None
     }
+}
+
+impl Game {
+    pub fn mouse_down(&mut self, x: f32, y: f32) {
+        if let Some((point, _distance)) = self.tile_at_screen_point(x, y) {
+            self.select_path.push(point);
+        }
+    }
+
+    //pub fn mouse_moved(&mut self, x: f32, y: f32) {
+    //}
 
     pub fn mouse_up(&mut self) {
         self.select_path.sort();    // Put the selected tile coords in

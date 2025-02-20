@@ -34,6 +34,10 @@ fn main() {
 
                 Closed => {window.close();}
 
+                MouseButtonPressed {button: Left, x, y} => {
+                    game.mouse_down(x as f32, y as f32);
+                }
+
                 MouseButtonReleased {button: Left, ..} => {
                     game.mouse_up();
                 }
