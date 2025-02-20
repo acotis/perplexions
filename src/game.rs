@@ -108,19 +108,33 @@ impl Game {
 
         // Draw the game tiles.
 
+        let font = Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial.ttf").expect("couldn't load Arial font");
+        let mut text = Text::new(
+            &String::new(),
+            &font,
+            30, // Todo: variable font size.
+        );
+
         for (column, tiles) in self.field.iter().enumerate() {
-            for (row, _tile) in tiles.iter().enumerate() {
+            for (row, tile) in tiles.iter().enumerate() {
+                let (screen_x, screen_y) = self.dimensions.local_to_screen((
+                    column as f32,
+                    row as f32,
+                ));
+
                 draw::square(
                     window,
-                    self.dimensions.local_to_screen((
-                        column as f32,
-                        row as f32,
-                    )),
+                    (screen_x, screen_y),
                     tile_size,
                     sfml::graphics::Color::WHITE,
                     outline_thickness,
                     sfml::graphics::Color::BLACK,
                 );
+
+                text.set_string(&String::from(tile.letter));
+                text.set_position(sfml::system::Vector2f::new(screen_x, screen_y));
+                text.set_fill_color(sfml::graphics::Color::BLACK);
+                window.draw(&text);
             }
         }
 

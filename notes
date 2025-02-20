@@ -1,6 +1,6 @@
 
 Todo:
-    - Boxes have letters.
+    - Tiles display their letters.
     - Tiles are only removed if the selection forms a word.
     - Tiles fall with a pretty gravity animation.
 
