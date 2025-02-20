@@ -13,29 +13,26 @@ pub struct Game {
     last_mouse_pos: (f32, f32),
 }
 
+// Public non-graphics methods.
+
 impl Game {
-    fn tile_at_screen_point(&self, x: f32, y: f32) -> Option<((usize, usize), f32)> {
-        let (local_c, local_r) = self.dimensions.screen_to_local((x, y));
-
-        let snapped_c = local_c.round();
-        let snapped_r = local_r.round();
-        let distance = f32::hypot(
-            local_c - snapped_c,
-            local_r - snapped_r,
-        );
-
-        let c = snapped_c as usize;
-        let r = snapped_r as usize;
-
-        if 0.0 <= snapped_c && c < self.field.len() {
-            if 0.0 <= snapped_r && r < self.field[c].len() {
-                return Some(((c, r), distance));
-            }
+    pub fn new() -> Self {
+        Self {
+            field: vec![
+                vec![Tile {}, Tile {}],
+                vec![Tile {}],
+                vec![Tile {}, Tile {}, Tile {}],
+                vec![],
+                vec![Tile {}, Tile {}],
+            ],
+            select_path: vec![],
+            dimensions: Dimensions::new(5, 3),
+            last_mouse_pos: (0.0, 0.0),
         }
-
-        None
     }
 }
+
+// Public mouse-handling methods.
 
 impl Game {
     pub fn mouse_down(&mut self, x: f32, y: f32) {
@@ -72,26 +69,7 @@ impl Game {
     }
 }
 
-// Public non-graphics methods.
-
-impl Game {
-    pub fn new() -> Self {
-        Self {
-            field: vec![
-                vec![Tile {}, Tile {}],
-                vec![Tile {}],
-                vec![Tile {}, Tile {}, Tile {}],
-                vec![],
-                vec![Tile {}, Tile {}],
-            ],
-            select_path: vec![],
-            dimensions: Dimensions::new(5, 3),
-            last_mouse_pos: (0.0, 0.0),
-        }
-    }
-}
-
-// Graphics methods.
+// Public graphics methods.
 
 impl Game {
     pub fn aspect_ratio(&self) -> f32 {
@@ -162,6 +140,32 @@ impl Game {
                 select_line_width,
             );
         }
+    }
+}
+
+// Private utility methods.
+
+impl Game {
+    fn tile_at_screen_point(&self, x: f32, y: f32) -> Option<((usize, usize), f32)> {
+        let (local_c, local_r) = self.dimensions.screen_to_local((x, y));
+
+        let snapped_c = local_c.round();
+        let snapped_r = local_r.round();
+        let distance = f32::hypot(
+            local_c - snapped_c,
+            local_r - snapped_r,
+        );
+
+        let c = snapped_c as usize;
+        let r = snapped_r as usize;
+
+        if 0.0 <= snapped_c && c < self.field.len() {
+            if 0.0 <= snapped_r && r < self.field[c].len() {
+                return Some(((c, r), distance));
+            }
+        }
+
+        None
     }
 }
 

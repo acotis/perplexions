@@ -1,6 +1,5 @@
 
 Todo:
-    - Selection line continues on to mouse.
     - Pressing R resets the game to its initial state.
     - Boxes have letters.
     - Tiles are only removed if the selection forms a word.
