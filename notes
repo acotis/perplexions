@@ -1,6 +1,6 @@
 
 Todo:
-    - Letter displays are centered and look pretty.
+    - Font is kept between draws instead of loaded fresh each time.
     - Tiles are only removed if the selection forms a word.
     - Tiles fall with a pretty gravity animation.
 

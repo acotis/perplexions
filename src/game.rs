@@ -1,5 +1,6 @@
 
 use sfml::graphics::*;
+use sfml::cpp::FBox;
 
 use crate::draw;
 use crate::dimensions::Dimensions;
@@ -15,6 +16,9 @@ pub struct Game {
     select_path: Vec<(usize, usize)>,
     dimensions: Dimensions,
     last_mouse_pos: (f32, f32),
+
+    // Cached resources.
+    font: FBox<Font>,
 }
 
 // Public non-graphics methods.
@@ -27,6 +31,7 @@ impl Game {
             select_path: vec![],
             dimensions: Dimensions::new(0, 0),
             last_mouse_pos: (0.0, 0.0),
+            font: Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial_Black.ttf").expect("couldn't load Arial font"),
         };
         
         ret.reset();
@@ -107,11 +112,12 @@ impl Game {
         let select_line_width = self.dimensions.tile_size() * 0.1;
         let character_size    = self.dimensions.tile_size() * 0.5;
 
-        // Draw the game tiles.
+        // Set up the Text.
 
-        let font = Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial_Black.ttf").expect("couldn't load Arial font");
-        let mut text = Text::new(&String::new(), &font, 0);
+        let mut text = Text::new(&String::new(), &self.font, 0);
         text.set_character_size(character_size as u32);
+
+        // Draw the game tiles.
 
         for (column, tiles) in self.field.iter().enumerate() {
             for (row, tile) in tiles.iter().enumerate() {
@@ -133,7 +139,7 @@ impl Game {
 
                 // Draw the letter on the tile.
 
-                let glyph = font.glyph(
+                let glyph = self.font.glyph(
                     tile.letter as u32,
                     character_size as u32,
                     false,
