@@ -14,7 +14,12 @@ use crate::game::Game;
 fn main() {
     println!("Hello, world!");
 
-    let mut game = Game::new();
+    let mut game = Game::new(concat!(
+        " his\n",
+        "tgam \n",
+        "usese\n",
+        "gravity\n",
+    ));
 
     let mut window = RenderWindow::new(
         (800, 600),

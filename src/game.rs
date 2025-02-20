@@ -5,9 +5,12 @@ use crate::draw;
 use crate::dimensions::Dimensions;
 
 #[derive(Clone)]
-struct Tile {}
+struct Tile {
+    letter: char,
+}
 
 pub struct Game {
+    setup: String,
     field: Vec<Vec<Tile>>,
     select_path: Vec<(usize, usize)>,
     dimensions: Dimensions,
@@ -17,11 +20,12 @@ pub struct Game {
 // Public non-graphics methods.
 
 impl Game {
-    pub fn new() -> Self {
+    pub fn new<S: AsRef<str>>(setup: S) -> Self {
         let mut ret = Self {
+            setup: String::from(setup.as_ref()),
             field: vec![],
             select_path: vec![],
-            dimensions: Dimensions::new(6, 9),
+            dimensions: Dimensions::new(0, 0),
             last_mouse_pos: (0.0, 0.0),
         };
         
@@ -30,14 +34,19 @@ impl Game {
     }
 
     pub fn reset(&mut self) {
-        self.field = vec![
-            vec![Tile {}; 9],
-            vec![Tile {}; 4],
-            vec![Tile {}; 5],
-            vec![Tile {}; 3],
-            vec![Tile {}; 8],
-            vec![Tile {}; 7],
-        ];
+        let width = self.setup.lines().map(|l| l.len()).max().unwrap();
+        self.field = vec![vec![]; width];
+
+        for line in self.setup.lines().rev() {
+            for (column, letter) in line.chars().enumerate() {
+                if letter != ' ' {
+                    self.field[column].push(Tile {letter});
+                }
+            }
+        }
+
+        let height = self.field.iter().map(|c| c.len()).max().unwrap();
+        self.dimensions = Dimensions::new(width, height);
     }
 }
 
