@@ -17,18 +17,25 @@ pub struct Game {
 
 impl Game {
     pub fn new() -> Self {
-        Self {
-            field: vec![
-                vec![Tile {}, Tile {}],
-                vec![Tile {}],
-                vec![Tile {}, Tile {}, Tile {}],
-                vec![],
-                vec![Tile {}, Tile {}],
-            ],
+        let mut ret = Self {
+            field: vec![],
             select_path: vec![],
             dimensions: Dimensions::new(5, 3),
             last_mouse_pos: (0.0, 0.0),
-        }
+        };
+        
+        ret.reset();
+        ret
+    }
+
+    pub fn reset(&mut self) {
+        self.field = vec![
+            vec![Tile {}, Tile {}],
+            vec![Tile {}],
+            vec![Tile {}, Tile {}, Tile {}],
+            vec![],
+            vec![Tile {}, Tile {}],
+        ];
     }
 }
 

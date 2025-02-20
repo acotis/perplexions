@@ -7,6 +7,7 @@ use sfml::window::*;
 use sfml::graphics::*;
 use sfml::window::Event::*;
 use sfml::window::mouse::Button::*;
+use sfml::window::Key::R;
 
 use crate::game::Game;
 
@@ -23,13 +24,13 @@ fn main() {
     ).unwrap();
     window.set_framerate_limit(60);
 
-    while window.is_open() {
+    'outer: while window.is_open() {
         while let Some(event) = window.poll_event() {
             match event {
 
                 // Universal event handling.
 
-                Closed => {window.close();}
+                Closed => {window.close(); break 'outer;}
 
                 MouseButtonPressed {button: Left, x, y} => {
                     game.mouse_down(x as f32, y as f32);
@@ -41,6 +42,10 @@ fn main() {
 
                 MouseButtonReleased {button: Left, ..} => {
                     game.mouse_up();
+                }
+
+                KeyPressed {code: R, ..} => {
+                    game.reset();
                 }
 
                 Resized {..} => {
