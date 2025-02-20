@@ -19,7 +19,7 @@ fn main() {
 
     let mut window = RenderWindow::new(
         (800, 600),
-        "Gravity tiles",
+        "Perplections",
         Style::DEFAULT,
         &Default::default(),
     ).unwrap();

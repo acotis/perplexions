@@ -1,0 +1,8 @@
+
+Todo:
+    - Make Game able to remove tiles (dumb way).
+    - Make the mouse be the tool for selecting boxes.
+    - Add letters to boxes.
+    - Make the Game only remove tiles if the selection forms a word.
+    - Add pretty gravity animation.
+
