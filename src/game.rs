@@ -51,7 +51,11 @@ impl Game {
     pub fn mouse_moved(&mut self, x: f32, y: f32) {
         if !self.select_path.is_empty() {
             if let Some((point, distance)) = self.tile_at_screen_point(x,y) {
-                if distance < 0.3 && !self.select_path.contains(&point) {
+                let last_point = self.select_path[self.select_path.len()-1];
+                if distance < 0.3
+                && !self.select_path.contains(&point)
+                && usize::abs_diff(point.0, last_point.0) <= 1
+                && usize::abs_diff(point.1, last_point.1) <= 1 {
                     self.select_path.push(point);
                 }
             }

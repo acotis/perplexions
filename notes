@@ -1,7 +1,9 @@
 
 Todo:
-    - Make the mouse be the tool for selecting boxes.
-    - Add letters to boxes.
-    - Make the Game only remove tiles if the selection forms a word.
-    - Add pretty gravity animation.
+    - Selection jumps must be adjacent.
+    - Selection line continues on to mouse.
+    - Pressing R resets the game to its initial state.
+    - Boxes have letters.
+    - Tiles are only removed if the selection forms a word.
+    - Tiles fall with a pretty gravity animation.
 
