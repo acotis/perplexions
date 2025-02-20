@@ -1,6 +1,5 @@
 
 Todo:
-    - Selection jumps must be adjacent.
     - Selection line continues on to mouse.
     - Pressing R resets the game to its initial state.
     - Boxes have letters.
