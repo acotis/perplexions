@@ -105,17 +105,13 @@ impl Game {
         let tile_size         = self.dimensions.tile_size() * 0.8;
         let outline_thickness = self.dimensions.tile_size() * 0.05;
         let select_line_width = self.dimensions.tile_size() * 0.1;
-        let character_width   = self.dimensions.tile_size() * 0.5;
+        let character_size    = self.dimensions.tile_size() * 0.5;
 
         // Draw the game tiles.
 
         let font = Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial_Black.ttf").expect("couldn't load Arial font");
-        let mut text = Text::new(
-            &String::new(),
-            &font,
-            30,
-        );
-        text.set_character_size(character_width as u32);
+        let mut text = Text::new(&String::new(), &font, 0);
+        text.set_character_size(character_size as u32);
 
         for (column, tiles) in self.field.iter().enumerate() {
             for (row, tile) in tiles.iter().enumerate() {
@@ -123,6 +119,8 @@ impl Game {
                     column as f32,
                     row as f32,
                 ));
+
+                // Draw the outline of the tile.
 
                 draw::square(
                     window,
@@ -133,8 +131,20 @@ impl Game {
                     sfml::graphics::Color::BLACK,
                 );
 
+                // Draw the letter on the tile.
+
+                let glyph = font.glyph(
+                    tile.letter as u32,
+                    character_size as u32,
+                    false,
+                    0.0
+                );
+
                 text.set_string(&String::from(tile.letter));
-                text.set_origin(sfml::system::Vector2f::new(character_width/2.0, character_width/2.0));
+                text.set_origin(sfml::system::Vector2f::new(
+                    glyph.advance() / 2.0,
+                    character_size * 0.6,
+                ));
                 text.set_position(sfml::system::Vector2f::new(screen_x, screen_y));
                 text.set_fill_color(sfml::graphics::Color::BLACK);
                 window.draw(&text);
