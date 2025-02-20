@@ -1,6 +1,6 @@
 
 Todo:
-    - Tiles display their letters.
+    - Letter displays are centered and look pretty.
     - Tiles are only removed if the selection forms a word.
     - Tiles fall with a pretty gravity animation.
 

@@ -4,7 +4,7 @@ use sfml::graphics::*;
 use crate::draw;
 use crate::dimensions::Dimensions;
 
-#[derive(Clone)]
+#[derive(Debug, Clone)]
 struct Tile {
     letter: char,
 }
@@ -105,15 +105,17 @@ impl Game {
         let tile_size         = self.dimensions.tile_size() * 0.8;
         let outline_thickness = self.dimensions.tile_size() * 0.05;
         let select_line_width = self.dimensions.tile_size() * 0.1;
+        let character_width   = self.dimensions.tile_size() * 0.5;
 
         // Draw the game tiles.
 
-        let font = Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial.ttf").expect("couldn't load Arial font");
+        let font = Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial_Black.ttf").expect("couldn't load Arial font");
         let mut text = Text::new(
             &String::new(),
             &font,
-            30, // Todo: variable font size.
+            30,
         );
+        text.set_character_size(character_width as u32);
 
         for (column, tiles) in self.field.iter().enumerate() {
             for (row, tile) in tiles.iter().enumerate() {
@@ -132,6 +134,7 @@ impl Game {
                 );
 
                 text.set_string(&String::from(tile.letter));
+                text.set_origin(sfml::system::Vector2f::new(character_width/2.0, character_width/2.0));
                 text.set_position(sfml::system::Vector2f::new(screen_x, screen_y));
                 text.set_fill_color(sfml::graphics::Color::BLACK);
                 window.draw(&text);

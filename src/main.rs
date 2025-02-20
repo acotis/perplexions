@@ -15,10 +15,10 @@ fn main() {
     println!("Hello, world!");
 
     let mut game = Game::new(concat!(
-        " his\n",
-        "tgam \n",
-        "usese\n",
-        "gravity\n",
+        " HIS\n",
+        "TGAM \n",
+        "USESE\n",
+        "GRAVITY\n",
     ));
 
     let mut window = RenderWindow::new(
@@ -51,25 +51,12 @@ fn main() {
 
                 KeyPressed {code: R, ..} => {
                     game.reset();
+                    set_game_position(&window, &mut game);
                 }
 
                 Resized {..} => {
                     draw::update_view(&mut window);
-
-                    // Derive the appropriate width and height of the game.
-
-                    let window_width = window.size().x as f32;
-                    let window_height = window.size().y as f32;
-
-                    let game_width = min(
-                        window_width * 0.8,
-                        window_height * 0.8 / game.aspect_ratio(),
-                    );
-                    let game_height = game_width * game.aspect_ratio();
-                    let game_x = (window_width - game_width) / 2.0;
-                    let game_y = window_height - (window_height - game_height) / 2.0;
-
-                    game.set_position(game_x, game_y, game_width);
+                    set_game_position(&window, &mut game);
                 }
 
                 _ => {}
@@ -86,10 +73,29 @@ fn main() {
     }
 }
 
+fn set_game_position(window: &RenderWindow, game: &mut Game) {
+
+    // Derive the appropriate width and height of the game.
+
+    let window_width = window.size().x as f32;
+    let window_height = window.size().y as f32;
+
+    let game_width = min(
+        window_width * 0.8,
+        window_height * 0.8 / game.aspect_ratio(),
+    );
+    let game_height = game_width * game.aspect_ratio();
+    let game_x = (window_width - game_width) / 2.0;
+    let game_y = window_height - (window_height - game_height) / 2.0;
+
+    game.set_position(game_x, game_y, game_width);
+}
+
 // Utility function that gives us palatable syntax for getting the
 // minimum of two floats.
 
 fn min(a: f32, b: f32) -> f32 {
     a.min(b)
 }
+
 
