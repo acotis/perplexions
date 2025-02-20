@@ -14,9 +14,6 @@ fn main() {
     println!("Hello, world!");
 
     let mut game = Game::new();
-    game.add_to_select_path(0, 0);
-    game.add_to_select_path(0, 1);
-    game.add_to_select_path(1, 0);
 
     let mut window = RenderWindow::new(
         (800, 600),
@@ -36,6 +33,10 @@ fn main() {
 
                 MouseButtonPressed {button: Left, x, y} => {
                     game.mouse_down(x as f32, y as f32);
+                }
+
+                MouseMoved {x, y} => {
+                    game.mouse_moved(x as f32, y as f32);
                 }
 
                 MouseButtonReleased {button: Left, ..} => {
