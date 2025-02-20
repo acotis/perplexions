@@ -27,8 +27,8 @@ impl Game {
         let c = snapped_c as usize;
         let r = snapped_r as usize;
 
-        if 0 <= c && c < self.field.len() {
-            if 0 <= r && r < self.field[c].len() {
+        if 0.0 <= snapped_c && c < self.field.len() {
+            if 0.0 <= snapped_r && r < self.field[c].len() {
                 return Some(((c, r), distance));
             }
         }
