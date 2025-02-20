@@ -1,6 +1,7 @@
 
 mod draw;
 mod game;
+mod dimensions;
 
 use sfml::window::*;
 use sfml::graphics::*;
@@ -39,29 +40,31 @@ fn main() {
 
                 Resized {..} => {
                     draw::update_view(&mut window);
+
+                    // Derive the appropriate width and height of the game.
+
+                    let window_width = window.size().x as f32;
+                    let window_height = window.size().y as f32;
+
+                    let game_width = min(
+                        window_width * 0.8,
+                        window_height * 0.8 / game.aspect_ratio(),
+                    );
+                    let game_height = game_width * game.aspect_ratio();
+                    let game_x = (window_width - game_width) / 2.0;
+                    let game_y = window_height - (window_height - game_height) / 2.0;
+
+                    game.set_position(game_x, game_y, game_width);
                 }
 
                 _ => {}
             }
         }
 
-        // Derive the appropriate width and height of the game.
-
-        let window_width = window.size().x as f32;
-        let window_height = window.size().y as f32;
-
-        let game_width = min(
-            window_width * 0.8,
-            window_height * 0.8 / game.aspect_ratio(),
-        );
-        let game_height = game_width * game.aspect_ratio();
-        let game_x = (window_width - game_width) / 2.0;
-        let game_y = window_height - (window_height - game_height) / 2.0;
-
         // Draw the game.
 
         window.clear(sfml::graphics::Color::WHITE);
-        game.draw_self(&mut window, (game_x, game_y), game_width, true);
+        game.draw_self(&mut window);
 
         window.set_active(true).expect("could not set window to be active");
         window.display();
