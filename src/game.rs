@@ -14,11 +14,6 @@ pub struct Game {
 }
 
 impl Game {
-    // todo: make this private
-    pub fn add_to_select_path(&mut self, x: usize, y: usize) {
-        self.select_path.push((x, y));
-    }
-
     fn tile_at_screen_point(&self, x: f32, y: f32) -> Option<((usize, usize), f32)> {
         let (local_c, local_r) = self.dimensions.screen_to_local((x, y));
 
@@ -118,7 +113,7 @@ impl Game {
         // Draw the game tiles.
 
         for (column, tiles) in self.field.iter().enumerate() {
-            for (row, tile) in tiles.iter().enumerate() {
+            for (row, _tile) in tiles.iter().enumerate() {
                 draw::square(
                     window,
                     self.dimensions.local_to_screen((
