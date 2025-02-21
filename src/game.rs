@@ -3,6 +3,7 @@ use sfml::graphics::*;
 use sfml::cpp::FBox;
 
 use crate::draw;
+use crate::words;
 use crate::dimensions::Dimensions;
 
 #[derive(Debug, Clone)]
@@ -82,11 +83,22 @@ impl Game {
     }
 
     pub fn mouse_up(&mut self) {
-        self.select_path.sort();    // Put the selected tile coords in
-        self.select_path.reverse(); // reverse order by col, then row.
+        
+        // Check if the player has selected a valid word.
 
-        for &(column, row) in &self.select_path {
-            self.field[column].remove(row);
+        let word_formed = 
+            self.select_path
+                .iter()
+                .map(|&(c, r)| self.field[c][r].letter)
+                .collect::<String>();
+
+        if words::is_valid(word_formed) {
+            self.select_path.sort();    // Put the selected tile coords in
+            self.select_path.reverse(); // reverse order by col, then row.
+
+            for &(column, row) in &self.select_path {
+                self.field[column].remove(row);
+            }
         }
 
         self.select_path.clear();

@@ -2,6 +2,7 @@
 mod draw;
 mod game;
 mod dimensions;
+mod words;
 
 use sfml::window::*;
 use sfml::graphics::*;
