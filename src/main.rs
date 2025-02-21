@@ -22,6 +22,8 @@ fn main() {
         "USESRAVITY\n",
     ));
 
+    words::initialize();
+
     let mut window = RenderWindow::new(
         (800, 600),
         "Perplections",
