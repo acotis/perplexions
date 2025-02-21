@@ -7,13 +7,17 @@ Todo:
         — Basic indicator that the game is over.
         — Blue indicator of the restart feature.
     — Wishlist (easy):
+        — Tiles darken when the mouse is over them.
+        — Selection graphic is darkening tiles instead of a line.
+        — Tiles initially fall in from the sky when the level starts.
         — "Undo interface": if the mouse is over the second-to-last tile in the selection path, remove the last tile.
         — Each level has a minor graphic besides its tiles (such as a floor).
         — Dark mode.
-        — Tiles darken when the mouse is over them.
-        — Selection line flashes when an incorrect word is attempted.
+        — Selection flashes when an incorrect word is attempted.
+        — Single-move undo.
     — Wishlist (maybe hard):
         — There is some victory animation when you finish a puzzle.
+        — Large tiles (2×1, 1×2, 2×2, etc).
         — Endless mode?
     — Further ideas:
         — Title screen? Probably not.

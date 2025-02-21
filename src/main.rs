@@ -16,9 +16,9 @@ fn main() {
     println!("Hello, world!");
 
     let mut game = Game::new(concat!(
-        "   G\n",
-        "DUCK\n",
-        "DUCKOOSE\n",
+        " PPL\n",
+        " EVE\n",
+        "ASINE\n",
     ));
 
     words::initialize();

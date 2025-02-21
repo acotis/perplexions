@@ -1,0 +1,25 @@
+——————————
+start
+——————————
+make
+full
+words
+towin # make sure there is no alternative parse (tow + in)
+——————————
+   g
+this
+game
+usesravity
+——————————
+   g
+duck
+duckoose
+——————————
+# do a level that's one long row of letters
+——————————
+ ppl
+ eve
+asine
+——————————
+——————————
+
