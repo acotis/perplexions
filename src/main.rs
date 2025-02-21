@@ -17,9 +17,8 @@ fn main() {
 
     let mut game = Game::new(concat!(
         "   G\n",
-        "THIS\n",
-        "GAME\n",
-        "USESRAVITY\n",
+        "DUCK\n",
+        "DUCKOOSE\n",
     ));
 
     words::initialize();
