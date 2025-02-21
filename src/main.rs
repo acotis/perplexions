@@ -16,10 +16,10 @@ fn main() {
     println!("Hello, world!");
 
     let mut game = Game::new(concat!(
-        " HIS\n",
-        "TGAM \n",
-        "USESE\n",
-        "GRAVITY\n",
+        "   G\n",
+        "THIS\n",
+        "GAME\n",
+        "USESRAVITY\n",
     ));
 
     let mut window = RenderWindow::new(
