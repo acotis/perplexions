@@ -9,6 +9,8 @@ use crate::dimensions::Dimensions;
 #[derive(Debug, Clone)]
 struct Tile {
     letter: char,
+    animation_height: f32,
+    animation_vel: f32,
 }
 
 pub struct Game {
@@ -46,7 +48,11 @@ impl Game {
         for line in self.setup.lines().rev() {
             for (column, letter) in line.chars().enumerate() {
                 if letter != ' ' {
-                    self.field[column].push(Tile {letter});
+                    self.field[column].push(Tile {
+                        letter,
+                        animation_height: 0.0,
+                        animation_vel: 0.0,
+                    });
                 }
             }
         }
@@ -83,16 +89,25 @@ impl Game {
     }
 
     pub fn mouse_up(&mut self) {
-        
-        // Check if the player has selected a valid word.
-
-        let word_formed = 
+        let selected_word_is_valid = words::is_valid(
             self.select_path
                 .iter()
                 .map(|&(c, r)| self.field[c][r].letter)
-                .collect::<String>();
+                .collect::<String>()
+        );
 
-        if words::is_valid(word_formed) {
+        if selected_word_is_valid {
+            for (column, tiles) in self.field.iter_mut().enumerate() {
+                for (row, tile) in tiles.iter_mut().enumerate() {
+                    tile.animation_height =
+                        self.select_path
+                            .iter()
+                            .filter(|&&(c, r)| c == column && r < row)
+                            .count()
+                        as f32;
+                }
+            }
+
             self.select_path.sort();    // Put the selected tile coords in
             self.select_path.reverse(); // reverse order by col, then row.
 
@@ -116,6 +131,19 @@ impl Game {
         self.dimensions.set_position(origin_x, origin_y, width);
     }
 
+    pub fn tick(&mut self) {
+        for column in &mut self.field {
+            for tile in column {
+                tile.animation_vel += 0.02;
+                tile.animation_height -= tile.animation_vel;
+                if tile.animation_height < 0.0 {
+                    tile.animation_height = 0.0;
+                    tile.animation_vel = 0.0;
+                }
+            }
+        }
+    }
+
     pub fn draw_self(&self, window: &mut RenderWindow) {
 
         // Pre-compute some useful values.
@@ -136,7 +164,7 @@ impl Game {
             for (row, tile) in tiles.iter().enumerate() {
                 let (screen_x, screen_y) = self.dimensions.local_to_screen((
                     column as f32,
-                    row as f32,
+                    row as f32 + tile.animation_height,
                 ));
 
                 // Draw the outline of the tile.

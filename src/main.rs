@@ -67,6 +67,7 @@ fn main() {
         // Draw the game.
 
         window.clear(sfml::graphics::Color::WHITE);
+        game.tick();
         game.draw_self(&mut window);
 
         window.set_active(true).expect("could not set window to be active");
