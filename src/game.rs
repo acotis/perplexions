@@ -257,6 +257,7 @@ impl Game {
         let outline_thickness = self.dimensions.tile_size() * 0.05;
         let select_line_width = self.dimensions.tile_size() * 0.4;
         let character_size    = self.dimensions.tile_size() * 0.5;
+        let stretch_radius    = self.dimensions.tile_size() * 0.8;
 
         // Set up the Text.
 
@@ -265,12 +266,22 @@ impl Game {
 
         // Draw the selection line (it goes under the tiles).
 
-        let path_points = 
+        let mut path_points = 
             self.select_path
                 .iter()
                 .map(|&(x,y)| self.dimensions.local_to_screen((x as f32, y as f32 + self.field[x][y].animation_height)))
-                .chain(std::iter::once(self.last_mouse_pos))
                 .collect::<Vec<_>>();
+
+        if path_points.len() > 0 {
+            let last = path_points[path_points.len()-1];
+            let (mouse_x, mouse_y) = self.last_mouse_pos;
+            let angle    = f32::atan2(mouse_y - last.1, mouse_x - last.0);
+            let distance = f32::hypot(mouse_y - last.1, mouse_x - last.0);
+            let shorter  = if distance > stretch_radius {stretch_radius} else {distance};
+            let new_x    = last.0 + shorter * angle.cos();
+            let new_y    = last.1 + shorter * angle.sin();
+            path_points.push((new_x, new_y));
+        }
 
         for item in path_points.windows(2) {
             let &[(x1, y1), (x2, y2)] = item else {panic!()};

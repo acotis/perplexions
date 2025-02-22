@@ -1,11 +1,5 @@
 
 Todo:
-    — Selection nicities:
-        — Moused-over tile is ALWAYS part of selection when mouse is lifted,
-          even if it's not close enough to the center to select it normally?
-        — First tile clicked is ALWAYS added to selection even if the mouse
-          is not inside the normal radius.
-    — "Undo interface": if the mouse is over the second-to-last tile in the selection path, remove the last tile.
     — Minimum viable product:
         — Five real levels.
         — Basic indicator that the game is over.
