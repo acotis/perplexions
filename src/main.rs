@@ -17,8 +17,9 @@ fn main() {
     // Initialize stuff.
 
     constants::initialize();
-    let mut levels = constants::levels();
-    let mut game = Game::new(levels.next().unwrap());
+    let mut levels = constants::levels().enumerate();
+    let (id, level) = levels.next().unwrap();
+    let mut game = Game::new(level, id);
 
     // Create the SFML window.
 
@@ -80,8 +81,8 @@ fn main() {
         // If the game is completed, load the next one.
 
         if game.is_completed() {
-            if let Some(next_level) = levels.next() {
-                game = Game::new(next_level);
+            if let Some((id, level)) = levels.next() {
+                game = Game::new(level, id);
                 set_game_position(&window, &mut game);
             } else {
                 window.close();

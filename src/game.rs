@@ -1,6 +1,8 @@
 
+use std::hash::{Hash, Hasher, DefaultHasher};
 use sfml::graphics::*;
 use sfml::cpp::FBox;
+use sfml::graphics::Color;
 
 use crate::draw;
 use crate::constants;
@@ -30,12 +32,14 @@ pub struct Game {
 
     // Cached resources.
     font: FBox<Font>,
+    color: Color,
+    mild_color: Color,
 }
 
 // Public non-graphics methods.
 
 impl Game {
-    pub fn new<S: AsRef<str>>(setup: S) -> Self {
+    pub fn new<S: AsRef<str>>(setup: S, level_index: usize) -> Self {
         let mut ret = Self {
             setup: String::from(setup.as_ref()),
             field: vec![],
@@ -43,8 +47,23 @@ impl Game {
             dimensions: Dimensions::new(0, 0),
             last_mouse_pos: (0.0, 0.0),
             stage: Ongoing,
+            color: Color::BLACK,
+            mild_color: Color::BLACK,
             font: Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial_Bold.ttf").expect("couldn't load Arial font"),
         };
+
+        // Create the real value of the color.
+
+        let mut hasher = DefaultHasher::new();
+        level_index.hash(&mut hasher);
+        let hash: u64 = hasher.finish();
+
+        let r = (hash       & 255) as u8;
+        let g = (hash >> 8  & 255) as u8;
+        let b = (hash >> 16 & 255) as u8;
+
+        ret.color = Color::rgba(r, g, b, 100);
+        ret.mild_color = Color::rgba(r, g, b, 50);
 
         // Set up state from level string.
         
@@ -227,9 +246,9 @@ impl Game {
                     window,
                     (screen_x, screen_y),
                     tile_size,
-                    sfml::graphics::Color::WHITE,
+                    Color::WHITE,
                     outline_thickness,
-                    sfml::graphics::Color::rgba(0, 0, 0, 50),
+                    self.color,
                 );
 
                 // Draw the letter on the tile.
@@ -247,7 +266,7 @@ impl Game {
                     character_size * 0.6,
                 ));
                 text.set_position(sfml::system::Vector2f::new(screen_x, screen_y));
-                text.set_fill_color(sfml::graphics::Color::BLACK);
+                text.set_fill_color(Color::BLACK);
                 window.draw(&text);
             }
         }
@@ -268,21 +287,21 @@ impl Game {
                 window,
                 (x1, y1),
                 select_line_width / 2.0,
-                sfml::graphics::Color::RED
+                Color::RED
             );
 
             draw::circle_plain(
                 window,
                 (x2, y2),
                 select_line_width / 2.0,
-                sfml::graphics::Color::RED
+                Color::RED
             );
 
             draw::line(
                 window,
                 (x1, y1),
                 (x2, y2),
-                sfml::graphics::Color::RED,
+                Color::RED,
                 select_line_width,
             );
         }
