@@ -1,13 +1,13 @@
 
 Todo:
+    — Bug-fix: the mouseover highlight is determined by the tile's
+      actual position, not its mere intended coordinates.
     — "Undo interface": if the mouse is over the second-to-last tile in the selection path, remove the last tile.
     — Minimum viable product:
         — Five real levels.
         — Basic indicator that the game is over.
         — Basic indicator of the restart feature.
     — Wishlist (easy):
-        — Bug-fix: the mouseover highlight is determined by the tile's
-          actual position, not its mere intended coordinates.
         — Moused-over tile is ALWAYS part of selection when mouse is lifted,
           even if it's not close enough to the center to select it normally.
         — Selection flashes when an incorrect word is attempted.

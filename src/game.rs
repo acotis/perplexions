@@ -147,7 +147,7 @@ impl Game {
 
             for (column, tiles) in self.field.iter_mut().enumerate() {
                 for (row, tile) in tiles.iter_mut().enumerate() {
-                    tile.animation_height =
+                    tile.animation_height +=
                         self.select_path
                             .iter()
                             .filter(|&&(c, r)| c == column && r < row)
@@ -236,7 +236,7 @@ impl Game {
         let path_points = 
             self.select_path
                 .iter()
-                .map(|&(x,y)| self.dimensions.local_to_screen((x as f32, y as f32)))
+                .map(|&(x,y)| self.dimensions.local_to_screen((x as f32, y as f32 + self.field[x][y].animation_height)))
                 .chain(std::iter::once(self.last_mouse_pos))
                 .collect::<Vec<_>>();
 
@@ -327,19 +327,22 @@ impl Game {
     fn tile_at_screen_point(&self, x: f32, y: f32) -> Option<((usize, usize), f32)> {
         let (local_c, local_r) = self.dimensions.screen_to_local((x, y));
 
-        let snapped_c = local_c.round();
-        let snapped_r = local_r.round();
-        let distance = f32::hypot(
-            local_c - snapped_c,
-            local_r - snapped_r,
-        );
+        for (column, tiles) in self.field.iter().enumerate() {
+            for (row, tile) in tiles.iter().enumerate() {
+                let tile_c = column as f32;
+                let tile_r = row as f32 + tile.animation_height;
 
-        let c = snapped_c as usize;
-        let r = snapped_r as usize;
+                let distance_c = (local_c - tile_c).abs();
+                let distance_r = (local_r - tile_r).abs();
 
-        if 0.0 <= snapped_c && c < self.field.len() {
-            if 0.0 <= snapped_r && r < self.field[c].len() {
-                return Some(((c, r), distance));
+                if distance_c < 0.5 && distance_r < 0.5 {
+                    let distance = f32::hypot(
+                        local_c - tile_c,
+                        local_r - tile_r,
+                    );
+
+                    return Some(((column, row), distance));
+                }
             }
         }
 
