@@ -80,6 +80,7 @@ impl Game {
         let height = self.field.iter().map(|c| c.len()).max().unwrap();
         self.dimensions = Dimensions::new(width, height);
         self.select_path = vec![];
+        self.stage = Ongoing;
     }
 }
 
