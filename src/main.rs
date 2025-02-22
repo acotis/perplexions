@@ -2,7 +2,7 @@
 mod draw;
 mod game;
 mod dimensions;
-mod words;
+mod constants;
 
 use sfml::window::*;
 use sfml::graphics::*;
@@ -14,15 +14,11 @@ use crate::game::Game;
 
 fn main() {
 
-    // Set up the game.
+    // Initialize stuff.
 
-    words::initialize();
-
-    let mut game = Game::new(concat!(
-        " PPL\n",
-        " EVE\n",
-        "ASINE\n",
-    ));
+    constants::initialize();
+    let mut levels = constants::levels();
+    let mut game = Game::new(levels.next().unwrap());
 
     // Create the SFML window.
 
@@ -80,6 +76,17 @@ fn main() {
         window.clear(sfml::graphics::Color::WHITE);
         game.draw_self(&mut window);
         window.display();
+
+        // If the game is completed, load the next one.
+
+        if game.is_completed() {
+            if let Some(next_level) = levels.next() {
+                game = Game::new(next_level);
+                set_game_position(&window, &mut game);
+            } else {
+                window.close();
+            }
+        }
     }
 }
 

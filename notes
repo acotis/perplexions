@@ -1,8 +1,6 @@
 
 Todo:
-    — Look over the current code, make sure it makes sense and seems sound.
     — Minimum viable product:
-        — Level transition (fade-in, fade-out).
         — Design five levels.
         — Basic indicator that the game is over.
         — Blue indicator of the restart feature.
@@ -18,6 +16,7 @@ Todo:
         — Tiles initially fall in from the sky when the level starts.
         — "Undo interface": if the mouse is over the second-to-last tile in the selection path, remove the last tile.
         — Each level has a minor graphic besides its tiles (such as a floor).
+            — And it fades in and fades out with level transitions?
         — Dark mode.
     — Wishlist (maybe hard):
         — There is some victory animation when you finish a puzzle.

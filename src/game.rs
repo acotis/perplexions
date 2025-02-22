@@ -3,8 +3,15 @@ use sfml::graphics::*;
 use sfml::cpp::FBox;
 
 use crate::draw;
-use crate::words;
+use crate::constants;
 use crate::dimensions::Dimensions;
+use self::GameStage::*;
+
+#[derive(PartialEq, Eq)]
+enum GameStage {
+    Ongoing,
+    Completed(usize),
+}
 
 #[derive(Debug, Clone)]
 struct Tile {
@@ -19,6 +26,7 @@ pub struct Game {
     select_path: Vec<(usize, usize)>,
     dimensions: Dimensions,
     last_mouse_pos: (f32, f32),
+    stage: GameStage,
 
     // Cached resources.
     font: FBox<Font>,
@@ -34,6 +42,7 @@ impl Game {
             select_path: vec![],
             dimensions: Dimensions::new(0, 0),
             last_mouse_pos: (0.0, 0.0),
+            stage: Ongoing,
             font: Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial_Black.ttf").expect("couldn't load Arial font"),
         };
         
@@ -89,14 +98,22 @@ impl Game {
     }
 
     pub fn mouse_up(&mut self) {
-        let selected_word_is_valid = words::is_valid(
+
+        // Check if selection is a valid word.
+
+        let selected_word_is_valid = constants::is_valid_word(
             self.select_path
                 .iter()
                 .map(|&(c, r)| self.field[c][r].letter)
                 .collect::<String>()
         );
 
+        // If so, perform a deletion.
+
         if selected_word_is_valid {
+
+            // Set up the animation parameters of the tiles that will fall.
+
             for (column, tiles) in self.field.iter_mut().enumerate() {
                 for (row, tile) in tiles.iter_mut().enumerate() {
                     tile.animation_height =
@@ -108,13 +125,23 @@ impl Game {
                 }
             }
 
-            self.select_path.sort();    // Put the selected tile coords in
-            self.select_path.reverse(); // reverse order by col, then row.
+            // Delete the selected tiles.
+
+            self.select_path.sort();
+            self.select_path.reverse();
 
             for &(column, row) in &self.select_path {
                 self.field[column].remove(row);
             }
+
+            // Check if the game is completed.
+
+            if self.field.iter().all(|c| c.is_empty()) {
+                self.stage = Completed(100);
+            }
         }
+
+        // Reset the selection.
 
         self.select_path.clear();
     }
@@ -131,6 +158,10 @@ impl Game {
         self.dimensions.set_position(origin_x, origin_y, width);
     }
 
+    pub fn is_completed(&self) -> bool {
+        self.stage == Completed(0)
+    }
+
     pub fn tick(&mut self) {
         for column in &mut self.field {
             for tile in column {
@@ -141,6 +172,11 @@ impl Game {
                     tile.animation_vel = 0.0;
                 }
             }
+        }
+
+        if let Completed(n) = self.stage {
+            let new_value = if n == 0 {0} else {n-1};
+            self.stage = Completed(new_value);
         }
     }
 
