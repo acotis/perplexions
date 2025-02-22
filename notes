@@ -1,13 +1,15 @@
 
 Todo:
-    — Each level is a different color (randomly chosen).
+    — Selection graph still draws a line but it's nicer.
     — Minimum viable product:
-        — Five levels.
+        — Five real levels.
         — Basic indicator that the game is over.
         — Blue indicator of the restart feature.
     — Wishlist (easy):
-        — Tiles darken when the mouse is over them.
-        — Selection graphic is darkening tiles instead of a line.
+        — Bug-fix: the mouseover highlight is determined by the tile's
+          actual position, not its mere intended coordinates.
+        — Moused-over tile is ALWAYS part of selection when mouse is lifted,
+          even if it's not close enough to the center to select it normally.
         — Selection flashes when an incorrect word is attempted.
         — Ten levels.
         — Tiles leave green ghosts when a correct word is shot.

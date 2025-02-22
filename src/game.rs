@@ -223,7 +223,7 @@ impl Game {
 
         let tile_size         = self.dimensions.tile_size() * 0.8;
         let outline_thickness = self.dimensions.tile_size() * 0.05;
-        let select_line_width = self.dimensions.tile_size() * 0.1;
+        let select_line_width = self.dimensions.tile_size() * 0.6;
         let character_size    = self.dimensions.tile_size() * 0.5;
 
         // Set up the Text.
@@ -240,13 +240,26 @@ impl Game {
                     row as f32 + tile.animation_height,
                 ));
 
-                // Draw the outline of the tile.
+                // Compute the fill color (highlight level).
+
+                let fill_color = 
+                    if self.tile_at_screen_point(self.last_mouse_pos.0, self.last_mouse_pos.1).map(|((c, r), _)|(c,r)) == Some((column, row)) {
+                        self.color
+                    } else {
+                        if self.select_path.contains(&(column, row)) {
+                            self.mild_color
+                        } else {
+                            Color::WHITE
+                        }
+                    };
+
+                // Draw the tile itself.
 
                 draw::square(
                     window,
                     (screen_x, screen_y),
                     tile_size,
-                    Color::WHITE,
+                    fill_color,
                     outline_thickness,
                     self.color,
                 );
@@ -280,6 +293,7 @@ impl Game {
                 .chain(std::iter::once(self.last_mouse_pos))
                 .collect::<Vec<_>>();
 
+        /*
         for item in path_points.windows(2) {
             let &[(x1, y1), (x2, y2)] = item else {panic!()};
             
@@ -287,24 +301,25 @@ impl Game {
                 window,
                 (x1, y1),
                 select_line_width / 2.0,
-                Color::RED
+                self.mild_color,
             );
 
             draw::circle_plain(
                 window,
                 (x2, y2),
                 select_line_width / 2.0,
-                Color::RED
+                self.mild_color,
             );
 
             draw::line(
                 window,
                 (x1, y1),
                 (x2, y2),
-                Color::RED,
+                self.mild_color,
                 select_line_width,
             );
         }
+        */
     }
 }
 
