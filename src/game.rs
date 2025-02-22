@@ -45,8 +45,19 @@ impl Game {
             stage: Ongoing,
             font: Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial_Black.ttf").expect("couldn't load Arial font"),
         };
+
+        // Set up state from level string.
         
         ret.reset();
+
+        // Set up the initial animation data (only applies to first load).
+
+        for (column, tiles) in ret.field.iter_mut().enumerate() {
+            for (row, tile) in tiles.iter_mut().enumerate() {
+                tile.animation_height = 10.0 + column as f32 + row as f32;
+            }
+        }
+
         ret
     }
 
@@ -165,8 +176,14 @@ impl Game {
     pub fn tick(&mut self) {
         for column in &mut self.field {
             for tile in column {
-                tile.animation_vel += 0.02;
+                tile.animation_vel += 0.015;
+
+                if tile.animation_vel > 0.4 {
+                    tile.animation_vel = 0.4;
+                }
+
                 tile.animation_height -= tile.animation_vel;
+
                 if tile.animation_height < 0.0 {
                     tile.animation_height = 0.0;
                     tile.animation_vel = 0.0;
