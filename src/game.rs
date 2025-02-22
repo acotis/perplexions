@@ -200,7 +200,7 @@ impl Game {
             // Check if the game is completed.
 
             if self.field.iter().all(|c| c.is_empty()) {
-                self.stage = Completed(100);
+                self.stage = Completed(50);
             }
         }
 
