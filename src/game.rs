@@ -258,6 +258,7 @@ impl Game {
         let select_line_width = self.dimensions.tile_size() * 0.4;
         let character_size    = self.dimensions.tile_size() * 0.5;
         let stretch_radius    = self.dimensions.tile_size() * 0.8;
+        let restart_text_size = self.dimensions.tile_size() * 0.1;
 
         // Set up the Text.
 

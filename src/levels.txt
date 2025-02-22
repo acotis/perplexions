@@ -52,13 +52,13 @@ puzzles
 good
 luck
 ——————————
-# do a level that's one long row of letters
-——————————
  ppl
  eve
 asine
 ——————————
+# todo: design more levels
 ——————————
+# do a level that's one long row of letters
 ——————————
 perplexity
 ——————————
