@@ -1,7 +1,7 @@
 
 Todo:
-    — Tiles initially fall in from the sky when the level starts.
     — Minimum viable product:
+        — Bug fix: reset() should do nothing if the level is complete.
         — Five levels.
         — Basic indicator that the game is over.
         — Blue indicator of the restart feature.

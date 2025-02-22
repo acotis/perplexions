@@ -91,7 +91,6 @@ pub fn square(
     );
 }
 
-/*
 pub fn square_plain(
     win: &mut RenderWindow,
     center: (f32, f32),
@@ -107,7 +106,6 @@ pub fn square_plain(
         Color::TRANSPARENT
     );
 }
-*/
 
 pub fn circle(
     win: &mut RenderWindow,

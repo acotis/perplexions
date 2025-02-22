@@ -1,10 +1,13 @@
 ——————————
 start
 ——————————
-make
-full
-words
-towin # make sure there is no alternative parse (tow + in)
+click
+anddrag
+fullwords
+——————————
+clear
+alltiles
+toprogress
 ——————————
    g
 this
@@ -15,11 +18,37 @@ usesravity
 duck
 duckoose
 ——————————
+thisis
+apuzzlegame
+——————————
+      v
+      e
+      r
+      t
+      i
+      c
+words a
+canbe l
+——————————
+      fo
+words ld
+canbe ed
+——————————
+words
+canbe
+sdrawkcab
+——————————
+ifyouare
+notcareful
+youcangetstucks
+——————————
+good
+luck
+——————————
 # do a level that's one long row of letters
 ——————————
  ppl
  eve
 asine
-——————————
 ——————————
 

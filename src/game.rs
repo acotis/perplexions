@@ -43,7 +43,7 @@ impl Game {
             dimensions: Dimensions::new(0, 0),
             last_mouse_pos: (0.0, 0.0),
             stage: Ongoing,
-            font: Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial_Black.ttf").expect("couldn't load Arial font"),
+            font: Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial_Bold.ttf").expect("couldn't load Arial font"),
         };
 
         // Set up state from level string.
@@ -54,7 +54,7 @@ impl Game {
 
         for (column, tiles) in ret.field.iter_mut().enumerate() {
             for (row, tile) in tiles.iter_mut().enumerate() {
-                tile.animation_height = 10.0 + column as f32 + row as f32;
+                tile.animation_height = 12.0 + column as f32 + row as f32;
             }
         }
 
@@ -228,7 +228,7 @@ impl Game {
                     tile_size,
                     sfml::graphics::Color::WHITE,
                     outline_thickness,
-                    sfml::graphics::Color::BLACK,
+                    sfml::graphics::Color::rgba(0, 0, 0, 50),
                 );
 
                 // Draw the letter on the tile.
