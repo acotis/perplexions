@@ -4,7 +4,7 @@ Todo:
     — Minimum viable product:
         — Five real levels.
         — Basic indicator that the game is over.
-        — Blue indicator of the restart feature.
+        — Basic indicator of the restart feature.
     — Wishlist (easy):
         — Bug-fix: the mouseover highlight is determined by the tile's
           actual position, not its mere intended coordinates.
