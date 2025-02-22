@@ -62,8 +62,8 @@ impl Game {
         let g = (hash >> 8  & 255) as u8;
         let b = (hash >> 16 & 255) as u8;
 
-        ret.color = Color::rgba(r, g, b, 100);
-        ret.mild_color = Color::rgba(r, g, b, 50);
+        ret.color      = Color::rgb(r/5*2+150,g/5*2+150,b/5*2+150);
+        ret.mild_color = Color::rgb(r/5*1+200,g/5*1+200,b/5*1+200);
 
         // Set up state from level string.
         
@@ -223,13 +223,48 @@ impl Game {
 
         let tile_size         = self.dimensions.tile_size() * 0.8;
         let outline_thickness = self.dimensions.tile_size() * 0.05;
-        let select_line_width = self.dimensions.tile_size() * 0.6;
+        let select_line_width = self.dimensions.tile_size() * 0.4;
         let character_size    = self.dimensions.tile_size() * 0.5;
 
         // Set up the Text.
 
         let mut text = Text::new(&String::new(), &self.font, 0);
         text.set_character_size(character_size as u32);
+
+        // Draw the selection line (it goes under the tiles).
+
+        let path_points = 
+            self.select_path
+                .iter()
+                .map(|&(x,y)| self.dimensions.local_to_screen((x as f32, y as f32)))
+                .chain(std::iter::once(self.last_mouse_pos))
+                .collect::<Vec<_>>();
+
+        for item in path_points.windows(2) {
+            let &[(x1, y1), (x2, y2)] = item else {panic!()};
+            
+            draw::circle_plain(
+                window,
+                (x1, y1),
+                select_line_width / 2.0,
+                self.color,
+            );
+
+            draw::circle_plain(
+                window,
+                (x2, y2),
+                select_line_width / 2.0,
+                self.color,
+            );
+
+            draw::line(
+                window,
+                (x1, y1),
+                (x2, y2),
+                self.color,
+                select_line_width,
+            );
+        }
 
         // Draw the game tiles.
 
@@ -247,7 +282,7 @@ impl Game {
                         self.color
                     } else {
                         if self.select_path.contains(&(column, row)) {
-                            self.mild_color
+                            self.color
                         } else {
                             Color::WHITE
                         }
@@ -283,43 +318,6 @@ impl Game {
                 window.draw(&text);
             }
         }
-
-        // Draw the selection line.
-
-        let path_points = 
-            self.select_path
-                .iter()
-                .map(|&(x,y)| self.dimensions.local_to_screen((x as f32, y as f32)))
-                .chain(std::iter::once(self.last_mouse_pos))
-                .collect::<Vec<_>>();
-
-        /*
-        for item in path_points.windows(2) {
-            let &[(x1, y1), (x2, y2)] = item else {panic!()};
-            
-            draw::circle_plain(
-                window,
-                (x1, y1),
-                select_line_width / 2.0,
-                self.mild_color,
-            );
-
-            draw::circle_plain(
-                window,
-                (x2, y2),
-                select_line_width / 2.0,
-                self.mild_color,
-            );
-
-            draw::line(
-                window,
-                (x1, y1),
-                (x2, y2),
-                self.mild_color,
-                select_line_width,
-            );
-        }
-        */
     }
 }
 
