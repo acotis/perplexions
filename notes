@@ -1,5 +1,6 @@
 
 Todo:
+    — "Undo interface": if the mouse is over the second-to-last tile in the selection path, remove the last tile.
     — Minimum viable product:
         — Five real levels.
         — Basic indicator that the game is over.
@@ -17,7 +18,6 @@ Todo:
             — Just use vecs, it'll be fast enough.
             — Use the same list of previous states to implement level restarts.
         — Fifteen levels.
-        — "Undo interface": if the mouse is over the second-to-last tile in the selection path, remove the last tile.
         — Each level has a minor graphic besides its tiles (such as a floor).
             — And it fades in and fades out with level transitions?
         — Dark mode.

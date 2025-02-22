@@ -278,11 +278,11 @@ impl Game {
                 // Compute the fill color (highlight level).
 
                 let fill_color = 
-                    if self.tile_at_screen_point(self.last_mouse_pos.0, self.last_mouse_pos.1).map(|((c, r), _)|(c,r)) == Some((column, row)) {
+                    if self.select_path.contains(&(column, row)) {
                         self.color
                     } else {
-                        if self.select_path.contains(&(column, row)) {
-                            self.color
+                        if self.tile_at_screen_point(self.last_mouse_pos.0, self.last_mouse_pos.1).map(|((c, r), _)|(c,r)) == Some((column, row)) {
+                            self.mild_color
                         } else {
                             Color::WHITE
                         }
