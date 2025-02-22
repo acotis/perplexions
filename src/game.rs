@@ -116,19 +116,51 @@ impl Game {
     pub fn mouse_moved(&mut self, x: f32, y: f32) {
         self.last_mouse_pos = (x, y);
         if !self.select_path.is_empty() {
-            if let Some((point, distance)) = self.tile_at_screen_point(x,y) {
+            if let Some((point, distance)) = self.tile_at_screen_point(x, y) {
                 let last_point = self.select_path[self.select_path.len()-1];
+
+                // If the mouse is close enough to the touched point,
+                // add it to the seelction path.
+
                 if distance < 0.4
                 && !self.select_path.contains(&point)
                 && usize::abs_diff(point.0, last_point.0) <= 1
                 && usize::abs_diff(point.1, last_point.1) <= 1 {
                     self.select_path.push(point);
                 }
+
+                // If the mouse is on the previously selected tile,
+                // remove the last tile.
+
+                if self.select_path.len() >=2
+                && self.select_path[self.select_path.len()-2] == point
+                && distance < 0.4 {
+                    self.select_path.pop();
+                }
             }
         }
     }
 
     pub fn mouse_up(&mut self) {
+
+        // If selection path is empty, return.
+        
+        if self.select_path.is_empty() {return;}
+
+        // If there is a tile under the mouse and it is a valid tile
+        // to add, add it to the selection path even if the mouse is
+        // too far away by the normal distance standard.
+
+        let (x, y) = self.last_mouse_pos;
+        if let Some((point, _)) = self.tile_at_screen_point(x, y) {
+            let last_point = self.select_path[self.select_path.len()-1];
+
+            if !self.select_path.contains(&point)
+            && usize::abs_diff(point.0, last_point.0) <= 1
+            && usize::abs_diff(point.1, last_point.1) <= 1 {
+                self.select_path.push(point);
+            }
+        }
 
         // Check if selection is a valid word.
 
@@ -282,7 +314,7 @@ impl Game {
                         self.color
                     } else {
                         if self.tile_at_screen_point(self.last_mouse_pos.0, self.last_mouse_pos.1).map(|((c, r), _)|(c,r)) == Some((column, row)) {
-                            self.mild_color
+                            self.color
                         } else {
                             Color::WHITE
                         }
