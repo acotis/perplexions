@@ -13,7 +13,10 @@ use sfml::window::Key::R;
 use crate::game::Game;
 
 fn main() {
-    println!("Hello, world!");
+
+    // Set up the game.
+
+    words::initialize();
 
     let mut game = Game::new(concat!(
         " PPL\n",
@@ -21,7 +24,7 @@ fn main() {
         "ASINE\n",
     ));
 
-    words::initialize();
+    // Create the SFML window.
 
     let mut window = RenderWindow::new(
         (800, 600),
@@ -29,14 +32,17 @@ fn main() {
         Style::DEFAULT,
         &Default::default(),
     ).unwrap();
+
     window.set_framerate_limit(60);
 
+    // Game loop.
+
     'outer: while window.is_open() {
+
+        // Handle events.
+
         while let Some(event) = window.poll_event() {
             match event {
-
-                // Universal event handling.
-
                 Closed => {window.close(); break 'outer;}
 
                 MouseButtonPressed {button: Left, x, y} => {
@@ -65,13 +71,14 @@ fn main() {
             }
         }
 
+        // Tick the game logic.
+
+        game.tick();
+
         // Draw the game.
 
         window.clear(sfml::graphics::Color::WHITE);
-        game.tick();
         game.draw_self(&mut window);
-
-        window.set_active(true).expect("could not set window to be active");
         window.display();
     }
 }
@@ -100,5 +107,4 @@ fn set_game_position(window: &RenderWindow, game: &mut Game) {
 fn min(a: f32, b: f32) -> f32 {
     a.min(b)
 }
-
 
