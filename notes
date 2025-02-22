@@ -9,12 +9,16 @@ Todo:
     — Wishlist (easy):
         — Tiles darken when the mouse is over them.
         — Selection graphic is darkening tiles instead of a line.
+        — Single-move undo.
+            — Store a list of previous states.
+            — Just use vecs, it'll be fast enough.
+            — Use the same list of previous states to implement level restarts.
+        — Selection flashes when an incorrect word is attempted.
+        — Tiles leave green ghosts when a correct word is shot.
         — Tiles initially fall in from the sky when the level starts.
         — "Undo interface": if the mouse is over the second-to-last tile in the selection path, remove the last tile.
         — Each level has a minor graphic besides its tiles (such as a floor).
         — Dark mode.
-        — Selection flashes when an incorrect word is attempted.
-        — Single-move undo.
     — Wishlist (maybe hard):
         — There is some victory animation when you finish a puzzle.
         — Large tiles (2×1, 1×2, 2×2, etc).
