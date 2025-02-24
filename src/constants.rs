@@ -2,6 +2,9 @@
 use std::sync::LazyLock;
 use std::sync::Mutex;
 
+/*
+// STATIC IMPLEMENTATION: RESTORE WHEN DONE REMOVING WORDS AUTOMATICALLY.
+
 static WORDS: LazyLock<Vec<String>> = LazyLock::new(|| {
     let mut words = 
         include_str!("words.txt")
@@ -13,11 +16,21 @@ static WORDS: LazyLock<Vec<String>> = LazyLock::new(|| {
     words
 });
 
+pub fn is_valid_word(word: String) -> bool {
+    WORDS.binary_search(&word).is_ok()
+}
+
+pub fn initialize() {
+    LazyLock::force(&WORDS);
+}
+*/
+
+static WORDS: Mutex<Vec<String>> = Mutex::new(vec![]);
+
 static LAST_WORD_TRIED: Mutex<String> = Mutex::new(String::new());
 
 pub fn is_valid_word(word: String) -> bool {
-    *LAST_WORD_TRIED.lock().unwrap() = word.clone();
-    WORDS.binary_search(&word).is_ok()
+    WORDS.lock().unwrap().binary_search(&word).is_ok()
 }
 
 pub fn remove_last_word_tried() {
@@ -31,6 +44,17 @@ pub fn remove_last_word_tried() {
             .collect::<Vec<_>>()
             .join("\n")
     ).expect("couldn't open file for writing");
+
+    WORDS.lock().unwrap().clear();
+    WORDS.lock().unwrap().append(
+        &mut std::fs::read_to_string("src/words.txt")
+            .expect("couldn't re-open file for re-reading")
+            .to_ascii_uppercase()
+            .lines()
+            .map(str::to_owned)
+            .collect::<Vec<String>>()
+    );
+    WORDS.lock().unwrap().sort();
 }
 
 pub fn levels() -> impl Iterator<Item=String> {
@@ -48,6 +72,5 @@ pub fn levels() -> impl Iterator<Item=String> {
 }
 
 pub fn initialize() {
-    LazyLock::force(&WORDS);
+    remove_last_word_tried();
 }
-
