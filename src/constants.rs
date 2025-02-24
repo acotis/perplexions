@@ -51,9 +51,10 @@ fn load_words() {
 }
 
 fn save_words() {
+    let lock = WORDS.lock().unwrap();
     std::fs::write(
         "src/words.txt",
-        WORDS.lock().unwrap().iter().map(|s| s.to_ascii_lowercase()).collect::<Vec<_>>().join("\n")
+        lock.join("\n").to_ascii_lowercase()
     ).expect("couldn't open file for writing");
 }
 
@@ -69,10 +70,11 @@ pub fn add_last_word_tried() {
 
     println!("adding the last word: {last}");
 
-    let mut lock = WORDS.lock().unwrap();
-
-    if let Err(pos) = lock.binary_search(&*last) {
-        lock.insert(pos, last.clone());
+    {
+        let mut lock = WORDS.lock().unwrap();
+        if let Err(pos) = lock.binary_search(&*last) {
+            lock.insert(pos, last.clone());
+        }
     }
     
     save_words();
