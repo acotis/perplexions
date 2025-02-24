@@ -30,6 +30,7 @@ static WORDS: Mutex<Vec<String>> = Mutex::new(vec![]);
 static LAST_WORD_TRIED: Mutex<String> = Mutex::new(String::new());
 
 pub fn is_valid_word(word: String) -> bool {
+    println!("trying word: {word}");
     *LAST_WORD_TRIED.lock().unwrap() = word.clone();
     WORDS.lock().unwrap().binary_search(&word).is_ok()
 }
