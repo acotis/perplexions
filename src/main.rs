@@ -8,7 +8,7 @@ use sfml::window::*;
 use sfml::graphics::*;
 use sfml::window::Event::*;
 use sfml::window::mouse::Button::*;
-use sfml::window::Key::{R, U, Q};
+use sfml::window::Key::{R, U, Q, X};
 
 use crate::game::Game;
 
@@ -72,6 +72,10 @@ fn main() {
                     }
                 }
 
+                KeyPressed {code: X, ..} => {
+                    constants::remove_last_word_tried();
+                }
+                
                 KeyPressed {code: R, ..} => {
                     game.reset();
                     set_game_position(&window, &mut game);
