@@ -5,11 +5,15 @@ Todo:
         — Just use vecs, it'll be fast enough.
         — Use the same list of previous states to implement level restarts.
     — Basic indicator of the restart feature.
+    — Basic indicator of the undo feature.
     — Minimum viable product:
         — Five real levels.
         — Basic indicator that the game is over.
             — Last level uses solid-color tiles that can't be selected.
+            — "Q to quit" only appears on this screen (and probably is only true on this screen).
+        — Better wordlist that doesn't consider all these bullshit words to be real.
     — Wishlist (easy):
+        — Reset should do nothing if tiles are falling (because it could be the start of the level).
         — Selection flashes when an incorrect word is attempted.
         — Ten real levels.
         — Tiles leave green ghosts when a correct word is shot.
@@ -39,4 +43,11 @@ Obvious non-words which are included in that list:
     — syr (but remember this one affects the end screen)
     — duc
     — glou
+    — gis
+    — grav
+    — ity
+    — dr
+    — ful
+    — fas
+    — sta
 

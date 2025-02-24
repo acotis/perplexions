@@ -3,6 +3,7 @@ start
 ——————————
 click
 anddrag
+tocreate
 fullwords
 ——————————
 clear
@@ -58,9 +59,20 @@ asine
 ——————————
 # todo: design more levels
 ——————————
+ y
+pll
+toa
+enti
+——————————
+sdgu
+infms
+ffeat
+——————————
+# end of experimental levels
+——————————
 # do a level that's one long row of letters
 ——————————
-perplexity
+perplexity # the game is actually called "perplections" and there is a "controversial" AI called "perplexity" so be careful
 ——————————
 game by
 evan rysdam

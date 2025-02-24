@@ -24,7 +24,7 @@ struct Tile {
 
 pub struct Game {
     setup: String,
-    field: Vec<Vec<Tile>>,
+    fields: Vec<Vec<Vec<Tile>>>,
     select_path: Vec<(usize, usize)>,
     dimensions: Dimensions,
     last_mouse_pos: (f32, f32),
@@ -42,7 +42,7 @@ impl Game {
     pub fn new<S: AsRef<str>>(setup: S, level_index: usize) -> Self {
         let mut ret = Self {
             setup: String::from(setup.as_ref()),
-            field: vec![],
+            fields: vec![],
             select_path: vec![],
             dimensions: Dimensions::new(0, 0),
             last_mouse_pos: (0.0, 0.0),
@@ -71,7 +71,7 @@ impl Game {
 
         // Set up the initial animation data (only applies to first load).
 
-        for (column, tiles) in ret.field.iter_mut().enumerate() {
+        for (column, tiles) in ret.fields[0].iter_mut().enumerate() {
             for (row, tile) in tiles.iter_mut().enumerate() {
                 tile.animation_height = 12.0 + column as f32 + row as f32;
             }
@@ -82,12 +82,12 @@ impl Game {
 
     pub fn reset(&mut self) {
         let width = self.setup.lines().map(|l| l.len()).max().unwrap();
-        self.field = vec![vec![]; width];
+        self.fields = vec![vec![vec![]; width]];
 
         for line in self.setup.lines().rev() {
             for (column, letter) in line.chars().enumerate() {
                 if letter != ' ' {
-                    self.field[column].push(Tile {
+                    self.fields[0][column].push(Tile {
                         letter,
                         animation_height: 0.0,
                         animation_vel: 0.0,
@@ -96,7 +96,7 @@ impl Game {
             }
         }
 
-        let height = self.field.iter().map(|c| c.len()).max().unwrap();
+        let height = self.fields[0].iter().map(|c| c.len()).max().unwrap();
         self.dimensions = Dimensions::new(width, height);
         self.select_path = vec![];
         self.stage = Ongoing;
@@ -167,7 +167,7 @@ impl Game {
         let selected_word_is_valid = constants::is_valid_word(
             self.select_path
                 .iter()
-                .map(|&(c, r)| self.field[c][r].letter)
+                .map(|&(c, r)| self.fields[0][c][r].letter)
                 .collect::<String>()
         );
 
@@ -177,7 +177,7 @@ impl Game {
 
             // Set up the animation parameters of the tiles that will fall.
 
-            for (column, tiles) in self.field.iter_mut().enumerate() {
+            for (column, tiles) in self.fields[0].iter_mut().enumerate() {
                 for (row, tile) in tiles.iter_mut().enumerate() {
                     tile.animation_height +=
                         self.select_path
@@ -194,12 +194,12 @@ impl Game {
             self.select_path.reverse();
 
             for &(column, row) in &self.select_path {
-                self.field[column].remove(row);
+                self.fields[0][column].remove(row);
             }
 
             // Check if the game is completed.
 
-            if self.field.iter().all(|c| c.is_empty()) {
+            if self.fields[0].iter().all(|c| c.is_empty()) {
                 self.stage = Completed(50);
             }
         }
@@ -226,7 +226,7 @@ impl Game {
     }
 
     pub fn tick(&mut self) {
-        for column in &mut self.field {
+        for column in &mut self.fields[0] {
             for tile in column {
                 tile.animation_vel += 0.015;
 
@@ -270,7 +270,7 @@ impl Game {
         let mut path_points = 
             self.select_path
                 .iter()
-                .map(|&(x,y)| self.dimensions.local_to_screen((x as f32, y as f32 + self.field[x][y].animation_height)))
+                .map(|&(x,y)| self.dimensions.local_to_screen((x as f32, y as f32 + self.fields[0][x][y].animation_height)))
                 .collect::<Vec<_>>();
 
         if path_points.len() > 0 {
@@ -312,7 +312,7 @@ impl Game {
 
         // Draw the game tiles.
 
-        for (column, tiles) in self.field.iter().enumerate() {
+        for (column, tiles) in self.fields[0].iter().enumerate() {
             for (row, tile) in tiles.iter().enumerate() {
                 let (screen_x, screen_y) = self.dimensions.local_to_screen((
                     column as f32,
@@ -371,7 +371,7 @@ impl Game {
     fn tile_at_screen_point(&self, x: f32, y: f32) -> Option<((usize, usize), f32)> {
         let (local_c, local_r) = self.dimensions.screen_to_local((x, y));
 
-        for (column, tiles) in self.field.iter().enumerate() {
+        for (column, tiles) in self.fields[0].iter().enumerate() {
             for (row, tile) in tiles.iter().enumerate() {
                 let tile_c = column as f32;
                 let tile_r = row as f32 + tile.animation_height;
