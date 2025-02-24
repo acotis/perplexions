@@ -52,6 +52,7 @@ pub fn rectangle(
     win.draw(&rs);
 }
 
+/*
 pub fn rectangle_plain(
     win: &mut RenderWindow,
     center: (f32, f32),
@@ -69,6 +70,7 @@ pub fn rectangle_plain(
         sfml::graphics::Color::TRANSPARENT,
     );
 }
+*/
 
 pub fn square(
     win: &mut RenderWindow,

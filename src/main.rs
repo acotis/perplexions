@@ -118,8 +118,6 @@ fn main() {
                 0.0
             } as u8;
 
-            println!("Drawing explosion with opacity {opacity}, {}, {}", e.x, e.y);
-
             draw::circle_plain(&mut window, (e.x, e.y), radius, 
                 Color::rgba(e.color.r, e.color.g, e.color.b, opacity as u8));
 
