@@ -36,6 +36,7 @@ pub struct Game {
     last_mouse_pos: (f32, f32),
     stage: GameStage,
     restart_opacity: Opacity,
+    level_index: usize,
 
     // Cached resources.
     font: FBox<Font>,
@@ -54,6 +55,7 @@ impl Game {
             last_mouse_pos: (0.0, 0.0),
             stage: Ongoing,
             restart_opacity: Off,
+            level_index: level_index,
             color: Color::BLACK,
             mild_color: Color::BLACK,
             font: Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial_Bold.ttf").expect("couldn't load Arial font"),
@@ -220,7 +222,7 @@ impl Game {
             // Set the restart button to fade in.
 
             self.restart_opacity = match self.restart_opacity {
-                Off => On(0),
+                Off => if self.level_index == 0 {On(0)} else {On(255)},
                 OffButWasOn => On(255),
                 On(x) => On(x), // should never happen
             };
@@ -399,16 +401,16 @@ impl Game {
 
         // Draw the restart and undo texts.
 
-        let undo_string    = "U: undo";
-        let restart_string = "R: restart";
+        //let undo_string    = "U: undo";
+        //let restart_string = "R: restart";
+        let restart_string = "U = undo,  R = restart";
 
         let undo_center = self.dimensions.local_to_screen((
-            (self.fields[0].len() as f32) * 0.25 - 0.5,
+            (self.fields[0].len() as f32) * 0.35 - 0.5,
             -0.75,
         ));
 
         let restart_center = self.dimensions.local_to_screen((
-            //(self.fields[0].len() as f32) * 0.75 - 0.5,
             (self.fields[0].len() as f32) * 0.50 - 0.5,
             -0.75,
         ));
@@ -417,7 +419,7 @@ impl Game {
             Off => 0,
             OffButWasOn => 0,
             On(n) => if self.stage == Ongoing {
-                if n < 100 {0} else {n - 100}
+                if n < 128 {0} else {n - 128}
             } else {
                 0
             }
@@ -432,6 +434,18 @@ impl Game {
         text.set_position(sfml::system::Vector2f::new(restart_center.0, restart_center.1));
         text.set_fill_color(Color::rgba(0, 0, 0, restart_opacity));
         window.draw(&text);
+
+        /*
+        text.set_character_size(restart_text_size as u32);
+        text.set_string(undo_string);
+        text.set_origin(sfml::system::Vector2f::new(
+            undo_string.chars().map(|c| self.font.glyph(c as u32, restart_text_size as u32, false, 0.0).advance()).sum::<f32>() * 0.5,
+            restart_text_size * 0.6
+        ));
+        text.set_position(sfml::system::Vector2f::new(undo_center.0, undo_center.1));
+        text.set_fill_color(Color::rgba(0, 0, 0, restart_opacity));
+        window.draw(&text);
+        */
 
         /*
         let undo_size = (
