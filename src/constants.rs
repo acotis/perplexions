@@ -4,6 +4,7 @@ use std::sync::LazyLock;
 static WORDS: LazyLock<Vec<String>> = LazyLock::new(|| {
     let mut words = 
         include_str!("words.txt")
+            .to_ascii_uppercase()
             .lines()
             .map(str::to_owned)
             .collect::<Vec<String>>();
