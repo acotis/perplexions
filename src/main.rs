@@ -8,7 +8,7 @@ use sfml::window::*;
 use sfml::graphics::*;
 use sfml::window::Event::*;
 use sfml::window::mouse::Button::*;
-use sfml::window::Key::{R, U};
+use sfml::window::Key::{R, U, Q};
 
 use crate::game::Game;
 
@@ -62,6 +62,12 @@ fn main() {
                 KeyPressed {code: U, ..} => {
                     game.undo();
                     set_game_position(&window, &mut game);
+                }
+
+                KeyPressed {code: Q, ..} => {
+                    if levels.peek() == None {
+                        window.close();
+                    }
                 }
 
                 Resized {..} => {
