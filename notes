@@ -11,6 +11,7 @@ Todo:
               is only true on this screen).
         — Better wordlist that doesn't consider all these bullshit
           words to be real.
+        — Package up the font with the game somehow.
     — Wishlist (easy):
         — Gravity should look a little more pleasing (as it stands,
           tiles reach their terminal velocity quite quickly).
@@ -25,7 +26,10 @@ Todo:
             — And it fades in and fades out with level transitions?
         — Dark mode.
     — Wishlist (maybe hard):
-        — There is some victory animation when you finish a puzzle.
+        — Victory animation when you finish a puzzle.
+        — Minor animation when you clear some tiles.
+            — Maybe a small starburst, and the victory animation is
+              a large starburst?
         — Endless mode?
         — Puzzle variations:
             — Large tiles (2×1, 1×2, 2×2, etc).
