@@ -1,9 +1,10 @@
 
-use std::sync::LazyLock;
 use std::sync::Mutex;
 
 /*
 // STATIC IMPLEMENTATION: RESTORE WHEN DONE REMOVING WORDS AUTOMATICALLY.
+
+use std::sync::LazyLock;
 
 static WORDS: LazyLock<Vec<String>> = LazyLock::new(|| {
     let mut words = 
@@ -60,6 +61,20 @@ pub fn remove_last_word_tried() {
     let last = LAST_WORD_TRIED.lock().unwrap();
     println!("removing the last word: {last}");
     WORDS.lock().unwrap().retain(|word| *word != *last);
+    save_words();
+}
+
+pub fn add_last_word_tried() {
+    let last = LAST_WORD_TRIED.lock().unwrap();
+
+    println!("adding the last word: {last}");
+
+    let mut lock = WORDS.lock().unwrap();
+
+    if let Err(pos) = lock.binary_search(&*last) {
+        lock.insert(pos, last.clone());
+    }
+    
     save_words();
 }
 
