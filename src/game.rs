@@ -101,6 +101,14 @@ impl Game {
         self.select_path = vec![];
         self.stage = Ongoing;
     }
+
+    pub fn undo(&mut self) {
+        if self.stage == Ongoing {
+            if self.fields.len() > 1 {
+                self.fields.remove(0);
+            }
+        }
+    }
 }
 
 // Public mouse-handling methods.
@@ -171,9 +179,10 @@ impl Game {
                 .collect::<String>()
         );
 
-        // If so, perform a deletion.
+        // If so, push a new field state and perform a deletion.
 
         if selected_word_is_valid {
+            self.push_field_state();
 
             // Set up the animation parameters of the tiles that will fall.
 
@@ -391,6 +400,22 @@ impl Game {
         }
 
         None
+    }
+
+    fn push_field_state(&mut self) {
+        self.fields.insert(0, self.fields[0].clone());
+
+        // Set the animation heights of all tiles in the previous
+        // field state to 0 so that, when the player resets to
+        // that state, tiles don't jump up into the air and start
+        // falling, even if they were in the air and falling when
+        // this state was pushed.
+
+        for tiles in &mut self.fields[1] {
+            for tile in tiles {
+                tile.animation_height = 0.0;
+            }
+        }
     }
 }
 
