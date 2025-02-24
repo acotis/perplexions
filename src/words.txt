@@ -20771,8 +20771,6 @@ dyes
 dyestuffs
 dyin
 dying
-dyke
-dykes
 dyn
 dynamic
 dynamical
@@ -23857,12 +23855,9 @@ faerie
 faery
 fafner
 fafnir
-fag
 fagan
 fagged
 fagging
-faggot
-faggots
 fagin
 fagot
 fagots
@@ -45049,10 +45044,6 @@ negress
 negresses
 negrito
 negritos
-negro
-negroes
-negroid
-negros
 negus
 neh
 nehemiah
@@ -45436,8 +45427,6 @@ niggah
 niggard
 niggardliness
 niggardly
-nigger
-niggers
 nigh
 nigher
 nighest
@@ -55802,11 +55791,6 @@ retaliated
 retaliating
 retaliation
 retaliatory
-retard
-retardation
-retarded
-retarding
-retards
 retch
 retching
 rete
