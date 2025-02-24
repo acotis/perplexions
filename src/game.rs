@@ -302,7 +302,7 @@ impl Game {
 
         self.restart_opacity = match self.restart_opacity {
             Off => Off,
-            OffButWasOn => OffButWasOn,
+            OffButWasOn => if self.level_index == 0 {Off} else {OffButWasOn},
             On(n) => On(if n < 255 {n+1} else {n}),
         };
     }
@@ -316,7 +316,7 @@ impl Game {
         let select_line_width = self.dimensions.tile_size() * 0.4;
         let character_size    = self.dimensions.tile_size() * 0.5;
         let stretch_radius    = self.dimensions.tile_size() * 0.8;
-        let restart_text_size = self.dimensions.tile_size() * 0.2;
+        let restart_text_size = self.dimensions.tile_size() * 0.3;
 
         // Set up the Text.
 
@@ -429,14 +429,16 @@ impl Game {
             "U = undo,  R = restart"
         };
 
+        /*
         let undo_center = self.dimensions.local_to_screen((
             (self.fields[0].len() as f32) * 0.35 - 0.5,
             -0.75,
         ));
+        */
 
         let restart_center = self.dimensions.local_to_screen((
             (self.fields[0].len() as f32) * 0.50 - 0.5,
-            -0.75,
+            -0.80,
         ));
 
         let restart_opacity = match self.restart_opacity {
