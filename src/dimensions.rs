@@ -35,7 +35,7 @@ impl Dimensions {
         self.width = width;
         self.height = self.width * self.aspect_ratio();
         self.tile_size = self.width / self.columns as f32;
-        self.aspect_ratio = self.rows as f32 / self.columns as f32;
+        self.aspect_ratio = (self.rows as f32 + 0.5) / self.columns as f32;
     }
 
     pub fn aspect_ratio(&self) -> f32 {
@@ -49,14 +49,14 @@ impl Dimensions {
     pub fn screen_to_local(&self, (x, y): (f32, f32)) -> (f32, f32) {
         (
             (x - self.origin_x) / self.tile_size - 0.5,
-           -(y - self.origin_y) / self.tile_size - 0.5,
+           -(y - self.origin_y) / self.tile_size - 0.5 - 0.5,
         )
     }
 
     pub fn local_to_screen(&self, (x, y): (f32, f32)) -> (f32, f32) {
         (
             self.origin_x + self.tile_size * (x + 0.5),
-            self.origin_y - self.tile_size * (y + 0.5),
+            self.origin_y - self.tile_size * (y + 0.5 + 0.5),
         )
     }
 }

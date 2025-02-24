@@ -8,11 +8,18 @@ use crate::draw;
 use crate::constants;
 use crate::dimensions::Dimensions;
 use self::GameStage::*;
+use self::Opacity::*;
 
 #[derive(PartialEq, Eq)]
 enum GameStage {
     Ongoing,
     Completed(usize),
+}
+
+enum Opacity {
+    Off,
+    OffButWasOn,
+    On(u8),
 }
 
 #[derive(Debug, Clone)]
@@ -28,6 +35,7 @@ pub struct Game {
     dimensions: Dimensions,
     last_mouse_pos: (f32, f32),
     stage: GameStage,
+    restart_opacity: Opacity,
 
     // Cached resources.
     font: FBox<Font>,
@@ -45,6 +53,7 @@ impl Game {
             dimensions: Dimensions::new(0, 0),
             last_mouse_pos: (0.0, 0.0),
             stage: Ongoing,
+            restart_opacity: Off,
             color: Color::BLACK,
             mild_color: Color::BLACK,
             font: Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial_Bold.ttf").expect("couldn't load Arial font"),
@@ -107,6 +116,7 @@ impl Game {
             if self.fields.len() > 1 {
                 self.fields.remove(0);
                 self.select_path = vec![];
+                if self.fields.len() == 1 {self.restart_opacity = OffButWasOn;}
             }
         }
     }
@@ -207,6 +217,14 @@ impl Game {
                 self.fields[0][column].remove(row);
             }
 
+            // Set the restart button to fade in.
+
+            self.restart_opacity = match self.restart_opacity {
+                Off => On(0),
+                OffButWasOn => On(255),
+                On(x) => On(x), // should never happen
+            };
+
             // Check if the game is completed.
 
             if self.fields[0].iter().all(|c| c.is_empty()) {
@@ -257,6 +275,12 @@ impl Game {
             let new_value = if n == 0 {0} else {n-1};
             self.stage = Completed(new_value);
         }
+
+        self.restart_opacity = match self.restart_opacity {
+            Off => Off,
+            OffButWasOn => OffButWasOn,
+            On(n) => On(if n < 255 {n+1} else {n}),
+        };
     }
 
     pub fn draw_self(&self, window: &mut RenderWindow) {
@@ -268,7 +292,7 @@ impl Game {
         let select_line_width = self.dimensions.tile_size() * 0.4;
         let character_size    = self.dimensions.tile_size() * 0.5;
         let stretch_radius    = self.dimensions.tile_size() * 0.8;
-        let restart_text_size = self.dimensions.tile_size() * 0.1;
+        let restart_text_size = self.dimensions.tile_size() * 0.2;
 
         // Set up the Text.
 
@@ -372,6 +396,60 @@ impl Game {
                 window.draw(&text);
             }
         }
+
+        // Draw the restart and undo texts.
+
+        let undo_string    = "U: undo";
+        let restart_string = "R: restart";
+
+        let undo_center = self.dimensions.local_to_screen((
+            (self.fields[0].len() as f32) * 0.25 - 0.5,
+            -0.75,
+        ));
+
+        let restart_center = self.dimensions.local_to_screen((
+            //(self.fields[0].len() as f32) * 0.75 - 0.5,
+            (self.fields[0].len() as f32) * 0.50 - 0.5,
+            -0.75,
+        ));
+
+        let restart_opacity = match self.restart_opacity {
+            Off => 0,
+            OffButWasOn => 0,
+            On(n) => if self.stage == Ongoing {
+                if n < 100 {0} else {n - 100}
+            } else {
+                0
+            }
+        };
+
+        text.set_character_size(restart_text_size as u32);
+        text.set_string(restart_string);
+        text.set_origin(sfml::system::Vector2f::new(
+            restart_string.chars().map(|c| self.font.glyph(c as u32, restart_text_size as u32, false, 0.0).advance()).sum::<f32>() * 0.5,
+            restart_text_size * 0.6
+        ));
+        text.set_position(sfml::system::Vector2f::new(restart_center.0, restart_center.1));
+        text.set_fill_color(Color::rgba(0, 0, 0, restart_opacity));
+        window.draw(&text);
+
+        /*
+        let undo_size = (
+            self.dimensions.tile_size() * self.fields[0].len() as f32 * 0.5 * 0.95,
+            self.dimensions.tile_size() * 0.5 * 0.8,
+        );
+
+        if (self.last_mouse_pos.0 - undo_center.0).abs() < undo_size.0 / 2.0
+        && (self.last_mouse_pos.1 - undo_center.1).abs() < undo_size.1 / 2.0 {
+            draw::rectangle_plain(
+                window,
+                undo_center,
+                undo_size.0,
+                undo_size.1,
+                Color::rgba(0, 0, 0, 45),
+            );
+        }
+        */
     }
 }
 
