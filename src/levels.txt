@@ -1,4 +1,23 @@
 ——————————
+plgmb
+tiuni
+——————————
+ s
+ss
+ce
+ni
+prand
+——————————
+ ppl
+ eve
+asine
+——————————
+seat
+qwre
+uick
+——————————
+# end of experimental levels
+——————————
 start
 ——————————
 click
@@ -53,10 +72,6 @@ puzzles
 good
 luck
 ——————————
- ppl
- eve
-asine
-——————————
 # todo: design more levels
 ——————————
  y
@@ -67,8 +82,6 @@ enti
 sdgu
 infms
 ffeat
-——————————
-# end of experimental levels
 ——————————
 # do a level that's one long row of letters
 ——————————

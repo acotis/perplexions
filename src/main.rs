@@ -77,7 +77,8 @@ fn main() {
                     set_game_position(&window, &mut game);
                 }
                 
-                KeyPressed {code: U, ..} => {
+                KeyPressed {code: U, ..} |
+                MouseButtonPressed {button: Right, ..} => {
                     game.undo();
                     set_game_position(&window, &mut game);
                 }

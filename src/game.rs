@@ -233,7 +233,7 @@ impl Game {
             // Set the restart button to fade in.
 
             self.restart_opacity = match self.restart_opacity {
-                Off => if self.level_index == 0 {On(0)} else {On(255)},
+                Off => if self.level_index == 0 {On(0)} else {On(0)},
                 OffButWasOn => On(255),
                 On(x) => On(x), // should never happen
             };
