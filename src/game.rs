@@ -23,7 +23,6 @@ struct Tile {
 }
 
 pub struct Game {
-    setup: String,
     fields: Vec<Vec<Vec<Tile>>>,
     select_path: Vec<(usize, usize)>,
     dimensions: Dimensions,
@@ -41,7 +40,6 @@ pub struct Game {
 impl Game {
     pub fn new<S: AsRef<str>>(setup: S, level_index: usize) -> Self {
         let mut ret = Self {
-            setup: String::from(setup.as_ref()),
             fields: vec![],
             select_path: vec![],
             dimensions: Dimensions::new(0, 0),
@@ -67,7 +65,23 @@ impl Game {
 
         // Set up state from level string.
         
-        ret.reset();
+        let width = setup.as_ref().lines().map(|l| l.len()).max().unwrap();
+        ret.fields = vec![vec![vec![]; width]];
+
+        for line in setup.as_ref().lines().rev() {
+            for (column, letter) in line.chars().enumerate() {
+                if letter != ' ' {
+                    ret.fields[0][column].push(Tile {
+                        letter,
+                        animation_height: 0.0,
+                        animation_vel: 0.0,
+                    });
+                }
+            }
+        }
+
+        let height = ret.fields[0].iter().map(|c| c.len()).max().unwrap();
+        ret.dimensions = Dimensions::new(width, height);
 
         // Set up the initial animation data (only applies to first load).
 
@@ -81,31 +95,18 @@ impl Game {
     }
 
     pub fn reset(&mut self) {
-        let width = self.setup.lines().map(|l| l.len()).max().unwrap();
-        self.fields = vec![vec![vec![]; width]];
-
-        for line in self.setup.lines().rev() {
-            for (column, letter) in line.chars().enumerate() {
-                if letter != ' ' {
-                    self.fields[0][column].push(Tile {
-                        letter,
-                        animation_height: 0.0,
-                        animation_vel: 0.0,
-                    });
-                }
+        if self.stage == Ongoing {
+            while self.fields.len() > 1 {
+                self.undo();
             }
         }
-
-        let height = self.fields[0].iter().map(|c| c.len()).max().unwrap();
-        self.dimensions = Dimensions::new(width, height);
-        self.select_path = vec![];
-        self.stage = Ongoing;
     }
 
     pub fn undo(&mut self) {
         if self.stage == Ongoing {
             if self.fields.len() > 1 {
                 self.fields.remove(0);
+                self.select_path = vec![];
             }
         }
     }

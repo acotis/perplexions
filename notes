@@ -1,10 +1,5 @@
 
 Todo:
-    — Single-move undo.
-        — Store a list of previous states.
-        — Just use vecs, it'll be fast enough.
-        — Use the same list of previous states to implement level
-          restarts.
     — Basic indicator of the restart feature.
     — Basic indicator of the undo feature.
     — Minimum viable product:
