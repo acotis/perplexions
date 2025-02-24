@@ -1369,7 +1369,6 @@ aisle
 aisles
 aisne
 aisy
-ait
 aitken
 aiwohikupua
 aix
@@ -20559,7 +20558,6 @@ dulness
 duluth
 dulwich
 duly
-dum
 duma
 dumas
 dumb
@@ -32752,6 +32750,7 @@ icicles
 icily
 icing
 icj
+ick
 icon
 iconium
 iconoclasm
@@ -35978,7 +35977,6 @@ jubilantly
 jubilation
 jubilee
 jubilees
-jud
 juda
 judaea
 judaean
@@ -36196,7 +36194,6 @@ kag
 kagig
 kah
 kahn
-kai
 kaid
 kail
 kain
@@ -36300,7 +36297,6 @@ kaskaskia
 kaspar
 kassala
 kasyapa
-kat
 kata
 kate
 katerina
@@ -57659,7 +57655,6 @@ samson
 samuel
 samuels
 samurai
-san
 sana
 sanative
 sanatorium
@@ -65066,7 +65061,6 @@ tait
 taiwan
 taj
 tajikistan
-tak
 taka
 take
 taken
@@ -66691,7 +66685,6 @@ tiff
 tiffany
 tiffin
 tiflis
-tig
 tige
 tigellinus
 tiger
@@ -74491,7 +74484,6 @@ zulma
 zulu
 zululand
 zulus
-zum
 zuni
 zuniga
 zur
