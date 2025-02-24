@@ -26,7 +26,6 @@ pub fn initialize() {
 */
 
 static WORDS: Mutex<Vec<String>> = Mutex::new(vec![]);
-
 static LAST_WORD_TRIED: Mutex<String> = Mutex::new(String::new());
 
 pub fn is_valid_word(word: String) -> bool {
@@ -35,21 +34,11 @@ pub fn is_valid_word(word: String) -> bool {
     WORDS.lock().unwrap().binary_search(&word).is_ok()
 }
 
-pub fn remove_last_word_tried() {
-    let last = LAST_WORD_TRIED.lock().unwrap();
-    println!("removing the last word: {last}");
-    std::fs::write(
-        "src/words.txt",
-        std::fs::read_to_string("src/words.txt")
-            .expect("couldn't open file for reading")
-            .lines()
-            .filter(|x| x.to_ascii_uppercase() != *last)
-            .collect::<Vec<_>>()
-            .join("\n")
-    ).expect("couldn't open file for writing");
+fn load_words() {
+    let mut lock = WORDS.lock().unwrap();
 
-    WORDS.lock().unwrap().clear();
-    WORDS.lock().unwrap().append(
+    lock.clear();
+    lock.append(
         &mut std::fs::read_to_string("src/words.txt")
             .expect("couldn't re-open file for re-reading")
             .to_ascii_uppercase()
@@ -57,7 +46,21 @@ pub fn remove_last_word_tried() {
             .map(str::to_owned)
             .collect::<Vec<String>>()
     );
-    WORDS.lock().unwrap().sort();
+    lock.sort();
+}
+
+fn save_words() {
+    std::fs::write(
+        "src/words.txt",
+        WORDS.lock().unwrap().iter().map(|s| s.to_ascii_lowercase()).collect::<Vec<_>>().join("\n")
+    ).expect("couldn't open file for writing");
+}
+
+pub fn remove_last_word_tried() {
+    let last = LAST_WORD_TRIED.lock().unwrap();
+    println!("removing the last word: {last}");
+    WORDS.lock().unwrap().retain(|word| *word != *last);
+    save_words();
 }
 
 pub fn levels() -> impl Iterator<Item=String> {
@@ -75,5 +78,5 @@ pub fn levels() -> impl Iterator<Item=String> {
 }
 
 pub fn initialize() {
-    remove_last_word_tried();
+    load_words();
 }
