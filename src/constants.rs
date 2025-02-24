@@ -30,11 +30,13 @@ static WORDS: Mutex<Vec<String>> = Mutex::new(vec![]);
 static LAST_WORD_TRIED: Mutex<String> = Mutex::new(String::new());
 
 pub fn is_valid_word(word: String) -> bool {
+    *LAST_WORD_TRIED.lock().unwrap() = word.clone();
     WORDS.lock().unwrap().binary_search(&word).is_ok()
 }
 
 pub fn remove_last_word_tried() {
     let last = LAST_WORD_TRIED.lock().unwrap();
+    println!("removing the last word: {last}");
     std::fs::write(
         "src/words.txt",
         std::fs::read_to_string("src/words.txt")
