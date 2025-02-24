@@ -37,6 +37,7 @@ pub struct Game {
     stage: GameStage,
     restart_opacity: Opacity,
     level_index: usize,
+    last_level: bool,
 
     // Cached resources.
     font: FBox<Font>,
@@ -47,15 +48,16 @@ pub struct Game {
 // Public non-graphics methods.
 
 impl Game {
-    pub fn new<S: AsRef<str>>(setup: S, level_index: usize) -> Self {
+    pub fn new<S: AsRef<str>>(setup: S, level_index: usize, last_level: bool) -> Self {
         let mut ret = Self {
             fields: vec![],
             select_path: vec![],
             dimensions: Dimensions::new(0, 0),
             last_mouse_pos: (0.0, 0.0),
             stage: Ongoing,
-            restart_opacity: Off,
+            restart_opacity: if last_level {On(0)} else {Off},
             level_index: level_index,
+            last_level: last_level,
             color: Color::BLACK,
             mild_color: Color::BLACK,
             font: Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial_Bold.ttf").expect("couldn't load Arial font"),
@@ -128,6 +130,8 @@ impl Game {
 
 impl Game {
     pub fn mouse_down(&mut self, x: f32, y: f32) {
+        if self.last_level {return;}
+
         self.last_mouse_pos = (x, y);
         if let Some((point, _distance)) = self.tile_at_screen_point(x, y) {
             self.select_path.push(point);
@@ -358,14 +362,12 @@ impl Game {
                 // Compute the fill color (highlight level).
 
                 let fill_color = 
-                    if self.select_path.contains(&(column, row)) {
+                    if self.select_path.contains(&(column, row))
+                    || self.tile_at_screen_point(self.last_mouse_pos.0, self.last_mouse_pos.1).map(|((c, r), _)|(c,r)) == Some((column, row))
+                    || self.last_level {
                         self.color
                     } else {
-                        if self.tile_at_screen_point(self.last_mouse_pos.0, self.last_mouse_pos.1).map(|((c, r), _)|(c,r)) == Some((column, row)) {
-                            self.color
-                        } else {
-                            Color::WHITE
-                        }
+                        Color::WHITE
                     };
 
                 // Draw the tile itself.
@@ -403,7 +405,11 @@ impl Game {
 
         //let undo_string    = "U: undo";
         //let restart_string = "R: restart";
-        let restart_string = "U = undo,  R = restart";
+        let restart_string = if self.last_level {
+            "Q = quit"
+        } else {
+            "U = undo,  R = restart"
+        };
 
         let undo_center = self.dimensions.local_to_screen((
             (self.fields[0].len() as f32) * 0.35 - 0.5,

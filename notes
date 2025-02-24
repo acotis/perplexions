@@ -1,14 +1,8 @@
 
 Todo:
-    — Basic indicator of the restart feature.
-    — Basic indicator of the undo feature.
+    — "Q to quit" actually works
     — Minimum viable product:
         — Five real levels.
-        — Basic indicator that the game is over.
-            — Last level uses solid-color tiles that can't be
-              selected.
-            — "Q to quit" only appears on this screen (and probably
-              is only true on this screen).
         — Better wordlist that doesn't consider all these bullshit
           words to be real.
         — Package up the font with the game somehow.
@@ -26,6 +20,7 @@ Todo:
             — And it fades in and fades out with level transitions?
         — Dark mode.
     — Wishlist (maybe hard):
+        — More pleasing indicator of the restart/undo feature.
         — Victory animation when you finish a puzzle.
         — Minor animation when you clear some tiles.
             — Maybe a small starburst, and the victory animation is
