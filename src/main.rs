@@ -12,6 +12,15 @@ use sfml::window::Key::{R, U, Q};
 
 use crate::game::Game;
 
+struct Explosion {
+    big: bool,
+    color: Color,
+    age: usize,
+
+    x: f32,
+    y: f32,
+}
+
 fn main() {
 
     // Initialize stuff.
@@ -20,6 +29,7 @@ fn main() {
     let mut levels = constants::levels().enumerate().peekable();
     let (id, level) = levels.next().unwrap();
     let mut game = Game::new(level, id, false);
+    let mut explosions: Vec<Explosion> = vec![];
 
     // Create the SFML window.
 
@@ -51,7 +61,15 @@ fn main() {
                 }
 
                 MouseButtonReleased {button: Left, ..} => {
-                    game.mouse_up();
+                    if let Some((color, big, x, y)) = game.mouse_up() {
+                        explosions.push(Explosion {
+                            big: big,
+                            color: color,
+                            age: 0,
+                            x: x,
+                            y: y,
+                        });
+                    }
                 }
 
                 KeyPressed {code: R, ..} => {
@@ -79,14 +97,44 @@ fn main() {
             }
         }
 
-        // Tick the game logic.
-
-        game.tick();
-
-        // Draw the game.
+        // Clear the window.
 
         window.clear(sfml::graphics::Color::WHITE);
+
+        // Tick the explosions and draw them.
+
+        for e in &mut explosions {
+            let radius = if e.big {
+                e.age as f32 * 20.0
+            } else {
+                e.age as f32 * 20.0
+            };
+
+            let opacity = if e.big {
+                (0.95_f32.powf(e.age as f32) * 255.0) * 
+                    if e.age > 40 {0.95_f32.powf((e.age - 40) as f32)} else {1.0}
+            } else {
+                //255.0 - (e.age as f32 * 20.0)
+                0.0
+            } as u8;
+
+            println!("Drawing explosion with opacity {opacity}, {}, {}", e.x, e.y);
+
+            draw::circle_plain(&mut window, (e.x, e.y), radius, 
+                Color::rgba(e.color.r, e.color.g, e.color.b, opacity as u8));
+
+            e.age += 1;
+        }
+
+        explosions.retain(|e| e.age < 10000);
+
+        // Tick the game logic and draw the game.
+
+        game.tick();
         game.draw_self(&mut window);
+
+        // "Display".
+
         window.display();
 
         // If the game is completed, load the next one.

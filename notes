@@ -6,14 +6,14 @@ Todo:
           words to be real.
         — Package up the font with the game somehow.
     — Wishlist (easy):
+        — Ten real levels.
+        — Fifteen real levels.
         — Gravity should look a little more pleasing (as it stands,
           tiles reach their terminal velocity quite quickly).
         — Reset should do nothing if tiles are falling (because it
           could be the start of the level).
         — Selection flashes when an incorrect word is attempted.
-        — Ten real levels.
         — Tiles leave green ghosts when a correct word is shot.
-        — Fifteen real levels.
         — Each level has a minor graphic besides its tiles (such as
           a floor).
             — And it fades in and fades out with level transitions?

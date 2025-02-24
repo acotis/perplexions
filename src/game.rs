@@ -145,7 +145,7 @@ impl Game {
                 let last_point = self.select_path[self.select_path.len()-1];
 
                 // If the mouse is close enough to the touched point,
-                // add it to the seelction path.
+                // add it to the selection path.
 
                 if distance < 0.4
                 && !self.select_path.contains(&point)
@@ -166,11 +166,11 @@ impl Game {
         }
     }
 
-    pub fn mouse_up(&mut self) {
+    pub fn mouse_up(&mut self) -> Option<(Color, bool, f32, f32)> {
 
         // If selection path is empty, return.
         
-        if self.select_path.is_empty() {return;}
+        if self.select_path.is_empty() {return None;}
 
         // If there is a tile under the mouse and it is a valid tile
         // to add, add it to the selection path even if the mouse is
@@ -200,6 +200,13 @@ impl Game {
 
         if selected_word_is_valid {
             self.push_field_state();
+
+            // Save the locus of the explosion.
+
+            let explosion_center = self.dimensions.local_to_screen((
+                self.select_path[self.select_path.len()-1].0 as f32,
+                self.select_path[self.select_path.len()-1].1 as f32,
+            ));
 
             // Set up the animation parameters of the tiles that will fall.
 
@@ -234,13 +241,24 @@ impl Game {
             // Check if the game is completed.
 
             if self.fields[0].iter().all(|c| c.is_empty()) {
-                self.stage = Completed(50);
+                self.stage = Completed(125);
             }
+
+            // Reset the selection and return a circle.
+
+            self.select_path.clear();
+            return Some((
+                self.color,
+                self.stage != Ongoing,
+                explosion_center.0,
+                explosion_center.1,
+            ));
         }
 
         // Reset the selection.
 
         self.select_path.clear();
+        None
     }
 }
 
