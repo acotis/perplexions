@@ -31967,8 +31967,6 @@ hopping
 hoppner
 hops
 hopton
-hor
-hora
 horace
 horae
 horatia
@@ -31978,7 +31976,6 @@ horatius
 horbury
 horde
 hordes
-hore
 horeb
 horizon
 horizons
@@ -38219,7 +38216,6 @@ lender
 lenders
 lending
 lends
-lene
 length
 lengthen
 lengthened
@@ -45078,7 +45074,6 @@ nejd
 nejdanov
 nek
 nekhludoff
-nel
 nela
 nele
 nell
@@ -45231,7 +45226,6 @@ neutralizing
 neutrals
 neuve
 neuville
-nev
 neva
 nevada
 nevah
@@ -54044,7 +54038,6 @@ ranting
 rantzau
 ranulph
 ranunculus
-rao
 raoul
 rap
 rapacious
@@ -56130,7 +56123,6 @@ richmond
 richness
 richt
 richter
-rick
 rickard
 ricker
 rickets
@@ -59200,7 +59192,6 @@ sentinels
 sentries
 sentry
 senza
-seo
 seoul
 sep
 sepals
@@ -70731,7 +70722,6 @@ velveteen
 velvets
 velvety
 vely
-ven
 vena
 venable
 venables
