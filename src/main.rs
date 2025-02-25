@@ -37,7 +37,7 @@ fn main() {
 
     let mut window = RenderWindow::new(
         (800, 600),
-        "Perplections",
+        "Perplexity",
         Style::DEFAULT,
         &Default::default(),
     ).unwrap();
