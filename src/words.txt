@@ -473,7 +473,6 @@ acetate
 acetic
 acetone
 acetylene
-ach
 achab
 achaean
 achaeans
@@ -1477,7 +1476,6 @@ albums
 albuquerque
 albury
 albus
-alc
 alca
 alcaeus
 alcal
@@ -3842,7 +3840,6 @@ aspirin
 aspiring
 asps
 asquith
-ass
 assad
 assai
 assail
@@ -9433,7 +9430,6 @@ caesar
 caesarea
 caesars
 caesura
-caf
 cafe
 cafes
 caff
@@ -10714,7 +10710,6 @@ cautious
 cautiously
 cautiousness
 caux
-cav
 cava
 cavaignac
 cavalcade
@@ -11040,7 +11035,6 @@ ch'ing
 ch'u
 ch'uan
 ch'un
-cha
 chabert
 chabot
 chace
@@ -11368,7 +11362,6 @@ charts
 charwoman
 chary
 charybdis
-chas
 chase
 chased
 chaser
@@ -11644,7 +11637,6 @@ cheyne
 chez
 chform
 chi
-chia
 chian
 chiang
 chianti
@@ -11804,7 +11796,6 @@ chipping
 chippy
 chips
 chiquita
-chir
 chirac
 chirche
 chirk
@@ -12289,7 +12280,6 @@ civitate
 cix
 cke
 ckh
-cla
 clachan
 clack
 clacking
@@ -15054,7 +15044,6 @@ cory
 corydon
 corymbs
 coryston
-cos
 cosa
 cosas
 cosden
@@ -16404,7 +16393,6 @@ cuxhaven
 cuyler
 cuyp
 cuzco
-cvi
 cvii
 cviii
 cwaedh
@@ -20081,7 +20069,6 @@ doxology
 doxy
 doyen
 doyle
-doz
 doze
 dozed
 dozen
@@ -21830,7 +21817,6 @@ emulation
 emulous
 emulsion
 emus
-en
 ena
 enable
 enabled
@@ -22589,7 +22575,6 @@ ermines
 erminia
 erminie
 ermyntrude
-ern
 erna
 erne
 ernest
@@ -23790,7 +23775,6 @@ fabulist
 fabulous
 fabulously
 fabyan
-fac
 fac'd
 facade
 facades
@@ -25387,7 +25371,6 @@ flitted
 flitter
 flitting
 flivver
-flo
 float
 floated
 floatin
@@ -29662,7 +29645,6 @@ habitues
 habsburg
 habsburgs
 habuit
-hac
 hacendero
 hacienda
 haciendas
@@ -30343,7 +30325,6 @@ hasn
 hasn't
 hasna
 hasp
-hass
 hassan
 hasse
 hassock
@@ -30443,7 +30424,6 @@ haute
 hautes
 hauteur
 hauteville
-hav
 havana
 havannah
 have
@@ -31278,7 +31258,6 @@ heywood
 hez
 hezekiah
 hi
-hia
 hiatus
 hiawatha
 hib
@@ -31501,7 +31480,6 @@ hippopotami
 hippopotamus
 hippy
 hips
-hir
 hira
 hiram
 hire
@@ -31575,7 +31553,6 @@ hittite
 hittites
 hitty
 hitzig
-hiv
 hive
 hives
 hiz
@@ -31624,7 +31601,6 @@ hoboes
 hoboken
 hobson
 hoby
-hoc
 hoch
 hoche
 hochelaga
@@ -31894,7 +31870,6 @@ honouring
 honours
 honte
 hony
-hoo
 hooch
 hood
 hooded
@@ -32045,7 +32020,6 @@ horticulturists
 horton
 hortus
 horus
-hos
 hosanna
 hosannas
 hose
@@ -35222,7 +35196,6 @@ itch
 itched
 itchen
 itching
-ite
 item
 items
 iter
@@ -35255,8 +35228,6 @@ iune
 ius
 iust
 iustice
-iv
-iva
 ivan
 ivanhoe
 ivanitch
@@ -37187,7 +37158,6 @@ laburnum
 labyrinth
 labyrinthine
 labyrinths
-lac
 lace
 laced
 lacedaemon
@@ -37426,7 +37396,6 @@ lampreys
 lamps
 lampson
 lamson
-lan
 lana
 lanark
 lanarkshire
@@ -37555,7 +37524,6 @@ lantz
 lanyard
 lanyon
 lanzi
-lao
 laocoon
 laodice
 laodicea
@@ -37677,7 +37645,6 @@ lasting
 lastingly
 lastly
 lasts
-lat
 lata
 latch
 latched
@@ -37880,7 +37847,6 @@ layne
 layout
 lays
 layton
-laz
 lazar
 lazare
 lazaretto
@@ -38275,7 +38241,6 @@ leopard
 leopardi
 leopards
 leopold
-lep
 lepage
 lepanto
 lepas
@@ -38978,7 +38943,6 @@ liued
 liues
 liuing
 lius
-liv
 liv'd
 livable
 live
@@ -43274,7 +43238,6 @@ moggy
 moghul
 mogul
 moguls
-moh
 mohair
 mohamed
 mohammad
@@ -43673,6 +43636,7 @@ moorish
 moorland
 moorlands
 moors
+moos
 moose
 moost
 moot
@@ -43875,7 +43839,6 @@ morva
 morvan
 morven
 morville
-mos
 mosaic
 mosaics
 mosby
@@ -44548,7 +44511,7 @@ nabopolassar
 naboth
 nabu
 nabuchodonosor
-nach
+nacho
 nachrichten
 nacht
 nacional
@@ -44559,7 +44522,6 @@ nadab
 nadia
 nadine
 nadir
-nae
 naebody
 naething
 naevius
@@ -44581,7 +44543,6 @@ nahr
 nahua
 nahuatl
 nahum
-nai
 naiad
 naiads
 naida
@@ -44648,7 +44609,6 @@ nant
 nantes
 nanteuil
 nantucket
-nao
 naomi
 naow
 nap
@@ -44673,7 +44633,6 @@ napping
 nappy
 napraxine
 naps
-nar
 nara
 narada
 narayan
@@ -44884,7 +44843,6 @@ nder
 ndly
 ne'er
 ne're
-nea
 neaera
 neal
 neale
@@ -45040,7 +44998,6 @@ negus
 neh
 nehemiah
 nehushta
-nei
 neid
 neigh
 neighbor
@@ -45114,7 +45071,6 @@ nepos
 nepotism
 neptune
 neque
-ner
 nera
 nere
 nereid
@@ -47500,7 +47456,6 @@ ovata
 ovate
 ovation
 ovations
-ove
 oven
 ovens
 over
@@ -47770,7 +47725,6 @@ paaker
 paardeberg
 pablo
 pabulum
-pac
 pace
 paced
 pacem
@@ -48815,7 +48769,6 @@ payroll
 pays
 payson
 payton
-paz
 pazzi
 pca
 pea
@@ -49004,7 +48957,6 @@ peishwa
 pekah
 pekin
 peking
-pel
 pelage
 pelagian
 pelagic
@@ -49737,7 +49689,6 @@ petulantly
 petulengro
 petunia
 petworth
-peu
 peuple
 peuples
 peur
@@ -50032,7 +49983,6 @@ physiologist
 physiologists
 physiology
 physique
-pia
 piacenza
 piang
 pianissimo
@@ -50413,7 +50363,6 @@ pitchfork
 pitchforks
 pitching
 pitchy
-pite
 piteous
 piteously
 pitfall
@@ -50464,8 +50413,9 @@ pixley
 pixy
 pizarro
 pizen
+pizza
+pizzas
 pizzo
-pla
 plac
 plac'd
 placable
@@ -50588,7 +50538,6 @@ plasters
 plastic
 plasticity
 plastron
-plat
 plata
 plataea
 plate
@@ -50736,7 +50685,6 @@ plevna
 plexus
 pleydell
 pleyel
-pli
 pliability
 pliable
 pliancy
@@ -51233,7 +51181,6 @@ populo
 populous
 populum
 populus
-por
 porcelain
 porcelains
 porch
@@ -51566,7 +51513,6 @@ pozzo
 ppp
 pps
 pr'ythee
-pra
 practicability
 practicable
 practical
@@ -52027,7 +51973,6 @@ prey
 preyed
 preying
 preys
-pri
 priam
 priapus
 price
@@ -53064,7 +53009,6 @@ puppets
 puppies
 puppy
 pups
-pur
 pura
 purana
 puranas
@@ -53991,7 +53935,6 @@ randle
 randolph
 random
 randy
-rane
 ranee
 ranelagh
 rang
@@ -55260,7 +55203,6 @@ remunerative
 remus
 remusat
 remy
-ren
 rena
 renaissance
 renal
@@ -56351,7 +56293,6 @@ risley
 risque
 rissoles
 rist
-rit
 rita
 ritchie
 rite
@@ -57869,7 +57810,6 @@ sarve
 sarved
 sarvice
 sary
-sas
 sash
 sasha
 sashes
@@ -59922,7 +59862,6 @@ shivered
 shivering
 shivers
 shivery
-sho
 shoa
 shoal
 shoals
@@ -61193,6 +61132,7 @@ smoldered
 smoldering
 smolensk
 smollett
+smooch
 smoot
 smooth
 smoothed
@@ -61469,7 +61409,6 @@ software
 softy
 sofya
 soggy
-soh
 soho
 sohrab
 soi
@@ -61605,7 +61544,6 @@ solves
 solving
 solway
 solyman
-som
 soma
 somali
 somalia
@@ -61683,7 +61621,6 @@ sonship
 sont
 sontag
 sonya
-soo
 sooin
 soojah
 soon
@@ -61778,7 +61715,6 @@ sorting
 sorts
 sorwe
 sory
-sos
 sot
 soter
 soth
@@ -64986,8 +64922,10 @@ tackles
 tackleton
 tackling
 tacks
+taco
 tacoma
 tacon
+tacos
 tact
 tactful
 tactfully
@@ -65032,7 +64970,6 @@ tahitian
 tahitians
 tahn
 tahoe
-tai
 taient
 tail
 taile
@@ -65073,7 +65010,6 @@ takin
 taking
 takings
 taku
-tal
 talavera
 talbert
 talbot
@@ -66597,7 +66533,6 @@ thyrsus
 thyrza
 thys
 thyself
-tia
 tiago
 tial
 tiamat
@@ -66865,7 +66800,6 @@ tiptoes
 tipton
 tiptop
 tique
-tir
 tir'd
 tira
 tiraboschi
@@ -67887,8 +67821,6 @@ trevor
 trevors
 trew
 trewe
-tri
-tria
 triad
 triads
 trial
@@ -69240,7 +69172,6 @@ undulatory
 unduly
 undutiful
 undying
-une
 unearned
 unearth
 unearthed
@@ -70288,7 +70219,6 @@ uxor
 uzbekistan
 uzziah
 vaal
-vac
 vaca
 vacancies
 vacancy
@@ -71170,7 +71100,6 @@ vij
 vijayanagar
 viking
 vikings
-vil
 vila
 vilayet
 vile
@@ -71271,7 +71200,6 @@ vintner
 vintners
 vinton
 vinum
-vio
 viol
 viola
 violante
@@ -71302,11 +71230,9 @@ viols
 viper
 vipers
 vipont
-vir
 viracocha
 virago
 virchow
-vire
 vireo
 vireos
 vires
@@ -71534,7 +71460,6 @@ vogel
 vogler
 vogt
 vogue
-voi
 voiage
 voice
 voiced
@@ -74283,7 +74208,6 @@ yvon
 yvonne
 zab
 zabern
-zac
 zacatecas
 zaccheus
 zach
@@ -74300,7 +74224,6 @@ zahn
 zaidee
 zaidos
 zaire
-zal
 zama
 zaman
 zambal
@@ -74311,7 +74234,6 @@ zambia
 zamboanga
 zamora
 zamorin
-zan
 zandt
 zane
 zanesville
@@ -74321,6 +74243,7 @@ zanoni
 zante
 zany
 zanzibar
+zap
 zapolya
 zapus
 zar
@@ -74330,7 +74253,6 @@ zarah
 zarahemla
 zarate
 zarathustra
-zat
 zau
 zay
 zbyszko
@@ -74437,6 +74359,7 @@ zip
 zircon
 zis
 ziska
+zit
 zita
 zither
 zizi
@@ -74444,7 +74367,6 @@ zoar
 zobeide
 zodiac
 zodiacal
-zoe
 zoeth
 zog
 zohar
@@ -74463,6 +74385,7 @@ zoology
 zoom
 zoon
 zoophytes
+zoos
 zopyrus
 zora
 zoraida
