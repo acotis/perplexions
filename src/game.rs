@@ -60,7 +60,7 @@ impl Game {
             last_level: last_level,
             color: Color::BLACK,
             mild_color: Color::BLACK,
-            font: Font::from_file("/usr/share/fonts/truetype/msttcorefonts/Arial_Bold.ttf").expect("couldn't load Arial font"),
+            font: Font::from_memory_static(include_bytes!("Arial_Bold.ttf")).expect("couldn't load Arial font"),
         };
 
         // Create the real value of the color.
