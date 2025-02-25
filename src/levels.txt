@@ -42,10 +42,6 @@ ce
 ni
 prand
 ——————————
- ppl
- eve
-asine
-——————————
 seat
 qwre
 uick
@@ -111,6 +107,10 @@ puzzles
 ——————————
 good
 luck
+——————————
+ ppl
+ eve
+asine
 ——————————
 # todo: design more levels
 ——————————
