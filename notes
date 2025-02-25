@@ -1,58 +1,33 @@
 
 Todo:
-    — Minimum viable product:
-        — Five real levels.
-        — Better wordlist that doesn't consider all these bullshit
-          words to be real.
-        — Remove the dictionary-trimming tool.
-    — Wishlist (easy):
-        — Ten real levels.
-        — Fifteen real levels.
-        — Gravity should look a little more pleasing (as it stands,
-          tiles reach their terminal velocity quite quickly).
-        — Reset should do nothing if tiles are falling (because it
-          could be the start of the level).
-        — Selection flashes when an incorrect word is attempted.
-        — Tiles leave green ghosts when a correct word is shot.
-        — Each level has a minor graphic besides its tiles (such as
-          a floor).
-            — And it fades in and fades out with level transitions?
-        — Dark mode.
-    — Wishlist (maybe hard):
-        — More pleasing indicator of the restart/undo feature.
-        — Victory animation when you finish a puzzle.
-        — Minor animation when you clear some tiles.
-            — Maybe a small starburst, and the victory animation is
-              a large starburst?
-        — Endless mode?
-        — Puzzle variations:
-            — Large tiles (2×1, 1×2, 2×2, etc).
-            — Blank tiles that do not need to be used (but can hold
-              up other tiles).
-    — Further ideas:
-        — Title screen? Probably not.
-        — Use color somewhere?
-        
-    — Try following this tutorial to get it on the web: https://ianjk.com/game-engine-in-rust/
-    — Design a bunch of levels.
-    — Wishlist:
+    — Make fifteen real levels.
+    — Fiddle with those levels and weed out incorrect word judgments.
+    — Playtest.
+    — Remove the dictionary-trimming tool.
+    — Compile for Linux.
+    — Publish for Linux on itch.io.
+    — Bonus: Compile for Windows and publish that to itch.io too.
+    — Bonus: Try following this tutorial to get it on the web:
+      https://ianjk.com/game-engine-in-rust/
 
-Obvious words which are missing from my current (2025 Feb 24) list:
-    — [none]
+Possible tweaks:
+    — Gravity should look a little more pleasing (as it stands,
+      tiles reach their terminal velocity quite quickly).
 
-Non-obvious-words which are included in that list:
-    — cli
-    — syr (but remember this one affects the end screen)
-    — duc
-    — glou
-    — gis
-    — grav
-    — ity
-    — dr
-    — ful
-    — fas
-    — sta
-    — appl
-    — thess
-    — rand
+Probably rejected:
+    — Selection flashes when an incorrect word is attempted.
+    — Tiles leave green ghosts when a correct word is shot.
+    — Each level has a minor graphic besides its tiles (such as
+      a floor).
+        — And it fades in and fades out with level transitions?
+    — Dark mode.
+    — Endless mode?
+    — Puzzle variations:
+        — Large tiles (2×1, 1×2, 2×2, etc).
+        — Blank tiles that do not need to be used (but can hold
+          up other tiles).
+    — Title screen? Probably not.
+    — Reset should do nothing if tiles are falling (because it
+      could be the start of the level).
+    — More pleasing indicator of the restart/undo feature.
 
