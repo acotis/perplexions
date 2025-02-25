@@ -241,7 +241,7 @@ impl Game {
             // Check if the game is completed.
 
             if self.fields[0].iter().all(|c| c.is_empty()) {
-                self.stage = Completed(125);
+                self.stage = Completed(110);
             }
 
             // Reset the selection and return a circle.
@@ -426,7 +426,11 @@ impl Game {
         let restart_string = if self.last_level {
             "Q = quit"
         } else {
-            "U = undo,  R = restart"
+            if self.level_index == 0 {
+                "press R to restart"
+            } else {
+                "R = restart   U = undo"
+            }
         };
 
         /*

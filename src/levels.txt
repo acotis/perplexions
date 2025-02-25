@@ -50,6 +50,8 @@ uick
 ——————————
 start
 ——————————
+welcome
+——————————
 click
 anddrag
 tocreate

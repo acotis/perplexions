@@ -116,7 +116,7 @@ fn main() {
 
         for e in &mut explosions {
             let radius = if e.big {
-                e.age as f32 * 20.0
+                e.age as f32 * 25.0
             } else {
                 e.age as f32 * 20.0
             };
