@@ -23923,7 +23923,6 @@ faking
 fakir
 fakirs
 fakrash
-fal
 falaise
 falchion
 falco
@@ -37258,7 +37257,6 @@ laertius
 laes
 laet
 laetitia
-laf
 lafarge
 lafayette
 lafcadio
@@ -44564,7 +44562,6 @@ naka
 naked
 nakedly
 nakedness
-nal
 nala
 nam
 nam'd
@@ -44694,7 +44691,6 @@ nastiness
 nasturtium
 nasturtiums
 nasty
-nat
 nat'ral
 nata
 natacha
