@@ -4,6 +4,8 @@ Todo:
     — Fiddle with those levels and weed out incorrect word judgments.
     — Playtest.
     — Remove the dictionary-trimming tool.
+    — Swap in the final levels file.
+    — Play through the whole game once.
     — Compile for Linux.
     — Publish for Linux on itch.io.
     — Bonus: Compile for Windows and publish that to itch.io too.
@@ -11,6 +13,9 @@ Todo:
       https://ianjk.com/game-engine-in-rust/
 
 Possible tweaks:
+    — Make the undo/restart text show up from the start for
+      all levels but the first (otherwise I think players will
+      "learn" that it indicates failure).
     — Gravity should look a little more pleasing (as it stands,
       tiles reach their terminal velocity quite quickly).
 
