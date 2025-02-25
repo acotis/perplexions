@@ -25594,7 +25594,6 @@ foil
 foiled
 foils
 foine
-fois
 foist
 foisted
 foix
@@ -60209,7 +60208,6 @@ sieve
 sievers
 sieves
 sieyes
-sif
 sift
 sifted
 sifter
@@ -61341,7 +61339,6 @@ sobre
 sobriety
 sobriquet
 sobs
-soc
 soche
 soci
 sociability

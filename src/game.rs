@@ -241,7 +241,7 @@ impl Game {
             // Check if the game is completed.
 
             if self.fields[0].iter().all(|c| c.is_empty()) {
-                self.stage = Completed(110);
+                self.stage = Completed(125);
             }
 
             // Reset the selection and return a circle.
@@ -282,8 +282,8 @@ impl Game {
             for tile in column {
                 tile.animation_vel += 0.015;
 
-                if tile.animation_vel > 0.4 {
-                    tile.animation_vel = 0.4;
+                if tile.animation_vel > 0.8 {
+                    tile.animation_vel = 0.8;
                 }
 
                 tile.animation_height -= tile.animation_vel;
