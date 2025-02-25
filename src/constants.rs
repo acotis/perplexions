@@ -21,6 +21,14 @@ pub fn is_valid_word(word: String) -> bool {
     WORDS.binary_search(&word).is_ok()
 }
 
+pub fn remove_last_word_tried() {
+    println!("NOT REMOVING ANYTHING!!");
+}
+
+pub fn add_last_word_tried() {
+    println!("NOT ADDING ANYTHING!!");
+}
+
 pub fn initialize() {
     LazyLock::force(&WORDS);
 }
@@ -80,6 +88,10 @@ pub fn add_last_word_tried() {
     save_words();
 }
 
+pub fn initialize() {
+    load_words();
+}
+
 pub fn levels() -> impl Iterator<Item=String> {
     include_str!("levels.txt")
         .split("——————————")
@@ -94,6 +106,3 @@ pub fn levels() -> impl Iterator<Item=String> {
         .filter(|split| split.trim() != "")
 }
 
-pub fn initialize() {
-    load_words();
-}
