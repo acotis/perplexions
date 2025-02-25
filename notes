@@ -2,6 +2,9 @@
 Todo:
     — Make fifteen real levels.
     — Fiddle with those levels and weed out incorrect word judgments.
+    — Create a tool to auto-analyze any level and determine all the possible
+      words that can possibly be tried when playing it which are currently
+      deemed to be words.
     — Playtest.
     — Remove the dictionary-trimming tool.
     — Finalize the name of the game and the credits screen.
