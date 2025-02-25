@@ -3300,7 +3300,6 @@ are
 area
 areas
 areca
-aren
 aren't
 arena
 arenaria
