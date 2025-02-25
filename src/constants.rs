@@ -1,7 +1,4 @@
 
-use std::sync::Mutex;
-
-/*
 // STATIC IMPLEMENTATION: RESTORE WHEN DONE REMOVING WORDS AUTOMATICALLY.
 
 use std::sync::LazyLock;
@@ -22,17 +19,18 @@ pub fn is_valid_word(word: String) -> bool {
 }
 
 pub fn remove_last_word_tried() {
-    println!("NOT REMOVING ANYTHING!!");
 }
 
 pub fn add_last_word_tried() {
-    println!("NOT ADDING ANYTHING!!");
 }
 
 pub fn initialize() {
     LazyLock::force(&WORDS);
 }
-*/
+
+/*
+
+use std::sync::Mutex;
 
 static WORDS: Mutex<Vec<String>> = Mutex::new(vec![]);
 static LAST_WORD_TRIED: Mutex<String> = Mutex::new(String::new());
@@ -91,6 +89,8 @@ pub fn add_last_word_tried() {
 pub fn initialize() {
     load_words();
 }
+
+*/
 
 pub fn levels() -> impl Iterator<Item=String> {
     include_str!("levels.txt")
