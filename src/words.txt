@@ -10853,7 +10853,6 @@ cementing
 cements
 cemeteries
 cemetery
-cen
 cenas
 cenci
 cenis
@@ -10991,7 +10990,6 @@ cervera
 cervical
 cervix
 cervus
-ces
 cesar
 cesare
 cesarea
@@ -12072,7 +12070,6 @@ chutes
 chutney
 chuzzlewit
 chyle
-cia
 cian
 ciaran
 cib
@@ -12120,7 +12117,6 @@ cimeter
 cimmerian
 cimmerians
 cimon
-cin
 cinamon
 cinch
 cinched
@@ -12151,7 +12147,6 @@ cipango
 cipher
 ciphering
 ciphers
-cir
 circ
 circa
 circassia
@@ -20963,7 +20958,6 @@ echo
 echoed
 echoes
 echoing
-eck
 eckert
 eckhardt
 eckhart
@@ -22523,7 +22517,6 @@ ercole
 erd
 erde
 erdmann
-ere
 erebus
 erec
 erech
@@ -22611,7 +22604,6 @@ errors
 errour
 errours
 errs
-ers
 erse
 erskine
 erst
@@ -32678,7 +32670,6 @@ iambic
 iambics
 iamblichus
 iames
-ian
 iar
 ibarra
 ibbetson
@@ -36462,7 +36453,6 @@ kepler
 keppel
 kept
 kepte
-ker
 kerb
 kerchief
 kerchiefs
@@ -44876,7 +44866,6 @@ nebula
 nebulae
 nebular
 nebulous
-nec
 necessarie
 necessaries
 necessarily
@@ -45086,7 +45075,6 @@ nervously
 nervousness
 nervures
 nervy
-nes
 nesbit
 nesbitt
 nescience
@@ -45276,7 +45264,6 @@ nibelungs
 niblo
 niblungs
 nibs
-nic
 nica
 nicaea
 nicanor
@@ -46539,7 +46526,6 @@ ok
 oka
 okanagan
 okay
-oke
 oken
 okes
 okhotsk
@@ -49993,7 +49979,6 @@ piazza
 piazzas
 piazzetta
 pibroch
-pic
 pica
 picard
 picardy
@@ -50300,7 +50285,6 @@ piqued
 piques
 piquet
 piquette
-pir
 piracies
 piracy
 piraeus
@@ -50312,7 +50296,6 @@ pirkheimer
 pirogue
 pirouette
 pirouetting
-pis
 pisa
 pisan
 pisani
@@ -53217,7 +53200,6 @@ qu'ils
 qu'on
 qu'un
 qu'une
-qua
 quack
 quackery
 quacking
@@ -53543,7 +53525,6 @@ quinze
 quip
 quippe
 quips
-quire
 quires
 quirinal
 quirinus
@@ -54173,7 +54154,6 @@ razumov
 rchen
 rcs
 rdinate
-re
 rea
 reach
 reach'd
@@ -54413,7 +54393,6 @@ reciter
 reciters
 recites
 reciting
-reck
 reck'n
 recked
 reckin
@@ -55498,7 +55477,6 @@ rerdell
 reread
 reredos
 rerum
-res
 resaca
 resartus
 rescind
@@ -55695,7 +55673,6 @@ resurrection
 resuscitate
 resuscitated
 resuscitation
-ret
 retail
 retailed
 retailer
@@ -56003,7 +55980,6 @@ rhythms
 ria
 rial
 rialto
-rian
 riano
 riario
 riata
@@ -56027,7 +56003,6 @@ ribera
 ribes
 ribot
 ribs
-ric
 rica
 rican
 ricardo
@@ -56194,7 +56169,6 @@ rimmon
 rimrock
 rims
 rimsky
-rin
 rinaldo
 rincon
 rind
@@ -58709,7 +58683,6 @@ sebastiano
 sebastien
 sebastopol
 sebright
-sec
 secede
 seceded
 seceders
@@ -59025,7 +58998,6 @@ sempronius
 sempstress
 semyon
 semyonov
-sen
 sena
 senate
 senates
@@ -65357,7 +65329,6 @@ tavia
 tavish
 tavistock
 tavy
-taw
 tawdry
 tawi
 tawney
@@ -65701,7 +65672,6 @@ tepe
 tepee
 tepees
 tepid
-ter
 tera
 terah
 terai
@@ -65799,7 +65769,6 @@ tertius
 tertsky
 tertullian
 terzky
-tes
 tesla
 tesman
 tesno
@@ -71736,7 +71705,6 @@ wagtail
 wagtails
 wah
 wahine
-wai
 waie
 waies
 waif
@@ -71778,7 +71746,6 @@ waive
 waived
 waiver
 waiving
-wak
 wak'd
 waka
 wake
@@ -72094,7 +72061,6 @@ wastes
 wastin
 wasting
 wastrel
-wat
 wat'ry
 watauga
 watch
@@ -72443,7 +72409,6 @@ wente
 wentworth
 wenzel
 wept
-wer
 werden
 were
 weren
@@ -72458,7 +72423,6 @@ wert
 werther
 werwolf
 wery
-wes
 wesden
 wesel
 wesen
@@ -73855,7 +73819,6 @@ xxv
 xxvi
 xxvii
 xxviii
-xxx
 xxxi
 xxxii
 xxxiii
