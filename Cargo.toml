@@ -3,5 +3,9 @@ name = "perplections"
 version = "0.1.0"
 edition = "2021"
 
+[features]
+production = [] # feature has no explicit dependencies
+development = [] # feature has no explicit dependencies
+
 [dependencies]
 sfml = "0.24.0"
