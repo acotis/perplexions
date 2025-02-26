@@ -109,13 +109,10 @@ fn parse_levels(level_data: &'static str) -> impl Iterator<Item=String> {
 }
 
 pub fn levels() -> impl Iterator<Item=String> {
-    if cfg!(feature="experimental-levels") {
-        parse_levels(include_str!("levels_experimental.txt"))
-    } else {
-        parse_levels(include_str!("levels.txt"))
-    }
+    #[cfg(    feature="experimental-levels") ] {parse_levels(include_str!("levels_experimental.txt"))}
+    #[cfg(not(feature="experimental-levels"))] {parse_levels(include_str!("levels.txt"))}
 }
 
-#[cfg(feature="development")] pub use development::*;
-#[cfg(feature="production" )] pub use production::*;
+#[cfg(    feature="development") ] pub use development::*;
+#[cfg(not(feature="development"))] pub use production::*;
 
