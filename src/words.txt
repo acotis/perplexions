@@ -3349,7 +3349,6 @@ argyleshire
 argyll
 argyllshire
 argynnis
-ari
 aria
 ariadne
 arian
@@ -3581,7 +3580,6 @@ arrowsmith
 arrowy
 arroyo
 arry
-ars
 arsaces
 arsdale
 arse
@@ -8532,7 +8530,6 @@ britton
 britz
 brixham
 brixton
-bro
 broach
 broached
 broaching
@@ -9025,7 +9022,6 @@ buoyant
 buoyantly
 buoyed
 buoys
-bur
 burbage
 burbank
 burch
@@ -9041,7 +9037,6 @@ burdensome
 burdett
 burdock
 burdon
-bure
 bureau
 bureaucracy
 bureaucratic
@@ -9051,7 +9046,6 @@ buren
 burette
 burford
 burg
-burge
 burger
 burges
 burgess
@@ -20634,7 +20628,6 @@ dupre
 dupuis
 dupuy
 duquesne
-dur
 dura
 durability
 durable
@@ -27823,7 +27816,6 @@ giovan
 giovanna
 giovanni
 giovio
-gip
 gipsey
 gipsies
 gipsy
@@ -32947,7 +32939,6 @@ ilmarinen
 ilo
 ilocos
 iloilo
-ils
 ilse
 ilu
 ilya
@@ -33986,7 +33977,6 @@ infusing
 infusion
 infusions
 infusoria
-ing
 inga
 ingalls
 ingate
@@ -34079,7 +34069,6 @@ inhospitality
 inhuman
 inhumanity
 inhumanly
-ini
 inigo
 inimical
 inimitable
@@ -34914,7 +34903,6 @@ ipso
 ipsum
 ipswich
 ipu
-ira
 irae
 irak
 iran
@@ -37445,7 +37433,6 @@ landy
 lane
 lanes
 lanfranc
-lang
 langage
 langdale
 langdon
@@ -38685,7 +38672,6 @@ limply
 limpopo
 limps
 limulus
-lin
 lina
 linacre
 linaria
@@ -38726,7 +38712,6 @@ liner
 liners
 lines
 linforth
-ling
 linga
 lingam
 lingard
@@ -38806,7 +38791,6 @@ liquids
 liquor
 liquorice
 liquors
-lir
 lira
 lire
 lis
@@ -41172,7 +41156,6 @@ maryon
 marys
 marysville
 marzio
-mas
 mas'r
 masa
 masaccio
@@ -44559,14 +44542,12 @@ namibia
 naming
 namque
 namur
-nan
 nana
 nance
 nancy
 nanda
 nane
 nanette
-nang
 nani
 nankeen
 nankin
@@ -45405,7 +45386,6 @@ nimmo
 nimrod
 nimroud
 nimrud
-nin
 nina
 nine
 ninepence
@@ -46371,7 +46351,6 @@ odorous
 odors
 odour
 odours
-ods
 odysseus
 odyssey
 oecd
@@ -47089,11 +47068,9 @@ orphans
 orpheus
 orphic
 orpiment
-orr
 orrery
 orrin
 orris
-ors
 orse
 orses
 orsi
@@ -47616,7 +47593,6 @@ ovoid
 ovule
 ovules
 ovum
-ow
 owain
 owari
 owd
@@ -51033,7 +51009,6 @@ pompous
 pompously
 pomps
 pomuchelskopp
-pon
 ponape
 ponca
 ponce
@@ -52358,7 +52333,6 @@ promulgate
 promulgated
 promulgating
 promulgation
-pron
 prone
 proneness
 prong
@@ -52667,7 +52641,6 @@ proximal
 proximate
 proximity
 proxy
-prs
 prt
 prude
 prudence
@@ -56258,7 +56231,6 @@ rituals
 ritz
 riuer
 riuers
-riv
 riva
 rival
 rivaled
@@ -56553,7 +56525,6 @@ romping
 romps
 romsey
 romulus
-ron
 rona
 ronald
 ronan
@@ -56902,7 +56873,6 @@ rubus
 ruby
 ruck
 rucker
-rud
 rudatta
 rudd
 rudder
@@ -57121,7 +57091,6 @@ rutted
 rutter
 rutting
 ruxton
-ruy
 ruysbroeck
 ruysdael
 ruyter
@@ -59236,7 +59205,6 @@ servitude
 servius
 servo
 servus
-ses
 sesame
 sese
 sesostris
@@ -60051,7 +60019,6 @@ siah
 siam
 siamese
 sian
-sib
 siberia
 siberian
 sibi
@@ -60494,7 +60461,6 @@ sirra
 sirrah
 sirs
 sirup
-sis
 sisal
 sisera
 sismondi
@@ -62048,7 +62014,6 @@ sphincter
 sphinx
 sphinxes
 sphynx
-spi
 spice
 spiced
 spicer
@@ -62277,7 +62242,6 @@ spouter
 spouting
 spouts
 spoze
-spr
 sprache
 spragg
 sprague
@@ -62458,9 +62422,7 @@ squirt
 squirted
 squirting
 squirts
-sr
 sree
-sri
 srinagar
 ssa
 sse
@@ -71732,7 +71694,6 @@ wakens
 wakes
 wakin
 waking
-wal
 walbridge
 walbrook
 walcheren
@@ -73255,7 +73216,6 @@ wogan
 wohl
 woke
 woking
-wol
 wolcott
 wold
 wolde
@@ -74116,7 +74076,6 @@ yung
 yunnan
 yup
 yupanqui
-yur
 yure
 yus
 yusef
