@@ -3,8 +3,6 @@
 
 use std::sync::LazyLock;
 
-/*
-
 static WORDS: LazyLock<Vec<String>> = LazyLock::new(|| {
     let mut words = 
         include_str!("words.txt")
@@ -30,7 +28,7 @@ pub fn initialize() {
     LazyLock::force(&WORDS);
 }
 
-*/
+/*
 
 use std::sync::Mutex;
 
@@ -92,8 +90,10 @@ pub fn initialize() {
     load_words();
 }
 
+*/
+
 pub fn levels() -> impl Iterator<Item=String> {
-    include_str!("levels_experimental.txt")
+    include_str!("levels.txt")
         .split("——————————")
         .map(str::to_ascii_uppercase)
         .map(|level|
