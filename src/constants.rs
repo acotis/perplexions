@@ -93,7 +93,7 @@ pub fn initialize() {
 */
 
 pub fn levels() -> impl Iterator<Item=String> {
-    include_str!("levels.txt")
+    include_str!("levels_experimental.txt")
         .split("——————————")
         .map(str::to_ascii_uppercase)
         .map(|level|
