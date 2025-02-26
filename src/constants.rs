@@ -27,10 +27,6 @@ mod production {
     pub fn initialize() {
         LazyLock::force(&WORDS);
     }
-
-    pub fn levels() -> impl Iterator<Item=String> {
-        super::parse_levels(include_str!("levels.txt"))
-    }
 }
 
 #[allow(unused)]
@@ -96,10 +92,6 @@ mod development {
     pub fn initialize() {
         load_words();
     }
-
-    pub fn levels() -> impl Iterator<Item=String> {
-        super::parse_levels(include_str!("levels_experimental.txt"))
-    }
 }
 
 fn parse_levels(level_data: &'static str) -> impl Iterator<Item=String> {
@@ -114,6 +106,14 @@ fn parse_levels(level_data: &'static str) -> impl Iterator<Item=String> {
                  .join("\n")
         )
         .filter(|split| split.trim() != "")
+}
+
+pub fn levels() -> impl Iterator<Item=String> {
+    if cfg!(feature="experimental-levels") {
+        parse_levels(include_str!("levels_experimental.txt"))
+    } else {
+        parse_levels(include_str!("levels.txt"))
+    }
 }
 
 #[cfg(feature="development")] pub use development::*;

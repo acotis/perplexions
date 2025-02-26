@@ -6,6 +6,7 @@ edition = "2021"
 [features]
 production = [] # feature has no explicit dependencies
 development = [] # feature has no explicit dependencies
+experimental-levels = [] # feature has no explicit dependencies
 
 [dependencies]
 sfml = "0.24.0"
