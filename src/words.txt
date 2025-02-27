@@ -17897,7 +17897,6 @@ derek
 derelict
 dereliction
 derelicts
-derg
 derham
 deride
 derided
@@ -20267,7 +20266,6 @@ driving
 drizzle
 drizzling
 drizzly
-dro
 drogheda
 droit
 droits
@@ -20995,7 +20993,6 @@ eden
 edes
 edessa
 edestone
-edg
 edgar
 edgcumbe
 edge
@@ -22506,7 +22503,6 @@ eres
 erewhile
 erewhon
 erfurt
-erg
 ergo
 ergot
 erh
@@ -22549,7 +22545,6 @@ ernesto
 ernie
 ernst
 ernstein
-ero
 eroded
 eros
 erosion
@@ -28360,9 +28355,7 @@ goot
 gopal
 gopher
 gophers
-gor
 gora
-gord
 gordian
 gordo
 gordon
@@ -28806,7 +28799,6 @@ grazie
 grazier
 graziers
 grazing
-gre
 grease
 greased
 greaser
@@ -28919,7 +28911,6 @@ grenfell
 grenier
 grenoble
 grenville
-gres
 gresham
 greshamsbury
 gresley
@@ -29069,7 +29060,6 @@ grk
 grm
 grms
 grn
-gro
 groan
 groaned
 groaning
@@ -36900,12 +36890,10 @@ kopecks
 kopeks
 kopje
 kopjes
-kor
 korah
 korak
 koran
 kordofan
-kore
 korea
 korean
 koreans
@@ -38940,7 +38928,6 @@ llandudno
 llangollen
 llano
 llanos
-lle
 ller
 llewellyn
 llewelyn
@@ -46465,7 +46452,6 @@ ojibway
 ojibways
 ojibwe
 ojo
-ok
 oka
 okanagan
 okay
@@ -46861,13 +46847,11 @@ orchis
 orchomenus
 orcus
 orcutt
-ord
 ordain
 ordain'd
 ordained
 ordaining
 ordains
-orde
 ordeal
 ordeals
 ordeined
@@ -46991,10 +46975,8 @@ orisons
 orissa
 orita
 orizaba
-ork
 orkney
 orkneys
-orl
 orlandi
 orlando
 orlean
@@ -47052,7 +47034,6 @@ orsini
 orsino
 orso
 orson
-ort
 ortega
 ortelius
 ortensia
@@ -56241,7 +56222,6 @@ riz
 rizal
 rizzio
 rizzo
-rko
 rnberg
 rne
 rner
@@ -56396,7 +56376,6 @@ roederer
 roehampton
 roemer
 roes
-rog
 roger
 rogero
 rogers
@@ -66802,7 +66781,6 @@ toffee
 toffy
 tofore
 toft
-tog
 toga
 together
 toggery
@@ -66827,7 +66805,6 @@ tois
 toises
 toit
 toity
-tok
 tokay
 toke
 tokelau
@@ -67005,7 +66982,6 @@ topsails
 topsparkle
 topsy
 toque
-tor
 tora
 torah
 torbay
@@ -67047,7 +67023,6 @@ torquatus
 torquay
 torque
 torquemada
-torr
 torrance
 torre
 torrence
@@ -67839,7 +67814,6 @@ triviality
 trix
 trixie
 trixy
-tro
 troad
 troas
 trocadero
