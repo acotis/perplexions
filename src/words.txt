@@ -2048,7 +2048,6 @@ ambuscades
 ambush
 ambushed
 ambushes
-ame
 amedee
 ameer
 amelia
@@ -2090,7 +2089,6 @@ americus
 amerigo
 amerika
 amerindian
-ames
 amesbury
 amethyst
 amethysts
@@ -3294,7 +3292,6 @@ arenas
 areopagite
 areopagus
 arequipa
-ares
 arete
 arethusa
 aretino
@@ -3566,7 +3563,6 @@ arroyo
 arry
 arsaces
 arsdale
-arse
 arsenal
 arsenals
 arsenate
@@ -21183,7 +21179,6 @@ einstein
 eir
 eira
 eirik
-eis
 eisenach
 eisenberg
 eisleben
@@ -27118,7 +27113,6 @@ gastro
 gastronomic
 gastronomy
 gastrula
-gat
 gata
 gatacre
 gate
@@ -27238,7 +27232,6 @@ gedaliah
 geddes
 gedge
 gedney
-gee
 geelong
 geer
 geese
@@ -27253,7 +27246,6 @@ geiger
 geikie
 geisha
 geissler
-geist
 gel
 gela
 gelasius
@@ -27443,7 +27435,6 @@ georgina
 georgius
 georgy
 geotropic
-gera
 geraint
 gerald
 geraldine
@@ -27624,7 +27615,6 @@ giddiness
 giddings
 giddy
 gideon
-gie
 gied
 gien
 giessen
@@ -27697,10 +27687,8 @@ gilpin
 gilroy
 gilson
 gilt
-gim
 gimblet
 gimcrack
-gime
 gimlet
 gimme
 gimp
@@ -30663,7 +30651,6 @@ heger
 hegesippus
 hegira
 heh
-hei
 heid
 heideck
 heidelberg
@@ -30797,7 +30784,6 @@ hem
 heman
 hemans
 hematite
-hemi
 hemingway
 hemiptera
 hemisphere
@@ -31172,10 +31158,8 @@ hideth
 hideyoshi
 hidin
 hiding
-hie
 hied
 hien
-hier
 hierapolis
 hierarchical
 hierarchies
@@ -31191,7 +31175,6 @@ hieron
 hieronimo
 hieronymus
 hierophant
-hies
 higbee
 higden
 higginbotham
@@ -31281,7 +31264,6 @@ him
 himalaya
 himalayan
 himalayas
-himes
 himmel
 himse'f
 himsel
@@ -31371,7 +31353,6 @@ hirtius
 hirundo
 his
 his'n
-hise
 hispania
 hispanic
 hispaniola
@@ -32064,7 +32045,6 @@ hrer
 hrothgar
 hrs
 hrut
-hsi
 hsia
 hsiang
 hsiao
@@ -32684,7 +32664,6 @@ idyll
 idyllic
 idylls
 idyls
-iesu
 iesus
 ieyasu
 if
@@ -32730,7 +32709,6 @@ igor
 igorot
 igraine
 iguana
-ihm
 ihn
 iho
 ihr
@@ -34941,10 +34919,8 @@ isaure
 isbel
 iscariot
 ischia
-ise
 iseult
 isfahan
-ish
 ishak
 isham
 ishmael
@@ -34975,11 +34951,9 @@ islet
 islets
 islington
 islip
-ism
 ismael
 ismail
 ismailia
-isms
 isn
 isn't
 isna
@@ -35011,7 +34985,6 @@ israeli
 israelite
 israelites
 israelitish
-iss
 issachar
 isself
 issoudun
@@ -35022,7 +34995,6 @@ issues
 issuing
 issus
 issy
-ist
 ista
 istar
 iste
@@ -35094,7 +35066,6 @@ ivanoff
 ivanovich
 ivanovitch
 ivanovna
-ivar
 ive
 iver
 ivery
@@ -39767,7 +39738,6 @@ m'nab
 m'riar
 m'sieu
 m'sieur
-ma
 ma'am
 ma'amselle
 ma'm
@@ -39975,7 +39945,6 @@ mafeking
 maffei
 mafia
 mafulu
-mag
 maga
 magadha
 magan
@@ -41704,7 +41673,6 @@ meetinghouse
 meetings
 meets
 mefres
-meg
 megalithic
 megalopolis
 megan
@@ -41716,15 +41684,12 @@ mehemet
 mehetabel
 mehitable
 mehr
-mei
 meier
-meigs
 meikle
 mein
 meine
 meiningen
 meir
-meis
 meissen
 meissner
 meissonier
@@ -42364,12 +42329,10 @@ midwife
 midwifery
 midwinter
 midwives
-mie
 mien
 miette
 mieux
 mifflin
-mig
 miga
 miggs
 might
@@ -42390,7 +42353,6 @@ mignet
 mignon
 mignonette
 mignonne
-migr
 migrant
 migrants
 migrate
@@ -42714,7 +42676,6 @@ mirthless
 mirthlessly
 miry
 mirza
-mis
 misadventure
 misadventures
 misanthrope
@@ -42766,7 +42727,6 @@ misdemeanours
 misdirected
 misdoings
 misdoubt
-mise
 misenum
 miser
 miserable
@@ -42788,7 +42748,6 @@ misgiving
 misgivings
 misgovernment
 misguided
-mish
 mishap
 mishaps
 mishna
@@ -42829,7 +42788,6 @@ miss'y
 missa
 missal
 missals
-misse
 missed
 missel
 misses
@@ -54664,7 +54622,6 @@ rehearsed
 rehearsing
 reheat
 rehoboam
-rei
 reich
 reichardt
 reichenbach
@@ -54684,7 +54641,6 @@ reilly
 reimburse
 reimbursed
 reimbursement
-reims
 rein
 reina
 reinach
@@ -54710,13 +54666,11 @@ reinstated
 reinstatement
 reinstating
 reintroduced
-reis
 reise
 reisen
 reiss
 reissue
 reissued
-reist
 reiterate
 reiterated
 reiterates
@@ -54881,7 +54835,6 @@ remembrances
 remembred
 rement
 remeses
-remi
 remigius
 remind
 reminded
@@ -58614,7 +58567,6 @@ seguin
 segundo
 segur
 sehr
-sei
 seid
 seide
 seidlitz
@@ -58634,7 +58586,6 @@ seines
 seing
 seint
 seir
-seis
 seismic
 seith
 seiz'd
@@ -58885,7 +58836,6 @@ sequin
 sequins
 sequitur
 sequoia
-sera
 serafina
 seraglio
 serai
@@ -59369,7 +59319,6 @@ sheeting
 sheets
 sheffield
 shefford
-shei
 sheik
 sheikh
 sheikhs
@@ -59456,7 +59405,6 @@ shewing
 shewn
 shews
 sheykh
-shi
 shibboleth
 shibli
 shied
@@ -59886,7 +59834,6 @@ sidonians
 sidonie
 sidonius
 sidwell
-sie
 siebenkaes
 siebold
 siecle
@@ -59913,7 +59860,6 @@ sifted
 sifter
 sifting
 sifts
-sig
 sigebert
 sigel
 sigh
@@ -60069,12 +60015,10 @@ silvia
 silvio
 silvius
 silwood
-sim
 simancas
 simba
 simcoe
 simcox
-sime
 simeon
 simia
 simian
@@ -60130,7 +60074,6 @@ simplon
 simply
 simpson
 simrock
-sims
 simson
 simul
 simulacrum
@@ -60252,12 +60195,10 @@ sirrah
 sirs
 sirup
 sisal
-sisera
 sismondi
 sissie
 sisson
 sissy
-sist
 sister
 sisterhood
 sisterly
@@ -60725,7 +60666,6 @@ sly
 slyly
 slyne
 slyness
-sma
 smack
 smacked
 smacking
@@ -64747,7 +64687,6 @@ talmudists
 talon
 talons
 talus
-tam
 tama
 tamar
 tamara
@@ -65655,7 +65594,6 @@ thefts
 thegither
 thegn
 thegns
-thei
 theil
 theim
 their
@@ -65663,7 +65601,6 @@ theire
 theirs
 theirselves
 theism
-theiss
 theist
 theistic
 theists
@@ -65673,7 +65610,6 @@ them
 thematic
 theme
 themes
-themis
 themistocles
 themistokles
 themselues
@@ -65806,7 +65742,6 @@ theydon
 theym
 theyr
 theyre
-thi
 thibault
 thibaut
 thibet
@@ -65828,9 +65763,7 @@ thicknesses
 thickset
 thief
 thiepval
-thier
 thierry
-thiers
 thievery
 thieves
 thieving
@@ -65838,7 +65771,6 @@ thievish
 thigh
 thighs
 thilke
-thim
 thimble
 thimbleful
 thimbles
@@ -65892,7 +65824,6 @@ thirty
 this
 this'll
 thisbe
-thise
 thistle
 thistledown
 thistles
@@ -67838,7 +67769,6 @@ tschaikowsky
 tschudi
 tsetse
 tshi
-tsi
 tsin
 tsing
 tso
