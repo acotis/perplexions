@@ -2,6 +2,9 @@
 mod constants;
 mod live_list;
 
+use std::fmt;
+use std::fmt::Display;
+use std::collections::HashSet;
 use std::io::{stdin,stdout,Write};
 use crate::live_list::LiveList;
 
@@ -118,7 +121,28 @@ impl LevelSolver {
         ret
     }
 
-    fn explore(&mut self, blessed: &mut LiveList, context: &mut Vec<String>) {
+    fn explore(&mut self, seen: &mut HashSet<String>, blessed: &mut LiveList, context: &mut Vec<String>) {
+        let display = format!("{self}");
+
+        if seen.contains(&display) {
+            return;
+        } else {
+            seen.insert(display.clone());
+        }
+
+        let indent = "  ".repeat(context.len());
+
+        if display == "" {
+            println!("{indent}{GREY}—{RESET}");
+        } else {
+            for line in format!("{self}").lines() {
+                println!("{indent}{line}");
+            }
+        }
+
+        println!("{indent}——————————");
+
+        std::thread::sleep(std::time::Duration::from_secs(1));
 
         let context_str = context.join(" ");
 
@@ -132,11 +156,25 @@ impl LevelSolver {
             if check_okay(blessed, &context_str, &word) {
                 context.push(word);
                 self.move_unchecked(&mv);
-                self.explore(blessed, context);
+                self.explore(seen, blessed, context);
                 self.undo();
                 context.pop();
             }
         }
+    }
+}
+
+impl Display for LevelSolver {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        let height = self.fields[0].iter().map(|col| col.len()).max().unwrap();
+        for row in (0..height).rev() {
+            for col in &self.fields[0] {
+                write!(f, "{}", col.get(row).unwrap_or(&' '))?;
+            }
+            write!(f, "\n")?;
+        }
+
+        Ok(())
     }
 }
 
@@ -150,7 +188,7 @@ fn main() {
         println!();
 
         blessed.load();
-        solver.explore(&mut blessed, &mut vec![]);
+        solver.explore(&mut HashSet::new(), &mut blessed, &mut vec![]);
     }
 
     println!();
