@@ -2,6 +2,15 @@
 name = "perplexity"
 version = "0.1.0"
 edition = "2021"
+default-run = "perplexity"
+
+[[bin]]
+name = "perplexity"
+path = "src/main.rs"
+
+[[bin]]
+name = "solver"
+path = "src/solver.rs"
 
 [features]
 development = [] # feature has no explicit dependencies

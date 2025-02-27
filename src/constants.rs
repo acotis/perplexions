@@ -44,6 +44,15 @@ mod development {
         WORDS.lock().unwrap().binary_search(&word).is_ok()
     }
 
+    pub fn starts_valid_word(word: String) -> bool {
+        let lock = WORDS.lock().unwrap();
+        
+        match lock.binary_search(&word) {
+            Ok (pos) => lock.get(pos + 1).is_some_and(|w| w.starts_with(&word)),
+            Err(pos) => lock.get(pos    ).is_some_and(|w| w.starts_with(&word)),
+        }
+    }
+
     fn load_words() {
         let mut lock = WORDS.lock().unwrap();
 

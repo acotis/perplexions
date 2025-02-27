@@ -542,3 +542,14 @@ impl Game {
     }
 }
 
+// Public method used only by the solver binary.
+
+impl Game {
+    pub fn get_solver_start_state(&self) -> Vec<Vec<char>> {
+        self.fields[0]
+            .iter()
+            .map(|column| column.iter().map(|tile| tile.letter).collect())
+            .collect()
+    }
+}
+
