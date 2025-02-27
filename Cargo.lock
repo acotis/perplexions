@@ -67,7 +67,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "perplections"
+name = "perplexity"
 version = "0.1.0"
 dependencies = [
  "sfml",
