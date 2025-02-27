@@ -20493,7 +20493,6 @@ dumplings
 dumps
 dumpty
 dumpy
-dun
 dunbar
 duncan
 duncannon
@@ -39389,7 +39388,6 @@ lucrezia
 lucubrations
 lucullus
 lucy
-lud
 ludar
 ludendorff
 ludgate
