@@ -17019,7 +17019,6 @@ dazzlingly
 dcc
 dccc
 de'il
-dea
 deacon
 deaconess
 deaconesses
@@ -26978,7 +26977,6 @@ galvanometer
 galveston
 galvez
 galway
-gam
 gama
 gamaliel
 gamba
@@ -54267,7 +54265,6 @@ rebukes
 rebuking
 rebus
 rebut
-rec
 recal
 recalcitrant
 recall
@@ -58245,7 +58242,6 @@ schweitzer
 schwellenberg
 schwerin
 schylus
-sci
 sciatic
 sciatica
 science
@@ -73718,7 +73714,6 @@ xit
 xith
 xiv
 xivth
-xix
 xixth
 xli
 xlii
