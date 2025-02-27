@@ -74,10 +74,7 @@ impl LevelSolver {
             let mut next_partials = vec![];
 
             for partial in &partials {
-                println!("Considering extending {}", self.word_at(partial));
-
                 if constants::starts_valid_word(self.word_at(partial)) {
-                    println!("  It starts a word");
                     for delta_col in [!0, 0, 1] {
                         for delta_row in [!0, 0, 1] {
                             let next = (
@@ -107,6 +104,7 @@ impl LevelSolver {
 }
 
 fn main() {
+    constants::initialize();
     let solver = LevelSolver::new(constants::levels().next().unwrap());
 
     for mv in solver.all_moves() {

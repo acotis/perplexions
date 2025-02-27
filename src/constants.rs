@@ -39,14 +39,14 @@ mod development {
     static LAST_WORD_TRIED: Mutex<String> = Mutex::new(String::new());
 
     pub fn is_valid_word(word: String) -> bool {
-        println!("trying word: {word}");
+        //println!("trying word: {word}");
         *LAST_WORD_TRIED.lock().unwrap() = word.clone();
         WORDS.lock().unwrap().binary_search(&word).is_ok()
     }
 
     pub fn starts_valid_word(word: String) -> bool {
         let lock = WORDS.lock().unwrap();
-        
+
         match lock.binary_search(&word) {
             Ok (pos) => lock.get(pos + 1).is_some_and(|w| w.starts_with(&word)),
             Err(pos) => lock.get(pos    ).is_some_and(|w| w.starts_with(&word)),
