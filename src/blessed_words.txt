@@ -7,6 +7,7 @@ ape
 apt
 are
 art
+as
 at
 avian
 caviar
@@ -24,6 +25,7 @@ doe
 drew
 ear
 earn
+eat
 em
 emo
 ems
@@ -33,6 +35,8 @@ full
 fun
 fund
 game
+games
+gas
 gem
 gems
 get
@@ -43,7 +47,12 @@ got
 gravity
 gush
 gushes
+hag
+ham
+hams
+hat
 he
+heat
 hello
 hem
 hems
@@ -55,6 +64,7 @@ hiss
 hisses
 hug
 hugs
+hut
 i
 in
 ire
@@ -67,7 +77,9 @@ jute
 key
 led
 mat
+math
 me
+meat
 mesh
 mess
 miser
@@ -108,6 +120,10 @@ resist
 rip
 rot
 rote
+sea
+seam
+seams
+seat
 see
 seem
 seems
@@ -123,6 +139,8 @@ star
 start
 tag
 tame
+tamer
+tames
 tan
 tar
 tart

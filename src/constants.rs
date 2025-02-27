@@ -64,9 +64,12 @@ mod development {
 
     pub fn remove_last_word_tried() {
         let last = LAST_WORD_TRIED.lock().unwrap();
-        println!("removing the last word: {last}");
         WORDS.lock().unwrap().retain(|word| *word != *last);
         save_words();
+
+        let grey = "\x1b[38;5;250m";
+        let reset = "\x1b[0m";
+        println!("{grey}removed {last}{reset}");
     }
 
     pub fn add_last_word_tried() {
