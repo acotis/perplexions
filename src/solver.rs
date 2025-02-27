@@ -2,6 +2,7 @@
 mod constants;
 mod live_list;
 
+use std::io::{stdin,stdout,Write};
 use crate::live_list::LiveList;
 
 struct LevelSolver {
@@ -31,9 +32,15 @@ impl LevelSolver {
         path.sort();
         path.reverse();
 
+        self.fields.insert(0, self.fields[0].clone());
+
         for (column, row) in path {
             self.fields[0][column].remove(row);
         }
+    }
+
+    fn undo(&mut self) {
+        self.fields.remove(0);
     }
 
     fn word_at(&self, path: &[(usize, usize)]) -> String {
@@ -104,6 +111,12 @@ impl LevelSolver {
 
         ret
     }
+
+    fn explore(&mut self, blessed: &mut LiveList) {
+        for mv in self.all_moves() {
+            let word = self.word_at(&mv);
+        }
+    }
 }
 
 fn main() {
@@ -112,11 +125,43 @@ fn main() {
     let mut blessed = LiveList::new("src/blessed_words.txt");
 
     blessed.load();
-    blessed.push(String::from("hi"));
-    blessed.save();
+    //blessed.push(String::from("hi"));
+    //blessed.save();
+
+    println!("ok: {}", check_okay(&mut blessed, "CLE"));
 
     for mv in solver.all_moves() {
         println!("{}", solver.word_at(&mv));
     }
+}
+
+fn check_okay(blessed: &mut LiveList, word: &str) -> bool {
+    if !constants::is_valid_word(String::from(word)) {
+        return false;
+    }
+
+    match blessed.binary_search(&String::from(word)) {
+        Ok(pos) => true,
+        Err(pos) => {
+            if prompt_user(word) {
+                blessed.insert(pos, String::from(word));
+                blessed.save();
+                true
+            } else {
+                constants::remove_last_word_tried();
+                false
+            }
+        }
+    }
+}
+
+fn prompt_user(word: &str) -> bool {
+    let mut input = String::new();
+    while !["x\n", "a\n"].contains(&&*input) {
+        print!("{word} > ");
+        stdout().flush().expect("could not flush");
+        stdin().read_line(&mut input).expect("did not enter a correct string");
+    }
+    input == "a\n"
 }
 
