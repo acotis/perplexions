@@ -12553,7 +12553,6 @@ cleverest
 cleverly
 cleverness
 cleves
-clew
 clews
 clichy
 click
@@ -12764,7 +12763,6 @@ clytemnestra
 clytie
 cneius
 cnut
-co
 co'se
 coach
 coached
@@ -13224,7 +13222,6 @@ columns
 colville
 colvin
 colwyn
-com
 com'st
 coma
 comanche
@@ -46593,7 +46590,6 @@ oman
 omar
 ombre
 omdurman
-ome
 omega
 omelet
 omelets

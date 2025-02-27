@@ -115,24 +115,24 @@ impl LevelSolver {
     fn explore(&mut self, blessed: &mut LiveList) {
         for mv in self.all_moves() {
             let word = self.word_at(&mv);
+
+            if check_okay(blessed, &word) {
+                self.move_unchecked(&mv);
+                self.explore(blessed);
+                self.undo();
+            }
         }
     }
 }
 
 fn main() {
     constants::initialize();
-    let solver = LevelSolver::new(constants::levels().nth(1).unwrap());
+
+    let mut solver = LevelSolver::new(constants::levels().nth(1).unwrap());
     let mut blessed = LiveList::new("src/blessed_words.txt");
 
     blessed.load();
-    //blessed.push(String::from("hi"));
-    //blessed.save();
-
-    println!("ok: {}", check_okay(&mut blessed, "CLE"));
-
-    for mv in solver.all_moves() {
-        println!("{}", solver.word_at(&mv));
-    }
+    solver.explore(&mut blessed);
 }
 
 fn check_okay(blessed: &mut LiveList, word: &str) -> bool {
