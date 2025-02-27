@@ -143,13 +143,15 @@ impl LevelSolver {
 fn main() {
     constants::initialize();
 
-    let mut solver = LevelSolver::new(constants::levels().nth(4).unwrap());
-    let mut blessed = LiveList::new("src/blessed_words.txt");
+    for level in constants::levels() {
+        let mut solver = LevelSolver::new(level);
+        let mut blessed = LiveList::new("src/blessed_words.txt");
 
-    println!();
+        println!();
 
-    blessed.load();
-    solver.explore(&mut blessed, &mut vec![]);
+        blessed.load();
+        solver.explore(&mut blessed, &mut vec![]);
+    }
 
     println!();
 }

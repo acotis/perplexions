@@ -18,7 +18,9 @@ clerk
 come
 cred
 crew
+cud
 cull
+deck
 dew
 do
 doe
@@ -178,6 +180,7 @@ we
 wed
 welcome
 well
+wreck
 yet
 yoke
 you

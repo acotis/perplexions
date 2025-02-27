@@ -10889,7 +10889,6 @@ cephas
 cephyse
 cept
 ceptin
-cer
 ceram
 ceramic
 ceramics
@@ -17077,7 +17076,6 @@ debts
 debussy
 debut
 debutante
-dec
 decade
 decadence
 decadent
@@ -17205,7 +17203,6 @@ decoy
 decoyed
 decoying
 decoys
-decr
 decrease
 decreased
 decreases
@@ -21020,7 +21017,6 @@ educative
 educator
 educators
 edulis
-edw
 edward
 edwardes
 edwards
@@ -54045,7 +54041,6 @@ recaptured
 recapturing
 recast
 recasting
-recd
 receaved
 recede
 receded
