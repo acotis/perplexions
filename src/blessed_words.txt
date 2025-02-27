@@ -18,6 +18,7 @@ get
 go
 goodbye
 got
+he
 hello
 i
 item
@@ -40,6 +41,7 @@ tar
 tart
 to
 tore
+us
 we
 wed
 welcome

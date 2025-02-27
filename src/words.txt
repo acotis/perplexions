@@ -42026,7 +42026,6 @@ menzies
 meo
 mephistopheles
 mephitic
-mer
 meran
 merari
 merc
@@ -42150,7 +42149,6 @@ merwin
 merwyn
 mery
 meryl
-mes
 mesa
 mesalliance
 mesas
@@ -43964,7 +43962,6 @@ mozo
 mpls
 mr
 mrs
-ms
 msg
 mss
 mts
@@ -58839,7 +58836,6 @@ selvage
 selves
 selwood
 selwyn
-sem
 semaphore
 semblable
 semblance
