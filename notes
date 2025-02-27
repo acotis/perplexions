@@ -2,6 +2,7 @@
 Todo:
     — Slightly adjust letter alignment.
     — Rename Game to Level.
+    — Make the hitbox just a tad larger.
     — Make fifteen real levels.
     — Fiddle with those levels and weed out incorrect word judgments.
     — Create a tool to auto-analyze any level and determine all the possible
