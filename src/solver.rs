@@ -128,7 +128,7 @@ impl LevelSolver {
 fn main() {
     constants::initialize();
 
-    let mut solver = LevelSolver::new(constants::levels().nth(1).unwrap());
+    let mut solver = LevelSolver::new(constants::levels().nth(0).unwrap());
     let mut blessed = LiveList::new("src/blessed_words.txt");
 
     blessed.load();
@@ -141,7 +141,7 @@ fn check_okay(blessed: &mut LiveList, word: &str) -> bool {
     }
 
     match blessed.binary_search(&String::from(word)) {
-        Ok(pos) => true,
+        Ok(_) => true,
         Err(pos) => {
             if prompt_user(word) {
                 blessed.insert(pos, String::from(word));
