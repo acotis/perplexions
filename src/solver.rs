@@ -5,6 +5,12 @@ mod live_list;
 use std::io::{stdin,stdout,Write};
 use crate::live_list::LiveList;
 
+const GREEN: &'static str = "\x1b[32m";
+const GREY : &'static str = "\x1b[38;5;242m";
+const CYAN : &'static str = "\x1b[38;5;51m";
+const BOLD : &'static str = "\x1b[1m";
+const RESET: &'static str = "\x1b[0m";
+
 struct LevelSolver {
     fields: Vec<Vec<Vec<char>>>,
 }
@@ -113,10 +119,11 @@ impl LevelSolver {
     }
 
     fn explore(&mut self, blessed: &mut LiveList, context: &mut Vec<String>) {
+
         let context_str = context.join(" ");
 
         if self.fields[0].iter().all(|col| col.is_empty()) {
-            println!("[{context_str}] is a solution");
+            println!("{BOLD}{GREEN}[{context_str}]{RESET} is a solution");
         }
 
         for mv in self.all_moves() {
@@ -136,11 +143,15 @@ impl LevelSolver {
 fn main() {
     constants::initialize();
 
-    let mut solver = LevelSolver::new(constants::levels().nth(17).unwrap());
+    let mut solver = LevelSolver::new(constants::levels().nth(18).unwrap());
     let mut blessed = LiveList::new("src/blessed_words.txt");
+
+    println!();
 
     blessed.load();
     solver.explore(&mut blessed, &mut vec![]);
+
+    println!();
 }
 
 fn check_okay(blessed: &mut LiveList, context: &str, word: &str) -> bool {
@@ -166,9 +177,11 @@ fn check_okay(blessed: &mut LiveList, context: &str, word: &str) -> bool {
 fn prompt_user(context: &str, word: &str) -> bool {
     let mut input = String::new();
     while !["x\n", "a\n"].contains(&&*input) {
-        print!("[{context}] {word} > ");
+        print!("{GREY}[{context}]{RESET} {BOLD}{word}{RESET} {CYAN}");
         stdout().flush().expect("could not flush");
         stdin().read_line(&mut input).expect("did not enter a correct string");
+        print!("{RESET}");
+        stdout().flush().expect("could not flush second time");
     }
     input == "a\n"
 }
