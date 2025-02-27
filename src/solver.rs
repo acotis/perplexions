@@ -1,5 +1,6 @@
 
 mod constants;
+mod live_list;
 
 struct LevelSolver {
     fields: Vec<Vec<Vec<char>>>,

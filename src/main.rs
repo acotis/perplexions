@@ -3,6 +3,7 @@ mod draw;
 mod game;
 mod dimensions;
 mod constants;
+mod live_list;
 
 use sfml::window::*;
 use sfml::graphics::*;

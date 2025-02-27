@@ -31,11 +31,12 @@ mod production {
 
 #[allow(unused)]
 mod development {
+    use crate::live_list::LiveList;
     use std::sync::Mutex;
 
     // DYNAMIC IMPLEMENTATION: USE ONLY WHEN TESTING.
 
-    static WORDS: Mutex<Vec<String>> = Mutex::new(vec![]);
+    static WORDS: Mutex<LiveList> = Mutex::new(LiveList::new("src/words.txt"));
     static LAST_WORD_TRIED: Mutex<String> = Mutex::new(String::new());
 
     pub fn is_valid_word(word: String) -> bool {
@@ -53,27 +54,12 @@ mod development {
         }
     }
 
-    fn load_words() {
-        let mut lock = WORDS.lock().unwrap();
-
-        lock.clear();
-        lock.append(
-            &mut std::fs::read_to_string("src/words.txt")
-                .expect("couldn't re-open file for re-reading")
-                .to_ascii_uppercase()
-                .lines()
-                .map(str::to_owned)
-                .collect::<Vec<String>>()
-        );
-        lock.sort();
+    pub fn load_words() {
+        WORDS.lock().unwrap().load()
     }
 
-    fn save_words() {
-        let lock = WORDS.lock().unwrap();
-        std::fs::write(
-            "src/words.txt",
-            lock.join("\n").to_ascii_lowercase()
-        ).expect("couldn't open file for writing");
+    pub fn save_words() {
+        WORDS.lock().unwrap().save()
     }
 
     pub fn remove_last_word_tried() {
