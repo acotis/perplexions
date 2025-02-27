@@ -10759,7 +10759,6 @@ caze
 cbs
 ccapac
 ccc
-cd
 cdb
 ceas'd
 cease
@@ -16074,7 +16073,6 @@ cuirassiers
 cuisine
 cuius
 cujus
-cul
 culch
 culchard
 culebra
@@ -16149,7 +16147,6 @@ cumnor
 cumshaw
 cumulative
 cumulus
-cun
 cunard
 cuncta
 cuneate
@@ -17424,7 +17421,6 @@ deftness
 defunct
 defy
 defying
-deg
 degas
 degeneracy
 degenerate
@@ -17943,7 +17939,6 @@ dervish
 dervishes
 derwent
 derwentwater
-des
 desaix
 desart
 desboro
@@ -18128,7 +18123,6 @@ desuetude
 desultory
 desvarennes
 desyre
-det
 detach
 detachable
 detached
@@ -20148,7 +20142,6 @@ draycott
 drayman
 drays
 drayton
-dre
 dread
 dreaded
 dreadful
@@ -21064,7 +21057,6 @@ edomites
 edouard
 edred
 edric
-eds
 edson
 eduard
 eduardo
@@ -22496,7 +22488,6 @@ eratosthenes
 erbout
 erckmann
 ercole
-erd
 erde
 erdmann
 erebus
@@ -22639,7 +22630,6 @@ escurial
 escutcheon
 escutcheons
 esdaile
-esdr
 esdraelon
 esdras
 ese
@@ -25233,7 +25223,6 @@ flaxseed
 flay
 flayed
 flaying
-fld
 fle
 flea
 fleas
@@ -27302,7 +27291,6 @@ gears
 geary
 gebel
 geber
-ged
 gedaliah
 geddes
 gedge
@@ -27513,7 +27501,6 @@ georgina
 georgius
 georgy
 geotropic
-ger
 gera
 geraint
 gerald
@@ -27568,7 +27555,6 @@ gerry
 gers
 gershom
 gerson
-gert
 gertie
 gertrud
 gertrude
@@ -27578,7 +27564,6 @@ gervais
 gervaise
 gervase
 geryon
-ges
 gesch
 geschichte
 gesell
@@ -36877,7 +36862,6 @@ knut
 knycht
 knyght
 knyphausen
-ko
 koa
 kobe
 kobo
@@ -39506,7 +39490,6 @@ lubricants
 lubricated
 lubricating
 lubrication
-luc
 luca
 lucan
 lucania
@@ -39548,7 +39531,6 @@ luckily
 luckless
 lucknow
 lucky
-lucr
 lucrative
 lucre
 lucrece
@@ -39645,7 +39627,6 @@ luncheon
 luncheons
 lunches
 lunching
-lund
 lundie
 lundy
 lune
@@ -54727,7 +54708,6 @@ refute
 refuted
 refutes
 refuting
-reg
 reg'lar
 regain
 regained
@@ -54811,7 +54791,6 @@ regrets
 regrettable
 regretted
 regretting
-regt
 regula
 regular
 regularity
@@ -56830,7 +56809,6 @@ rpr
 rpt
 rst
 rtemberg
-rtes
 rth
 rttemberg
 rua
@@ -58703,7 +58681,6 @@ secures
 securing
 securities
 security
-sed
 sedan
 sedate
 sedately
@@ -59156,7 +59133,6 @@ serrated
 serre
 serres
 serried
-sert
 sertorius
 seruant
 seruants
@@ -65351,7 +65327,6 @@ teck
 tecle
 tecum
 tecumseh
-ted
 teddy
 tedious
 tediously
@@ -65373,7 +65348,6 @@ teething
 teetotal
 teetotaler
 teetotaller
-teg
 tegea
 tegg
 tegn
@@ -67250,7 +67224,6 @@ toyman
 toynbee
 toys
 tozer
-tra
 trace
 traceable
 traced
@@ -67565,7 +67538,6 @@ trawlers
 tray
 traynor
 trays
-tre
 treacheries
 treacherous
 treacherously
@@ -67673,7 +67645,6 @@ trentham
 trentino
 trenton
 trepidation
-tres
 tresco
 trescott
 tresham
@@ -68590,7 +68561,6 @@ ulenspiegel
 ulf
 uli
 ulick
-ull
 ulla
 ullah
 ullo
@@ -68767,7 +68737,6 @@ unburnt
 unbutton
 unbuttoned
 unbuttoning
-unc
 uncalled
 uncannily
 uncanny
@@ -68896,7 +68865,6 @@ uncultured
 uncurled
 uncurtained
 uncut
-und
 undamaged
 undated
 undaunted
