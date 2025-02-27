@@ -105,7 +105,7 @@ impl LevelSolver {
 
 fn main() {
     constants::initialize();
-    let solver = LevelSolver::new(constants::levels().next().unwrap());
+    let solver = LevelSolver::new(constants::levels().nth(1).unwrap());
 
     for mv in solver.all_moves() {
         println!("{}", solver.word_at(&mv));
