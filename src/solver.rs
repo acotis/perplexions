@@ -129,19 +129,6 @@ impl LevelSolver {
             seen.insert(display.clone());
         }
 
-        /*
-        let indent = "  ".repeat(context.len());
-        if display == "" {
-            println!("{indent}{GREY}—{RESET}");
-        } else {
-            for line in format!("{self}").lines() {
-                println!("{indent}{line}");
-            }
-        }
-        println!("{indent}——————————");
-        std::thread::sleep(std::time::Duration::from_secs(1));
-        */
-
         let context_str = context.join(" ");
 
         if self.fields[0].iter().all(|col| col.is_empty()) {
