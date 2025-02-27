@@ -944,7 +944,6 @@ advocating
 advowson
 adze
 aeacus
-aed
 aedile
 aediles
 aeetes
@@ -3191,7 +3190,6 @@ arcadius
 arcady
 arcana
 arcanum
-arce
 arch
 archaeologia
 archaeological
@@ -4506,7 +4504,6 @@ avowing
 avows
 avranches
 avril
-aw
 aw'd
 aw'll
 aw'm
@@ -4536,7 +4533,6 @@ awash
 awatobi
 away
 awaye
-awd
 awdrey
 awe
 aweary
@@ -4554,7 +4550,6 @@ awin
 awkward
 awkwardly
 awkwardness
-awl
 awls
 awm
 awn
@@ -10908,7 +10903,6 @@ cerf
 cerise
 cerizet
 cern
-cerro
 cert
 certa
 certain
@@ -12217,7 +12211,6 @@ civita
 civitas
 civitate
 cix
-cke
 ckh
 clachan
 clack
@@ -12417,7 +12410,6 @@ clear
 clearance
 clearances
 clearchus
-cleare
 cleared
 clearer
 clearest
@@ -12429,7 +12421,6 @@ clearness
 clears
 clearwater
 cleary
-cleat
 cleats
 cleavage
 cleave
@@ -15344,7 +15335,6 @@ cozened
 cozily
 cozy
 cpl
-cra
 crab
 crabb
 crabbe
@@ -15378,7 +15368,6 @@ craftsman
 craftsmanship
 craftsmen
 crafty
-crag
 cragg
 craggs
 craggy
@@ -15433,7 +15422,6 @@ crashes
 crashing
 crass
 crassus
-crat
 crataegus
 cratchit
 crate
@@ -15700,7 +15688,6 @@ croaker
 croakers
 croaking
 croaks
-croat
 croatia
 croatian
 croats
@@ -16981,7 +16968,6 @@ deanery
 deans
 dear
 dearborn
-deare
 dearer
 dearest
 dearie
@@ -18240,7 +18226,6 @@ devoutness
 devrient
 dew
 dewan
-dewar
 dewdrop
 dewdrops
 dewey
@@ -20036,8 +20021,6 @@ drawback
 drawbacks
 drawbridge
 drawbridges
-drawe
-drawed
 drawen
 drawer
 drawers
@@ -20405,7 +20388,6 @@ dujardin
 duke
 dukedom
 dukes
-dulce
 dulcet
 dulcie
 dulcimer
@@ -20676,10 +20658,7 @@ ealle
 eapc
 ear
 earache
-eard
-eare
 eared
-eares
 earl
 earldom
 earldoms
@@ -20705,7 +20684,6 @@ earring
 earrings
 ears
 earshot
-eart
 earth
 earthen
 earthenware
@@ -20758,7 +20736,6 @@ easy
 eat
 eatable
 eatables
-eate
 eaten
 eater
 eaters
@@ -20826,7 +20803,6 @@ ecclesiastics
 ecclesiasticus
 eccleston
 ecclus
-ecco
 ece
 ech
 eche
@@ -20970,9 +20946,6 @@ educative
 educator
 educators
 edulis
-edward
-edwardes
-edwards
 edwin
 edwy
 eek
@@ -22970,7 +22943,6 @@ evringham
 ewaine
 ewald
 ewan
-ewart
 ewe
 ewell
 ewen
@@ -26682,9 +26654,7 @@ gads
 gadsby
 gadsden
 gadshill
-gaed
 gaein
-gael
 gaelic
 gaels
 gaeta
@@ -26918,7 +26888,6 @@ garbage
 garbed
 garbled
 garbs
-garc
 garcia
 garcilasso
 garcon
@@ -27102,11 +27071,9 @@ gaveston
 gavin
 gavotte
 gavroche
-gaw
 gawain
 gawaine
 gawayne
-gawd
 gawky
 gawtrey
 gay
@@ -27357,7 +27324,6 @@ geraldine
 geraldines
 geranium
 geraniums
-gerarde
 gerardo
 gerbert
 gerda
@@ -36027,7 +35993,6 @@ kauri
 kautsky
 kava
 kavanagh
-kaw
 kawerau
 kay
 kaya
@@ -36051,7 +36016,6 @@ keats
 keawe
 kebir
 keble
-ked
 kedar
 kedge
 kedsty
@@ -36102,8 +36066,6 @@ kein
 keineth
 keir
 keith
-kel
-kell
 keller
 kellerman
 kellermann
@@ -36223,7 +36185,6 @@ kettledrums
 kettles
 keturah
 kevin
-kew
 key
 keyboard
 keyed
@@ -36506,7 +36467,6 @@ klamath
 klan
 klaproth
 klaus
-kle
 klea
 kleber
 klegg
@@ -36766,7 +36726,6 @@ kut
 kutusoff
 kutuzov
 kuwait
-kwa
 kwan
 kwang
 kwannon
@@ -37566,7 +37525,6 @@ lazuli
 lazy
 lazzaroni
 lbs
-lea
 leach
 lead
 leade
@@ -37624,7 +37582,6 @@ leaped
 leaping
 leaps
 leapt
-lear
 learmont
 learn
 learn'd
@@ -38689,7 +38646,6 @@ lize
 lizette
 lizzie
 lizzy
-lker
 lla
 llah
 llama
@@ -45754,7 +45710,6 @@ oases
 oasis
 oat
 oaten
-oates
 oath
 oaths
 oatmeal
@@ -46587,13 +46542,11 @@ ordo
 ordonio
 ordonnance
 ordovician
-ordre
 ordres
 ordure
 ordway
 ore
 oregon
-orel
 orellana
 ores
 orestes
@@ -46736,7 +46689,6 @@ orsini
 orsino
 orso
 orson
-ortega
 ortelius
 ortensia
 orter
@@ -53281,7 +53233,6 @@ radmore
 radnor
 radzivill
 raeburn
-raed
 raf
 rafael
 rafe
@@ -53706,7 +53657,6 @@ ravishment
 raw
 rawdon
 rawhide
-rawle
 rawlings
 rawlins
 rawlinson
@@ -54369,7 +54319,6 @@ regalis
 regally
 regan
 regard
-regarde
 regarded
 regardeth
 regardful
@@ -55463,7 +55412,6 @@ revolving
 revue
 revulsion
 reward
-rewarde
 rewarded
 rewarding
 rewards
@@ -56028,7 +55976,6 @@ roemer
 roes
 rogero
 rogers
-roget
 rogier
 rogojin
 rogron
@@ -58793,7 +58740,6 @@ sessions
 sesterces
 sestos
 set
-setae
 setback
 setebos
 seth
@@ -66588,7 +66534,6 @@ torquay
 torque
 torquemada
 torrance
-torre
 torrence
 torrens
 torrent
@@ -66721,7 +66666,6 @@ touts
 tovar
 tow
 toward
-towardes
 towards
 towed
 towel
@@ -68064,7 +68008,6 @@ ukrainian
 ukridge
 ula
 ulcer
-ulcerated
 ulceration
 ulcers
 ulein
@@ -68361,7 +68304,6 @@ uncover
 uncovered
 uncovering
 uncovers
-uncreated
 uncritical
 uncrowned
 unctad
@@ -71047,7 +70989,6 @@ wadna
 wads
 wadsworth
 wady
-wae
 waes
 wafer
 wafers
@@ -71298,13 +71239,10 @@ warbles
 warbling
 warburton
 ward
-warde
 warded
 warden
 wardens
-warder
 warders
-wardes
 warding
 wardlaw
 wardle
@@ -71329,9 +71267,7 @@ warham
 warily
 wariness
 waring
-wark
 warkworth
-warld
 warley
 warlike
 warlock
@@ -71362,14 +71298,12 @@ warpath
 warped
 warping
 warps
-warr
 warrant
 warrantable
 warranted
 warranto
 warrants
 warranty
-warre
 warred
 warren
 warrender
@@ -71604,7 +71538,6 @@ weapon
 weaponless
 weapons
 wear
-weare
 wearer
 wearers
 weareth
