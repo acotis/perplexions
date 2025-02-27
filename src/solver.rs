@@ -2,6 +2,8 @@
 mod constants;
 mod live_list;
 
+use crate::live_list::LiveList;
+
 struct LevelSolver {
     fields: Vec<Vec<Vec<char>>>,
 }
@@ -107,6 +109,11 @@ impl LevelSolver {
 fn main() {
     constants::initialize();
     let solver = LevelSolver::new(constants::levels().nth(1).unwrap());
+    let mut blessed = LiveList::new("src/blessed_words.txt");
+
+    blessed.load();
+    blessed.push(String::from("hi"));
+    blessed.save();
 
     for mv in solver.all_moves() {
         println!("{}", solver.word_at(&mv));
