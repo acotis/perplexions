@@ -112,14 +112,22 @@ impl LevelSolver {
         ret
     }
 
-    fn explore(&mut self, blessed: &mut LiveList) {
+    fn explore(&mut self, blessed: &mut LiveList, context: &mut Vec<String>) {
+        let context_str = context.join(" ");
+
+        if self.fields[0].iter().all(|col| col.is_empty()) {
+            println!("[{context_str}] is a solution");
+        }
+
         for mv in self.all_moves() {
             let word = self.word_at(&mv);
 
-            if check_okay(blessed, &word) {
+            if check_okay(blessed, &context_str, &word) {
+                context.push(word);
                 self.move_unchecked(&mv);
-                self.explore(blessed);
+                self.explore(blessed, context);
                 self.undo();
+                context.pop();
             }
         }
     }
@@ -132,10 +140,10 @@ fn main() {
     let mut blessed = LiveList::new("src/blessed_words.txt");
 
     blessed.load();
-    solver.explore(&mut blessed);
+    solver.explore(&mut blessed, &mut vec![]);
 }
 
-fn check_okay(blessed: &mut LiveList, word: &str) -> bool {
+fn check_okay(blessed: &mut LiveList, context: &str, word: &str) -> bool {
     if !constants::is_valid_word(String::from(word)) {
         return false;
     }
@@ -143,7 +151,7 @@ fn check_okay(blessed: &mut LiveList, word: &str) -> bool {
     match blessed.binary_search(&String::from(word)) {
         Ok(_) => true,
         Err(pos) => {
-            if prompt_user(word) {
+            if prompt_user(context, word) {
                 blessed.insert(pos, String::from(word));
                 blessed.save();
                 true
@@ -155,10 +163,10 @@ fn check_okay(blessed: &mut LiveList, word: &str) -> bool {
     }
 }
 
-fn prompt_user(word: &str) -> bool {
+fn prompt_user(context: &str, word: &str) -> bool {
     let mut input = String::new();
     while !["x\n", "a\n"].contains(&&*input) {
-        print!("{word} > ");
+        print!("[{context}] {word} > ");
         stdout().flush().expect("could not flush");
         stdin().read_line(&mut input).expect("did not enter a correct string");
     }
