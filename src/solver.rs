@@ -122,14 +122,12 @@ impl LevelSolver {
     }
 
     fn explore(&mut self, seen: &mut HashSet<String>, blessed: &mut LiveList, context: &mut Vec<String>) {
-        /*
         let display = format!("{self}");
         if seen.contains(&display) {
             return;
         } else {
             seen.insert(display.clone());
         }
-        */
 
         /*
         let indent = "  ".repeat(context.len());
@@ -217,7 +215,6 @@ fn check_okay(blessed: &mut LiveList, context: &str, word: &str) -> bool {
 fn prompt_user(context: &str, word: &str) -> bool {
     let mut input = String::new();
     while !["x\n", "a\n"].contains(&&*input) {
-        panic!();
         print!("{GREY}[{context}]{RESET} {BOLD}{word}{RESET} {CYAN}");
         stdout().flush().expect("could not flush");
         stdin().read_line(&mut input).expect("did not enter a correct string");
