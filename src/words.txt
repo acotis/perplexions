@@ -9,7 +9,6 @@ a'ter
 aachen
 aage
 aagot
-aar
 aaron
 ab
 aba
@@ -1114,7 +1113,6 @@ afton
 afy
 ag'in
 ag'inst
-aga
 agag
 again
 againe
@@ -1358,7 +1356,6 @@ aix
 ajaccio
 ajar
 ajax
-aka
 akad
 akademie
 akbal
@@ -3113,7 +3110,6 @@ aquiline
 aquinas
 aquitaine
 ar'n
-ara
 arab
 arabella
 arabes
@@ -4004,7 +4000,6 @@ asy
 asylum
 asylums
 at
-ata
 atahuallpa
 atahualpa
 atala
@@ -35839,7 +35834,6 @@ juxta
 juxtaposition
 juyce
 k'ang
-kaa
 kaaba
 kaan
 kab

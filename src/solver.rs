@@ -130,8 +130,8 @@ impl LevelSolver {
             seen.insert(display.clone());
         }
 
+        /*
         let indent = "  ".repeat(context.len());
-
         if display == "" {
             println!("{indent}{GREY}—{RESET}");
         } else {
@@ -139,10 +139,9 @@ impl LevelSolver {
                 println!("{indent}{line}");
             }
         }
-
         println!("{indent}——————————");
-
         std::thread::sleep(std::time::Duration::from_secs(1));
+        */
 
         let context_str = context.join(" ");
 
