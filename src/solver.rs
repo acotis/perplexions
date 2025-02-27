@@ -128,7 +128,7 @@ impl LevelSolver {
 fn main() {
     constants::initialize();
 
-    let mut solver = LevelSolver::new(constants::levels().nth(4).unwrap());
+    let mut solver = LevelSolver::new(constants::levels().nth(17).unwrap());
     let mut blessed = LiveList::new("src/blessed_words.txt");
 
     blessed.load();

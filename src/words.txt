@@ -19810,7 +19810,6 @@ donors
 donovan
 dons
 dont
-doo
 dooant
 dood
 doodle
@@ -20480,7 +20479,6 @@ duh
 duhamel
 dui
 dujardin
-duk
 duke
 dukedom
 dukes
@@ -20675,7 +20673,6 @@ duvall
 duvillard
 dux
 duxbury
-duz
 dvina
 dwarf
 dwarfed
@@ -22820,7 +22817,6 @@ ettrick
 etty
 etude
 etudes
-ety
 etym
 etymol
 etymological
@@ -36390,7 +36386,6 @@ kessler
 kester
 kestrel
 keswick
-ket
 ketch
 ketched
 ketches
@@ -36845,7 +36840,6 @@ kong
 kongo
 konigsberg
 konrad
-koo
 koodoo
 koos
 kootenay
@@ -36870,9 +36864,7 @@ kosciusko
 kosmos
 kosovo
 kossuth
-koto
 kotzebue
-kou
 kow
 kraal
 kraals
@@ -36923,7 +36915,6 @@ kuh
 kuhn
 kul
 kultur
-kum
 kun
 kunda
 kundry
@@ -36933,7 +36924,6 @@ kuno
 kunst
 kunti
 kunz
-kuo
 kuomintang
 kur
 kurd
@@ -36961,14 +36951,12 @@ kwei
 kwh
 kybird
 kyd
-kye
 kyle
 kynaston
 kynde
 kyng
 kynge
 kynges
-kyoto
 kyrgyzstan
 kyrie
 l'a
@@ -43993,7 +43981,6 @@ muhlenberg
 muir
 muirhead
 muirtown
-muk
 mukden
 mukoki
 mul
@@ -44257,7 +44244,6 @@ musters
 mustn
 mustn't
 musty
-mut
 mutability
 mutable
 mutandis
@@ -46413,7 +46399,6 @@ okhotsk
 okla
 oklahoma
 okra
-oku
 ola
 olaf
 olaus
@@ -46611,7 +46596,6 @@ onything
 onyx
 oof
 ooh
-ook
 oolite
 oolitic
 oom
@@ -47101,7 +47085,6 @@ othomar
 otia
 otis
 otley
-oto
 otomie
 otoo
 otra
@@ -47148,7 +47131,6 @@ oughtn't
 oughtred
 oui
 ouida
-ouk
 ould
 oullier
 oulton
@@ -47196,7 +47178,6 @@ outdo
 outdone
 outdoor
 outdoors
-oute
 outen
 outer
 outermost
@@ -65267,7 +65248,6 @@ tehuantepec
 teig
 teignmouth
 teja
-tek
 tekla
 tel
 tela
@@ -66736,7 +66716,6 @@ token
 tokens
 tokio
 tokugawa
-tokyo
 tol
 toland
 tolbooth
@@ -67022,7 +67001,6 @@ tottie
 totty
 totum
 totus
-tou
 touaricks
 toucan
 touch
@@ -68087,7 +68065,6 @@ tunnels
 tunny
 tuns
 tunstall
-tuo
 tuolumne
 tuoni
 tupac
@@ -68218,7 +68195,6 @@ tutte
 tutti
 tuttle
 tutto
-tuum
 tuus
 tuvalu
 tuxedo
@@ -68325,7 +68301,6 @@ tycho
 tycoon
 tyde
 tydeus
-tye
 tyed
 tyee
 tying
@@ -68401,8 +68376,6 @@ tytler
 tzar
 tze
 tzin
-tzky
-tzu
 uae
 uarda
 uber
@@ -68417,7 +68390,6 @@ udder
 udders
 udf
 udine
-udo
 udolpho
 ueb
 ueber
@@ -68483,7 +68455,6 @@ ultramarine
 ultramontane
 ulua
 ulysses
-um
 uma
 umacr
 umar
@@ -69915,7 +69886,6 @@ uta
 utah
 utan
 utc
-ute
 utensil
 utensils
 uteri
@@ -73756,12 +73726,10 @@ yelps
 yelverton
 yemen
 yen
-yeo
 yeobright
 yeoman
 yeomanry
 yeomen
-yeou
 yeovil
 yep
 yer
@@ -73815,7 +73783,6 @@ yo'r
 yo're
 yo'se
 yocomb
-yod
 yoga
 yogi
 yoh
@@ -73836,7 +73803,6 @@ yong
 yonge
 yonkers
 yonne
-yoo
 yoong
 yor
 yore
