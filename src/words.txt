@@ -12521,9 +12521,7 @@ cleopatra
 cleped
 clephane
 clept
-cler
 clerambault
-clerc
 clere
 clerestory
 clergy
@@ -15538,7 +15536,6 @@ crazed
 crazily
 craziness
 crazy
-cre
 creagh
 creak
 creaked
@@ -17009,7 +17006,6 @@ dazzled
 dazzles
 dazzling
 dazzlingly
-dcc
 dccc
 de'il
 deacon
@@ -17469,7 +17465,6 @@ dejectedly
 dejection
 dejeuner
 dekker
-del
 delacour
 delacroix
 delafield
@@ -17569,7 +17564,6 @@ deliveries
 delivering
 delivers
 delivery
-dell
 della
 delle
 dells
@@ -20172,7 +20166,6 @@ dreariest
 drearily
 dreariness
 dreary
-dred
 dreda
 drede
 dredge
@@ -20975,7 +20968,6 @@ ecumenical
 eczema
 eda
 edam
-edd
 edda
 eddication
 eddie
@@ -21437,7 +21429,6 @@ elkin
 elkington
 elkins
 elks
-ell
 ella
 ellaline
 ellangowan
@@ -22524,7 +22515,6 @@ erit
 erith
 eritrea
 erivan
-erl
 erlangen
 erle
 erling
@@ -38185,7 +38175,6 @@ leprous
 lepsius
 lepus
 lequel
-ler
 lere
 lerida
 lerma
@@ -38928,7 +38917,6 @@ llandudno
 llangollen
 llano
 llanos
-ller
 llewellyn
 llewelyn
 llinger
@@ -54474,7 +54462,6 @@ redburn
 redcliffe
 redclyffe
 redcoats
-redd
 redde
 redden
 reddened
@@ -54880,7 +54867,6 @@ rejuvenation
 rekindle
 rekindled
 rekindling
-rel
 relacion
 relaciones
 relapse
@@ -55381,7 +55367,6 @@ requisitions
 requital
 requite
 requited
-rer
 rerdell
 reread
 reredos
@@ -72049,9 +72034,7 @@ waz
 wazir
 wazirs
 wch
-wcl
 wco
-wdd
 we
 we'd
 we'll
@@ -72278,7 +72261,6 @@ were
 weren
 weren't
 werewolf
-werk
 werke
 werner
 werre
@@ -73123,7 +73105,6 @@ wizardry
 wizards
 wizened
 wks
-wlk
 wmo
 woad
 wobble

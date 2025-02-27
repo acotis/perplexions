@@ -1,10 +1,16 @@
 a
 art
 at
+clerk
 come
+cred
+crew
 cull
+dew
+drew
 em
 emo
+err
 full
 fun
 fund
@@ -15,6 +21,7 @@ got
 hello
 i
 item
+led
 me
 null
 or
@@ -34,4 +41,6 @@ tart
 to
 tore
 we
+wed
 welcome
+well
