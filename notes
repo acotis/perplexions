@@ -1,23 +1,19 @@
 
 Todo:
     — Make fifteen real levels.
-    — Fiddle with those levels and weed out incorrect word judgments.
-    — Create a tool to auto-analyze any level and determine all the possible
-      words that can possibly be tried when playing it which are currently
-      deemed to be words.
+    — Weed out as many bogus words as I can using my tool.
     — Playtest.
-    — Remove the dictionary-trimming tool.
     — Finalize the name of the game and the credits screen.
         — Credit all playtesters who want to be credited and credit Rose with her additional contributions if there end up being any.
-    — Swap in the final levels file.
-    — Play through the whole game once.
-    — Compile for Linux.
-    — Publish for Linux on itch.io.
+    — Compile for Linux and Windows.
+        — Dev options turned off.
+        — Release mode turned on!
+    — Assemble the files I intend to publish.
+    — Play through the whole game once by invoking the executable that I plan to publish.
+        — Fiddle with edge cases a bit during this playthrough.
+    — Publish game on itch.io.
         — Make it available under CC0.
         — Publish the source too and make that available under CC0 as well.
-    — Bonus: Compile for Windows and publish that to itch.io too.
-    — Bonus: Try following this tutorial to get it on the web:
-      https://ianjk.com/game-engine-in-rust/
 
 Possible tweaks:
     — Make the undo/restart text show up from the start for
@@ -42,4 +38,6 @@ Probably rejected:
     — Reset should do nothing if tiles are falling (because it
       could be the start of the level).
     — More pleasing indicator of the restart/undo feature.
+    — Bonus: Try following this tutorial to get it on the web:
+      https://ianjk.com/game-engine-in-rust/
 
