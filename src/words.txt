@@ -2428,7 +2428,6 @@ anjou
 ankle
 ankles
 anklets
-ann
 anna
 annabel
 annabella
@@ -2508,7 +2507,6 @@ annum
 annunciata
 annunciation
 annunziata
-annus
 anny
 annys
 anode
@@ -2720,7 +2718,6 @@ aorist
 aorta
 aortic
 aosta
-apa
 apace
 apache
 apaches
@@ -3002,7 +2999,6 @@ apuleius
 apulia
 apulian
 aqdas
-aqu
 aqua
 aquae
 aquafortis
@@ -3214,7 +3210,6 @@ argyllshire
 argynnis
 aria
 ariadne
-arian
 arianism
 arians
 arias
@@ -11330,8 +11325,6 @@ chi
 chiang
 chianti
 chiapas
-chiara
-chiaro
 chiaroscuro
 chic
 chica
@@ -11489,7 +11482,6 @@ chirac
 chirche
 chirk
 chirography
-chiron
 chirp
 chirped
 chirping
@@ -21805,7 +21797,6 @@ epitomized
 epoch
 epochs
 epos
-epp
 eppes
 eppie
 epping
@@ -33987,7 +33978,6 @@ ipso
 ipsum
 ipswich
 iranian
-iraq
 iraqi
 iras
 irascibility
@@ -43311,7 +43301,6 @@ nailing
 nailles
 nails
 nain
-nairn
 nairne
 nairobi
 nais
@@ -43374,7 +43363,6 @@ napier
 napkin
 napkins
 naples
-napo
 napol
 napoleon
 napoleonic
@@ -44662,7 +44650,6 @@ nuovo
 nuper
 nuptial
 nuptials
-nur
 nuremberg
 nurse
 nursed
@@ -44680,7 +44667,6 @@ nursling
 nurture
 nurtured
 nurturing
-nus
 nuss
 nussey
 nut
@@ -46287,7 +46273,6 @@ p'int
 p'r
 p'raps
 p'u
-paa
 paaker
 paardeberg
 pablo
@@ -46659,7 +46644,6 @@ panurge
 panza
 paolina
 paolo
-pap
 papa
 papacy
 papal
@@ -46704,7 +46688,6 @@ papyri
 papyrus
 paquita
 par
-para
 parable
 parables
 parabola
@@ -46756,7 +46739,6 @@ paramilitary
 paramount
 paramour
 paramours
-paran
 parana
 paranoia
 parapet
@@ -46819,10 +46801,8 @@ paresis
 paret
 parfait
 parham
-paria
 pariah
 pariahs
-parian
 paribus
 parietal
 parietes
@@ -48718,7 +48698,6 @@ pimpernel
 pimple
 pimples
 pin
-pina
 pinafore
 pinafores
 pinar
@@ -50067,7 +50046,6 @@ praiseworthy
 praising
 prakriti
 pram
-prana
 prance
 pranced
 prancing
@@ -51751,7 +51729,6 @@ quagga
 quagmire
 quagmires
 quahaug
-quai
 quail
 quailed
 quailing
@@ -51799,7 +51776,6 @@ quantity
 quanto
 quantock
 quantum
-quar
 quarante
 quarantine
 quarantined
@@ -52102,7 +52078,6 @@ quotha
 quotient
 quoting
 quoy
-qur
 qur'an
 quum
 raab
@@ -52432,7 +52407,6 @@ rankled
 rankling
 rankly
 ranks
-rann
 ranne
 ranny
 ransack
@@ -52469,7 +52443,6 @@ rapier
 rapiers
 rapin
 rapine
-rapp
 rappahannock
 rapped
 rapping
@@ -52572,7 +52545,6 @@ rattlin
 rattling
 rattray
 ratty
-ratu
 rature
 ratzel
 raucous
@@ -62517,8 +62489,6 @@ suppressing
 suppression
 suppuration
 suppurative
-supr
-supra
 suprema
 supremacy
 supreme
@@ -63885,7 +63855,6 @@ tepee
 tepees
 tepid
 terah
-terai
 terence
 terentius
 teres
@@ -63916,7 +63885,6 @@ terminus
 termites
 termonde
 terms
-tern
 ternate
 ternaux
 terni
@@ -65568,7 +65536,6 @@ trampy
 trams
 tramway
 tramways
-tran
 trance
 tranced
 trances
@@ -67729,7 +67696,6 @@ unromantic
 unroofed
 unruffled
 unruly
-uns
 unsaddled
 unsafe
 unsaid
@@ -68019,11 +67985,9 @@ uplift
 uplifted
 uplifting
 uplifts
-upo
 upon
 upon't
 upoun
-upp
 upper
 uppermost
 uppers
@@ -68061,7 +68025,6 @@ upstream
 upton
 uptown
 upturned
-upu
 upward
 upwards
 ural
@@ -68113,7 +68076,6 @@ ursule
 ursuline
 ursulines
 ursus
-uru
 uruguay
 uruguayan
 urus
@@ -69234,7 +69196,6 @@ virchow
 vireo
 vireos
 vires
-viret
 virg
 virgate
 virgen
@@ -69262,9 +69223,7 @@ viridis
 virile
 virility
 viris
-viro
 virorum
-virtu
 virtual
 virtually
 virtue

@@ -25,6 +25,7 @@ aim
 aims
 air
 airless
+airs
 ale
 alert
 all
@@ -42,9 +43,11 @@ and
 ands
 anew
 ant
+anus
 aorta
 ape
 apl
+app
 apt
 arc
 arcs
@@ -53,6 +56,7 @@ are
 area
 arena
 argon
+aria
 ark
 arrear
 arrow
@@ -66,6 +70,7 @@ atop
 auger
 aunt
 avian
+aviator
 award
 awards
 aware
@@ -598,6 +603,7 @@ nick
 nicked
 nickel
 nil
+nip
 nit
 no
 nod
@@ -630,6 +636,7 @@ older
 on
 one
 opal
+open
 opera
 opt
 or
@@ -654,6 +661,8 @@ pair
 pal
 pale
 pan
+pans
+papa
 par
 pare
 parlor
@@ -674,6 +683,11 @@ per
 peril
 pet
 petrol
+pie
+pin
+pip
+pipe
+piper
 pit
 plate
 plea
@@ -686,6 +700,7 @@ pot
 pro
 progress
 pus
+put
 puzzle
 puzzles
 race
@@ -789,6 +804,7 @@ rue
 rued
 rug
 rum
+run
 rust
 rut
 ruts
@@ -845,6 +861,7 @@ slab
 slam
 sled
 smug
+snap
 so
 soar
 sod
@@ -862,6 +879,7 @@ still
 store
 stuck
 sue
+sun
 sure
 surer
 swab
