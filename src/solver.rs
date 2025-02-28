@@ -175,9 +175,35 @@ fn main() {
         blessed.load();
         //solver.explore(&mut HashSet::new(), &mut blessed, &mut vec![]);
 
+        solver.move_unchecked(&[(3, 0), (3, 1), (4, 1), (4, 2), (5, 2)]);
+        println!("New solver state:");
+        println!("——————————");
+        print!("{solver}");
+        println!("——————————");
+
+        solver.move_unchecked(&[(5, 0), (5, 1), (4, 0), (3, 0)]);
+        println!("New solver state:");
+        println!("——————————");
+        print!("{solver}");
+        println!("——————————");
+
+        solver.move_unchecked(&[(0, 2), (1, 1), (2, 2)]);
+        println!("New solver state:");
+        println!("——————————");
+        print!("{solver}");
+        println!("——————————");
+
+        solver.move_unchecked(&[(0, 1), (0, 0), (1, 0), (2, 0), (2, 1)]);
+        println!("New solver state:");
+        println!("——————————");
+        print!("{solver}");
+        println!("——————————");
+
         for mv in solver.all_moves() {
             println!("{}", solver.word_at(&mv));
         }
+
+        break;
     }
 
     println!();
