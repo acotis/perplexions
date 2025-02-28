@@ -103,11 +103,13 @@ aviau # But it needs to be fixed first (chi/via/a/up/per/tin).
 
 
 ——————————
-perplexity # the game is actually called "perplections" and there is a "controversial" AI called "perplexity" so be careful
+perplexity # there is a "controversial" AI called "perplexity" so be careful
 ——————————
 game by
 evan rysdam
 ——————————
-thanks 4
-playing!
+thanks
+forplaying!
+——————————
+quit
 ——————————
