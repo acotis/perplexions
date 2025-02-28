@@ -202,11 +202,19 @@ fn check_okay(blessed: &mut LiveList, context: &str, word: &str) -> bool {
 fn prompt_user(context: &str, word: &str) -> bool {
     let mut input = String::new();
     while !["x\n", "a\n"].contains(&&*input) {
+        input = String::new();
         print!("{GREY}[{context}]{RESET} {BOLD}{word}{RESET} {CYAN}");
         stdout().flush().expect("could not flush");
         stdin().read_line(&mut input).expect("did not enter a correct string");
         print!("{RESET}");
         stdout().flush().expect("could not flush second time");
+
+        if input == "w\n" {
+            std::process::Command::new("firefox")
+                .arg(format!("https://en.wiktionary.org/wiki/{}", word.to_ascii_lowercase()))
+                .output()
+                .expect("failed to execute process");
+        }
     }
     input == "a\n"
 }
