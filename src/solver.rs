@@ -173,7 +173,11 @@ fn main() {
         println!();
 
         blessed.load();
-        solver.explore(&mut HashSet::new(), &mut blessed, &mut vec![]);
+        //solver.explore(&mut HashSet::new(), &mut blessed, &mut vec![]);
+
+        for mv in solver.all_moves() {
+            println!("{}", solver.word_at(&mv));
+        }
     }
 
     println!();
