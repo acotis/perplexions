@@ -22340,7 +22340,6 @@ eval
 evaline
 evaluate
 evaluation
-evan
 evana
 evandale
 evander
@@ -43576,7 +43575,6 @@ navarino
 navarre
 navarrete
 navarro
-nave
 navel
 naves
 navicular
@@ -49164,6 +49162,8 @@ playmates
 playne
 playroom
 plays
+playtest
+playtesting
 plaything
 playthings
 playtime
@@ -51994,7 +51994,6 @@ quhat
 quhen
 quhilk
 quhill
-qui
 quia
 quibble
 quibbles
@@ -55185,7 +55184,6 @@ rotation
 rotations
 rotatory
 rote
-roth
 rotha
 rothe
 rother
@@ -64427,7 +64425,6 @@ thistlewood
 thither
 thitherward
 thly
-tho
 thoas
 thocht
 thode
@@ -64452,7 +64449,6 @@ thong
 thongs
 thonne
 thoo
-thor
 thora
 thoracic
 thorax
