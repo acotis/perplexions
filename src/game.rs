@@ -69,9 +69,15 @@ impl Game {
         level_index.hash(&mut hasher);
         let hash: u64 = hasher.finish();
 
-        let r = (hash       & 255) as u8;
-        let g = (hash >> 8  & 255) as u8;
-        let b = (hash >> 16 & 255) as u8;
+        let mut r = (hash       & 255) as u8;
+        let mut g = (hash >> 8  & 255) as u8;
+        let mut b = (hash >> 16 & 255) as u8;
+
+        if level_index == 6 {
+            r = 220;
+            g = 110;
+            b = 0;
+        }
 
         ret.color      = Color::rgb(r/5*2+150,g/5*2+150,b/5*2+150);
         ret.mild_color = Color::rgb(r/5*1+200,g/5*1+200,b/5*1+200);
