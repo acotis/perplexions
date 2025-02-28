@@ -122,25 +122,6 @@ impl LevelSolver {
     }
 
     fn explore(&mut self, seen: &mut HashSet<String>, blessed: &mut LiveList, context: &mut Vec<String>) {
-        let indent = "    ".repeat(if context.len() < 1 {0} else {context.len() - 1});
-        let arrow      = *context == vec![String::from("ARROW")];
-        let arrow_wren = *context == vec![String::from("ARROW"), String::from("WREN")];
-        let any = arrow || arrow_wren;
-
-        if arrow {
-            println!("{indent}considering ARROW in this puzzle state:");
-            println!("{indent}  ——————————");
-            println!("{}", format!("{self}").lines().map(|line| format!("{indent}  {line}")).collect::<Vec<_>>().join("\n"));
-            println!("{indent}  ——————————");
-        }
-
-        if arrow_wren {
-            println!("{indent}considering ARROW/WREN in this puzzle state:");
-            println!("{indent}  ——————————");
-            println!("{}", format!("{self}").lines().map(|line| format!("{indent}  {line}")).collect::<Vec<_>>().join("\n"));
-            println!("{indent}  ——————————");
-        }
-
         let context_str = context.join(" ");
 
         if self.fields[0].iter().all(|col| col.is_empty()) {
@@ -149,7 +130,6 @@ impl LevelSolver {
 
         let display = format!("{self}");
         if seen.contains(&display) {
-            if any {println!("{indent}  --- hit hash, done ---");}
             return;
         } else {
             seen.insert(display.clone());
@@ -158,25 +138,14 @@ impl LevelSolver {
         for mv in self.all_moves() {
             let word = self.word_at(&mv);
 
-            if any {
-                println!("{indent}  considering follow-up: {word}");
+            if check_okay(blessed, &context_str, &word) {
+                context.push(word);
+                self.move_unchecked(&mv);
+                self.explore(seen, blessed, context);
+                self.undo();
+                context.pop();
             }
-
-            //if context.len() == 0 && word == "ARROW"
-            //|| context.len() == 1 && word == "WREN"
-            //|| context.len() == 2 && word == "IRK"
-            //|| context.len() == 3 && word == "RARER" {
-                if check_okay(blessed, &context_str, &word) {
-                    context.push(word);
-                    self.move_unchecked(&mv);
-                    self.explore(seen, blessed, context);
-                    self.undo();
-                    context.pop();
-                }
-            //}
         }
-
-        if any {println!("{indent}  --- out of options, done---");}
     }
 }
 
