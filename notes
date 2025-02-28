@@ -1,11 +1,12 @@
 
 Todo:
+    — Finalize the title (including how it appears in the credits).
     — Make fifteen real levels.
     — Weed out as many bogus words as I can using my tool.
     — Credit Rose for helping with level design if I end up using any of her stuff.
         — Make sure any extra screens I create for this are also beatable with reasonable words.
-    — Playtest.
-    — Finalize the title (including how it appears in the credits).
+    — Playtest with Chase?
+        — If so, add a credits screen for her as well.
     — Compile for Linux and Windows.
         — Dev options turned off.
         — Release mode turned on!
