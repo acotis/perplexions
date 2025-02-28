@@ -126,6 +126,7 @@ cabs
 calf
 calico
 call
+calla
 caller
 cam
 cams
@@ -323,6 +324,7 @@ ems
 emu
 eons
 era
+ergo
 err
 errata
 error
@@ -386,7 +388,6 @@ gem
 gems
 get
 gets
-gil
 girl
 gist
 git
@@ -511,6 +512,7 @@ lieu
 life
 lift
 lilac
+lilt
 lint
 lion
 list
@@ -523,6 +525,7 @@ local
 lode
 loft
 log
+loin
 loiter
 lop
 lore
@@ -550,7 +553,6 @@ mesa
 mesh
 mess
 messiah
-messias
 miser
 misers
 miss

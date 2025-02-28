@@ -1,6 +1,5 @@
 
 Todo:
-    — Reconsider these words: OFT, CEL, ERGO, LILT, LOIN, GIL, CALLA, MESSIAS.
     — Make fifteen real levels.
     — Fiddle with those levels and weed out incorrect word judgments.
     — Create a tool to auto-analyze any level and determine all the possible
@@ -14,7 +13,8 @@ Todo:
     — Play through the whole game once.
     — Compile for Linux.
     — Publish for Linux on itch.io.
-        — Mark it as being under a free license of some kind (legal to duplicate).
+        — Make it available under CC0.
+        — Publish the source too and make that available under CC0 as well.
     — Bonus: Compile for Windows and publish that to itch.io too.
     — Bonus: Try following this tutorial to get it on the web:
       https://ianjk.com/game-engine-in-rust/

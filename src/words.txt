@@ -9303,6 +9303,7 @@ calixtus
 calkins
 call
 call'd
+calla
 callaghan
 callahan
 callan
@@ -21912,6 +21913,7 @@ erelong
 erewhile
 erewhon
 erfurt
+ergo
 erh
 erica
 erich
@@ -26966,7 +26968,6 @@ gigi
 giglio
 gigs
 gihon
-gil
 gila
 gilbert
 gilberte
@@ -37609,6 +37610,7 @@ lillie
 lilliput
 lilliputian
 lilly
+lilt
 lilting
 lily
 lim
@@ -38079,6 +38081,7 @@ logwood
 logy
 lohengrin
 loike
+loin
 loins
 lois
 loise
@@ -41117,7 +41120,6 @@ messes
 messiah
 messiahship
 messianic
-messias
 messico
 messieurs
 messina
