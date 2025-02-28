@@ -24,8 +24,6 @@ struct Explosion {
 
 fn main() {
 
-    println!("Hello world, test run");
-
     // Initialize stuff.
 
     constants::initialize();
