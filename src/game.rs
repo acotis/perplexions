@@ -425,7 +425,7 @@ impl Game {
 
         //let undo_string    = "U: undo";
         //let restart_string = "R: restart";
-        let restart_string = if self.last_level {
+        let restart_string = if false { //self.last_level {
             ""
         } else {
             if self.level_index == 0 {
