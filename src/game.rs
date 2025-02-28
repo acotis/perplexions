@@ -18,8 +18,8 @@ enum GameStage {
 
 enum Opacity {
     Off,
-    OffButWasOn,
-    On(u8),
+    //OffButWasOn,
+    On(i32),
 }
 
 #[derive(Debug, Clone)]
@@ -55,7 +55,7 @@ impl Game {
             dimensions: Dimensions::new(0, 0),
             last_mouse_pos: (0.0, 0.0),
             stage: Ongoing,
-            restart_opacity: if last_level {On(0)} else {Off},
+            restart_opacity: if last_level {On(-128)} else {Off},
             level_index: level_index,
             last_level: last_level,
             color: Color::BLACK,
@@ -120,7 +120,9 @@ impl Game {
             if self.fields.len() > 1 {
                 self.fields.remove(0);
                 self.select_path = vec![];
-                if self.fields.len() == 1 {self.restart_opacity = OffButWasOn;}
+                if self.fields.len() == 1 {
+                    self.restart_opacity = Off;
+                }
             }
         }
     }
@@ -233,8 +235,8 @@ impl Game {
             // Set the restart button to fade in.
 
             self.restart_opacity = match self.restart_opacity {
-                Off => if self.level_index == 0 {On(0)} else {On(0)},
-                OffButWasOn => On(255),
+                Off => if self.level_index == 0 {On(-128)} else {On(128)},
+                //OffButWasOn => On(128),
                 On(x) => On(x), // should never happen
             };
 
@@ -302,8 +304,8 @@ impl Game {
 
         self.restart_opacity = match self.restart_opacity {
             Off => Off,
-            OffButWasOn => if self.level_index == 0 {Off} else {OffButWasOn},
-            On(n) => On(if n < 255 {n+1} else {n}),
+            //OffButWasOn => OffButWasOn,
+            On(n) => On(if n < 128 {n+1} else {n}),
         };
     }
 
@@ -447,9 +449,9 @@ impl Game {
 
         let restart_opacity = match self.restart_opacity {
             Off => 0,
-            OffButWasOn => 0,
+            //OffButWasOn => 0,
             On(n) => if self.stage == Ongoing {
-                if n < 128 {0} else {n - 128}
+                if n < 0 {0} else {n as u8}
             } else {
                 0
             }
