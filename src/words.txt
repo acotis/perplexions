@@ -1287,7 +1287,6 @@ aims
 ain't
 ainger
 ainley
-aino
 ainos
 ainsi
 ainslie
@@ -3230,7 +3229,6 @@ arikara
 arima
 arimathea
 arina
-arion
 ariosto
 ariovistus
 aris
@@ -3821,7 +3819,6 @@ assyrians
 ast
 asta
 astarte
-aster
 asterisk
 asterisks
 astern
@@ -16296,17 +16293,13 @@ damask
 damasus
 damayanti
 dame
-damer
 dames
 damian
 damien
 damietta
 damis
-damme
-dammed
 damming
 dammit
-damn
 damn'd
 damnable
 damnably
@@ -16525,7 +16518,6 @@ dauber
 daubing
 daubrecq
 daubs
-daud
 daudet
 daughter
 daughters
@@ -20007,8 +19999,6 @@ dulness
 duluth
 dulwich
 duly
-duma
-dumas
 dumb
 dumbarton
 dumbfounded
@@ -21120,7 +21110,6 @@ emits
 emitted
 emitting
 emlyn
-emma
 emmanuel
 emmaus
 emmeline
@@ -26605,7 +26594,6 @@ gellert
 gellius
 gem
 gemini
-gemma
 gemman
 gemmed
 gemmen
@@ -26910,7 +26898,6 @@ gi'e
 gi'en
 giacinto
 giacomo
-gian
 gianettino
 gianluca
 giant
@@ -27024,7 +27011,6 @@ gimme
 gimp
 gin
 gin'ral
-gina
 gineral
 ginevra
 ging
@@ -27033,9 +27019,7 @@ gingerbread
 gingerly
 gingham
 gini
-gink
 ginn
-gino
 gins
 ginseng
 gintleman
@@ -27080,7 +27064,6 @@ girlie
 girlish
 girls
 girolamo
-giron
 gironde
 girondins
 girondists
@@ -27481,7 +27464,6 @@ gog
 goggle
 goggles
 gogol
-goin
 going
 goings
 golah
@@ -27531,7 +27513,6 @@ gomez
 gomme
 gomorrah
 gompers
-gon
 goncourt
 gond
 gondi
@@ -27807,7 +27788,6 @@ grahame
 grahams
 grail
 grain
-graine
 grained
 grainger
 graining
@@ -27831,7 +27811,6 @@ grampians
 gramps
 grampus
 grams
-gran
 gran'ma
 gran'pa
 granada
@@ -27884,7 +27863,6 @@ granet
 grange
 granger
 granges
-grani
 grania
 granite
 granites
@@ -28291,7 +28269,6 @@ grizzly
 grk
 grm
 grms
-grn
 groan
 groaned
 groaning
@@ -28484,7 +28461,6 @@ gubbins
 gubbio
 gubernatis
 gubernatorial
-gudea
 gudeman
 gudewife
 gudgeon
@@ -28720,8 +28696,6 @@ gwenny
 gwent
 gwilt
 gwilym
-gwin
-gwine
 gwyn
 gwynedd
 gwynn
@@ -32892,7 +32866,6 @@ industrious
 industriously
 industry
 indwelling
-ine
 inebriate
 inebriated
 inebriates
@@ -33989,7 +33962,6 @@ iohn
 iola
 iom
 ion
-ione
 ionia
 ionian
 ionians
@@ -34014,7 +33986,6 @@ ipsius
 ipso
 ipsum
 ipswich
-irak
 iranian
 iraq
 iraqi
@@ -35222,7 +35193,6 @@ kah
 kahn
 kaid
 kail
-kain
 kain't
 kaiser
 kaj
@@ -35291,9 +35261,7 @@ kappa
 karachi
 karaites
 karens
-kari
 karim
-karin
 karlsefin
 karlsefne
 karlsruhe
@@ -40279,7 +40247,6 @@ maturity
 matutinal
 maubeuge
 mauchline
-maude
 maudie
 maudlin
 maudslay
@@ -40542,7 +40509,6 @@ meal
 mealies
 meals
 mealy
-meam
 mean
 meander
 meandered
@@ -44106,7 +44072,6 @@ nier
 niet
 nietzsche
 nieuport
-nig
 nigel
 niger
 nigeria
@@ -44135,7 +44100,6 @@ nightmares
 nights
 nightshade
 nightshirt
-nigra
 nigrum
 nigsberg
 nihil
@@ -44311,7 +44275,6 @@ nodules
 noel
 noemi
 noes
-nog
 nogent
 noggin
 noght
@@ -44395,7 +44358,6 @@ noone
 noons
 noontide
 noontime
-noor
 noorna
 noose
 nooses
@@ -45420,10 +45382,8 @@ oolite
 oolitic
 oom
 ooman
-oona
 ooo
 oop
-oor
 ootah
 ooze
 oozed
@@ -45711,7 +45671,6 @@ origins
 orinoco
 oriole
 orioles
-orion
 oris
 oriskany
 orison
@@ -45754,7 +45713,6 @@ ornithological
 ornithologist
 ornithologists
 ornithology
-oro
 orontes
 orosius
 orozco
@@ -52316,9 +52274,7 @@ rainbows
 raincoat
 raindal
 raindrops
-raine
 rained
-rainer
 raines
 rainey
 rainfall
@@ -52464,7 +52420,6 @@ rangers
 ranges
 ranging
 rangoon
-rani
 ranjoor
 rank
 ranked
@@ -53718,7 +53673,6 @@ renewed
 renewing
 renews
 renfrew
-reni
 renie
 renier
 reniform
@@ -53727,7 +53681,6 @@ rennepont
 rennes
 rennet
 rennie
-renoir
 renomination
 renouard
 renouf
@@ -54470,7 +54423,6 @@ rhythmic
 rhythmical
 rhythmically
 rhythms
-riano
 riario
 riata
 rib
@@ -54655,7 +54607,6 @@ rims
 rimsky
 rincon
 rinds
-rine
 rinehart
 ring
 ringan
@@ -55046,7 +54997,6 @@ ronnie
 ronny
 ronquillo
 ronsard
-roo
 rood
 roods
 roof
@@ -55070,7 +55020,6 @@ rooming
 roommate
 rooms
 roomy
-roon
 rooney
 roos
 roosevelt
@@ -71179,7 +71128,6 @@ wiper
 wipes
 wiping
 wipo
-wir
 wird
 wire
 wired

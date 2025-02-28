@@ -123,7 +123,7 @@ impl LevelSolver {
 
     fn explore(&mut self, seen: &mut HashSet<String>, blessed: &mut LiveList, context: &mut Vec<String>) {
         // short circuit
-        if context.len() > 2 {return;}
+        //if context.len() > 2 {return;}
 
         let context_str = context.join(" ");
 
@@ -169,10 +169,14 @@ impl Display for LevelSolver {
 fn main() {
     constants::initialize();
 
-    for level in constants::levels().skip(9) {
+    for level in constants::levels() {
         let mut solver = LevelSolver::new(level);
         let mut blessed = LiveList::new("src/blessed_words.txt");
 
+        println!();
+        println!("——————————");
+        print!("{solver}");
+        println!("——————————");
         println!();
 
         blessed.load();
