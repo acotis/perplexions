@@ -174,8 +174,6 @@ fn main() {
 
         blessed.load();
         solver.explore(&mut HashSet::new(), &mut blessed, &mut vec![]);
-
-        break;
     }
 
     println!();
