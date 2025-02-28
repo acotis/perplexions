@@ -959,7 +959,6 @@ aeolian
 aeolus
 aeons
 aerated
-aere
 aerial
 aerodrome
 aeronaut
@@ -1358,7 +1357,6 @@ akk
 akka
 akkad
 akoontal
-akron
 aku
 al'ays
 ala
@@ -20875,7 +20873,6 @@ eke
 eked
 eking
 ekkehard
-ekron
 elaborate
 elaborated
 elaborately
@@ -21552,7 +21549,6 @@ endureth
 enduring
 endwise
 endymion
-ene
 eneas
 enema
 enemie
@@ -21719,7 +21715,6 @@ ennobles
 ennobling
 ennui
 enny
-eno
 enobarbus
 enoch
 enormities
@@ -21728,7 +21723,6 @@ enormous
 enormously
 enos
 enough
-enow
 enquire
 enquired
 enquirer
@@ -22138,7 +22132,6 @@ ermines
 erminia
 erminie
 ermyntrude
-erne
 ernest
 ernestine
 ernesto
@@ -34301,7 +34294,6 @@ ire
 iredell
 ireland
 irenaeus
-irene
 ireton
 iridescence
 iridescent
@@ -35543,20 +35535,17 @@ kamschatka
 kamtchatka
 kamtschatka
 kamuka
-kan
 kana
 kanaka
 kanakas
 kanawha
 kandahar
 kandy
-kane
 kang
 kangaroo
 kangaroos
 kankakee
 kann
-kano
 kans
 kansa
 kansas
@@ -35571,7 +35560,6 @@ kapila
 kappa
 karachi
 karaites
-karen
 karens
 kari
 karim
@@ -35728,7 +35716,6 @@ kempe
 kemper
 kempis
 kempt
-ken
 kenby
 kencote
 kend
@@ -35759,7 +35746,6 @@ kennington
 kennon
 kenny
 kennyfeck
-keno
 kenric
 kenrick
 kens
@@ -35800,7 +35786,6 @@ kernel
 kernels
 kerner
 kerosene
-kerr
 kerry
 kersey
 kershaw
@@ -36170,7 +36155,6 @@ knitted
 knitters
 knitting
 knives
-kno
 knob
 knobbed
 knobby
@@ -36202,7 +36186,6 @@ know
 know'd
 know'st
 knowable
-knowe
 knowed
 knowen
 knower
@@ -36305,8 +36288,6 @@ kroeber
 krogstad
 kroll
 kronborg
-krone
-kroner
 kronos
 krool
 krooman
@@ -43698,7 +43679,6 @@ naisi
 naive
 naively
 naivete
-nak
 naka
 naked
 nakedly
@@ -43779,7 +43759,6 @@ narcotics
 nardier
 nares
 narkom
-narr
 narragansett
 narragansetts
 narrate
@@ -43979,7 +43958,6 @@ neapolitans
 near
 nearby
 nearchus
-neare
 neared
 nearer
 nearest
@@ -44148,7 +44126,6 @@ neith
 neither
 nejd
 nejdanov
-nek
 nekhludoff
 nela
 nele
@@ -44171,7 +44148,6 @@ nemo
 nemours
 nen
 nennius
-neo
 neolithic
 neon
 neophyte
@@ -44193,13 +44169,11 @@ nepos
 nepotism
 neptune
 neque
-nere
 nereid
 nereids
 nereus
 nergal
 nerissa
-nero
 neroweg
 nerva
 nerve
@@ -44679,7 +44653,6 @@ nodier
 nods
 nodule
 nodules
-noe
 noel
 noemi
 noes
@@ -44784,7 +44757,6 @@ norbury
 norcross
 norden
 nordic
-nore
 noreen
 norfolk
 norgate
@@ -44980,7 +44952,6 @@ novus
 now
 nowadays
 noways
-nowe
 nowell
 nowhere
 nowheres
@@ -46141,7 +46112,6 @@ ornamenting
 ornaments
 ornata
 ornate
-orne
 ornery
 ornith
 ornithological
@@ -46672,7 +46642,6 @@ owain
 owari
 owe
 owed
-owen
 owens
 ower
 owes
@@ -54123,7 +54092,6 @@ rendrye
 rends
 rendu
 rendus
-rene
 renee
 renegade
 renegades
@@ -54146,7 +54114,6 @@ rennepont
 rennes
 rennet
 rennie
-reno
 renoir
 renomination
 renouard
@@ -55212,7 +55179,6 @@ rizal
 rizzio
 rizzo
 rnberg
-rner
 rnson
 roach
 road
@@ -55228,7 +55194,6 @@ roam
 roamed
 roaming
 roams
-roane
 roanoke
 roar
 roar'd
@@ -55524,7 +55489,6 @@ roque
 roquefort
 roquette
 rorie
-rorke
 rory
 rosa
 rosalie
@@ -55717,7 +55681,6 @@ rowdies
 rowdy
 rowed
 rowels
-rowena
 rower
 rowers
 rowing
@@ -70976,7 +70939,6 @@ welton
 welts
 welwyn
 wemyss
-wen
 wenceslas
 wenceslaus
 wench
@@ -70990,7 +70952,6 @@ wending
 wendover
 wends
 wendy
-wene
 wenham
 wenlock
 wenn
@@ -71002,12 +70963,9 @@ wenzel
 wept
 werden
 were
-weren
 weren't
 werewolf
 werke
-werner
-werre
 werry
 wert
 werther
@@ -72033,7 +71991,6 @@ wore
 work
 workable
 workaday
-worke
 worked
 worker
 workers
@@ -72075,7 +72032,6 @@ wormwood
 wormy
 worn
 worn't
-worne
 worrell
 worried
 worries
