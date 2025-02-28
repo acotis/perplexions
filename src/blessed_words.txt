@@ -1,5 +1,6 @@
 a
 ab
+abs
 acorn
 acre
 act
@@ -58,6 +59,10 @@ awards
 aware
 awe
 awed
+back
+backed
+ban
+bar
 be
 bed
 beds
@@ -463,6 +468,7 @@ mud
 mug
 mute
 my
+nab
 name
 named
 nap
@@ -630,6 +636,7 @@ roar
 roared
 roarer
 rod
+rods
 role
 roles
 rot
@@ -650,6 +657,7 @@ sad
 sag
 same
 sat
+scorn
 sea
 seam
 seams
@@ -809,6 +817,7 @@ wear
 wearer
 web
 wed
+weds
 welcome
 weld
 well

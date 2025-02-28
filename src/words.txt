@@ -58,7 +58,6 @@ abbreviation
 abbreviations
 abby
 abc
-abd
 abdalla
 abdallah
 abdel
@@ -77,7 +76,6 @@ abdul
 abdulla
 abdullah
 abdur
-abe
 abeam
 abed
 abednego
@@ -198,7 +196,6 @@ above
 abovementioned
 abovesaid
 abp
-abr
 abra
 abraded
 abraham
@@ -4597,7 +4594,6 @@ bacillus
 back
 backbiting
 backbone
-backe
 backed
 backer
 backers
@@ -5445,7 +5441,6 @@ bauxite
 bavaria
 bavarian
 bavarians
-baw
 bawd
 bawdy
 bawl
@@ -5498,7 +5493,6 @@ bbls
 be
 be'ind
 be'n
-bea
 beach
 beached
 beaches
@@ -8407,7 +8401,6 @@ brockhaus
 brocklehurst
 brockton
 brockway
-brod
 brode
 broder
 broderick
@@ -8476,7 +8469,6 @@ broome
 brooms
 broomstick
 broomsticks
-bros
 brose
 broth
 brothel
@@ -19436,7 +19428,6 @@ donatists
 donato
 donatus
 doncaster
-donde
 done
 donec
 donegal
@@ -19538,7 +19529,6 @@ dormice
 dormitories
 dormitory
 dormouse
-dorn
 dorner
 doro
 dorothea
@@ -52398,7 +52388,6 @@ quum
 raab
 raad
 raal
-rab
 raban
 rabat
 rabba
@@ -60255,7 +60244,6 @@ sopra
 soprano
 sopranos
 sops
-sora
 sorbonne
 sorcerer
 sorcerers

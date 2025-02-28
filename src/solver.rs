@@ -122,6 +122,9 @@ impl LevelSolver {
     }
 
     fn explore(&mut self, seen: &mut HashSet<String>, blessed: &mut LiveList, context: &mut Vec<String>) {
+        // short circuit
+        if context.len() > 2 {return;}
+
         let context_str = context.join(" ");
 
         if self.fields[0].iter().all(|col| col.is_empty()) {

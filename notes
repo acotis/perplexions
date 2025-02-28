@@ -5,6 +5,7 @@ Todo:
     — Consider re-adding OFT as a word.
     — Reconsider these words: OFT, CEL, ERGO, LILT, LOIN, GIL, CALLA, MESSIAS.
     — Make the hitbox just a tad larger.
+    — Make the restart/undo text indeed still appear immediately for levels other than the first.
     — Make fifteen real levels.
     — Fiddle with those levels and weed out incorrect word judgments.
     — Create a tool to auto-analyze any level and determine all the possible
