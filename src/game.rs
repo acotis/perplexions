@@ -55,7 +55,7 @@ impl Game {
             dimensions: Dimensions::new(0, 0),
             last_mouse_pos: (0.0, 0.0),
             stage: Ongoing,
-            restart_opacity: if last_level {On(-128)} else {Off},
+            restart_opacity: Off, //if last_level {On(-128)} else {Off},
             level_index: level_index,
             last_level: last_level,
             color: Color::BLACK,
@@ -132,7 +132,7 @@ impl Game {
 
 impl Game {
     pub fn mouse_down(&mut self, x: f32, y: f32) {
-        if self.last_level {return;}
+        // if self.last_level {return;}
 
         self.last_mouse_pos = (x, y);
         if let Some((point, _distance)) = self.tile_at_screen_point(x, y) {
@@ -243,7 +243,7 @@ impl Game {
             // Check if the game is completed.
 
             if self.fields[0].iter().all(|c| c.is_empty()) {
-                self.stage = Completed(125);
+                self.stage = if self.last_level {Completed(175)} else {Completed(125)};
             }
 
             // Reset the selection and return a circle.
@@ -383,8 +383,8 @@ impl Game {
 
                 let fill_color = 
                     if self.select_path.contains(&(column, row))
-                    || self.tile_at_screen_point(self.last_mouse_pos.0, self.last_mouse_pos.1).map(|((c, r), _)|(c,r)) == Some((column, row))
-                    || self.last_level {
+                    || self.tile_at_screen_point(self.last_mouse_pos.0, self.last_mouse_pos.1).map(|((c, r), _)|(c,r)) == Some((column, row)) {
+                    //|| self.last_level {
                         self.color
                     } else {
                         Color::WHITE
@@ -426,7 +426,7 @@ impl Game {
         //let undo_string    = "U: undo";
         //let restart_string = "R: restart";
         let restart_string = if self.last_level {
-            "Q = quit"
+            ""
         } else {
             if self.level_index == 0 {
                 "press R to restart"
