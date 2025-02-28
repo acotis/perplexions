@@ -103,7 +103,7 @@ eoum
 
 
 ——————————
-perplexity # there is a "controversial" AI called "perplexity" so be careful
+perplexions
 ——————————
 game
 createdby

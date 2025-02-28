@@ -1,11 +1,11 @@
 [package]
-name = "perplexity"
+name = "perplexions"
 version = "0.1.0"
 edition = "2021"
-default-run = "perplexity"
+default-run = "perplexions"
 
 [[bin]]
-name = "perplexity"
+name = "perplexions"
 path = "src/main.rs"
 
 [[bin]]
