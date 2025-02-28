@@ -147,7 +147,7 @@ impl Game {
                 // If the mouse is close enough to the touched point,
                 // add it to the selection path.
 
-                if distance < 0.4
+                if distance < 0.45
                 && !self.select_path.contains(&point)
                 && usize::abs_diff(point.0, last_point.0) <= 1
                 && usize::abs_diff(point.1, last_point.1) <= 1 {

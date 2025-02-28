@@ -1,6 +1,5 @@
 
 Todo:
-    — Make the hitbox just a tad larger.
     — Rename Game to Level.
     — Reconsider these words: OFT, CEL, ERGO, LILT, LOIN, GIL, CALLA, MESSIAS.
     — Make the restart/undo text indeed still appear immediately for levels other than the first.
@@ -12,10 +11,12 @@ Todo:
     — Playtest.
     — Remove the dictionary-trimming tool.
     — Finalize the name of the game and the credits screen.
+        — Credit all playtesters who want to be credited and credit Rose with her additional contributions if there end up being any.
     — Swap in the final levels file.
     — Play through the whole game once.
     — Compile for Linux.
     — Publish for Linux on itch.io.
+        — Mark it as being under a free license of some kind (legal to duplicate).
     — Bonus: Compile for Windows and publish that to itch.io too.
     — Bonus: Try following this tutorial to get it on the web:
       https://ianjk.com/game-engine-in-rust/
