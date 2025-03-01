@@ -1593,7 +1593,6 @@ allenby
 allerdyke
 allers
 allerton
-alles
 alleviate
 alleviated
 alleviating
@@ -1644,7 +1643,6 @@ allows
 alloy
 alloyed
 alloys
-alls
 allsop
 allspice
 allston
@@ -1737,17 +1735,14 @@ alsace
 alsatia
 alsatian
 also
-alsoe
 alsop
 alston
-alta
 altai
 altamont
 altar
 altarpiece
 altars
 altemus
-alten
 altenburg
 alter
 alter'd
@@ -1783,7 +1778,6 @@ altitudes
 altname
 alto
 altogether
-altona
 altos
 altruism
 altruistic
@@ -2228,7 +2222,6 @@ anerley
 aneroid
 anesthesia
 anesthetic
-aneta
 aneurism
 anew
 ang
@@ -3482,7 +3475,6 @@ ask'd
 askance
 askari
 askaris
-aske
 asked
 askest
 asketh
@@ -3783,7 +3775,6 @@ atlantic
 atlantis
 atlas
 atlases
-atlee
 atmananda
 atmosphere
 atmospheres
@@ -4211,7 +4202,6 @@ awdrey
 awe
 aweary
 awed
-aweel
 awes
 awesome
 awestruck
@@ -4224,7 +4214,6 @@ awin
 awkward
 awkwardly
 awkwardness
-awls
 awm
 awning
 awnings
@@ -14009,7 +13998,6 @@ corduroy
 corduroys
 cordwood
 core
-corean
 cored
 corelli
 corentin
@@ -14061,7 +14049,6 @@ cornered
 corners
 cornerstone
 cornets
-cornewall
 cornfield
 cornfields
 cornhill
@@ -14759,10 +14746,8 @@ cremated
 cremation
 cremona
 cremorne
-crenate
 creole
 creoles
-creosote
 crepe
 crept
 cresap
@@ -14928,7 +14913,6 @@ crofters
 crofton
 crofts
 croghan
-croire
 crois
 croisic
 croisier
@@ -14947,14 +14931,10 @@ cromlechs
 crompton
 cromwell
 cromwellian
-crone
-crones
 cronica
 cronies
 cronin
 cronje
-cronk
-cronos
 cronstadt
 cronus
 crony
@@ -14975,7 +14955,6 @@ cropping
 crops
 croquet
 croquettes
-cros
 crosbie
 crosby
 crosier
@@ -16113,7 +16092,6 @@ deafening
 deafness
 deah
 deal
-deale
 dealer
 dealers
 dealin
@@ -16631,9 +16609,7 @@ deliveries
 delivering
 delivers
 delivery
-della
 delle
-dells
 delmar
 delmonico
 delorme
@@ -18916,8 +18892,6 @@ dotard
 dote
 doted
 dotes
-doth
-dothe
 doting
 dots
 dott
@@ -19710,7 +19684,6 @@ eagles
 eaglet
 ealdorman
 ealing
-ealle
 ear
 earache
 eared
@@ -19972,7 +19945,6 @@ educators
 edulis
 edwin
 edwy
-eek
 eel
 eells
 eels
@@ -20326,7 +20298,6 @@ ellisland
 ellison
 elliston
 ellos
-ells
 ellsworth
 ellwood
 elly
@@ -20370,7 +20341,6 @@ elster
 elsworth
 eltham
 elting
-elton
 elucidate
 elucidated
 elucidating
@@ -20962,7 +20932,6 @@ enriched
 enriches
 enriching
 enrichment
-enrico
 enright
 enrique
 enriquez
@@ -21321,7 +21290,6 @@ erich
 ericson
 ericsson
 erigena
-erik
 erika
 erith
 eritrea
@@ -21813,7 +21781,6 @@ evremond
 evreux
 evringham
 ewaine
-ewald
 ewe
 ewell
 ewes
@@ -24125,7 +24092,6 @@ foggy
 fogies
 fogo
 fogs
-foh
 foible
 foibles
 foil
@@ -29772,10 +29738,8 @@ hocking
 hockley
 hocks
 hocus
-hod
 hoddan
 hodder
-hode
 hodge
 hodges
 hodgkin
@@ -29786,9 +29750,7 @@ hodson
 hoe
 hoed
 hoeing
-hoel
 hoes
-hof
 hofer
 hoff
 hoffman
@@ -30188,7 +30150,6 @@ hosses
 host
 hostage
 hostages
-hoste
 hostel
 hostelries
 hostelry
@@ -30275,7 +30236,6 @@ housman
 houssaye
 houston
 hovan
-hove
 hoveden
 hovel
 hovels
@@ -30953,9 +30913,7 @@ ihre
 ihrer
 iiij
 iij
-ike
 ikey
-ikon
 ilands
 ilchester
 ildefonso
@@ -34174,7 +34132,6 @@ kalman
 kalmar
 kalmuck
 kalmucks
-kalpa
 kalus
 kam
 kama
@@ -34228,7 +34185,6 @@ kars
 karsten
 kartoum
 karun
-kas
 kase
 kashgar
 kashmir
@@ -34271,7 +34227,6 @@ kautsky
 kava
 kavanagh
 kawerau
-kay
 kaya
 kayak
 kayaks
@@ -34287,13 +34242,11 @@ kearny
 kearsarge
 keating
 keats
-keawe
 kebir
 keble
 kedge
 kedsty
 kedzie
-kee
 keefe
 keegan
 keel
@@ -34392,7 +34345,6 @@ kennington
 kennon
 kenny
 kennyfeck
-kenric
 kenrick
 kensal
 kensington
@@ -34661,7 +34613,6 @@ kiowas
 kip
 kipling
 kipps
-kir
 kirby
 kirche
 kircher
@@ -34756,7 +34707,6 @@ knave
 knavery
 knaves
 knavish
-knaw
 knead
 kneaded
 kneading
@@ -34772,8 +34722,6 @@ knell
 kneller
 knelt
 knew
-knewe
-knewest
 knick
 knickerbocker
 knickerbockers
@@ -34826,19 +34774,14 @@ know
 know'd
 know'st
 knowable
-knowed
 knowen
 knower
-knowes
-knowest
 knoweth
 knowin
 knowing
 knowingly
-knowle
 knowledge
 knowledges
-knowles
 knowlton
 known
 knowne
@@ -34892,7 +34835,6 @@ koreish
 korner
 koronis
 kory
-kos
 kosciusko
 kosmos
 kosovo
@@ -34922,7 +34864,6 @@ kroeber
 krogstad
 kroll
 kronborg
-kronos
 krool
 krooman
 kroonstad
@@ -35520,13 +35461,11 @@ lasting
 lastingly
 lastly
 lasts
-lata
 latch
 latched
 latchet
 latchkey
 late
-lateen
 lately
 lateness
 latent
@@ -35564,7 +35503,6 @@ latitude
 latitudes
 latitudinarian
 latium
-latona
 latour
 latreille
 latrobe
@@ -35669,8 +35607,6 @@ lavr
 lavretsky
 law
 lawd
-lawe
-lawes
 lawford
 lawful
 lawfull
@@ -35707,7 +35643,6 @@ layed
 layer
 layers
 layeth
-layin
 laying
 layman
 laymen
@@ -36210,7 +36145,6 @@ levy
 levying
 lewd
 lewdness
-lewes
 lewin
 lewis
 lewisham
@@ -42022,7 +41956,6 @@ nagpur
 nags
 nahant
 nahoum
-nahr
 nahua
 nahuatl
 nahum
@@ -42152,7 +42085,6 @@ nasturtium
 nasturtiums
 nasty
 nat'ral
-nata
 natacha
 natal
 natalia
@@ -42162,7 +42094,6 @@ natalya
 natasha
 natchez
 natchitoches
-nate
 nater
 nateral
 nathalie
@@ -42378,7 +42309,6 @@ needy
 neeland
 neeld
 neely
-neewa
 nefarious
 neff
 neg
@@ -42584,7 +42514,6 @@ nevin
 nevins
 nevis
 new
-newall
 newark
 newbern
 newberry
@@ -42605,7 +42534,6 @@ newcomen
 newcomer
 newcomers
 newcomes
-newel
 newell
 newer
 newest
@@ -42860,7 +42788,6 @@ nixon
 nizam
 njal
 nkara
-nkose
 nnhilde
 no
 no'm
@@ -42915,7 +42842,6 @@ noggin
 noght
 nohant
 nohow
-noirs
 noise
 noised
 noiseless
@@ -43637,7 +43563,6 @@ oddness
 oddo
 odds
 ode
-odell
 odeon
 odes
 odessa
@@ -44258,7 +44183,6 @@ ornamentations
 ornamented
 ornamenting
 ornaments
-ornata
 ornate
 ornery
 ornith
@@ -44322,7 +44246,6 @@ osmotic
 osmund
 osorio
 osprey
-osric
 ossaroo
 osseous
 ossian
@@ -44741,7 +44664,6 @@ owain
 owari
 owe
 owed
-owens
 ower
 owes
 owing
@@ -47534,7 +47456,6 @@ playground
 playgrounds
 playhouse
 playhouses
-playin
 playing
 playing!
 playlet
@@ -52797,7 +52718,6 @@ ricketty
 rickety
 rickie
 rickman
-ricks
 rickshaw
 ricky
 ricochet
@@ -52898,7 +52818,6 @@ rigueur
 rigveda
 riht
 riis
-rik
 riksdag
 rile
 riled
@@ -52945,7 +52864,6 @@ rinse
 rinsed
 rinsing
 rintoul
-rios
 riot
 rioted
 rioters
@@ -53139,7 +53057,6 @@ rochfort
 rocinante
 rock
 rockaway
-rocke
 rocked
 rockefeller
 rocker
@@ -53198,7 +53115,6 @@ roguery
 rogues
 roguish
 roguishly
-rohan
 roight
 roister
 roistering
@@ -53354,7 +53270,6 @@ roscius
 roscoe
 roscommon
 rose
-roseate
 rosebery
 rosebud
 rosebuds
@@ -53418,7 +53333,6 @@ rotation
 rotations
 rotatory
 rote
-rotha
 rotherby
 rotherham
 rotherhithe
@@ -53811,7 +53725,6 @@ s'y
 saad
 saadat
 saadi
-saale
 saavedra
 saba
 sabah
@@ -53986,7 +53899,6 @@ saintship
 sairmeuse
 sait
 saith
-sak
 saka
 sakai
 sake
@@ -54419,7 +54331,6 @@ satisfies
 satisfy
 satisfying
 sativa
-saton
 satrap
 satraps
 satrapy
@@ -54535,7 +54446,6 @@ saw'st
 sawbridge
 sawdust
 sawed
-sawest
 sawhorse
 sawin
 sawing
@@ -55229,7 +55139,6 @@ seat
 seated
 seater
 seating
-seaton
 seats
 seattle
 seaward
@@ -55477,7 +55386,6 @@ selincourt
 selingman
 selkirk
 sell
-sella
 selle
 seller
 sellers
@@ -55830,7 +55738,6 @@ seville
 sevres
 sew
 sewage
-sewall
 seward
 sewed
 sewell
@@ -57035,7 +56942,6 @@ skaters
 skates
 skating
 skd
-skeat
 skeel
 skeer
 skeered
@@ -57228,7 +57134,6 @@ slavonian
 slavonians
 slavonic
 slavs
-slaw
 slay
 slayer
 slayers
@@ -57583,7 +57488,6 @@ snatched
 snatcher
 snatches
 snatching
-snaw
 sneak
 sneaked
 sneakin
@@ -57656,7 +57560,6 @@ snowdrift
 snowdrifts
 snowdrop
 snowdrops
-snowe
 snowed
 snowfall
 snowflake
@@ -57789,8 +57692,6 @@ soile
 soiled
 soiling
 soils
-soir
-soiree
 soirees
 soissons
 sojer
@@ -57802,7 +57703,6 @@ sojourners
 sojourning
 sojourns
 soke
-sokr
 sokrat
 sokrates
 solace
@@ -58056,7 +57956,6 @@ sorties
 sorting
 sorts
 sorwe
-sothe
 sotheby
 sothern
 sottish
@@ -58167,7 +58066,6 @@ sowers
 soweth
 sowing
 sowings
-sowl
 sows
 soy
 soyle
@@ -59209,10 +59107,7 @@ stefano
 steinbock
 steinheil
 steinmetz
-stela
-stella
 stellar
-stellate
 steller
 stem
 stemmed
@@ -59442,7 +59337,6 @@ stocky
 stockyards
 stoddard
 stoddart
-stode
 stodgy
 stoep
 stoic
@@ -61068,7 +60962,6 @@ t'other
 t'ought
 t'ree
 ta'en
-taal
 tab
 tabard
 tabari
@@ -61141,7 +61034,6 @@ tadousac
 tadoussac
 tadpole
 tadpoles
-taels
 taffeta
 taffrail
 taffy
@@ -61290,7 +61182,6 @@ tanana
 tandakora
 tandem
 tandy
-tane
 taney
 tang
 tanganyika
@@ -61922,7 +61813,6 @@ tertius
 tertsky
 tertullian
 terzky
-tesla
 tesman
 tessa
 tesselated
@@ -61964,7 +61854,6 @@ teufel
 teutonic
 teutons
 teviot
-tewa
 tewfik
 tewkesbury
 texan
@@ -62021,10 +61910,8 @@ thanksgiving
 thanksgivings
 thanky
 thanne
-thar
 thare
 thark
-tharn
 tharon
 that
 that'd
@@ -62297,7 +62184,6 @@ thither
 thitherward
 thly
 thocht
-thode
 thogh
 thole
 thomasin
@@ -62313,7 +62199,6 @@ thone
 thong
 thongs
 thonne
-thora
 thoracic
 thorax
 thorbiorn
@@ -62354,7 +62239,6 @@ thoroughgoing
 thoroughly
 thoroughness
 thorow
-thorp
 thorpe
 thorstein
 thort
@@ -62390,7 +62274,6 @@ thousandths
 thout
 thow
 thowt
-thra
 thrace
 thracian
 thracians
@@ -62917,7 +62800,6 @@ toddled
 toddles
 toddling
 toddy
-tode
 todgers
 todhetley
 todhunter
@@ -63101,7 +62983,6 @@ topsails
 topsparkle
 topsy
 toque
-torah
 torbay
 torbert
 torch
@@ -64308,7 +64189,6 @@ tweeds
 tween
 tweet
 tweezers
-twel
 twelfth
 twelue
 twelve
@@ -67447,20 +67327,16 @@ walbrook
 walcheren
 walcot
 walcott
-walde
 waldeck
 waldegrave
 waldemar
 walden
 waldenses
 waldensian
-waldo
 waldorf
 waldron
 waldstein
 waldstricker
-wale
-wales
 walewski
 walford
 walhalla
@@ -67489,7 +67365,6 @@ wallas
 walled
 wallenstein
 waller
-walles
 wallet
 wallets
 wallflower
@@ -67710,7 +67585,6 @@ washita
 washstand
 washtub
 washy
-wasn
 wasn't
 wasna
 wasp
@@ -67871,10 +67745,7 @@ weaklings
 weakly
 weakness
 weaknesses
-weal
-weald
 wealden
-weale
 wealth
 wealthier
 wealthiest
@@ -67961,7 +67832,6 @@ weekes
 weeklies
 weekly
 weeks
-weel
 weems
 weened
 weep
@@ -68009,7 +67879,6 @@ welcoming
 weld
 welded
 welding
-wele
 welfare
 welford
 welkin
@@ -68034,7 +67903,6 @@ welshmen
 welt
 welter
 weltering
-welton
 welts
 welwyn
 wemyss
@@ -68067,9 +67935,6 @@ werke
 werther
 werwolf
 wesden
-wesel
-wesen
-weser
 wesley
 wesleyan
 wesleyans
@@ -69123,7 +68988,6 @@ worthlessness
 worthwhile
 worthy
 wortley
-wotan
 wotton
 wou'd
 would
@@ -69528,7 +69392,6 @@ yielded
 yieldeth
 yielding
 yields
-ying
 yks
 ynca
 yncas
