@@ -6289,7 +6289,6 @@ bindon
 binds
 bindweed
 binet
-bing
 bingen
 bingham
 binghamton
@@ -26075,7 +26074,6 @@ gilmour
 gilpin
 gilroy
 gilson
-gilt
 gimblet
 gimcrack
 gimlet
@@ -27548,7 +27546,6 @@ guffaw
 guffawed
 guffaws
 guglielmo
-gui
 guiana
 guibert
 guicciardini
@@ -27567,7 +27564,6 @@ guido
 guidobaldo
 guidon
 guienne
-guil
 guilbert
 guild
 guilder
@@ -40198,7 +40194,6 @@ miners
 minerva
 mines
 minette
-ming
 minga
 mingle
 mingled
@@ -41495,7 +41490,6 @@ muirhead
 muirtown
 mukden
 mukoki
-mul
 mulatto
 mulattoes
 mulberries
@@ -41532,7 +41526,6 @@ mullioned
 mullions
 mulock
 mulready
-mult
 multa
 multi
 multicellular
@@ -41589,7 +41582,6 @@ mundi
 mundo
 mundus
 mundy
-mung
 munger
 mungo
 munich
@@ -64860,7 +64852,6 @@ unfurl
 unfurled
 unfurling
 unfurnished
-ung
 ungainly
 ungallant
 ungava

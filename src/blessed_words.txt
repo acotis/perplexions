@@ -883,6 +883,8 @@ gist
 git
 glee
 gloat
+glum
+gnu
 go
 goal
 goat
@@ -942,10 +944,12 @@ growler
 grub
 grunt
 grunts
+guilt
 gulp
 gulps
 gum
 gums
+gun
 gush
 gushes
 guy
@@ -1231,6 +1235,7 @@ luck
 lug
 lull
 lulled
+lung
 lust
 luster
 lusty
@@ -1560,6 +1565,7 @@ piano
 pianos
 pie
 pies
+pig
 pilot
 pilots
 pin
@@ -1587,6 +1593,10 @@ plea
 plot
 plots
 plug
+plum
+plumb
+plumbing
+pluming
 plus
 pock
 poem
