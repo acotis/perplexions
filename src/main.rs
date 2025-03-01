@@ -26,14 +26,20 @@ fn main() {
 
     // Initialize stuff.
 
+    println!("Initializing constants");
     constants::initialize();
+    println!("Loading levels");
     let mut levels = constants::levels().enumerate().peekable();
+    println!("Getting first level");
     let (id, level) = levels.next().unwrap();
+    println!("Creating Game instance");
     let mut game = Game::new(level, id, false);
+    println!("Initializing starburst vector");
     let mut explosions: Vec<Explosion> = vec![];
 
     // Create the SFML window.
 
+    println!("Creating SFML window");
     let mut window = RenderWindow::new(
         (800, 600),
         "Perplexions",
@@ -41,15 +47,20 @@ fn main() {
         &Default::default(),
     ).unwrap();
 
+    println!("Setting framerate limit");
     window.set_framerate_limit(60);
 
     // Game loop.
 
     'outer: while window.is_open() {
 
+        println!("Top of game loop");
+
         // Handle events.
 
         while let Some(event) = window.poll_event() {
+            println!("  Handling event: {event:?}");
+
             match event {
                 Closed => {window.close(); break 'outer;}
 
@@ -116,13 +127,18 @@ fn main() {
 
                 _ => {}
             }
+
+            println!("    Done handling this event");
         }
 
         // Clear the window.
 
+        println!("  Clearing the window");
         window.clear(sfml::graphics::Color::WHITE);
 
-        // Tick the explosions and draw them.
+        // Tick the starburst and draw them.
+
+        println!("  Ticking starburst animations");
 
         for e in &mut explosions {
             let radius = if e.big {
@@ -139,25 +155,31 @@ fn main() {
                 0.0
             } as u8;
 
+            println!("  Drawing a circle");
             draw::circle_plain(&mut window, (e.x, e.y), radius, 
                 Color::rgba(e.color.r, e.color.g, e.color.b, opacity as u8));
 
             e.age += 1;
         }
 
+        println!("  Filtering starbursts by age");
         explosions.retain(|e| e.age < 10000);
 
         // Tick the game logic and draw the game.
 
+        println!("  Ticking the game");
         game.tick();
+        println!("  Drawing the game");
         game.draw_self(&mut window);
 
         // "Display".
 
+        println!("  Calling display()");
         window.display();
 
         // If the game is completed, load the next one.
 
+        println!("  Checking if game is completed");
         if game.is_completed() {
             if let Some((id, level)) = levels.next() {
                 game = Game::new(level, id, levels.peek() == None);
