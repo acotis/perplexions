@@ -10313,7 +10313,6 @@ centurion
 centurions
 century
 cependant
-ceph
 cephalic
 cephalis
 cephalonia
@@ -13881,7 +13880,6 @@ conybeare
 conyers
 conyngham
 coo
-cood
 cooed
 cooeperation
 cooing
@@ -21223,7 +21221,6 @@ epaulettes
 epe
 epeira
 epernay
-eph
 ephah
 ephemera
 ephemeral
@@ -26556,7 +26553,6 @@ glowing
 glowingly
 glows
 glowworm
-gluck
 glucose
 glue
 glued
@@ -29311,7 +29307,6 @@ hepatic
 hepatica
 hepatitis
 hepburn
-heph
 hephaestus
 hephzibah
 hephzy
@@ -30478,7 +30473,6 @@ hue
 hued
 huerta
 hues
-huet
 huff
 huffed
 huffy
@@ -37462,7 +37456,6 @@ lugged
 lugger
 luggers
 lugging
-lugo
 lugs
 lugubrious
 lugubriously
@@ -39659,7 +39652,6 @@ meistersinger
 mek
 mekka
 mekong
-mela
 melancholia
 melancholic
 melancholy
@@ -39670,7 +39662,6 @@ melanesia
 melanesian
 melanesians
 melanie
-melas
 melba
 melbourne
 melbury
@@ -40960,7 +40951,6 @@ mohegan
 mohican
 mohicans
 mohl
-mohr
 mohrenschildt
 mohun
 moi
@@ -44160,7 +44150,6 @@ opercular
 operculum
 operetta
 opes
-oph
 ophelia
 ophile
 ophir
@@ -46031,7 +46020,6 @@ pecksniff
 pecos
 pecten
 pectoral
-pectore
 pectoris
 peculation
 peculations
@@ -46134,7 +46122,6 @@ peggy
 pegram
 pegs
 pegu
-pehr
 pei
 peine
 peirce
@@ -46478,7 +46465,6 @@ perfunctorily
 perfunctory
 pergamus
 pergola
-perh
 perhaps
 periander
 perianth
@@ -51241,7 +51227,6 @@ reagan
 reagent
 reagents
 real
-reales
 realisation
 realise
 realised
@@ -54232,7 +54217,6 @@ saldanha
 sale
 saleable
 saleh
-salem
 salemina
 saleratus
 salerno
@@ -55391,7 +55375,6 @@ seagull
 seagulls
 seal
 seal'd
-seale
 sealed
 sealer
 sealers
@@ -61862,7 +61845,6 @@ techniques
 technological
 technology
 teck
-tecum
 tecumseh
 teddy
 tedious
@@ -64735,7 +64717,6 @@ uglier
 ugliest
 ugliness
 ugly
-ugo
 ugolini
 ugolino
 uhlan
@@ -70027,7 +70008,6 @@ zenda
 zenith
 zeno
 zenobia
-zeph
 zephaniah
 zephyr
 zephyrs

@@ -218,6 +218,7 @@ fn prompt_user(context: &str, word: &str) -> bool {
 
         if input == "w\n" {
             std::process::Command::new("firefox")
+                .arg("--new-window")
                 .arg(format!("https://en.wiktionary.org/wiki/{}", word.to_ascii_lowercase()))
                 .output()
                 .expect("failed to execute process");

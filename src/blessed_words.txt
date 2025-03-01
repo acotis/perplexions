@@ -294,6 +294,7 @@ chi
 chirp
 chop
 chore
+chrome
 chum
 chute
 cider
@@ -361,6 +362,7 @@ cons
 console
 context
 coo
+cook
 cool
 cooler
 coos
@@ -480,6 +482,7 @@ diva
 dive
 do
 doc
+dock
 docs
 doe
 doer
@@ -594,6 +597,7 @@ errs
 estuary
 etcher
 ether
+ethereal
 ewe
 ewes
 ex
@@ -827,6 +831,7 @@ goes
 gone
 goner
 goo
+good
 goodbye
 goose
 gore
@@ -915,6 +920,7 @@ home
 hoot
 hoots
 hop
+hope
 host
 hot
 hour
@@ -922,6 +928,7 @@ hue
 hug
 hugs
 hum
+humor
 hut
 hutch
 huts
@@ -1063,6 +1070,7 @@ loans
 lob
 lobe
 local
+lock
 loco
 lode
 loft
@@ -1074,6 +1082,7 @@ loiter
 loiterer
 lone
 loo
+look
 loom
 looms
 loon
@@ -1104,6 +1113,7 @@ lowest
 lows
 lucid
 luck
+lug
 lull
 lulled
 lust
@@ -1519,6 +1529,7 @@ refute
 refutes
 regard
 rein
+release
 relent
 relic
 relit
@@ -1595,6 +1606,7 @@ roofs
 roost
 root
 roots
+rope
 rose
 rosy
 rot
@@ -1677,6 +1689,7 @@ scrambled
 scream
 sea
 seal
+sealer
 seam
 seams
 sear
