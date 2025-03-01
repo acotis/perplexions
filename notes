@@ -10,13 +10,6 @@ Todo:
         — Make it available under CC0.
         — Publish the source too and make that available under CC0 as well.
 
-Possible tweaks:
-    — Make the undo/restart text show up from the start for
-      all levels but the first (otherwise I think players will
-      "learn" that it indicates failure).
-    — Gravity should look a little more pleasing (as it stands,
-      tiles reach their terminal velocity quite quickly).
-
 Probably rejected:
     — Selection flashes when an incorrect word is attempted.
     — Tiles leave green ghosts when a correct word is shot.
@@ -33,6 +26,11 @@ Probably rejected:
     — Reset should do nothing if tiles are falling (because it
       could be the start of the level).
     — More pleasing indicator of the restart/undo feature.
+    — Make the undo/restart text show up from the start for
+      all levels but the first (otherwise I think players will
+      "learn" that it indicates failure).
+    — Gravity should look a little more pleasing (as it stands,
+      tiles reach their terminal velocity quite quickly).
     — Bonus: Try following this tutorial to get it on the web:
       https://ianjk.com/game-engine-in-rust/
 
