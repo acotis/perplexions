@@ -78,6 +78,10 @@ ce
 ni
 prand
 ——————————
+qwte
+easr
+uick
+——————————
  e
  e
  e
@@ -85,10 +89,6 @@ prand
  e
 ief
 reb
-——————————
-qwte
-easr
-uick
 ——————————
 
 # medium levels
