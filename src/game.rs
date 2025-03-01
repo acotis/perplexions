@@ -66,7 +66,8 @@ impl Game {
         // Create the real value of the color.
 
         let mut hasher = DefaultHasher::new();
-        level_index.hash(&mut hasher);
+        let number_to_hash = if level_index < 13 {level_index} else {level_index + 99900};
+        number_to_hash.hash(&mut hasher);
         let hash: u64 = hasher.finish();
 
         let mut r = (hash       & 255) as u8;

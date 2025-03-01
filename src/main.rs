@@ -92,6 +92,17 @@ fn main() {
                     set_game_position(&window, &mut game);
                 }
 
+                /*
+                MouseButtonPressed {button: Middle, ..} => {
+                    if let Some((id, level)) = levels.next() {
+                        game = Game::new(level, id, levels.peek() == None);
+                        set_game_position(&window, &mut game);
+                    } else {
+                        window.close();
+                    }
+                }
+                */
+
                 KeyPressed {code: Q, ..} => {
                     if levels.peek() == None {
                         window.close();
