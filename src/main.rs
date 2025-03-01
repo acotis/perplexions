@@ -43,6 +43,9 @@ fn main() {
 
     window.set_framerate_limit(60);
 
+    draw::update_view(&mut window);
+    set_game_position(&window, &mut game);
+
     // Game loop.
 
     'outer: while window.is_open() {
