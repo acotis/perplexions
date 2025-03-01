@@ -1,9 +1,5 @@
 
 Todo:
-    — Compile for Linux and Windows.
-        — Dev options turned off.
-        — Release mode turned on!
-    — Assemble the files I intend to publish.
     — Play through the whole game once by invoking the executable that I plan to publish.
         — Fiddle with edge cases a bit during this playthrough.
     — Publish game on itch.io.
