@@ -420,7 +420,7 @@ impl Game {
                 text.set_string(&String::from(tile.letter));
                 text.set_origin(sfml::system::Vector2f::new(
                     glyph.advance() / 2.0,
-                    character_size * 0.61,
+                    character_size * 0.615,
                 ));
                 text.set_position(sfml::system::Vector2f::new(screen_x, screen_y));
                 text.set_fill_color(Color::BLACK);
