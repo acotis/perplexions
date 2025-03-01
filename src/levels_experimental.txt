@@ -1,4 +1,9 @@
 ——————————
+saip
+ruby
+onph
+eryx
+——————————
 dims # solveable even without finding gems/diamonds/ruby
 geam
 ruon
