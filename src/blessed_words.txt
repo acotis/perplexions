@@ -1120,6 +1120,7 @@ late
 latest
 law
 lawn
+laws
 lay
 laying
 lays
@@ -1318,6 +1319,7 @@ more
 mosaic
 mosey
 moss
+mosses
 most
 mote
 moth
@@ -1956,6 +1958,7 @@ sew
 seward
 sewed
 sewn
+sews
 sex
 shack
 sham
@@ -2129,6 +2132,7 @@ sty
 sub
 submit
 sue
+sues
 suggest
 suggestion
 suggestions
@@ -2576,6 +2580,7 @@ wren
 wrest
 wrote
 wry
+wuss
 yak
 yaks
 yam

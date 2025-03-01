@@ -1295,13 +1295,11 @@ akkad
 akoontal
 aku
 al'ays
-ala
 alabama
 alabaster
 alack
 alacrity
 aladdin
-alae
 alaeddin
 alain
 alaire
@@ -1315,7 +1313,6 @@ alang
 alani
 alano
 alans
-alar
 alarcon
 alaric
 alarm
@@ -2908,7 +2905,6 @@ arachne
 arachnida
 aragon
 aragonese
-aral
 aramaic
 araminta
 aramis
@@ -35326,7 +35322,6 @@ lapsing
 laputa
 lapwing
 laquelle
-lara
 laramie
 larboard
 larceny
@@ -35370,8 +35365,6 @@ lars
 larsen
 larson
 larssen
-larue
-larus
 larv
 larva
 larvae
@@ -35503,10 +35496,8 @@ laundresses
 laundries
 laundry
 launfal
-laur
 laura
 laurance
-laure
 laureat
 laureate
 laurel
@@ -35694,8 +35685,6 @@ leather
 leathern
 leathers
 leathery
-leaue
-leaues
 leauing
 leave
 leaved
@@ -41246,7 +41235,6 @@ moseley
 moselle
 mosely
 moser
-moses
 mosey
 mosheim
 mosher
@@ -50316,7 +50304,6 @@ quoy
 qur'an
 quum
 raad
-raal
 raban
 rabat
 rabba
@@ -53559,8 +53546,6 @@ rushy
 rusk
 ruskin
 rusks
-russ
-russe
 russel
 russell
 russet
@@ -53569,7 +53554,6 @@ russian
 russians
 russias
 russie
-russo
 russula
 rust
 rusted
@@ -58651,7 +58635,6 @@ squirts
 srinagar
 sseldorf
 ssh
-ssu
 staats
 stab
 stabat
@@ -60521,7 +60504,6 @@ swain
 swaine
 swains
 swainson
-swale
 swaller
 swallow
 swallowed
@@ -60545,7 +60527,6 @@ swanson
 swap
 swapped
 swapping
-sware
 swarm
 swarmed
 swarming
@@ -65582,7 +65563,6 @@ uptown
 upturned
 upward
 upwards
-ural
 urals
 urania
 uranium
@@ -67587,7 +67567,6 @@ watts
 watty
 wauchope
 waugh
-waur
 wave
 waved
 waveless
