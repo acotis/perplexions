@@ -42,6 +42,7 @@ pub fn rectangle(
     outline_thickness: f32,
     outline_color: Color,
 ) {
+    println!("[[ Rectangle called! center: {center:?}, width: {width}, height: {height}, color: {color:?}, outline_thickness: {outline_thickness}, outline_color: {outline_color:?} ]]");
     let mut rs = RectangleShape::new();
     rs.set_size(Vector2f::new(width, height));
     rs.set_origin(Vector2f::new(width / 2.0, height / 2.0));
