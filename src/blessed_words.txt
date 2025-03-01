@@ -56,14 +56,19 @@ also
 alto
 altos
 am
+amber
 amble
 ambled
 ambler
+amen
 amiss
+amp
 an
+anarchy
 and
 ands
 anew
+angry
 ankle
 annex
 ant
@@ -80,6 +85,7 @@ apron
 aprons
 apt
 arc
+arch
 arcs
 ardor
 are
@@ -141,6 +147,7 @@ band
 bands
 bane
 banes
+bang
 bans
 bar
 bard
@@ -157,7 +164,9 @@ baser
 bask
 bay
 be
+beach
 beacon
+beam
 bean
 bear
 beard
@@ -165,11 +174,14 @@ beards
 bed
 beds
 bee
+beef
 been
 beer
 beg
+bench
 bent
 bents
+berry
 best
 bet
 beyond
@@ -422,6 +434,8 @@ craft
 crafts
 crafty
 cram
+cramp
+crane
 crash
 crass
 crate
@@ -442,6 +456,7 @@ creates
 creator
 creators
 cred
+creep
 cremated
 crest
 crew
@@ -564,6 +579,7 @@ dwell
 dye
 dyed
 dyer
+each
 eager
 ear
 eared
@@ -601,6 +617,8 @@ elm
 elms
 else
 em
+embargo
+ember
 emit
 emo
 ems
@@ -884,6 +902,7 @@ gored
 gores
 gory
 got
+grab
 grace
 graft
 grafts
@@ -977,6 +996,7 @@ hock
 hoe
 hoed
 hoes
+hog
 hoist
 home
 homes
@@ -1223,8 +1243,14 @@ mage
 mame
 man
 mana
+mane
+manga
+mango
+map
 mar
+march
 mare
+marry
 mason
 mass
 mat
@@ -1238,6 +1264,7 @@ me
 mead
 meads
 mean
+meaner
 means
 meat
 med
@@ -1245,7 +1272,9 @@ meet
 melee
 men
 menu
+mercy
 mere
+merry
 mesa
 mesh
 mess
@@ -1304,10 +1333,13 @@ myst
 myth
 nab
 nacho
+nag
 name
 named
 nap
+nape
 narrow
+nary
 natal
 navy
 nay
@@ -1427,6 +1459,7 @@ order
 ordinal
 ore
 ores
+organ
 orgy
 ornate
 ornery
@@ -1476,12 +1509,14 @@ pals
 pan
 pane
 panes
+pang
 panic
 panics
 pans
 papa
 papas
 par
+parch
 pare
 pares
 parlor
@@ -1501,6 +1536,8 @@ patrol
 pause
 pay
 pea
+peach
+peachy
 pear
 pearl
 pee
@@ -1510,6 +1547,7 @@ pen
 pens
 pep
 per
+perch
 peril
 perm
 perp
@@ -1626,8 +1664,11 @@ raked
 ram
 ramble
 rambled
+ramp
 rams
 ran
+ranch
+rang
 rank
 ranks
 rant
@@ -1649,6 +1690,7 @@ rats
 raw
 ray
 rays
+reach
 react
 read
 reads

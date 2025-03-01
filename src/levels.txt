@@ -60,22 +60,31 @@ good
 luck
 ——————————
 
-# insert real levels here
-
-
 # easy levels
 
 ——————————
  h
  eo
  aap
-srrck # this level has multiple solutions (ear/par/shock, par/ears/hock, pack/or/hears, hop/rack/ears, and others I think)
+srrck
+——————————
+pango
+berry
+meach
 ——————————
  s
 ss
 ce
 ni
 prand
+——————————
+ e
+ e
+ e
+ e
+ e
+ief
+reb
 ——————————
 qwte
 easr
@@ -125,6 +134,7 @@ ytzu
 eoum
 ——————————
 
+# end credits
 
 ——————————
 perplexions

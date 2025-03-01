@@ -80,8 +80,6 @@ abednego
 abel
 abelard
 abellino
-aben
-aber
 abercorn
 abercrombie
 abercromby
@@ -2210,7 +2208,6 @@ andronicus
 androvsky
 ands
 andy
-anear
 anecdotal
 anecdote
 anecdotes
@@ -2224,8 +2221,6 @@ anesthesia
 anesthetic
 aneurism
 anew
-ang
-anga
 ange
 angel
 angela
@@ -2278,7 +2273,6 @@ anglo
 anglois
 anglorum
 angola
-angora
 angostura
 angoul
 angouleme
@@ -2292,7 +2286,6 @@ anguished
 angular
 angularity
 angus
-angy
 anhalt
 anhydride
 anhydrous
@@ -2916,7 +2909,6 @@ arachnida
 aragon
 aragonese
 aral
-aram
 aramaic
 araminta
 aramis
@@ -3020,7 +3012,6 @@ archon
 archons
 archway
 archways
-archy
 arcis
 arcite
 arcola
@@ -4279,7 +4270,6 @@ b'long
 b'y
 b'ys
 ba'tiste
-baa
 baal
 baalbec
 baalim
@@ -4610,9 +4600,6 @@ banality
 banana
 bananas
 banbury
-banc
-banca
-banco
 bancroft
 band
 bandage
@@ -4649,7 +4636,6 @@ bangkok
 bangladesh
 bangle
 bangles
-bangor
 bangs
 banian
 banias
@@ -4775,7 +4761,6 @@ barbour
 barbs
 barbuda
 barby
-barca
 barcelona
 barchester
 barclay
@@ -4791,7 +4776,6 @@ bareback
 barebone
 barecolt
 bared
-baree
 barefaced
 barefoot
 barefooted
@@ -5212,7 +5196,6 @@ be'n
 beach
 beached
 beaches
-beachy
 beacon
 beacons
 beaconsfield
@@ -5556,13 +5539,11 @@ behoves
 behoveth
 behrens
 behring
-bei
 beid
 bein
 being
 beinge
 beings
-beir
 beira
 beirut
 beit
@@ -5840,14 +5821,10 @@ bequeaths
 bequest
 bequests
 beranger
-berar
 berated
 berber
 berberis
 berbers
-bercy
-bere
-berea
 bereave
 bereaved
 bereavement
@@ -5871,7 +5848,6 @@ bergman
 bergmann
 bergs
 bergson
-beri
 beriah
 beribboned
 beric
@@ -5891,7 +5867,6 @@ bermondsey
 bermuda
 bermudas
 bermudez
-bern
 bernadette
 bernadine
 bernadotte
@@ -5904,7 +5879,6 @@ bernardin
 bernardine
 bernardino
 bernardo
-berne
 berners
 bernese
 bernhard
@@ -12193,7 +12167,6 @@ coffey
 coffin
 coffins
 cog
-cogan
 cogency
 cogent
 coggeshall
@@ -14614,7 +14587,6 @@ crane
 craned
 cranes
 cranford
-crang
 crania
 cranial
 craning
@@ -14630,7 +14602,6 @@ crannogs
 cranny
 cranston
 cranstoun
-crape
 craps
 crash
 crashaw
@@ -14676,7 +14647,6 @@ crazed
 crazily
 craziness
 crazy
-creagh
 creak
 creaked
 creaking
@@ -14748,7 +14718,6 @@ cremona
 cremorne
 creole
 creoles
-crepe
 crept
 cresap
 crescendo
@@ -15506,7 +15475,6 @@ cyclopes
 cyclops
 cyd
 cyder
-cygne
 cygnet
 cygnus
 cylinder
@@ -19783,7 +19751,6 @@ ebbo
 ebbs
 ebed
 ebenezer
-eber
 eberhard
 ebers
 eberstein
@@ -20530,7 +20497,6 @@ emotionalism
 emotionally
 emotionless
 emotions
-emp
 empedocles
 emperor
 emperors
@@ -20683,7 +20649,6 @@ encumbered
 encumbering
 encumbrance
 encumbrances
-ency
 encyc
 encyclical
 encyclop
@@ -20788,7 +20753,6 @@ enforcing
 enfranchise
 enfranchised
 enfranchisement
-eng
 engadine
 engag'd
 engage
@@ -21121,7 +21085,6 @@ eozoon
 epaminondas
 epaulets
 epaulettes
-epe
 epeira
 epernay
 ephah
@@ -22932,7 +22895,6 @@ feature
 featured
 featureless
 features
-feb
 febrifuge
 febrile
 february
@@ -25434,16 +25396,13 @@ gammer
 gammon
 gamp
 gamut
-gan
 gand
 gander
 gandharva
 gandharvas
 gandhi
 gandia
-gane
 ganelon
-ganem
 gang
 ganga
 ganger
@@ -26478,7 +26437,6 @@ gnaw
 gnawed
 gnawing
 gnaws
-gne
 gneisenau
 gneiss
 gnome
@@ -27127,13 +27085,11 @@ greatness
 greatnesse
 greatorex
 greaves
-grebe
 grece
 grecian
 grecians
 greco
 grecs
-greeba
 greece
 greed
 greedily
@@ -29757,7 +29713,6 @@ hoffman
 hoffmann
 hofmann
 hog
-hogan
 hogarth
 hogg
 hogni
@@ -30072,7 +30027,6 @@ hornblende
 hornblower
 hornby
 horncastle
-horne
 horned
 horner
 hornes
@@ -38180,7 +38134,6 @@ manchuria
 manchurian
 manchus
 mancini
-manco
 mandalay
 mandamus
 mandan
@@ -38207,7 +38160,6 @@ mandrel
 mandy
 mane
 maned
-maner
 manere
 maners
 manes
@@ -38222,7 +38174,6 @@ manfred
 manfredi
 manful
 manfully
-mang
 manga
 mangan
 manganese
@@ -38238,7 +38189,6 @@ mango
 mangoes
 mangrove
 mangroves
-mangy
 manhattan
 manheim
 manhole
@@ -38407,7 +38357,6 @@ mapping
 mappo
 maps
 mar
-mara
 marabout
 maracaibo
 marah
@@ -38430,7 +38379,6 @@ marbling
 marbois
 marburg
 marbury
-marca
 marcantonio
 marceau
 marcelino
@@ -38468,7 +38416,6 @@ marcoline
 marconi
 marcos
 marcus
-marcy
 marden
 mardi
 mardonius
@@ -38477,8 +38424,6 @@ mare
 marechal
 marechale
 maremma
-maren
-marengo
 mares
 mareschal
 maret
@@ -38504,10 +38449,8 @@ margot
 margrave
 margravine
 margret
-margry
 marguerite
 marguerites
-margy
 marhaus
 mari
 maria
@@ -38613,7 +38556,6 @@ marmontel
 marmora
 marmot
 marmots
-marne
 marneffe
 marner
 marney
@@ -38638,7 +38580,6 @@ marquis
 marquisate
 marquise
 marquises
-marr
 marrable
 marranos
 marrapit
@@ -39253,7 +39194,6 @@ meadville
 meager
 meagher
 meagles
-meagre
 meagreness
 meal
 mealies
@@ -39265,7 +39205,6 @@ meandered
 meandering
 meanderings
 meanders
-meane
 meaner
 meanes
 meanest
@@ -39566,7 +39505,6 @@ memory
 memphis
 mems
 men
-mena
 menace
 menaced
 menaces
@@ -39601,13 +39539,11 @@ mendip
 mendocino
 mendoza
 mends
-mene
 menelaus
 menendez
 menenius
 meneptah
 menes
-meng
 mengs
 menial
 menials
@@ -39653,7 +39589,6 @@ menzel
 menzies
 mephistopheles
 mephitic
-meran
 merari
 mercadet
 mercantile
@@ -41920,7 +41855,6 @@ n'est
 n'ont
 n't
 n'y
-naab
 naaman
 nab
 nabal
@@ -42236,7 +42170,6 @@ neath
 neatly
 neatness
 nebber
-neber
 nebraska
 nebuchadnezzar
 nebuchadrezzar
@@ -42573,7 +42506,6 @@ neyther
 nez
 nforced
 nforcements
-nga
 ngan
 ngati
 nge
@@ -43669,12 +43601,10 @@ ogled
 oglethorpe
 ogling
 ogni
-ogram
 ographie
 ogre
 ogres
 oh
-ohg
 ohio
 ohms
 ohne
@@ -44001,7 +43931,6 @@ oracularly
 oraibi
 oral
 orally
-orang
 orange
 orangemen
 orangery
@@ -44781,7 +44710,6 @@ pads
 padua
 paduan
 paducah
-paean
 paeans
 paestum
 paez
@@ -44956,7 +44884,6 @@ palter
 paltry
 palus
 palustris
-pam
 pamby
 pamela
 pampa
@@ -44982,7 +44909,6 @@ pancake
 pancakes
 pancha
 panchalas
-pancho
 pancks
 pancras
 pancreas
@@ -45016,7 +44942,6 @@ panes
 pang
 pangasinan
 pangenesis
-pango
 pangs
 panhandle
 panic
@@ -45749,7 +45674,6 @@ pearly
 pears
 pearse
 pearson
-peary
 peas
 peasant
 peasantry
@@ -45847,7 +45771,6 @@ peeler
 peeling
 peelites
 peels
-peen
 peep
 peeped
 peepers
@@ -45979,7 +45902,6 @@ pendulous
 pendulum
 pendulums
 pendyce
-pene
 penelope
 penetrable
 penetrate
@@ -46162,7 +46084,6 @@ percolating
 percolation
 percolator
 percussion
-percy
 perd
 perdiccas
 perdita
@@ -46362,7 +46283,6 @@ perrine
 perris
 perron
 perrott
-perry
 perryville
 pers
 perse
@@ -50403,7 +50323,6 @@ quoting
 quoy
 qur'an
 quum
-raab
 raad
 raal
 raban
@@ -50524,7 +50443,6 @@ ragging
 raghu
 raging
 raglan
-ragna
 ragnar
 rags
 ragtime
