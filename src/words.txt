@@ -506,7 +506,6 @@ acorn
 acorns
 acoustic
 acoustics
-acp
 acqua
 acquaint
 acquaintance
@@ -2915,7 +2914,6 @@ aquatic
 aqueduct
 aqueducts
 aqueous
-aqui
 aquila
 aquileia
 aquiline
@@ -3120,7 +3118,6 @@ aricia
 arid
 aridity
 ariel
-aries
 aright
 arikara
 arima
@@ -3273,7 +3270,6 @@ arquebuse
 arquebuses
 arquebusiers
 arques
-arrack
 arragon
 arrah
 arraign
@@ -3652,7 +3648,6 @@ assisting
 assists
 assize
 assizes
-assn
 assoc
 associate
 associated
@@ -3717,7 +3712,6 @@ astoria
 astound
 astounded
 astounding
-astr
 astra
 astrachan
 astraea
@@ -8936,7 +8930,6 @@ cagliostro
 cahill
 cahokia
 cahoon
-cahors
 caiaphas
 caicos
 cain't
@@ -8947,7 +8940,6 @@ cairnes
 cairns
 caisson
 caissons
-caister
 caithness
 caitiff
 caius
@@ -9432,7 +9424,6 @@ capitulated
 capitulation
 capitulations
 capitulum
-capo
 capon
 capons
 caponsacchi
@@ -9444,7 +9435,6 @@ capper
 capping
 capponi
 cappy
-capra
 capri
 caprice
 caprices
@@ -10371,7 +10361,6 @@ cesarea
 cesarini
 cesario
 cesena
-cess
 cessation
 cession
 cessions
@@ -14135,7 +14124,6 @@ coroner
 coroners
 coronet
 coronets
-corp
 corpl
 corpo
 corpora
@@ -14680,7 +14668,6 @@ crannogs
 cranny
 cranston
 cranstoun
-crap
 crape
 craps
 crash
@@ -14740,7 +14727,6 @@ creamery
 creaming
 creams
 creamy
-crean
 crease
 creased
 creases
@@ -14812,7 +14798,6 @@ crescents
 crespi
 crespigny
 crespin
-cress
 cresses
 cresset
 cressets
@@ -15529,8 +15514,6 @@ cuyp
 cuzco
 cviii
 cwaedh
-cwt
-cwts
 cxi
 cxii
 cxiii
@@ -19771,7 +19754,6 @@ eaglet
 ealdorman
 ealing
 ealle
-eapc
 ear
 earache
 eared
@@ -19830,7 +19812,6 @@ easing
 east
 eastbourne
 eastcheap
-easter
 easterfield
 easterly
 eastern
@@ -21487,7 +21468,6 @@ esop
 esophagus
 esopus
 esoteric
-esp
 espa
 espada
 espagne
@@ -23427,7 +23407,6 @@ fife
 fifer
 fifes
 fifeshire
-fifi
 fifine
 fift
 fifteen
@@ -27991,7 +27970,6 @@ hackman
 hackney
 hackneyed
 hacks
-haco
 had
 had'st
 hadad
@@ -28019,7 +27997,6 @@ haec
 haeckel
 haemorrhage
 haena
-haer
 haf
 hafe
 haff
@@ -28395,7 +28372,6 @@ happy
 haps
 hapsburg
 hapsburgs
-har
 hara
 harald
 haram
@@ -28540,7 +28516,6 @@ harnessed
 harnesses
 harnessing
 harney
-haro
 harold
 haroun
 harp
@@ -29302,7 +29277,6 @@ henslow
 henslowe
 henson
 henty
-heora
 hepatic
 hepatica
 hepatitis
@@ -29317,7 +29291,6 @@ heptarchy
 hepworth
 hepzibah
 her
-hera
 heraclea
 heracles
 heraclitus
@@ -29343,7 +29316,6 @@ herbert
 herbes
 herbivorous
 herbs
-herc
 herculaneum
 herculean
 hercules
@@ -29836,13 +29808,11 @@ hmm
 hoadley
 hoag
 hoang
-hoar
 hoard
 hoarded
 hoarding
 hoardings
 hoards
-hoare
 hoarse
 hoarsely
 hoarseness
@@ -30198,7 +30168,6 @@ hoppner
 hops
 hopton
 horace
-horae
 horatia
 horatian
 horatio
@@ -30243,7 +30212,6 @@ horror
 horrors
 horrour
 horry
-hors
 horsa
 horse
 horseback
@@ -30438,7 +30406,6 @@ hoyden
 hoyle
 hoyt
 hrothgar
-hrs
 hsiang
 hsien
 hsing
@@ -31022,7 +30989,6 @@ iesus
 ieyasu
 if
 ifad
-iff
 iffen
 ifrcs
 ifs
@@ -31064,11 +31030,8 @@ iho
 ihr
 ihre
 ihrer
-iii
-iiii
 iiij
 iij
-iis
 ike
 ikey
 ikon
@@ -31614,7 +31577,6 @@ incas
 incased
 incautious
 incautiously
-ince
 incendiaries
 incendiarism
 incendiary
@@ -42179,8 +42141,6 @@ nailed
 nailing
 nailles
 nails
-nain
-nairne
 nairobi
 naisi
 naive
@@ -42256,7 +42216,6 @@ narcissus
 narcotic
 narcotics
 nardier
-nares
 narkom
 narragansett
 narragansetts
@@ -42278,7 +42237,6 @@ narrowing
 narrowly
 narrowness
 narrows
-narses
 narthex
 narva
 narvaez
@@ -42588,7 +42546,6 @@ neighed
 neighing
 neilson
 nein
-neir
 neisse
 neither
 nejd
@@ -42650,7 +42607,6 @@ nesbitt
 nescience
 nescio
 nesle
-ness
 nessa
 nesselrode
 nessus
@@ -42967,7 +42923,6 @@ ninth
 ninus
 niobe
 nip
-nipe
 nipped
 nipper
 nippers
@@ -44923,7 +44878,6 @@ oxen
 oxenford
 oxenham
 oxenstiern
-oxf
 oxford
 oxfordshire
 oxidation
@@ -45412,7 +45366,6 @@ paraphernalia
 paraphrase
 paraphrased
 paraphrases
-paras
 parasangs
 parasite
 parasites
@@ -45425,7 +45378,6 @@ parbleu
 parboil
 parboiled
 parbury
-parc
 parce
 parcel
 parcelled
@@ -45949,7 +45901,6 @@ pays
 payson
 payton
 pazzi
-pca
 pea
 peabody
 peace
@@ -46122,7 +46073,6 @@ peggy
 pegram
 pegs
 pegu
-pei
 peine
 peirce
 peishwa
@@ -46366,7 +46316,6 @@ perambulators
 perate
 peration
 perative
-perc
 perce
 perceiue
 perceiued
@@ -46732,7 +46681,6 @@ perverted
 perverting
 perverts
 pervious
-pes
 pesaro
 pescara
 peschiera
@@ -47141,7 +47089,6 @@ picayune
 piccadilly
 piccolo
 piccolomini
-pice
 picea
 pichegru
 pick
@@ -47327,7 +47274,6 @@ pimples
 pin
 pinafore
 pinafores
-pince
 pincers
 pinch
 pinchbeck
@@ -48701,7 +48647,6 @@ prebendaries
 prebendary
 prebends
 preble
-prec
 precarious
 precariously
 precaution
@@ -49079,7 +49024,6 @@ prided
 prides
 pridie
 priding
-prie
 pried
 priest
 priestcraft
@@ -49125,7 +49069,6 @@ primroses
 primula
 primum
 primus
-prin
 prince
 princely
 princeps
@@ -49234,7 +49177,6 @@ problematical
 problems
 proboscis
 probus
-proc
 procedure
 procedures
 proceed
@@ -49815,7 +49757,6 @@ pryor
 pryse
 prythee
 przemysl
-psa
 psal
 psalm
 psalmist
@@ -49825,13 +49766,11 @@ psalter
 psaltery
 psammead
 psammetichus
-psc
 pseud
 pseudo
 pseudonym
 psha
 pshaw
-psi
 psili
 psmith
 pst
@@ -50408,17 +50347,14 @@ quarts
 quartus
 quartz
 quartzite
-quas
 quash
 quashed
-quasi
 quasimodo
 quatermain
 quaternary
 quatorze
 quatrain
 quatrains
-quatre
 quatrefages
 quattro
 quatuor
@@ -50517,7 +50453,6 @@ quhat
 quhen
 quhilk
 quhill
-quia
 quibble
 quibbles
 quibbling
@@ -50539,7 +50474,6 @@ quickly
 quickness
 quicksand
 quicksands
-quickset
 quicksilver
 quicquid
 quid
@@ -50611,7 +50545,6 @@ quirks
 quiroga
 quiros
 quirt
-quis
 quisant
 quisque
 quit
@@ -50795,7 +50728,6 @@ ragtime
 ragueneau
 ragusa
 ragwort
-rah
 rahab
 rahman
 raid
@@ -50831,7 +50763,6 @@ raincoat
 raindal
 raindrops
 rained
-raines
 rainey
 rainfall
 rainford
@@ -52487,7 +52418,6 @@ reservists
 reservoir
 reservoirs
 reset
-resh
 reshid
 reside
 resided
@@ -52882,7 +52812,6 @@ rhadamanthus
 rhamnus
 rhapsodies
 rhapsody
-rhea
 rhegium
 rheims
 rhein
@@ -53032,7 +52961,6 @@ ried
 riehl
 riel
 riemann
-rien
 rienzi
 rieux
 rife
@@ -54006,7 +53934,6 @@ saad
 saadat
 saadi
 saale
-saar
 saavedra
 saba
 sabah
@@ -54059,7 +53986,6 @@ sacrament
 sacramental
 sacramento
 sacraments
-sacre
 sacred
 sacredly
 sacredness
@@ -54555,7 +54481,6 @@ sarmiento
 sarong
 sarpedon
 sarrasin
-sars
 sarsaparilla
 sarsfield
 sartain
@@ -54734,7 +54659,6 @@ saw
 saw'st
 sawbridge
 sawdust
-sawe
 sawed
 sawest
 sawhorse
@@ -55475,7 +55399,6 @@ secondo
 seconds
 secord
 secours
-secr
 secrecy
 secresy
 secret
@@ -55497,7 +55420,6 @@ secretiveness
 secretly
 secretory
 secrets
-secs
 sect
 sectarian
 sectarianism
@@ -55621,7 +55543,6 @@ segregation
 seguin
 segundo
 segur
-sehr
 seid
 seide
 seidlitz
@@ -55769,7 +55690,6 @@ sennett
 senores
 senorita
 senoritas
-sens
 sensation
 sensational
 sensationalism
@@ -55822,7 +55742,6 @@ sentinels
 sentries
 sentry
 senza
-sep
 sepals
 separable
 separate
@@ -56274,7 +56193,6 @@ shays
 she
 she'd
 she'll
-shea
 sheaf
 shear
 sheared
@@ -56372,7 +56290,6 @@ shepley
 sheppard
 sheppey
 shepstone
-sher
 sheraton
 sherbet
 sherborne
@@ -56645,7 +56562,6 @@ showmen
 shown
 shows
 showy
-shr
 shrank
 shrapnel
 shred
@@ -57337,7 +57253,6 @@ skit
 skittish
 skittles
 skookum
-skr
 skshetuski
 skua
 skulk
@@ -58490,8 +58405,6 @@ spawn
 spawned
 spawning
 spayne
-spc
-spe
 speach
 speak
 speak'st
@@ -58511,7 +58424,6 @@ spearing
 spearman
 spearmen
 spears
-spec
 speche
 special
 specialisation
@@ -58618,7 +58530,6 @@ spends
 spendthrift
 spendthrifts
 spener
-spens
 spenser
 spenserian
 spent
@@ -58635,7 +58546,6 @@ spero
 sperrit
 sperrits
 sperry
-spes
 speug
 spew
 spewed
@@ -58795,7 +58705,6 @@ splurge
 splutter
 spluttered
 spluttering
-spn
 spofford
 spohr
 spoil
@@ -62834,7 +62743,6 @@ tibullus
 tiburcio
 tiburon
 tic
-tice
 tichborne
 ticino
 tick
@@ -64546,7 +64454,6 @@ twain
 twang
 twanged
 twanging
-twas
 twasn't
 tweak
 tweed
@@ -67654,7 +67561,6 @@ wagtail
 wagtails
 wah
 wahine
-waie
 waies
 waif
 waife
@@ -68069,7 +67975,6 @@ wattled
 wattles
 watts
 watty
-wau
 wauchope
 waugh
 waur
@@ -69611,8 +69516,6 @@ xenophon
 xeres
 xerxes
 xico
-xii
-xiii
 xiiith
 xiij
 xiith
@@ -69641,20 +69544,12 @@ xviiith
 xvith
 xvj
 xvth
-xxi
-xxii
-xxiii
 xxiv
-xxix
 xxv
 xxvi
 xxvii
 xxviii
-xxxi
-xxxii
-xxxiii
 xxxiv
-xxxix
 xxxv
 xxxvi
 xxxvii
