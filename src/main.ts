@@ -1,5 +1,6 @@
 import './style.css';
 import { loadWords } from './words';
+import { loadLevel } from './level';
 
 const canvas = document.getElementById('game') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d')!;
@@ -15,6 +16,7 @@ ctx.font = 'bold 32px sans-serif';
 ctx.textAlign = 'center';
 ctx.fillText('Perplexions', canvas.width / 2, canvas.height / 2);
 
-loadWords().then(words => {
+Promise.all([loadWords(), loadLevel(new Date())]).then(([words, tiles]) => {
   console.log(`Loaded ${words.size} words`);
+  console.log('Tiles:', tiles);
 });
