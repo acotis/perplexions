@@ -1,4 +1,5 @@
 import './style.css';
+import { loadWords } from './words';
 
 const canvas = document.getElementById('game') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d')!;
@@ -13,3 +14,7 @@ ctx.fillStyle = '#000';
 ctx.font = 'bold 32px sans-serif';
 ctx.textAlign = 'center';
 ctx.fillText('Perplexions', canvas.width / 2, canvas.height / 2);
+
+loadWords().then(words => {
+  console.log(`Loaded ${words.size} words`);
+});
