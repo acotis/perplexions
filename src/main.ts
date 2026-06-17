@@ -129,7 +129,7 @@ canvas.addEventListener('mousedown', e => {
   }
 });
 
-canvas.addEventListener('mousemove', e => {
+window.addEventListener('mousemove', e => {
   if (animating || levelComplete || !layout) return;
   const rect = canvas.getBoundingClientRect();
   cursorX = e.clientX - rect.left;
@@ -160,6 +160,7 @@ canvas.addEventListener('mousemove', e => {
 canvas.addEventListener('mouseleave', () => {
   if (chain.length === 0 && hoveredTile) { hoveredTile = null; redraw(); }
 });
+
 
 window.addEventListener('mouseup', () => {
   if (chain.length === 0) return;
