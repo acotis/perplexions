@@ -350,15 +350,14 @@ function startCascadeAnimation() {
   runFallAnimation(fallingTiles);
 }
 
-function handleResize() {
+new ResizeObserver(entries => {
+  const { width, height } = entries[0].contentRect;
+  setCanvasSize(Math.round(width), Math.round(height));
   if (!levelNumCols) return;
-  setCanvasSize(Math.round(window.innerWidth * 0.9), Math.round(window.innerHeight * 0.70));
   applyScale(Math.floor(Math.min(canvasW / (levelNumCols + 1), canvasH / (levelNumRows + 3))));
   layout = computeLayout(tiles, canvasW, canvasH);
   redraw();
-}
-
-window.addEventListener('resize', handleResize);
+}).observe(canvas);
 
 // --- init ---
 
