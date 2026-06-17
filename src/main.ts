@@ -311,7 +311,7 @@ function startDropAnimation() {
   runFallAnimation(tiles.map(tile => {
     const targetPixelY = tilePixelY(tile, layout);
     const fallDistance = layout.offsetY + layout.maxY * (TILE_SIZE + GAP) + TILE_SIZE
-      + (tile.x - layout.minX + 1) * COLUMN_STAGGER + FALL_ENTRY_EXTRA;
+      + (tile.x - layout.minX + 1) * COLUMN_STAGGER + FALL_ENTRY_EXTRA + tile.y * PITCH * 0.5;
     return { tile, pixelY: targetPixelY - fallDistance, velocityY: 0, targetPixelY, settled: false };
   }));
 }

@@ -172,7 +172,7 @@ export function render(
 
   for (const splash of splashes) drawSplash(ctx, splash, color);
 
-  const floorY = layout.offsetY + layout.maxY * PITCH + TILE_SIZE + TILE_SIZE * 0.4;
+  const floorY = layout.offsetY + layout.maxY * PITCH + TILE_SIZE + TILE_SIZE * 0.4 + PITCH * 0.05;
   const floorX1 = layout.offsetX + layout.minX * PITCH - TILE_SIZE / 6;
   const floorX2 = layout.offsetX + layout.maxX * PITCH + TILE_SIZE + TILE_SIZE / 6;
   const grad = ctx.createLinearGradient(0, floorY, 0, floorY + TILE_SIZE * 0.75);
