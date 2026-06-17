@@ -28,6 +28,7 @@ let cursorX = 0;
 let cursorY = 0;
 let animating = false;
 let levelComplete = false;
+let history: Tile[][] = [];
 
 // --- splashes ---
 
@@ -146,6 +147,7 @@ window.addEventListener('mouseup', () => {
   if (chain.length === 0) return;
   const word = chain.map(t => t.letter).join('');
   if (words.has(word)) {
+    history.push(tiles);
     const removed = new Set(chain);
     tiles = tiles.filter(t => !removed.has(t));
     chain = [];
@@ -157,6 +159,28 @@ window.addEventListener('mouseup', () => {
     hoveredTile = tileAtPixel(tiles, cursorX, cursorY, layout);
     redraw();
   }
+});
+
+function undo() {
+  if (animating || history.length === 0) return;
+  tiles = history.pop()!;
+  levelComplete = false;
+  chain = [];
+  hoveredTile = null;
+  splashes = [];
+  redraw();
+}
+
+window.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'z') {
+    e.preventDefault();
+    undo();
+  }
+});
+
+canvas.addEventListener('contextmenu', e => {
+  e.preventDefault();
+  undo();
 });
 
 // --- animation ---
