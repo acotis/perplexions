@@ -27,6 +27,17 @@ function applyScale(pitch: number): void {
 
 const canvas = document.getElementById('game') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d')!;
+const dpr = window.devicePixelRatio || 1;
+let canvasW = 0;
+let canvasH = 0;
+
+function setCanvasSize(w: number, h: number) {
+  canvasW = w;
+  canvasH = h;
+  canvas.width = Math.round(w * dpr);
+  canvas.height = Math.round(h * dpr);
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+};
 
 const undoHintIcon = new Image();
 let undoHintIconLoaded = false;
@@ -70,7 +81,7 @@ function drawUndoHint() {
   ctx.globalAlpha = alpha;
   ctx.font = `${fontSize}px sans-serif`;
   const textW = ctx.measureText('undo').width;
-  const startX = Math.round(canvas.width / 2 - (iconW + gap + textW) / 2);
+  const startX = Math.round(canvasW / 2 - (iconW + gap + textW) / 2);
   const centerY = Math.round(layout.offsetY + layout.maxY * PITCH + TILE_SIZE + PITCH * 1.5);
   ctx.drawImage(undoHintIcon, startX, centerY - iconH / 2, iconW, iconH);
   ctx.fillStyle = '#aaa';
@@ -80,8 +91,7 @@ function drawUndoHint() {
   ctx.restore();
 }
 
-canvas.width = Math.round(window.innerWidth * 0.9);
-canvas.height = Math.round(window.innerHeight * 0.70);
+setCanvasSize(Math.round(window.innerWidth * 0.9), Math.round(window.innerHeight * 0.70));
 
 let words: Set<string> = new Set();
 let tiles: Tile[] = [];
@@ -152,9 +162,9 @@ function drawLevelComplete() {
   ctx.textBaseline = 'middle';
   ctx.fillStyle = `rgb(${color.r},${color.g},${color.b})`;
   ctx.font = 'bold 96px sans-serif';
-  ctx.fillText('Solved!', canvas.width / 2, canvas.height / 2 - 50);
+  ctx.fillText('Solved!', canvasW / 2, canvasH / 2 - 50);
   ctx.font = '32px sans-serif';
-  ctx.fillText(dateStr, canvas.width / 2, canvas.height / 2 + 30);
+  ctx.fillText(dateStr, canvasW / 2, canvasH / 2 + 30);
   ctx.restore();
 }
 
@@ -296,7 +306,7 @@ function runFallAnimation(fallingTiles: FallingTile[]) {
       animating = false;
       if (tiles.length === 0) {
         levelComplete = true;
-        addSplash(cursorX, cursorY, 1200, Math.hypot(canvas.width, canvas.height));
+        addSplash(cursorX, cursorY, 1200, Math.hypot(canvasW, canvasH));
       }
       runSplashLoop();
     } else {
@@ -331,7 +341,7 @@ function startCascadeAnimation() {
   if (fallingTiles.every(ft => ft.settled)) {
     if (tiles.length === 0) {
       levelComplete = true;
-      addSplash(cursorX, cursorY, 1200, Math.hypot(canvas.width, canvas.height));
+      addSplash(cursorX, cursorY, 1200, Math.hypot(canvasW, canvasH));
     }
     runSplashLoop();
     return;
@@ -342,10 +352,9 @@ function startCascadeAnimation() {
 
 function handleResize() {
   if (!levelNumCols) return;
-  canvas.width = Math.round(window.innerWidth * 0.9);
-  canvas.height = Math.round(window.innerHeight * 0.70);
-  applyScale(Math.floor(Math.min(canvas.width / (levelNumCols + 1), canvas.height / (levelNumRows + 3))));
-  layout = computeLayout(tiles, canvas.width, canvas.height);
+  setCanvasSize(Math.round(window.innerWidth * 0.9), Math.round(window.innerHeight * 0.70));
+  applyScale(Math.floor(Math.min(canvasW / (levelNumCols + 1), canvasH / (levelNumRows + 3))));
+  layout = computeLayout(tiles, canvasW, canvasH);
   redraw();
 }
 
@@ -359,13 +368,13 @@ Promise.all([loadWords(), loadLevel(new Date())]).then(([loadedWords, loadedTile
   const ys = loadedTiles.map(t => t.y);
   levelNumCols = Math.max(...xs) - Math.min(...xs) + 1;
   levelNumRows = Math.max(...ys) + 1;
-  applyScale(Math.floor(Math.min(canvas.width / (levelNumCols + 1), canvas.height / (levelNumRows + 3))));
+  applyScale(Math.floor(Math.min(canvasW / (levelNumCols + 1), canvasH / (levelNumRows + 3))));
   tiles = applyGravity(loadedTiles);
   color = randomLevelColor();
   const least = Math.min(color.r, color.g, color.b);
   const dist = Math.round(Math.hypot(255 - color.r, 255 - color.g, 255 - color.b));
   const luma = Math.round(0.299 * color.r + 0.587 * color.g + 0.114 * color.b);
   console.log(`rgb(${color.r}, ${color.g}, ${color.b}) — least: ${least} — distance: ${dist} — luma: ${luma}`);
-  layout = computeLayout(tiles, canvas.width, canvas.height);
+  layout = computeLayout(tiles, canvasW, canvasH);
   startDropAnimation();
 });
