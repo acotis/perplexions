@@ -12,8 +12,8 @@ body {
 #game {
   display: block;
   position: absolute;
-  top: 5vh;
+  top: 10vh;
   left: 5vw;
   width: 90vw;
-  height: 75vh;
+  height: 70vh;
 }

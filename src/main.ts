@@ -33,14 +33,41 @@ let undoHintIconLoaded = false;
 undoHintIcon.onload = () => { undoHintIconLoaded = true; };
 undoHintIcon.src = import.meta.env.BASE_URL + 'right-click-icon.svg';
 
+let hintFirstShownTime: number | null = null;
+let hintFadeComplete = false;
+let hintFadeLoopRunning = false;
+
+function runHintFadeLoop() {
+  if (hintFadeLoopRunning) return;
+  hintFadeLoopRunning = true;
+  function frame() {
+    redraw();
+    if (!hintFadeComplete) requestAnimationFrame(frame);
+    else hintFadeLoopRunning = false;
+  }
+  requestAnimationFrame(frame);
+}
+
 function drawUndoHint() {
   if (!layout || !undoHintIconLoaded) return;
+
+  let alpha = 1;
+  if (!hintFadeComplete) {
+    const now = performance.now();
+    if (hintFirstShownTime === null) { hintFirstShownTime = now; runHintFadeLoop(); }
+    const elapsed = now - hintFirstShownTime;
+    if (elapsed < 2000) return;
+    if (elapsed < 4000) alpha = (elapsed - 2000) / 2000;
+    else hintFadeComplete = true;
+  }
+
   const scale = PITCH / 64 * 0.7;
   const iconH = Math.round(48 * scale);
   const iconW = Math.round(iconH * 87.45 / 129.2);
   const fontSize = Math.round(32 * scale);
   const gap = Math.round(8 * scale);
   ctx.save();
+  ctx.globalAlpha = alpha;
   ctx.font = `${fontSize}px sans-serif`;
   const textW = ctx.measureText('undo').width;
   const startX = Math.round(canvas.width / 2 - (iconW + gap + textW) / 2);
@@ -51,10 +78,10 @@ function drawUndoHint() {
   ctx.textBaseline = 'middle';
   ctx.fillText('undo', startX + iconW + gap, centerY);
   ctx.restore();
-};
+}
 
 canvas.width = Math.round(window.innerWidth * 0.9);
-canvas.height = Math.round(window.innerHeight * 0.75);
+canvas.height = Math.round(window.innerHeight * 0.70);
 
 let words: Set<string> = new Set();
 let tiles: Tile[] = [];
@@ -316,7 +343,7 @@ function startCascadeAnimation() {
 function handleResize() {
   if (!levelNumCols) return;
   canvas.width = Math.round(window.innerWidth * 0.9);
-  canvas.height = Math.round(window.innerHeight * 0.75);
+  canvas.height = Math.round(window.innerHeight * 0.70);
   applyScale(Math.floor(Math.min(canvas.width / (levelNumCols + 1), canvas.height / (levelNumRows + 3))));
   layout = computeLayout(tiles, canvas.width, canvas.height);
   redraw();
