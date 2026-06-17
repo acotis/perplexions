@@ -12,9 +12,8 @@ body {
 #game {
   display: block;
   position: absolute;
-  top: 10vh;
-  left: 10vw;
-  width: 80vw;
-  height: 60vh;
-  outline: 2px solid #333;
+  top: 5vh;
+  left: 5vw;
+  width: 90vw;
+  height: 65vh;
 }

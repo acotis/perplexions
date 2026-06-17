@@ -27,8 +27,8 @@ function applyScale(pitch: number): void {
 const canvas = document.getElementById('game') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d')!;
 
-canvas.width = Math.round(window.innerWidth * 0.8);
-canvas.height = Math.round(window.innerHeight * 0.6);
+canvas.width = Math.round(window.innerWidth * 0.9);
+canvas.height = Math.round(window.innerHeight * 0.65);
 
 let words: Set<string> = new Set();
 let tiles: Tile[] = [];
@@ -283,8 +283,8 @@ function startCascadeAnimation() {
 
 function handleResize() {
   if (!levelNumCols) return;
-  canvas.width = Math.round(window.innerWidth * 0.8);
-  canvas.height = Math.round(window.innerHeight * 0.6);
+  canvas.width = Math.round(window.innerWidth * 0.9);
+  canvas.height = Math.round(window.innerHeight * 0.65);
   applyScale(Math.floor(Math.min(canvas.width / (levelNumCols + 1), canvas.height / (levelNumRows + 2))));
   layout = computeLayout(tiles, canvas.width, canvas.height);
   redraw();
