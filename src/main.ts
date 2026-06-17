@@ -285,7 +285,7 @@ function handleResize() {
   if (!levelNumCols) return;
   canvas.width = Math.round(window.innerWidth * 0.8);
   canvas.height = Math.round(window.innerHeight * 0.6);
-  applyScale(Math.floor(Math.min(canvas.width / (levelNumCols + 1), canvas.height / levelNumRows)));
+  applyScale(Math.floor(Math.min(canvas.width / (levelNumCols + 1), canvas.height / (levelNumRows + 2))));
   layout = computeLayout(tiles, canvas.width, canvas.height);
   redraw();
 }
@@ -300,7 +300,7 @@ Promise.all([loadWords(), loadLevel(new Date())]).then(([loadedWords, loadedTile
   const ys = loadedTiles.map(t => t.y);
   levelNumCols = Math.max(...xs) - Math.min(...xs) + 1;
   levelNumRows = Math.max(...ys) + 1;
-  applyScale(Math.floor(Math.min(canvas.width / (levelNumCols + 1), canvas.height / levelNumRows)));
+  applyScale(Math.floor(Math.min(canvas.width / (levelNumCols + 1), canvas.height / (levelNumRows + 2))));
   tiles = applyGravity(loadedTiles);
   color = randomLevelColor();
   const least = Math.min(color.r, color.g, color.b);
