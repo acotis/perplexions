@@ -150,12 +150,12 @@ function drawTile(
     ctx.fillRect(px + border, py + border, TILE_SIZE - border * 2, TILE_SIZE - border * 2);
   }
 
-  const fontSize = Math.round(TILE_SIZE * 0.5625);
+  const fontSize = Math.round(TILE_SIZE * 0.50);
   ctx.fillStyle = '#000';
   ctx.font = `bold ${fontSize}px sans-serif`;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillText(tile.letter.toUpperCase(), px + TILE_SIZE / 2, py + TILE_SIZE / 2 + fontSize * 0.075);
+  ctx.fillText(tile.letter.toUpperCase(), px + TILE_SIZE / 2, py + TILE_SIZE / 2 + fontSize * 0.075 + PITCH * 0.01);
 }
 
 export function render(
