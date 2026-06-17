@@ -58,12 +58,52 @@ export function tileAtPixel(tiles: Tile[], px: number, py: number, layout: GridL
   return tiles.find(t => t.x === gx && t.y === gy) ?? null;
 }
 
+export interface RenderOptions {
+  hoveredTile?: Tile | null;
+  chain?: Tile[];
+  cursorX?: number;
+  cursorY?: number;
+  getTilePixelY?: (tile: Tile) => number;
+}
+
+function drawChain(
+  ctx: CanvasRenderingContext2D,
+  chain: Tile[],
+  layout: GridLayout,
+  color: Color,
+  cursorX: number,
+  cursorY: number,
+) {
+  if (chain.length === 0) return;
+  ctx.save();
+  ctx.strokeStyle = rgb(color);
+  ctx.lineWidth = 24;
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  ctx.beginPath();
+  ctx.moveTo(tilePixelX(chain[0], layout) + TILE_SIZE / 2, tilePixelY(chain[0], layout) + TILE_SIZE / 2);
+  for (let i = 1; i < chain.length; i++) {
+    ctx.lineTo(tilePixelX(chain[i], layout) + TILE_SIZE / 2, tilePixelY(chain[i], layout) + TILE_SIZE / 2);
+  }
+  const lastCx = tilePixelX(chain[chain.length - 1], layout) + TILE_SIZE / 2;
+  const lastCy = tilePixelY(chain[chain.length - 1], layout) + TILE_SIZE / 2;
+  const dx = cursorX - lastCx;
+  const dy = cursorY - lastCy;
+  const dist = Math.hypot(dx, dy);
+  const clampedDist = Math.min(dist, PITCH);
+  const endX = dist > 0 ? lastCx + (dx / dist) * clampedDist : lastCx;
+  const endY = dist > 0 ? lastCy + (dy / dist) * clampedDist : lastCy;
+  ctx.lineTo(endX, endY);
+  ctx.stroke();
+  ctx.restore();
+}
+
 function drawTile(
   ctx: CanvasRenderingContext2D,
   tile: Tile,
   layout: GridLayout,
   color: Color,
-  hovered: boolean,
+  highlighted: boolean,
   pyOverride?: number,
 ) {
   const px = tilePixelX(tile, layout);
@@ -72,7 +112,7 @@ function drawTile(
   ctx.fillStyle = rgb(color);
   ctx.fillRect(px, py, TILE_SIZE, TILE_SIZE);
 
-  if (!hovered) {
+  if (!highlighted) {
     ctx.fillStyle = '#fff';
     ctx.fillRect(px + BORDER, py + BORDER, TILE_SIZE - BORDER * 2, TILE_SIZE - BORDER * 2);
   }
@@ -90,12 +130,19 @@ export function render(
   tiles: Tile[],
   layout: GridLayout,
   color: Color,
-  hoveredTile: Tile | null,
-  getTilePixelY?: (tile: Tile) => number,
+  options: RenderOptions = {},
 ) {
+  const { hoveredTile = null, chain = [], cursorX = 0, cursorY = 0, getTilePixelY } = options;
+
   ctx.fillStyle = '#fff';
   ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+  drawChain(ctx, chain, layout, color, cursorX, cursorY);
+
+  const highlighted = new Set(chain);
+  if (hoveredTile) highlighted.add(hoveredTile);
+
   for (const tile of tiles) {
-    drawTile(ctx, tile, layout, color, tile === hoveredTile, getTilePixelY?.(tile));
+    drawTile(ctx, tile, layout, color, highlighted.has(tile), getTilePixelY?.(tile));
   }
 }

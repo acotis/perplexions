@@ -1,9 +1,13 @@
 import './style.css';
 import { loadWords } from './words';
 import { loadLevel, applyGravity } from './level';
-import { randomLevelColor, computeLayout, tileAtPixel, tilePixelY, render, TILE_SIZE } from './render';
+import { randomLevelColor, computeLayout, tileAtPixel, tilePixelX, tilePixelY, render, TILE_SIZE, GAP } from './render';
 import type { Tile } from './level';
 import type { GridLayout, Color } from './render';
+
+const PITCH = TILE_SIZE + GAP;
+const ADD_RADIUS = PITCH * 0.45;
+const REMOVE_RADIUS = PITCH * 0.40;
 
 const canvas = document.getElementById('game') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d')!;
@@ -15,26 +19,82 @@ let tiles: Tile[] = [];
 let layout: GridLayout;
 let color: Color;
 let hoveredTile: Tile | null = null;
+let chain: Tile[] = [];
+let cursorX = 0;
+let cursorY = 0;
 let animating = false;
 
 function redraw() {
-  render(ctx, tiles, layout, color, hoveredTile);
+  render(ctx, tiles, layout, color, { hoveredTile, chain, cursorX, cursorY });
 }
 
-canvas.addEventListener('mousemove', e => {
-  if (!layout || animating) return;
+function isAdjacent(a: Tile, b: Tile): boolean {
+  return Math.abs(a.x - b.x) <= 1 && Math.abs(a.y - b.y) <= 1 && (a.x !== b.x || a.y !== b.y);
+}
+
+function distToCenter(tile: Tile, px: number, py: number): number {
+  const cx = tilePixelX(tile, layout) + TILE_SIZE / 2;
+  const cy = tilePixelY(tile, layout) + TILE_SIZE / 2;
+  return Math.hypot(px - cx, py - cy);
+}
+
+canvas.addEventListener('mousedown', e => {
+  if (animating || !layout) return;
   const rect = canvas.getBoundingClientRect();
-  const px = e.clientX - rect.left;
-  const py = e.clientY - rect.top;
-  const hit = tileAtPixel(tiles, px, py, layout);
-  if (hit !== hoveredTile) {
-    hoveredTile = hit;
+  cursorX = e.clientX - rect.left;
+  cursorY = e.clientY - rect.top;
+  const hit = tileAtPixel(tiles, cursorX, cursorY, layout);
+  if (hit) {
+    chain = [hit];
+    hoveredTile = null;
     redraw();
   }
 });
 
-const GRAVITY = 3000;         // px/s²
-const COLUMN_STAGGER = TILE_SIZE * 3; // height above canvas per column index (multiplied by 1-based index)
+canvas.addEventListener('mousemove', e => {
+  if (animating || !layout) return;
+  const rect = canvas.getBoundingClientRect();
+  cursorX = e.clientX - rect.left;
+  cursorY = e.clientY - rect.top;
+
+  if (chain.length === 0) {
+    const hit = tileAtPixel(tiles, cursorX, cursorY, layout);
+    if (hit !== hoveredTile) {
+      hoveredTile = hit;
+      redraw();
+    }
+    return;
+  }
+
+  const last = chain[chain.length - 1];
+  const secondToLast = chain.length >= 2 ? chain[chain.length - 2] : null;
+
+  if (secondToLast && distToCenter(secondToLast, cursorX, cursorY) < REMOVE_RADIUS) {
+    chain.pop();
+  } else {
+    for (const tile of tiles) {
+      if (tile === last || chain.includes(tile)) continue;
+      if (!isAdjacent(last, tile)) continue;
+      if (distToCenter(tile, cursorX, cursorY) < ADD_RADIUS) {
+        chain.push(tile);
+        break;
+      }
+    }
+  }
+
+  redraw();
+});
+
+window.addEventListener('mouseup', () => {
+  if (chain.length === 0) return;
+  const word = chain.map(t => t.letter).join('');
+  console.log('Word submitted:', word);
+  chain = [];
+  redraw();
+});
+
+const GRAVITY = 3000;
+const COLUMN_STAGGER = TILE_SIZE * 3;
 
 interface FallingTile {
   tile: Tile;
@@ -59,7 +119,7 @@ function startDropAnimation() {
   let lastTime = performance.now();
 
   function frame(now: number) {
-    const delta = Math.min((now - lastTime) / 1000, 0.1); // cap delta to avoid huge jumps
+    const delta = Math.min((now - lastTime) / 1000, 0.1);
     lastTime = now;
 
     let allSettled = true;
@@ -77,7 +137,7 @@ function startDropAnimation() {
       yMap.set(ft.tile, ft.pixelY);
     }
 
-    render(ctx, tiles, layout, color, null, tile => yMap.get(tile) ?? tilePixelY(tile, layout));
+    render(ctx, tiles, layout, color, { getTilePixelY: tile => yMap.get(tile) ?? tilePixelY(tile, layout) });
 
     if (allSettled) {
       animating = false;
