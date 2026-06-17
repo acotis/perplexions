@@ -7,9 +7,16 @@ export const GAP = Math.round(TILE_SIZE * 0.1);
 const PITCH = TILE_SIZE + GAP;
 const BORDER = 4;
 
+function acceptLevelColor(c: Color): boolean {
+  const luma = 0.299 * c.r + 0.587 * c.g + 0.114 * c.b;
+  return luma <= 220;
+}
+
 export function randomLevelColor(): Color {
-  const ch = () => Math.floor(Math.random() * 51) + 200;
-  return { r: ch(), g: ch(), b: ch() };
+  const ch = () => Math.floor(Math.random() * 81) + 175;
+  let c: Color;
+  do { c = { r: ch(), g: ch(), b: ch() }; } while (!acceptLevelColor(c));
+  return c;
 }
 
 function rgb(c: Color): string {
