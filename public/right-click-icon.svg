@@ -1,0 +1,20 @@
+<svg viewBox="16.275 12.275 87.45 129.2" xmlns="http://www.w3.org/2000/svg">
+  <!-- mouse body fill (white) -->
+  <path d="M60 18 C38 18, 22 34, 22 62 L22 97.75 A38 38 0 0 0 98 97.75 L98 62 C98 34, 82 18, 60 18 Z" fill="#ffffff"/>
+
+  <!-- right button highlight (red) -->
+  <path d="M60 18 C82 18, 98 34, 98 62 L98 72 L60 72 Z" fill="#dc2626"/>
+
+  <!-- mouse body outline -->
+  <path d="M60 18 C38 18, 22 34, 22 62 L22 97.75 A38 38 0 0 0 98 97.75 L98 62 C98 34, 82 18, 60 18 Z"
+        fill="none" stroke="#111111" stroke-width="3.5" stroke-linejoin="round"/>
+
+  <!-- horizontal divider between buttons and body -->
+  <line x1="22" y1="72" x2="98" y2="72" stroke="#111111" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- vertical divider between left and right buttons -->
+  <line x1="60" y1="18" x2="60" y2="72" stroke="#111111" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- scroll wheel -->
+  <rect x="54.5" y="30" width="11" height="22" rx="5.5" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+</svg>

@@ -22,13 +22,39 @@ function applyScale(pitch: number): void {
   GRAVITY = GRAVITY_TILES_PER_S2 * TILE_SIZE;
   COLUMN_STAGGER = TILE_SIZE * 3;
   FALL_ENTRY_EXTRA = TILE_SIZE * 6;
+  console.log(`pitch=${pitch} tile=${TILE_SIZE} gap=${GAP}`);
 }
 
 const canvas = document.getElementById('game') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d')!;
 
+const undoHintIcon = new Image();
+let undoHintIconLoaded = false;
+undoHintIcon.onload = () => { undoHintIconLoaded = true; };
+undoHintIcon.src = import.meta.env.BASE_URL + 'right-click-icon.svg';
+
+function drawUndoHint() {
+  if (!layout || !undoHintIconLoaded) return;
+  const scale = PITCH / 64 * 0.7;
+  const iconH = Math.round(48 * scale);
+  const iconW = Math.round(iconH * 87.45 / 129.2);
+  const fontSize = Math.round(32 * scale);
+  const gap = Math.round(8 * scale);
+  ctx.save();
+  ctx.font = `${fontSize}px sans-serif`;
+  const textW = ctx.measureText('undo').width;
+  const startX = Math.round(canvas.width / 2 - (iconW + gap + textW) / 2);
+  const centerY = Math.round(layout.offsetY + layout.maxY * PITCH + TILE_SIZE + PITCH * 1.5);
+  ctx.drawImage(undoHintIcon, startX, centerY - iconH / 2, iconW, iconH);
+  ctx.fillStyle = '#aaa';
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('undo', startX + iconW + gap, centerY);
+  ctx.restore();
+};
+
 canvas.width = Math.round(window.innerWidth * 0.9);
-canvas.height = Math.round(window.innerHeight * 0.65);
+canvas.height = Math.round(window.innerHeight * 0.75);
 
 let words: Set<string> = new Set();
 let tiles: Tile[] = [];
@@ -63,6 +89,7 @@ function renderFrame(now = performance.now(), overrides: Parameters<typeof rende
     splashes: activeSplashStates(now),
     ...overrides,
   });
+  if (history.length > 0) drawUndoHint();
   if (levelComplete) drawLevelComplete();
 }
 
@@ -289,8 +316,8 @@ function startCascadeAnimation() {
 function handleResize() {
   if (!levelNumCols) return;
   canvas.width = Math.round(window.innerWidth * 0.9);
-  canvas.height = Math.round(window.innerHeight * 0.65);
-  applyScale(Math.floor(Math.min(canvas.width / (levelNumCols + 1), canvas.height / (levelNumRows + 2))));
+  canvas.height = Math.round(window.innerHeight * 0.75);
+  applyScale(Math.floor(Math.min(canvas.width / (levelNumCols + 1), canvas.height / (levelNumRows + 3))));
   layout = computeLayout(tiles, canvas.width, canvas.height);
   redraw();
 }
@@ -305,7 +332,7 @@ Promise.all([loadWords(), loadLevel(new Date())]).then(([loadedWords, loadedTile
   const ys = loadedTiles.map(t => t.y);
   levelNumCols = Math.max(...xs) - Math.min(...xs) + 1;
   levelNumRows = Math.max(...ys) + 1;
-  applyScale(Math.floor(Math.min(canvas.width / (levelNumCols + 1), canvas.height / (levelNumRows + 2))));
+  applyScale(Math.floor(Math.min(canvas.width / (levelNumCols + 1), canvas.height / (levelNumRows + 3))));
   tiles = applyGravity(loadedTiles);
   color = randomLevelColor();
   const least = Math.min(color.r, color.g, color.b);
