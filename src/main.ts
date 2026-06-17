@@ -150,7 +150,7 @@ window.addEventListener('mouseup', () => {
     tiles = tiles.filter(t => !removed.has(t));
     chain = [];
     hoveredTile = null;
-    if (tiles.length > 0) addSplash(cursorX, cursorY, 600, TILE_SIZE * 3);
+    // if (tiles.length > 0) addSplash(cursorX, cursorY, 600, TILE_SIZE * 3);
     startCascadeAnimation();
   } else {
     chain = [];
