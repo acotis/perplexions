@@ -27,6 +27,7 @@ export interface GridLayout {
   offsetX: number;
   offsetY: number;
   minX: number;
+  maxX: number;
   maxY: number;
 }
 
@@ -42,6 +43,7 @@ export function computeLayout(tiles: Tile[], canvasWidth: number, canvasHeight: 
     offsetX: Math.floor((canvasWidth - gridW) / 2) - minX * PITCH,
     offsetY: Math.floor((canvasHeight - gridH) / 2),
     minX,
+    maxX,
     maxY,
   };
 }
@@ -164,6 +166,15 @@ export function render(
   ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
   for (const splash of splashes) drawSplash(ctx, splash, color);
+
+  const floorY = layout.offsetY + layout.maxY * PITCH + TILE_SIZE + TILE_SIZE * 0.4;
+  const floorX1 = layout.offsetX + layout.minX * PITCH - TILE_SIZE / 6;
+  const floorX2 = layout.offsetX + layout.maxX * PITCH + TILE_SIZE + TILE_SIZE / 6;
+  const grad = ctx.createLinearGradient(0, floorY, 0, floorY + TILE_SIZE * 0.75);
+  grad.addColorStop(0, 'rgba(100,100,100,0.15)');
+  grad.addColorStop(1, 'rgba(255,255,255,0)');
+  ctx.fillStyle = grad;
+  ctx.fillRect(floorX1, floorY, floorX2 - floorX1, TILE_SIZE * 0.75);
 
   drawChain(ctx, chain, layout, color, cursorX, cursorY, 24);
 
