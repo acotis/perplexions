@@ -27,12 +27,14 @@ function applyScale(pitch: number): void {
 const canvas = document.getElementById('game') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d')!;
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = Math.round(window.innerWidth * 0.8);
+canvas.height = Math.round(window.innerHeight * 0.6);
 
 let words: Set<string> = new Set();
 let tiles: Tile[] = [];
 let layout: GridLayout;
+let levelNumCols = 0;
+let levelNumRows = 0;
 let color: Color;
 let hoveredTile: Tile | null = null;
 let chain: Tile[] = [];
@@ -279,15 +281,26 @@ function startCascadeAnimation() {
   runFallAnimation(fallingTiles);
 }
 
+function handleResize() {
+  if (!levelNumCols) return;
+  canvas.width = Math.round(window.innerWidth * 0.8);
+  canvas.height = Math.round(window.innerHeight * 0.6);
+  applyScale(Math.floor(Math.min(canvas.width / (levelNumCols + 1), canvas.height / levelNumRows)));
+  layout = computeLayout(tiles, canvas.width, canvas.height);
+  redraw();
+}
+
+window.addEventListener('resize', handleResize);
+
 // --- init ---
 
 Promise.all([loadWords(), loadLevel(new Date())]).then(([loadedWords, loadedTiles]) => {
   words = loadedWords;
   const xs = loadedTiles.map(t => t.x);
   const ys = loadedTiles.map(t => t.y);
-  const numCols = Math.max(...xs) - Math.min(...xs) + 1;
-  const numRows = Math.max(...ys) + 1;
-  applyScale(Math.floor(Math.min(canvas.width / (numCols + 1), canvas.height / numRows)));
+  levelNumCols = Math.max(...xs) - Math.min(...xs) + 1;
+  levelNumRows = Math.max(...ys) + 1;
+  applyScale(Math.floor(Math.min(canvas.width / (levelNumCols + 1), canvas.height / levelNumRows)));
   tiles = applyGravity(loadedTiles);
   color = randomLevelColor();
   const least = Math.min(color.r, color.g, color.b);
