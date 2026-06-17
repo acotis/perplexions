@@ -8,6 +8,9 @@ import type { GridLayout, Color } from './render';
 const PITCH = TILE_SIZE + GAP;
 const ADD_RADIUS = PITCH * 0.45;
 const REMOVE_RADIUS = PITCH * 0.40;
+const GRAVITY = 3000;
+const FALL_ENTRY_EXTRA = TILE_SIZE * 6;
+const COLUMN_STAGGER = TILE_SIZE * 3;
 
 const canvas = document.getElementById('game') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d')!;
@@ -25,7 +28,6 @@ let cursorX = 0;
 let cursorY = 0;
 let animating = false;
 
-
 function redraw() {
   render(ctx, tiles, layout, color, { hoveredTile, chain, cursorX, cursorY });
 }
@@ -39,6 +41,8 @@ function distToCenter(tile: Tile, px: number, py: number): number {
   const cy = tilePixelY(tile, layout) + TILE_SIZE / 2;
   return Math.hypot(px - cx, py - cy);
 }
+
+// --- input ---
 
 canvas.addEventListener('mousedown', e => {
   if (animating || !layout) return;
@@ -95,7 +99,7 @@ window.addEventListener('mouseup', () => {
     tiles = tiles.filter(t => !removed.has(t));
     chain = [];
     hoveredTile = null;
-    redraw();
+    startCascadeAnimation();
   } else {
     chain = [];
     hoveredTile = tileAtPixel(tiles, cursorX, cursorY, layout);
@@ -103,8 +107,7 @@ window.addEventListener('mouseup', () => {
   }
 });
 
-const GRAVITY = 3000;
-const COLUMN_STAGGER = TILE_SIZE * 3;
+// --- animation ---
 
 interface FallingTile {
   tile: Tile;
@@ -114,18 +117,9 @@ interface FallingTile {
   settled: boolean;
 }
 
-function startDropAnimation() {
+function runFallAnimation(fallingTiles: FallingTile[]) {
   animating = true;
-
-  const fallingTiles: FallingTile[] = tiles.map(tile => ({
-    tile,
-    pixelY: -(tile.x - layout.minX + 1) * COLUMN_STAGGER,
-    velocityY: 0,
-    targetPixelY: tilePixelY(tile, layout),
-    settled: false,
-  }));
-
-  const yMap = new Map<Tile, number>();
+  const yMap = new Map<Tile, number>(fallingTiles.map(ft => [ft.tile, ft.pixelY]));
   let lastTime = performance.now();
 
   function frame(now: number) {
@@ -159,6 +153,49 @@ function startDropAnimation() {
 
   requestAnimationFrame(frame);
 }
+
+function startDropAnimation() {
+  runFallAnimation(tiles.map(tile => {
+    const targetPixelY = tilePixelY(tile, layout);
+    const fallDistance = layout.offsetY + layout.maxY * (TILE_SIZE + GAP) + TILE_SIZE
+      + (tile.x - layout.minX + 1) * COLUMN_STAGGER + FALL_ENTRY_EXTRA;
+    return {
+      tile,
+      pixelY: targetPixelY - fallDistance,
+      velocityY: 0,
+      targetPixelY,
+      settled: false,
+    };
+  }));
+}
+
+function startCascadeAnimation() {
+  const preCascade = tiles;
+  const newTiles = applyGravity(preCascade);
+  tiles = newTiles;
+
+  const fallingTiles: FallingTile[] = preCascade.map((oldTile, i) => {
+    const newTile = newTiles[i];
+    const startY = tilePixelY(oldTile, layout);
+    const targetY = tilePixelY(newTile, layout);
+    return {
+      tile: newTile,
+      pixelY: startY,
+      velocityY: 0,
+      targetPixelY: targetY,
+      settled: startY === targetY,
+    };
+  });
+
+  if (fallingTiles.every(ft => ft.settled)) {
+    redraw();
+    return;
+  }
+
+  runFallAnimation(fallingTiles);
+}
+
+// --- init ---
 
 Promise.all([loadWords(), loadLevel(new Date())]).then(([loadedWords, loadedTiles]) => {
   words = loadedWords;
