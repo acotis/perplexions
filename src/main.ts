@@ -34,8 +34,12 @@ let canvasH = 0;
 function setCanvasSize(w: number, h: number) {
   canvasW = w;
   canvasH = h;
-  canvas.width = Math.round(w * dpr);
-  canvas.height = Math.round(h * dpr);
+  const bufW = Math.round(w * dpr);
+  const bufH = Math.round(h * dpr);
+  if (canvas.width !== bufW || canvas.height !== bufH) {
+    canvas.width = bufW;
+    canvas.height = bufH;
+  }
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 };
 
