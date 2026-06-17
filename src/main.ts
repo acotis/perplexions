@@ -99,6 +99,7 @@ setCanvasSize(Math.round(window.innerWidth * 0.9), Math.round(window.innerHeight
 
 let words: Set<string> = new Set();
 let tiles: Tile[] = [];
+let levelTiles: Tile[] = [];
 let layout: GridLayout;
 let levelNumCols = 0;
 let levelNumRows = 0;
@@ -359,7 +360,7 @@ new ResizeObserver(entries => {
   setCanvasSize(Math.round(width), Math.round(height));
   if (!levelNumCols) return;
   applyScale(Math.min(canvasW / (levelNumCols + 1), canvasH / (levelNumRows + 3)));
-  layout = computeLayout(tiles, canvasW, canvasH);
+  layout = computeLayout(levelTiles, canvasW, canvasH);
   redraw();
 }).observe(canvas);
 
@@ -373,11 +374,12 @@ Promise.all([loadWords(), loadLevel(new Date())]).then(([loadedWords, loadedTile
   levelNumRows = Math.max(...ys) + 1;
   applyScale(Math.min(canvasW / (levelNumCols + 1), canvasH / (levelNumRows + 3)));
   tiles = applyGravity(loadedTiles);
+  levelTiles = tiles;
   color = randomLevelColor();
   const least = Math.min(color.r, color.g, color.b);
   const dist = Math.round(Math.hypot(255 - color.r, 255 - color.g, 255 - color.b));
   const luma = Math.round(0.299 * color.r + 0.587 * color.g + 0.114 * color.b);
   console.log(`rgb(${color.r}, ${color.g}, ${color.b}) — least: ${least} — distance: ${dist} — luma: ${luma}`);
-  layout = computeLayout(tiles, canvasW, canvasH);
+  layout = computeLayout(levelTiles, canvasW, canvasH);
   startDropAnimation();
 });
