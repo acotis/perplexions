@@ -73,11 +73,12 @@ function drawChain(
   color: Color,
   cursorX: number,
   cursorY: number,
+  lineWidth: number,
 ) {
   if (chain.length === 0) return;
   ctx.save();
   ctx.strokeStyle = rgb(color);
-  ctx.lineWidth = 24;
+  ctx.lineWidth = lineWidth;
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
   ctx.beginPath();
@@ -137,7 +138,7 @@ export function render(
   ctx.fillStyle = '#fff';
   ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
-  drawChain(ctx, chain, layout, color, cursorX, cursorY);
+  drawChain(ctx, chain, layout, color, cursorX, cursorY, 24);
 
   const highlighted = new Set(chain);
   if (hoveredTile) highlighted.add(hoveredTile);

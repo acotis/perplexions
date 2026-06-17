@@ -15,6 +15,7 @@ const ctx = canvas.getContext('2d')!;
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+let words: Set<string> = new Set();
 let tiles: Tile[] = [];
 let layout: GridLayout;
 let color: Color;
@@ -23,6 +24,7 @@ let chain: Tile[] = [];
 let cursorX = 0;
 let cursorY = 0;
 let animating = false;
+
 
 function redraw() {
   render(ctx, tiles, layout, color, { hoveredTile, chain, cursorX, cursorY });
@@ -88,9 +90,17 @@ canvas.addEventListener('mousemove', e => {
 window.addEventListener('mouseup', () => {
   if (chain.length === 0) return;
   const word = chain.map(t => t.letter).join('');
-  console.log('Word submitted:', word);
-  chain = [];
-  redraw();
+  if (words.has(word)) {
+    const removed = new Set(chain);
+    tiles = tiles.filter(t => !removed.has(t));
+    chain = [];
+    hoveredTile = null;
+    redraw();
+  } else {
+    chain = [];
+    hoveredTile = tileAtPixel(tiles, cursorX, cursorY, layout);
+    redraw();
+  }
 });
 
 const GRAVITY = 3000;
@@ -150,7 +160,8 @@ function startDropAnimation() {
   requestAnimationFrame(frame);
 }
 
-Promise.all([loadWords(), loadLevel(new Date())]).then(([_words, loadedTiles]) => {
+Promise.all([loadWords(), loadLevel(new Date())]).then(([loadedWords, loadedTiles]) => {
+  words = loadedWords;
   tiles = applyGravity(loadedTiles);
   color = randomLevelColor();
   layout = computeLayout(tiles, canvas.width, canvas.height);
