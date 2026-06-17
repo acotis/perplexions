@@ -5,7 +5,6 @@ export interface Color { r: number; g: number; b: number; }
 export let TILE_SIZE = 64;
 export let GAP = Math.round(TILE_SIZE * 0.1);
 let PITCH = TILE_SIZE + GAP;
-const BORDER = 4;
 
 export function setPitch(pitch: number): void {
   TILE_SIZE = Math.round(pitch * 10 / 11);
@@ -147,11 +146,12 @@ function drawTile(
   ctx.fillRect(px, py, TILE_SIZE, TILE_SIZE);
 
   if (!highlighted) {
+    const border = Math.round(TILE_SIZE / 16);
     ctx.fillStyle = '#fff';
-    ctx.fillRect(px + BORDER, py + BORDER, TILE_SIZE - BORDER * 2, TILE_SIZE - BORDER * 2);
+    ctx.fillRect(px + border, py + border, TILE_SIZE - border * 2, TILE_SIZE - border * 2);
   }
 
-  const fontSize = 36;
+  const fontSize = Math.round(TILE_SIZE * 0.5625);
   ctx.fillStyle = '#000';
   ctx.font = `bold ${fontSize}px sans-serif`;
   ctx.textAlign = 'center';
