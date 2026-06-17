@@ -58,12 +58,30 @@ export function tileAtPixel(tiles: Tile[], px: number, py: number, layout: GridL
   return tiles.find(t => t.x === gx && t.y === gy) ?? null;
 }
 
+export interface SplashState {
+  x: number;
+  y: number;
+  progress: number; // 0 to 1
+  maxRadius: number;
+}
+
 export interface RenderOptions {
   hoveredTile?: Tile | null;
   chain?: Tile[];
   cursorX?: number;
   cursorY?: number;
+  splashes?: SplashState[];
   getTilePixelY?: (tile: Tile) => number;
+}
+
+function drawSplash(ctx: CanvasRenderingContext2D, splash: SplashState, color: Color) {
+  ctx.save();
+  ctx.globalAlpha = (1 - splash.progress * splash.progress) * 0.6;
+  ctx.fillStyle = rgb(color);
+  ctx.beginPath();
+  ctx.arc(splash.x, splash.y, splash.maxRadius * splash.progress, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.restore();
 }
 
 function drawChain(
@@ -133,10 +151,12 @@ export function render(
   color: Color,
   options: RenderOptions = {},
 ) {
-  const { hoveredTile = null, chain = [], cursorX = 0, cursorY = 0, getTilePixelY } = options;
+  const { hoveredTile = null, chain = [], cursorX = 0, cursorY = 0, splashes = [], getTilePixelY } = options;
 
   ctx.fillStyle = '#fff';
   ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+  for (const splash of splashes) drawSplash(ctx, splash, color);
 
   drawChain(ctx, chain, layout, color, cursorX, cursorY, 24);
 
