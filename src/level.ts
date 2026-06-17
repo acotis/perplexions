@@ -39,15 +39,12 @@ export function applyGravity(tiles: Tile[]): Tile[] {
 
 export async function loadLevel(date: Date): Promise<Tile[]> {
   const response = await fetch(import.meta.env.BASE_URL + 'levels.json');
-  const levels: Array<{ date: string; file: string }> = await response.json();
+  const { launch, levels }: { launch: string; levels: string[] } = await response.json();
 
-  const today = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+  const todayStr = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+  const dayIndex = Math.max(0, Math.round((new Date(todayStr).getTime() - new Date(launch).getTime()) / 86400000));
+  const levelFile = levels[Math.min(dayIndex, levels.length - 1)];
 
-  let chosen = levels[0];
-  for (const level of levels) {
-    if (level.date <= today) chosen = level;
-  }
-
-  const levelResponse = await fetch(import.meta.env.BASE_URL + chosen.file);
+  const levelResponse = await fetch(import.meta.env.BASE_URL + levelFile);
   return parseLevel(await levelResponse.text());
 }
