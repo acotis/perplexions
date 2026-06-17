@@ -11,4 +11,5 @@ body {
 
 #game {
   display: block;
+  outline: 2px solid #333;
 }

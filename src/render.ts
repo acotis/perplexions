@@ -2,10 +2,16 @@ import type { Tile } from './level';
 
 export interface Color { r: number; g: number; b: number; }
 
-export const TILE_SIZE = 64;
-export const GAP = Math.round(TILE_SIZE * 0.1);
-const PITCH = TILE_SIZE + GAP;
+export let TILE_SIZE = 64;
+export let GAP = Math.round(TILE_SIZE * 0.1);
+let PITCH = TILE_SIZE + GAP;
 const BORDER = 4;
+
+export function setPitch(pitch: number): void {
+  TILE_SIZE = Math.round(pitch * 10 / 11);
+  GAP = pitch - TILE_SIZE;
+  PITCH = pitch;
+}
 
 function acceptLevelColor(c: Color): boolean {
   const luma = 0.299 * c.r + 0.587 * c.g + 0.114 * c.b;

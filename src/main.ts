@@ -1,16 +1,28 @@
 import './style.css';
 import { loadWords } from './words';
 import { loadLevel, applyGravity } from './level';
-import { randomLevelColor, computeLayout, tileAtPixel, tilePixelX, tilePixelY, render, TILE_SIZE, GAP } from './render';
+import { randomLevelColor, computeLayout, tileAtPixel, tilePixelX, tilePixelY, render, setPitch, TILE_SIZE, GAP } from './render';
 import type { Tile } from './level';
 import type { GridLayout, Color, SplashState } from './render';
 
-const PITCH = TILE_SIZE + GAP;
-const ADD_RADIUS = PITCH * 0.45;
-const REMOVE_RADIUS = PITCH * 0.40;
-const GRAVITY = 3000;
-const COLUMN_STAGGER = TILE_SIZE * 3;
-const FALL_ENTRY_EXTRA = TILE_SIZE * 6;
+const GRAVITY_TILES_PER_S2 = 3000 / 64;
+
+let PITCH = TILE_SIZE + GAP;
+let ADD_RADIUS = PITCH * 0.45;
+let REMOVE_RADIUS = PITCH * 0.40;
+let GRAVITY = 3000;
+let COLUMN_STAGGER = TILE_SIZE * 3;
+let FALL_ENTRY_EXTRA = TILE_SIZE * 6;
+
+function applyScale(pitch: number): void {
+  setPitch(pitch);
+  PITCH = TILE_SIZE + GAP;
+  ADD_RADIUS = PITCH * 0.45;
+  REMOVE_RADIUS = PITCH * 0.40;
+  GRAVITY = GRAVITY_TILES_PER_S2 * TILE_SIZE;
+  COLUMN_STAGGER = TILE_SIZE * 3;
+  FALL_ENTRY_EXTRA = TILE_SIZE * 6;
+}
 
 const canvas = document.getElementById('game') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d')!;
@@ -271,6 +283,11 @@ function startCascadeAnimation() {
 
 Promise.all([loadWords(), loadLevel(new Date())]).then(([loadedWords, loadedTiles]) => {
   words = loadedWords;
+  const xs = loadedTiles.map(t => t.x);
+  const ys = loadedTiles.map(t => t.y);
+  const numCols = Math.max(...xs) - Math.min(...xs) + 1;
+  const numRows = Math.max(...ys) + 1;
+  applyScale(Math.floor(Math.min(canvas.width / (numCols + 1), canvas.height / numRows)));
   tiles = applyGravity(loadedTiles);
   color = randomLevelColor();
   const least = Math.min(color.r, color.g, color.b);
