@@ -24,6 +24,19 @@ export function parseLevel(text: string): Tile[] {
   return tiles;
 }
 
+export function applyGravity(tiles: Tile[]): Tile[] {
+  const columns = new Map<number, number[]>();
+  for (const tile of tiles) {
+    if (!columns.has(tile.x)) columns.set(tile.x, []);
+    columns.get(tile.x)!.push(tile.y);
+  }
+  for (const ys of columns.values()) ys.sort((a, b) => a - b);
+  return tiles.map(tile => {
+    const settledY = columns.get(tile.x)!.indexOf(tile.y);
+    return settledY === tile.y ? tile : { ...tile, y: settledY };
+  });
+}
+
 export async function loadLevel(date: Date): Promise<Tile[]> {
   const response = await fetch(import.meta.env.BASE_URL + 'levels.json');
   const levels: Array<{ date: string; file: string }> = await response.json();

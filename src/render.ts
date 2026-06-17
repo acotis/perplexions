@@ -19,6 +19,7 @@ function rgb(c: Color): string {
 export interface GridLayout {
   offsetX: number;
   offsetY: number;
+  minX: number;
   maxY: number;
 }
 
@@ -33,6 +34,7 @@ export function computeLayout(tiles: Tile[], canvasWidth: number, canvasHeight: 
   return {
     offsetX: Math.floor((canvasWidth - gridW) / 2) - minX * PITCH,
     offsetY: Math.floor((canvasHeight - gridH) / 2),
+    minX,
     maxY,
   };
 }
@@ -62,9 +64,10 @@ function drawTile(
   layout: GridLayout,
   color: Color,
   hovered: boolean,
+  pyOverride?: number,
 ) {
   const px = tilePixelX(tile, layout);
-  const py = tilePixelY(tile, layout);
+  const py = pyOverride ?? tilePixelY(tile, layout);
 
   ctx.fillStyle = rgb(color);
   ctx.fillRect(px, py, TILE_SIZE, TILE_SIZE);
@@ -88,10 +91,11 @@ export function render(
   layout: GridLayout,
   color: Color,
   hoveredTile: Tile | null,
+  getTilePixelY?: (tile: Tile) => number,
 ) {
   ctx.fillStyle = '#fff';
   ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
   for (const tile of tiles) {
-    drawTile(ctx, tile, layout, color, tile === hoveredTile);
+    drawTile(ctx, tile, layout, color, tile === hoveredTile, getTilePixelY?.(tile));
   }
 }
