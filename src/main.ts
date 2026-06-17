@@ -358,7 +358,7 @@ new ResizeObserver(entries => {
   const { width, height } = entries[0].contentRect;
   setCanvasSize(Math.round(width), Math.round(height));
   if (!levelNumCols) return;
-  applyScale(Math.floor(Math.min(canvasW / (levelNumCols + 1), canvasH / (levelNumRows + 3))));
+  applyScale(Math.min(canvasW / (levelNumCols + 1), canvasH / (levelNumRows + 3)));
   layout = computeLayout(tiles, canvasW, canvasH);
   redraw();
 }).observe(canvas);
@@ -371,7 +371,7 @@ Promise.all([loadWords(), loadLevel(new Date())]).then(([loadedWords, loadedTile
   const ys = loadedTiles.map(t => t.y);
   levelNumCols = Math.max(...xs) - Math.min(...xs) + 1;
   levelNumRows = Math.max(...ys) + 1;
-  applyScale(Math.floor(Math.min(canvasW / (levelNumCols + 1), canvasH / (levelNumRows + 3))));
+  applyScale(Math.min(canvasW / (levelNumCols + 1), canvasH / (levelNumRows + 3)));
   tiles = applyGravity(loadedTiles);
   color = randomLevelColor();
   const least = Math.min(color.r, color.g, color.b);

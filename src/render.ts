@@ -7,7 +7,7 @@ export let GAP = Math.round(TILE_SIZE * 0.1);
 let PITCH = TILE_SIZE + GAP;
 
 export function setPitch(pitch: number): void {
-  TILE_SIZE = Math.round(pitch * 10 / 11);
+  TILE_SIZE = pitch * 10 / 11;
   GAP = pitch - TILE_SIZE;
   PITCH = pitch;
 }
