@@ -157,6 +157,10 @@ canvas.addEventListener('mousemove', e => {
   redraw();
 });
 
+canvas.addEventListener('mouseleave', () => {
+  if (chain.length === 0 && hoveredTile) { hoveredTile = null; redraw(); }
+});
+
 window.addEventListener('mouseup', () => {
   if (chain.length === 0) return;
   const word = chain.map(t => t.letter).join('');
