@@ -76,17 +76,16 @@ function drawUndoHint() {
     else hintFadeComplete = true;
   }
 
-  const scale = PITCH / 64 * 0.7;
-  const iconH = Math.round(48 * scale);
+  const fontSize = Math.round(4 * Math.min(canvasW, canvasH) / 100);
+  const iconH = Math.round(fontSize * 1.5);
   const iconW = Math.round(iconH * 87.45 / 129.2);
-  const fontSize = Math.round(32 * scale);
-  const gap = Math.round(8 * scale);
+  const gap = Math.round(fontSize * 0.25);
   ctx.save();
   ctx.globalAlpha = alpha;
   ctx.font = `${fontSize}px sans-serif`;
   const textW = ctx.measureText('undo').width;
-  const startX = Math.round(canvasW / 2 - (iconW + gap + textW) / 2);
-  const centerY = Math.round(layout.offsetY + layout.maxY * PITCH + TILE_SIZE + PITCH * 1.5);
+  const startX = Math.round(canvasW * 0.95 - iconW - gap - textW);
+  const centerY = Math.round(canvasH * 0.925);
   ctx.drawImage(undoHintIcon, startX, centerY - iconH / 2, iconW, iconH);
   ctx.fillStyle = '#aaa';
   ctx.textAlign = 'left';
@@ -131,6 +130,7 @@ function renderFrame(now = performance.now(), overrides: Parameters<typeof rende
     splashes: activeSplashStates(now),
     ...overrides,
   });
+  drawDateLabel();
   if (history.length > 0) drawUndoHint();
   if (levelComplete) drawLevelComplete();
 }
@@ -399,11 +399,23 @@ function dateSeed(date: Date): number {
   return h;
 }
 
-const dateLabel = document.getElementById('date-label')!;
+let dateStr = '';
+
+function drawDateLabel() {
+  if (!dateStr) return;
+  const fontSize = Math.round(3 * Math.min(canvasW, canvasH) / 100);
+  ctx.save();
+  ctx.font = `${fontSize}px sans-serif`;
+  ctx.fillStyle = '#666';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(dateStr, canvasW / 2, Math.round(canvasH * 0.925));
+  ctx.restore();
+}
 
 function startLevel({ tiles: loadedTiles, numCols, numRows }: ParsedLevel, date: Date) {
   const month = date.toLocaleString('en-US', { month: 'short' });
-  dateLabel.textContent = `Daily puzzle — ${date.getFullYear()} ${month} ${date.getDate()}`;
+  dateStr = `Daily puzzle — ${date.getFullYear()} ${month} ${date.getDate()}`;
   levelNumCols = numCols;
   levelNumRows = numRows;
   tiles = applyGravity(loadedTiles);
