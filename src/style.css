@@ -16,4 +16,5 @@ body {
   left: 5vw;
   width: 90vw;
   height: 70vh;
+  outline: 2px solid #333;
 }

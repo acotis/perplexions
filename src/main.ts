@@ -166,10 +166,16 @@ function drawLevelComplete() {
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   ctx.fillStyle = `rgb(${color.r},${color.g},${color.b})`;
+  const gradWidth = (layout.maxX - layout.minX) * PITCH + TILE_SIZE * (4 / 3);
+  const refGradWidth = 25745 / 33; // pitch=95, 8 cols: 7*95 + (950/11)*(4/3)
+  const vscale = gradWidth / refGradWidth;
   ctx.font = 'bold 96px sans-serif';
-  ctx.fillText('Solved!', canvasW / 2, canvasH / 2 - 50);
-  ctx.font = '32px sans-serif';
-  ctx.fillText(dateStr, canvasW / 2, canvasH / 2 + 30);
+  const solvedSize = 96 * (gradWidth * 0.4) / ctx.measureText('Solved!').width;
+  const dateSize = solvedSize * (32 / 96);
+  ctx.font = `bold ${solvedSize}px sans-serif`;
+  ctx.fillText('Solved!', canvasW / 2, canvasH / 2 - 50 * vscale);
+  ctx.font = `${dateSize}px sans-serif`;
+  ctx.fillText(dateStr, canvasW / 2, canvasH / 2 + 30 * vscale);
   ctx.restore();
 }
 

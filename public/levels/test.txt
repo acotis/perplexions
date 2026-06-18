@@ -1,4 +1,2 @@
-click
-anddrag
-tocreate
-fullwords
+ C
+HAT
