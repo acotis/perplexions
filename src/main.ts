@@ -133,7 +133,7 @@ function renderFrame(now = performance.now(), overrides: Parameters<typeof rende
     ...overrides,
   });
   drawDateLabel();
-  if (history.length > 0) drawUndoHint();
+  if (history.length > 0 && !levelComplete) drawUndoHint();
 }
 
 function redraw() { renderFrame(); }
@@ -270,7 +270,7 @@ window.addEventListener('keydown', e => {
 
 canvas.addEventListener('contextmenu', e => {
   e.preventDefault();
-  undo();
+  if (!levelComplete) undo();
 });
 
 // --- animation ---
