@@ -192,6 +192,7 @@ function distToCenter(tile: Tile, px: number, py: number): number {
 }
 
 canvas.addEventListener('mousedown', e => {
+  if (e.button !== 0) return;
   if (animating || levelComplete || !layout) return;
   const rect = canvas.getBoundingClientRect();
   cursorX = e.clientX - rect.left;
