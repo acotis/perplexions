@@ -44,30 +44,25 @@ export function applyGravity(tiles: Tile[]): Tile[] {
   });
 }
 
-let metaCache: { launch: string; levels: string[] } | null = null;
-
-async function getMeta() {
-  if (!metaCache) {
-    const response = await fetch(import.meta.env.BASE_URL + 'levels.json');
-    metaCache = await response.json();
-  }
-  return metaCache!;
+export function formatDate(d: Date): string {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
 
-export async function loadLevelBounds(): Promise<{ firstDate: Date; lastDate: Date }> {
-  const { launch, levels } = await getMeta();
-  const firstDate = new Date(`${launch}T12:00:00`);
-  const lastDate = new Date(firstDate.getTime() + (levels.length - 1) * 86400000);
-  return { firstDate, lastDate };
+function isHtmlFallback(r: Response): boolean {
+  return (r.headers.get('content-type') ?? '').includes('text/html');
+}
+
+export async function levelFileExists(date: Date): Promise<boolean> {
+  try {
+    const r = await fetch(import.meta.env.BASE_URL + `levels/${formatDate(date)}.txt`, { method: 'HEAD' });
+    return r.ok && !isHtmlFallback(r);
+  } catch {
+    return false;
+  }
 }
 
 export async function loadLevel(date: Date): Promise<ParsedLevel> {
-  const { launch, levels } = await getMeta();
-
-  const todayStr = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-  const dayIndex = Math.max(0, Math.round((new Date(todayStr).getTime() - new Date(launch).getTime()) / 86400000));
-  const levelFile = levels[Math.min(dayIndex, levels.length - 1)];
-
-  const levelResponse = await fetch(import.meta.env.BASE_URL + levelFile);
-  return parseLevel(await levelResponse.text());
+  const response = await fetch(import.meta.env.BASE_URL + `levels/${formatDate(date)}.txt`);
+  if (!response.ok || isHtmlFallback(response)) throw new Error(`Level not found: ${formatDate(date)}`);
+  return parseLevel(await response.text());
 }

@@ -1,6 +1,6 @@
 import './style.css';
 import { loadWords } from './words';
-import { loadLevel, loadLevelBounds, applyGravity } from './level';
+import { loadLevel, levelFileExists, applyGravity } from './level';
 import { randomLevelColor, computeLayout, tileAtPixel, tilePixelX, tilePixelY, render, setPitch, TILE_SIZE, GAP } from './render';
 import type { Tile, ParsedLevel } from './level';
 import type { GridLayout, Color, SplashState } from './render';
@@ -114,8 +114,7 @@ let currentParsedLevel: ParsedLevel | null = null;
 let currentLevelDate: Date | null = null;
 let leftChevronHit: { x: number; y: number; w: number; h: number } | null = null;
 let rightChevronHit: { x: number; y: number; w: number; h: number } | null = null;
-let levelFirstDate: Date | null = null;
-let levelLastDate: Date | null = null;
+let hasPrevLevel = false;
 
 // --- splashes ---
 
@@ -202,10 +201,23 @@ function distToCenter(tile: Tile, px: number, py: number): number {
   return Math.hypot(px - cx, py - cy);
 }
 
+function checkPrevLevel() {
+  hasPrevLevel = false;
+  if (!currentLevelDate) return;
+  const prev = new Date(currentLevelDate.getTime() - 86400000);
+  levelFileExists(prev).then(exists => {
+    hasPrevLevel = exists;
+    if (levelNumCols) redraw();
+  });
+}
+
 function navigateByDays(delta: number) {
   const base = currentLevelDate ?? today;
   const date = new Date(base.getTime() + delta * 86400000);
-  loadLevel(date).then(parsed => startLevel(parsed, date));
+  loadLevel(date).then(parsed => startLevel(parsed, date)).catch(() => {
+    if (delta < 0) hasPrevLevel = false;
+    redraw();
+  });
 }
 
 function hitTest(r: { x: number; y: number; w: number; h: number }, px: number, py: number) {
@@ -468,8 +480,8 @@ function drawDateLabel() {
   const curNoon = d ? new Date(d.getFullYear(), d.getMonth(), d.getDate(), 12).getTime() : 0;
   const now = new Date();
   const todayNoon = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12).getTime();
-  const showLeft = levelFirstDate ? curNoon > levelFirstDate.getTime() : true;
-  const showRight = (levelLastDate ? curNoon < levelLastDate.getTime() : true) && curNoon < todayNoon;
+  const showLeft = hasPrevLevel;
+  const showRight = curNoon < todayNoon;
 
   leftChevronHit = null;
   if (showLeft) {
@@ -520,6 +532,7 @@ function startLevel(parsed: ParsedLevel, date: Date) {
   animating = false;
   hintFirstShownTime = null;
   hintFadeComplete = false;
+  checkPrevLevel();
   updateCanvasLayout();
   updateEndCardFontSize();
   startDropAnimation();
@@ -529,29 +542,46 @@ function toNoon(d: Date): Date {
   return new Date(d.getFullYear(), d.getMonth(), d.getDate(), 12);
 }
 
-function formatDate(d: Date): string {
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+function showCanvasError(msg: string) {
+  setCanvasSize(window.innerWidth, window.innerHeight);
+  ctx.fillStyle = '#fff';
+  ctx.fillRect(0, 0, canvasW, canvasH);
+  ctx.fillStyle = '#888';
+  ctx.font = '1.5rem sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(msg, canvasW / 2, canvasH / 2);
 }
 
-Promise.all([loadWords(), loadLevelBounds()]).then(async ([loadedWords, bounds]) => {
-  words = loadedWords;
-  levelFirstDate = bounds.firstDate;
-  levelLastDate = bounds.lastDate;
-
+async function init() {
+  const wordsPromise = loadWords();
   const todayNoon = toNoon(today);
-  let date = dateParam ? new Date(`${dateParam}T12:00:00`) : todayNoon;
+  let date = todayNoon;
+  let parsed: ParsedLevel | null = null;
 
-  if (date.getTime() > todayNoon.getTime()) {
-    date = todayNoon;
-    window.history.replaceState(null, '', window.location.pathname);
-  } else if (date.getTime() < bounds.firstDate.getTime()) {
-    date = bounds.firstDate;
-    const p = new URLSearchParams(window.location.search);
-    p.set('date', formatDate(date));
-    window.history.replaceState(null, '', `?${p}`);
+  if (dateParam) {
+    const requested = new Date(`${dateParam}T12:00:00`);
+    try {
+      parsed = await loadLevel(requested);
+      date = requested;
+    } catch {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
   }
 
-  const loadedTiles = await loadLevel(date);
-  startLevel(loadedTiles, date);
-});
+  if (!parsed) {
+    try {
+      parsed = await loadLevel(todayNoon);
+    } catch {
+      words = await wordsPromise;
+      showCanvasError("Couldn't load today's puzzle.");
+      return;
+    }
+  }
+
+  words = await wordsPromise;
+  startLevel(parsed, date);
+}
+
+init();
 
