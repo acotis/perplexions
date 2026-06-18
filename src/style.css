@@ -12,7 +12,6 @@ body {
 #game {
   display: block;
   position: fixed;
-  outline: 1px solid #ddd;
 }
 
 #date-label {
