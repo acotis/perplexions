@@ -57,7 +57,7 @@ export function computeLayout(tiles: Tile[], canvasWidth: number, _canvasHeight:
   const gridW = (maxX - minX) * PITCH + TILE_SIZE;
   return {
     offsetX: Math.floor((canvasWidth - gridW) / 2) - minX * PITCH,
-    offsetY: Math.floor(PITCH * 0.5),
+    offsetY: Math.floor(PITCH * 0.75),
     minX,
     maxX,
     maxY,

@@ -365,14 +365,14 @@ function updateCanvasLayout() {
   if (!levelNumCols) return;
   const viewW = window.innerWidth;
   const viewH = window.innerHeight;
-  const pitch = Math.min((viewW * 0.90) / (levelNumCols + 1), (viewH * 0.725) / (levelNumRows + 1.5));
+  const pitch = Math.min((viewW * 0.90) / (levelNumCols + 1), (viewH * 0.75) / (levelNumRows + 1.5));
   applyScale(pitch);
   const w = (levelNumCols + 1) * pitch;
   const h = (levelNumRows + 1.5) * pitch;
   canvas.style.width = `${w}px`;
   canvas.style.height = `${h}px`;
-  const regionTop = viewH * 0.125;
-  const regionH = viewH * 0.725;
+  const regionTop = viewH * 0.1;
+  const regionH = viewH * 0.75;
   canvas.style.left = `${(viewW - w) / 2}px`;
   canvas.style.top = `${regionTop + (regionH - h) / 2}px`;
   setCanvasSize(w, h);
