@@ -382,7 +382,11 @@ function dateSeed(date: Date): number {
   return h;
 }
 
+const dateLabel = document.getElementById('date-label')!;
+
 function startLevel(loadedTiles: import('./level').Tile[], date: Date) {
+  const month = date.toLocaleString('en-US', { month: 'short' });
+  dateLabel.textContent = `Daily puzzle — ${date.getFullYear()} ${month} ${date.getDate()}`;
   const xs = loadedTiles.map(t => t.x);
   const ys = loadedTiles.map(t => t.y);
   levelNumCols = Math.max(...xs) - Math.min(...xs) + 1;
