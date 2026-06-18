@@ -408,7 +408,9 @@ window.addEventListener('resize', onResize);
 
 // --- init ---
 
-const today = new Date();
+const params = new URLSearchParams(window.location.search);
+const dateParam = params.get('date');
+const today = dateParam ? new Date(`${dateParam}T12:00:00`) : new Date();
 let debugDateOffset = 0;
 
 function dateSeed(date: Date): number {
