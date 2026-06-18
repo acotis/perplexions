@@ -17,8 +17,8 @@ body {
 #end-card {
   position: fixed;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 20vh;
+  transform: translateX(-50%);
   width: 50vw;
   height: 50vh;
   background: #fff;
@@ -35,9 +35,17 @@ body {
 
 #end-card[hidden] { display: none; }
 
+@keyframes drop-in {
+  from { transform: translateX(-50%) translateY(-100%); opacity: 0; }
+  to   { transform: translateX(-50%) translateY(0);    opacity: 1; }
+}
+
+#end-card:not([hidden]) {
+  animation: drop-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 #end-card h1 {
-  margin: 0;
-  font-size: 2rem;
+  margin: 0 0 1.5rem;
 }
 
 #end-card button {

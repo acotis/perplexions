@@ -313,7 +313,7 @@ function runFallAnimation(fallingTiles: FallingTile[]) {
       animating = false;
       if (tiles.length === 0) {
         levelComplete = true;
-        setTimeout(showEndCard, 3000);
+        setTimeout(showEndCard, 2000);
         addSplash(cursorX, cursorY, 1200, Math.hypot(canvasW, canvasH));
       }
       runSplashLoop();
@@ -349,7 +349,7 @@ function startCascadeAnimation() {
   if (fallingTiles.every(ft => ft.settled)) {
     if (tiles.length === 0) {
       levelComplete = true;
-      setTimeout(showEndCard, 3000);
+      setTimeout(showEndCard, 2000);
       addSplash(cursorX, cursorY, 1200, Math.hypot(canvasW, canvasH));
     }
     runSplashLoop();
@@ -377,8 +377,19 @@ function updateCanvasLayout() {
   layout = computeLayout(levelTiles, canvasW, canvasH, levelNumCols, offsetY);
 }
 
+const endCardH1 = document.querySelector('#end-card h1') as HTMLElement;
+
+function updateEndCardFontSize() {
+  const maxPx = parseFloat(getComputedStyle(document.documentElement).fontSize) * 2.75;
+  const targetWidth = window.innerWidth * 0.5 * 0.7;
+  ctx.font = '100px sans-serif';
+  const fitPx = 100 * targetWidth / ctx.measureText('Level cleared!').width;
+  endCardH1.style.fontSize = `${Math.min(maxPx, fitPx)}px`;
+}
+
 function onResize() {
   updateCanvasLayout();
+  updateEndCardFontSize();
   if (levelNumCols) redraw();
 }
 
@@ -436,6 +447,7 @@ function startLevel(parsed: ParsedLevel, date: Date) {
   hintFirstShownTime = null;
   hintFadeComplete = false;
   updateCanvasLayout();
+  updateEndCardFontSize();
   startDropAnimation();
 }
 
