@@ -167,7 +167,10 @@ copyBtn.addEventListener('click', () => {
   const date = currentLevelDate ?? new Date();
   const month = date.toLocaleString('en-US', { month: 'short' });
   const dateLabel = `${date.getFullYear()} ${month} ${date.getDate()}`;
-  navigator.clipboard.writeText(`I solved the Perplexions puzzle for ${dateLabel} — http://fire.casa/perplexions`);
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, '0');
+  const d = String(date.getDate()).padStart(2, '0');
+  navigator.clipboard.writeText(`I solved the Perplexions puzzle for ${dateLabel} — http://fire.casa/perplexions?date=${y}-${m}-${d}`);
   copyBtn.style.width = `${copyBtn.offsetWidth}px`;
   copyBtn.textContent = 'Copied!';
 });
