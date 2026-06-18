@@ -76,16 +76,16 @@ function drawUndoHint() {
     else hintFadeComplete = true;
   }
 
-  const fontSize = Math.round(4 * Math.min(canvasW, canvasH) / 100);
-  const iconH = Math.round(fontSize * 1.5);
-  const iconW = Math.round(iconH * 87.45 / 129.2);
-  const gap = Math.round(fontSize * 0.25);
+  const fontSize = 4 * Math.min(canvasW, canvasH) / 100;
+  const iconH = fontSize * 1.5;
+  const iconW = iconH * 87.45 / 129.2;
+  const gap = fontSize * 0.25;
   ctx.save();
   ctx.globalAlpha = alpha;
   ctx.font = `${fontSize}px sans-serif`;
   const textW = ctx.measureText('undo').width;
-  const startX = Math.round(canvasW * 0.95 - iconW - gap - textW);
-  const centerY = Math.round(canvasH * 0.925);
+  const startX = canvasW * 0.95 - iconW - gap - textW;
+  const centerY = canvasH * 0.925;
   ctx.drawImage(undoHintIcon, startX, centerY - iconH / 2, iconW, iconH);
   ctx.fillStyle = '#aaa';
   ctx.textAlign = 'left';
@@ -370,7 +370,7 @@ function updateCanvasLayout() {
   const pitch = Math.min((viewW * 0.90) / (levelNumCols + 1), regionH / (levelNumRows + 1.5));
   applyScale(pitch);
   const contentH = (levelNumRows + 1.5) * pitch;
-  const offsetY = Math.floor(regionTop + (regionH - contentH) / 2 + PITCH * 0.75);
+  const offsetY = regionTop + (regionH - contentH) / 2 + PITCH * 0.75;
   canvas.style.width = `${viewW}px`;
   canvas.style.height = `${viewH}px`;
   canvas.style.left = '0';
@@ -403,13 +403,13 @@ let dateStr = '';
 
 function drawDateLabel() {
   if (!dateStr) return;
-  const fontSize = Math.round(3 * Math.min(canvasW, canvasH) / 100);
+  const fontSize = 3 * Math.min(canvasW, canvasH) / 100;
   ctx.save();
   ctx.font = `${fontSize}px sans-serif`;
   ctx.fillStyle = '#666';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillText(dateStr, canvasW / 2, Math.round(canvasH * 0.925));
+  ctx.fillText(dateStr, canvasW / 2, canvasH * 0.925);
   ctx.restore();
 }
 
