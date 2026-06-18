@@ -370,12 +370,12 @@ function updateCanvasLayout() {
   if (!levelNumCols) return;
   const viewW = window.innerWidth;
   const viewH = window.innerHeight;
-  const regionTop = viewH * 0.1;
+  const regionTop = viewH * 0.08;
   const regionH = viewH * 0.75;
   const pitch = Math.min((viewW * 0.90) / (levelNumCols + 1), regionH / (levelNumRows + 1.5));
   applyScale(pitch);
   const contentH = (levelNumRows + 1.5) * pitch;
-  const offsetY = regionTop + (regionH - contentH) / 2 + PITCH * 0.75;
+  const offsetY = regionTop + (regionH - contentH) / 2 + PITCH * 0.85;
   canvas.style.width = `${viewW}px`;
   canvas.style.height = `${viewH}px`;
   canvas.style.left = '0';
