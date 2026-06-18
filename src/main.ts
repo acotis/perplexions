@@ -162,12 +162,19 @@ function addSplash(x: number, y: number, duration: number, maxRadius: number) {
 // --- level complete ---
 
 const endCard = document.getElementById('end-card')!;
-document.getElementById('copy-results')!.addEventListener('click', () => {
+const copyBtn = document.getElementById('copy-results') as HTMLButtonElement;
+copyBtn.addEventListener('click', () => {
   navigator.clipboard.writeText('I solved today\'s Perplexions — http://perplexions.io');
+  copyBtn.style.width = `${copyBtn.offsetWidth}px`;
+  copyBtn.textContent = 'Copied!';
 });
 
 function showEndCard() { endCard.removeAttribute('hidden'); }
-function hideEndCard() { endCard.setAttribute('hidden', ''); }
+function hideEndCard() {
+  endCard.setAttribute('hidden', '');
+  copyBtn.style.width = '';
+  copyBtn.textContent = 'Copy results';
+}
 
 document.getElementById('replay')!.addEventListener('click', () => {
   if (currentParsedLevel && currentLevelDate) startLevel(currentParsedLevel, currentLevelDate);
