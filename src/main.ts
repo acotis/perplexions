@@ -110,6 +110,8 @@ let cursorY = 0;
 let animating = false;
 let levelComplete = false;
 let history: Tile[][] = [];
+let currentParsedLevel: ParsedLevel | null = null;
+let currentLevelDate: Date | null = null;
 
 // --- splashes ---
 
@@ -132,7 +134,6 @@ function renderFrame(now = performance.now(), overrides: Parameters<typeof rende
   });
   drawDateLabel();
   if (history.length > 0) drawUndoHint();
-  if (levelComplete) drawLevelComplete();
 }
 
 function redraw() { renderFrame(); }
@@ -160,24 +161,17 @@ function addSplash(x: number, y: number, duration: number, maxRadius: number) {
 
 // --- level complete ---
 
-function drawLevelComplete() {
-  const dateStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-  ctx.save();
-  ctx.textAlign = 'center';
-  ctx.textBaseline = 'middle';
-  ctx.fillStyle = `rgb(${color.r},${color.g},${color.b})`;
-  const gradWidth = (layout.numCols - 1) * PITCH + TILE_SIZE * (4 / 3);
-  const refGradWidth = 25745 / 33; // pitch=95, 8 cols: 7*95 + (950/11)*(4/3)
-  const vscale = gradWidth / refGradWidth;
-  ctx.font = 'bold 96px sans-serif';
-  const solvedSize = 96 * (gradWidth * 0.4) / ctx.measureText('Solved!').width;
-  const dateSize = solvedSize * (32 / 96);
-  ctx.font = `bold ${solvedSize}px sans-serif`;
-  ctx.fillText('Solved!', canvasW / 2, canvasH / 2 - 50 * vscale);
-  ctx.font = `${dateSize}px sans-serif`;
-  ctx.fillText(dateStr, canvasW / 2, canvasH / 2 + 30 * vscale);
-  ctx.restore();
-}
+const endCard = document.getElementById('end-card')!;
+document.getElementById('copy-results')!.addEventListener('click', () => {
+  navigator.clipboard.writeText('I solved today\'s Perplexions — http://perplexions.io');
+});
+
+function showEndCard() { endCard.removeAttribute('hidden'); }
+function hideEndCard() { endCard.setAttribute('hidden', ''); }
+
+document.getElementById('replay')!.addEventListener('click', () => {
+  if (currentParsedLevel && currentLevelDate) startLevel(currentParsedLevel, currentLevelDate);
+});
 
 // --- input ---
 
@@ -260,6 +254,7 @@ function undo() {
   if (animating || history.length === 0) return;
   tiles = history.pop()!;
   levelComplete = false;
+  hideEndCard();
   chain = [];
   hoveredTile = null;
   splashes = [];
@@ -318,6 +313,7 @@ function runFallAnimation(fallingTiles: FallingTile[]) {
       animating = false;
       if (tiles.length === 0) {
         levelComplete = true;
+        setTimeout(showEndCard, 3000);
         addSplash(cursorX, cursorY, 1200, Math.hypot(canvasW, canvasH));
       }
       runSplashLoop();
@@ -353,6 +349,7 @@ function startCascadeAnimation() {
   if (fallingTiles.every(ft => ft.settled)) {
     if (tiles.length === 0) {
       levelComplete = true;
+      setTimeout(showEndCard, 3000);
       addSplash(cursorX, cursorY, 1200, Math.hypot(canvasW, canvasH));
     }
     runSplashLoop();
@@ -414,7 +411,10 @@ function drawDateLabel() {
   ctx.restore();
 }
 
-function startLevel({ tiles: loadedTiles, numCols, numRows }: ParsedLevel, date: Date) {
+function startLevel(parsed: ParsedLevel, date: Date) {
+  currentParsedLevel = parsed;
+  currentLevelDate = date;
+  const { tiles: loadedTiles, numCols, numRows } = parsed;
   const month = date.toLocaleString('en-US', { month: 'short' });
   dateStr = `Daily puzzle — ${date.getFullYear()} ${month} ${date.getDate()}`;
   levelNumCols = numCols;
@@ -430,6 +430,7 @@ function startLevel({ tiles: loadedTiles, numCols, numRows }: ParsedLevel, date:
   chain = [];
   hoveredTile = null;
   levelComplete = false;
+  hideEndCard();
   splashes = [];
   animating = false;
   hintFirstShownTime = null;

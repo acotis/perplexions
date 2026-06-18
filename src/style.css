@@ -13,3 +13,40 @@ body {
   display: block;
   position: fixed;
 }
+
+#end-card {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 50vh;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-family: sans-serif;
+}
+
+#end-card[hidden] { display: none; }
+
+#end-card h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#end-card button {
+  font-size: 1rem;
+  padding: 0.6em 1.4em;
+  cursor: pointer;
+}
+
+#replay {
+  font-size: 0.75rem;
+  padding: 0.4em 1em;
+}
