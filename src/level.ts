@@ -44,9 +44,25 @@ export function applyGravity(tiles: Tile[]): Tile[] {
   });
 }
 
+let metaCache: { launch: string; levels: string[] } | null = null;
+
+async function getMeta() {
+  if (!metaCache) {
+    const response = await fetch(import.meta.env.BASE_URL + 'levels.json');
+    metaCache = await response.json();
+  }
+  return metaCache!;
+}
+
+export async function loadLevelBounds(): Promise<{ firstDate: Date; lastDate: Date }> {
+  const { launch, levels } = await getMeta();
+  const firstDate = new Date(`${launch}T12:00:00`);
+  const lastDate = new Date(firstDate.getTime() + (levels.length - 1) * 86400000);
+  return { firstDate, lastDate };
+}
+
 export async function loadLevel(date: Date): Promise<ParsedLevel> {
-  const response = await fetch(import.meta.env.BASE_URL + 'levels.json');
-  const { launch, levels }: { launch: string; levels: string[] } = await response.json();
+  const { launch, levels } = await getMeta();
 
   const todayStr = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
   const dayIndex = Math.max(0, Math.round((new Date(todayStr).getTime() - new Date(launch).getTime()) / 86400000));

@@ -1,6 +1,6 @@
 import './style.css';
 import { loadWords } from './words';
-import { loadLevel, applyGravity } from './level';
+import { loadLevel, loadLevelBounds, applyGravity } from './level';
 import { randomLevelColor, computeLayout, tileAtPixel, tilePixelX, tilePixelY, render, setPitch, TILE_SIZE, GAP } from './render';
 import type { Tile, ParsedLevel } from './level';
 import type { GridLayout, Color, SplashState } from './render';
@@ -112,6 +112,10 @@ let levelComplete = false;
 let history: Tile[][] = [];
 let currentParsedLevel: ParsedLevel | null = null;
 let currentLevelDate: Date | null = null;
+let leftChevronHit: { x: number; y: number; w: number; h: number } | null = null;
+let rightChevronHit: { x: number; y: number; w: number; h: number } | null = null;
+let levelFirstDate: Date | null = null;
+let levelLastDate: Date | null = null;
 
 // --- splashes ---
 
@@ -198,12 +202,24 @@ function distToCenter(tile: Tile, px: number, py: number): number {
   return Math.hypot(px - cx, py - cy);
 }
 
+function navigateByDays(delta: number) {
+  const base = currentLevelDate ?? today;
+  const date = new Date(base.getTime() + delta * 86400000);
+  loadLevel(date).then(parsed => startLevel(parsed, date));
+}
+
+function hitTest(r: { x: number; y: number; w: number; h: number }, px: number, py: number) {
+  return px >= r.x && px <= r.x + r.w && py >= r.y && py <= r.y + r.h;
+}
+
 canvas.addEventListener('mousedown', e => {
   if (e.button !== 0) return;
-  if (animating || levelComplete || !layout) return;
   const rect = canvas.getBoundingClientRect();
   cursorX = e.clientX - rect.left;
   cursorY = e.clientY - rect.top;
+  if (leftChevronHit && hitTest(leftChevronHit, cursorX, cursorY)) { navigateByDays(-1); return; }
+  if (rightChevronHit && hitTest(rightChevronHit, cursorX, cursorY)) { navigateByDays(1); return; }
+  if (animating || levelComplete || !layout) return;
   const hit = tileAtPixel(tiles, cursorX, cursorY, layout);
   if (hit) {
     chain = [hit];
@@ -213,10 +229,13 @@ canvas.addEventListener('mousedown', e => {
 });
 
 window.addEventListener('mousemove', e => {
-  if (animating || levelComplete || !layout) return;
   const rect = canvas.getBoundingClientRect();
   cursorX = e.clientX - rect.left;
   cursorY = e.clientY - rect.top;
+  const overChevron = (leftChevronHit && hitTest(leftChevronHit, cursorX, cursorY)) ||
+                      (rightChevronHit && hitTest(rightChevronHit, cursorX, cursorY));
+  canvas.style.cursor = overChevron ? 'pointer' : '';
+  if (animating || levelComplete || !layout) return;
 
   if (chain.length === 0) {
     const hit = tileAtPixel(tiles, cursorX, cursorY, layout);
@@ -414,7 +433,6 @@ window.addEventListener('resize', onResize);
 const params = new URLSearchParams(window.location.search);
 const dateParam = params.get('date');
 const today = dateParam ? new Date(`${dateParam}T12:00:00`) : new Date();
-let debugDateOffset = 0;
 
 function dateSeed(date: Date): number {
   const s = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
@@ -428,12 +446,54 @@ let dateStr = '';
 function drawDateLabel() {
   if (!dateStr) return;
   const fontSize = 3 * Math.min(canvasW, canvasH) / 100;
+  const centerY = canvasH * 0.925;
   ctx.save();
   ctx.font = `${fontSize}px sans-serif`;
   ctx.fillStyle = '#666';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillText(dateStr, canvasW / 2, canvasH * 0.925);
+  ctx.fillText(dateStr, canvasW / 2, centerY);
+
+  const textW = ctx.measureText(dateStr).width;
+  const h = fontSize * 0.55;
+  const w = fontSize * 0.30;
+  const gap = fontSize * 1.1;
+  ctx.strokeStyle = '#666';
+  ctx.lineWidth = fontSize * 0.12;
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+
+  const chevronY = centerY - fontSize * 0.07;
+  const pad = fontSize * 1.0;
+  const d = currentLevelDate;
+  const curNoon = d ? new Date(d.getFullYear(), d.getMonth(), d.getDate(), 12).getTime() : 0;
+  const now = new Date();
+  const todayNoon = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12).getTime();
+  const showLeft = levelFirstDate ? curNoon > levelFirstDate.getTime() : true;
+  const showRight = (levelLastDate ? curNoon < levelLastDate.getTime() : true) && curNoon < todayNoon;
+
+  leftChevronHit = null;
+  if (showLeft) {
+    const lx = canvasW / 2 - textW / 2 - gap;
+    leftChevronHit = { x: lx - w - pad, y: chevronY - h / 2 - pad, w: w + pad * 2, h: h + pad * 2 };
+    ctx.beginPath();
+    ctx.moveTo(lx, chevronY - h / 2);
+    ctx.lineTo(lx - w, chevronY);
+    ctx.lineTo(lx, chevronY + h / 2);
+    ctx.stroke();
+  }
+
+  rightChevronHit = null;
+  if (showRight) {
+    const rx = canvasW / 2 + textW / 2 + gap;
+    rightChevronHit = { x: rx - pad, y: chevronY - h / 2 - pad, w: w + pad * 2, h: h + pad * 2 };
+    ctx.beginPath();
+    ctx.moveTo(rx, chevronY - h / 2);
+    ctx.lineTo(rx + w, chevronY);
+    ctx.lineTo(rx, chevronY + h / 2);
+    ctx.stroke();
+  }
+
   ctx.restore();
 }
 
@@ -466,16 +526,10 @@ function startLevel(parsed: ParsedLevel, date: Date) {
   startDropAnimation();
 }
 
-Promise.all([loadWords(), loadLevel(today)]).then(([loadedWords, loadedTiles]) => {
+Promise.all([loadWords(), loadLevel(today), loadLevelBounds()]).then(([loadedWords, loadedTiles, bounds]) => {
   words = loadedWords;
+  levelFirstDate = bounds.firstDate;
+  levelLastDate = bounds.lastDate;
   startLevel(loadedTiles, today);
 });
 
-window.addEventListener('keydown', e => {
-  if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
-  if (e.ctrlKey || e.metaKey || e.altKey) return;
-  debugDateOffset += e.key === 'ArrowRight' ? 1 : -1;
-  const date = new Date(today.getTime() + debugDateOffset * 86400000);
-  console.log(`debug: loading level for offset ${debugDateOffset}`);
-  loadLevel(date).then(tiles => startLevel(tiles, date));
-});
