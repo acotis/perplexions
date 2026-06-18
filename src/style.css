@@ -23,4 +23,5 @@ body {
   font-size: 3vmin;
   color: #666;
   white-space: nowrap;
+  z-index: 1;
 }
