@@ -181,7 +181,7 @@ export function render(
   ctx.fillStyle = grad;
   ctx.fillRect(floorX1, floorY, floorX2 - floorX1, TILE_SIZE * 0.75);
 
-  drawChain(ctx, chain, layout, color, cursorX, cursorY, 24);
+  drawChain(ctx, chain, layout, color, cursorX, cursorY, PITCH * 0.30);
 
   const highlighted = new Set(chain);
   if (hoveredTile) highlighted.add(hoveredTile);

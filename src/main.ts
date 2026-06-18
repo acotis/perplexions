@@ -372,8 +372,10 @@ new ResizeObserver(entries => {
 
 // --- init ---
 
-Promise.all([loadWords(), loadLevel(new Date())]).then(([loadedWords, loadedTiles]) => {
-  words = loadedWords;
+const today = new Date();
+let debugDateOffset = 0;
+
+function startLevel(loadedTiles: import('./level').Tile[]) {
   const xs = loadedTiles.map(t => t.x);
   const ys = loadedTiles.map(t => t.y);
   levelNumCols = Math.max(...xs) - Math.min(...xs) + 1;
@@ -386,6 +388,28 @@ Promise.all([loadWords(), loadLevel(new Date())]).then(([loadedWords, loadedTile
   const dist = Math.round(Math.hypot(255 - color.r, 255 - color.g, 255 - color.b));
   const luma = Math.round(0.299 * color.r + 0.587 * color.g + 0.114 * color.b);
   console.log(`rgb(${color.r}, ${color.g}, ${color.b}) — least: ${least} — distance: ${dist} — luma: ${luma}`);
+  history = [];
+  chain = [];
+  hoveredTile = null;
+  levelComplete = false;
+  splashes = [];
+  animating = false;
+  hintFirstShownTime = null;
+  hintFadeComplete = false;
   layout = computeLayout(levelTiles, canvasW, canvasH);
   startDropAnimation();
+}
+
+Promise.all([loadWords(), loadLevel(today)]).then(([loadedWords, loadedTiles]) => {
+  words = loadedWords;
+  startLevel(loadedTiles);
+});
+
+window.addEventListener('keydown', e => {
+  if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  debugDateOffset += e.key === 'ArrowRight' ? 1 : -1;
+  const date = new Date(today.getTime() + debugDateOffset * 86400000);
+  console.log(`debug: loading level for offset ${debugDateOffset}`);
+  loadLevel(date).then(startLevel);
 });
