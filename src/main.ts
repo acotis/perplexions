@@ -317,6 +317,59 @@ canvas.addEventListener('contextmenu', e => {
   if (!levelComplete) undo();
 });
 
+canvas.addEventListener('touchstart', e => {
+  e.preventDefault();
+  const touch = e.touches[0];
+  const rect = canvas.getBoundingClientRect();
+  cursorX = touch.clientX - rect.left;
+  cursorY = touch.clientY - rect.top;
+  if (leftChevronHit && hitTest(leftChevronHit, cursorX, cursorY)) { navigateByDays(-1); return; }
+  if (rightChevronHit && hitTest(rightChevronHit, cursorX, cursorY)) { navigateByDays(1); return; }
+  if (animating || levelComplete || !layout) return;
+  const hit = tileAtPixel(tiles, cursorX, cursorY, layout);
+  if (hit) { chain = [hit]; hoveredTile = null; redraw(); }
+}, { passive: false });
+
+canvas.addEventListener('touchmove', e => {
+  e.preventDefault();
+  const touch = e.touches[0];
+  const rect = canvas.getBoundingClientRect();
+  cursorX = touch.clientX - rect.left;
+  cursorY = touch.clientY - rect.top;
+  if (animating || levelComplete || !layout || chain.length === 0) return;
+
+  const last = chain[chain.length - 1];
+  const secondToLast = chain.length >= 2 ? chain[chain.length - 2] : null;
+  if (secondToLast && distToCenter(secondToLast, cursorX, cursorY) < REMOVE_RADIUS) {
+    chain.pop();
+  } else {
+    for (const tile of tiles) {
+      if (tile === last || chain.includes(tile)) continue;
+      if (!isAdjacent(last, tile)) continue;
+      if (distToCenter(tile, cursorX, cursorY) < ADD_RADIUS) { chain.push(tile); break; }
+    }
+  }
+  redraw();
+}, { passive: false });
+
+canvas.addEventListener('touchend', e => {
+  e.preventDefault();
+  if (chain.length === 0) return;
+  const word = chain.map(t => t.letter).join('');
+  if (words.has(word)) {
+    history.push(tiles);
+    const removed = new Set(chain);
+    tiles = tiles.filter(t => !removed.has(t));
+    chain = [];
+    hoveredTile = null;
+    startCascadeAnimation();
+  } else {
+    chain = [];
+    hoveredTile = null;
+    redraw();
+  }
+}, { passive: false });
+
 // --- animation ---
 
 interface FallingTile {
