@@ -1,4 +1,2 @@
-vi en
-ft oce
-so tol
-erxbear
+forplaytesting
+andsuggestions

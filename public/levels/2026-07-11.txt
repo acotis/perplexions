@@ -1,4 +1,1 @@
-pizza
-pasta
-nachos
-flooms
+quit
