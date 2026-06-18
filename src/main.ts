@@ -434,7 +434,7 @@ function startLevel(parsed: ParsedLevel, date: Date) {
   currentLevelDate = date;
   const { tiles: loadedTiles, numCols, numRows } = parsed;
   const month = date.toLocaleString('en-US', { month: 'short' });
-  dateStr = `Daily puzzle — ${date.getFullYear()} ${month} ${date.getDate()}`;
+  dateStr = `Perplexions — ${date.getFullYear()} ${month} ${date.getDate()}`;
   levelNumCols = numCols;
   levelNumRows = numRows;
   tiles = applyGravity(loadedTiles);
