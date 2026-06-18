@@ -27,11 +27,11 @@ function applyScale(pitch: number): void {
 
 const canvas = document.getElementById('game') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d')!;
-const dpr = window.devicePixelRatio || 1;
 let canvasW = 0;
 let canvasH = 0;
 
 function setCanvasSize(w: number, h: number) {
+  const dpr = window.devicePixelRatio || 1;
   canvasW = w;
   canvasH = h;
   const bufW = Math.round(w * dpr);
