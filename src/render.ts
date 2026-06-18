@@ -12,13 +12,24 @@ export function setPitch(pitch: number): void {
   PITCH = pitch;
 }
 
+function mulberry32(seed: number): () => number {
+  let s = seed >>> 0;
+  return () => {
+    s = (s + 0x6D2B79F5) >>> 0;
+    let t = Math.imul(s ^ (s >>> 15), 1 | s);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
 function acceptLevelColor(c: Color): boolean {
   const luma = 0.299 * c.r + 0.587 * c.g + 0.114 * c.b;
   return luma <= 220;
 }
 
-export function randomLevelColor(): Color {
-  const ch = () => Math.floor(Math.random() * 81) + 175;
+export function randomLevelColor(seed: number): Color {
+  const rand = mulberry32(seed);
+  const ch = () => Math.floor(rand() * 81) + 175;
   let c: Color;
   do { c = { r: ch(), g: ch(), b: ch() }; } while (!acceptLevelColor(c));
   return c;

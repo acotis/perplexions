@@ -375,7 +375,14 @@ new ResizeObserver(entries => {
 const today = new Date();
 let debugDateOffset = 0;
 
-function startLevel(loadedTiles: import('./level').Tile[]) {
+function dateSeed(date: Date): number {
+  const s = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+  let h = 5381;
+  for (let i = 0; i < s.length; i++) h = (Math.imul(h, 33) ^ s.charCodeAt(i)) >>> 0;
+  return h;
+}
+
+function startLevel(loadedTiles: import('./level').Tile[], date: Date) {
   const xs = loadedTiles.map(t => t.x);
   const ys = loadedTiles.map(t => t.y);
   levelNumCols = Math.max(...xs) - Math.min(...xs) + 1;
@@ -383,7 +390,7 @@ function startLevel(loadedTiles: import('./level').Tile[]) {
   applyScale(Math.min(canvasW / (levelNumCols + 1), canvasH / (levelNumRows + 3)));
   tiles = applyGravity(loadedTiles);
   levelTiles = tiles;
-  color = randomLevelColor();
+  color = randomLevelColor(dateSeed(date));
   const least = Math.min(color.r, color.g, color.b);
   const dist = Math.round(Math.hypot(255 - color.r, 255 - color.g, 255 - color.b));
   const luma = Math.round(0.299 * color.r + 0.587 * color.g + 0.114 * color.b);
@@ -402,7 +409,7 @@ function startLevel(loadedTiles: import('./level').Tile[]) {
 
 Promise.all([loadWords(), loadLevel(today)]).then(([loadedWords, loadedTiles]) => {
   words = loadedWords;
-  startLevel(loadedTiles);
+  startLevel(loadedTiles, today);
 });
 
 window.addEventListener('keydown', e => {
@@ -411,5 +418,5 @@ window.addEventListener('keydown', e => {
   debugDateOffset += e.key === 'ArrowRight' ? 1 : -1;
   const date = new Date(today.getTime() + debugDateOffset * 86400000);
   console.log(`debug: loading level for offset ${debugDateOffset}`);
-  loadLevel(date).then(startLevel);
+  loadLevel(date).then(tiles => startLevel(tiles, date));
 });
