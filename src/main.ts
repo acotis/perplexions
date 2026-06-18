@@ -430,9 +430,8 @@ window.addEventListener('resize', onResize);
 
 // --- init ---
 
-const params = new URLSearchParams(window.location.search);
-const dateParam = params.get('date');
-const today = dateParam ? new Date(`${dateParam}T12:00:00`) : new Date();
+const dateParam = new URLSearchParams(window.location.search).get('date');
+const today = new Date();
 
 function dateSeed(date: Date): number {
   const s = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
@@ -526,10 +525,33 @@ function startLevel(parsed: ParsedLevel, date: Date) {
   startDropAnimation();
 }
 
-Promise.all([loadWords(), loadLevel(today), loadLevelBounds()]).then(([loadedWords, loadedTiles, bounds]) => {
+function toNoon(d: Date): Date {
+  return new Date(d.getFullYear(), d.getMonth(), d.getDate(), 12);
+}
+
+function formatDate(d: Date): string {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+Promise.all([loadWords(), loadLevelBounds()]).then(async ([loadedWords, bounds]) => {
   words = loadedWords;
   levelFirstDate = bounds.firstDate;
   levelLastDate = bounds.lastDate;
-  startLevel(loadedTiles, today);
+
+  const todayNoon = toNoon(today);
+  let date = dateParam ? new Date(`${dateParam}T12:00:00`) : todayNoon;
+
+  if (date.getTime() > todayNoon.getTime()) {
+    date = todayNoon;
+    window.history.replaceState(null, '', window.location.pathname);
+  } else if (date.getTime() < bounds.firstDate.getTime()) {
+    date = bounds.firstDate;
+    const p = new URLSearchParams(window.location.search);
+    p.set('date', formatDate(date));
+    window.history.replaceState(null, '', `?${p}`);
+  }
+
+  const loadedTiles = await loadLevel(date);
+  startLevel(loadedTiles, date);
 });
 
