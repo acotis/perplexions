@@ -164,7 +164,7 @@ function addSplash(x: number, y: number, duration: number, maxRadius: number) {
 const endCard = document.getElementById('end-card')!;
 const copyBtn = document.getElementById('copy-results') as HTMLButtonElement;
 copyBtn.addEventListener('click', () => {
-  navigator.clipboard.writeText('I solved today\'s Perplexions — http://perplexions.io');
+  navigator.clipboard.writeText('I solved today\'s Perplexions — http://fire.casa/perplexions');
   copyBtn.style.width = `${copyBtn.offsetWidth}px`;
   copyBtn.textContent = 'Copied!';
 });
