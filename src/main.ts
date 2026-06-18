@@ -365,7 +365,7 @@ function updateCanvasLayout() {
   if (!levelNumCols) return;
   const viewW = window.innerWidth;
   const viewH = window.innerHeight;
-  const pitch = Math.min((viewW * 0.95) / (levelNumCols + 1), (viewH * 0.725) / (levelNumRows + 1.5));
+  const pitch = Math.min((viewW * 0.90) / (levelNumCols + 1), (viewH * 0.725) / (levelNumRows + 1.5));
   applyScale(pitch);
   const w = (levelNumCols + 1) * pitch;
   const h = (levelNumRows + 1.5) * pitch;
@@ -379,10 +379,13 @@ function updateCanvasLayout() {
   layout = computeLayout(levelTiles, canvasW, canvasH);
 }
 
-new ResizeObserver(() => {
+function onResize() {
   updateCanvasLayout();
   if (levelNumCols) redraw();
-}).observe(document.documentElement);
+}
+
+new ResizeObserver(onResize).observe(document.documentElement);
+window.addEventListener('resize', onResize);
 
 // --- init ---
 
