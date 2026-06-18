@@ -492,6 +492,8 @@ function onResize() {
 
 new ResizeObserver(onResize).observe(document.documentElement);
 window.addEventListener('resize', onResize);
+window.visualViewport?.addEventListener('resize', onResize);
+window.addEventListener('pageshow', e => { if (e.persisted) onResize(); });
 
 // --- init ---
 
