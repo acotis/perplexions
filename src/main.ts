@@ -2,7 +2,7 @@ import './style.css';
 import { loadWords } from './words';
 import { loadLevel, applyGravity } from './level';
 import { randomLevelColor, computeLayout, tileAtPixel, tilePixelX, tilePixelY, render, setPitch, TILE_SIZE, GAP } from './render';
-import type { Tile } from './level';
+import type { Tile, ParsedLevel } from './level';
 import type { GridLayout, Color, SplashState } from './render';
 
 const GRAVITY_TILES_PER_S2 = 3000 / 64;
@@ -166,7 +166,7 @@ function drawLevelComplete() {
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   ctx.fillStyle = `rgb(${color.r},${color.g},${color.b})`;
-  const gradWidth = (layout.maxX - layout.minX) * PITCH + TILE_SIZE * (4 / 3);
+  const gradWidth = (layout.numCols - 1) * PITCH + TILE_SIZE * (4 / 3);
   const refGradWidth = 25745 / 33; // pitch=95, 8 cols: 7*95 + (950/11)*(4/3)
   const vscale = gradWidth / refGradWidth;
   ctx.font = 'bold 96px sans-serif';
@@ -376,7 +376,7 @@ function updateCanvasLayout() {
   canvas.style.left = `${(viewW - w) / 2}px`;
   canvas.style.top = `${regionTop + (regionH - h) / 2}px`;
   setCanvasSize(w, h);
-  layout = computeLayout(levelTiles, canvasW, canvasH);
+  layout = computeLayout(levelTiles, canvasW, canvasH, levelNumCols);
 }
 
 function onResize() {
@@ -401,13 +401,11 @@ function dateSeed(date: Date): number {
 
 const dateLabel = document.getElementById('date-label')!;
 
-function startLevel(loadedTiles: import('./level').Tile[], date: Date) {
+function startLevel({ tiles: loadedTiles, numCols, numRows }: ParsedLevel, date: Date) {
   const month = date.toLocaleString('en-US', { month: 'short' });
   dateLabel.textContent = `Daily puzzle — ${date.getFullYear()} ${month} ${date.getDate()}`;
-  const xs = loadedTiles.map(t => t.x);
-  const ys = loadedTiles.map(t => t.y);
-  levelNumCols = Math.max(...xs) - Math.min(...xs) + 1;
-  levelNumRows = Math.max(...ys) + 1;
+  levelNumCols = numCols;
+  levelNumRows = numRows;
   tiles = applyGravity(loadedTiles);
   levelTiles = tiles;
   color = randomLevelColor(dateSeed(date));

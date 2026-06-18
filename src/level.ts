@@ -4,13 +4,20 @@ export interface Tile {
   letter: string;
 }
 
-export function parseLevel(text: string): Tile[] {
+export interface ParsedLevel {
+  tiles: Tile[];
+  numCols: number;
+  numRows: number;
+}
+
+export function parseLevel(text: string): ParsedLevel {
   const lines = text.split('\n');
   while (lines.length > 0 && lines[lines.length - 1].trim() === '') {
     lines.pop();
   }
   const tiles: Tile[] = [];
   const rowCount = lines.length;
+  const numCols = Math.max(...lines.map(l => l.length));
   for (let row = 0; row < rowCount; row++) {
     const y = rowCount - 1 - row;
     const line = lines[row];
@@ -21,7 +28,7 @@ export function parseLevel(text: string): Tile[] {
       }
     }
   }
-  return tiles;
+  return { tiles, numCols, numRows: rowCount };
 }
 
 export function applyGravity(tiles: Tile[]): Tile[] {
@@ -37,7 +44,7 @@ export function applyGravity(tiles: Tile[]): Tile[] {
   });
 }
 
-export async function loadLevel(date: Date): Promise<Tile[]> {
+export async function loadLevel(date: Date): Promise<ParsedLevel> {
   const response = await fetch(import.meta.env.BASE_URL + 'levels.json');
   const { launch, levels }: { launch: string; levels: string[] } = await response.json();
 
