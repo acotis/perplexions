@@ -164,7 +164,10 @@ function addSplash(x: number, y: number, duration: number, maxRadius: number) {
 const endCard = document.getElementById('end-card')!;
 const copyBtn = document.getElementById('copy-results') as HTMLButtonElement;
 copyBtn.addEventListener('click', () => {
-  navigator.clipboard.writeText('I solved today\'s Perplexions — http://fire.casa/perplexions');
+  const date = currentLevelDate ?? new Date();
+  const month = date.toLocaleString('en-US', { month: 'short' });
+  const dateLabel = `${date.getFullYear()} ${month} ${date.getDate()}`;
+  navigator.clipboard.writeText(`I solved the Perplexions puzzle for ${dateLabel} — http://fire.casa/perplexions`);
   copyBtn.style.width = `${copyBtn.offsetWidth}px`;
   copyBtn.textContent = 'Copied!';
 });
