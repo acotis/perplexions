@@ -471,4 +471,3 @@ window.addEventListener('keydown', e => {
   console.log(`debug: loading level for offset ${debugDateOffset}`);
   loadLevel(date).then(tiles => startLevel(tiles, date));
 });
-
