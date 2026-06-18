@@ -370,7 +370,7 @@ function updateCanvasLayout() {
   if (!levelNumCols) return;
   const viewW = window.innerWidth;
   const viewH = window.innerHeight;
-  const regionTop = viewH * 0.08;
+  const regionTop = viewH * 0.085;
   const regionH = viewH * 0.75;
   const pitch = Math.min((viewW * 0.90) / (levelNumCols + 1), regionH / (levelNumRows + 1.5));
   applyScale(pitch);
