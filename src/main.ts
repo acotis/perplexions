@@ -361,14 +361,28 @@ function startCascadeAnimation() {
   runFallAnimation(fallingTiles);
 }
 
-new ResizeObserver(entries => {
-  const { width, height } = entries[0].contentRect;
-  setCanvasSize(Math.round(width), Math.round(height));
+function updateCanvasLayout() {
   if (!levelNumCols) return;
-  applyScale(Math.min(canvasW / (levelNumCols + 1), canvasH / (levelNumRows + 3)));
+  const viewW = window.innerWidth;
+  const viewH = window.innerHeight;
+  const pitch = Math.min(viewW / (levelNumCols + 1), (viewH * 0.7) / (levelNumRows + 1.5));
+  applyScale(pitch);
+  const w = (levelNumCols + 1) * pitch;
+  const h = (levelNumRows + 3) * pitch;
+  canvas.style.width = `${w}px`;
+  canvas.style.height = `${h}px`;
+  const regionTop = viewH * 0.1;
+  const regionH = viewH * 0.7;
+  canvas.style.left = `${(viewW - w) / 2}px`;
+  canvas.style.top = `${regionTop + (regionH - h) / 2}px`;
+  setCanvasSize(w, h);
   layout = computeLayout(levelTiles, canvasW, canvasH);
-  redraw();
-}).observe(canvas);
+}
+
+new ResizeObserver(() => {
+  updateCanvasLayout();
+  if (levelNumCols) redraw();
+}).observe(document.documentElement);
 
 // --- init ---
 
@@ -391,7 +405,6 @@ function startLevel(loadedTiles: import('./level').Tile[], date: Date) {
   const ys = loadedTiles.map(t => t.y);
   levelNumCols = Math.max(...xs) - Math.min(...xs) + 1;
   levelNumRows = Math.max(...ys) + 1;
-  applyScale(Math.min(canvasW / (levelNumCols + 1), canvasH / (levelNumRows + 3)));
   tiles = applyGravity(loadedTiles);
   levelTiles = tiles;
   color = randomLevelColor(dateSeed(date));
@@ -407,7 +420,7 @@ function startLevel(loadedTiles: import('./level').Tile[], date: Date) {
   animating = false;
   hintFirstShownTime = null;
   hintFadeComplete = false;
-  layout = computeLayout(levelTiles, canvasW, canvasH);
+  updateCanvasLayout();
   startDropAnimation();
 }
 

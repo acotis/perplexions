@@ -11,11 +11,7 @@ body {
 
 #game {
   display: block;
-  position: absolute;
-  top: 10vh;
-  left: 5vw;
-  width: 90vw;
-  height: 70vh;
+  position: fixed;
   outline: 1px solid #ddd;
 }
 

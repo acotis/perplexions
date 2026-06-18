@@ -47,7 +47,7 @@ export interface GridLayout {
   maxY: number;
 }
 
-export function computeLayout(tiles: Tile[], canvasWidth: number, canvasHeight: number): GridLayout {
+export function computeLayout(tiles: Tile[], canvasWidth: number, _canvasHeight: number): GridLayout {
   const xs = tiles.map(t => t.x);
   const ys = tiles.map(t => t.y);
   const minX = Math.min(...xs);
@@ -56,7 +56,7 @@ export function computeLayout(tiles: Tile[], canvasWidth: number, canvasHeight: 
   const gridW = (maxX - minX) * PITCH + TILE_SIZE;
   return {
     offsetX: Math.floor((canvasWidth - gridW) / 2) - minX * PITCH,
-    offsetY: Math.floor((canvasHeight - (maxY + 1) * PITCH - TILE_SIZE * 0.5) / 2),
+    offsetY: Math.floor(PITCH),
     minX,
     maxX,
     maxY,
