@@ -158,12 +158,12 @@ function drawTile(
   ctx.fillRect(px, py, TILE_SIZE, TILE_SIZE);
 
   if (!highlighted) {
-    const border = TILE_SIZE / 16;
+    const border = TILE_SIZE / 16 * 1.1;
     ctx.fillStyle = '#fff';
     ctx.fillRect(px + border, py + border, TILE_SIZE - border * 2, TILE_SIZE - border * 2);
   }
 
-  const fontSize = TILE_SIZE * 0.50;
+  const fontSize = TILE_SIZE * 0.525;
   ctx.fillStyle = '#000';
   ctx.font = `bold ${fontSize}px sans-serif`;
   ctx.textAlign = 'center';
