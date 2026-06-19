@@ -195,11 +195,17 @@ function buildEmojiHash(): string {
 
 function showEndCard() {
   solutionHashEmojis.textContent = buildEmojiHash();
+  const { r, g, b } = color;
+  const luma = 0.299 * r + 0.587 * g + 0.114 * b;
+  copyBtn.style.backgroundColor = `rgb(${r},${g},${b})`;
+  copyBtn.style.color = luma > 160 ? '#000' : '#fff';
   endCard.removeAttribute('hidden');
 }
 function hideEndCard() {
   endCard.setAttribute('hidden', '');
   copyBtn.style.width = '';
+  copyBtn.style.backgroundColor = '';
+  copyBtn.style.color = '';
   copyBtn.textContent = 'Copy results';
 }
 

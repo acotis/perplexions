@@ -52,6 +52,9 @@ body {
   font-size: 1rem;
   padding: 0.6em 1.4em;
   cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.18);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.12);
 }
 
 #toast-container {
@@ -94,8 +97,8 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 0.25em;
-  margin-top: 0.8rem;
-  margin-bottom: 1rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1.1rem;
   width: 100%;
 }
 
@@ -121,14 +124,14 @@ body {
   padding: 0.4em 1em;
 }
 
-#replay-no-hash {
+#end-card #replay-no-hash {
   background: none;
   border: none;
+  box-shadow: none;
   padding: 0;
-  font-size: 0.75rem;
   color: #888;
   text-decoration: underline;
   cursor: pointer;
-  margin-top: calc(-1.5rem + 2px);
+  margin-top: calc(-1.5rem + 12px);
   margin-bottom: -1.5rem;
 }
