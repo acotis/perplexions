@@ -168,18 +168,27 @@ function addSplash(x: number, y: number, duration: number, maxRadius: number) {
 
 const endCard = document.getElementById('end-card')!;
 const copyBtn = document.getElementById('copy-results') as HTMLButtonElement;
-copyBtn.addEventListener('click', () => {
+const debugResults = document.getElementById('debug-results') as HTMLPreElement;
+
+function buildResultsString(): string {
   const date = currentLevelDate ?? new Date();
   const month = date.toLocaleString('en-US', { month: 'short' });
   const dateLabel = `${date.getFullYear()} ${month} ${date.getDate()}`;
   const dateSlug = formatDate(date);
-  const lines = [`I solved Perplexions on ${dateLabel}!`, `https://fire.casa/perplexions/?date=${dateSlug}`, ...wordHistory];
-  navigator.clipboard.writeText(lines.join('\n'));
+  const wordEmojis = wordHistory.map(w => WORD_EMOJIS[hashString(`${dateSlug} ${w}`) % WORD_EMOJIS.length]);
+  return [`I solved Perplexions on ${dateLabel} — solution hash: ${wordEmojis.join('')}`, `https://fire.casa/perplexions/?date=${dateSlug}`].join('\n');
+}
+
+copyBtn.addEventListener('click', () => {
+  navigator.clipboard.writeText(buildResultsString());
   copyBtn.style.width = `${copyBtn.offsetWidth}px`;
   copyBtn.textContent = 'Copied!';
 });
 
-function showEndCard() { endCard.removeAttribute('hidden'); }
+function showEndCard() {
+  debugResults.textContent = buildResultsString();
+  endCard.removeAttribute('hidden');
+}
 function hideEndCard() {
   endCard.setAttribute('hidden', '');
   copyBtn.style.width = '';
@@ -527,11 +536,22 @@ const dateParam = new URLSearchParams(window.location.search).get('date');
 const today = new Date();
 const effectiveToday = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 12);
 
-function dateSeed(date: Date): number {
-  const s = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+function hashString(s: string): number {
   let h = 5381;
   for (let i = 0; i < s.length; i++) h = (Math.imul(h, 33) ^ s.charCodeAt(i)) >>> 0;
   return h;
+}
+
+const WORD_EMOJIS = [
+  '🍎','🍊','🍋','🍇','🍓','🍒','🥝','🍑',
+  '🌸','🌻','🌈','⭐','🔥','💧','🌊','🍀',
+  '🦋','🐝','🦜','🐬','🦁','🐸','🦊','🐧',
+  '🎯','🎲','🎸','🎺','🏆','💎','🔮','🌙',
+];
+
+function dateSeed(date: Date): number {
+  const s = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+  return hashString(s);
 }
 
 let dateStr = '';
