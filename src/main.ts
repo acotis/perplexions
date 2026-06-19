@@ -145,7 +145,7 @@ function renderFrame(now = performance.now(), overrides: Parameters<typeof rende
     splashes: activeSplashStates(now),
     ...overrides,
   });
-  if (showEmojiHash && layout) drawHashEmojis(ctx, layout, buildEmojiHash());
+  if (showEmojiHash && layout) drawHashEmojis(ctx, layout, buildEmojiHash(), canvasH);
   drawDateLabel();
   undoTextHit = null;
   if (history.length > 0 && !levelComplete) drawUndoHint();
