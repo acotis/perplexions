@@ -625,17 +625,19 @@ function drawDateLabel() {
   ctx.fillStyle = '#666';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillText(dateStr, canvasW / 2, centerY);
+  const dateOffset = clearedOnStr ? fontSize * 1.136025 / 2 : 0;
+  const dateY = centerY - dateOffset;
+  ctx.fillText(dateStr, canvasW / 2, dateY);
   const textW = ctx.measureText(dateStr).width;
 
   if (clearedOnStr) {
     ctx.font = `${fontSize * 0.675}px sans-serif`;
     ctx.fillStyle = '#999';
-    ctx.fillText(clearedOnStr, canvasW / 2, centerY + fontSize * 1.4025);
+    ctx.fillText(clearedOnStr, canvasW / 2, dateY + fontSize * 1.136025);
   }
   const h = fontSize * 0.55;
   const w = fontSize * 0.30;
-  const gap = fontSize * 1.1;
+  const gap = fontSize * 1.21;
   ctx.strokeStyle = '#666';
   ctx.lineWidth = fontSize * 0.12;
   ctx.lineCap = 'round';
