@@ -216,7 +216,7 @@ function checkNextLevel() {
   hasNextLevel = false;
   if (!currentLevelDate) return;
   const next = new Date(currentLevelDate.getTime() + 86400000);
-  if (next.getTime() >= effectiveToday.getTime()) return;
+  if (next.getTime() > effectiveToday.getTime()) return;
   levelFileExists(next).then(exists => {
     hasNextLevel = exists;
     if (levelNumCols) redraw();
