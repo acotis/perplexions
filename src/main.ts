@@ -115,6 +115,7 @@ let history: Tile[][] = [];
 let wordHistory: string[] = [];
 let currentParsedLevel: ParsedLevel | null = null;
 let currentLevelDate: Date | null = null;
+let clearedOnStr: string = '';
 let leftChevronHit: { x: number; y: number; w: number; h: number } | null = null;
 let rightChevronHit: { x: number; y: number; w: number; h: number } | null = null;
 let hasPrevLevel = false;
@@ -176,6 +177,12 @@ interface LevelRecord {
   showHash?: boolean;
 }
 
+function clearedOnLabel(dateSlug: string): string {
+  const d = new Date(`${dateSlug}T12:00:00`);
+  const month = d.toLocaleString('en-US', { month: 'short' });
+  return `Cleared on ${d.getFullYear()} ${month} ${d.getDate()}`;
+}
+
 function getLevelRecord(date: Date): LevelRecord {
   try {
     const raw = localStorage.getItem(STORAGE_PREFIX + formatDate(date));
@@ -218,7 +225,9 @@ function buildEmojiHash(): string {
 
 function showEndCard() {
   if (currentLevelDate && !getLevelRecord(currentLevelDate).cleared) {
-    updateLevelRecord(currentLevelDate, { cleared: formatDate(new Date()) });
+    const slug = formatDate(new Date());
+    updateLevelRecord(currentLevelDate, { cleared: slug });
+    clearedOnStr = clearedOnLabel(slug);
   }
   solutionHashEmojis.textContent = buildEmojiHash();
   const { r, g, b } = color;
@@ -617,8 +626,13 @@ function drawDateLabel() {
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   ctx.fillText(dateStr, canvasW / 2, centerY);
-
   const textW = ctx.measureText(dateStr).width;
+
+  if (clearedOnStr) {
+    ctx.font = `${fontSize * 0.675}px sans-serif`;
+    ctx.fillStyle = '#999';
+    ctx.fillText(clearedOnStr, canvasW / 2, centerY + fontSize * 1.4025);
+  }
   const h = fontSize * 0.55;
   const w = fontSize * 0.30;
   const gap = fontSize * 1.1;
@@ -675,6 +689,8 @@ function startLevel(parsed: ParsedLevel, date: Date) {
   history = [];
   wordHistory = [];
   showEmojiHash = false;
+  const storedCleared = getLevelRecord(date).cleared;
+  clearedOnStr = storedCleared ? clearedOnLabel(storedCleared) : '';
   chain = [];
   hoveredTile = null;
   levelComplete = false;
