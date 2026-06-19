@@ -607,6 +607,15 @@ function startLevel(parsed: ParsedLevel, date: Date) {
   startDropAnimation();
 }
 
+const toastContainer = document.getElementById('toast-container')!;
+function showToast(msg: string) {
+  const el = document.createElement('div');
+  el.className = 'toast';
+  el.textContent = msg;
+  toastContainer.appendChild(el);
+  setTimeout(() => el.remove(), 4500);
+}
+
 function showCanvasError(msg: string) {
   setCanvasSize(window.innerWidth, window.innerHeight);
   ctx.fillStyle = '#fff';
@@ -623,6 +632,7 @@ async function init() {
   const todayNoon = effectiveToday;
   let date = todayNoon;
   let parsed: ParsedLevel | null = null;
+  let dateParamFailed = false;
 
   if (dateParam) {
     const requested = new Date(`${dateParam}T12:00:00`);
@@ -630,6 +640,7 @@ async function init() {
       parsed = await loadLevel(requested, effectiveToday);
       date = requested;
     } catch {
+      dateParamFailed = true;
       window.history.replaceState(null, '', window.location.pathname);
     }
   }
@@ -637,6 +648,7 @@ async function init() {
   if (!parsed) {
     try {
       parsed = await loadLevel(todayNoon, effectiveToday);
+      if (dateParamFailed) showToast("Couldn't load requested level — loaded today's level instead");
     } catch {
       const searchLower = new Date('2026-07-01T12:00:00');
       const searchUpper = new Date(effectiveToday.getTime() - 86400000);
@@ -658,8 +670,9 @@ async function init() {
             const p = new URLSearchParams(window.location.search);
             p.set('date', formatDate(bestDate));
             window.history.replaceState(null, '', `?${p}`);
-            document.getElementById('toast')!.removeAttribute('hidden');
-            setTimeout(() => document.getElementById('toast')!.setAttribute('hidden', ''), 4500);
+            showToast(dateParamFailed
+              ? "Couldn't load requested level or today's level — loaded latest published level instead"
+              : "Couldn't load today's level — loaded latest published level instead");
           } catch { /* fall through to error */ }
         }
       }

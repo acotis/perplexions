@@ -54,11 +54,20 @@ body {
   cursor: pointer;
 }
 
-#toast {
+#toast-container {
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.toast {
   background: #444;
   color: #fff;
   padding: 0.6em 1.4em;
@@ -66,21 +75,18 @@ body {
   font-size: 0.9rem;
   white-space: nowrap;
   border-radius: 0 0 8px 8px;
-  z-index: 20;
-  pointer-events: none;
+  animation: toast-show 4.5s ease-in-out forwards;
 }
 
-#toast[hidden] { display: none; }
+.toast:not(:first-child) {
+  border-radius: 8px;
+}
 
 @keyframes toast-show {
-  0%   { transform: translateX(-50%) translateY(-100%); opacity: 1; }
-  9%   { transform: translateX(-50%) translateY(0);     opacity: 1; }
-  80%  { transform: translateX(-50%) translateY(0);     opacity: 1; }
-  100% { transform: translateX(-50%) translateY(-100%); opacity: 0; }
-}
-
-#toast:not([hidden]) {
-  animation: toast-show 4.5s ease-in-out forwards;
+  0%   { transform: translateY(-100%); opacity: 1; }
+  9%   { transform: translateY(0);     opacity: 1; }
+  80%  { transform: translateY(0);     opacity: 1; }
+  100% { transform: translateY(0);     opacity: 0; }
 }
 
 #replay {
