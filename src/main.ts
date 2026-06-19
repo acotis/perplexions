@@ -214,7 +214,7 @@ function buildResultsString(): string {
   const dateLabel = `${date.getFullYear()} ${month} ${date.getDate()}`;
   const dateSlug = formatDate(date);
   const wordEmojis = wordHistory.map(w => WORD_EMOJIS[hashString(`${dateSlug} ${w}`) % WORD_EMOJIS.length]);
-  return [`I solved Perplexions on ${dateLabel} — solution hash: ${wordEmojis.join('')}`, `https://fire.casa/perplexions/?date=${dateSlug}`].join('\n');
+  return [`Perplexions ${dateLabel} — ${wordEmojis.join(' ')}`, `https://fire.casa/perplexions/?date=${dateSlug}`].join('\n');
 }
 
 copyBtn.addEventListener('click', () => {
