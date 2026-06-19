@@ -1,0 +1,11 @@
+
+add credits:
+    game created by — me
+    with thanks to
+        rose thomas
+        eric tiano
+        lexi a kovacs
+        walrusesareawesome
+    for playtesting and suggestions
+    rose also created the i know level
+
