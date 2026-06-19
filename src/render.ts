@@ -171,6 +171,23 @@ function drawTile(
   ctx.fillText(tile.letter.toUpperCase(), px + TILE_SIZE / 2, py + TILE_SIZE / 2 + fontSize * 0.075 + PITCH * 0.01);
 }
 
+export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout, emojis: string) {
+  const floorY = layout.offsetY + layout.maxY * PITCH + TILE_SIZE + (TILE_SIZE * 0.4 + PITCH * 0.05) * 0.65;
+  const floorX1 = layout.offsetX - TILE_SIZE / 6 - PITCH * 0.2;
+  const fontSize = PITCH / 3;
+  ctx.save();
+  ctx.font = `${fontSize}px sans-serif`;
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'top';
+  let x = floorX1 + PITCH / 5;
+  const y = floorY + TILE_SIZE * 0.75 - PITCH / 6 - PITCH / 10;
+  for (const emoji of emojis) {
+    ctx.fillText(emoji, x, y);
+    x += ctx.measureText(emoji).width + PITCH / 20;
+  }
+  ctx.restore();
+}
+
 export function render(
   ctx: CanvasRenderingContext2D,
   tiles: Tile[],

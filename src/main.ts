@@ -1,9 +1,11 @@
 import './style.css';
 import { loadWords } from './words';
 import { loadLevel, levelFileExists, formatDate, applyGravity } from './level';
-import { randomLevelColor, computeLayout, tileAtPixel, tilePixelX, tilePixelY, render, setPitch, TILE_SIZE, GAP } from './render';
+import { randomLevelColor, computeLayout, tileAtPixel, tilePixelX, tilePixelY, render, drawHashEmojis, setPitch, TILE_SIZE, GAP } from './render';
 import type { Tile, ParsedLevel } from './level';
 import type { GridLayout, Color, SplashState } from './render';
+
+const SHOW_EMOJI_HASH = true;
 
 const GRAVITY_TILES_PER_S2 = 3000 / 64;
 
@@ -137,6 +139,7 @@ function renderFrame(now = performance.now(), overrides: Parameters<typeof rende
     splashes: activeSplashStates(now),
     ...overrides,
   });
+  if (SHOW_EMOJI_HASH && wordHistory.length > 0 && layout) drawHashEmojis(ctx, layout, buildEmojiHash());
   drawDateLabel();
   if (history.length > 0 && !levelComplete) drawUndoHint();
 }
