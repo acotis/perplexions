@@ -185,6 +185,9 @@ export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout
     ctx.fillText(emoji, x, y);
     x += ctx.measureText(emoji).width + PITCH / 20;
   }
+  ctx.font = `${fontSize * 0.6}px sans-serif`;
+  ctx.fillStyle = '#aaa';
+  ctx.fillText('← hash', x + PITCH / 40, y + fontSize * 0.25);
   ctx.restore();
 }
 

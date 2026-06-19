@@ -139,7 +139,7 @@ function renderFrame(now = performance.now(), overrides: Parameters<typeof rende
     splashes: activeSplashStates(now),
     ...overrides,
   });
-  if (showEmojiHash && wordHistory.length > 0 && layout) drawHashEmojis(ctx, layout, buildEmojiHash());
+  if (showEmojiHash && layout) drawHashEmojis(ctx, layout, buildEmojiHash());
   drawDateLabel();
   if (history.length > 0 && !levelComplete) drawUndoHint();
 }
