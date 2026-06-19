@@ -5,7 +5,7 @@ import { randomLevelColor, computeLayout, tileAtPixel, tilePixelX, tilePixelY, r
 import type { Tile, ParsedLevel } from './level';
 import type { GridLayout, Color, SplashState } from './render';
 
-const SHOW_EMOJI_HASH = true;
+let showEmojiHash = false;
 
 const GRAVITY_TILES_PER_S2 = 3000 / 64;
 
@@ -139,7 +139,7 @@ function renderFrame(now = performance.now(), overrides: Parameters<typeof rende
     splashes: activeSplashStates(now),
     ...overrides,
   });
-  if (SHOW_EMOJI_HASH && wordHistory.length > 0 && layout) drawHashEmojis(ctx, layout, buildEmojiHash());
+  if (showEmojiHash && wordHistory.length > 0 && layout) drawHashEmojis(ctx, layout, buildEmojiHash());
   drawDateLabel();
   if (history.length > 0 && !levelComplete) drawUndoHint();
 }
@@ -204,6 +204,13 @@ function hideEndCard() {
 }
 
 document.getElementById('replay')!.addEventListener('click', () => {
+  if (currentParsedLevel && currentLevelDate) {
+    startLevel(currentParsedLevel, currentLevelDate);
+    showEmojiHash = true;
+  }
+});
+
+document.getElementById('replay-no-hash')!.addEventListener('click', () => {
   if (currentParsedLevel && currentLevelDate) startLevel(currentParsedLevel, currentLevelDate);
 });
 
@@ -631,6 +638,7 @@ function startLevel(parsed: ParsedLevel, date: Date) {
   console.log(`rgb(${color.r}, ${color.g}, ${color.b}) — least: ${least} — distance: ${dist} — luma: ${luma}`);
   history = [];
   wordHistory = [];
+  showEmojiHash = false;
   chain = [];
   hoveredTile = null;
   levelComplete = false;
