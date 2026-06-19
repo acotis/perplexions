@@ -54,6 +54,35 @@ body {
   cursor: pointer;
 }
 
+#toast {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #444;
+  color: #fff;
+  padding: 0.6em 1.4em;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  border-radius: 0 0 8px 8px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+#toast[hidden] { display: none; }
+
+@keyframes toast-show {
+  0%   { transform: translateX(-50%) translateY(-100%); opacity: 1; }
+  9%   { transform: translateX(-50%) translateY(0);     opacity: 1; }
+  80%  { transform: translateX(-50%) translateY(0);     opacity: 1; }
+  100% { transform: translateX(-50%) translateY(-100%); opacity: 0; }
+}
+
+#toast:not([hidden]) {
+  animation: toast-show 4.5s ease-in-out forwards;
+}
+
 #replay {
   font-size: 0.75rem;
   padding: 0.4em 1em;

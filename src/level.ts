@@ -61,9 +61,9 @@ export async function levelFileExists(date: Date): Promise<boolean> {
   }
 }
 
-export async function loadLevel(date: Date): Promise<ParsedLevel> {
-  const now = new Date();
-  const todayNoon = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12);
+export async function loadLevel(date: Date, referenceDate?: Date): Promise<ParsedLevel> {
+  const ref = referenceDate ?? new Date();
+  const todayNoon = new Date(ref.getFullYear(), ref.getMonth(), ref.getDate(), 12);
   if (date.getTime() > todayNoon.getTime()) throw new Error(`Level not found: ${formatDate(date)}`);
   const response = await fetch(import.meta.env.BASE_URL + `levels/${formatDate(date)}.txt`);
   if (!response.ok || isHtmlFallback(response)) throw new Error(`Level not found: ${formatDate(date)}`);
