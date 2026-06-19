@@ -168,7 +168,7 @@ function addSplash(x: number, y: number, duration: number, maxRadius: number) {
 
 const endCard = document.getElementById('end-card')!;
 const copyBtn = document.getElementById('copy-results') as HTMLButtonElement;
-const debugResults = document.getElementById('debug-results') as HTMLPreElement;
+const solutionHashEmojis = document.getElementById('solution-hash-emojis') as HTMLSpanElement;
 
 function buildResultsString(): string {
   const date = currentLevelDate ?? new Date();
@@ -185,8 +185,13 @@ copyBtn.addEventListener('click', () => {
   copyBtn.textContent = 'Copied!';
 });
 
+function buildEmojiHash(): string {
+  const dateSlug = formatDate(currentLevelDate ?? new Date());
+  return wordHistory.map(w => WORD_EMOJIS[hashString(`${dateSlug} ${w}`) % WORD_EMOJIS.length]).join('');
+}
+
 function showEndCard() {
-  debugResults.textContent = buildResultsString();
+  solutionHashEmojis.textContent = buildEmojiHash();
   endCard.removeAttribute('hidden');
 }
 function hideEndCard() {
