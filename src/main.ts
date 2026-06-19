@@ -89,11 +89,14 @@ function drawUndoHint() {
   const textW = ctx.measureText('undo').width;
   const startX = canvasW * 0.95 - iconW - gap - textW;
   const centerY = canvasH * 0.925;
-  ctx.drawImage(undoHintIcon, startX, centerY - iconH / 2, iconW, iconH);
+  const textX = startX + iconW + gap;
+  ctx.drawImage(undoHintIcon, startX - iconW * 0.125, centerY - iconH / 2, iconW, iconH);
   ctx.fillStyle = '#aaa';
   ctx.textAlign = 'left';
   ctx.textBaseline = 'middle';
-  ctx.fillText('undo', startX + iconW + gap, centerY);
+  ctx.fillText('undo', textX, centerY);
+  const pad = fontSize * 0.3;
+  undoTextHit = { x: textX - pad, y: centerY - fontSize / 2 - pad, w: textW + pad * 2, h: fontSize + pad * 2 };
   ctx.restore();
 }
 
@@ -119,6 +122,7 @@ let currentLevelDate: Date | null = null;
 let clearedOnStr: string = '';
 let leftChevronHit: { x: number; y: number; w: number; h: number } | null = null;
 let rightChevronHit: { x: number; y: number; w: number; h: number } | null = null;
+let undoTextHit: { x: number; y: number; w: number; h: number } | null = null;
 let hasPrevLevel = false;
 let hasNextLevel = false;
 
@@ -143,6 +147,7 @@ function renderFrame(now = performance.now(), overrides: Parameters<typeof rende
   });
   if (showEmojiHash && layout) drawHashEmojis(ctx, layout, buildEmojiHash());
   drawDateLabel();
+  undoTextHit = null;
   if (history.length > 0 && !levelComplete) drawUndoHint();
 }
 
@@ -319,6 +324,7 @@ canvas.addEventListener('mousedown', e => {
   cursorY = e.clientY - rect.top;
   if (leftChevronHit && hitTest(leftChevronHit, cursorX, cursorY)) { navigateByDays(-1); return; }
   if (rightChevronHit && hitTest(rightChevronHit, cursorX, cursorY)) { navigateByDays(1); return; }
+  if (undoTextHit && hitTest(undoTextHit, cursorX, cursorY)) { undo(); return; }
   if (animating || levelComplete || !layout) return;
   const hit = tileAtPixel(tiles, cursorX, cursorY, layout);
   if (hit) {
@@ -333,7 +339,8 @@ window.addEventListener('mousemove', e => {
   cursorX = e.clientX - rect.left;
   cursorY = e.clientY - rect.top;
   const overChevron = (leftChevronHit && hitTest(leftChevronHit, cursorX, cursorY)) ||
-                      (rightChevronHit && hitTest(rightChevronHit, cursorX, cursorY));
+                      (rightChevronHit && hitTest(rightChevronHit, cursorX, cursorY)) ||
+                      (undoTextHit && hitTest(undoTextHit, cursorX, cursorY));
   canvas.style.cursor = overChevron ? 'pointer' : '';
   if (animating || levelComplete || !layout) return;
 
@@ -415,6 +422,7 @@ canvas.addEventListener('touchstart', e => {
   cursorY = touch.clientY - rect.top;
   if (leftChevronHit && hitTest(leftChevronHit, cursorX, cursorY)) { navigateByDays(-1); return; }
   if (rightChevronHit && hitTest(rightChevronHit, cursorX, cursorY)) { navigateByDays(1); return; }
+  if (undoTextHit && hitTest(undoTextHit, cursorX, cursorY)) { undo(); return; }
   if (animating || levelComplete || !layout) return;
   const hit = tileAtPixel(tiles, cursorX, cursorY, layout);
   if (hit) { chain = [hit]; hoveredTile = null; redraw(); }
