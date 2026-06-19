@@ -223,9 +223,9 @@ copyBtn.addEventListener('click', () => {
   copyBtn.textContent = 'Copied!';
 });
 
-function buildEmojiHash(): string {
+function buildEmojiHash(): string[] {
   const dateSlug = formatDate(currentLevelDate ?? new Date());
-  return wordHistory.map(w => WORD_EMOJIS[hashString(`${dateSlug} ${w}`) % WORD_EMOJIS.length]).join('');
+  return wordHistory.map(w => WORD_EMOJIS[hashString(`${dateSlug} ${w}`) % WORD_EMOJIS.length]);
 }
 
 function showEndCard() {
@@ -234,7 +234,7 @@ function showEndCard() {
     updateLevelRecord(currentLevelDate, { cleared: slug });
     clearedOnStr = clearedOnLabel(slug);
   }
-  solutionHashEmojis.textContent = buildEmojiHash();
+  solutionHashEmojis.textContent = buildEmojiHash().join('');
   const { r, g, b } = color;
   const luma = 0.299 * r + 0.587 * g + 0.114 * b;
   copyBtn.style.backgroundColor = `rgb(${r},${g},${b})`;
@@ -612,10 +612,26 @@ function hashString(s: string): number {
 }
 
 const WORD_EMOJIS = [
-  '🍎','🍊','🍋','🍇','🍓','🍒','🥝','🍑',
-  '🌸','🌻','🌈','⭐','🔥','💧','🌊','🍀',
-  '🦋','🐝','🦜','🐬','🦁','🐸','🦊','🐧',
-  '🎯','🎲','🎸','🎺','🏆','💎','🔮','🌙',
+  // faces/emotions/gestures
+  '🔥','💭','✅','😏','🤭','😂','🥺','🙂‍↔️','😭','😶','🙄','😬','🤧','😩','✊','👈','👉','👆','👇','🙂‍↕️',
+  // people/things
+  '🧚','👕','😎',
+  // animals
+  '🐱','🦊','🐰','🐭','🐸','🐦','🐣','🙉','🙊','🙈','🪿','🦆','🦅','🦉','🦇','🐝','🪱','🐛','🦋','🐌','🐞','🪲','🪳','🦗','🐙','🐍','🪼','🦐','🐠','🐟','🦀','🐅','🦒','🐑','🐖','🐈','🪶','🐓','🪽','🦃','🦜',
+  // plants/nature
+  '🌳','🍄','🪹','🪺','🍂','🍁','🌵','🌱','🍃','🌺','🌹',
+  // space/weather
+  '🌕','🌑','⭐','☀️','☄️','🌧️','⛈️','💦','☂️',
+  // food
+  '🍎','🍊','🍋','🍇','🍑','🍆','🍌','🥬','🫑','🥕','🌽','🧅','🦴','🥫','🧁','🍦','🍨','🍭','🎂','🫘','🍷',
+  // sports/games/tools/objects
+  '⚽','🏀','🏈','⚾','🎾','🏹','🎣','🪁','🎱','🏆','🧩','🎷','🚀','🛸','⛏️','🪛','💎','💊','🧼','🔑','🪄','📌','✏️',
+  // hearts
+  '🩷','❤️','🧡','💛','💚','🩵','💙','💜','🩶','🤍','🤎',
+  // symbols
+  '▶️','⏸️','⏹️','🎵','⬜','🟠','🟦','🟥','🟫','🟣','🟩','🟨','🕒','🕣',
+  // additions
+  '🍓','🍒','🥝','🌻','🌈','🍀','🐧','🎯','🎲','🔮',
 ];
 
 function dateSeed(date: Date): number {
