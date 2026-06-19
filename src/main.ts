@@ -110,6 +110,7 @@ let cursorY = 0;
 let animating = false;
 let levelComplete = false;
 let history: Tile[][] = [];
+let wordHistory: string[] = [];
 let currentParsedLevel: ParsedLevel | null = null;
 let currentLevelDate: Date | null = null;
 let leftChevronHit: { x: number; y: number; w: number; h: number } | null = null;
@@ -172,7 +173,8 @@ copyBtn.addEventListener('click', () => {
   const month = date.toLocaleString('en-US', { month: 'short' });
   const dateLabel = `${date.getFullYear()} ${month} ${date.getDate()}`;
   const dateSlug = formatDate(date);
-  navigator.clipboard.writeText(`I solved Perplexions on ${dateLabel}!\nhttps://fire.casa/perplexions/?date=${dateSlug}`);
+  const lines = [`I solved Perplexions on ${dateLabel}!`, `https://fire.casa/perplexions/?date=${dateSlug}`, ...wordHistory];
+  navigator.clipboard.writeText(lines.join('\n'));
   copyBtn.style.width = `${copyBtn.offsetWidth}px`;
   copyBtn.textContent = 'Copied!';
 });
@@ -297,6 +299,7 @@ window.addEventListener('mouseup', () => {
   const word = chain.map(t => t.letter).join('');
   if (words.has(word)) {
     history.push(tiles);
+    wordHistory.push(chain.map(t => `${t.x + 1},${t.y + 1}`).join(' - '));
     const removed = new Set(chain);
     tiles = tiles.filter(t => !removed.has(t));
     chain = [];
@@ -313,6 +316,7 @@ window.addEventListener('mouseup', () => {
 function undo() {
   if (animating || history.length === 0) return;
   tiles = history.pop()!;
+  wordHistory.pop();
   levelComplete = false;
   hideEndCard();
   chain = [];
@@ -374,6 +378,7 @@ canvas.addEventListener('touchend', e => {
   const word = chain.map(t => t.letter).join('');
   if (words.has(word)) {
     history.push(tiles);
+    wordHistory.push(chain.map(t => `${t.x + 1},${t.y + 1}`).join(' - '));
     const removed = new Set(chain);
     tiles = tiles.filter(t => !removed.has(t));
     chain = [];
@@ -597,6 +602,7 @@ function startLevel(parsed: ParsedLevel, date: Date) {
   const luma = Math.round(0.299 * color.r + 0.587 * color.g + 0.114 * color.b);
   console.log(`rgb(${color.r}, ${color.g}, ${color.b}) — least: ${least} — distance: ${dist} — luma: ${luma}`);
   history = [];
+  wordHistory = [];
   chain = [];
   hoveredTile = null;
   levelComplete = false;
