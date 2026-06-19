@@ -226,7 +226,7 @@ function checkNextLevel() {
 function navigateByDays(delta: number) {
   const base = currentLevelDate ?? today;
   const date = new Date(base.getTime() + delta * 86400000);
-  loadLevel(date, effectiveToday).then(parsed => startLevel(parsed, date)).catch(() => {
+  loadLevel(date).then(parsed => startLevel(parsed, date)).catch(() => {
     if (delta < 0) hasPrevLevel = false;
     if (delta > 0) hasNextLevel = false;
     redraw();
@@ -510,12 +510,9 @@ window.addEventListener('pageshow', e => { if (e.persisted) onResize(); });
 
 // --- init ---
 
-const params = new URLSearchParams(window.location.search);
-const dateParam = params.get('date');
+const dateParam = new URLSearchParams(window.location.search).get('date');
 const today = new Date();
-const effectiveToday = params.has('today')
-  ? new Date(`${params.get('today')}T12:00:00`)
-  : new Date(today.getFullYear(), today.getMonth(), today.getDate(), 12);
+const effectiveToday = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 12);
 
 function dateSeed(date: Date): number {
   const s = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
@@ -637,7 +634,7 @@ async function init() {
   if (dateParam) {
     const requested = new Date(`${dateParam}T12:00:00`);
     try {
-      parsed = await loadLevel(requested, effectiveToday);
+      parsed = await loadLevel(requested);
       date = requested;
     } catch {
       dateParamFailed = true;
@@ -647,7 +644,7 @@ async function init() {
 
   if (!parsed) {
     try {
-      parsed = await loadLevel(todayNoon, effectiveToday);
+      parsed = await loadLevel(todayNoon);
       if (dateParamFailed) showToast("Couldn't load requested level — loaded today's level instead");
     } catch {
       const searchLower = new Date('2026-07-01T12:00:00');
@@ -665,7 +662,7 @@ async function init() {
         if (best >= 0) {
           const bestDate = new Date(searchLower.getTime() + best * 86400000);
           try {
-            parsed = await loadLevel(bestDate, effectiveToday);
+            parsed = await loadLevel(bestDate);
             date = bestDate;
             const p = new URLSearchParams(window.location.search);
             p.set('date', formatDate(bestDate));
