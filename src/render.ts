@@ -181,13 +181,16 @@ export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout
   ctx.textBaseline = 'top';
   let x = floorX1 + fontSize * 0.85;
   const y = floorY + fontSize * 12.6 / 11;
+  ctx.font = `${fontSize * 0.6}px sans-serif`;
+  ctx.fillStyle = '#aaa';
+  ctx.fillText('Hash:', x, y + fontSize * 0.15);
+  x += ctx.measureText('Hash:').width + fontSize * 0.25;
+  ctx.font = `${fontSize}px sans-serif`;
+  ctx.fillStyle = '#000';
   for (const emoji of emojis) {
     ctx.fillText(emoji, x, y);
     x += ctx.measureText(emoji).width + fontSize * 0.15;
   }
-  ctx.font = `${fontSize * 0.6}px sans-serif`;
-  ctx.fillStyle = '#aaa';
-  ctx.fillText('← hash', x + fontSize * 0.075, y + fontSize * 0.15);
   ctx.restore();
 }
 
