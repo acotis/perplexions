@@ -6,6 +6,7 @@ import type { Tile, ParsedLevel } from './level';
 import type { GridLayout, Color, SplashState } from './render';
 
 let showEmojiHash = false;
+const sessionHashFlags = new Map<string, boolean>();
 
 const GRAVITY_TILES_PER_S2 = 3000 / 64;
 
@@ -174,7 +175,6 @@ const STORAGE_PREFIX = 'perplexions-';
 
 interface LevelRecord {
   cleared?: string;
-  showHash?: boolean;
 }
 
 function clearedOnLabel(dateSlug: string): string {
@@ -248,7 +248,7 @@ document.getElementById('replay')!.addEventListener('click', () => {
   if (currentParsedLevel && currentLevelDate) {
     startLevel(currentParsedLevel, currentLevelDate);
     showEmojiHash = true;
-    updateLevelRecord(currentLevelDate, { showHash: true });
+    sessionHashFlags.set(formatDate(currentLevelDate), true);
   }
 });
 
@@ -256,7 +256,7 @@ document.getElementById('replay-no-hash')!.addEventListener('click', () => {
   if (currentParsedLevel && currentLevelDate) {
     startLevel(currentParsedLevel, currentLevelDate);
     showEmojiHash = false;
-    updateLevelRecord(currentLevelDate, { showHash: false });
+    sessionHashFlags.set(formatDate(currentLevelDate), false);
   }
 });
 
@@ -691,9 +691,8 @@ function startLevel(parsed: ParsedLevel, date: Date) {
   console.log(`rgb(${color.r}, ${color.g}, ${color.b}) — least: ${least} — distance: ${dist} — luma: ${luma}`);
   history = [];
   wordHistory = [];
-  const record = getLevelRecord(date);
-  showEmojiHash = record.showHash ?? false;
-  const storedCleared = record.cleared;
+  showEmojiHash = sessionHashFlags.get(formatDate(date)) ?? false;
+  const storedCleared = getLevelRecord(date).cleared;
   clearedOnStr = storedCleared ? clearedOnLabel(storedCleared) : '';
   chain = [];
   hoveredTile = null;
