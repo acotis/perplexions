@@ -167,6 +167,29 @@ function addSplash(x: number, y: number, duration: number, maxRadius: number) {
   if (!animating) runSplashLoop();
 }
 
+// --- local storage ---
+
+const STORAGE_PREFIX = 'perplexions-';
+
+interface LevelRecord {
+  cleared?: string;
+  showHash?: boolean;
+}
+
+function getLevelRecord(date: Date): LevelRecord {
+  try {
+    const raw = localStorage.getItem(STORAGE_PREFIX + formatDate(date));
+    return raw ? JSON.parse(raw) : {};
+  } catch { return {}; }
+}
+
+function updateLevelRecord(date: Date, updates: Partial<LevelRecord>) {
+  try {
+    const record = getLevelRecord(date);
+    localStorage.setItem(STORAGE_PREFIX + formatDate(date), JSON.stringify({ ...record, ...updates }));
+  } catch {}
+}
+
 // --- level complete ---
 
 const endCard = document.getElementById('end-card')!;
@@ -194,6 +217,9 @@ function buildEmojiHash(): string {
 }
 
 function showEndCard() {
+  if (currentLevelDate && !getLevelRecord(currentLevelDate).cleared) {
+    updateLevelRecord(currentLevelDate, { cleared: formatDate(new Date()) });
+  }
   solutionHashEmojis.textContent = buildEmojiHash();
   const { r, g, b } = color;
   const luma = 0.299 * r + 0.587 * g + 0.114 * b;
@@ -213,11 +239,15 @@ document.getElementById('replay')!.addEventListener('click', () => {
   if (currentParsedLevel && currentLevelDate) {
     startLevel(currentParsedLevel, currentLevelDate);
     showEmojiHash = true;
+    updateLevelRecord(currentLevelDate, { showHash: true });
   }
 });
 
 document.getElementById('replay-no-hash')!.addEventListener('click', () => {
-  if (currentParsedLevel && currentLevelDate) startLevel(currentParsedLevel, currentLevelDate);
+  if (currentParsedLevel && currentLevelDate) {
+    startLevel(currentParsedLevel, currentLevelDate);
+    updateLevelRecord(currentLevelDate, { showHash: false });
+  }
 });
 
 // --- input ---
@@ -740,6 +770,7 @@ async function init() {
 
   words = await wordsPromise;
   startLevel(parsed, date);
+  if (getLevelRecord(date).showHash) showEmojiHash = true;
 }
 
 init();
