@@ -179,15 +179,15 @@ export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout
   ctx.font = `${fontSize}px sans-serif`;
   ctx.textAlign = 'left';
   ctx.textBaseline = 'top';
-  let x = floorX1 + PITCH / 5;
-  const y = floorY + TILE_SIZE * 0.75 - PITCH / 6 - PITCH / 10;
+  let x = floorX1 + fontSize * 0.85;
+  const y = floorY + fontSize * 12.6 / 11;
   for (const emoji of emojis) {
     ctx.fillText(emoji, x, y);
     x += ctx.measureText(emoji).width + fontSize * 0.15;
   }
   ctx.font = `${fontSize * 0.6}px sans-serif`;
   ctx.fillStyle = '#aaa';
-  ctx.fillText('← hash', x + fontSize * 0.075, y + fontSize * 0.25);
+  ctx.fillText('← hash', x + fontSize * 0.075, y + fontSize * 0.15);
   ctx.restore();
 }
 
