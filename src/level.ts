@@ -52,10 +52,16 @@ function isHtmlFallback(r: Response): boolean {
   return (r.headers.get('content-type') ?? '').includes('text/html');
 }
 
+const existsCache = new Map<string, boolean>();
+
 export async function levelFileExists(date: Date): Promise<boolean> {
+  const key = formatDate(date);
+  if (existsCache.has(key)) return existsCache.get(key)!;
   try {
-    const r = await fetch(import.meta.env.BASE_URL + `levels/${formatDate(date)}.txt`, { method: 'HEAD' });
-    return r.ok && !isHtmlFallback(r);
+    const r = await fetch(import.meta.env.BASE_URL + `levels/${key}.txt`, { method: 'HEAD' });
+    const result = r.ok && !isHtmlFallback(r);
+    existsCache.set(key, result);
+    return result;
   } catch {
     return false;
   }
@@ -67,5 +73,6 @@ export async function loadLevel(date: Date): Promise<ParsedLevel> {
   if (date.getTime() > todayNoon.getTime()) throw new Error(`Level not found: ${formatDate(date)}`);
   const response = await fetch(import.meta.env.BASE_URL + `levels/${formatDate(date)}.txt`);
   if (!response.ok || isHtmlFallback(response)) throw new Error(`Level not found: ${formatDate(date)}`);
+  existsCache.set(formatDate(date), true);
   return parseLevel(await response.text());
 }

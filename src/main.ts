@@ -209,6 +209,7 @@ function checkPrevLevel() {
   levelFileExists(prev).then(exists => {
     hasPrevLevel = exists;
     if (levelNumCols) redraw();
+    if (exists) levelFileExists(new Date(prev.getTime() - 86400000));
   });
 }
 
@@ -220,6 +221,7 @@ function checkNextLevel() {
   levelFileExists(next).then(exists => {
     hasNextLevel = exists;
     if (levelNumCols) redraw();
+    if (exists) levelFileExists(new Date(next.getTime() + 86400000));
   });
 }
 
