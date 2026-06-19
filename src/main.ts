@@ -228,7 +228,10 @@ function checkNextLevel() {
 function navigateByDays(delta: number) {
   const base = currentLevelDate ?? today;
   const date = new Date(base.getTime() + delta * 86400000);
-  loadLevel(date).then(parsed => startLevel(parsed, date)).catch(() => {
+  loadLevel(date).then(parsed => {
+    startLevel(parsed, date);
+    window.history.pushState(null, '', `?date=${formatDate(date)}`);
+  }).catch(() => {
     if (delta < 0) hasPrevLevel = false;
     if (delta > 0) hasNextLevel = false;
     redraw();
@@ -509,6 +512,11 @@ new ResizeObserver(onResize).observe(document.documentElement);
 window.addEventListener('resize', onResize);
 window.visualViewport?.addEventListener('resize', onResize);
 window.addEventListener('pageshow', e => { if (e.persisted) onResize(); });
+window.addEventListener('popstate', () => {
+  const param = new URLSearchParams(window.location.search).get('date');
+  const date = param ? new Date(`${param}T12:00:00`) : effectiveToday;
+  loadLevel(date).then(parsed => startLevel(parsed, date));
+});
 
 // --- init ---
 
