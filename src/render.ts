@@ -180,7 +180,7 @@ export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout
   ctx.textAlign = 'left';
   ctx.textBaseline = 'top';
   let x = floorX1 + fontSize * 0.85;
-  const y = floorY + fontSize * 12.6 / 11;
+  const y = floorY + fontSize * 12.05 / 11;
   ctx.font = `${fontSize * 0.6}px sans-serif`;
   ctx.fillStyle = '#aaa';
   ctx.fillText('Hash:', x, y + fontSize * 0.15);
