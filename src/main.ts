@@ -255,6 +255,7 @@ document.getElementById('replay')!.addEventListener('click', () => {
 document.getElementById('replay-no-hash')!.addEventListener('click', () => {
   if (currentParsedLevel && currentLevelDate) {
     startLevel(currentParsedLevel, currentLevelDate);
+    showEmojiHash = false;
     updateLevelRecord(currentLevelDate, { showHash: false });
   }
 });
@@ -690,8 +691,9 @@ function startLevel(parsed: ParsedLevel, date: Date) {
   console.log(`rgb(${color.r}, ${color.g}, ${color.b}) — least: ${least} — distance: ${dist} — luma: ${luma}`);
   history = [];
   wordHistory = [];
-  showEmojiHash = false;
-  const storedCleared = getLevelRecord(date).cleared;
+  const record = getLevelRecord(date);
+  showEmojiHash = record.showHash ?? false;
+  const storedCleared = record.cleared;
   clearedOnStr = storedCleared ? clearedOnLabel(storedCleared) : '';
   chain = [];
   hoveredTile = null;
@@ -788,7 +790,6 @@ async function init() {
 
   words = await wordsPromise;
   startLevel(parsed, date);
-  if (getLevelRecord(date).showHash) showEmojiHash = true;
 }
 
 init();
