@@ -299,7 +299,7 @@ window.addEventListener('mouseup', () => {
   const word = chain.map(t => t.letter).join('');
   if (words.has(word)) {
     history.push(tiles);
-    wordHistory.push(chain.map(t => `${t.x + 1},${t.y + 1}`).join(' - '));
+    wordHistory.push(word.toUpperCase());
     const removed = new Set(chain);
     tiles = tiles.filter(t => !removed.has(t));
     chain = [];
@@ -378,7 +378,7 @@ canvas.addEventListener('touchend', e => {
   const word = chain.map(t => t.letter).join('');
   if (words.has(word)) {
     history.push(tiles);
-    wordHistory.push(chain.map(t => `${t.x + 1},${t.y + 1}`).join(' - '));
+    wordHistory.push(word.toUpperCase());
     const removed = new Set(chain);
     tiles = tiles.filter(t => !removed.has(t));
     chain = [];
