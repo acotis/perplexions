@@ -208,6 +208,27 @@ const endCard = document.getElementById('end-card')!;
 const copyBtn = document.getElementById('copy-results') as HTMLButtonElement;
 const solutionHashEmojis = document.getElementById('solution-hash-emojis') as HTMLSpanElement;
 
+const creditsCard = document.getElementById('credits-card')!;
+const creditsOverlay = document.createElement('div');
+creditsOverlay.id = 'credits-overlay';
+creditsOverlay.style.display = 'none';
+document.body.appendChild(creditsOverlay);
+
+const endCardOverlay = document.createElement('div');
+endCardOverlay.id = 'end-card-overlay';
+endCardOverlay.style.display = 'none';
+document.body.appendChild(endCardOverlay);
+
+document.getElementById('credits-btn')!.addEventListener('click', () => {
+  creditsCard.hidden = false;
+  creditsOverlay.style.display = 'block';
+});
+
+creditsOverlay.addEventListener('click', () => {
+  creditsCard.hidden = true;
+  creditsOverlay.style.display = 'none';
+});
+
 function buildResultsString(): string {
   const date = currentLevelDate ?? new Date();
   const month = date.toLocaleString('en-US', { month: 'short' });
@@ -240,9 +261,11 @@ function showEndCard() {
   copyBtn.style.backgroundColor = `rgb(${r},${g},${b})`;
   copyBtn.style.color = luma > 160 ? '#000' : '#fff';
   endCard.removeAttribute('hidden');
+  endCardOverlay.style.display = 'block';
 }
 function hideEndCard() {
   endCard.setAttribute('hidden', '');
+  endCardOverlay.style.display = 'none';
   copyBtn.style.width = '';
   copyBtn.style.backgroundColor = '';
   copyBtn.style.color = '';
@@ -574,13 +597,20 @@ function updateCanvasLayout() {
 }
 
 const endCardH1 = document.querySelector('#end-card h1') as HTMLElement;
+const solutionHashLabel = document.querySelector('.solution-hash-label') as HTMLElement;
 
 function updateEndCardFontSize() {
-  const maxPx = parseFloat(getComputedStyle(document.documentElement).fontSize) * 2.75;
-  const targetWidth = window.innerWidth * 0.5 * 0.7;
+  const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+  const maxPx = rem * 2.75;
+  const cardWidth = Math.min(Math.max(window.innerWidth * 0.5, 350), window.innerWidth * 0.85);
+  const contentWidth = cardWidth - 4 * rem;
+  const targetWidth = contentWidth * 0.90;
   ctx.font = '100px sans-serif';
   const fitPx = 100 * targetWidth / ctx.measureText('Level cleared!').width;
   endCardH1.style.fontSize = `${Math.min(maxPx, fitPx)}px`;
+  const labelMaxPx = rem * 1.125;
+  const labelFitPx = 100 * contentWidth * 0.80 / ctx.measureText('SOLUTION HASH').width;
+  solutionHashLabel.style.fontSize = `${Math.min(labelMaxPx, labelFitPx)}px`;
 }
 
 function onResize() {
