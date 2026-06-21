@@ -225,8 +225,12 @@ document.getElementById('credits-btn')!.addEventListener('click', () => {
 });
 
 creditsOverlay.addEventListener('click', () => {
-  creditsCard.hidden = true;
   creditsOverlay.style.display = 'none';
+  creditsCard.classList.add('sweeping-out');
+  creditsCard.addEventListener('animationend', () => {
+    creditsCard.hidden = true;
+    creditsCard.classList.remove('sweeping-out');
+  }, { once: true });
 });
 
 function buildResultsString(): string {

@@ -115,6 +115,20 @@ body {
 
 #credits-card[hidden] { display: none; }
 
+#credits-card:not([hidden]):not(.sweeping-out) {
+  animation: drop-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes swoop-out {
+  from { transform: translate(-50%, -40%); opacity: 1; }
+  50%  { opacity: 1; }
+  to   { transform: translate(-50%, -140%); opacity: 0; }
+}
+
+#credits-card.sweeping-out {
+  animation: swoop-out 0.3s cubic-bezier(0.55, 0, 1, 0.45) both;
+}
+
 #credits-overlay {
   position: fixed;
   inset: 0;
