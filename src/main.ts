@@ -46,59 +46,23 @@ function setCanvasSize(w: number, h: number) {
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 };
 
-const undoHintIcon = new Image();
-let undoHintIconLoaded = false;
-undoHintIcon.onload = () => { undoHintIconLoaded = true; };
-undoHintIcon.src = import.meta.env.BASE_URL + 'right-click-icon.svg';
+const undoIcon = new Image();
+let undoIconLoaded = false;
+undoIcon.onload = () => { undoIconLoaded = true; };
+undoIcon.src = import.meta.env.BASE_URL + 'undo.svg';
 
-let hintFirstShownTime: number | null = null;
-let hintFadeComplete = false;
-let hintFadeLoopRunning = false;
-
-function runHintFadeLoop() {
-  if (hintFadeLoopRunning) return;
-  hintFadeLoopRunning = true;
-  function frame() {
-    redraw();
-    if (!hintFadeComplete) requestAnimationFrame(frame);
-    else hintFadeLoopRunning = false;
-  }
-  requestAnimationFrame(frame);
-}
-
-function drawUndoHint() {
-  if (!layout || !undoHintIconLoaded) return;
-
-  let alpha = 1;
-  if (!hintFadeComplete) {
-    const now = performance.now();
-    if (hintFirstShownTime === null) { hintFirstShownTime = now; runHintFadeLoop(); }
-    const elapsed = now - hintFirstShownTime;
-    if (elapsed < 2000) return;
-    if (elapsed < 4000) alpha = (elapsed - 2000) / 2000;
-    else hintFadeComplete = true;
-  }
-
-  const fontSize = 4 * Math.min(canvasW, canvasH) / 100;
-  const iconH = fontSize * 1.5;
-  const iconW = iconH * 87.45 / 129.2;
-  const gap = fontSize * 0.25;
+function drawUndoIcon() {
+  if (!undoIconLoaded) return;
+  const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+  const size = Math.max(Math.min(canvasW, canvasH) * 0.06, 3 * rem);
+  const pad = size * 0.5;
   ctx.save();
-  ctx.globalAlpha = alpha;
-  ctx.font = `${fontSize}px sans-serif`;
-  const textW = ctx.measureText('undo').width;
-  const startX = canvasW * 0.95 - iconW - gap - textW;
-  const centerY = canvasH * 0.925;
-  const textX = startX + iconW + gap;
-  ctx.drawImage(undoHintIcon, startX - iconW * 0.125, centerY - iconH / 2, iconW, iconH);
-  ctx.fillStyle = '#aaa';
-  ctx.textAlign = 'left';
-  ctx.textBaseline = 'middle';
-  ctx.fillText('undo', textX, centerY);
-  const pad = fontSize * 0.3;
-  undoTextHit = { x: textX - pad, y: centerY - fontSize / 2 - pad, w: textW + pad * 2, h: fontSize + pad * 2 };
+  ctx.globalAlpha = 0.35;
+  ctx.drawImage(undoIcon, pad, pad, size, size);
   ctx.restore();
+  undoIconHit = { x: 0, y: 0, w: size + pad * 2, h: size + pad * 2 };
 }
+
 
 setCanvasSize(Math.round(window.innerWidth * 0.9), Math.round(window.innerHeight * 0.70));
 
@@ -122,7 +86,7 @@ let currentLevelDate: Date | null = null;
 let clearedOnStr: string = '';
 let leftChevronHit: { x: number; y: number; w: number; h: number } | null = null;
 let rightChevronHit: { x: number; y: number; w: number; h: number } | null = null;
-let undoTextHit: { x: number; y: number; w: number; h: number } | null = null;
+let undoIconHit: { x: number; y: number; w: number; h: number } | null = null;
 let hasPrevLevel = false;
 let hasNextLevel = false;
 
@@ -147,8 +111,7 @@ function renderFrame(now = performance.now(), overrides: Parameters<typeof rende
   });
   if (showEmojiHash && layout) drawHashEmojis(ctx, layout, buildEmojiHash(), canvasH);
   drawDateLabel();
-  undoTextHit = null;
-  if (history.length > 0 && !levelComplete) drawUndoHint();
+  drawUndoIcon();
 }
 
 function redraw() { renderFrame(); }
@@ -352,7 +315,7 @@ canvas.addEventListener('mousedown', e => {
   cursorY = e.clientY - rect.top;
   if (leftChevronHit && hitTest(leftChevronHit, cursorX, cursorY)) { navigateByDays(-1); return; }
   if (rightChevronHit && hitTest(rightChevronHit, cursorX, cursorY)) { navigateByDays(1); return; }
-  if (undoTextHit && hitTest(undoTextHit, cursorX, cursorY)) { undo(); return; }
+  if (undoIconHit && hitTest(undoIconHit, cursorX, cursorY)) { undo(); return; }
   if (animating || levelComplete || !layout) return;
   const hit = tileAtPixel(tiles, cursorX, cursorY, layout);
   if (hit) {
@@ -368,7 +331,7 @@ window.addEventListener('mousemove', e => {
   cursorY = e.clientY - rect.top;
   const overChevron = (leftChevronHit && hitTest(leftChevronHit, cursorX, cursorY)) ||
                       (rightChevronHit && hitTest(rightChevronHit, cursorX, cursorY)) ||
-                      (undoTextHit && hitTest(undoTextHit, cursorX, cursorY));
+                      (undoIconHit && hitTest(undoIconHit, cursorX, cursorY));
   canvas.style.cursor = overChevron ? 'pointer' : '';
   if (animating || levelComplete || !layout) return;
 
@@ -450,7 +413,7 @@ canvas.addEventListener('touchstart', e => {
   cursorY = touch.clientY - rect.top;
   if (leftChevronHit && hitTest(leftChevronHit, cursorX, cursorY)) { navigateByDays(-1); return; }
   if (rightChevronHit && hitTest(rightChevronHit, cursorX, cursorY)) { navigateByDays(1); return; }
-  if (undoTextHit && hitTest(undoTextHit, cursorX, cursorY)) { undo(); return; }
+  if (undoIconHit && hitTest(undoIconHit, cursorX, cursorY)) { undo(); return; }
   if (animating || levelComplete || !layout) return;
   const hit = tileAtPixel(tiles, cursorX, cursorY, layout);
   if (hit) { chain = [hit]; hoveredTile = null; redraw(); }
@@ -764,8 +727,7 @@ function startLevel(parsed: ParsedLevel, date: Date) {
   hideEndCard();
   splashes = [];
   animating = false;
-  hintFirstShownTime = null;
-  hintFadeComplete = false;
+
   checkPrevLevel();
   checkNextLevel();
   updateCanvasLayout();

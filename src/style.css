@@ -60,6 +60,7 @@ body {
 #copy-results:hover { filter: brightness(0.9125); }
 #copy-results:active { filter: brightness(0.8125); }
 
+
 #credits-btn {
   position: fixed;
   top: 1rem;
