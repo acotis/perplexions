@@ -683,7 +683,7 @@ let dateStr = '';
 
 function drawDateLabel() {
   if (!dateStr) return;
-  const fontSize = 3 * Math.min(canvasW, canvasH) / 100;
+  const fontSize = Math.min(3 * canvasH / 100, 5 * canvasW / 100);
   const centerY = canvasH * 0.925;
   ctx.save();
   ctx.font = `${fontSize}px sans-serif`;
