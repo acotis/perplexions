@@ -57,6 +57,9 @@ body {
   box-shadow: 0 2px 0 rgba(0,0,0,0.12);
 }
 
+#copy-results:hover { filter: brightness(0.9125); }
+#copy-results:active { filter: brightness(0.8125); }
+
 #credits-btn {
   position: fixed;
   top: 1rem;
