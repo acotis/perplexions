@@ -262,6 +262,7 @@ function showEndCard() {
   copyBtn.style.color = luma > 160 ? '#000' : '#fff';
   endCard.removeAttribute('hidden');
   endCardOverlay.style.display = 'block';
+  updateEmojiHashFontSize();
 }
 function hideEndCard() {
   endCard.setAttribute('hidden', '');
@@ -601,7 +602,7 @@ const solutionHashLabel = document.querySelector('.solution-hash-label') as HTML
 
 function updateEndCardFontSize() {
   const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
-  const maxPx = rem * 2.75;
+  const maxPx = rem * 2.475;
   const cardWidth = Math.min(Math.max(window.innerWidth * 0.5, 350), window.innerWidth * 0.85);
   const contentWidth = cardWidth - 4 * rem;
   const targetWidth = contentWidth * 0.90;
@@ -611,6 +612,21 @@ function updateEndCardFontSize() {
   const labelMaxPx = rem * 1.125;
   const labelFitPx = 100 * contentWidth * 0.80 / ctx.measureText('SOLUTION HASH').width;
   solutionHashLabel.style.fontSize = `${Math.min(labelMaxPx, labelFitPx)}px`;
+  updateEmojiHashFontSize(contentWidth);
+}
+
+function updateEmojiHashFontSize(contentWidth?: number) {
+  if (endCard.hasAttribute('hidden')) return;
+  const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+  const cw = contentWidth ?? (Math.min(Math.max(window.innerWidth * 0.5, 350), window.innerWidth * 0.85) - 4 * rem);
+  const maxWidth = cw * 0.90;
+  solutionHashEmojis.style.fontSize = `${rem * 2.2}px`;
+  solutionHashEmojis.style.width = 'max-content';
+  const naturalWidth = solutionHashEmojis.getBoundingClientRect().width;
+  solutionHashEmojis.style.width = '';
+  if (naturalWidth > maxWidth) {
+    solutionHashEmojis.style.fontSize = `${rem * 2.2 * maxWidth / naturalWidth}px`;
+  }
 }
 
 function onResize() {
