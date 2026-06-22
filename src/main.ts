@@ -243,7 +243,7 @@ document.body.appendChild(endCardOverlay);
 
 endCardOverlay.addEventListener('click', () => {
   if (currentParsedLevel && currentLevelDate) {
-    startLevel(currentParsedLevel, currentLevelDate);
+    startLevel(currentParsedLevel, currentLevelDate, hardMode);
   }
 });
 
@@ -370,7 +370,7 @@ function hideEndCard() {
 
 document.getElementById('replay')!.addEventListener('click', () => {
   if (currentParsedLevel && currentLevelDate) {
-    startLevel(currentParsedLevel, currentLevelDate);
+    startLevel(currentParsedLevel, currentLevelDate, hardMode);
   }
 });
 
