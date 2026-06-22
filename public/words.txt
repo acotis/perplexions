@@ -548,7 +548,6 @@ acrostic
 act
 actaeon
 acted
-actes
 actin
 acting
 actings
@@ -1082,7 +1081,6 @@ agean
 aged
 ageing
 ageless
-agen
 agencies
 agency
 agenda
@@ -1182,7 +1180,6 @@ agrippina
 aground
 agua
 aguardiente
-ague
 agues
 aguilar
 aguinaldo
@@ -1914,7 +1911,6 @@ amelius
 amen
 amenable
 amend
-amende
 amended
 amending
 amendment
@@ -3649,7 +3645,6 @@ asteroids
 asters
 asthma
 asthmatic
-asti
 astir
 astley
 astolat
@@ -5404,7 +5399,6 @@ beelzebub
 been
 beer
 beerbohm
-beere
 beermann
 beers
 beersheba
@@ -11484,7 +11478,6 @@ citric
 citron
 citrons
 citrus
-cits
 citt
 citta
 cittie
@@ -16301,7 +16294,6 @@ deemest
 deeming
 deems
 deemster
-deen
 deep
 deepe
 deepen
@@ -16605,7 +16597,6 @@ demanding
 demands
 demarcation
 demdike
-deme
 demean
 demeaned
 demeanor
@@ -16686,7 +16677,6 @@ denbigh
 denby
 dence
 dendroica
-dene
 denham
 denial
 denials
@@ -18848,7 +18838,6 @@ dott
 dotted
 dotting
 dotty
-doty
 douai
 douaumont
 douay
@@ -19823,8 +19812,6 @@ eddy
 eddying
 eddystone
 edelweiss
-edema
-eden
 edessa
 edestone
 edgcumbe
@@ -19897,7 +19884,6 @@ edwy
 eel
 eells
 eels
-eend
 eerie
 efface
 effaced
@@ -20639,7 +20625,6 @@ endanger
 endangered
 endangering
 endangers
-ende
 endear
 endeared
 endearing
@@ -20691,7 +20676,6 @@ endureth
 enduring
 endwise
 endymion
-eneas
 enema
 enemie
 enemies
@@ -20757,7 +20741,6 @@ engineered
 engineering
 engineers
 engines
-engl
 england
 englande
 englander
@@ -21517,7 +21500,6 @@ eudoxia
 eudoxus
 euening
 euergetes
-eugen
 eugene
 eugenia
 eugenic
@@ -21721,6 +21703,7 @@ evora
 evremond
 evreux
 evringham
+ew
 ewaine
 ewe
 ewell
@@ -22887,7 +22870,6 @@ fecund
 fecundation
 fecundity
 fed
-fede
 federal
 federalism
 federalist
@@ -22910,7 +22892,6 @@ feed
 feeder
 feeders
 feedeth
-feedin
 feeding
 feeds
 feel
@@ -26243,7 +26224,6 @@ gleeful
 gleefully
 gleeson
 glegg
-glen
 glenarm
 glenarvan
 glencairn
@@ -30697,6 +30677,7 @@ icicles
 icily
 icing
 icj
+ick
 icon
 iconium
 iconoclasm
@@ -30725,7 +30706,6 @@ ideally
 ideals
 ideas
 ideation
-idee
 idees
 identical
 identically
@@ -36236,7 +36216,6 @@ lights
 lightship
 lightsome
 lightwood
-ligne
 ligneous
 lignite
 ligny
@@ -37689,7 +37668,6 @@ magnetizing
 magneto
 magnets
 magnhild
-magni
 magnificat
 magnification
 magnificence
@@ -39199,8 +39177,6 @@ meddler
 meddles
 meddlesome
 meddling
-mede
-medea
 medecine
 medenham
 medes
@@ -39269,7 +39245,6 @@ medusa
 medusae
 medway
 medwin
-meed
 meehan
 meek
 meeker
@@ -39446,7 +39421,6 @@ mencius
 mend
 mendacious
 mendacity
-mende
 mended
 mendel
 mendelian
@@ -42128,7 +42102,6 @@ nectarine
 nectarines
 nedda
 neddy
-nede
 nedes
 need
 neede
@@ -42162,7 +42135,6 @@ negative
 negatived
 negatively
 negatives
-negl
 neglect
 neglected
 neglectful
@@ -53649,7 +53621,6 @@ sagas
 sage
 sagebrush
 sagely
-sagen
 sages
 sagged
 sagging
@@ -53697,7 +53668,6 @@ saints
 saintsbury
 saintship
 sairmeuse
-sait
 saith
 saka
 sakai
@@ -54103,7 +54073,6 @@ sate
 sated
 satellite
 satellites
-sati
 satiate
 satiated
 satiety
@@ -57291,7 +57260,6 @@ sneaking
 sneaks
 sneaky
 sneck
-sneed
 sneer
 sneered
 sneering
@@ -64033,7 +64001,6 @@ tyde
 tydeus
 tyed
 tying
-tyke
 tyler
 tylor
 tyltyl
@@ -64156,6 +64123,7 @@ ultramarine
 ultramontane
 ulua
 ulysses
+um
 umacr
 umar
 umatilla
@@ -67058,7 +67026,6 @@ waistcoats
 waisted
 waists
 wait
-waite
 waited
 waiter
 waiters
