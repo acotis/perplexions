@@ -241,6 +241,12 @@ endCardOverlay.id = 'end-card-overlay';
 endCardOverlay.style.display = 'none';
 document.body.appendChild(endCardOverlay);
 
+endCardOverlay.addEventListener('click', () => {
+  if (currentParsedLevel && currentLevelDate) {
+    startLevel(currentParsedLevel, currentLevelDate);
+  }
+});
+
 document.getElementById('credits-btn')!.addEventListener('click', () => {
   creditsCard.hidden = false;
   creditsOverlay.style.display = 'block';
