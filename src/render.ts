@@ -187,9 +187,33 @@ function drawTile(
 
   if (!highlighted) {
     const border = TILE_SIZE / 16 * 1.1;
+    const ix = px + border, iy = py + border, iw = size - border * 2, ih = size - border * 2;
     const ibevel = Math.max(bevel - border * (2 - Math.SQRT2), 0);
     ctx.fillStyle = '#fff';
-    fillBeveledRect(ctx, px + border, py + border, size - border * 2, size - border * 2, ibevel);
+    fillBeveledRect(ctx, ix, iy, iw, ih, ibevel);
+
+    if (hardMode) {
+      ctx.save();
+      beveledPath(ctx, ix, iy, iw, ih, ibevel);
+      ctx.clip();
+      ctx.globalAlpha = 0.4;
+      ctx.strokeStyle = rgb(color);
+      ctx.lineWidth = TILE_SIZE * 0.0225;
+      const spacing = TILE_SIZE * 0.135;
+      const o = ih;
+      // Align the pattern so the k=0 stripe lies exactly on the tile's
+      // bottom-left-to-top-right diagonal.
+      const kStart = Math.ceil(-ih / spacing);
+      const kEnd = Math.floor(iw / spacing);
+      ctx.beginPath();
+      for (let k = kStart; k <= kEnd; k++) {
+        const d = k * spacing;
+        ctx.moveTo(ix + d - o, iy + ih + o);
+        ctx.lineTo(ix + d + ih + o, iy - o);
+      }
+      ctx.stroke();
+      ctx.restore();
+    }
   }
 
   const fontSize = TILE_SIZE * 0.525;
