@@ -51,13 +51,39 @@ let undoIconLoaded = false;
 undoIcon.onload = () => { undoIconLoaded = true; };
 undoIcon.src = import.meta.env.BASE_URL + 'undo.svg';
 
+let undoIconFirstShownTime: number | null = null;
+let undoIconFadeComplete = false;
+let undoIconFadeLoopRunning = false;
+
+function runUndoIconFadeLoop() {
+  if (undoIconFadeLoopRunning) return;
+  undoIconFadeLoopRunning = true;
+  function frame() {
+    redraw();
+    if (!undoIconFadeComplete) requestAnimationFrame(frame);
+    else undoIconFadeLoopRunning = false;
+  }
+  requestAnimationFrame(frame);
+}
+
 function drawUndoIcon() {
   if (!undoIconLoaded) return;
   const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
-  const size = Math.max(Math.min(canvasW, canvasH) * 0.06, 3 * rem);
+  const size = Math.max(Math.min(canvasW, canvasH) * 0.06, 2.7 * rem);
   const pad = size * 0.5;
+
+  let alpha = 0.35;
+  if (!undoIconFadeComplete) {
+    const now = performance.now();
+    if (undoIconFirstShownTime === null) { undoIconFirstShownTime = now; runUndoIconFadeLoop(); }
+    const elapsed = now - undoIconFirstShownTime;
+    if (elapsed < 2000) return;
+    if (elapsed < 4000) alpha = 0.35 * (elapsed - 2000) / 2000;
+    else undoIconFadeComplete = true;
+  }
+
   ctx.save();
-  ctx.globalAlpha = 0.35;
+  ctx.globalAlpha = alpha;
   ctx.drawImage(undoIcon, pad, pad, size, size);
   ctx.restore();
   undoIconHit = { x: 0, y: 0, w: size + pad * 2, h: size + pad * 2 };
@@ -111,7 +137,8 @@ function renderFrame(now = performance.now(), overrides: Parameters<typeof rende
   });
   if (showEmojiHash && layout) drawHashEmojis(ctx, layout, buildEmojiHash(), canvasH);
   drawDateLabel();
-  drawUndoIcon();
+  undoIconHit = null;
+  if (history.length > 0 && !levelComplete) drawUndoIcon();
 }
 
 function redraw() { renderFrame(); }
@@ -727,6 +754,8 @@ function startLevel(parsed: ParsedLevel, date: Date) {
   hideEndCard();
   splashes = [];
   animating = false;
+  undoIconFirstShownTime = null;
+  undoIconFadeComplete = false;
 
   checkPrevLevel();
   checkNextLevel();
