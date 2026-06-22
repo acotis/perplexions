@@ -351,6 +351,7 @@ function showEndCard() {
   endCard.removeAttribute('hidden');
   endCardOverlay.style.display = 'block';
   updateEmojiHashFontSize();
+  redraw();
 }
 function hideEndCard() {
   endCard.setAttribute('hidden', '');
@@ -841,7 +842,7 @@ function startLevel(parsed: ParsedLevel, date: Date, forceHardMode?: boolean) {
   history = [];
   wordHistory = [];
   const record = getLevelRecord(date);
-  showEmojiHash = showHashCheckbox.checked && !!record.cleared;
+  showEmojiHash = showHashCheckbox.checked && !!(hardMode ? record.clearedHard : record.cleared);
   clearedOnStr = clearedOnLabelFor(record);
   chain = [];
   hoveredTile = null;
