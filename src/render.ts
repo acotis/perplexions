@@ -221,7 +221,7 @@ export function render(
   ctx.fillRect(floorX1, floorY, floorX2 - floorX1, TILE_SIZE * 0.75);
 
   const linkWidth = PITCH * 0.30 * (hardMode ? 1.75 : 1);
-  const maxLinkLen = PITCH * 1.1 * (hardMode ? 0.5 : 1);
+  const maxLinkLen = PITCH * 1.1 * (hardMode ? 0.5 * 1.1 : 1);
   drawChain(ctx, chain, layout, color, cursorX, cursorY, linkWidth, maxLinkLen);
 
   const highlighted = new Set(chain);
