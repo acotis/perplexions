@@ -48,6 +48,17 @@ body {
   margin: 0;
 }
 
+#hard-mode-tag {
+  margin-top: calc(-1.5rem + 0.2rem);
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(139, 0, 0, 0.55);
+}
+
+#hard-mode-tag[hidden] { display: none; }
+
 #end-card button {
   font-size: 1rem;
   padding: 0.6em 1.4em;

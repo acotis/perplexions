@@ -228,6 +228,7 @@ function updateLevelRecord(date: Date, updates: Partial<LevelRecord>) {
 const endCard = document.getElementById('end-card')!;
 const copyBtn = document.getElementById('copy-results') as HTMLButtonElement;
 const replayHardBtn = document.getElementById('replay-no-hash') as HTMLButtonElement;
+const hardModeTag = document.getElementById('hard-mode-tag') as HTMLParagraphElement;
 const solutionHashEmojis = document.getElementById('solution-hash-emojis') as HTMLSpanElement;
 
 const creditsCard = document.getElementById('credits-card')!;
@@ -354,6 +355,7 @@ function showEndCard() {
   copyBtn.style.color = luma > 160 ? '#000' : '#fff';
   replayHardBtn.textContent = hardMode ? 'Replay in normal mode' : 'Replay in Hard Mode';
   copyBtn.textContent = hardMode ? 'Copy hard-mode results' : 'Copy results';
+  hardModeTag.hidden = !hardMode;
   endCard.removeAttribute('hidden');
   endCardOverlay.style.display = 'block';
   updateEmojiHashFontSize();
@@ -707,6 +709,12 @@ function updateEndCardFontSize() {
   const labelMaxPx = rem * 1.125;
   const labelFitPx = 100 * contentWidth * 0.80 / ctx.measureText('SOLUTION HASH').width;
   solutionHashLabel.style.fontSize = `${Math.min(labelMaxPx, labelFitPx)}px`;
+  const tagMaxPx = rem;
+  const tagText = 'HARD MODE COMPLETE';
+  ctx.font = 'bold 100px sans-serif';
+  const tagWidth = ctx.measureText(tagText).width + tagText.length * 0.08 * 100;
+  const tagFitPx = 100 * contentWidth * 0.80 / tagWidth;
+  hardModeTag.style.fontSize = `${Math.min(tagMaxPx, tagFitPx)}px`;
   updateEmojiHashFontSize(contentWidth);
 }
 
