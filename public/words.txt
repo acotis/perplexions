@@ -6274,6 +6274,7 @@ bindon
 binds
 bindweed
 binet
+bing
 binge
 bingen
 bingham
@@ -30809,7 +30810,6 @@ ikey
 ilands
 ilchester
 ildefonso
-ileum
 ilex
 ilfracombe
 ili
