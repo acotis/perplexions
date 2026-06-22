@@ -98,6 +98,7 @@ export interface RenderOptions {
   cursorY?: number;
   splashes?: SplashState[];
   getTilePixelY?: (tile: Tile) => number;
+  hardMode?: boolean;
 }
 
 function drawSplash(ctx: CanvasRenderingContext2D, splash: SplashState, color: Color) {
@@ -118,6 +119,7 @@ function drawChain(
   cursorX: number,
   cursorY: number,
   lineWidth: number,
+  maxLinkLen: number,
 ) {
   if (chain.length === 0) return;
   ctx.save();
@@ -135,7 +137,7 @@ function drawChain(
   const dx = cursorX - lastCx;
   const dy = cursorY - lastCy;
   const dist = Math.hypot(dx, dy);
-  const clampedDist = Math.min(dist, PITCH);
+  const clampedDist = Math.min(dist, maxLinkLen);
   const endX = dist > 0 ? lastCx + (dx / dist) * clampedDist : lastCx;
   const endY = dist > 0 ? lastCy + (dy / dist) * clampedDist : lastCy;
   ctx.lineTo(endX, endY);
@@ -202,7 +204,7 @@ export function render(
   color: Color,
   options: RenderOptions = {},
 ) {
-  const { hoveredTile = null, chain = [], cursorX = 0, cursorY = 0, splashes = [], getTilePixelY } = options;
+  const { hoveredTile = null, chain = [], cursorX = 0, cursorY = 0, splashes = [], getTilePixelY, hardMode = false } = options;
 
   ctx.fillStyle = '#fff';
   ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
@@ -218,7 +220,9 @@ export function render(
   ctx.fillStyle = grad;
   ctx.fillRect(floorX1, floorY, floorX2 - floorX1, TILE_SIZE * 0.75);
 
-  drawChain(ctx, chain, layout, color, cursorX, cursorY, PITCH * 0.30);
+  const linkWidth = PITCH * 0.30 * (hardMode ? 1.75 : 1);
+  const maxLinkLen = PITCH * 1.1 * (hardMode ? 0.5 : 1);
+  drawChain(ctx, chain, layout, color, cursorX, cursorY, linkWidth, maxLinkLen);
 
   const highlighted = new Set(chain);
   if (hoveredTile) highlighted.add(hoveredTile);

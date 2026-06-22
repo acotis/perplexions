@@ -6,6 +6,7 @@ import type { Tile, ParsedLevel } from './level';
 import type { GridLayout, Color, SplashState } from './render';
 
 let showEmojiHash = false;
+let hardMode = false;
 
 // I am fully aware that the password mechanism here is client-side only and bullshit, but I thought it was funny and so I did it.
 const DEV_SALT = '0a437c5ffac39f35596e10a60cce58e2';
@@ -154,6 +155,7 @@ function renderFrame(now = performance.now(), overrides: Parameters<typeof rende
   render(ctx, tiles, layout, color, {
     hoveredTile, chain, cursorX, cursorY,
     splashes: activeSplashStates(now),
+    hardMode,
     ...overrides,
   });
   if (showEmojiHash && layout) drawHashEmojis(ctx, layout, buildEmojiHash(), canvasH);
@@ -349,13 +351,14 @@ document.getElementById('replay')!.addEventListener('click', () => {
 
 document.getElementById('replay-no-hash')!.addEventListener('click', () => {
   if (currentParsedLevel && currentLevelDate) {
-    startLevel(currentParsedLevel, currentLevelDate);
+    startLevel(currentParsedLevel, currentLevelDate, true);
   }
 });
 
 // --- input ---
 
 function isAdjacent(a: Tile, b: Tile): boolean {
+  if (hardMode) return Math.abs(a.x - b.x) + Math.abs(a.y - b.y) === 1;
   return Math.abs(a.x - b.x) <= 1 && Math.abs(a.y - b.y) <= 1 && (a.x !== b.x || a.y !== b.y);
 }
 
@@ -801,9 +804,10 @@ function drawDateLabel() {
   ctx.restore();
 }
 
-function startLevel(parsed: ParsedLevel, date: Date) {
+function startLevel(parsed: ParsedLevel, date: Date, forceHardMode = false) {
   currentParsedLevel = parsed;
   currentLevelDate = date;
+  hardMode = hardModeCheckbox.checked || forceHardMode;
   const { tiles: loadedTiles, numCols, numRows } = parsed;
   const month = date.toLocaleString('en-US', { month: 'short' });
   dateStr = `Perplexions — ${date.getFullYear()} ${month} ${date.getDate()}`;
