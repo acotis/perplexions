@@ -173,9 +173,37 @@ body {
 }
 
 #settings-card input[type="checkbox"] {
-  margin-top: 0.25em;
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  width: 2.2em;
+  height: 1.2em;
+  margin: calc((1.25em - 1.2em) / 2 + 0.2em) 0 0;
+  border-radius: 0.6em;
+  background: #ccc;
   flex-shrink: 0;
   cursor: pointer;
+  transition: background 0.2s;
+}
+
+#settings-card input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 0.1em;
+  left: 0.1em;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.2s;
+}
+
+#settings-card input[type="checkbox"]:checked {
+  background: #4caf50;
+}
+
+#settings-card input[type="checkbox"]:checked::before {
+  transform: translateX(1em);
 }
 
 #credits-overlay,
