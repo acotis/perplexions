@@ -335,6 +335,7 @@ function showEndCard() {
   copyBtn.style.backgroundColor = `rgb(${r},${g},${b})`;
   copyBtn.style.color = luma > 160 ? '#000' : '#fff';
   replayHardBtn.textContent = hardMode ? 'Replay in normal mode' : 'Replay in Hard Mode';
+  copyBtn.textContent = hardMode ? 'Copy hard-mode results' : 'Copy results';
   endCard.removeAttribute('hidden');
   endCardOverlay.style.display = 'block';
   updateEmojiHashFontSize();
