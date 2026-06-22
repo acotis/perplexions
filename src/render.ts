@@ -172,6 +172,7 @@ function drawTile(
 }
 
 export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout, emojis: string[], canvasH: number) {
+  if (emojis.length === 0) return;
   const floorY = layout.offsetY + layout.maxY * PITCH + TILE_SIZE + (TILE_SIZE * 0.4 + PITCH * 0.05) * 0.65;
   const floorX1 = layout.offsetX - TILE_SIZE / 6 - PITCH * 0.2;
   const fontSize = Math.min(PITCH / 3, canvasH * 0.04);

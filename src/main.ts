@@ -6,7 +6,6 @@ import type { Tile, ParsedLevel } from './level';
 import type { GridLayout, Color, SplashState } from './render';
 
 let showEmojiHash = false;
-const sessionHashFlags = new Map<string, boolean>();
 
 // I am fully aware that the password mechanism here is client-side only and bullshit, but I thought it was funny and so I did it.
 const DEV_SALT = '0a437c5ffac39f35596e10a60cce58e2';
@@ -345,16 +344,12 @@ function hideEndCard() {
 document.getElementById('replay')!.addEventListener('click', () => {
   if (currentParsedLevel && currentLevelDate) {
     startLevel(currentParsedLevel, currentLevelDate);
-    showEmojiHash = true;
-    sessionHashFlags.set(formatDate(currentLevelDate), true);
   }
 });
 
 document.getElementById('replay-no-hash')!.addEventListener('click', () => {
   if (currentParsedLevel && currentLevelDate) {
     startLevel(currentParsedLevel, currentLevelDate);
-    showEmojiHash = false;
-    sessionHashFlags.set(formatDate(currentLevelDate), false);
   }
 });
 
@@ -823,8 +818,8 @@ function startLevel(parsed: ParsedLevel, date: Date) {
   console.log(`rgb(${color.r}, ${color.g}, ${color.b}) — least: ${least} — distance: ${dist} — luma: ${luma}`);
   history = [];
   wordHistory = [];
-  showEmojiHash = sessionHashFlags.get(formatDate(date)) ?? false;
   const storedCleared = getLevelRecord(date).cleared;
+  showEmojiHash = showHashCheckbox.checked && !!storedCleared;
   clearedOnStr = storedCleared ? clearedOnLabel(storedCleared) : '';
   chain = [];
   hoveredTile = null;
