@@ -145,24 +145,51 @@ function drawChain(
   ctx.restore();
 }
 
+function beveledPath(ctx: CanvasRenderingContext2D, x: number, y: number, w: number, h: number, b: number) {
+  ctx.beginPath();
+  if (b <= 0) {
+    ctx.rect(x, y, w, h);
+    return;
+  }
+  ctx.moveTo(x + b, y);
+  ctx.lineTo(x + w - b, y);
+  ctx.lineTo(x + w, y + b);
+  ctx.lineTo(x + w, y + h - b);
+  ctx.lineTo(x + w - b, y + h);
+  ctx.lineTo(x + b, y + h);
+  ctx.lineTo(x, y + h - b);
+  ctx.lineTo(x, y + b);
+  ctx.closePath();
+}
+
+function fillBeveledRect(ctx: CanvasRenderingContext2D, x: number, y: number, w: number, h: number, b: number) {
+  beveledPath(ctx, x, y, w, h, b);
+  ctx.fill();
+}
+
 function drawTile(
   ctx: CanvasRenderingContext2D,
   tile: Tile,
   layout: GridLayout,
   color: Color,
   highlighted: boolean,
+  hardMode: boolean,
   pyOverride?: number,
 ) {
-  const px = tilePixelX(tile, layout);
-  const py = pyOverride ?? tilePixelY(tile, layout);
+  const size = TILE_SIZE * (hardMode ? 1.03 : 1);
+  const offset = (size - TILE_SIZE) / 2;
+  const px = tilePixelX(tile, layout) - offset;
+  const py = (pyOverride ?? tilePixelY(tile, layout)) - offset;
+  const bevel = hardMode ? size * 0.18 : 0;
 
   ctx.fillStyle = rgb(color);
-  ctx.fillRect(px, py, TILE_SIZE, TILE_SIZE);
+  fillBeveledRect(ctx, px, py, size, size, bevel);
 
   if (!highlighted) {
     const border = TILE_SIZE / 16 * 1.1;
+    const ibevel = Math.max(bevel - border * (2 - Math.SQRT2), 0);
     ctx.fillStyle = '#fff';
-    ctx.fillRect(px + border, py + border, TILE_SIZE - border * 2, TILE_SIZE - border * 2);
+    fillBeveledRect(ctx, px + border, py + border, size - border * 2, size - border * 2, ibevel);
   }
 
   const fontSize = TILE_SIZE * 0.525;
@@ -170,7 +197,7 @@ function drawTile(
   ctx.font = `bold ${fontSize}px sans-serif`;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillText(tile.letter.toUpperCase(), px + TILE_SIZE / 2, py + TILE_SIZE / 2 + fontSize * 0.075 + PITCH * 0.01);
+  ctx.fillText(tile.letter.toUpperCase(), px + size / 2, py + size / 2 + fontSize * 0.075 + PITCH * 0.01);
 }
 
 export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout, emojis: string[], canvasH: number) {
@@ -220,7 +247,7 @@ export function render(
   ctx.fillStyle = grad;
   ctx.fillRect(floorX1, floorY, floorX2 - floorX1, TILE_SIZE * 0.75);
 
-  const linkWidth = PITCH * 0.30 * (hardMode ? 1.75 : 1);
+  const linkWidth = PITCH * 0.30 * (hardMode ? 1.575 : 1);
   const maxLinkLen = PITCH * 1.1 * (hardMode ? 0.5 * 1.1 : 1.1);
   drawChain(ctx, chain, layout, color, cursorX, cursorY, linkWidth, maxLinkLen);
 
@@ -228,6 +255,6 @@ export function render(
   if (hoveredTile) highlighted.add(hoveredTile);
 
   for (const tile of tiles) {
-    drawTile(ctx, tile, layout, color, highlighted.has(tile), getTilePixelY?.(tile));
+    drawTile(ctx, tile, layout, color, highlighted.has(tile), hardMode, getTilePixelY?.(tile));
   }
 }
