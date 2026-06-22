@@ -245,6 +245,50 @@ creditsOverlay.addEventListener('click', () => {
   }, { once: true });
 });
 
+const settingsCard = document.getElementById('settings-card')!;
+const settingsOverlay = document.createElement('div');
+settingsOverlay.id = 'settings-overlay';
+settingsOverlay.style.display = 'none';
+document.body.appendChild(settingsOverlay);
+
+const SETTINGS_PREFIX = 'perplexions-setting-';
+
+function getSetting(key: string, fallback: boolean): boolean {
+  try {
+    const raw = localStorage.getItem(SETTINGS_PREFIX + key);
+    return raw === null ? fallback : raw === 'true';
+  } catch { return fallback; }
+}
+
+function setSetting(key: string, value: boolean) {
+  try {
+    localStorage.setItem(SETTINGS_PREFIX + key, String(value));
+  } catch {}
+}
+
+const showHashCheckbox = document.getElementById('setting-show-hash') as HTMLInputElement;
+const hardModeCheckbox = document.getElementById('setting-hard-mode') as HTMLInputElement;
+
+showHashCheckbox.checked = getSetting('show-hash', true);
+hardModeCheckbox.checked = getSetting('hard-mode', false);
+
+showHashCheckbox.addEventListener('change', () => setSetting('show-hash', showHashCheckbox.checked));
+hardModeCheckbox.addEventListener('change', () => setSetting('hard-mode', hardModeCheckbox.checked));
+
+document.getElementById('settings-btn')!.addEventListener('click', () => {
+  settingsCard.hidden = false;
+  settingsOverlay.style.display = 'block';
+});
+
+settingsOverlay.addEventListener('click', () => {
+  settingsOverlay.style.display = 'none';
+  settingsCard.classList.add('sweeping-out');
+  settingsCard.addEventListener('animationend', () => {
+    settingsCard.hidden = true;
+    settingsCard.classList.remove('sweeping-out');
+  }, { once: true });
+});
+
 function buildResultsString(): string {
   const date = currentLevelDate ?? new Date();
   const month = date.toLocaleString('en-US', { month: 'short' });
