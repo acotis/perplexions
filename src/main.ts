@@ -8,7 +8,7 @@ import type { GridLayout, Color, SplashState } from './render';
 let showEmojiHash = false;
 const sessionHashFlags = new Map<string, boolean>();
 
-// Run scripts/gen-dev-hash.js to generate these values.
+// I am fully aware that the password mechanism here is client-side only and bullshit, but I thought it was funny and so I did it.
 const DEV_SALT = '0a437c5ffac39f35596e10a60cce58e2';
 const DEV_HASH = '2762dbfb59481f01afc3931051f9c3bef04627504c15d8aaa34091bdfc1bbb50';
 
