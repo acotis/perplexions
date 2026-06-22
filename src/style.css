@@ -335,5 +335,5 @@ body {
   text-decoration: underline;
   cursor: pointer;
   margin-top: calc(-1.5rem + 12px);
-  margin-bottom: -1.5rem;
+  margin-bottom: -1rem;
 }
