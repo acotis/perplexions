@@ -275,6 +275,15 @@ hardModeCheckbox.checked = getSetting('hard-mode', false);
 showHashCheckbox.addEventListener('change', () => setSetting('show-hash', showHashCheckbox.checked));
 hardModeCheckbox.addEventListener('change', () => setSetting('hard-mode', hardModeCheckbox.checked));
 
+function setButtonIcon(selector: string, file: string) {
+  const icon = document.querySelector(selector) as HTMLElement;
+  const url = `url(${import.meta.env.BASE_URL}${file})`;
+  icon.style.setProperty('-webkit-mask-image', url);
+  icon.style.setProperty('mask-image', url);
+}
+setButtonIcon('#credits-btn .btn-icon', 'question.svg');
+setButtonIcon('#settings-btn .btn-icon', 'gear.svg');
+
 document.getElementById('settings-btn')!.addEventListener('click', () => {
   settingsCard.hidden = false;
   settingsOverlay.style.display = 'block';
