@@ -68,6 +68,23 @@ body {
   box-shadow: 0 2px 0 rgba(0,0,0,0.12);
 }
 
+#copy-results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#copy-results::before,
+#copy-results::after {
+  content: "";
+  flex: 0 1 1.4em;
+  min-width: 0.5em;
+}
+
 #copy-results:hover { filter: brightness(0.9125); }
 #copy-results:active { filter: brightness(0.8125); }
 
