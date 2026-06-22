@@ -952,7 +952,6 @@ afdb
 afeard
 afeared
 afeerd
-aff
 affability
 affable
 affably
@@ -1141,7 +1140,6 @@ aglaya
 aglow
 agnes
 agnew
-agni
 agnolo
 agnostic
 agnosticism
@@ -1583,7 +1581,6 @@ allegra
 allegro
 alleluia
 allemande
-allen
 allenby
 allerdyke
 allers
@@ -1622,6 +1619,7 @@ allocated
 allocation
 allonby
 allons
+allot
 allotment
 allotments
 allotted
@@ -1804,7 +1802,6 @@ alwin
 alwus
 alwyn
 alwynne
-aly
 alyosha
 alys
 alyssum
@@ -1924,7 +1921,6 @@ amendment
 amendments
 amends
 amenhotep
-ameni
 amenities
 amenity
 amenophis
@@ -2571,7 +2567,6 @@ antonyms
 antrim
 ants
 antwerp
-anty
 anubis
 anus
 anvil
@@ -2582,7 +2577,6 @@ anxious
 anxiously
 any
 anybody
-anye
 anyhow
 anymore
 anyone
@@ -3646,6 +3640,7 @@ assyria
 assyrian
 assyrians
 astarte
+aster
 asterisk
 asterisks
 astern
@@ -6285,10 +6280,10 @@ bindon
 binds
 bindweed
 binet
+binge
 bingen
 bingham
 binghamton
-bingle
 bingley
 bingo
 binks
@@ -16407,7 +16402,6 @@ deflected
 deflecting
 deflection
 deflections
-defn
 defoe
 deforestation
 deform
@@ -16427,7 +16421,6 @@ deftness
 defunct
 defy
 defying
-degas
 degeneracy
 degenerate
 degenerated
@@ -16704,7 +16697,6 @@ denies
 denieth
 denim
 denique
-denis
 denise
 denison
 denisov
@@ -17197,8 +17189,6 @@ deucedly
 deuill
 deuise
 deuised
-deus
-deut
 deuteronomy
 deutsch
 deutsche
@@ -17472,8 +17462,6 @@ diets
 dieu
 dieux
 diez
-dif
-diff
 diff'rent
 differ
 differed
@@ -17741,7 +17729,6 @@ dirtied
 dirtier
 dirtiest
 dirty
-dis
 disa
 disabilities
 disability
@@ -19934,7 +19921,6 @@ effervescent
 effervescing
 effet
 effete
-effi
 efficacious
 efficaciously
 efficacy
@@ -20262,7 +20248,6 @@ elliston
 ellos
 ellsworth
 ellwood
-elly
 elm
 elma
 elmendorf
@@ -20319,7 +20304,6 @@ elves
 elvira
 elwin
 elwood
-ely
 elyot
 elys
 elysee
@@ -20810,7 +20794,6 @@ enhanced
 enhancement
 enhances
 enhancing
-enid
 enigma
 enigmas
 enigmatic
@@ -23026,7 +23009,6 @@ fenders
 fenella
 fenellan
 fenelon
-feng
 fenian
 fenians
 fenimore
@@ -23224,7 +23206,6 @@ fictional
 fictions
 fictitious
 ficus
-fid
 fiddle
 fiddled
 fiddler
@@ -23233,14 +23214,12 @@ fiddles
 fiddlestick
 fiddlesticks
 fiddling
-fide
 fidei
 fidele
 fidelia
 fidelio
 fidelis
 fidelity
-fidem
 fides
 fidget
 fidgeted
@@ -23272,7 +23251,6 @@ fieschi
 fiesco
 fiesole
 fiesta
-fife
 fifer
 fifes
 fifeshire
@@ -23399,7 +23377,6 @@ finches
 finchley
 finck
 find
-finde
 finden
 finder
 finders
@@ -23413,7 +23390,6 @@ finds
 fine
 fined
 finely
-finem
 fineness
 finer
 finery
@@ -25008,7 +24984,6 @@ fuentes
 fuerit
 fuerunt
 fuerza
-fuga
 fugitive
 fugitives
 fugue
@@ -25052,7 +25027,6 @@ fulsome
 fulvia
 fulvius
 fulvous
-fum
 fumble
 fumbled
 fumbling
@@ -25537,7 +25511,6 @@ gasquet
 gass
 gassed
 gassendi
-gast
 gaston
 gastric
 gastritis
@@ -25677,7 +25650,6 @@ gemmed
 gemmen
 gemmules
 gems
-gen
 gen'l
 gen'leman
 gen'lemen
@@ -25757,7 +25729,6 @@ gennaro
 genoa
 genoese
 genre
-gens
 genseric
 gent
 gente
@@ -26004,7 +25975,6 @@ giddings
 giddy
 gideon
 gied
-gien
 giessen
 giffard
 gifford
@@ -26395,7 +26365,6 @@ glue
 glued
 gluing
 glum
-glume
 glumes
 glumly
 glumm
@@ -27679,8 +27648,6 @@ gushes
 gushing
 gussie
 gust
-gusta
-gustaf
 gustav
 gustave
 gustavo
@@ -30760,7 +30727,6 @@ ideas
 ideation
 idee
 idees
-idem
 identical
 identically
 identifiable
@@ -30817,7 +30783,6 @@ iesus
 ieyasu
 if
 ifad
-iffen
 ifrcs
 ifs
 iftikhar
@@ -30934,7 +30899,6 @@ illustrator
 illustrators
 illustrious
 illusts
-illy
 illyria
 illyrian
 illyrians
@@ -30942,7 +30906,6 @@ illyricum
 ilmarinen
 ilocos
 iloilo
-ilya
 ilyitch
 imacr
 image
@@ -31583,7 +31546,6 @@ incursion
 incursions
 incurved
 indade
-inde
 indebted
 indebtedness
 indecencies
@@ -31967,11 +31929,9 @@ infusing
 infusion
 infusions
 infusoria
-inga
 ingalls
 ingate
 ingathering
-inge
 ingeborg
 ingelow
 ingenio
@@ -31987,7 +31947,6 @@ inger
 ingersoll
 ingestion
 ingham
-ingle
 ingleborough
 ingleby
 inglefield
@@ -33097,7 +33056,6 @@ italicus
 italie
 italien
 italiens
-italy
 itaque
 itasca
 itch
@@ -35096,7 +35054,6 @@ lairs
 laisse
 laisser
 laissez
-laity
 laius
 lake
 lakelet
@@ -35111,7 +35068,6 @@ lakshmi
 lala
 lalage
 lalande
-lali
 lally
 lalor
 lama
@@ -35292,7 +35248,6 @@ lanterns
 lanthorn
 lanthorns
 lantier
-lanty
 lantz
 lanyard
 lanyon
@@ -35588,7 +35543,6 @@ layeth
 laying
 layman
 laymen
-layne
 layout
 lays
 layton
@@ -36030,7 +35984,6 @@ letts
 lettuce
 lettuces
 letty
-leu
 leucha
 leuckart
 leucocytes
@@ -36095,7 +36048,6 @@ lexicon
 lexicons
 lexikon
 lexington
-ley
 leyburn
 leyden
 leyland
@@ -36110,11 +36062,9 @@ liability
 liable
 liaison
 liaisons
-lian
 liana
 lianas
 liancourt
-liane
 liang
 liar
 liard
@@ -36289,7 +36239,6 @@ lightwood
 ligne
 ligneous
 lignite
-lignum
 ligny
 liguria
 ligurian
@@ -36642,7 +36591,6 @@ llandaff
 llandovery
 llandudno
 llangollen
-llano
 llanos
 llewellyn
 llewelyn
@@ -37106,7 +37054,6 @@ lowrie
 lows
 lowth
 lowther
-loy
 loyal
 loyalist
 loyalists
@@ -37400,7 +37347,6 @@ lydian
 lydians
 lydiard
 lydie
-lye
 lyell
 lyes
 lyeth
@@ -37411,7 +37357,6 @@ lyin
 lying
 lyk
 lyke
-lyle
 lyly
 lyman
 lyme
@@ -37419,7 +37364,6 @@ lymington
 lymph
 lymphatic
 lymphatics
-lyn
 lynborough
 lynch
 lynchburg
@@ -37432,7 +37376,6 @@ lyndhurst
 lyndon
 lyndsay
 lyndwood
-lyne
 lynette
 lynn
 lynne
@@ -37460,10 +37403,8 @@ lysistrata
 lysons
 lyster
 lystra
-lyte
 lytell
 lyth
-lytle
 lyttelton
 lyttleton
 lytton
@@ -37726,7 +37667,6 @@ magistrates
 magistri
 magloire
 magma
-magn
 magna
 magnan
 magnanimity
@@ -39266,7 +39206,6 @@ medenham
 medes
 medfield
 medford
-medi
 media
 mediaeval
 mediaevalism
@@ -39443,7 +39382,6 @@ melted
 melting
 melton
 melts
-melun
 melvil
 melville
 melvin
@@ -39864,8 +39802,6 @@ meyers
 meynell
 meyrick
 mezzotint
-mfg
-mga
 miall
 miami
 miamis
@@ -40263,7 +40199,6 @@ minturn
 minty
 minucius
 minuets
-minuit
 minus
 minute
 minutely
@@ -41450,7 +41385,6 @@ muellerian
 muenster
 muerte
 muezzin
-muff
 muffet
 muffin
 muffins
@@ -41459,7 +41393,6 @@ muffled
 muffler
 mufflers
 muffling
-muffs
 mufti
 mug
 mugger
@@ -41516,7 +41449,6 @@ mullions
 mulock
 mulready
 multa
-multi
 multicellular
 multifarious
 multiform
@@ -41639,8 +41571,6 @@ murtagh
 murther
 murthered
 murtherer
-musa
-musat
 musca
 muscadine
 muscat
@@ -42225,7 +42155,6 @@ neeland
 neeld
 neely
 nefarious
-neff
 neg
 negation
 negations
@@ -42261,7 +42190,6 @@ negress
 negresses
 negrito
 negritos
-negus
 nehemiah
 nehushta
 neid
@@ -42287,13 +42215,10 @@ neither
 nejd
 nejdanov
 nekhludoff
-nell
-nella
 nelle
 nellie
 nelligan
 nello
-nelly
 nels
 nelsen
 nelson
@@ -42490,7 +42415,6 @@ nforced
 nforcements
 ngan
 ngati
-nge
 niagara
 niall
 niam
@@ -43668,7 +43592,6 @@ olivier
 olivine
 ollie
 ollivier
-olly
 olmedo
 olmstead
 olmsted
@@ -44614,7 +44537,6 @@ oxy
 oxygen
 oxygenated
 oyez
-oyl
 oyle
 oyster
 oysters
@@ -45787,7 +45709,6 @@ peggotty
 peggy
 pegram
 pegs
-pegu
 peine
 peirce
 peishwa
@@ -45827,7 +45748,6 @@ pellets
 pellew
 pellicle
 pellucid
-pelly
 pelopidas
 peloponnese
 peloponnesian
@@ -45978,7 +45898,6 @@ penultimate
 penumbra
 penurious
 penury
-peny
 penzance
 peon
 peonage
@@ -46890,7 +46809,6 @@ pierrot
 piers
 pierson
 pies
-piet
 pieta
 pietas
 pieter
@@ -47263,7 +47181,6 @@ planks
 planned
 plannin
 planning
-plano
 plans
 plant
 planta
@@ -47275,7 +47192,6 @@ plantar
 plantarum
 plantation
 plantations
-plante
 planted
 planter
 planters
@@ -47318,7 +47234,6 @@ plating
 platinum
 platitude
 platitudes
-platon
 platonic
 platonism
 platonist
@@ -47426,7 +47341,6 @@ pleiades
 plein
 pleine
 pleistocene
-plena
 plenary
 plenipotentiaries
 plenipotentiary
@@ -47687,7 +47601,6 @@ polemics
 polenta
 poleon
 poles
-poli
 police
 policed
 policeman
@@ -47706,7 +47619,6 @@ polished
 polisher
 polishes
 polishing
-polit
 polite
 politely
 politeness
@@ -47746,7 +47658,6 @@ polluting
 pollution
 pollutions
 pollux
-polly
 pollyanna
 pollyooly
 polo
@@ -47838,7 +47749,6 @@ ponderously
 ponders
 pondicherry
 ponds
-pone
 pong
 pongo
 poniard
@@ -47847,9 +47757,7 @@ poniatowski
 ponies
 pons
 ponsonby
-pont
 pontchartrain
-ponte
 pontefract
 ponthieu
 pontiac
@@ -48142,7 +48050,6 @@ potency
 potent
 potentate
 potentates
-potentia
 potential
 potentialities
 potentiality
@@ -48248,7 +48155,6 @@ powre
 powwow
 powys
 pox
-poy
 poynings
 poynt
 poynter
@@ -49871,7 +49777,6 @@ puzzling
 pvt
 pvte
 pwyll
-pye
 pyecroft
 pygmalion
 pygmies
@@ -49879,7 +49784,6 @@ pygmy
 pyjamas
 pyke
 pylades
-pyle
 pylon
 pylons
 pyloric
@@ -53717,7 +53621,6 @@ sadly
 sadness
 sadowa
 saduko
-saens
 saepe
 saeter
 safari
@@ -54258,7 +54161,6 @@ sauciness
 saucy
 saudi
 sauerkraut
-sauf
 sauing
 sauk
 saul
@@ -54277,7 +54179,6 @@ saurin
 sausage
 sausages
 saussure
-saut
 saute
 sauuages
 sauvage
@@ -56380,7 +56281,6 @@ sickroom
 siculus
 sicut
 sicyon
-sid
 siddha
 siddhartha
 siddons
@@ -56671,7 +56571,6 @@ sincerely
 sincerest
 sincerity
 sinclair
-sind
 sindbad
 sindhia
 sine
@@ -58669,7 +58568,6 @@ stadtholder
 stael
 staff
 staffa
-staffe
 stafford
 staffordshire
 staffs
@@ -58731,8 +58629,6 @@ stalls
 stalwart
 stamboul
 stambul
-stamen
-stamens
 stamford
 stamina
 staminate
@@ -59655,7 +59551,6 @@ study
 studyin
 studying
 stuff
-stuffe
 stuffed
 stuffer
 stuffing
@@ -59967,7 +59862,6 @@ sues
 suetonius
 suevi
 suez
-suff
 suffer
 suffer'd
 sufferance
@@ -60014,7 +59908,6 @@ sugarcane
 sugared
 sugars
 sugary
-sugden
 suger
 suggest
 suggested
@@ -60091,7 +59984,6 @@ sultaun
 sultriness
 sultry
 sum
-suma
 sumac
 sumach
 sumatra
@@ -61048,7 +60940,6 @@ tamburlaine
 tame
 tamed
 tamely
-tamen
 tameness
 tamer
 tamerlane
@@ -61076,7 +60967,6 @@ tanana
 tandakora
 tandem
 tandy
-taney
 tang
 tanganyika
 tangent
@@ -61120,7 +61010,6 @@ tanquam
 tanqueray
 tans
 tansy
-tant
 tanta
 tantalising
 tantalize
@@ -61129,9 +61018,7 @@ tantalizing
 tantalizingly
 tantalus
 tantamount
-tante
 tanti
-tanto
 tantrum
 tantrums
 tantum
@@ -61420,7 +61307,6 @@ teetotal
 teetotaler
 teetotaller
 tegea
-tegn
 teheran
 tehran
 tehuantepec
@@ -62411,7 +62297,6 @@ tidying
 tie
 tieck
 tied
-tiel
 tiele
 tiempo
 tienen
@@ -62466,16 +62351,11 @@ tilled
 tillemont
 tiller
 tillers
-tillet
-tilley
 tillie
 tilling
 tillman
-tillon
 tillotson
 tills
-tilly
-tilney
 tilsit
 tilt
 tilted
@@ -62755,7 +62635,6 @@ toller
 tolling
 tolliver
 tolls
-tolly
 tolman
 tolstoi
 tolstoy
@@ -63835,7 +63714,6 @@ tsung
 tsze
 ttingen
 tuam
-tuas
 tuatha
 tub
 tuba
@@ -63877,8 +63755,6 @@ tudors
 tuebingen
 tuesday
 tuesdays
-tuff
-tuffs
 tuft
 tufted
 tufts
@@ -64158,9 +64034,7 @@ tydeus
 tyed
 tying
 tyke
-tyl
 tyler
-tyll
 tylor
 tyltyl
 tympanic
@@ -64169,7 +64043,6 @@ tynan
 tyndale
 tyndall
 tynemouth
-tyope
 type
 typed
 typee
@@ -69155,7 +69028,6 @@ yaks
 yakshas
 yakub
 yakutsk
-yale
 yaller
 yam
 yama
@@ -69252,6 +69124,7 @@ yelping
 yelps
 yelverton
 yemen
+yen
 yeobright
 yeoman
 yeomanry
