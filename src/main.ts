@@ -353,7 +353,7 @@ function showEndCard() {
   const luma = 0.299 * r + 0.587 * g + 0.114 * b;
   copyBtn.style.backgroundColor = `rgb(${r},${g},${b})`;
   copyBtn.style.color = luma > 160 ? '#000' : '#fff';
-  replayHardBtn.textContent = hardMode ? 'Replay in normal mode' : 'Replay in Hard Mode';
+  replayHardBtn.textContent = hardMode ? 'Replay on normal mode' : 'Replay on Hard Mode';
   copyBtn.textContent = hardMode ? 'Copy hard-mode results' : 'Copy results';
   hardModeTag.hidden = !hardMode;
   endCard.removeAttribute('hidden');
