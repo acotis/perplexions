@@ -219,6 +219,7 @@ function updateLevelRecord(date: Date, updates: Partial<LevelRecord>) {
 
 const endCard = document.getElementById('end-card')!;
 const copyBtn = document.getElementById('copy-results') as HTMLButtonElement;
+const replayHardBtn = document.getElementById('replay-no-hash') as HTMLButtonElement;
 const solutionHashEmojis = document.getElementById('solution-hash-emojis') as HTMLSpanElement;
 
 const creditsCard = document.getElementById('credits-card')!;
@@ -305,7 +306,7 @@ settingsOverlay.addEventListener('click', () => {
 function buildResultsString(): string {
   const date = currentLevelDate ?? new Date();
   const month = date.toLocaleString('en-US', { month: 'short' });
-  const dateLabel = `${date.getFullYear()} ${month} ${date.getDate()}`;
+  const dateLabel = `${date.getFullYear()} ${month} ${date.getDate()}${hardMode ? ' (hard mode)' : ''}`;
   const dateSlug = formatDate(date);
   const wordEmojis = wordHistory.map(w => WORD_EMOJIS[hashString(`${dateSlug} ${w}`) % WORD_EMOJIS.length]);
   return [`Perplexions ${dateLabel} — ${wordEmojis.join(' ')}`, `https://fire.casa/perplexions/?date=${dateSlug}`].join('\n');
@@ -333,6 +334,7 @@ function showEndCard() {
   const luma = 0.299 * r + 0.587 * g + 0.114 * b;
   copyBtn.style.backgroundColor = `rgb(${r},${g},${b})`;
   copyBtn.style.color = luma > 160 ? '#000' : '#fff';
+  replayHardBtn.textContent = hardMode ? 'Replay in normal mode' : 'Replay in Hard Mode';
   endCard.removeAttribute('hidden');
   endCardOverlay.style.display = 'block';
   updateEmojiHashFontSize();
@@ -352,9 +354,9 @@ document.getElementById('replay')!.addEventListener('click', () => {
   }
 });
 
-document.getElementById('replay-no-hash')!.addEventListener('click', () => {
+replayHardBtn.addEventListener('click', () => {
   if (currentParsedLevel && currentLevelDate) {
-    startLevel(currentParsedLevel, currentLevelDate, true);
+    startLevel(currentParsedLevel, currentLevelDate, !hardMode);
   }
 });
 
@@ -807,10 +809,10 @@ function drawDateLabel() {
   ctx.restore();
 }
 
-function startLevel(parsed: ParsedLevel, date: Date, forceHardMode = false) {
+function startLevel(parsed: ParsedLevel, date: Date, forceHardMode?: boolean) {
   currentParsedLevel = parsed;
   currentLevelDate = date;
-  hardMode = hardModeCheckbox.checked || forceHardMode;
+  hardMode = forceHardMode ?? hardModeCheckbox.checked;
   const { tiles: loadedTiles, numCols, numRows } = parsed;
   const month = date.toLocaleString('en-US', { month: 'short' });
   dateStr = `Perplexions — ${date.getFullYear()} ${month} ${date.getDate()}`;
