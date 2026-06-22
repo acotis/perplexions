@@ -274,7 +274,10 @@ showHashCheckbox.checked = getSetting('show-hash', true);
 hardModeCheckbox.checked = getSetting('hard-mode', false);
 
 showHashCheckbox.addEventListener('change', () => setSetting('show-hash', showHashCheckbox.checked));
-hardModeCheckbox.addEventListener('change', () => setSetting('hard-mode', hardModeCheckbox.checked));
+hardModeCheckbox.addEventListener('change', () => {
+  setSetting('hard-mode', hardModeCheckbox.checked);
+  if (currentParsedLevel && currentLevelDate) startLevel(currentParsedLevel, currentLevelDate);
+});
 
 function setButtonIcon(selector: string, file: string) {
   const icon = document.querySelector(selector) as HTMLElement;
