@@ -8,6 +8,28 @@ import type { GridLayout, Color, SplashState } from './render';
 let showEmojiHash = false;
 const sessionHashFlags = new Map<string, boolean>();
 
+// Run scripts/gen-dev-hash.js to generate these values.
+const DEV_SALT = '0a437c5ffac39f35596e10a60cce58e2';
+const DEV_HASH = '2762dbfb59481f01afc3931051f9c3bef04627504c15d8aaa34091bdfc1bbb50';
+
+let devMode = false;
+
+async function checkDevPassword(password: string): Promise<boolean> {
+  if (!DEV_SALT || !DEV_HASH) return false;
+  const toBytes = (hex: string) => new Uint8Array(hex.match(/../g)!.map(b => parseInt(b, 16)));
+  const keyMaterial = await crypto.subtle.importKey(
+    'raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveBits'],
+  );
+  const derived = await crypto.subtle.deriveBits(
+    { name: 'PBKDF2', hash: 'SHA-256', salt: toBytes(DEV_SALT), iterations: 100_000 },
+    keyMaterial, 256,
+  );
+  return [...new Uint8Array(derived)].map(b => b.toString(16).padStart(2, '0')).join('') === DEV_HASH;
+}
+
+const devPasswordParam = new URLSearchParams(window.location.search).get('dev-password');
+const devPasswordPromise = devPasswordParam ? checkDevPassword(devPasswordParam) : Promise.resolve(false);
+
 const GRAVITY_TILES_PER_S2 = 3000 / 64;
 
 let PITCH = TILE_SIZE + GAP;
@@ -310,7 +332,7 @@ function checkNextLevel() {
   hasNextLevel = false;
   if (!currentLevelDate) return;
   const next = new Date(currentLevelDate.getTime() + 86400000);
-  if (next.getTime() > effectiveToday.getTime()) return;
+  if (!devMode && next.getTime() > effectiveToday.getTime()) return;
   levelFileExists(next).then(exists => {
     hasNextLevel = exists;
     if (levelNumCols) redraw();
@@ -321,9 +343,12 @@ function checkNextLevel() {
 function navigateByDays(delta: number) {
   const base = currentLevelDate ?? today;
   const date = new Date(base.getTime() + delta * 86400000);
-  loadLevel(date).then(parsed => {
+  loadLevel(date, devMode).then(parsed => {
     startLevel(parsed, date);
-    window.history.pushState(null, '', `?date=${formatDate(date)}`);
+    const params = new URLSearchParams();
+    params.set('date', formatDate(date));
+    if (devPasswordParam) params.set('dev-password', devPasswordParam);
+    window.history.pushState(null, '', `?${params}`);
   }).catch(() => {
     if (delta < 0) hasPrevLevel = false;
     if (delta > 0) hasNextLevel = false;
@@ -636,7 +661,7 @@ window.addEventListener('pageshow', e => { if (e.persisted) onResize(); });
 window.addEventListener('popstate', () => {
   const param = new URLSearchParams(window.location.search).get('date');
   const date = param ? new Date(`${param}T12:00:00`) : effectiveToday;
-  loadLevel(date).then(parsed => startLevel(parsed, date));
+  loadLevel(date, devMode).then(parsed => startLevel(parsed, date));
 });
 
 // --- init ---
@@ -785,6 +810,7 @@ function showCanvasError(msg: string) {
 }
 
 async function init() {
+  devMode = await devPasswordPromise;
   const wordsPromise = loadWords();
   const todayNoon = effectiveToday;
   let date = todayNoon;
@@ -794,7 +820,7 @@ async function init() {
   if (dateParam) {
     const requested = new Date(`${dateParam}T12:00:00`);
     try {
-      parsed = await loadLevel(requested);
+      parsed = await loadLevel(requested, devMode);
       date = requested;
     } catch {
       dateParamFailed = true;
