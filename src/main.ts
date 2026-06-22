@@ -193,12 +193,20 @@ const STORAGE_PREFIX = 'perplexions-';
 
 interface LevelRecord {
   cleared?: string;
+  clearedHard?: string;
 }
 
-function clearedOnLabel(dateSlug: string): string {
+function clearedOnLabel(dateSlug: string, hard: boolean): string {
   const d = new Date(`${dateSlug}T12:00:00`);
   const month = d.toLocaleString('en-US', { month: 'short' });
-  return `Cleared on ${d.getFullYear()} ${month} ${d.getDate()}`;
+  const date = `${d.getFullYear()} ${month} ${d.getDate()}`;
+  return hard ? `Hard mode cleared on ${date}` : `Cleared on ${date}`;
+}
+
+function clearedOnLabelFor(record: LevelRecord): string {
+  if (record.clearedHard) return clearedOnLabel(record.clearedHard, true);
+  if (record.cleared) return clearedOnLabel(record.cleared, false);
+  return '';
 }
 
 function getLevelRecord(date: Date): LevelRecord {
@@ -324,10 +332,14 @@ function buildEmojiHash(): string[] {
 }
 
 function showEndCard() {
-  if (currentLevelDate && !getLevelRecord(currentLevelDate).cleared) {
+  if (currentLevelDate) {
+    const record = getLevelRecord(currentLevelDate);
     const slug = formatDate(new Date());
-    updateLevelRecord(currentLevelDate, { cleared: slug });
-    clearedOnStr = clearedOnLabel(slug);
+    const updates: Partial<LevelRecord> = {};
+    if (!record.cleared) updates.cleared = slug;
+    if (hardMode && !record.clearedHard) updates.clearedHard = slug;
+    if (Object.keys(updates).length > 0) updateLevelRecord(currentLevelDate, updates);
+    clearedOnStr = clearedOnLabelFor({ ...record, ...updates });
   }
   solutionHashEmojis.textContent = buildEmojiHash().join('');
   const { r, g, b } = color;
@@ -828,9 +840,9 @@ function startLevel(parsed: ParsedLevel, date: Date, forceHardMode?: boolean) {
   console.log(`rgb(${color.r}, ${color.g}, ${color.b}) — least: ${least} — distance: ${dist} — luma: ${luma}`);
   history = [];
   wordHistory = [];
-  const storedCleared = getLevelRecord(date).cleared;
-  showEmojiHash = showHashCheckbox.checked && !!storedCleared;
-  clearedOnStr = storedCleared ? clearedOnLabel(storedCleared) : '';
+  const record = getLevelRecord(date);
+  showEmojiHash = showHashCheckbox.checked && !!record.cleared;
+  clearedOnStr = clearedOnLabelFor(record);
   chain = [];
   hoveredTile = null;
   levelComplete = false;
