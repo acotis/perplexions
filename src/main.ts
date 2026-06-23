@@ -95,13 +95,13 @@ function drawUndoIcon() {
   const size = Math.max(Math.min(canvasW, canvasH) * 0.06, 2.7 * rem);
   const pad = size * 0.5;
 
-  let alpha = 0.35;
+  let alpha = 0.525;
   if (!undoIconFadeComplete) {
     const now = performance.now();
     if (undoIconFirstShownTime === null) { undoIconFirstShownTime = now; runUndoIconFadeLoop(); }
     const elapsed = now - undoIconFirstShownTime;
     if (elapsed < 2000) return;
-    if (elapsed < 4000) alpha = 0.35 * (elapsed - 2000) / 2000;
+    if (elapsed < 4000) alpha = 0.525 * (elapsed - 2000) / 2000;
     else undoIconFadeComplete = true;
   }
 

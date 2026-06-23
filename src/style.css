@@ -91,7 +91,7 @@ body {
 
 #credits-btn {
   position: fixed;
-  top: 8.5rem;
+  top: 8.65rem;
   right: 1rem;
   width: 3rem;
   height: 3rem;
@@ -148,7 +148,7 @@ body {
 
 #howto-btn {
   position: fixed;
-  top: 4.75rem;
+  top: 4.825rem;
   right: 1rem;
   width: 3rem;
   height: 3rem;
@@ -169,8 +169,8 @@ body {
 /* On narrow screens, lay the buttons out horizontally (Settings, Tutorial,
    Credits from left to right) instead of stacked vertically. */
 @media (max-width: 599px) {
-  #settings-btn { top: 1rem; right: 8.5rem; }
-  #howto-btn    { top: 1rem; right: 4.75rem; }
+  #settings-btn { top: 1rem; right: 8.65rem; }
+  #howto-btn    { top: 1rem; right: 4.825rem; }
   #credits-btn  { top: 1rem; right: 1rem; }
 }
 
