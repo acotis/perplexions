@@ -344,6 +344,14 @@ howtoOverlay.addEventListener('click', () => {
   }, { once: true });
 });
 
+// Escape dismisses whichever card is shown, as if its overlay were clicked.
+window.addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  for (const overlay of [creditsOverlay, settingsOverlay, howtoOverlay, endCardOverlay]) {
+    if (overlay.style.display === 'block') { overlay.click(); break; }
+  }
+});
+
 function buildResultsString(): string {
   const date = currentLevelDate ?? new Date();
   const month = date.toLocaleString('en-US', { month: 'short' });
