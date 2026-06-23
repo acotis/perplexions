@@ -66,7 +66,13 @@ const COLS = 5;
 const ROWS = 5;
 const CANVAS_ASPECT = 260 / 300; // canvas width / height
 
+// A tile lights up when the cursor enters its hitbox — half a tile-size before
+// its center, i.e. (tileSize/2)/pitch = 5/11 of a step earlier (same for
+// orthogonal and diagonal moves).
+const HITBOX_LEAD = (10 / 11) / 2;
+
 const HOP_MS = 285;
+const START_HOLD = 500;
 const STROKE_PAUSE = 200;
 const PRE_TRACE_PAUSE = 550;
 const POST_TRACE_HOLD = 420;
@@ -189,7 +195,7 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
     const tr = activeTrace;
     const moveTotal = tr.segs.reduce((sum, seg) => sum + seg.span, 0) * HOP_MS;
     const pauseTotal = tr.segs.slice(0, -1).reduce((sum, seg) => sum + pauseAfter(seg), 0);
-    const total = moveTotal + pauseTotal;
+    const total = START_HOLD + moveTotal + pauseTotal;
     const elapsed = now - phaseStart;
 
     if (elapsed >= total) {
@@ -198,8 +204,15 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
       return elapsed >= total + POST_TRACE_HOLD ? 'done' : 'running';
     }
 
+    // Hold briefly on the first tile after touching down.
+    if (elapsed < START_HOLD) {
+      cursor = centerOfCoord(tr.start);
+      chain = tilesFor([tr.start]);
+      return 'running';
+    }
+
     const coords: Coord[] = [tr.start];
-    let t = elapsed;
+    let t = elapsed - START_HOLD;
     let prev = tr.start;
     for (let i = 0; i < tr.segs.length; i++) {
       const seg = tr.segs[i];
@@ -209,7 +222,7 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
         const a = centerOfCoord(prev);
         const b = centerOfCoord(seg.to);
         cursor = { x: a.x + (b.x - a.x) * frac, y: a.y + (b.y - a.y) * frac };
-        for (const sel of seg.selects) if (sel.at <= frac) coords.push(sel.coord);
+        for (const sel of seg.selects) if (sel.at - HITBOX_LEAD / seg.span <= frac) coords.push(sel.coord);
         chain = tilesFor(coords);
         return 'running';
       }
