@@ -4,6 +4,7 @@ import { loadLevel, levelFileExists, formatDate, applyGravity } from './level';
 import { randomLevelColor, computeLayout, tileAtPixel, tilePixelX, tilePixelY, render, drawHashEmojis, setPitch, TILE_SIZE, GAP } from './render';
 import type { Tile, ParsedLevel } from './level';
 import type { GridLayout, Color, SplashState } from './render';
+import { setupHowtoTutorial } from './tutorial';
 
 let showEmojiHash = false;
 let hardMode = false;
@@ -303,6 +304,7 @@ function setButtonIcon(selector: string, file: string) {
 }
 setButtonIcon('#credits-btn .btn-icon', 'question.svg');
 setButtonIcon('#settings-btn .btn-icon', 'gear.svg');
+setButtonIcon('#howto-btn .btn-icon', 'question.svg');
 
 document.getElementById('settings-btn')!.addEventListener('click', () => {
   settingsCard.hidden = false;
@@ -315,6 +317,30 @@ settingsOverlay.addEventListener('click', () => {
   settingsCard.addEventListener('animationend', () => {
     settingsCard.hidden = true;
     settingsCard.classList.remove('sweeping-out');
+  }, { once: true });
+});
+
+const howtoCard = document.getElementById('howto-card')!;
+const howtoOverlay = document.createElement('div');
+howtoOverlay.id = 'howto-overlay';
+howtoOverlay.style.display = 'none';
+document.body.appendChild(howtoOverlay);
+
+const howtoTutorial = setupHowtoTutorial(document.getElementById('howto-canvas') as HTMLCanvasElement);
+
+document.getElementById('howto-btn')!.addEventListener('click', () => {
+  howtoCard.hidden = false;
+  howtoOverlay.style.display = 'block';
+  howtoTutorial.start();
+});
+
+howtoOverlay.addEventListener('click', () => {
+  howtoOverlay.style.display = 'none';
+  howtoTutorial.stop();
+  howtoCard.classList.add('sweeping-out');
+  howtoCard.addEventListener('animationend', () => {
+    howtoCard.hidden = true;
+    howtoCard.classList.remove('sweeping-out');
   }, { once: true });
 });
 

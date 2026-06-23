@@ -46,6 +46,9 @@ export interface GridLayout {
   maxX: number;
   maxY: number;
   numCols: number;
+  pitch: number;
+  tileSize: number;
+  gap: number;
 }
 
 export function computeLayout(tiles: Tile[], canvasWidth: number, _canvasHeight: number, numCols: number, offsetY: number): GridLayout {
@@ -62,25 +65,29 @@ export function computeLayout(tiles: Tile[], canvasWidth: number, _canvasHeight:
     maxX,
     maxY,
     numCols,
+    pitch: PITCH,
+    tileSize: TILE_SIZE,
+    gap: GAP,
   };
 }
 
 export function tilePixelX(tile: Tile, layout: GridLayout): number {
-  return layout.offsetX + tile.x * PITCH;
+  return layout.offsetX + tile.x * layout.pitch;
 }
 
 export function tilePixelY(tile: Tile, layout: GridLayout): number {
-  return layout.offsetY + (layout.maxY - tile.y) * PITCH;
+  return layout.offsetY + (layout.maxY - tile.y) * layout.pitch;
 }
 
 export function tileAtPixel(tiles: Tile[], px: number, py: number, layout: GridLayout): Tile | null {
+  const { pitch, tileSize } = layout;
   const dx = px - layout.offsetX;
   const dy = py - layout.offsetY;
-  const gx = Math.floor(dx / PITCH);
-  const gy = layout.maxY - Math.floor(dy / PITCH);
-  const rx = dx - Math.floor(dx / PITCH) * PITCH;
-  const ry = dy - Math.floor(dy / PITCH) * PITCH;
-  if (rx >= TILE_SIZE || ry >= TILE_SIZE) return null;
+  const gx = Math.floor(dx / pitch);
+  const gy = layout.maxY - Math.floor(dy / pitch);
+  const rx = dx - Math.floor(dx / pitch) * pitch;
+  const ry = dy - Math.floor(dy / pitch) * pitch;
+  if (rx >= tileSize || ry >= tileSize) return null;
   return tiles.find(t => t.x === gx && t.y === gy) ?? null;
 }
 
@@ -122,18 +129,19 @@ function drawChain(
   maxLinkLen: number,
 ) {
   if (chain.length === 0) return;
+  const half = layout.tileSize / 2;
   ctx.save();
   ctx.strokeStyle = rgb(color);
   ctx.lineWidth = lineWidth;
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
   ctx.beginPath();
-  ctx.moveTo(tilePixelX(chain[0], layout) + TILE_SIZE / 2, tilePixelY(chain[0], layout) + TILE_SIZE / 2);
+  ctx.moveTo(tilePixelX(chain[0], layout) + half, tilePixelY(chain[0], layout) + half);
   for (let i = 1; i < chain.length; i++) {
-    ctx.lineTo(tilePixelX(chain[i], layout) + TILE_SIZE / 2, tilePixelY(chain[i], layout) + TILE_SIZE / 2);
+    ctx.lineTo(tilePixelX(chain[i], layout) + half, tilePixelY(chain[i], layout) + half);
   }
-  const lastCx = tilePixelX(chain[chain.length - 1], layout) + TILE_SIZE / 2;
-  const lastCy = tilePixelY(chain[chain.length - 1], layout) + TILE_SIZE / 2;
+  const lastCx = tilePixelX(chain[chain.length - 1], layout) + half;
+  const lastCy = tilePixelY(chain[chain.length - 1], layout) + half;
   const dx = cursorX - lastCx;
   const dy = cursorY - lastCy;
   const dist = Math.hypot(dx, dy);
@@ -176,8 +184,9 @@ function drawTile(
   hardMode: boolean,
   pyOverride?: number,
 ) {
-  const size = TILE_SIZE * (hardMode ? 1.03 : 1);
-  const offset = (size - TILE_SIZE) / 2;
+  const { tileSize, pitch } = layout;
+  const size = tileSize * (hardMode ? 1.03 : 1);
+  const offset = (size - tileSize) / 2;
   const px = tilePixelX(tile, layout) - offset;
   const py = (pyOverride ?? tilePixelY(tile, layout)) - offset;
   const bevel = hardMode ? size * 0.18 : 0;
@@ -186,7 +195,7 @@ function drawTile(
   fillBeveledRect(ctx, px, py, size, size, bevel);
 
   if (!highlighted) {
-    const border = TILE_SIZE / 16 * 1.1;
+    const border = tileSize / 16 * 1.1;
     const ix = px + border, iy = py + border, iw = size - border * 2, ih = size - border * 2;
     const ibevel = Math.max(bevel - border * (2 - Math.SQRT2), 0);
     ctx.fillStyle = '#fff';
@@ -198,8 +207,8 @@ function drawTile(
       ctx.clip();
       ctx.globalAlpha = 0.4;
       ctx.strokeStyle = rgb(color);
-      ctx.lineWidth = TILE_SIZE * 0.0225;
-      const spacing = TILE_SIZE * 0.135;
+      ctx.lineWidth = tileSize * 0.0225;
+      const spacing = tileSize * 0.135;
       const o = ih;
       // Align the pattern so the k=0 stripe lies exactly on the tile's
       // bottom-left-to-top-right diagonal.
@@ -216,19 +225,20 @@ function drawTile(
     }
   }
 
-  const fontSize = TILE_SIZE * 0.525;
+  const fontSize = tileSize * 0.525;
   ctx.fillStyle = '#000';
   ctx.font = `bold ${fontSize}px sans-serif`;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillText(tile.letter.toUpperCase(), px + size / 2, py + size / 2 + fontSize * 0.075 + PITCH * 0.01);
+  ctx.fillText(tile.letter.toUpperCase(), px + size / 2, py + size / 2 + fontSize * 0.075 + pitch * 0.01);
 }
 
 export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout, emojis: string[], canvasH: number) {
   if (emojis.length === 0) return;
-  const floorY = layout.offsetY + layout.maxY * PITCH + TILE_SIZE + (TILE_SIZE * 0.4 + PITCH * 0.05) * 0.65;
-  const floorX1 = layout.offsetX - TILE_SIZE / 6 - PITCH * 0.2;
-  const fontSize = Math.min(PITCH / 3, canvasH * 0.04);
+  const { pitch, tileSize } = layout;
+  const floorY = layout.offsetY + layout.maxY * pitch + tileSize + (tileSize * 0.4 + pitch * 0.05) * 0.65;
+  const floorX1 = layout.offsetX - tileSize / 6 - pitch * 0.2;
+  const fontSize = Math.min(pitch / 3, canvasH * 0.04);
   ctx.save();
   ctx.font = `${fontSize}px sans-serif`;
   ctx.textAlign = 'left';
@@ -256,23 +266,24 @@ export function render(
   options: RenderOptions = {},
 ) {
   const { hoveredTile = null, chain = [], cursorX = 0, cursorY = 0, splashes = [], getTilePixelY, hardMode = false } = options;
+  const { pitch, tileSize } = layout;
 
   ctx.fillStyle = '#fff';
   ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
   for (const splash of splashes) drawSplash(ctx, splash, color);
 
-  const floorY = layout.offsetY + layout.maxY * PITCH + TILE_SIZE + (TILE_SIZE * 0.4 + PITCH * 0.05) * 0.65;
-  const floorX1 = layout.offsetX - TILE_SIZE / 6 - PITCH * 0.2;
-  const floorX2 = layout.offsetX + (layout.numCols - 1) * PITCH + TILE_SIZE + TILE_SIZE / 6 + PITCH * 0.2;
-  const grad = ctx.createLinearGradient(0, floorY, 0, floorY + TILE_SIZE * 0.75);
+  const floorY = layout.offsetY + layout.maxY * pitch + tileSize + (tileSize * 0.4 + pitch * 0.05) * 0.65;
+  const floorX1 = layout.offsetX - tileSize / 6 - pitch * 0.2;
+  const floorX2 = layout.offsetX + (layout.numCols - 1) * pitch + tileSize + tileSize / 6 + pitch * 0.2;
+  const grad = ctx.createLinearGradient(0, floorY, 0, floorY + tileSize * 0.75);
   grad.addColorStop(0, 'rgba(100,100,100,0.15)');
   grad.addColorStop(1, 'rgba(255,255,255,0)');
   ctx.fillStyle = grad;
-  ctx.fillRect(floorX1, floorY, floorX2 - floorX1, TILE_SIZE * 0.75);
+  ctx.fillRect(floorX1, floorY, floorX2 - floorX1, tileSize * 0.75);
 
-  const linkWidth = PITCH * 0.30 * (hardMode ? 1.4875 : 1);
-  const maxLinkLen = PITCH * 1.1 * (hardMode ? 0.5 * 1.1 * 0.95 : 1.05);
+  const linkWidth = pitch * 0.30 * (hardMode ? 1.4875 : 1);
+  const maxLinkLen = pitch * 1.1 * (hardMode ? 0.5 * 1.1 * 0.95 : 1.05);
   drawChain(ctx, chain, layout, color, cursorX, cursorY, linkWidth, maxLinkLen);
 
   const highlighted = new Set(chain);
