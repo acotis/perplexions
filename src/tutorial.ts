@@ -62,8 +62,6 @@ const WORDS: Trace[] = [WORD_FIND, WORD_SCRAMBLED, WORD_WORDS];
 
 const COLOR: Color = { r: 150, g: 200, b: 240 };
 
-const CANVAS_W = 260;
-const CANVAS_H = 300;
 const COLS = 5;
 const ROWS = 5;
 
@@ -81,25 +79,31 @@ type Phase = 'empty' | 'fall-in' | 'pre-trace' | 'trace' | 'cascade' | 'between'
 export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
   const ctx = canvas.getContext('2d')!;
 
-  // Tutorial-local scale (independent of the main game's global scale).
+  // Tutorial-local scale (independent of the main game's global scale), fit to
+  // the canvas's available space (measured) each time the card opens.
   const MARGIN = 16;
-  const pitch = Math.floor(Math.min(
-    (CANVAS_W - 2 * MARGIN) / (COLS - 1 + 10 / 11),
-    (CANVAS_H - 2 * MARGIN) / (ROWS - 1 + 1.75 * 10 / 11),
-  ));
-  const tile = pitch * 10 / 11;
-  const gridW = (COLS - 1) * pitch + tile;
-  const offsetX = (CANVAS_W - gridW) / 2;
-  const contentH = (ROWS - 1) * pitch + 1.75 * tile;
-  const offsetY = (CANVAS_H - contentH) / 2;
-  const layout: GridLayout = {
-    offsetX, offsetY, minX: 0, maxX: COLS - 1, maxY: ROWS - 1, numCols: COLS,
-    pitch, tileSize: tile, gap: pitch - tile,
-  };
+  let pitch = 0, tile = 0, offsetX = 0, offsetY = 0;
+  let GRAVITY = 0, COLUMN_STAGGER = 0, FALL_ENTRY_EXTRA = 0;
+  let layout!: GridLayout;
 
-  const GRAVITY = (3000 / 64) * tile;
-  const COLUMN_STAGGER = tile * 3;
-  const FALL_ENTRY_EXTRA = tile * 6;
+  function computeGeometry(cw: number, ch: number) {
+    pitch = Math.floor(Math.min(
+      (cw - 2 * MARGIN) / (COLS - 1 + 10 / 11),
+      (ch - 2 * MARGIN) / (ROWS - 1 + 1.75 * 10 / 11),
+    ));
+    tile = pitch * 10 / 11;
+    const gridW = (COLS - 1) * pitch + tile;
+    offsetX = (cw - gridW) / 2;
+    const contentH = (ROWS - 1) * pitch + 1.75 * tile;
+    offsetY = (ch - contentH) / 2;
+    layout = {
+      offsetX, offsetY, minX: 0, maxX: COLS - 1, maxY: ROWS - 1, numCols: COLS,
+      pitch, tileSize: tile, gap: pitch - tile,
+    };
+    GRAVITY = (3000 / 64) * tile;
+    COLUMN_STAGGER = tile * 3;
+    FALL_ENTRY_EXTRA = tile * 6;
+  }
 
   const topY = (t: Tile) => offsetY + (layout.maxY - t.y) * pitch;
   const centerOfCoord = (c: Coord) => ({ x: offsetX + c[0] * pitch + tile / 2, y: offsetY + (layout.maxY - c[1]) * pitch + tile / 2 });
@@ -290,10 +294,12 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
 
   function sizeCanvas() {
     const dpr = window.devicePixelRatio || 1;
-    canvas.style.width = `${CANVAS_W}px`;
-    canvas.width = Math.round(CANVAS_W * dpr);
-    canvas.height = Math.round(CANVAS_H * dpr);
+    const cw = canvas.clientWidth || 260;
+    const ch = canvas.clientHeight || 300;
+    canvas.width = Math.round(cw * dpr);
+    canvas.height = Math.round(ch * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    computeGeometry(cw, ch);
   }
 
   function start() {
