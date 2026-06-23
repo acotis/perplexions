@@ -3,20 +3,34 @@ import type { GridLayout, Color } from './render';
 import type { Tile } from './level';
 import { parseLevel, applyGravity } from './level';
 
-const LEVEL_TEXT = ' ord\n sle\n bcd\nwmars';
+const LEVEL_TEXT = ' ord\n sle\n bcd\n mard\nwfins';
 
-// Coordinates are [col, row] with col 0..4 (A..E) and row 0 (bottom) .. 3 (top).
+// Coordinates are [col, row] with col 0..4 (A..E) and row 0 (bottom) .. 4 (top).
 type Coord = [number, number];
 
 // A trace is a starting tile plus a sequence of segments. Each segment sweeps the
 // cursor to `to` over `span` hop-durations (eased as one continuous motion) and
 // selects tiles at the given progress fractions — letting a single smooth hop pass
 // through (and select) intermediate tiles.
-interface Seg { to: Coord; span: number; selects: { at: number; coord: Coord }[]; }
+interface Seg { to: Coord; span: number; selects: { at: number; coord: Coord }[]; pause?: number; }
 interface Trace { start: Coord; segs: Seg[]; }
 
-// "scrambled": B3 s, [C2 c, D1 r] in one sweep, C1 a, B1 m, B2 b, C3 l, D3 e, D2 d.
-const WORD1: Trace = {
+// Dwell after a segment's stroke, before the next one. Defaults to a shorter
+// pause for single-tile hops; set `pause` on a segment to tune it individually.
+function pauseAfter(seg: Seg): number {
+  return seg.pause ?? (seg.span === 1 ? STROKE_PAUSE * 0.65 : STROKE_PAUSE);
+}
+
+// "find": B1 f, [C1 i, D1 n] in one sweep, then E2 d.
+const WORD_FIND: Trace = {
+  start: [1, 0],
+  segs: [
+    { to: [3, 0], span: 2, selects: [{ at: 0.5, coord: [2, 0] }, { at: 1, coord: [3, 0] }] },
+    { to: [4, 1], span: 1, selects: [{ at: 1, coord: [4, 1] }] },
+  ],
+};
+// "scrambled": B3 s, [C2 c, D1 r] in one sweep, [C1 a, B1 m] in one sweep, B2 b, C3 l, D3 e, D2 d.
+const WORD_SCRAMBLED: Trace = {
   start: [1, 2],
   segs: [
     { to: [3, 0], span: 2, selects: [{ at: 0.5, coord: [2, 1] }, { at: 1, coord: [3, 0] }] },
@@ -28,7 +42,7 @@ const WORD1: Trace = {
   ],
 };
 // "words" along the bottom row after the cascade — one continuous stroke.
-const WORD2: Trace = {
+const WORD_WORDS: Trace = {
   start: [0, 0],
   segs: [
     {
@@ -44,33 +58,42 @@ const WORD2: Trace = {
   ],
 };
 
+const WORDS: Trace[] = [WORD_FIND, WORD_SCRAMBLED, WORD_WORDS];
+
 const COLOR: Color = { r: 150, g: 200, b: 240 };
 
 const CANVAS_W = 260;
-const CANVAS_H = 240;
+const CANVAS_H = 300;
+const COLS = 5;
+const ROWS = 5;
 
 const HOP_MS = 285;
 const STROKE_PAUSE = 200;
 const PRE_TRACE_PAUSE = 550;
 const POST_TRACE_HOLD = 420;
 const BETWEEN_PAUSE = 420;
-const EMPTY_BEAT = 2000;
+const EMPTY_BEAT = 1000;
 
 interface FallingTile { tile: Tile; pixelY: number; velocityY: number; targetPixelY: number; settled: boolean; }
 
-type Phase = 'empty' | 'fall-in' | 'pre-trace' | 'trace1' | 'cascade1' | 'between' | 'trace2';
+type Phase = 'empty' | 'fall-in' | 'pre-trace' | 'trace' | 'cascade' | 'between';
 
 export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
   const ctx = canvas.getContext('2d')!;
 
   // Tutorial-local scale (independent of the main game's global scale).
-  const pitch = Math.round((CANVAS_W * 0.84) / (4 + 10 / 11));
+  const MARGIN = 16;
+  const pitch = Math.floor(Math.min(
+    (CANVAS_W - 2 * MARGIN) / (COLS - 1 + 10 / 11),
+    (CANVAS_H - 2 * MARGIN) / (ROWS - 1 + 1.75 * 10 / 11),
+  ));
   const tile = pitch * 10 / 11;
-  const gridW = 4 * pitch + tile;
+  const gridW = (COLS - 1) * pitch + tile;
   const offsetX = (CANVAS_W - gridW) / 2;
-  const offsetY = 22;
+  const contentH = (ROWS - 1) * pitch + 1.75 * tile;
+  const offsetY = (CANVAS_H - contentH) / 2;
   const layout: GridLayout = {
-    offsetX, offsetY, minX: 0, maxX: 4, maxY: 3, numCols: 5,
+    offsetX, offsetY, minX: 0, maxX: COLS - 1, maxY: ROWS - 1, numCols: COLS,
     pitch, tileSize: tile, gap: pitch - tile,
   };
 
@@ -87,7 +110,8 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
   let chain: Tile[] = [];
   let cursor = { x: 0, y: 0 };
   let falling: FallingTile[] | null = null;
-  let activeTrace: Trace = WORD1;
+  let activeTrace: Trace = WORDS[0];
+  let wordIndex = 0;
   let showPointer = false;
 
   let phase: Phase = 'empty';
@@ -110,6 +134,7 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
 
   function beginFallIn(now: number) {
     tiles = parseLevel(LEVEL_TEXT).tiles;
+    wordIndex = 0;
     chain = [];
     showPointer = false;
     falling = tiles.map(t => {
@@ -130,7 +155,7 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
       const targetPixelY = topY(next[i]);
       return { tile: next[i], pixelY: startY, velocityY: 0, targetPixelY, settled: startY === targetPixelY };
     });
-    setPhase('cascade1', now);
+    setPhase('cascade', now);
   }
 
   function stepFalling(dt: number) {
@@ -158,7 +183,8 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
   function updateTrace(now: number): 'done' | 'running' {
     const tr = activeTrace;
     const moveTotal = tr.segs.reduce((sum, seg) => sum + seg.span, 0) * HOP_MS;
-    const total = moveTotal + (tr.segs.length - 1) * STROKE_PAUSE;
+    const pauseTotal = tr.segs.slice(0, -1).reduce((sum, seg) => sum + pauseAfter(seg), 0);
+    const total = moveTotal + pauseTotal;
     const elapsed = now - phaseStart;
 
     if (elapsed >= total) {
@@ -186,12 +212,13 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
       for (const sel of seg.selects) coords.push(sel.coord);
       prev = seg.to;
       if (i < tr.segs.length - 1) {
-        if (t < STROKE_PAUSE) {
+        const dwell = pauseAfter(seg);
+        if (t < dwell) {
           cursor = centerOfCoord(seg.to);
           chain = tilesFor(coords);
           return 'running';
         }
-        t -= STROKE_PAUSE;
+        t -= dwell;
       }
     }
     chain = tilesFor(coords);
@@ -240,19 +267,20 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
         if (stepFalling(dt)) { falling = null; setPhase('pre-trace', now); }
         break;
       case 'pre-trace':
-        if (now - phaseStart >= PRE_TRACE_PAUSE) beginTrace(WORD1, now, 'trace1');
+        if (now - phaseStart >= PRE_TRACE_PAUSE) beginTrace(WORDS[wordIndex], now, 'trace');
         break;
-      case 'trace1':
-        if (updateTrace(now) === 'done') { removeChain(); startCascade(now); }
+      case 'trace':
+        if (updateTrace(now) === 'done') {
+          removeChain();
+          if (tiles.length === 0) enterEmpty(now);
+          else startCascade(now);
+        }
         break;
-      case 'cascade1':
+      case 'cascade':
         if (stepFalling(dt)) { falling = null; setPhase('between', now); }
         break;
       case 'between':
-        if (now - phaseStart >= BETWEEN_PAUSE) beginTrace(WORD2, now, 'trace2');
-        break;
-      case 'trace2':
-        if (updateTrace(now) === 'done') { removeChain(); enterEmpty(now); }
+        if (now - phaseStart >= BETWEEN_PAUSE) { wordIndex++; beginTrace(WORDS[wordIndex], now, 'trace'); }
         break;
     }
 
