@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, unlinkSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -45,4 +45,16 @@ for (const lines of chunks) {
   const outputPath = join(__dirname, '..', 'public', 'levels', filename);
   writeFileSync(outputPath, lines.join('\n') + '\n');
   console.log(`Wrote ${filename}`);
+}
+
+// Delete any existing level files dated after the last one we generated.
+if (day > 0) {
+  const lastDate = addDays(day - 1);
+  for (const file of readdirSync(levelsDir)) {
+    const match = /^(\d{4}-\d{2}-\d{2})\.txt$/.exec(file);
+    if (match && match[1] > lastDate) {
+      unlinkSync(join(levelsDir, file));
+      console.log(`Deleted ${file}`);
+    }
+  }
 }
