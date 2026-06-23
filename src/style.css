@@ -166,6 +166,14 @@ body {
   color: #999;
 }
 
+/* On narrow screens, lay the buttons out horizontally (Settings, Tutorial,
+   Credits from left to right) instead of stacked vertically. */
+@media (max-width: 599px) {
+  #settings-btn { top: 1rem; right: 9rem; }
+  #howto-btn    { top: 1rem; right: 5rem; }
+  #credits-btn  { top: 1rem; right: 1rem; }
+}
+
 #credits-card,
 #settings-card,
 #howto-card {
