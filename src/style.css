@@ -245,6 +245,28 @@ body {
   display: block;
 }
 
+.card-close,
+#end-card .card-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  width: auto;
+  height: auto;
+  border: none;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0.2rem 0.45rem;
+  font-size: 1.875rem;
+  line-height: 1;
+  color: #bbb;
+  cursor: pointer;
+}
+
+.card-close:hover {
+  color: #777;
+}
+
 #settings-card h1 {
   margin-top: -0.625rem;
   margin-bottom: calc((-0.225rem + 0.5em) * 0.614125);

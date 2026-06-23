@@ -13,15 +13,18 @@
     <button id="settings-btn"><span class="btn-icon"></span></button>
     <button id="howto-btn"><span class="btn-icon"></span></button>
     <div id="howto-card" hidden>
+      <button class="card-close" aria-label="Close">×</button>
       <h1>How to play</h1>
       <canvas id="howto-canvas"></canvas>
     </div>
     <div id="settings-card" hidden>
+      <button class="card-close" aria-label="Close">×</button>
       <h1>Settings</h1>
       <label><input type="checkbox" id="setting-show-hash" />Show hash while solving already-completed levels</label>
       <label><input type="checkbox" id="setting-hard-mode" />Always play on hard mode</label>
     </div>
     <div id="credits-card" hidden>
+      <button class="card-close" aria-label="Close">×</button>
       <h1>Credits</h1>
       <p>Game designed and created by:</p>
       <ul>
@@ -37,6 +40,7 @@
       <p>All content in this game is hereby licensed under CC-BY-SA 4.0. See the source code on <a href="https://github.com/acotis/perplexions">GitHub</a>.</p>
     </div>
     <div id="end-card" hidden>
+      <button class="card-close" aria-label="Close">×</button>
       <h1>Level cleared!</h1>
       <p id="hard-mode-tag" hidden>hard mode complete</p>
       <div id="solution-hash"><span class="solution-hash-label">Solution hash</span><span id="solution-hash-emojis"></span></div>

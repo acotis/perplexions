@@ -352,6 +352,17 @@ window.addEventListener('keydown', e => {
   }
 });
 
+// Each card's close button dismisses it like clicking its overlay.
+const cardCloseTargets: [HTMLElement, HTMLElement][] = [
+  [creditsCard, creditsOverlay],
+  [settingsCard, settingsOverlay],
+  [howtoCard, howtoOverlay],
+  [endCard, endCardOverlay],
+];
+for (const [card, overlay] of cardCloseTargets) {
+  card.querySelector('.card-close')!.addEventListener('click', () => overlay.click());
+}
+
 function buildResultsString(): string {
   const date = currentLevelDate ?? new Date();
   const month = date.toLocaleString('en-US', { month: 'short' });
