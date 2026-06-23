@@ -91,18 +91,25 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
   const MARGIN = 16;
   let pitch = 0, tile = 0, offsetX = 0, offsetY = 0;
   let GRAVITY = 0, COLUMN_STAGGER = 0, FALL_ENTRY_EXTRA = 0;
+  let fittedH = 0;
   let layout!: GridLayout;
 
-  function computeGeometry(cw: number, ch: number) {
+  // Computes geometry from the canvas width and a max (box) height, and sets
+  // fittedH: the canvas height hugging the board, with the vertical margin
+  // tightened by half a pitch on each side (vs the horizontal MARGIN).
+  function computeGeometry(cw: number, boxH: number) {
     pitch = Math.floor(Math.min(
       (cw - 2 * MARGIN) / (COLS - 1 + 10 / 11),
-      (ch - 2 * MARGIN) / (ROWS - 1 + 1.75 * 10 / 11),
+      (boxH - 2 * MARGIN) / (ROWS - 1 + 1.75 * 10 / 11),
     ));
     tile = pitch * 10 / 11;
     const gridW = (COLS - 1) * pitch + tile;
     offsetX = (cw - gridW) / 2;
     const contentH = (ROWS - 1) * pitch + 1.75 * tile;
-    offsetY = (ch - contentH) / 2;
+    const topMargin = Math.max(pitch / 8, MARGIN - pitch / 2);
+    const bottomMargin = Math.max(0, MARGIN - pitch / 2);
+    offsetY = topMargin;
+    fittedH = contentH + topMargin + bottomMargin;
     layout = {
       offsetX, offsetY, minX: 0, maxX: COLS - 1, maxY: ROWS - 1, numCols: COLS,
       pitch, tileSize: tile, gap: pitch - tile,
@@ -312,13 +319,13 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
     const availW = window.innerWidth * 0.7;
     const availH = window.innerHeight * 0.6;
     const cw = Math.min(availW, availH * CANVAS_ASPECT);
-    const ch = cw / CANVAS_ASPECT;
+    const boxH = cw / CANVAS_ASPECT;
+    computeGeometry(cw, boxH);
     canvas.style.width = `${cw}px`;
-    canvas.style.height = `${ch}px`;
+    canvas.style.height = `${fittedH}px`;
     canvas.width = Math.round(cw * dpr);
-    canvas.height = Math.round(ch * dpr);
+    canvas.height = Math.round(fittedH * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    computeGeometry(cw, ch);
   }
 
   function start() {
