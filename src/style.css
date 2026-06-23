@@ -121,6 +121,11 @@ body {
   mask-size: contain;
 }
 
+#howto-btn .btn-icon {
+  width: 1.19em;
+  height: 1.19em;
+}
+
 #settings-btn {
   position: fixed;
   top: 5rem;
