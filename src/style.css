@@ -91,7 +91,7 @@ body {
 
 #credits-btn {
   position: fixed;
-  top: 1rem;
+  top: 9rem;
   right: 1rem;
   width: 3rem;
   height: 3rem;
@@ -128,7 +128,7 @@ body {
 
 #settings-btn {
   position: fixed;
-  top: 5rem;
+  top: 1rem;
   right: 1rem;
   width: 3rem;
   height: 3rem;
@@ -148,7 +148,7 @@ body {
 
 #howto-btn {
   position: fixed;
-  top: 9rem;
+  top: 5rem;
   right: 1rem;
   width: 3rem;
   height: 3rem;
