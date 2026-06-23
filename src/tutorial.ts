@@ -64,6 +64,7 @@ const COLOR: Color = { r: 150, g: 200, b: 240 };
 
 const COLS = 5;
 const ROWS = 5;
+const CANVAS_ASPECT = 260 / 300; // canvas width / height
 
 const HOP_MS = 285;
 const STROKE_PAUSE = 200;
@@ -294,8 +295,13 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
 
   function sizeCanvas() {
     const dpr = window.devicePixelRatio || 1;
-    const cw = canvas.clientWidth || 260;
-    const ch = canvas.clientHeight || 300;
+    // Largest canvas of the given aspect ratio that fits in a 70vw x 60vh box.
+    const availW = window.innerWidth * 0.7;
+    const availH = window.innerHeight * 0.6;
+    const cw = Math.min(availW, availH * CANVAS_ASPECT);
+    const ch = cw / CANVAS_ASPECT;
+    canvas.style.width = `${cw}px`;
+    canvas.style.height = `${ch}px`;
     canvas.width = Math.round(cw * dpr);
     canvas.height = Math.round(ch * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);

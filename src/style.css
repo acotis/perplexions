@@ -225,13 +225,10 @@ body {
 }
 
 #howto-card {
-  height: 70vh;
+  width: fit-content;
 }
 
 #howto-canvas {
-  flex: 1;
-  width: 100%;
-  min-height: 0;
   display: block;
 }
 
