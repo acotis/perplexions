@@ -5,6 +5,7 @@ import { randomLevelColor, computeLayout, tileAtPixel, tilePixelX, tilePixelY, r
 import type { Tile, ParsedLevel } from './level';
 import type { GridLayout, Color, SplashState } from './render';
 import { setupHowtoTutorial } from './tutorial';
+import { hashString } from './hash';
 
 let showEmojiHash = false;
 let hardMode = false;
@@ -798,12 +799,6 @@ window.addEventListener('popstate', () => {
 const dateParam = new URLSearchParams(window.location.search).get('date');
 const today = new Date();
 const effectiveToday = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 12);
-
-function hashString(s: string): number {
-  let h = 5381;
-  for (let i = 0; i < s.length; i++) h = (Math.imul(h, 33) ^ s.charCodeAt(i)) >>> 0;
-  return h;
-}
 
 const WORD_EMOJIS = [
   '🔥','💭','😭','😏','🤭','😂','🥺','🙂‍↔️','💚','😶','🙄','😬','🤧','😩','✊','👈','👉','👆','👇','🍎',
