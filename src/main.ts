@@ -484,6 +484,45 @@ function hitTest(r: { x: number; y: number; w: number; h: number }, px: number, 
   return px >= r.x && px <= r.x + r.w && py >= r.y && py <= r.y + r.h;
 }
 
+// Extends or retracts the active chain toward the cursor: backs off if the
+// cursor returns near the second-to-last tile, otherwise grabs an adjacent
+// tile whose center is within reach. Assumes the chain is non-empty.
+function extendChain() {
+  const last = chain[chain.length - 1];
+  const secondToLast = chain.length >= 2 ? chain[chain.length - 2] : null;
+  if (secondToLast && distToCenter(secondToLast, cursorX, cursorY) < REMOVE_RADIUS) {
+    chain.pop();
+  } else {
+    for (const tile of tiles) {
+      if (tile === last || chain.includes(tile)) continue;
+      if (!isAdjacent(last, tile)) continue;
+      if (distToCenter(tile, cursorX, cursorY) < ADD_RADIUS) { chain.push(tile); break; }
+    }
+  }
+}
+
+// Commits the active chain if it spells a valid word: records history, removes
+// the tiles, and starts the cascade. Otherwise clears the chain. `rehover`
+// picks what is hovered after a failed word — the mouse re-hovers the tile
+// under the cursor; touch has no hover and passes false.
+function commitChain(rehover: boolean) {
+  if (chain.length === 0) return;
+  const word = chain.map(t => t.letter).join('');
+  if (words.has(word)) {
+    history.push(tiles);
+    wordHistory.push(word.toUpperCase());
+    const removed = new Set(chain);
+    tiles = tiles.filter(t => !removed.has(t));
+    chain = [];
+    hoveredTile = null;
+    startCascadeAnimation();
+  } else {
+    chain = [];
+    hoveredTile = rehover ? tileAtPixel(tiles, cursorX, cursorY, layout) : null;
+    redraw();
+  }
+}
+
 canvas.addEventListener('mousedown', e => {
   if (e.button !== 0) return;
   const rect = canvas.getBoundingClientRect();
@@ -517,19 +556,7 @@ window.addEventListener('mousemove', e => {
     return;
   }
 
-  const last = chain[chain.length - 1];
-  const secondToLast = chain.length >= 2 ? chain[chain.length - 2] : null;
-
-  if (secondToLast && distToCenter(secondToLast, cursorX, cursorY) < REMOVE_RADIUS) {
-    chain.pop();
-  } else {
-    for (const tile of tiles) {
-      if (tile === last || chain.includes(tile)) continue;
-      if (!isAdjacent(last, tile)) continue;
-      if (distToCenter(tile, cursorX, cursorY) < ADD_RADIUS) { chain.push(tile); break; }
-    }
-  }
-
+  extendChain();
   redraw();
 });
 
@@ -538,24 +565,7 @@ canvas.addEventListener('mouseleave', () => {
 });
 
 
-window.addEventListener('mouseup', () => {
-  if (chain.length === 0) return;
-  const word = chain.map(t => t.letter).join('');
-  if (words.has(word)) {
-    history.push(tiles);
-    wordHistory.push(word.toUpperCase());
-    const removed = new Set(chain);
-    tiles = tiles.filter(t => !removed.has(t));
-    chain = [];
-    hoveredTile = null;
-    // if (tiles.length > 0) addSplash(cursorX, cursorY, 600, TILE_SIZE * 3);
-    startCascadeAnimation();
-  } else {
-    chain = [];
-    hoveredTile = tileAtPixel(tiles, cursorX, cursorY, layout);
-    redraw();
-  }
-});
+window.addEventListener('mouseup', () => commitChain(true));
 
 function undo() {
   if (animating || history.length === 0) return;
@@ -603,37 +613,13 @@ canvas.addEventListener('touchmove', e => {
   cursorY = touch.clientY - rect.top;
   if (animating || levelComplete || !layout || chain.length === 0) return;
 
-  const last = chain[chain.length - 1];
-  const secondToLast = chain.length >= 2 ? chain[chain.length - 2] : null;
-  if (secondToLast && distToCenter(secondToLast, cursorX, cursorY) < REMOVE_RADIUS) {
-    chain.pop();
-  } else {
-    for (const tile of tiles) {
-      if (tile === last || chain.includes(tile)) continue;
-      if (!isAdjacent(last, tile)) continue;
-      if (distToCenter(tile, cursorX, cursorY) < ADD_RADIUS) { chain.push(tile); break; }
-    }
-  }
+  extendChain();
   redraw();
 }, { passive: false });
 
 canvas.addEventListener('touchend', e => {
   e.preventDefault();
-  if (chain.length === 0) return;
-  const word = chain.map(t => t.letter).join('');
-  if (words.has(word)) {
-    history.push(tiles);
-    wordHistory.push(word.toUpperCase());
-    const removed = new Set(chain);
-    tiles = tiles.filter(t => !removed.has(t));
-    chain = [];
-    hoveredTile = null;
-    startCascadeAnimation();
-  } else {
-    chain = [];
-    hoveredTile = null;
-    redraw();
-  }
+  commitChain(false);
 }, { passive: false });
 
 // --- animation ---
@@ -644,6 +630,14 @@ interface FallingTile {
   velocityY: number;
   targetPixelY: number;
   settled: boolean;
+}
+
+// Marks the level finished: reveals the end card after a beat and fires the
+// celebratory full-screen splash from the cursor.
+function completeLevel() {
+  levelComplete = true;
+  setTimeout(showEndCard, 2000);
+  addSplash(cursorX, cursorY, 1200, Math.hypot(canvasW, canvasH));
 }
 
 function runFallAnimation(fallingTiles: FallingTile[]) {
@@ -674,11 +668,7 @@ function runFallAnimation(fallingTiles: FallingTile[]) {
 
     if (allSettled) {
       animating = false;
-      if (tiles.length === 0) {
-        levelComplete = true;
-        setTimeout(showEndCard, 2000);
-        addSplash(cursorX, cursorY, 1200, Math.hypot(canvasW, canvasH));
-      }
+      if (tiles.length === 0) completeLevel();
       runSplashLoop();
     } else {
       requestAnimationFrame(frame);
@@ -710,11 +700,7 @@ function startCascadeAnimation() {
   });
 
   if (fallingTiles.every(ft => ft.settled)) {
-    if (tiles.length === 0) {
-      levelComplete = true;
-      setTimeout(showEndCard, 2000);
-      addSplash(cursorX, cursorY, 1200, Math.hypot(canvasW, canvasH));
-    }
+    if (tiles.length === 0) completeLevel();
     runSplashLoop();
     return;
   }
