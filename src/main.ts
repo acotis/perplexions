@@ -233,15 +233,19 @@ const replayHardBtn = document.getElementById('replay-no-hash') as HTMLButtonEle
 const hardModeTag = document.getElementById('hard-mode-tag') as HTMLParagraphElement;
 const solutionHashEmojis = document.getElementById('solution-hash-emojis') as HTMLSpanElement;
 
+// Overlays fade via the .overlay-visible class (opacity transition); they start
+// hidden by CSS default, so creation just appends them.
+const showOverlay = (o: HTMLElement) => o.classList.add('overlay-visible');
+const hideOverlay = (o: HTMLElement) => o.classList.remove('overlay-visible');
+const isOverlayVisible = (o: HTMLElement) => o.classList.contains('overlay-visible');
+
 const creditsCard = document.getElementById('credits-card')!;
 const creditsOverlay = document.createElement('div');
 creditsOverlay.id = 'credits-overlay';
-creditsOverlay.style.display = 'none';
 document.body.appendChild(creditsOverlay);
 
 const endCardOverlay = document.createElement('div');
 endCardOverlay.id = 'end-card-overlay';
-endCardOverlay.style.display = 'none';
 document.body.appendChild(endCardOverlay);
 
 endCardOverlay.addEventListener('click', () => {
@@ -252,11 +256,11 @@ endCardOverlay.addEventListener('click', () => {
 
 document.getElementById('credits-btn')!.addEventListener('click', () => {
   creditsCard.hidden = false;
-  creditsOverlay.style.display = 'block';
+  showOverlay(creditsOverlay);
 });
 
 creditsOverlay.addEventListener('click', () => {
-  creditsOverlay.style.display = 'none';
+  hideOverlay(creditsOverlay);
   creditsCard.classList.add('sweeping-out');
   creditsCard.addEventListener('animationend', () => {
     creditsCard.hidden = true;
@@ -267,7 +271,6 @@ creditsOverlay.addEventListener('click', () => {
 const settingsCard = document.getElementById('settings-card')!;
 const settingsOverlay = document.createElement('div');
 settingsOverlay.id = 'settings-overlay';
-settingsOverlay.style.display = 'none';
 document.body.appendChild(settingsOverlay);
 
 const SETTINGS_PREFIX = 'perplexions-setting-';
@@ -309,11 +312,11 @@ setButtonIcon('#howto-btn .btn-icon', 'book.svg');
 
 document.getElementById('settings-btn')!.addEventListener('click', () => {
   settingsCard.hidden = false;
-  settingsOverlay.style.display = 'block';
+  showOverlay(settingsOverlay);
 });
 
 settingsOverlay.addEventListener('click', () => {
-  settingsOverlay.style.display = 'none';
+  hideOverlay(settingsOverlay);
   settingsCard.classList.add('sweeping-out');
   settingsCard.addEventListener('animationend', () => {
     settingsCard.hidden = true;
@@ -324,19 +327,18 @@ settingsOverlay.addEventListener('click', () => {
 const howtoCard = document.getElementById('howto-card')!;
 const howtoOverlay = document.createElement('div');
 howtoOverlay.id = 'howto-overlay';
-howtoOverlay.style.display = 'none';
 document.body.appendChild(howtoOverlay);
 
 const howtoTutorial = setupHowtoTutorial(document.getElementById('howto-canvas') as HTMLCanvasElement);
 
 document.getElementById('howto-btn')!.addEventListener('click', () => {
   howtoCard.hidden = false;
-  howtoOverlay.style.display = 'block';
+  showOverlay(howtoOverlay);
   howtoTutorial.start();
 });
 
 howtoOverlay.addEventListener('click', () => {
-  howtoOverlay.style.display = 'none';
+  hideOverlay(howtoOverlay);
   howtoTutorial.stop();
   howtoCard.classList.add('sweeping-out');
   howtoCard.addEventListener('animationend', () => {
@@ -349,7 +351,7 @@ howtoOverlay.addEventListener('click', () => {
 window.addEventListener('keydown', e => {
   if (e.key !== 'Escape') return;
   for (const overlay of [creditsOverlay, settingsOverlay, howtoOverlay, endCardOverlay]) {
-    if (overlay.style.display === 'block') { overlay.click(); break; }
+    if (isOverlayVisible(overlay)) { overlay.click(); break; }
   }
 });
 
@@ -403,13 +405,13 @@ function showEndCard() {
   copyBtn.textContent = hardMode ? 'Copy hard-mode results' : 'Copy results';
   hardModeTag.hidden = !hardMode;
   endCard.removeAttribute('hidden');
-  endCardOverlay.style.display = 'block';
+  showOverlay(endCardOverlay);
   updateEmojiHashFontSize();
   redraw();
 }
 function hideEndCard() {
   endCard.setAttribute('hidden', '');
-  endCardOverlay.style.display = 'none';
+  hideOverlay(endCardOverlay);
   copyBtn.style.width = '';
   copyBtn.style.backgroundColor = '';
   copyBtn.style.color = '';

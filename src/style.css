@@ -318,18 +318,23 @@ body {
 
 #credits-overlay,
 #settings-overlay,
-#howto-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 10;
-  background: rgba(0,0,0,0.15);
-}
-
+#howto-overlay,
 #end-card-overlay {
   position: fixed;
   inset: 0;
   z-index: 10;
   background: rgba(0,0,0,0.15);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#credits-overlay.overlay-visible,
+#settings-overlay.overlay-visible,
+#howto-overlay.overlay-visible,
+#end-card-overlay.overlay-visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 #toast-container {
