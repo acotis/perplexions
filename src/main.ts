@@ -887,8 +887,6 @@ function startLevel(parsed: ParsedLevel, date: Date, forceHardMode?: boolean) {
   hideEndCard();
   splashes = [];
   animating = false;
-  undoIconFirstShownTime = null;
-  undoIconFadeComplete = false;
 
   checkPrevLevel();
   checkNextLevel();
