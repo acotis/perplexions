@@ -1185,6 +1185,7 @@ aguilar
 aguinaldo
 aguirre
 agustin
+ah
 ah'll
 ah'm
 ahab
@@ -3525,7 +3526,6 @@ assayed
 assayer
 assaying
 assays
-asse
 assegai
 assegais
 assemblage
@@ -3612,7 +3612,6 @@ assorted
 assorting
 assortment
 assouan
-asst
 assuage
 assuaged
 assuaging
@@ -6864,11 +6863,7 @@ bobbie
 bobbin
 bobbing
 bobbins
-bobbs
-bobbsey
-bobby
 bobcat
-bobo
 bobolink
 bobolinks
 bobs
@@ -7167,7 +7162,6 @@ booster
 boot
 bootblack
 booted
-bootes
 booth
 boothby
 booths
@@ -7241,7 +7235,6 @@ bors
 borsippa
 borthwick
 boru
-bos
 bos'n
 bosambo
 bosanquet
@@ -7249,7 +7242,6 @@ boscawen
 bosch
 bosco
 boscobel
-bose
 bosh
 bosinney
 bosio
@@ -7270,7 +7262,6 @@ bossing
 bossu
 bossuet
 bossy
-bost
 bostil
 bostock
 boston
@@ -7457,11 +7448,8 @@ boycott
 boycotted
 boycotting
 boyd
-boye
 boyer
-boyes
 boyesen
-boyet
 boyhood
 boyish
 boyishly
@@ -14663,7 +14651,6 @@ creatures
 crebillon
 crecy
 cred
-crede
 credence
 credentials
 credibility
@@ -14749,7 +14736,6 @@ cricketer
 cricketers
 cricketing
 crickets
-crie
 cried
 crier
 criers
@@ -14787,7 +14773,6 @@ cripplegate
 cripples
 crippling
 cripps
-cris
 crisco
 crises
 criseyde
@@ -15059,7 +15044,6 @@ crux
 cruz
 cry
 cry'd
-cryed
 cryin
 crying
 crypt
@@ -15225,10 +15209,8 @@ cupboards
 cupel
 cupful
 cupfuls
-cupid
 cupidity
 cupido
-cupids
 cupola
 cupolas
 cupp
@@ -15309,7 +15291,6 @@ currier
 curries
 curry
 currying
-curs
 curs'd
 curse
 cursed
@@ -15353,7 +15334,6 @@ curvilinear
 curving
 curwen
 curzon
-cus
 cusack
 cush
 cushing
@@ -15362,7 +15342,6 @@ cushioned
 cushions
 cushman
 cusp
-cusped
 cusps
 cuss
 cussed
@@ -16262,7 +16241,6 @@ decried
 decry
 decrying
 decurrent
-decus
 dede
 dedham
 dedicate
@@ -16306,7 +16284,6 @@ deepens
 deeper
 deepest
 deeply
-deeps
 deer
 deere
 deerfield
@@ -16434,7 +16411,6 @@ degrading
 degree
 degrees
 deh
-dei
 deid
 deification
 deified
@@ -16722,7 +16698,6 @@ denounce
 denounced
 denounces
 denouncing
-denry
 dens
 dense
 densely
@@ -16755,7 +16730,6 @@ denying
 denys
 denzil
 deorum
-dep
 depart
 departe
 departed
@@ -16899,7 +16873,6 @@ dermat
 dermod
 dermot
 dermott
-dern
 dernburg
 derned
 dernier
@@ -16907,7 +16880,6 @@ derogation
 derogatory
 deronda
 derricks
-derry
 derues
 derville
 dervish
@@ -16931,7 +16903,6 @@ descends
 descent
 descents
 deschamps
-descr
 describe
 described
 describes
@@ -16942,7 +16913,6 @@ descriptio
 description
 descriptions
 descriptive
-descry
 desde
 desdemona
 dese
@@ -16989,7 +16959,6 @@ designer
 designers
 designing
 designs
-desir
 desir'd
 desirability
 desirable
@@ -17285,7 +17254,6 @@ dewdrops
 dewey
 dewitt
 dewlap
-dews
 dewsbury
 dewy
 dexie
@@ -17689,7 +17657,6 @@ dips
 dipt
 diptera
 dipterous
-dipus
 dire
 direct
 directed
@@ -18090,7 +18057,6 @@ disorganized
 disown
 disowned
 disowning
-disp
 disparage
 disparaged
 disparagement
@@ -19071,9 +19037,7 @@ dredged
 dredger
 dredges
 dredging
-dree
 dregs
-drei
 dreiser
 drelincourt
 dremmel
@@ -19214,7 +19178,6 @@ drowsiness
 drowsing
 drowsy
 drubbing
-druce
 drudge
 drudgery
 drudges
@@ -19291,7 +19254,6 @@ ducange
 ducas
 ducat
 ducats
-duce
 duch
 duchemin
 duchesne
@@ -19302,7 +19264,6 @@ duchesses
 duchies
 duchy
 ducie
-ducis
 duck
 ducked
 ducking
@@ -19312,7 +19273,6 @@ ducks
 duckworth
 ducky
 duclos
-ducs
 duct
 ductile
 ductility
@@ -19448,7 +19408,6 @@ dunno
 dunnot
 dunois
 dunraven
-duns
 dunstable
 dunstan
 dunstane
@@ -19509,7 +19468,6 @@ durham
 durin
 during
 durkin
-durn
 durned
 durnford
 durnovo
@@ -19522,7 +19480,6 @@ durst
 durtal
 durward
 duryodhana
-dus
 dusk
 dusky
 dusseldorf
@@ -19590,7 +19547,6 @@ dyes
 dyestuffs
 dyin
 dying
-dyn
 dynamic
 dynamical
 dynamics
@@ -19978,6 +19934,7 @@ egwina
 egypt
 egyptian
 egyptians
+eh
 ehrenberg
 ehrenstein
 ehrlich
@@ -21198,7 +21155,6 @@ eratosthenes
 erbout
 erckmann
 ercole
-erde
 erdmann
 erebus
 erechtheus
@@ -21406,7 +21362,6 @@ estimates
 estimating
 estimation
 estonia
-estos
 estrada
 estrange
 estranged
@@ -22885,6 +22840,7 @@ federative
 federico
 federigo
 fedor
+feds
 fee
 feeble
 feebleness
@@ -30711,7 +30667,6 @@ ideally
 ideals
 ideas
 ideation
-idees
 identical
 identically
 identifiable
@@ -30758,13 +30713,11 @@ idolized
 idols
 idomeneus
 idris
-idus
 idyl
 idyll
 idyllic
 idylls
 idyls
-iesus
 ieyasu
 if
 ifad
@@ -42106,7 +42059,6 @@ nectarine
 nectarines
 nedda
 neddy
-nedes
 need
 neede
 needed
@@ -42168,7 +42120,6 @@ negrito
 negritos
 nehemiah
 nehushta
-neid
 neigh
 neighbor
 neighborhood
@@ -42999,7 +42950,6 @@ nunquam
 nuns
 nuova
 nuovo
-nuper
 nuptial
 nuptials
 nuremberg
@@ -43216,7 +43166,6 @@ oboes
 obovate
 obovoid
 obreve
-obs
 obscene
 obscenities
 obscenity
@@ -45595,7 +45544,6 @@ peculiarly
 pecunia
 pecuniarily
 pecuniary
-ped
 pedagog
 pedagogic
 pedagogical
@@ -45613,10 +45561,6 @@ peddled
 peddler
 peddlers
 peddling
-pede
-peden
-peder
-pedes
 pedestal
 pedestals
 pedestrian
@@ -45628,7 +45572,6 @@ pedigree
 pedigrees
 pediment
 pediments
-pedis
 pedlar
 pedlars
 pedler
@@ -45770,7 +45713,6 @@ pendants
 pendarves
 pendennis
 pendent
-pender
 pending
 pendle
 pendleton
@@ -45962,11 +45904,9 @@ percolating
 percolation
 percolator
 percussion
-perd
 perdiccas
 perdita
 perdition
-perdu
 perdue
 peredonov
 peredur
@@ -45979,7 +45919,6 @@ peremptory
 perennial
 perennially
 perennials
-peres
 perf
 perfect
 perfecta
@@ -46060,7 +45999,6 @@ periphery
 periphrasis
 periplaneta
 periplus
-peris
 periscope
 periscopes
 perish
@@ -46158,12 +46096,9 @@ perrault
 perrier
 perrin
 perrine
-perris
 perron
 perrott
 perryville
-pers
-perse
 persecute
 persecuted
 persecutes
@@ -46197,7 +46132,6 @@ persistent
 persistently
 persisting
 persists
-persius
 person
 persona
 personable
@@ -46483,6 +46417,7 @@ phenomenal
 phenomenally
 phenomenon
 phew
+phi
 phial
 phials
 phidias
@@ -46675,6 +46610,7 @@ physiologist
 physiologists
 physiology
 physique
+pi
 piacenza
 piang
 pianissimo
@@ -46750,8 +46686,6 @@ picturesque
 picturesquely
 picturesqueness
 picturing
-picus
-pid
 pidgin
 pie
 piebald
@@ -46760,12 +46694,10 @@ pieced
 piecemeal
 pieces
 piecing
-pied
 piedmont
 piedmontese
 piedra
 piedras
-pieds
 piegan
 pier
 pierc'd
@@ -48700,12 +48632,10 @@ priories
 priority
 priors
 priory
-pris
 prisca
 priscian
 priscilla
 priscus
-prise
 prism
 prismatic
 prisms
@@ -49343,7 +49273,6 @@ prying
 prynce
 prynne
 pryor
-pryse
 prythee
 przemysl
 psal
@@ -49433,7 +49362,6 @@ pucker
 puckered
 puckering
 puckers
-pud
 puddin
 pudding
 puddings
@@ -49560,7 +49488,6 @@ puncture
 punctured
 punctures
 puncturing
-pund
 pundit
 pundits
 pung
@@ -49617,7 +49544,6 @@ purchasers
 purchases
 purchasing
 purdie
-purdy
 pure
 puree
 purely
@@ -49696,7 +49622,6 @@ pursuit
 pursuits
 pursuivant
 pursuivants
-pursy
 purty
 purulent
 purusha
@@ -49706,7 +49631,6 @@ purveyors
 purview
 purvis
 pus
-pusey
 push
 pushed
 pusher
@@ -51106,7 +51030,6 @@ reddest
 redding
 reddish
 reddy
-rede
 redeem
 redeemable
 redeemed
@@ -51405,7 +51328,6 @@ reichardt
 reichenbach
 reichs
 reichstag
-reid
 reight
 reign
 reign'd
@@ -51697,8 +51619,6 @@ rendition
 rendre
 rendrye
 rends
-rendu
-rendus
 renegade
 renegades
 renegado
@@ -51847,7 +51767,6 @@ reposing
 repositories
 repository
 repossess
-repr
 reprehend
 reprehended
 reprehensible
@@ -52063,7 +51982,6 @@ resource
 resourceful
 resourcefulness
 resources
-resp
 respect
 respectability
 respectable
@@ -53480,7 +53398,6 @@ ruyter
 rwanda
 rycht
 rydal
-ryder
 rye
 ryecroft
 ryght
@@ -54249,15 +54166,12 @@ sayde
 sayed
 sayer
 sayers
-sayes
-sayest
 sayeth
 saying
 sayings
 sayle
 saynt
 says
-sayst
 sayth
 sbirri
 scab
@@ -54784,7 +54698,6 @@ scrutinize
 scrutinized
 scrutinizing
 scrutiny
-scud
 scudamore
 scudded
 scudder
@@ -54821,7 +54734,6 @@ scurry
 scurrying
 scurvily
 scurvy
-scuse
 scuta
 scutari
 scutcheon
@@ -55011,7 +54923,6 @@ sedative
 sedatives
 seddon
 sedentary
-sedes
 sedge
 sedgemoor
 sedges
@@ -55095,7 +55006,6 @@ segregation
 seguin
 segundo
 segur
-seid
 seide
 seidlitz
 seigneur
@@ -55217,7 +55127,6 @@ senatorial
 senators
 senatus
 send
-sende
 sender
 sendeth
 sendin
@@ -55262,7 +55171,6 @@ sensitized
 sensorial
 sensorium
 sensory
-sensu
 sensual
 sensualism
 sensualist
@@ -55443,7 +55351,6 @@ sessile
 session
 sessions
 sesterces
-sestos
 set
 setback
 setebos
@@ -55529,7 +55436,6 @@ sexual
 sexuality
 sexually
 seychelles
-seyd
 seyde
 seymour
 seyton
@@ -56282,7 +56188,6 @@ sidle
 sidled
 sidling
 sidmouth
-sidney
 sidon
 sidonia
 sidonian
@@ -56624,7 +56529,6 @@ sira
 sirach
 sirdar
 sire
-siree
 siren
 sirens
 sires
@@ -56632,10 +56536,8 @@ sirius
 sirloin
 sirocco
 sirona
-sirr
 sirra
 sirrah
-sirs
 sirup
 sisal
 sismondi
@@ -58025,8 +57927,6 @@ speculators
 speculum
 sped
 spedding
-spede
-spee
 speech
 speeches
 speechless
@@ -58041,7 +57941,6 @@ speeding
 speeds
 speedwell
 speedy
-speer
 speir
 speke
 spell
@@ -58063,11 +57962,9 @@ spending
 spends
 spendthrift
 spendthrifts
-spener
 spenser
 spenserian
 spent
-sper
 speranza
 sperit
 sperits
@@ -58079,11 +57976,9 @@ spermatozoon
 spero
 sperrit
 sperrits
-sperry
 speug
 spew
 spewed
-spey
 speyer
 spezia
 spezzia
@@ -59765,7 +59660,6 @@ subvert
 subverted
 subverting
 subway
-suc
 succ
 succeed
 succeeded
@@ -59815,7 +59709,6 @@ sucklings
 sucks
 sucre
 suction
-sud
 sudan
 sudanese
 sudbury
@@ -59896,7 +59789,6 @@ suicide
 suicides
 suidas
 suing
-suis
 suisse
 suit
 suitability
@@ -60193,7 +60085,6 @@ supremacy
 supreme
 supremely
 supremest
-sups
 surajah
 suras
 surbiton
@@ -60296,7 +60187,6 @@ susceptibilities
 susceptibility
 susceptible
 susiana
-susie
 suspect
 suspected
 suspecting
@@ -60325,7 +60215,6 @@ sustaining
 sustains
 sustenance
 sustentation
-susy
 sutch
 sutcliffe
 sutherland
@@ -60572,8 +60461,6 @@ sycophancy
 sycophant
 sycophantic
 sycophants
-syd
-syde
 sydenham
 sydney
 syene
@@ -60695,8 +60582,6 @@ syrinx
 syrup
 syrups
 syrupus
-syrus
-syst
 system
 systema
 systematic
@@ -61566,7 +61451,6 @@ tertsky
 tertullian
 terzky
 tesman
-tessa
 tesselated
 tessellated
 tessibel
@@ -62534,7 +62418,6 @@ toboggan
 tobogganing
 tobolsk
 toboso
-toby
 tock
 tocqueville
 toda
@@ -64087,6 +63970,7 @@ ugliness
 ugly
 ugolini
 ugolino
+uh
 uhlan
 uhland
 uhlans
@@ -65411,6 +65295,7 @@ uptown
 upturned
 upward
 upwards
+ur
 urals
 urania
 uranium
@@ -67646,7 +67531,6 @@ wenceslaus
 wench
 wenches
 wend
-wende
 wended
 wendel
 wendell
@@ -67662,14 +67546,12 @@ went
 wentworth
 wenzel
 wept
-werden
 were
 weren't
 werewolf
 werke
 werther
 werwolf
-wesden
 wesley
 wesleyan
 wesleyans
@@ -68890,7 +68772,6 @@ wyck
 wyclif
 wycliffe
 wycombe
-wyde
 wyeth
 wykeham
 wyl
@@ -68902,8 +68783,6 @@ wyllard
 wylle
 wyllys
 wyman
-wynd
-wynde
 wyndham
 wynkyn
 wynn
@@ -69045,6 +68924,7 @@ yawn
 yawned
 yawning
 yawns
+yay
 yazoo
 ybl
 ybreve
@@ -69069,7 +68949,6 @@ yearningly
 yearnings
 yearns
 years
-yeas
 yeast
 yeasts
 yeasty
@@ -69201,6 +69080,7 @@ youth
 youthful
 youthfulness
 youths
+yoyo
 ypogegrammeni
 ysabel
 yseulte
