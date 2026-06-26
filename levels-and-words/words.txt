@@ -478,6 +478,7 @@ aching
 achitophel
 achmed
 achmet
+achoo
 achromatic
 acid
 acidity
@@ -656,7 +657,6 @@ adeline
 adelle
 adelphi
 adenoids
-adeo
 adept
 adepts
 adequacy
@@ -778,7 +778,6 @@ adolphine
 adolphus
 adonai
 adonais
-adone
 adonijah
 adoniram
 adonis
@@ -1303,11 +1302,8 @@ alais
 alam
 alameda
 alamo
-alan
-alane
 alang
 alani
-alano
 alans
 alarcon
 alaric
@@ -1405,7 +1401,6 @@ aldclyffe
 aldebaran
 aldegonde
 aldehyde
-alden
 alder
 alderley
 alderman
@@ -1548,7 +1543,6 @@ alkibiades
 all
 allah
 allahabad
-allan
 allantois
 allard
 allardyce
@@ -1559,7 +1553,6 @@ allayed
 allaying
 allays
 alledged
-allee
 allegation
 allegations
 allege
@@ -1697,7 +1690,6 @@ alongst
 alonzo
 aloof
 aloofness
-alora
 alors
 aloud
 alow
@@ -2089,6 +2081,7 @@ anagram
 anagrams
 anahuac
 anak
+anal
 analecta
 anales
 analogical
@@ -2321,7 +2314,6 @@ anjou
 ankle
 ankles
 anklets
-anna
 annabel
 annabella
 annal
@@ -2618,6 +2610,7 @@ aphides
 aphorism
 aphorisms
 aphrodite
+apian
 apiary
 apical
 apices
@@ -3007,7 +3000,6 @@ arctic
 arctura
 arcturus
 ardelia
-arden
 ardennes
 ardent
 ardently
@@ -3205,7 +3197,6 @@ arnica
 arnim
 arnobius
 arnold
-arnon
 arnould
 arnoux
 aroma
@@ -3416,6 +3407,8 @@ ashburner
 ashburnham
 ashburton
 ashby
+ashcan
+ashcans
 ashdod
 ashe
 ashen
@@ -9153,6 +9146,8 @@ canarese
 canaries
 canaris
 canary
+canasta
+canastas
 canby
 cancel
 canceled
@@ -12201,8 +12196,10 @@ coition
 coitus
 coke
 cokeson
+cola
 colambre
 colander
+colas
 colbert
 colborne
 colburn
@@ -15665,7 +15662,6 @@ dakotas
 dalaber
 dalai
 dalberg
-dale
 dales
 dalesmen
 daley
@@ -15675,7 +15671,6 @@ dalibard
 dalis
 dalkeith
 dalken
-dall
 dalla
 dallas
 dalles
@@ -15792,7 +15787,6 @@ danish
 danites
 dank
 dankwart
-dann
 dannie
 danny
 danse
@@ -15829,7 +15823,6 @@ dare
 dared
 daredevil
 daren't
-darena
 dares
 daresay
 darest
@@ -15936,7 +15929,6 @@ daughter
 daughters
 dauid
 daumier
-daun
 daunce
 daunger
 daunt
@@ -16033,7 +16025,6 @@ dealings
 deals
 dealt
 dean
-deane
 deanery
 deans
 dear
@@ -16450,7 +16441,6 @@ delancy
 deland
 delane
 delaney
-delano
 delany
 delarey
 delaroche
@@ -16536,7 +16526,6 @@ deliveries
 delivering
 delivers
 delivery
-delle
 delmar
 delmonico
 delorme
@@ -16674,7 +16663,6 @@ denizens
 denman
 denmark
 denmarke
-denn
 denner
 dennie
 denning
@@ -16843,7 +16831,6 @@ derangement
 derangements
 derby
 derbyshire
-dere
 dereham
 derek
 derelict
@@ -18443,7 +18430,6 @@ do
 do'st
 do't
 doan't
-doane
 doated
 dobb
 dobbin
@@ -18576,8 +18562,6 @@ dolman
 dolmen
 dolmens
 dolomite
-dolor
-dolore
 dolores
 dolorosa
 dolorous
@@ -18680,19 +18664,14 @@ donjon
 donkey
 donkeys
 donkin
-donn
-donna
-donne
 donned
 donnegan
 donnell
 donnelly
-donner
 donnie
 donning
 donnithorne
 donnybrook
-dono
 donohue
 donor
 donors
@@ -18740,7 +18719,6 @@ dorcas
 dorchester
 dordogne
 dordrecht
-dore
 doree
 doreen
 dorgan
@@ -18848,8 +18826,6 @@ doughty
 douglas
 douglases
 douglass
-doun
-doune
 dour
 douro
 douse
@@ -18950,7 +18926,6 @@ dramatists
 dramatization
 dramatized
 drams
-drane
 drank
 drap
 drape
@@ -19237,7 +19212,6 @@ dual
 dualism
 dualistic
 duality
-duane
 duarte
 dub
 dubarry
@@ -19400,9 +19374,7 @@ dunkirk
 dunlap
 dunlop
 dunmore
-dunn
 dunnage
-dunne
 dunning
 dunno
 dunnot
@@ -20162,8 +20134,6 @@ elkins
 elks
 ellaline
 ellangowan
-elle
-ellen
 ellenborough
 ellerey
 ellerton
@@ -20205,7 +20175,6 @@ elms
 elmsley
 elmwood
 elnathan
-elnora
 elocution
 elohim
 eloisa
@@ -20613,7 +20582,6 @@ endlessly
 endnote
 endnotes
 endoderm
-endor
 endorse
 endorsed
 endorsement
@@ -20820,7 +20788,6 @@ enrichment
 enright
 enrique
 enriquez
-enrol
 enroll
 enrolled
 enrolling
@@ -21453,7 +21420,6 @@ eucken
 euclid
 euclidean
 eudes
-eudora
 eudoxia
 eudoxus
 euening
@@ -21467,7 +21433,6 @@ eugenio
 eugenius
 eulalia
 eulalie
-euler
 eulogies
 eulogist
 eulogistic
@@ -23769,11 +23734,13 @@ floated
 floatin
 floating
 floats
+floc
 floccose
 flock
 flocked
 flocking
 flocks
+flocs
 flodden
 flog
 flogged
@@ -28576,6 +28543,8 @@ hazleton
 hazlewood
 hazlitt
 hazy
+hazzan
+hazzans
 hazzard
 he
 he'd
@@ -35002,11 +34971,9 @@ lakhs
 lakou
 lakshma
 lakshmi
-lala
 lalage
 lalande
 lally
-lalor
 lama
 lamachus
 laman
@@ -35227,7 +35194,6 @@ larded
 larder
 larding
 lardner
-laredo
 lares
 larf
 large
@@ -35247,7 +35213,6 @@ larkins
 larks
 larkspur
 larkyns
-larn
 larned
 larnin
 laroche
@@ -35373,7 +35338,6 @@ laughlin
 laughs
 laughter
 laughton
-launa
 launay
 launce
 launcelot
@@ -35497,7 +35461,6 @@ lazy
 lazzaroni
 leach
 lead
-leade
 leaded
 leaden
 leadenhall
@@ -35833,8 +35796,6 @@ leoni
 leonidas
 leonie
 leonine
-leonor
-leonora
 leonore
 leontes
 leontine
@@ -35859,7 +35820,6 @@ lepus
 lequel
 lerida
 lerma
-lerne
 leroux
 leroy
 lerwick
@@ -36537,7 +36497,6 @@ lloyds
 llyn
 load
 loaded
-loaden
 loader
 loaders
 loading
@@ -36628,7 +36587,6 @@ locus
 locust
 locusts
 lode
-loder
 lodes
 lodestone
 lodge
@@ -36687,7 +36645,6 @@ lollard
 lollards
 lolling
 lolly
-lolo
 lom
 loman
 lomax
@@ -36698,8 +36655,6 @@ lombardy
 lombroso
 lome
 lomond
-londe
-london
 londonderry
 londoner
 londoners
@@ -36820,7 +36775,6 @@ lorand
 lorcs
 lord
 lord's
-lorde
 lorded
 lordes
 lording
@@ -36832,7 +36786,6 @@ lordships
 lordy
 lore
 lorelei
-loren
 lorenz
 lorenzo
 lores
@@ -36844,9 +36797,6 @@ lorgnette
 lorimer
 loring
 loris
-lorn
-lorna
-lorne
 loro
 lorrain
 lorraine
@@ -36902,7 +36852,6 @@ loudon
 loudoun
 loudun
 loudwater
-loued
 lough
 loughborough
 louhi
@@ -37059,7 +37008,6 @@ lucrezia
 lucubrations
 lucullus
 lucy
-ludar
 ludendorff
 ludgate
 ludicrous
@@ -37146,7 +37094,6 @@ lunged
 lunges
 lunging
 lungs
-lunn
 lunnon
 lupeaulx
 lupin
@@ -41754,7 +41701,6 @@ naka
 naked
 nakedly
 nakedness
-nala
 nam'd
 nama
 namby
@@ -41846,6 +41792,7 @@ narva
 narvaez
 narwhal
 nary
+nasal
 nasals
 nascent
 naseby
@@ -42060,7 +42007,6 @@ nectarines
 nedda
 neddy
 need
-neede
 needed
 needes
 needest
@@ -42142,10 +42088,8 @@ neither
 nejd
 nejdanov
 nekhludoff
-nelle
 nellie
 nelligan
-nello
 nels
 nelsen
 nelson
@@ -42591,7 +42535,6 @@ nocturnal
 nocturne
 nocturnes
 nod
-nodal
 nodded
 nodding
 noddy
@@ -42661,7 +42604,6 @@ nones
 nonetheless
 nonexistent
 nonne
-nono
 nonofficial
 nonpareil
 nonplussed
@@ -42686,7 +42628,6 @@ norah
 norbert
 norbury
 norcross
-norden
 nordic
 noreen
 norfolk
@@ -42902,7 +42843,6 @@ nuggets
 nuisance
 nuisances
 null
-nulla
 nullah
 nullification
 nullified
@@ -42910,7 +42850,6 @@ nullify
 nullifying
 nullity
 nullius
-nullo
 nullum
 nullus
 numa
@@ -42945,7 +42884,6 @@ nung
 nunn
 nunneries
 nunnery
-nuno
 nunquam
 nuns
 nuova
@@ -43326,7 +43264,6 @@ oddness
 oddo
 odds
 ode
-odeon
 odes
 odessa
 odette
@@ -43334,11 +43271,9 @@ odgard
 odio
 odious
 odium
-odo
 odoacer
 odor
 odorata
-odore
 odoriferous
 odorless
 odorous
@@ -43352,7 +43287,6 @@ oecumenical
 oedema
 oedipus
 oelig
-oenone
 oersted
 oesophageal
 oesophagus
@@ -43437,6 +43371,7 @@ ogre
 ogres
 oh
 ohio
+ohm
 ohms
 ohne
 oi'll
@@ -43491,7 +43426,6 @@ oleander
 oleanders
 olelo
 olenka
-oleron
 oleum
 olfactory
 olga
@@ -43806,7 +43740,6 @@ ordains
 ordeal
 ordeals
 ordeined
-orden
 order
 order'd
 ordered
@@ -43832,7 +43765,6 @@ ordinations
 ordine
 ordinis
 ordnance
-ordo
 ordonio
 ordonnance
 ordovician
@@ -43923,7 +43855,6 @@ orkney
 orkneys
 orlandi
 orlando
-orlean
 orleans
 orley
 orloff
@@ -44510,6 +44441,7 @@ packs
 packthread
 pact
 pactolus
+pacts
 pacuvius
 pad
 padded
@@ -44831,6 +44763,7 @@ paolina
 paolo
 papa
 papacy
+papal
 papas
 papaw
 pape
@@ -46624,6 +46557,8 @@ piastre
 piastres
 piatt
 piave
+piazza
+piazzas
 piazzetta
 pibroch
 picard
@@ -50110,7 +50045,6 @@ quoting
 quoy
 qur'an
 quum
-raad
 raban
 rabat
 rabba
@@ -50423,7 +50357,6 @@ rankled
 rankling
 rankly
 ranks
-ranne
 ranny
 ransack
 ransacked
@@ -50440,7 +50373,6 @@ ranting
 rantzau
 ranulph
 ranunculus
-raoul
 rap
 rapacious
 rapacity
@@ -50560,7 +50492,6 @@ rattray
 ratty
 ratzel
 raucous
-raul
 rauparaha
 ravage
 ravaged
@@ -50640,7 +50571,6 @@ reactions
 reacts
 read
 readable
-reade
 reader
 readers
 readie
@@ -51597,10 +51527,8 @@ renaissance
 renal
 renaldo
 renamed
-renan
 renard
 renascence
-renaud
 renault
 rencontre
 rencounter
@@ -52781,7 +52709,6 @@ rod
 rodd
 roddy
 rode
-roden
 rodent
 rodents
 rodeo
@@ -52826,9 +52753,7 @@ rolf
 rolfe
 roll
 roll'd
-rolla
 rolland
-rolle
 rolled
 roller
 rollers
@@ -52837,7 +52762,6 @@ rollicking
 rollin
 rolling
 rollins
-rollo
 rolls
 rolph
 roly
@@ -52894,14 +52818,12 @@ romping
 romps
 romulus
 ronald
-ronan
 ronayne
 roncesvalles
 rondeau
 rondo
 rong
 ronicky
-ronne
 ronnie
 ronny
 ronquillo
@@ -63948,12 +63870,10 @@ tyrwhitt
 tytler
 tzar
 tze
-uarda
 ubique
 ubiquitous
 ubiquity
 ubreve
-udal
 udall
 udder
 udders
@@ -63990,10 +63910,8 @@ ulein
 ulema
 ulenspiegel
 ullah
-ulloa
 ulm
 ulmus
-ulnar
 ulpian
 ulrica
 ulrich
@@ -64287,7 +64205,6 @@ undamaged
 undated
 undaunted
 undauntedly
-unde
 undeceive
 undeceived
 undecided
@@ -69298,22 +69215,3 @@ zwei
 zwingle
 zwingli
 zygomatic
-achoo
-floc
-cola
-flocs
-colas
-piazza
-piazzas
-ashcan
-ashcans
-canasta
-canastas
-hazzan
-hazzans
-apian
-pacts
-nasal
-anal
-papal
-ohm

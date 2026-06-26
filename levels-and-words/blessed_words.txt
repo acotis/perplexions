@@ -9,6 +9,7 @@ abuse
 ace
 aces
 acetone
+achoo
 acid
 acorn
 acorns
@@ -19,6 +20,7 @@ act
 acts
 ad
 ado
+adore
 ads
 aegis
 aerated
@@ -70,13 +72,16 @@ amends
 amiss
 amp
 an
+anal
 anarchy
 and
 ands
 anew
 angry
 ankle
+annal
 annex
+annul
 ant
 ante
 ants
@@ -84,6 +89,7 @@ anus
 any
 aorta
 ape
+apian
 apish
 apl
 app
@@ -113,6 +119,7 @@ art
 arts
 as
 ash
+ashcan
 ask
 asp
 asps
@@ -280,6 +287,8 @@ came
 cams
 can
 canal
+canasta
+canastas
 candid
 candle
 cane
@@ -398,6 +407,8 @@ cohere
 coil
 coiled
 coin
+cola
+colas
 cold
 colder
 collar
@@ -543,6 +554,8 @@ dam
 dame
 damns
 dams
+dane
+dare
 darn
 dawn
 day
@@ -550,6 +563,7 @@ days
 dead
 deaf
 deal
+dealer
 deals
 dealt
 dean
@@ -610,6 +624,8 @@ dom
 dome
 domed
 don
+done
+donor
 dons
 dose
 dot
@@ -631,6 +647,7 @@ drear
 drew
 drill
 drip
+drone
 drum
 drums
 dry
@@ -647,6 +664,8 @@ dug
 dull
 dulled
 duller
+dune
+dunno
 duo
 duos
 dwell
@@ -683,6 +702,7 @@ eerie
 egg
 ego
 egress
+eh
 elate
 elated
 eld
@@ -706,6 +726,7 @@ enact
 enacts
 enclose
 end
+endear
 enders
 ends
 enema
@@ -780,6 +801,7 @@ feast
 feat
 feats
 fed
+feds
 fee
 feed
 feeding
@@ -851,6 +873,8 @@ flints
 flip
 flit
 flits
+floc
+flocs
 floor
 floors
 flout
@@ -1073,6 +1097,7 @@ harp
 has
 hat
 hats
+hazzan
 he
 heap
 hear
@@ -1210,6 +1235,8 @@ lab
 lace
 laces
 lad
+lade
+laden
 lag
 lair
 lake
@@ -1222,6 +1249,7 @@ land
 lane
 lanes
 lap
+lard
 large
 larger
 largo
@@ -1235,10 +1263,12 @@ laws
 lay
 laying
 lays
+lead
 leak
 lean
 leap
 leapt
+learn
 lease
 led
 lede
@@ -1296,8 +1326,10 @@ literacy
 literary
 literate
 liters
+load
 loaf
 loan
+loaned
 loans
 lob
 lobe
@@ -1325,6 +1357,7 @@ loose
 looser
 loot
 lop
+lord
 lore
 lose
 loser
@@ -1349,6 +1382,7 @@ lug
 lull
 lulled
 lumen
+lunar
 lung
 lunge
 lust
@@ -1472,11 +1506,13 @@ nap
 nape
 narrow
 nary
+nasal
 natal
 navy
 nay
 nays
 near
+neared
 nearer
 nearest
 nears
@@ -1533,8 +1569,10 @@ noting
 now
 nub
 nuclear
+nude
 null
 numb
+nun
 nut
 nuts
 nutter
@@ -1557,6 +1595,7 @@ odd
 odder
 ode
 odes
+odor
 of
 off
 offs
@@ -1564,6 +1603,7 @@ often
 ogre
 ogres
 oh
+ohm
 ohms
 oil
 oiled
@@ -1571,6 +1611,7 @@ oiler
 oils
 okra
 old
+olden
 older
 omen
 omens
@@ -1634,6 +1675,7 @@ oxide
 oyster
 pack
 pact
+pacts
 paige
 pail
 pain
@@ -1651,6 +1693,7 @@ panic
 panics
 pans
 papa
+papal
 papas
 par
 parch
@@ -1703,6 +1746,8 @@ petrol
 pi
 piano
 pianos
+piazza
+piazzas
 pie
 pier
 piers
@@ -1903,6 +1948,7 @@ relent
 relic
 relit
 remote
+renal
 rend
 rends
 renew
@@ -1990,9 +2036,14 @@ rocker
 rockers
 rocks
 rod
+rode
+rodeo
 rods
 role
 roles
+roll
+rolled
+rondo
 roof
 roofs
 room
@@ -2668,13 +2719,19 @@ ulcer
 um
 unbar
 uncle
+under
 undid
+undo
+undone
 unfit
 unit
 unite
 unites
 units
 unity
+unload
+unread
+unreal
 unrest
 unseat
 unsure
