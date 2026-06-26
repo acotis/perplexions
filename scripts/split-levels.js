@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, mkdirSync, readdirSync, unlinkSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, unlinkSync, copyFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -28,8 +28,14 @@ for (const rawLine of text.split('\n')) {
 }
 chunks.push(current);
 
-const levelsDir = join(__dirname, '..', 'public', 'levels');
+const publicDir = join(__dirname, '..', 'public');
+const levelsDir = join(publicDir, 'levels');
 mkdirSync(levelsDir, { recursive: true });
+
+// Copy the words list (sibling of the input file) into public/ so the dev
+// server and build can serve it; the app fetches it at runtime.
+copyFileSync(join(dirname(inputFile), 'words.txt'), join(publicDir, 'words.txt'));
+console.log('Copied words.txt');
 
 function addDays(days) {
   const date = new Date(Date.UTC(2026, 5, 18 + days));

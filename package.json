@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predev": "node scripts/split-levels.js levels.txt",
+    "predev": "node scripts/split-levels.js levels-and-words/levels.txt",
     "dev": "vite",
-    "prebuild": "node scripts/split-levels.js levels.txt",
+    "prebuild": "node scripts/split-levels.js levels-and-words/levels.txt",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "vitest run",
