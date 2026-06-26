@@ -556,6 +556,7 @@ damns
 dams
 dane
 dare
+dares
 darn
 dawn
 day
@@ -593,7 +594,9 @@ derby
 desire
 desires
 desk
+deuce
 dew
+dewy
 dice
 diced
 did
@@ -672,6 +675,7 @@ dwell
 dye
 dyed
 dyer
+dyers
 dyes
 each
 eager
@@ -729,6 +733,7 @@ end
 endear
 enders
 ends
+endure
 enema
 energy
 enrage
@@ -1522,6 +1527,7 @@ neater
 neatest
 need
 needs
+needy
 neg
 neon
 nest
@@ -1721,6 +1727,7 @@ peach
 peachy
 pear
 pearl
+peas
 pee
 peer
 peers
@@ -1832,6 +1839,7 @@ prod
 progress
 prone
 pros
+prune
 pry
 pub
 pug
@@ -1928,8 +1936,10 @@ recur
 recurs
 red
 reds
+reduce
 reed
 reeds
+reedy
 reef
 reefs
 reel
@@ -2086,6 +2096,7 @@ rune
 runes
 runs
 runt
+rupee
 ruse
 ruses
 rust
@@ -2172,6 +2183,7 @@ sedan
 see
 seed
 seeds
+seedy
 seek
 seem
 seems
@@ -2336,10 +2348,12 @@ specs
 sped
 speed
 speeds
+speedy
 spend
 spender
 spends
 splay
+spray
 spree
 sprees
 spry
@@ -2410,6 +2424,7 @@ sty
 sub
 submit
 sucre
+sudan
 suds
 sue
 sued
@@ -2423,6 +2438,7 @@ suit
 suite
 sum
 sun
+sunday
 sundry
 sunflower
 suns
@@ -2442,6 +2458,8 @@ swat
 swear
 sweat
 sweater
+sweep
+sweeps
 sweet
 sweeter
 swift
@@ -2835,6 +2853,7 @@ weds
 wee
 weed
 weeds
+weedy
 week
 weeks
 weep
@@ -2905,6 +2924,8 @@ yaks
 yam
 yams
 yap
+yard
+yards
 yarn
 yarns
 yass

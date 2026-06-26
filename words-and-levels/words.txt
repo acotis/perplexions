@@ -3009,11 +3009,11 @@ ardmore
 ardor
 ardour
 ardours
-ardry
 arduous
 ardworth
 are
 area
+areal
 areas
 aren't
 arena
@@ -15215,13 +15215,11 @@ cupped
 cupping
 cupples
 cups
-cura
 curable
 curacao
 curacoa
 curacy
 curare
-curas
 curate
 curates
 curative
@@ -15247,7 +15245,6 @@ cures
 cureton
 curfew
 curia
-curie
 curing
 curio
 curios
@@ -15282,7 +15279,6 @@ currents
 currer
 curricle
 curriculum
-currie
 curried
 currier
 curries
@@ -15868,7 +15864,6 @@ darragh
 darrel
 darrell
 darrin
-darry
 darsie
 dart
 dartaway
@@ -18969,7 +18964,6 @@ drawn
 drawne
 draws
 draxy
-dray
 draycott
 drayman
 drays
@@ -19191,7 +19185,6 @@ drunkenly
 drunkenness
 drupada
 drupe
-drury
 drusilla
 drusus
 druv
@@ -19237,7 +19230,6 @@ duchesse
 duchesses
 duchies
 duchy
-ducie
 duck
 ducked
 ducking
@@ -21014,7 +21006,6 @@ epimetheus
 epiphanes
 epiphanius
 epiphany
-epirus
 episcopacy
 episcopal
 episcopalian
@@ -21156,6 +21147,7 @@ erminie
 ermyntrude
 ernestine
 ernstein
+erode
 eroded
 erosion
 erotic
@@ -21419,7 +21411,6 @@ eucharistic
 eucken
 euclid
 euclidean
-eudes
 eudoxia
 eudoxus
 euening
@@ -45641,7 +45632,6 @@ pencilling
 pencils
 pencroft
 pend
-penda
 pendant
 pendants
 pendarves
@@ -45749,7 +45739,6 @@ pentuer
 penultimate
 penumbra
 penurious
-penury
 penzance
 peon
 peonage
@@ -49397,7 +49386,6 @@ pumpkin
 pumpkins
 pumps
 pun
-puna
 punch
 punch's
 punched
@@ -59413,7 +59401,6 @@ suabia
 suabian
 suakin
 suarez
-suas
 suasion
 suave
 suavely
@@ -59827,7 +59814,6 @@ sunburned
 sunburnt
 sunburst
 sunbury
-sunda
 sunday
 sundays
 sunder
@@ -60009,7 +59995,6 @@ supreme
 supremely
 supremest
 surajah
-suras
 surbiton
 surcease
 surcharged
@@ -60101,7 +60086,6 @@ surviving
 survivor
 survivors
 sus
-susa
 susan
 susanna
 susannah
@@ -64901,7 +64885,6 @@ unsatisfied
 unsatisfying
 unsavory
 unsavoury
-unsay
 unscathed
 unscientific
 unscrew
@@ -67455,7 +67438,6 @@ wendell
 wending
 wendover
 wends
-wendy
 wenham
 wenlock
 wenn
