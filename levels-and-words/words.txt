@@ -36759,6 +36759,7 @@ loosing
 loot
 looted
 looting
+loots
 lop
 loped
 lopes
