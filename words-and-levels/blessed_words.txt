@@ -102,6 +102,7 @@ arcs
 ardor
 are
 area
+areal
 arena
 argon
 aria
@@ -753,6 +754,7 @@ eras
 erase
 erect
 ergo
+erode
 err
 errata
 erroneous
