@@ -13,7 +13,7 @@ dist-ssr
 *.local
 .vite
 
-# Generated from levels-and-words/ by scripts/split-levels.js
+# Generated from words-and-levels/ by scripts/split-levels.js
 public/levels/
 public/words.txt
 
