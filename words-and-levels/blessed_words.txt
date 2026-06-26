@@ -1356,6 +1356,7 @@ loos
 loose
 looser
 loot
+loots
 lop
 lord
 lore
