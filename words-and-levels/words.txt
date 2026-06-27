@@ -69167,6 +69167,7 @@ zoologist
 zoologists
 zoology
 zoom
+zooms
 zoon
 zoophytes
 zoos
