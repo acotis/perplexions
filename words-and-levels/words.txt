@@ -1002,6 +1002,7 @@ aforethought
 afoul
 afraid
 afresh
+afro
 aft
 after
 afterbirth
@@ -3132,6 +3133,7 @@ atrocity
 atrophied
 atrophy
 atropine
+ats
 attach
 attachable
 attached
@@ -7113,6 +7115,8 @@ caduceus
 caesarean
 caesarian
 caesura
+cafe
+cafes
 cafeteria
 cafeterias
 cafetiere
@@ -7675,6 +7679,7 @@ carolers
 caroling
 carols
 carom
+caron
 carotene
 carotid
 carouse
@@ -15966,6 +15971,7 @@ dolphin
 dolphins
 dolt
 dolts
+dom
 domain
 domains
 dome
@@ -17156,6 +17162,7 @@ elbow
 elbowed
 elbowing
 elbows
+eld
 elder
 elderberries
 elderberry
@@ -17478,6 +17485,7 @@ emitted
 emitter
 emitters
 emitting
+emo
 emollient
 emollients
 emolument
@@ -18637,6 +18645,7 @@ evolve
 evolved
 evolves
 evolving
+ew
 ewe
 ewer
 ewers
@@ -19506,6 +19515,7 @@ falter
 faltered
 faltering
 falters
+fam
 fame
 famed
 familial
@@ -21601,6 +21611,7 @@ friends
 friendship
 friendships
 frier
+friers
 fries
 frieze
 friezes
@@ -25115,6 +25126,7 @@ hoarding
 hoardings
 hoards
 hoarse
+hoarser
 hoarsely
 hoarseness
 hoary
@@ -26087,6 +26099,7 @@ icicles
 icily
 icing
 icings
+ick
 icky
 icon
 iconic
@@ -29006,6 +29019,7 @@ juicy
 jujitsu
 jujube
 jujutsu
+juke
 jukebox
 jukeboxes
 julep
@@ -29175,6 +29189,7 @@ kerchief
 kerchiefs
 kerfuffle
 kerfuffles
+kern
 kernel
 kernels
 kerosene
@@ -30092,6 +30107,7 @@ lectureship
 lectureships
 lecturing
 led
+lede
 ledge
 ledger
 ledgers
@@ -30406,6 +30422,7 @@ licensing
 licentiate
 licentious
 licentiousness
+lich
 lichen
 lichens
 licit
@@ -31656,6 +31673,7 @@ mammoths
 mammy
 mams
 man
+mana
 manacled
 manacles
 manage
@@ -32440,6 +32458,7 @@ meld
 melded
 melding
 melds
+melee
 mellifluous
 mellow
 mellowed
@@ -32661,6 +32680,7 @@ messy
 mestizo
 mestizos
 met
+meta
 metabolic
 metabolically
 metabolism
@@ -38437,6 +38457,7 @@ pernicious
 peroration
 peroxide
 peroxides
+perp
 perpendicular
 perpendicularity
 perpendicularly
@@ -39402,6 +39423,12 @@ playroom
 playrooms
 plays
 playschool
+playtest
+playtested
+playtester
+playtesters
+playtesting
+playtests
 plaything
 playthings
 playtime
@@ -52577,6 +52604,7 @@ survives
 surviving
 survivor
 survivors
+sus
 susceptibilities
 susceptibility
 susceptible
@@ -59035,6 +59063,7 @@ wealthy
 wean
 weaned
 weaning
+weans
 weapon
 weaponry
 weapons
@@ -60258,6 +60287,7 @@ yarmulke
 yarn
 yarns
 yarrow
+yass
 yaw
 yawing
 yawl
@@ -60267,6 +60297,7 @@ yawner
 yawning
 yawns
 yaws
+yay
 yeah
 yeahs
 year
@@ -60372,6 +60403,7 @@ youths
 yow
 yowl
 yowling
+yoyo
 ytterbium
 yttrium
 yuan
