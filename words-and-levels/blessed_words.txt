@@ -770,6 +770,7 @@ enters
 entourage
 entrust
 entry
+eon
 eons
 epic
 epoch
@@ -1587,6 +1588,7 @@ nickel
 nil
 nip
 nit
+nits
 nix
 no
 nod
@@ -3048,4 +3050,5 @@ zero
 zip
 zoo
 zoom
+zooms
 zoos

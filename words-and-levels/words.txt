@@ -15655,7 +15655,6 @@ dalibard
 dalis
 dalkeith
 dalken
-dalla
 dallas
 dalles
 dalliance
@@ -36732,7 +36731,6 @@ loquacious
 loquacity
 loquitur
 loraine
-lorand
 lorcs
 lord
 lord's
@@ -52680,7 +52678,6 @@ roister
 roistering
 rojas
 rokeby
-roland
 roldan
 role
 roles
