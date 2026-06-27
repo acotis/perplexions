@@ -217,6 +217,11 @@ function getLevelRecord(date: Date): LevelRecord {
   } catch { return {}; }
 }
 
+function updateShowEmojiHash(record: LevelRecord) {
+  const completedBefore = !!(hardMode ? record.clearedHard : record.cleared);
+  showEmojiHash = completedBefore ? showHashCompletedCheckbox.checked : showHashFirstCheckbox.checked;
+}
+
 function updateLevelRecord(date: Date, updates: Partial<LevelRecord>) {
   try {
     const record = getLevelRecord(date);
@@ -287,13 +292,22 @@ function setSetting(key: string, value: boolean) {
   } catch {}
 }
 
-const showHashCheckbox = document.getElementById('setting-show-hash') as HTMLInputElement;
+const showHashCompletedCheckbox = document.getElementById('setting-show-hash-completed') as HTMLInputElement;
+const showHashFirstCheckbox = document.getElementById('setting-show-hash-first') as HTMLInputElement;
 const hardModeCheckbox = document.getElementById('setting-hard-mode') as HTMLInputElement;
 
-showHashCheckbox.checked = getSetting('show-hash', true);
+showHashCompletedCheckbox.checked = getSetting('show-hash', true);
+showHashFirstCheckbox.checked = getSetting('show-hash-first', false);
 hardModeCheckbox.checked = getSetting('hard-mode', false);
 
-showHashCheckbox.addEventListener('change', () => setSetting('show-hash', showHashCheckbox.checked));
+showHashCompletedCheckbox.addEventListener('change', () => {
+  setSetting('show-hash', showHashCompletedCheckbox.checked);
+  if (currentLevelDate) { updateShowEmojiHash(getLevelRecord(currentLevelDate)); redraw(); }
+});
+showHashFirstCheckbox.addEventListener('change', () => {
+  setSetting('show-hash-first', showHashFirstCheckbox.checked);
+  if (currentLevelDate) { updateShowEmojiHash(getLevelRecord(currentLevelDate)); redraw(); }
+});
 hardModeCheckbox.addEventListener('change', () => {
   setSetting('hard-mode', hardModeCheckbox.checked);
   if (currentParsedLevel && currentLevelDate) startLevel(currentParsedLevel, currentLevelDate);
@@ -879,7 +893,7 @@ function startLevel(parsed: ParsedLevel, date: Date, forceHardMode?: boolean) {
   history = [];
   wordHistory = [];
   const record = getLevelRecord(date);
-  showEmojiHash = showHashCheckbox.checked && !!(hardMode ? record.clearedHard : record.cleared);
+  updateShowEmojiHash(record);
   clearedOnStr = clearedOnLabelFor(record);
   chain = [];
   hoveredTile = null;
