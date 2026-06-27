@@ -36656,6 +36656,7 @@ lonelier
 loneliest
 loneliness
 lonely
+loner
 lonesome
 lonesomeness
 long
