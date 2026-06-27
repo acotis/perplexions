@@ -20934,6 +20934,7 @@ enzyme
 enzymes
 eochaid
 eodem
+eon
 eons
 eorum
 eozoon
@@ -42436,6 +42437,7 @@ nitrogenous
 nitroglycerin
 nitroglycerine
 nitrous
+nits
 nivalis
 nive
 nivelle
