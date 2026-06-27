@@ -106,6 +106,10 @@ areal
 arena
 argon
 aria
+arid
+arise
+arisen
+arises
 ark
 arm
 arose
@@ -338,6 +342,8 @@ caviar
 caviare
 caw
 cay
+cedar
+cedars
 cede
 cell
 cello
@@ -475,6 +481,8 @@ crafty
 cram
 cramp
 crane
+craned
+cranes
 crash
 crass
 crate
@@ -504,6 +512,7 @@ crest
 crew
 crews
 crick
+cried
 crier
 criers
 cries
@@ -540,6 +549,8 @@ cured
 curer
 curers
 cures
+curried
+curries
 curry
 curse
 cursed
@@ -556,6 +567,7 @@ dame
 damns
 dams
 dane
+danes
 dare
 dares
 darn
@@ -571,6 +583,7 @@ dealt
 dean
 deans
 dear
+dears
 debar
 deck
 decry
@@ -589,6 +602,7 @@ demon
 demons
 demos
 den
+denies
 dens
 deny
 derby
@@ -606,10 +620,14 @@ dies
 dill
 din
 dine
+diner
+diners
+dines
 ding
 dint
 dip
 dire
+dispensary
 disuse
 diva
 dive
@@ -644,11 +662,15 @@ draw
 drawer
 drawl
 drawled
+drawn
 draws
 dream
 dreams
 drear
+dreary
 drew
+drier
+dries
 drill
 drip
 drone
@@ -664,11 +686,13 @@ duct
 dud
 duds
 due
+dues
 dug
 dull
 dulled
 duller
 dune
+dunes
 dunno
 duo
 duos
@@ -790,6 +814,7 @@ fall
 fam
 fame
 famed
+fames
 fan
 far
 farce
@@ -816,6 +841,7 @@ feeds
 fees
 feet
 feint
+feints
 fem
 fend
 fends
@@ -1190,6 +1216,7 @@ ilk
 ill
 imbue
 in
+induce
 inert
 infer
 infers
@@ -1202,6 +1229,7 @@ insert
 inset
 insult
 insure
+insures
 inter
 into
 intro
@@ -1211,6 +1239,8 @@ ions
 iota
 irate
 ire
+iris
+irises
 irk
 irked
 iron
@@ -1469,6 +1499,7 @@ moat
 moats
 mod
 mode
+moist
 mom
 money
 moo
@@ -1488,6 +1519,7 @@ mote
 moth
 mother
 moths
+motif
 mount
 mouth
 much
@@ -1507,6 +1539,7 @@ myth
 nab
 nacho
 nachos
+nadir
 nag
 nail
 name
@@ -1583,6 +1616,7 @@ nude
 null
 numb
 nun
+nurse
 nut
 nuts
 nutter
@@ -1730,6 +1764,7 @@ peach
 peachy
 pear
 pearl
+pears
 peas
 pee
 peer
@@ -1825,6 +1860,7 @@ pout
 pouter
 prank
 pranks
+prawn
 pray
 preen
 prep
@@ -1843,6 +1879,7 @@ progress
 prone
 pros
 prune
+prunes
 pry
 pub
 pug
@@ -1922,6 +1959,7 @@ reach
 react
 read
 reads
+ready
 real
 ream
 reams
@@ -1957,6 +1995,7 @@ refute
 refutes
 regard
 rein
+reins
 release
 relent
 relic
@@ -1983,6 +2022,7 @@ rescuer
 rescuers
 reseated
 reset
+reside
 resin
 resist
 resolute
@@ -2099,6 +2139,7 @@ rune
 runes
 runs
 runt
+runway
 rupee
 ruse
 ruses
@@ -2111,6 +2152,8 @@ sac
 sack
 sad
 safe
+safes
+safest
 sag
 saga
 sage
@@ -2133,6 +2176,10 @@ sassy
 sat
 sate
 sated
+sauce
+saucer
+sauces
+saudi
 save
 saver
 saw
@@ -2153,6 +2200,7 @@ scare
 scared
 scat
 scene
+scenery
 scent
 school
 scone
@@ -2166,6 +2214,7 @@ screed
 screen
 screw
 screws
+scurried
 scurry
 sea
 seal
@@ -2205,6 +2254,7 @@ sends
 sent
 sentry
 serf
+series
 serrate
 sesame
 set
@@ -2295,6 +2345,7 @@ smith
 smooch
 smooth
 smooths
+smote
 smug
 smut
 snake
@@ -2322,6 +2373,8 @@ sobs
 sock
 sod
 sods
+sofa
+sofas
 soft
 soil
 sole
@@ -2347,6 +2400,8 @@ sow
 sowed
 sower
 soy
+spear
+spears
 specs
 sped
 speed
@@ -2383,10 +2438,13 @@ steed
 steel
 steer
 steerage
+stem
+stems
 stern
 sterner
 stew
 stick
+stiff
 still
 stilt
 sting
@@ -2458,9 +2516,12 @@ suspend
 swab
 swan
 swat
+sway
 swear
 sweat
 sweater
+swede
+swedes
 sweep
 sweeps
 sweet
@@ -2588,6 +2649,7 @@ tie
 tier
 tiers
 ties
+tiff
 tiger
 tigers
 tigress
@@ -2770,6 +2832,7 @@ urea
 urge
 urged
 uric
+urine
 urn
 urns
 us
@@ -2827,20 +2890,27 @@ wan
 wand
 wands
 wane
+waned
 wanes
 war
 ward
+warden
 wards
 ware
 wares
 warn
+warp
+warps
 warred
+wars
 wart
+wary
 was
 waste
 waster
 water
 waters
+way
 we
 weak
 wean
@@ -2861,6 +2931,7 @@ week
 weeks
 weep
 weeps
+weird
 welcome
 weld
 well
@@ -2876,18 +2947,31 @@ what
 whit
 wick
 wicks
+wide
+widen
+widens
+wider
 wife
 wig
 will
 wilt
 wilts
 win
+wind
+winder
+winders
+winds
+windy
 wine
 wines
 wink
+wins
 winter
 wintry
 wire
+wired
+wires
+wiry
 wise
 wiser
 wit
@@ -2932,6 +3016,9 @@ yards
 yarn
 yarns
 yass
+yaw
+yawn
+yawned
 yay
 year
 yearn
