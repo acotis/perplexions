@@ -31072,6 +31072,7 @@ lordship
 lordships
 lore
 loris
+lorn
 lorries
 lorry
 lose
