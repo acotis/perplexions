@@ -6334,8 +6334,6 @@ briefing
 briefings
 briefly
 briefs
-brier
-briers
 brig
 brigade
 brigades
@@ -9071,6 +9069,7 @@ cirque
 cirrhosis
 cirrhotic
 cirrus
+cis
 cistern
 cisterns
 cit
@@ -12747,7 +12746,6 @@ cupped
 cupping
 cupric
 cups
-cur
 curable
 curacy
 curare
@@ -12815,7 +12813,6 @@ curried
 curries
 curry
 currying
-curs
 curse
 cursed
 curses
@@ -13283,7 +13280,6 @@ deathly
 deaths
 deathtrap
 deathwatch
-deb
 debacle
 debacles
 debar
@@ -13324,7 +13320,6 @@ debriefed
 debriefing
 debriefings
 debris
-debs
 debt
 debtor
 debtors
@@ -16946,10 +16941,8 @@ ecstasies
 ecstasy
 ecstatic
 ecstatically
-ecu
 ecumenical
 ecumenism
-ecus
 eczema
 eddies
 eddy
@@ -38194,7 +38187,6 @@ pends
 pendulous
 pendulum
 pendulums
-penes
 penetrable
 penetrate
 penetrated
@@ -41682,7 +41674,6 @@ puckering
 puckers
 puckish
 pucks
-pud
 pudding
 puddings
 puddle
@@ -41690,7 +41681,6 @@ puddled
 puddles
 puddling
 pudgy
-puds
 pueblo
 pueblos
 puerile
@@ -43934,7 +43924,6 @@ reinvestment
 reinvigorate
 reinvigorated
 reinvigorating
-reis
 reissue
 reissued
 reissues
@@ -47696,6 +47685,7 @@ sexuality
 sexually
 sexy
 sh
+sh
 shabbily
 shabby
 shack
@@ -47943,7 +47933,6 @@ shewed
 shewing
 shewn
 shews
-sh
 shh
 shiatsu
 shibboleth
@@ -48672,7 +48661,6 @@ sips
 sir
 sire
 sired
-siree
 siren
 sirens
 sires
@@ -48681,7 +48669,6 @@ sirloin
 sirocco
 sirrah
 sirs
-sirup
 sis
 sisal
 sissies
@@ -52526,7 +52513,6 @@ supremacy
 supreme
 supremely
 supremo
-sups
 surcharge
 surcharged
 surcharges
@@ -59177,7 +59163,6 @@ weekly
 weeknight
 weeknights
 weeks
-ween
 weenie
 weenies
 weensy
