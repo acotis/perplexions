@@ -1164,6 +1164,7 @@ aimless
 aimlessly
 aimlessness
 aims
+aint
 air
 airbag
 airbags
@@ -2584,6 +2585,7 @@ areal
 areas
 arena
 arenas
+arent
 ares
 argent
 arginine
@@ -11813,6 +11815,7 @@ coughed
 coughing
 coughs
 could
+couldnt
 coulis
 coulomb
 coulombs
@@ -14733,6 +14736,7 @@ diddling
 diddly
 didgeridoo
 didgeridoos
+didnt
 dido
 didst
 die
@@ -15907,6 +15911,7 @@ doer
 doers
 does
 doeskin
+doesnt
 doff
 doffed
 doffing
@@ -16030,6 +16035,7 @@ donnybrook
 donor
 donors
 dons
+dont
 donut
 donuts
 doodad
@@ -23891,6 +23897,7 @@ haddock
 hadith
 hadj
 hadji
+hadnt
 hadst
 haemoglobin
 haemophilia
@@ -24324,6 +24331,7 @@ hashed
 hashes
 hashing
 hashish
+hasnt
 hasp
 hasps
 hassle
@@ -24396,6 +24404,7 @@ hauteur
 have
 haven
 havens
+havent
 haversack
 haves
 having
@@ -24636,6 +24645,7 @@ hectares
 hectic
 hector
 hectoring
+hed
 hedge
 hedged
 hedgehog
@@ -24822,6 +24832,7 @@ herein
 hereinafter
 hereof
 hereon
+heres
 heresies
 heresy
 heretic
@@ -25126,9 +25137,9 @@ hoarding
 hoardings
 hoards
 hoarse
-hoarser
 hoarsely
 hoarseness
+hoarser
 hoary
 hoax
 hoaxer
@@ -26268,6 +26279,7 @@ illustrative
 illustrator
 illustrators
 illustrious
+im
 image
 imaged
 imagery
@@ -28553,6 +28565,7 @@ islet
 islets
 ism
 isms
+isnt
 isobar
 isobaric
 isobars
@@ -28618,6 +28631,7 @@ itineraries
 itinerary
 its
 itself
+ive
 ivies
 ivories
 ivory
@@ -30219,6 +30233,7 @@ leisurewear
 leitmotif
 lemma
 lemmas
+lemme
 lemming
 lemmings
 lemon
@@ -32919,6 +32934,7 @@ might
 mightier
 mightiest
 mightily
+mightnt
 mighty
 mignonette
 migraine
@@ -34378,6 +34394,7 @@ muster
 mustered
 mustering
 musters
+mustnt
 musts
 musty
 mutability
@@ -47774,6 +47791,7 @@ shanghai
 shanghaied
 shank
 shanks
+shant
 shanties
 shantung
 shanty
@@ -47924,7 +47942,7 @@ shewed
 shewing
 shewn
 shews
-shh
+sh
 shh
 shiatsu
 shibboleth
@@ -48166,6 +48184,7 @@ shoulder
 shouldered
 shouldering
 shoulders
+shouldnt
 shout
 shouted
 shouter
@@ -53934,6 +53953,7 @@ thatched
 thatcher
 thatchers
 thatching
+thats
 thaw
 thawed
 thawing
@@ -54021,6 +54041,7 @@ theremin
 theremins
 thereof
 thereon
+theres
 thereto
 theretofore
 thereunder
@@ -54057,6 +54078,10 @@ thespians
 theta
 thew
 they
+theyd
+theyll
+theyre
+theyve
 thiamin
 thiamine
 thick
@@ -58899,6 +58924,7 @@ washrooms
 washstand
 washtub
 washy
+wasnt
 wasp
 waspish
 wasps
@@ -59239,6 +59265,7 @@ wens
 went
 wept
 were
+werent
 werewolf
 werewolves
 west
@@ -59264,6 +59291,7 @@ wetted
 wetter
 wettest
 wetting
+weve
 whack
 whacked
 whacker
@@ -59528,6 +59556,7 @@ whorish
 whorl
 whorled
 whorls
+whos
 whose
 whoso
 whosoever
@@ -60109,6 +60138,7 @@ worthwhile
 worthy
 wot
 would
+wouldnt
 wouldst
 wound
 wounded
@@ -60265,6 +60295,7 @@ yahoos
 yak
 yakking
 yaks
+yall
 yam
 yammering
 yams
@@ -60385,6 +60416,8 @@ yonder
 yonks
 yore
 you
+youd
+youll
 young
 younger
 youngest
@@ -60392,6 +60425,7 @@ youngish
 youngster
 youngsters
 your
+youre
 yours
 yourself
 yourselves
@@ -60400,6 +60434,7 @@ youth
 youthful
 youthfulness
 youths
+youve
 yow
 yowl
 yowling
