@@ -400,7 +400,8 @@ function buildEmojiHash(): string[] {
 }
 
 function showEndCard() {
-  if (currentLevelDate) {
+  // Experimental levels are playtesting-only: never persist completion data.
+  if (currentLevelDate && !isExperimental) {
     const record = getLevelRecord(currentLevelDate);
     const slug = formatDate(new Date());
     const updates: Partial<LevelRecord> = {};
