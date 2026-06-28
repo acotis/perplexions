@@ -1338,6 +1338,7 @@ if
 ifs
 ilk
 ill
+im
 imbue
 in
 induce
@@ -1376,6 +1377,7 @@ isle
 isles
 ism
 isms
+isnt
 it
 item
 items
@@ -3310,6 +3312,7 @@ xi
 xis
 yak
 yaks
+yall
 yam
 yams
 yap
