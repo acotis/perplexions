@@ -1547,6 +1547,7 @@ lop
 lope
 lord
 lore
+lorn
 lose
 loser
 lost
@@ -3310,6 +3311,7 @@ wry
 wuss
 xi
 xis
+ya
 yak
 yaks
 yall
