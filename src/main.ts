@@ -460,10 +460,10 @@ function checkPrevLevel() {
   hasPrevLevel = false;
   if (!currentLevelDate) return;
   const prev = new Date(currentLevelDate.getTime() - 86400000);
-  levelFileExists(prev).then(exists => {
+  levelFileExists(prev, devMode).then(exists => {
     hasPrevLevel = exists;
     if (levelNumCols) redraw();
-    if (exists) levelFileExists(new Date(prev.getTime() - 86400000));
+    if (exists) levelFileExists(new Date(prev.getTime() - 86400000), devMode);
   });
 }
 
@@ -472,10 +472,10 @@ function checkNextLevel() {
   if (!currentLevelDate) return;
   const next = new Date(currentLevelDate.getTime() + 86400000);
   if (!devMode && next.getTime() > effectiveToday.getTime()) return;
-  levelFileExists(next).then(exists => {
+  levelFileExists(next, devMode).then(exists => {
     hasNextLevel = exists;
     if (levelNumCols) redraw();
-    if (exists) levelFileExists(new Date(next.getTime() + 86400000));
+    if (exists) levelFileExists(new Date(next.getTime() + 86400000), devMode);
   });
 }
 
@@ -820,20 +820,22 @@ function dateSeed(date: Date): number {
 }
 
 let dateStr = '';
+let isExperimental = false;
 
 function drawDateLabel() {
   if (!dateStr) return;
   const fontSize = Math.min(3 * canvasH / 100, 5 * canvasW / 100);
   const centerY = canvasH * 0.925;
   ctx.save();
-  ctx.font = `${fontSize}px sans-serif`;
-  ctx.fillStyle = '#666';
+  const label = isExperimental ? 'EXPERIMENTAL LEVEL' : dateStr;
+  ctx.font = `${isExperimental ? 'bold ' : ''}${fontSize}px sans-serif`;
+  ctx.fillStyle = isExperimental ? '#cc0000' : '#666';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   const dateOffset = clearedOnStr ? fontSize * 1.136025 / 2 : 0;
   const dateY = centerY - dateOffset;
-  ctx.fillText(dateStr, canvasW / 2, dateY);
-  const textW = ctx.measureText(dateStr).width;
+  ctx.fillText(label, canvasW / 2, dateY);
+  const textW = ctx.measureText(label).width;
 
   if (clearedOnStr) {
     ctx.font = `${fontSize * 0.675}px sans-serif`;
@@ -883,6 +885,7 @@ function startLevel(parsed: ParsedLevel, date: Date, forceHardMode?: boolean) {
   currentLevelDate = date;
   hardMode = forceHardMode ?? hardModeCheckbox.checked;
   const { tiles: loadedTiles, numCols, numRows } = parsed;
+  isExperimental = parsed.experimental ?? false;
   const month = date.toLocaleString('en-US', { month: 'short' });
   dateStr = `Perplexions — ${date.getFullYear()} ${month} ${date.getDate()}`;
   levelNumCols = numCols;

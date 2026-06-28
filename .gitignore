@@ -16,6 +16,7 @@ dist-ssr
 # Generated from words-and-levels/ by scripts/split-levels.js
 public/levels/
 public/words.txt
+dev-levels/
 
 # Editor directories and files
 .vscode/*

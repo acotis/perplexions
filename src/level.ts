@@ -8,6 +8,9 @@ export interface ParsedLevel {
   tiles: Tile[];
   numCols: number;
   numRows: number;
+  // True when the level came from the dev-only experimental store rather than
+  // the published levels/ directory. Drives the "EXPERIMENTAL LEVEL" label.
+  experimental?: boolean;
 }
 
 export function parseLevel(text: string): ParsedLevel {
@@ -54,25 +57,46 @@ function isHtmlFallback(r: Response): boolean {
 
 const existsCache = new Map<string, boolean>();
 
-export async function levelFileExists(date: Date): Promise<boolean> {
+// In dev mode we also look in the experimental store, which the dev server
+// serves outside public/. Official levels are always tried first.
+function levelUrls(key: string, dev: boolean): string[] {
+  const urls = [import.meta.env.BASE_URL + `levels/${key}.txt`];
+  if (dev) urls.push(import.meta.env.BASE_URL + `levels-experimental/${key}.txt`);
+  return urls;
+}
+
+export async function levelFileExists(date: Date, dev = false): Promise<boolean> {
   const key = formatDate(date);
   if (existsCache.has(key)) return existsCache.get(key)!;
   try {
-    const r = await fetch(import.meta.env.BASE_URL + `levels/${key}.txt`, { method: 'HEAD' });
-    const result = r.ok && !isHtmlFallback(r);
-    existsCache.set(key, result);
-    return result;
+    for (const url of levelUrls(key, dev)) {
+      const r = await fetch(url, { method: 'HEAD' });
+      if (r.ok && !isHtmlFallback(r)) {
+        existsCache.set(key, true);
+        return true;
+      }
+    }
+    existsCache.set(key, false);
+    return false;
   } catch {
     return false;
   }
 }
 
 export async function loadLevel(date: Date, force = false): Promise<ParsedLevel> {
+  const key = formatDate(date);
   const now = new Date();
   const todayNoon = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12);
-  if (!force && date.getTime() > todayNoon.getTime()) throw new Error(`Level not found: ${formatDate(date)}`);
-  const response = await fetch(import.meta.env.BASE_URL + `levels/${formatDate(date)}.txt`);
-  if (!response.ok || isHtmlFallback(response)) throw new Error(`Level not found: ${formatDate(date)}`);
-  existsCache.set(formatDate(date), true);
-  return parseLevel(await response.text());
+  if (!force && date.getTime() > todayNoon.getTime()) throw new Error(`Level not found: ${key}`);
+
+  // Index 0 is the official level; index 1 (dev only) is the experimental one.
+  const urls = levelUrls(key, force);
+  for (let i = 0; i < urls.length; i++) {
+    const response = await fetch(urls[i]);
+    if (response.ok && !isHtmlFallback(response)) {
+      existsCache.set(key, true);
+      return { ...parseLevel(await response.text()), experimental: i > 0 };
+    }
+  }
+  throw new Error(`Level not found: ${key}`);
 }
