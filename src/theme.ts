@@ -11,9 +11,11 @@ export interface Palette {
   surface: string;
   // Whether the tile interior is dark, so glyphs drawn on it pick a light color.
   interiorIsDark: boolean;
-  // The soft "floor shadow" gradient drawn beneath the tiles.
+  // The soft "floor shadow" gradient drawn beneath the tiles. Falloff is the
+  // fraction of the band over which it fades to the far color; lower = faster.
   floorShadowNear: string;
   floorShadowFar: string;
+  floorShadowFalloff: number;
   // Date/nav chrome drawn directly on the canvas.
   dateLabel: string;
   subLabel: string;
@@ -30,6 +32,7 @@ export const LIGHT_PALETTE: Palette = {
   interiorIsDark: false,
   floorShadowNear: 'rgba(100,100,100,0.15)',
   floorShadowFar: 'rgba(255,255,255,0)',
+  floorShadowFalloff: 1,
   dateLabel: '#666',
   subLabel: '#999',
   experimental: '#cc0000',
@@ -43,8 +46,9 @@ export const DARK_PALETTE: Palette = {
   tileInterior: '#15161a',
   surface: '#202125',
   interiorIsDark: true,
-  floorShadowNear: 'rgba(0,0,0,0.35)',
-  floorShadowFar: 'rgba(0,0,0,0)',
+  floorShadowNear: 'rgba(210,210,210,0.16)',
+  floorShadowFar: 'rgba(210,210,210,0)',
+  floorShadowFalloff: 0.75,
   dateLabel: '#95979e',
   subLabel: '#72747a',
   experimental: '#ff6b6b',

@@ -339,7 +339,7 @@ export function render(
   const floorX2 = layout.offsetX + (layout.numCols - 1) * pitch + tileSize + tileSize / 6 + pitch * 0.2;
   const grad = ctx.createLinearGradient(0, floorY, 0, floorY + tileSize * 0.75);
   grad.addColorStop(0, palette.floorShadowNear);
-  grad.addColorStop(1, palette.floorShadowFar);
+  grad.addColorStop(palette.floorShadowFalloff, palette.floorShadowFar);
   ctx.fillStyle = grad;
   ctx.fillRect(floorX1, floorY, floorX2 - floorX1, tileSize * 0.75);
 
