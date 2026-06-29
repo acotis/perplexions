@@ -758,7 +758,13 @@ function updateCanvasLayout() {
   const pitch = Math.min((viewW * 0.90) / (levelNumCols + 1), regionH / (levelNumRows + 1.5));
   applyScale(pitch);
   const contentH = (levelNumRows + 1.5) * pitch;
-  const offsetY = regionTop + (regionH - contentH) / 2 + PITCH * 0.85;
+  // Nudge every level up by a fixed amount, then back down by a fraction of its
+  // pitch, tuned so a level at PRESERVED_PITCH keeps its original position while
+  // smaller (smaller-pitch) levels settle a little higher.
+  const VERTICAL_UP_VH = 2;
+  const PRESERVED_PITCH = 106.8;
+  const upPx = VERTICAL_UP_VH / 100 * viewH;
+  const offsetY = regionTop + (regionH - contentH) / 2 + PITCH * 0.85 - upPx + upPx * (PITCH / PRESERVED_PITCH);
   canvas.style.width = `${viewW}px`;
   canvas.style.height = `${viewH}px`;
   canvas.style.left = '0';
