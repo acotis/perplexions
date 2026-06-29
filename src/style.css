@@ -4,9 +4,64 @@
   padding: 0;
 }
 
+:root {
+  --bg: #fff;
+  --text: #222;
+  --surface: #fff;
+  --surface-border: #ccc;
+  --surface-shadow: rgba(0,0,0,0.12);
+  --btn-bg: #fff;
+  --btn-border: #ccc;
+  --btn-icon: #999;
+  --endbtn-border: rgba(0,0,0,0.18);
+  --endbtn-shadow: rgba(0,0,0,0.12);
+  --close: #bbb;
+  --close-hover: #777;
+  --toggle-off: #ccc;
+  --toggle-on: #4caf50;
+  --toggle-knob: #fff;
+  --overlay: rgba(0,0,0,0.15);
+  --toast-bg: #444;
+  --toast-text: #fff;
+  --hash-label: #aaa;
+  --link-muted: #888;
+  --hardtag: rgba(139,0,0,0.55);
+  --link: #1a55c0;
+}
+
+[data-theme="dark"] {
+  --bg: #1e2230;
+  --text: #d8dbe4;
+  --surface: #272c3b;
+  --surface-border: #3a4156;
+  --surface-shadow: rgba(0,0,0,0.5);
+  --btn-bg: #272c3b;
+  --btn-border: #3a4156;
+  --btn-icon: #aab4c4;
+  --endbtn-border: rgba(255,255,255,0.18);
+  --endbtn-shadow: rgba(0,0,0,0.5);
+  --close: #777f90;
+  --close-hover: #aeb4c4;
+  --toggle-off: #4a5066;
+  --toggle-on: #4caf50;
+  --toggle-knob: #d8dbe4;
+  --overlay: rgba(0,0,0,0.5);
+  --toast-bg: #11141d;
+  --toast-text: #e8eaf0;
+  --hash-label: #888f9e;
+  --link-muted: #9aa0b0;
+  --hardtag: rgba(255,120,120,0.7);
+  --link: #6fa8ff;
+}
+
 body {
   overflow: hidden;
-  background: #fff;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--link);
 }
 
 #game {
@@ -20,9 +75,9 @@ body {
   top: 40vh;
   transform: translate(-50%, -40%);
   width: clamp(50vw, 350px, 85vw);
-  background: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 4px 24px var(--surface-shadow);
   z-index: 11;
   display: flex;
   flex-direction: column;
@@ -54,7 +109,7 @@ body {
   font-weight: bold;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(139, 0, 0, 0.55);
+  color: var(--hardtag);
 }
 
 #hard-mode-tag[hidden] { display: none; }
@@ -64,8 +119,10 @@ body {
   padding: 0.6em 1.4em;
   cursor: pointer;
   border-radius: 6px;
-  border: 1px solid rgba(0,0,0,0.18);
-  box-shadow: 0 2px 0 rgba(0,0,0,0.12);
+  border: 1px solid var(--endbtn-border);
+  box-shadow: 0 2px 0 var(--endbtn-shadow);
+  background: var(--surface);
+  color: var(--text);
 }
 
 #copy-results {
@@ -96,9 +153,9 @@ body {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  border: 1px solid #ccc;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  border: 1px solid var(--btn-border);
+  background: var(--btn-bg);
+  box-shadow: 0 2px 6px var(--surface-shadow);
   font-family: sans-serif;
   font-size: 1.5rem;
   cursor: pointer;
@@ -106,7 +163,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #999;
+  color: var(--btn-icon);
 }
 
 .btn-icon {
@@ -133,9 +190,9 @@ body {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  border: 1px solid #ccc;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  border: 1px solid var(--btn-border);
+  background: var(--btn-bg);
+  box-shadow: 0 2px 6px var(--surface-shadow);
   font-family: sans-serif;
   font-size: 1.5rem;
   cursor: pointer;
@@ -143,7 +200,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #999;
+  color: var(--btn-icon);
 }
 
 #howto-btn {
@@ -153,9 +210,9 @@ body {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  border: 1px solid #ccc;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  border: 1px solid var(--btn-border);
+  background: var(--btn-bg);
+  box-shadow: 0 2px 6px var(--surface-shadow);
   font-family: sans-serif;
   font-size: 1.5rem;
   cursor: pointer;
@@ -163,7 +220,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #999;
+  color: var(--btn-icon);
 }
 
 /* On narrow screens, lay the buttons out horizontally (Settings, Tutorial,
@@ -182,9 +239,9 @@ body {
   top: 40vh;
   transform: translate(-50%, -40%);
   width: clamp(50vw, 350px, 85vw);
-  background: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 4px 24px var(--surface-shadow);
   z-index: 11;
   display: flex;
   flex-direction: column;
@@ -259,12 +316,12 @@ body {
   padding: 0.2rem 0.45rem;
   font-size: 1.875rem;
   line-height: 1;
-  color: #bbb;
+  color: var(--close);
   cursor: pointer;
 }
 
 .card-close:hover {
-  color: #777;
+  color: var(--close-hover);
 }
 
 #settings-card h1 {
@@ -290,7 +347,7 @@ body {
   height: 1.2em;
   margin: calc((1.25em - 1.2em) / 2 + 0.2em) 0 0;
   border-radius: 0.6em;
-  background: #ccc;
+  background: var(--toggle-off);
   flex-shrink: 0;
   cursor: pointer;
   transition: background 0.2s;
@@ -304,12 +361,12 @@ body {
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  background: #fff;
+  background: var(--toggle-knob);
   transition: transform 0.2s;
 }
 
 #settings-card input[type="checkbox"]:checked {
-  background: #4caf50;
+  background: var(--toggle-on);
 }
 
 #settings-card input[type="checkbox"]:checked::before {
@@ -323,7 +380,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: 10;
-  background: rgba(0,0,0,0.15);
+  background: var(--overlay);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
@@ -351,8 +408,8 @@ body {
 }
 
 .toast {
-  background: #444;
-  color: #fff;
+  background: var(--toast-bg);
+  color: var(--toast-text);
   padding: 0.6em 1.4em;
   font-family: sans-serif;
   font-size: 0.9rem;
@@ -385,7 +442,7 @@ body {
 .solution-hash-label {
   display: block;
   font-size: 1.125rem;
-  color: #aaa;
+  color: var(--hash-label);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   white-space: nowrap;
@@ -409,7 +466,7 @@ body {
   border: none;
   box-shadow: none;
   padding: 0;
-  color: #888;
+  color: var(--link-muted);
   text-decoration: underline;
   cursor: pointer;
   margin-top: calc(-1.5rem + 12px);

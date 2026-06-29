@@ -1,6 +1,11 @@
 import type { Tile } from './level';
+import type { Palette } from './theme';
 
 export interface Color { r: number; g: number; b: number; }
+
+export function luma(c: Color): number {
+  return 0.299 * c.r + 0.587 * c.g + 0.114 * c.b;
+}
 
 export let TILE_SIZE = 64;
 export let GAP = Math.round(TILE_SIZE * 0.1);
@@ -23,8 +28,7 @@ function mulberry32(seed: number): () => number {
 }
 
 function acceptLevelColor(c: Color): boolean {
-  const luma = 0.299 * c.r + 0.587 * c.g + 0.114 * c.b;
-  return luma <= 220;
+  return luma(c) <= 220;
 }
 
 export function randomLevelColor(seed: number): Color {
@@ -37,6 +41,58 @@ export function randomLevelColor(seed: number): Color {
 
 function rgb(c: Color): string {
   return `rgb(${c.r},${c.g},${c.b})`;
+}
+
+function rgbToHsl(c: Color): { h: number; s: number; l: number } {
+  const r = c.r / 255, g = c.g / 255, b = c.b / 255;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b);
+  const l = (max + min) / 2;
+  const d = max - min;
+  let h = 0, s = 0;
+  if (d !== 0) {
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    switch (max) {
+      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+      case g: h = (b - r) / d + 2; break;
+      default: h = (r - g) / d + 4; break;
+    }
+    h /= 6;
+  }
+  return { h, s, l };
+}
+
+function hslToRgb(h: number, s: number, l: number): Color {
+  if (s === 0) {
+    const v = Math.round(l * 255);
+    return { r: v, g: v, b: v };
+  }
+  const hue2rgb = (p: number, q: number, t: number) => {
+    if (t < 0) t += 1;
+    if (t > 1) t -= 1;
+    if (t < 1 / 6) return p + (q - p) * 6 * t;
+    if (t < 1 / 2) return q;
+    if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+    return p;
+  };
+  const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+  const p = 2 * l - q;
+  return {
+    r: Math.round(hue2rgb(p, q, h + 1 / 3) * 255),
+    g: Math.round(hue2rgb(p, q, h) * 255),
+    b: Math.round(hue2rgb(p, q, h - 1 / 3) * 255),
+  };
+}
+
+const clamp = (x: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, x));
+
+// Level colors are light pastels (channels 175–255), tuned to read as outlines
+// on a white background. On a dark background they look milky, so for dark mode
+// we keep the hue but lift saturation and pull the lightness into a richer band.
+export function toDarkLevelColor(c: Color): Color {
+  const { h, s, l } = rgbToHsl(c);
+  const s2 = Math.min(1, s * 1.4 + 0.10);
+  const l2 = clamp(l - 0.20, 0.50, 0.70);
+  return hslToRgb(h, s2, l2);
 }
 
 export interface GridLayout {
@@ -182,6 +238,7 @@ function drawTile(
   color: Color,
   highlighted: boolean,
   hardMode: boolean,
+  palette: Palette,
   pyOverride?: number,
 ) {
   const { tileSize, pitch } = layout;
@@ -198,7 +255,7 @@ function drawTile(
     const border = tileSize / 16 * 1.1;
     const ix = px + border, iy = py + border, iw = size - border * 2, ih = size - border * 2;
     const ibevel = Math.max(bevel - border * (2 - Math.SQRT2), 0);
-    ctx.fillStyle = '#fff';
+    ctx.fillStyle = palette.tileInterior;
     fillBeveledRect(ctx, ix, iy, iw, ih, ibevel);
 
     if (hardMode) {
@@ -226,14 +283,17 @@ function drawTile(
   }
 
   const fontSize = tileSize * 0.525;
-  ctx.fillStyle = '#000';
+  // Pick a glyph color that contrasts whatever is directly behind it: the candy
+  // fill when the tile is selected, otherwise the tile interior.
+  const behindIsDark = highlighted ? luma(color) < 150 : palette.interiorIsDark;
+  ctx.fillStyle = behindIsDark ? '#fff' : '#000';
   ctx.font = `bold ${fontSize}px sans-serif`;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   ctx.fillText(tile.letter.toUpperCase(), px + size / 2, py + size / 2 + fontSize * 0.075 + pitch * 0.01);
 }
 
-export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout, emojis: string[], canvasH: number) {
+export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout, emojis: string[], canvasH: number, palette: Palette) {
   if (emojis.length === 0) return;
   const { pitch, tileSize } = layout;
   const floorY = layout.offsetY + layout.maxY * pitch + tileSize + (tileSize * 0.4 + pitch * 0.05) * 0.65;
@@ -246,7 +306,7 @@ export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout
   let x = floorX1 + fontSize * 0.85;
   const y = floorY + fontSize * 12.05 / 11;
   ctx.font = `${fontSize * 0.6}px sans-serif`;
-  ctx.fillStyle = '#aaa';
+  ctx.fillStyle = palette.hashLabel;
   ctx.fillText('Hash:', x, y + fontSize * 0.15);
   x += ctx.measureText('Hash:').width + fontSize * 0.25;
   ctx.font = `${fontSize}px sans-serif`;
@@ -263,12 +323,13 @@ export function render(
   tiles: Tile[],
   layout: GridLayout,
   color: Color,
+  palette: Palette,
   options: RenderOptions = {},
 ) {
   const { hoveredTile = null, chain = [], cursorX = 0, cursorY = 0, splashes = [], getTilePixelY, hardMode = false } = options;
   const { pitch, tileSize } = layout;
 
-  ctx.fillStyle = '#fff';
+  ctx.fillStyle = palette.background;
   ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
   for (const splash of splashes) drawSplash(ctx, splash, color);
@@ -277,8 +338,8 @@ export function render(
   const floorX1 = layout.offsetX - tileSize / 6 - pitch * 0.2;
   const floorX2 = layout.offsetX + (layout.numCols - 1) * pitch + tileSize + tileSize / 6 + pitch * 0.2;
   const grad = ctx.createLinearGradient(0, floorY, 0, floorY + tileSize * 0.75);
-  grad.addColorStop(0, 'rgba(100,100,100,0.15)');
-  grad.addColorStop(1, 'rgba(255,255,255,0)');
+  grad.addColorStop(0, palette.floorShadowNear);
+  grad.addColorStop(1, palette.floorShadowFar);
   ctx.fillStyle = grad;
   ctx.fillRect(floorX1, floorY, floorX2 - floorX1, tileSize * 0.75);
 
@@ -290,6 +351,6 @@ export function render(
   if (hoveredTile) highlighted.add(hoveredTile);
 
   for (const tile of tiles) {
-    drawTile(ctx, tile, layout, color, highlighted.has(tile), hardMode, getTilePixelY?.(tile));
+    drawTile(ctx, tile, layout, color, highlighted.has(tile), hardMode, palette, getTilePixelY?.(tile));
   }
 }

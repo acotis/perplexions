@@ -1,5 +1,6 @@
-import { render } from './render';
+import { render, toDarkLevelColor } from './render';
 import type { GridLayout, Color } from './render';
+import { currentPalette, isDark } from './theme';
 import type { Tile } from './level';
 import { parseLevel, applyGravity } from './level';
 
@@ -271,7 +272,8 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
 
   function draw() {
     const fy = falling ? new Map(falling.map(f => [f.tile, f.pixelY])) : null;
-    render(ctx, tiles, layout, COLOR, {
+    const tileColor = isDark() ? toDarkLevelColor(COLOR) : COLOR;
+    render(ctx, tiles, layout, tileColor, currentPalette(), {
       chain,
       cursorX: cursor.x,
       cursorY: cursor.y,

@@ -1,9 +1,10 @@
 import './style.css';
 import { loadWords } from './words';
 import { loadLevel, levelFileExists, formatDate, applyGravity } from './level';
-import { randomLevelColor, computeLayout, tileAtPixel, tilePixelX, tilePixelY, render, drawHashEmojis, setPitch, TILE_SIZE, GAP } from './render';
+import { randomLevelColor, toDarkLevelColor, luma, computeLayout, tileAtPixel, tilePixelX, tilePixelY, render, drawHashEmojis, setPitch, TILE_SIZE, GAP } from './render';
 import type { Tile, ParsedLevel } from './level';
 import type { GridLayout, Color, SplashState } from './render';
+import { currentPalette, isDark, setDarkMode } from './theme';
 import { setupHowtoTutorial } from './tutorial';
 import { hashString } from './hash';
 
@@ -152,14 +153,26 @@ function activeSplashStates(now: number): SplashState[] {
     .map(s => ({ x: s.x, y: s.y, progress: (now - s.startTime) / s.duration, maxRadius: s.maxRadius }));
 }
 
-function renderFrame(now = performance.now(), overrides: Parameters<typeof render>[4] = {}) {
-  render(ctx, tiles, layout, color, {
+// The on-screen candy color, enriched for dark mode (see toDarkLevelColor).
+function themedColor(): Color {
+  return isDark() ? toDarkLevelColor(color) : color;
+}
+
+function updateCopyButtonColor() {
+  const c = themedColor();
+  copyBtn.style.backgroundColor = `rgb(${c.r},${c.g},${c.b})`;
+  copyBtn.style.color = luma(c) > 160 ? '#000' : '#fff';
+}
+
+function renderFrame(now = performance.now(), overrides: Parameters<typeof render>[5] = {}) {
+  const palette = currentPalette();
+  render(ctx, tiles, layout, themedColor(), palette, {
     hoveredTile, chain, cursorX, cursorY,
     splashes: activeSplashStates(now),
     hardMode,
     ...overrides,
   });
-  if (showEmojiHash && layout) drawHashEmojis(ctx, layout, buildEmojiHash(), canvasH);
+  if (showEmojiHash && layout) drawHashEmojis(ctx, layout, buildEmojiHash(), canvasH, palette);
   drawDateLabel();
   undoIconHit = null;
   if (history.length > 0 && !levelComplete) drawUndoIcon();
@@ -295,10 +308,15 @@ function setSetting(key: string, value: boolean) {
 const showHashCompletedCheckbox = document.getElementById('setting-show-hash-completed') as HTMLInputElement;
 const showHashFirstCheckbox = document.getElementById('setting-show-hash-first') as HTMLInputElement;
 const hardModeCheckbox = document.getElementById('setting-hard-mode') as HTMLInputElement;
+const darkModeCheckbox = document.getElementById('setting-dark-mode') as HTMLInputElement;
 
 showHashCompletedCheckbox.checked = getSetting('show-hash', true);
 showHashFirstCheckbox.checked = getSetting('show-hash-first', false);
 hardModeCheckbox.checked = getSetting('hard-mode', false);
+
+const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches ?? false;
+darkModeCheckbox.checked = getSetting('dark-mode', prefersDark);
+setDarkMode(darkModeCheckbox.checked);
 
 showHashCompletedCheckbox.addEventListener('change', () => {
   setSetting('show-hash', showHashCompletedCheckbox.checked);
@@ -311,6 +329,12 @@ showHashFirstCheckbox.addEventListener('change', () => {
 hardModeCheckbox.addEventListener('change', () => {
   setSetting('hard-mode', hardModeCheckbox.checked);
   if (currentParsedLevel && currentLevelDate) startLevel(currentParsedLevel, currentLevelDate);
+});
+darkModeCheckbox.addEventListener('change', () => {
+  setSetting('dark-mode', darkModeCheckbox.checked);
+  setDarkMode(darkModeCheckbox.checked);
+  updateCopyButtonColor();
+  redraw();
 });
 
 function setButtonIcon(selector: string, file: string) {
@@ -411,10 +435,7 @@ function showEndCard() {
     clearedOnStr = clearedOnLabelFor({ ...record, ...updates });
   }
   solutionHashEmojis.textContent = buildEmojiHash().join('');
-  const { r, g, b } = color;
-  const luma = 0.299 * r + 0.587 * g + 0.114 * b;
-  copyBtn.style.backgroundColor = `rgb(${r},${g},${b})`;
-  copyBtn.style.color = luma > 160 ? '#000' : '#fff';
+  updateCopyButtonColor();
   replayHardBtn.textContent = hardMode ? 'Replay on normal mode' : 'Replay on hard mode';
   copyBtn.textContent = hardMode ? 'Copy hard-mode results' : 'Copy results';
   hardModeTag.hidden = !hardMode;
@@ -825,12 +846,13 @@ let isExperimental = false;
 
 function drawDateLabel() {
   if (!dateStr) return;
+  const palette = currentPalette();
   const fontSize = Math.min(3 * canvasH / 100, 5 * canvasW / 100);
   const centerY = canvasH * 0.925;
   ctx.save();
   const label = isExperimental ? 'EXPERIMENTAL LEVEL' : dateStr;
   ctx.font = `${isExperimental ? 'bold ' : ''}${fontSize}px sans-serif`;
-  ctx.fillStyle = isExperimental ? '#cc0000' : '#666';
+  ctx.fillStyle = isExperimental ? palette.experimental : palette.dateLabel;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   const dateOffset = clearedOnStr ? fontSize * 1.136025 / 2 : 0;
@@ -840,13 +862,13 @@ function drawDateLabel() {
 
   if (clearedOnStr) {
     ctx.font = `${fontSize * 0.675}px sans-serif`;
-    ctx.fillStyle = '#999';
+    ctx.fillStyle = palette.subLabel;
     ctx.fillText(clearedOnStr, canvasW / 2, dateY + fontSize * 1.136025);
   }
   const h = fontSize * 0.55;
   const w = fontSize * 0.30;
   const gap = fontSize * 1.21;
-  ctx.strokeStyle = '#666';
+  ctx.strokeStyle = palette.chevron;
   ctx.lineWidth = fontSize * 0.12;
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
@@ -924,9 +946,10 @@ function showToast(msg: string) {
 
 function showCanvasError(msg: string) {
   setCanvasSize(window.innerWidth, window.innerHeight);
-  ctx.fillStyle = '#fff';
+  const palette = currentPalette();
+  ctx.fillStyle = palette.background;
   ctx.fillRect(0, 0, canvasW, canvasH);
-  ctx.fillStyle = '#888';
+  ctx.fillStyle = palette.errorText;
   ctx.font = '1.5rem sans-serif';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
