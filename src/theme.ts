@@ -6,6 +6,9 @@ export interface Palette {
   // Canvas background and the interior of an unselected (outline-only) tile.
   background: string;
   tileInterior: string;
+  // The card/menu surface color (CSS --surface). Used when a canvas is drawn
+  // on top of a card rather than on the page background.
+  surface: string;
   // Whether the tile interior is dark, so glyphs drawn on it pick a light color.
   interiorIsDark: boolean;
   // The soft "floor shadow" gradient drawn beneath the tiles.
@@ -23,6 +26,7 @@ export interface Palette {
 export const LIGHT_PALETTE: Palette = {
   background: '#fff',
   tileInterior: '#fff',
+  surface: '#fff',
   interiorIsDark: false,
   floorShadowNear: 'rgba(100,100,100,0.15)',
   floorShadowFar: 'rgba(255,255,255,0)',
@@ -37,6 +41,7 @@ export const LIGHT_PALETTE: Palette = {
 export const DARK_PALETTE: Palette = {
   background: '#15161a',
   tileInterior: '#15161a',
+  surface: '#202125',
   interiorIsDark: true,
   floorShadowNear: 'rgba(0,0,0,0.35)',
   floorShadowFar: 'rgba(0,0,0,0)',
@@ -56,6 +61,13 @@ export function isDark(): boolean {
 
 export function currentPalette(): Palette {
   return darkMode ? DARK_PALETTE : LIGHT_PALETTE;
+}
+
+// A palette for a canvas drawn on top of a card, so its background and empty
+// tiles blend into the card surface rather than the page background.
+export function cardPalette(): Palette {
+  const p = currentPalette();
+  return { ...p, background: p.surface, tileInterior: p.surface };
 }
 
 export function setDarkMode(on: boolean): void {
