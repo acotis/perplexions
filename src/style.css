@@ -10,6 +10,7 @@
   --surface: #fff;
   --surface-border: #ccc;
   --surface-shadow: rgba(0,0,0,0.12);
+  --divider: #d6d6d6;
   --btn-bg: #fff;
   --btn-border: #ccc;
   --btn-icon: #999;
@@ -37,6 +38,7 @@
   --surface: #202125;
   --surface-border: #34353a;
   --surface-shadow: rgba(0,0,0,0.5);
+  --divider: #3d3e45;
   --btn-bg: #202125;
   --btn-border: #34353a;
   --btn-icon: #a8aab0;
@@ -337,12 +339,23 @@ a {
   color: var(--close-hover);
 }
 
-#settings-card label {
-  align-self: flex-start;
+/* Grouped (inset) list: full-card-width dividers between rows and at the top
+   and bottom. The list bleeds past the card's 2rem side padding so the rules
+   span edge to edge; each row re-pads 2rem to keep its text aligned. */
+#settings-list {
+  align-self: stretch;
+  /* Claw back half the card's flex gap (matches the --title-space-below model);
+     the list stays within the card's padding so the dividers are inset. */
+  margin: calc(-1.5rem / 2) 0 0;
+  border-top: 1px solid var(--divider);
+}
+
+#settings-list label {
   display: flex;
-  align-items: flex-start;
-  gap: 0.6em;
-  margin-top: calc(-1.5rem / 2);
+  align-items: center;
+  gap: 0.9em;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--divider);
   line-height: 1.25;
   cursor: pointer;
 }
@@ -353,7 +366,6 @@ a {
   position: relative;
   width: 2.2em;
   height: 1.2em;
-  margin: calc((1.25em - 1.2em) / 2 + 0.2em) 0 0;
   border-radius: 0.6em;
   background: var(--toggle-off);
   flex-shrink: 0;
