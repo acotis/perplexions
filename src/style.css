@@ -305,6 +305,9 @@ a {
 }
 
 #howto-card {
+  /* Keep the How-to title at its original (un-shortened) spacing. */
+  --title-space-above: 1.875rem;
+  --title-space-below: 1.226rem;
   width: fit-content;
 }
 
