@@ -88,18 +88,14 @@ function oklchToRgb({ L, C, h }: Oklch): Color {
   return { r: to255(r), g: to255(g), b: to255(b) };
 }
 
-// OKLab lightness of the dark-mode background (#15161a).
-const DARK_BG_OKL = 0.20;
-
-// Level colors are light pastels (channels 175–255) that sit just below white
-// on a white background — low brightness-contrast, so they read gently. To get
-// the same calm feel in dark mode we *flip* the perceptual lightness: place each
-// tile the same distance ABOVE the dark background as it sat below white. Working
-// in OKLCH keeps the perceived hue fixed through that big lightness change.
+// Level colors are light pastels (channels 175–255). For dark mode we *lift*
+// them down into a mid perceptual-lightness band (rather than flipping them to
+// the opposite side of the background). Working in OKLCH keeps the perceived hue
+// fixed through the lightness change.
 export function toDarkLevelColor(c: Color): Color {
   const { L, C, h } = rgbToOklch(c);
-  const C2 = Math.min(0.10, C * 1.5);
-  const L2 = clamp(DARK_BG_OKL + (1 - L) + 0.15, 0.38, 0.60);
+  const C2 = Math.min(0.13, C * 1.8);
+  const L2 = clamp(L - 0.30, 0.45, 0.62);
   return oklchToRgb({ L: L2, C: C2, h });
 }
 
