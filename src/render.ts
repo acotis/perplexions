@@ -43,56 +43,64 @@ function rgb(c: Color): string {
   return `rgb(${c.r},${c.g},${c.b})`;
 }
 
-function rgbToHsl(c: Color): { h: number; s: number; l: number } {
-  const r = c.r / 255, g = c.g / 255, b = c.b / 255;
-  const max = Math.max(r, g, b), min = Math.min(r, g, b);
-  const l = (max + min) / 2;
-  const d = max - min;
-  let h = 0, s = 0;
-  if (d !== 0) {
-    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-    switch (max) {
-      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-      case g: h = (b - r) / d + 2; break;
-      default: h = (r - g) / d + 4; break;
-    }
-    h /= 6;
-  }
-  return { h, s, l };
-}
-
-function hslToRgb(h: number, s: number, l: number): Color {
-  if (s === 0) {
-    const v = Math.round(l * 255);
-    return { r: v, g: v, b: v };
-  }
-  const hue2rgb = (p: number, q: number, t: number) => {
-    if (t < 0) t += 1;
-    if (t > 1) t -= 1;
-    if (t < 1 / 6) return p + (q - p) * 6 * t;
-    if (t < 1 / 2) return q;
-    if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
-    return p;
-  };
-  const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-  const p = 2 * l - q;
-  return {
-    r: Math.round(hue2rgb(p, q, h + 1 / 3) * 255),
-    g: Math.round(hue2rgb(p, q, h) * 255),
-    b: Math.round(hue2rgb(p, q, h - 1 / 3) * 255),
-  };
-}
-
 const clamp = (x: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, x));
 
-// Level colors are light pastels (channels 175–255), tuned to read as outlines
-// on a white background. On a dark background they look milky, so for dark mode
-// we keep the hue but lift saturation and pull the lightness into a richer band.
+// --- OKLCH conversions (Björn Ottosson's OKLab) ---
+// OKLCH is perceptually uniform: holding the hue (h) constant keeps the
+// *perceived* hue constant across lightness/chroma changes, unlike HSL.
+
+function srgbToLinear(c: number): number {
+  return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+}
+
+function linearToSrgb(c: number): number {
+  return c <= 0.0031308 ? 12.92 * c : 1.055 * Math.pow(c, 1 / 2.4) - 0.055;
+}
+
+interface Oklch { L: number; C: number; h: number; }
+
+function rgbToOklch(col: Color): Oklch {
+  const r = srgbToLinear(col.r / 255);
+  const g = srgbToLinear(col.g / 255);
+  const b = srgbToLinear(col.b / 255);
+  const l = Math.cbrt(0.4122214708 * r + 0.5363325363 * g + 0.0514459929 * b);
+  const m = Math.cbrt(0.2119034982 * r + 0.6806995451 * g + 0.1073969566 * b);
+  const s = Math.cbrt(0.0883024619 * r + 0.2817188376 * g + 0.6299787005 * b);
+  const L = 0.2104542553 * l + 0.7936177850 * m - 0.0040720468 * s;
+  const a = 1.9779984951 * l - 2.4285922050 * m + 0.4505937099 * s;
+  const bb = 0.0259040371 * l + 0.7827717662 * m - 0.8086757660 * s;
+  return { L, C: Math.hypot(a, bb), h: Math.atan2(bb, a) };
+}
+
+function oklchToRgb({ L, C, h }: Oklch): Color {
+  const a = C * Math.cos(h);
+  const bb = C * Math.sin(h);
+  const l_ = L + 0.3963377774 * a + 0.2158037573 * bb;
+  const m_ = L - 0.1055613458 * a - 0.0638541728 * bb;
+  const s_ = L - 0.0894841775 * a - 1.2914855480 * bb;
+  const l = l_ * l_ * l_;
+  const m = m_ * m_ * m_;
+  const s = s_ * s_ * s_;
+  const r = +4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s;
+  const g = -1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s;
+  const b = -0.0041960863 * l - 0.7034186147 * m + 1.7076147010 * s;
+  const to255 = (c: number) => Math.round(clamp(linearToSrgb(c), 0, 1) * 255);
+  return { r: to255(r), g: to255(g), b: to255(b) };
+}
+
+// OKLab lightness of the dark-mode background (#15161a).
+const DARK_BG_OKL = 0.20;
+
+// Level colors are light pastels (channels 175–255) that sit just below white
+// on a white background — low brightness-contrast, so they read gently. To get
+// the same calm feel in dark mode we *flip* the perceptual lightness: place each
+// tile the same distance ABOVE the dark background as it sat below white. Working
+// in OKLCH keeps the perceived hue fixed through that big lightness change.
 export function toDarkLevelColor(c: Color): Color {
-  const { h, s, l } = rgbToHsl(c);
-  const s2 = Math.min(0.55, s * 0.75);
-  const l2 = clamp(l - 0.25, 0.45, 0.62);
-  return hslToRgb(h, s2, l2);
+  const { L, C, h } = rgbToOklch(c);
+  const C2 = Math.min(0.10, C * 1.5);
+  const L2 = clamp(DARK_BG_OKL + (1 - L) + 0.15, 0.38, 0.60);
+  return oklchToRgb({ L: L2, C: C2, h });
 }
 
 export interface GridLayout {
