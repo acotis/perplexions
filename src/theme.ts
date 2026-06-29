@@ -11,6 +11,9 @@ export interface Palette {
   surface: string;
   // Whether the tile interior is dark, so glyphs drawn on it pick a light color.
   interiorIsDark: boolean;
+  // Tile letter colors, chosen per tile by the luminance of what's behind it.
+  glyphLight: string;
+  glyphDark: string;
   // The soft "floor shadow" gradient drawn beneath the tiles. Falloff is the
   // fraction of the band over which it fades to the far color; lower = faster.
   floorShadowNear: string;
@@ -30,6 +33,8 @@ export const LIGHT_PALETTE: Palette = {
   tileInterior: '#fff',
   surface: '#fff',
   interiorIsDark: false,
+  glyphLight: '#fff',
+  glyphDark: '#000',
   floorShadowNear: 'rgba(100,100,100,0.15)',
   floorShadowFar: 'rgba(255,255,255,0)',
   floorShadowFalloff: 1,
@@ -46,6 +51,8 @@ export const DARK_PALETTE: Palette = {
   tileInterior: '#15161a',
   surface: '#202125',
   interiorIsDark: true,
+  glyphLight: '#c8c9cd',
+  glyphDark: '#000',
   floorShadowNear: 'rgba(210,210,210,0.16)',
   floorShadowFar: 'rgba(210,210,210,0)',
   floorShadowFalloff: 0.75,

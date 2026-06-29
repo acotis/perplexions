@@ -90,8 +90,8 @@ const clamp = (x: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, x
 // we keep the hue but lift saturation and pull the lightness into a richer band.
 export function toDarkLevelColor(c: Color): Color {
   const { h, s, l } = rgbToHsl(c);
-  const s2 = Math.min(1, s * 1.4 + 0.10);
-  const l2 = clamp(l - 0.20, 0.50, 0.70);
+  const s2 = Math.min(0.55, s * 0.75);
+  const l2 = clamp(l - 0.25, 0.45, 0.62);
   return hslToRgb(h, s2, l2);
 }
 
@@ -286,7 +286,7 @@ function drawTile(
   // Pick a glyph color that contrasts whatever is directly behind it: the candy
   // fill when the tile is selected, otherwise the tile interior.
   const behindIsDark = highlighted ? luma(color) < 150 : palette.interiorIsDark;
-  ctx.fillStyle = behindIsDark ? '#fff' : '#000';
+  ctx.fillStyle = behindIsDark ? palette.glyphLight : palette.glyphDark;
   ctx.font = `bold ${fontSize}px sans-serif`;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
