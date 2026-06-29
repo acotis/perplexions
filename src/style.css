@@ -342,6 +342,11 @@ a {
 /* Grouped (inset) list: full-card-width dividers between rows and at the top
    and bottom. The list bleeds past the card's 2rem side padding so the rules
    span edge to edge; each row re-pads 2rem to keep its text aligned. */
+/* Tighten the gap below the settings list (overrides the shared card's 2rem). */
+#settings-card {
+  padding-bottom: 1.5rem;
+}
+
 #settings-list {
   align-self: stretch;
   /* Claw back half the card's flex gap (matches the --title-space-below model);
