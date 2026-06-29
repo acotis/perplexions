@@ -256,7 +256,10 @@ const solutionHashEmojis = document.getElementById('solution-hash-emojis') as HT
 
 // Overlays fade via the .overlay-visible class (opacity transition); they start
 // hidden by CSS default, so creation just appends them.
-const showOverlay = (o: HTMLElement) => o.classList.add('overlay-visible');
+const showOverlay = (o: HTMLElement) => {
+  o.classList.add('overlay-visible');
+  if (hoveredTile) { hoveredTile = null; redraw(); }
+};
 const hideOverlay = (o: HTMLElement) => o.classList.remove('overlay-visible');
 const isOverlayVisible = (o: HTMLElement) => o.classList.contains('overlay-visible');
 
@@ -581,6 +584,12 @@ canvas.addEventListener('mousedown', e => {
   }
 });
 
+// True while any menu/end card is open (its overlay covers the board).
+function anyCardOpen(): boolean {
+  return isOverlayVisible(settingsOverlay) || isOverlayVisible(creditsOverlay) ||
+         isOverlayVisible(howtoOverlay) || isOverlayVisible(endCardOverlay);
+}
+
 window.addEventListener('mousemove', e => {
   const rect = canvas.getBoundingClientRect();
   cursorX = e.clientX - rect.left;
@@ -590,6 +599,12 @@ window.addEventListener('mousemove', e => {
                       (undoIconHit && hitTest(undoIconHit, cursorX, cursorY));
   canvas.style.cursor = overChevron ? 'pointer' : '';
   if (animating || levelComplete || !layout) return;
+
+  // Don't light up tiles under a card; it's distracting while using the menu.
+  if (anyCardOpen()) {
+    if (hoveredTile) { hoveredTile = null; redraw(); }
+    return;
+  }
 
   if (chain.length === 0) {
     const hit = tileAtPixel(tiles, cursorX, cursorY, layout);
