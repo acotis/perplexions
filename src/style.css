@@ -17,7 +17,7 @@
   --endbtn-text: #222;
   --endbtn-border: rgba(0,0,0,0.18);
   --endbtn-shadow: rgba(0,0,0,0.12);
-  --close: #bbb;
+  --close: #cdcdcd;
   --close-hover: #777;
   --toggle-off: #ccc;
   --toggle-on: #4caf50;
@@ -44,7 +44,7 @@
   --endbtn-text: #2c2e34;
   --endbtn-border: rgba(255,255,255,0.18);
   --endbtn-shadow: rgba(0,0,0,0.5);
-  --close: #75777e;
+  --close: #5c5e65;
   --close-hover: #aeb0b6;
   --toggle-off: #44464d;
   --toggle-on: #4caf50;
