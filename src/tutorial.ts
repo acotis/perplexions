@@ -259,13 +259,14 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
   }
 
   function drawPointer() {
+    const dark = isDark();
     ctx.save();
     ctx.beginPath();
     ctx.arc(cursor.x, cursor.y, tile * 0.32, 0, Math.PI * 2);
     ctx.fillStyle = 'rgba(40,40,40,0.28)';
     ctx.fill();
     ctx.lineWidth = Math.max(1, tile * 0.05);
-    ctx.strokeStyle = 'rgba(255,255,255,0.9)';
+    ctx.strokeStyle = dark ? 'rgba(233,233,233,0.78)' : 'rgba(255,255,255,0.9)';
     ctx.stroke();
     ctx.restore();
   }
