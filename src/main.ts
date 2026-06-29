@@ -96,18 +96,22 @@ function drawUndoIcon() {
   const size = Math.max(Math.min(canvasW, canvasH) * 0.06, 2.7 * rem);
   const pad = size * 0.5;
 
-  let alpha = 0.525;
+  const fullAlpha = isDark() ? 0.65 : 0.525;
+  let alpha = fullAlpha;
   if (!undoIconFadeComplete) {
     const now = performance.now();
     if (undoIconFirstShownTime === null) { undoIconFirstShownTime = now; runUndoIconFadeLoop(); }
     const elapsed = now - undoIconFirstShownTime;
     if (elapsed < 2000) return;
-    if (elapsed < 4000) alpha = 0.525 * (elapsed - 2000) / 2000;
+    if (elapsed < 4000) alpha = fullAlpha * (elapsed - 2000) / 2000;
     else undoIconFadeComplete = true;
   }
 
   ctx.save();
   ctx.globalAlpha = alpha;
+  // The icon art is solid black; in dark mode invert it to a light gray so it
+  // reads against the dark background.
+  if (isDark()) ctx.filter = 'invert(1) brightness(0.82)';
   ctx.drawImage(undoIcon, pad, pad, size, size);
   ctx.restore();
   undoIconHit = { x: 0, y: 0, w: size + pad * 2, h: size + pad * 2 };
