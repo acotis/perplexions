@@ -80,5 +80,12 @@ export function cardPalette(): Palette {
 
 export function setDarkMode(on: boolean): void {
   darkMode = on;
-  document.documentElement.setAttribute('data-theme', on ? 'dark' : 'light');
+  const root = document.documentElement;
+  // Apply the theme with transitions suppressed so everything (e.g. the settings
+  // toggles' track color) flips instantly and uniformly, then restore them so a
+  // normal setting toggle still animates.
+  root.classList.add('theme-switching');
+  root.setAttribute('data-theme', on ? 'dark' : 'light');
+  void root.offsetWidth; // force the new colors to commit with transitions off
+  root.classList.remove('theme-switching');
 }
