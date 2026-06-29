@@ -30,26 +30,26 @@
 }
 
 [data-theme="dark"] {
-  --bg: #1e2230;
-  --text: #d8dbe4;
-  --surface: #272c3b;
-  --surface-border: #3a4156;
+  --bg: #15161a;
+  --text: #d7d8db;
+  --surface: #202125;
+  --surface-border: #34353a;
   --surface-shadow: rgba(0,0,0,0.5);
-  --btn-bg: #272c3b;
-  --btn-border: #3a4156;
-  --btn-icon: #aab4c4;
+  --btn-bg: #202125;
+  --btn-border: #34353a;
+  --btn-icon: #a8aab0;
   --endbtn-border: rgba(255,255,255,0.18);
   --endbtn-shadow: rgba(0,0,0,0.5);
-  --close: #777f90;
-  --close-hover: #aeb4c4;
-  --toggle-off: #4a5066;
+  --close: #75777e;
+  --close-hover: #aeb0b6;
+  --toggle-off: #44464d;
   --toggle-on: #4caf50;
-  --toggle-knob: #d8dbe4;
+  --toggle-knob: #d7d8db;
   --overlay: rgba(0,0,0,0.5);
-  --toast-bg: #11141d;
-  --toast-text: #e8eaf0;
-  --hash-label: #888f9e;
-  --link-muted: #9aa0b0;
+  --toast-bg: #101114;
+  --toast-text: #e6e7ea;
+  --hash-label: #86888f;
+  --link-muted: #94969d;
   --hardtag: rgba(255,120,120,0.7);
   --link: #6fa8ff;
 }

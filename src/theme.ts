@@ -35,17 +35,17 @@ export const LIGHT_PALETTE: Palette = {
 };
 
 export const DARK_PALETTE: Palette = {
-  background: '#1e2230',
-  tileInterior: '#1e2230',
+  background: '#15161a',
+  tileInterior: '#15161a',
   interiorIsDark: true,
   floorShadowNear: 'rgba(0,0,0,0.35)',
   floorShadowFar: 'rgba(0,0,0,0)',
-  dateLabel: '#9aa0b0',
-  subLabel: '#787f90',
+  dateLabel: '#95979e',
+  subLabel: '#72747a',
   experimental: '#ff6b6b',
-  chevron: '#9aa0b0',
-  hashLabel: '#888f9e',
-  errorText: '#9aa0b0',
+  chevron: '#95979e',
+  hashLabel: '#86888f',
+  errorText: '#95979e',
 };
 
 let darkMode = false;
