@@ -13,6 +13,8 @@
   --btn-bg: #fff;
   --btn-border: #ccc;
   --btn-icon: #999;
+  --endbtn-bg: #e9e9e9;
+  --endbtn-text: #222;
   --endbtn-border: rgba(0,0,0,0.18);
   --endbtn-shadow: rgba(0,0,0,0.12);
   --close: #bbb;
@@ -38,6 +40,8 @@
   --btn-bg: #202125;
   --btn-border: #34353a;
   --btn-icon: #a8aab0;
+  --endbtn-bg: #bbb;
+  --endbtn-text: #2c2e34;
   --endbtn-border: rgba(255,255,255,0.18);
   --endbtn-shadow: rgba(0,0,0,0.5);
   --close: #75777e;
@@ -121,8 +125,8 @@ a {
   border-radius: 6px;
   border: 1px solid var(--endbtn-border);
   box-shadow: 0 2px 0 var(--endbtn-shadow);
-  background: var(--surface);
-  color: var(--text);
+  background: var(--endbtn-bg);
+  color: var(--endbtn-text);
 }
 
 #copy-results {
@@ -144,6 +148,9 @@ a {
 
 #copy-results:hover { filter: brightness(0.9125); }
 #copy-results:active { filter: brightness(0.8125); }
+
+#replay:hover { filter: brightness(0.9125); }
+#replay:active { filter: brightness(0.8125); }
 
 
 #credits-btn {
