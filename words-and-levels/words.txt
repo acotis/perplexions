@@ -16067,7 +16067,6 @@ doorstop
 doorstops
 doorway
 doorways
-dopa
 dopamine
 dope
 doped
@@ -35490,7 +35489,6 @@ nowadays
 noway
 nowhere
 nowise
-nowt
 noxious
 nozzle
 nozzles
@@ -56071,7 +56069,6 @@ twofold
 twopence
 twos
 twosome
-twp
 tycoon
 tycoons
 tying
@@ -59998,7 +59995,6 @@ woolly
 wooly
 woos
 woozy
-wop
 word
 wordbook
 worded
@@ -60122,7 +60118,6 @@ worthless
 worthlessness
 worthwhile
 worthy
-wot
 would
 wouldnt
 wouldst
