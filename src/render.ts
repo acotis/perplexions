@@ -297,7 +297,7 @@ function drawTile(
   ctx.fillText(tile.letter.toUpperCase(), px + size / 2, py + size / 2 + fontSize * 0.075 + pitch * 0.01);
 }
 
-export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout, emojis: string[], canvasH: number, palette: Palette) {
+export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout, emojis: string[], canvasH: number) {
   if (emojis.length === 0) return;
   const { pitch, tileSize } = layout;
   const floorY = layout.offsetY + layout.maxY * pitch + tileSize + (tileSize * 0.4 + pitch * 0.05) * 0.65;
@@ -307,14 +307,8 @@ export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout
   ctx.font = `${fontSize}px sans-serif`;
   ctx.textAlign = 'left';
   ctx.textBaseline = 'top';
-  let x = floorX1 + fontSize * 0.85;
-  const y = floorY + fontSize * 12.05 / 11;
-  ctx.font = `${fontSize * 0.6}px sans-serif`;
-  ctx.fillStyle = palette.hashLabel;
-  ctx.fillText('Hash:', x, y + fontSize * 0.15);
-  x += ctx.measureText('Hash:').width + fontSize * 0.25;
-  ctx.font = `${fontSize}px sans-serif`;
-  ctx.fillStyle = '#000';
+  let x = floorX1 + fontSize * 0.85 - fontSize * 0.1;
+  const y = floorY + fontSize * 12.05 / 11 - fontSize * 0.1;
   for (const emoji of emojis) {
     ctx.fillText(emoji, x, y);
     x += ctx.measureText(emoji).width + fontSize * 0.15;

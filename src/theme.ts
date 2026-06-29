@@ -24,7 +24,6 @@ export interface Palette {
   subLabel: string;
   experimental: string;
   chevron: string;
-  hashLabel: string;
   errorText: string;
 }
 
@@ -42,7 +41,6 @@ export const LIGHT_PALETTE: Palette = {
   subLabel: '#999',
   experimental: '#cc0000',
   chevron: '#666',
-  hashLabel: '#aaa',
   errorText: '#888',
 };
 
@@ -60,7 +58,6 @@ export const DARK_PALETTE: Palette = {
   subLabel: '#72747a',
   experimental: '#ff6b6b',
   chevron: '#95979e',
-  hashLabel: '#86888f',
   errorText: '#95979e',
 };
 

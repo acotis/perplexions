@@ -176,7 +176,7 @@ function renderFrame(now = performance.now(), overrides: Parameters<typeof rende
     hardMode,
     ...overrides,
   });
-  if (showEmojiHash && layout) drawHashEmojis(ctx, layout, buildEmojiHash(), canvasH, palette);
+  if (showEmojiHash && layout) drawHashEmojis(ctx, layout, buildEmojiHash(), canvasH);
   drawDateLabel();
   undoIconHit = null;
   if (history.length > 0 && !levelComplete) drawUndoIcon();
