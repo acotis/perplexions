@@ -173,6 +173,7 @@ ash
 ashcan
 aside
 asides
+asinine
 ask
 asp
 asps
@@ -1508,6 +1509,7 @@ hut
 hutch
 huts
 hymn
+hymns
 i
 ice
 iced
@@ -1844,8 +1846,11 @@ mi
 mine
 mines
 mingle
+mini
+minis
 mint
 mints
+minty
 miser
 misers
 miss
@@ -1970,6 +1975,7 @@ nick
 nicked
 nickel
 nil
+nine
 nip
 nit
 nite
@@ -2672,6 +2678,7 @@ sag
 saga
 sage
 said
+saint
 sale
 same
 samosa
@@ -2700,6 +2707,7 @@ sat
 sate
 sated
 satin
+satiny
 sauce
 sauced
 saucer
@@ -3006,6 +3014,7 @@ staffs
 stag
 stage
 staged
+stain
 stair
 stamen
 stamens
@@ -3130,6 +3139,7 @@ sword
 swords
 swore
 sworn
+syn
 syrup
 syrups
 ta
@@ -3423,6 +3433,7 @@ turrets
 tut
 tutor
 tutors
+twain
 twas
 tweed
 tweeds
@@ -3575,6 +3586,7 @@ wars
 wart
 wary
 was
+wasnt
 wast
 waste
 waster
