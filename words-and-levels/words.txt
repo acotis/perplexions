@@ -889,8 +889,6 @@ advocating
 adz
 adze
 aegis
-aeon
-aeons
 aerate
 aerated
 aerating
@@ -1508,7 +1506,6 @@ alternatives
 alternator
 alternators
 alters
-altho
 although
 altimeter
 altimeters
@@ -4696,7 +4693,6 @@ berries
 berry
 berserk
 berth
-berthed
 berthing
 berths
 beryl
@@ -5195,7 +5191,6 @@ bladed
 blades
 blag
 blah
-blahs
 blame
 blamed
 blameless
@@ -5296,7 +5291,6 @@ blessedness
 blesses
 blessing
 blessings
-blest
 blew
 blight
 blighted
@@ -5438,7 +5432,6 @@ blotted
 blotter
 blotters
 blotting
-blotto
 blouse
 blouses
 blow
@@ -13004,7 +12997,6 @@ dafter
 dag
 dagger
 daggers
-dago
 dags
 daguerreotype
 daguerreotypes
@@ -16088,26 +16080,21 @@ dorms
 dorsal
 dorsally
 dory
-dos
 dosage
 dosages
 dose
 dosed
 doses
-dosh
 dosimeter
 dosimeters
 dosing
-doss
 dossier
 dossiers
-dost
 dot
 dotage
 dote
 doted
 dotes
-doth
 doting
 dots
 dotted
@@ -16823,7 +16810,6 @@ earthlings
 earthly
 earthquake
 earthquakes
-earths
 earthshaking
 earthward
 earthwork
@@ -16859,8 +16845,6 @@ eastwards
 easy
 easygoing
 eat
-eatable
-eatables
 eaten
 eater
 eateries
@@ -17977,7 +17961,6 @@ entertainingly
 entertainment
 entertainments
 entertains
-enthral
 enthrall
 enthralled
 enthralling
@@ -22495,8 +22478,6 @@ getup
 geyser
 geysers
 ghastly
-ghat
-ghats
 ghee
 gherkin
 gherkins
@@ -22658,7 +22639,6 @@ gladioli
 gladiolus
 gladly
 gladness
-glads
 glam
 glamor
 glamorize
@@ -23889,7 +23869,6 @@ hadith
 hadj
 hadji
 hadnt
-hadst
 haemoglobin
 haemophilia
 haemorrhage
@@ -24330,7 +24309,6 @@ hassled
 hassles
 hassling
 hassocks
-hast
 haste
 hasted
 hasten
@@ -24636,7 +24614,6 @@ hectares
 hectic
 hector
 hectoring
-hed
 hedge
 hedged
 hedgehog
@@ -24709,7 +24686,6 @@ hellions
 hellish
 hellishly
 hello
-hellos
 helluva
 helm
 helmet
@@ -24890,7 +24866,6 @@ heterodoxy
 heterogeneity
 heterogeneous
 heterogeneously
-heteros
 heterosexual
 heterosexuality
 heterosexually
@@ -25223,7 +25198,6 @@ hollered
 hollering
 hollers
 hollies
-hollo
 hollow
 hollowed
 hollowing
@@ -25390,7 +25364,6 @@ honorees
 honorific
 honoring
 honors
-hons
 hooch
 hood
 hooded
@@ -30802,7 +30775,6 @@ loaders
 loading
 loads
 loadstar
-loadstone
 loaf
 loafer
 loafers
@@ -31299,7 +31271,6 @@ lustful
 lustfully
 lustily
 lusting
-lustre
 lustrous
 lusts
 lusty
@@ -35138,7 +35109,6 @@ nodule
 nodules
 noel
 noels
-noes
 noggin
 noise
 noised
@@ -35375,7 +35345,6 @@ northwest
 northwesterly
 northwestern
 northwestward
-nos
 nose
 nosebleed
 nosebleeds
@@ -35398,7 +35367,6 @@ nosy
 not
 notability
 notable
-notables
 notably
 notarial
 notaries
@@ -35462,7 +35430,6 @@ nourished
 nourishes
 nourishing
 nourishment
-nous
 nova
 novae
 novas
@@ -35490,7 +35457,6 @@ nowise
 noxious
 nozzle
 nozzles
-nth
 nu
 nuance
 nuanced
@@ -36556,7 +36522,6 @@ outflanked
 outflow
 outflows
 outfoxed
-outgo
 outgoing
 outgoings
 outgrew
@@ -42868,7 +42833,6 @@ realm
 realms
 realness
 realpolitik
-reals
 realtor
 realtors
 realty
@@ -46009,7 +45973,6 @@ sabotaging
 saboteur
 saboteurs
 sabots
-sabra
 sabre
 sabres
 sac
@@ -46132,7 +46095,6 @@ saints
 sake
 saki
 salaam
-salable
 salacious
 salad
 salads
@@ -49737,7 +49699,6 @@ soloing
 soloist
 soloists
 solos
-sols
 solstice
 solstices
 solubility
@@ -49881,7 +49842,6 @@ sorting
 sorts
 sos
 sot
-sou
 sough
 sought
 souk
@@ -50708,7 +50668,6 @@ squish
 squished
 squishing
 squishy
-ssh
 stab
 stabbed
 stabber
@@ -53057,7 +53016,6 @@ tabooed
 taboos
 tabor
 tabs
-tabu
 tabular
 tabulate
 tabulated
@@ -53066,7 +53024,6 @@ tabulating
 tabulation
 tabulations
 tabulator
-tabus
 tachograph
 tachometer
 tachometers
@@ -53106,7 +53063,6 @@ tactless
 tad
 tadpole
 tadpoles
-tads
 taffeta
 taffy
 tag
@@ -53347,7 +53303,6 @@ tartans
 tartar
 tartaric
 tartars
-tarted
 tarter
 tartly
 tartness
@@ -53936,7 +53891,6 @@ thatched
 thatcher
 thatchers
 thatching
-thats
 thaw
 thawed
 thawing
@@ -54159,7 +54113,6 @@ thoughtless
 thoughtlessly
 thoughtlessness
 thoughts
-thous
 thousand
 thousandfold
 thousands
@@ -54623,7 +54576,6 @@ toffee
 toffees
 toffs
 tofu
-tog
 toga
 togas
 together
@@ -54633,7 +54585,6 @@ toggle
 toggled
 toggles
 toggling
-togs
 toil
 toiled
 toilers
@@ -54873,7 +54824,6 @@ tossers
 tosses
 tossing
 tossup
-tost
 tot
 total
 totaled
@@ -55660,7 +55610,6 @@ tropics
 tropism
 troposphere
 trot
-troth
 trots
 trotted
 trotter
@@ -56153,7 +56102,6 @@ ulcers
 ulna
 ulnar
 ulster
-ult
 ulterior
 ultimate
 ultimately
