@@ -266,10 +266,10 @@ function drawTile(
       ctx.save();
       beveledPath(ctx, ix, iy, iw, ih, ibevel);
       ctx.clip();
-      ctx.globalAlpha = 0.4;
+      ctx.globalAlpha = 0.36;
       ctx.strokeStyle = rgb(color);
       ctx.lineWidth = tileSize * 0.0225;
-      const spacing = tileSize * 0.135;
+      const spacing = tileSize * 0.106875;
       const o = ih;
       // Align the pattern so the k=0 stripe lies exactly on the tile's
       // bottom-left-to-top-right diagonal.
