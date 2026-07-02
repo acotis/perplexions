@@ -1207,6 +1207,7 @@ detours
 deuce
 dew
 dewy
+dhow
 dice
 diced
 did
@@ -1247,6 +1248,8 @@ doers
 does
 doesnt
 dog
+doge
+dogged
 dogs
 doh
 dolce
@@ -1382,12 +1385,16 @@ echo
 ecru
 edema
 edge
+edged
+edges
 eel
 eels
 eerie
 eff
 effing
 egg
+egged
+eggs
 ego
 egos
 egress
@@ -2037,6 +2044,9 @@ heated
 heater
 heaters
 heats
+hedge
+hedged
+hedges
 heel
 held
 hell
@@ -2060,6 +2070,7 @@ heros
 hers
 hes
 hetero
+hew
 hex
 hey
 hi
@@ -2089,6 +2100,7 @@ hoer
 hoes
 hog
 hogan
+hogged
 hogs
 hoist
 hold
@@ -2131,6 +2143,7 @@ hour
 house
 hovel
 hovels
+how
 hub
 hubs
 hue
@@ -2830,6 +2843,7 @@ oceans
 ocelot
 odd
 odder
+odds
 ode
 odes
 odor
@@ -3722,6 +3736,7 @@ sect
 secure
 sedan
 sedate
+sedge
 seduce
 see
 seed
@@ -3812,6 +3827,7 @@ sheller
 shells
 sherbet
 shes
+shew
 shies
 shoal
 shock
@@ -3829,6 +3845,7 @@ shore
 short
 shot
 should
+show
 shut
 sic
 sick
@@ -4222,6 +4239,7 @@ surf
 surface
 surge
 sus
+sushi
 suspend
 swab
 swain
@@ -4865,6 +4883,8 @@ weary
 web
 webs
 wed
+wedge
+wedges
 weds
 wee
 weed
@@ -4893,6 +4913,8 @@ wet
 wets
 what
 whit
+who
+whos
 wick
 wicks
 wide
