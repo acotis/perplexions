@@ -146,6 +146,7 @@ alters
 alto
 altogether
 altos
+alts
 am
 amber
 amble
@@ -2894,6 +2895,7 @@ organ
 orgy
 ornate
 ornery
+ors
 other
 others
 otter

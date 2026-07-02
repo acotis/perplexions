@@ -1519,6 +1519,7 @@ altruist
 altruistic
 altruistically
 altruists
+alts
 alum
 alumina
 aluminum
@@ -1828,6 +1829,7 @@ androgynous
 androgyny
 android
 androids
+ands
 anecdotal
 anecdotally
 anecdote
@@ -36384,6 +36386,7 @@ orphanages
 orphaned
 orphans
 orris
+ors
 orthodontia
 orthodontic
 orthodontics
