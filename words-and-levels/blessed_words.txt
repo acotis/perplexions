@@ -530,6 +530,7 @@ bias
 bid
 bide
 bides
+bidet
 bids
 bier
 big
@@ -539,6 +540,7 @@ bin
 bing
 binge
 bins
+bio
 bird
 birds
 bit
@@ -597,6 +599,7 @@ bod
 bode
 bods
 bog
+bogie
 bogs
 bola
 bolas
@@ -618,6 +621,8 @@ boob
 boobs
 booby
 boodle
+boogie
+boom
 boon
 boor
 boors
@@ -2889,6 +2894,7 @@ oath
 oaths
 oats
 obese
+obi
 oblate
 oboe
 oboes
@@ -4870,6 +4876,7 @@ vet
 veto
 vex
 via
+vibe
 video
 vie
 vied

@@ -4987,7 +4987,6 @@ biodegrade
 biodiversity
 bioethics
 biofeedback
-biog
 biographer
 biographers
 biographic
@@ -26057,7 +26056,6 @@ i
 iamb
 iambic
 ibex
-ibid
 ibidem
 ibis
 ibises
@@ -35652,7 +35650,6 @@ obfuscating
 obfuscation
 obi
 obis
-obit
 obits
 obituaries
 obituary
