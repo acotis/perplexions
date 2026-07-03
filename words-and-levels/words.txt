@@ -14512,6 +14512,7 @@ detritus
 deuce
 deuces
 deuterium
+dev
 devaluation
 devaluations
 devalue
@@ -14582,6 +14583,7 @@ devouring
 devours
 devout
 devoutly
+devs
 dew
 dewberry
 dewclaws
@@ -57601,6 +57603,8 @@ urinates
 urinating
 urination
 urine
+url
+urls
 urn
 urns
 urogenital
