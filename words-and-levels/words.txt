@@ -24616,6 +24616,7 @@ hectares
 hectic
 hector
 hectoring
+hed
 hedge
 hedged
 hedgehog
@@ -25639,6 +25640,7 @@ hovering
 hovers
 how
 howbeit
+howd
 howdy
 however
 howitzer
@@ -59445,6 +59447,7 @@ whizzes
 whizzing
 who
 whoa
+whod
 whodunit
 whodunnit
 whoever
@@ -59496,6 +59499,7 @@ whup
 whupped
 whups
 why
+whyd
 whys
 wick
 wicked
