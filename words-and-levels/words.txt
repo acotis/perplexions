@@ -23888,6 +23888,7 @@ haggling
 hagiography
 hags
 hah
+haha
 haiku
 hail
 hailed
@@ -30771,6 +30772,7 @@ llama
 llamas
 llano
 llanos
+lmao
 lo
 load
 loaded
@@ -30926,6 +30928,7 @@ loins
 loiter
 loitered
 loitering
+lol
 loll
 lolled
 lollies
@@ -45555,6 +45558,7 @@ roe
 roebuck
 roentgen
 roes
+rofl
 roger
 rogers
 rogue
