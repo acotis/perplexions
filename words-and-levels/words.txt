@@ -16218,6 +16218,7 @@ dowse
 dowser
 dowsers
 dowsing
+dox
 doxology
 doyen
 doyenne
@@ -22757,6 +22758,8 @@ globule
 globules
 globulin
 glockenspiel
+glom
+gloms
 gloom
 gloomier
 gloomiest
@@ -33552,7 +33555,9 @@ modulators
 module
 modules
 modulus
+mog
 moggy
+mogs
 mogul
 moguls
 mohair

@@ -1868,6 +1868,7 @@ global
 globe
 globes
 globs
+glom
 gloss
 glossed
 glottal
@@ -2093,6 +2094,7 @@ heated
 heater
 heaters
 heats
+hed
 hedge
 hedged
 hedges
@@ -2193,6 +2195,7 @@ house
 hovel
 hovels
 how
+howd
 hub
 hubs
 hue
@@ -2691,6 +2694,7 @@ mocha
 mochas
 mod
 mode
+mog
 mogul
 moi
 moist
@@ -4842,6 +4846,7 @@ urgent
 uric
 urine
 url
+urls
 urn
 urns
 us
@@ -4994,6 +4999,7 @@ wets
 what
 whit
 who
+whod
 whos
 wick
 wicks
