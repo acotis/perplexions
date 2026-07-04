@@ -1689,6 +1689,9 @@ fonts
 fool
 foot
 footer
+footie
+foots
+footsie
 footwear
 for
 forage
@@ -1914,6 +1917,8 @@ goobers
 good
 goodbye
 goods
+goof
+goofs
 goon
 goons
 goose
@@ -2917,6 +2922,8 @@ odors
 of
 off
 offs
+offset
+offsite
 oft
 often
 ogle
@@ -4060,6 +4067,8 @@ sods
 sofa
 sofas
 soft
+soften
+softie
 soil
 sol
 solar
@@ -4552,6 +4561,7 @@ tier
 tiers
 ties
 tiff
+tiffs
 tiger
 tigers
 tigress
@@ -4634,6 +4644,7 @@ tooth
 toothed
 tootle
 toots
+tootsie
 top
 tor
 torah
