@@ -1,9 +1,4 @@
 ——————————
-boft
-play
-elco
-meah
-——————————
 cifs
 show
 elaf
