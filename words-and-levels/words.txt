@@ -30672,7 +30672,6 @@ liquored
 liquors
 lira
 liras
-lire
 lisle
 lisp
 lisping
@@ -35132,6 +35131,7 @@ noisiest
 noisily
 noisome
 noisy
+nom
 nomad
 nomadic
 nomads
@@ -35150,6 +35150,7 @@ nominator
 nominators
 nominee
 nominees
+noms
 non
 nonacademic
 nonadjacent
@@ -35939,7 +35940,6 @@ officiates
 officiating
 officious
 offing
-offish
 offline
 offload
 offloaded
@@ -58623,8 +58623,6 @@ wagons
 wags
 wagtail
 wagtails
-waif
-waifs
 wail
 wailed
 wailer
