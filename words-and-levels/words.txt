@@ -22161,7 +22161,6 @@ gasket
 gaskets
 gaslight
 gasman
-gasohol
 gasoline
 gasp
 gasped
@@ -24758,7 +24757,6 @@ henchman
 henchmen
 henna
 hens
-hep
 heparin
 hepatic
 hepatitis
@@ -25379,8 +25377,6 @@ hoodies
 hooding
 hoodlum
 hoodlums
-hoodoo
-hoodoos
 hoods
 hoodwink
 hoodwinked
@@ -31642,7 +31638,6 @@ maltreatment
 maltreats
 malts
 malty
-mam
 mama
 mamas
 mamba
@@ -32178,7 +32173,6 @@ matron
 matronly
 matrons
 mats
-matt
 matte
 matted
 matter
@@ -33449,7 +33443,6 @@ mixing
 mixture
 mixtures
 mizzen
-mm
 mnemonic
 mnemonics
 moan
@@ -50229,7 +50222,6 @@ sphincter
 sphincters
 sphinx
 sphinxes
-spic
 spice
 spiced
 spices

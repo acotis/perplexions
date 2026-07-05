@@ -45,6 +45,8 @@ abutted
 ace
 aces
 acetone
+ache
+aches
 achoo
 achy
 acid
@@ -165,6 +167,7 @@ anarchy
 and
 ands
 anew
+anger
 angle
 angler
 anglers
@@ -187,6 +190,7 @@ anon
 another
 ant
 ante
+anted
 antes
 anther
 anthers
@@ -214,6 +218,7 @@ arable
 arc
 arced
 arch
+arches
 arcs
 ardor
 are
@@ -292,6 +297,7 @@ aunts
 aura
 auras
 austral
+author
 auto
 autos
 avian
@@ -823,6 +829,8 @@ cares
 cargo
 caron
 carp
+carpi
+carps
 carrot
 carrots
 carry
@@ -868,6 +876,7 @@ chats
 cheer
 chemo
 chi
+chin
 chirp
 chop
 chore
@@ -931,6 +940,7 @@ coif
 coil
 coiled
 coin
+coir
 col
 cola
 colas
@@ -980,6 +990,7 @@ corny
 coroner
 coronet
 coronets
+corps
 corset
 cosh
 cost
@@ -1293,6 +1304,7 @@ donas
 donate
 donates
 done
+dong
 donor
 dons
 dont
@@ -1307,6 +1319,7 @@ dot
 dote
 dotes
 dots
+dotty
 double
 doubt
 doubts
@@ -1337,7 +1350,9 @@ drip
 droll
 drone
 drool
+drools
 drop
+dross
 drown
 drub
 drubs
@@ -1408,6 +1423,7 @@ eater
 eaters
 eats
 echo
+echos
 ecru
 edema
 edge
@@ -1834,6 +1850,7 @@ geyser
 ghetto
 ghettos
 ghost
+ghostly
 ghosts
 ghoul
 ghouls
@@ -1874,6 +1891,7 @@ globs
 glom
 gloss
 glossed
+glossy
 glottal
 glue
 glues
@@ -1902,7 +1920,9 @@ goblet
 goblets
 gobs
 god
+godly
 gods
+godson
 goer
 goers
 goes
@@ -1916,9 +1936,11 @@ goober
 goobers
 good
 goodbye
+goodly
 goods
 goof
 goofs
+googly
 goon
 goons
 goose
@@ -1981,6 +2003,10 @@ groan
 grog
 groin
 groom
+gross
+grossly
+grotto
+grotty
 grouse
 grow
 grower
@@ -2002,6 +2028,8 @@ gun
 gush
 gushes
 gust
+gusto
+gusts
 gut
 guts
 guy
@@ -2118,6 +2146,8 @@ herb
 herbal
 herbals
 here
+herein
+hernia
 hero
 heroes
 heron
@@ -2130,6 +2160,7 @@ hew
 hex
 hey
 hi
+hie
 him
 hint
 hints
@@ -2166,6 +2197,7 @@ holed
 holes
 holler
 hols
+holy
 home
 homes
 homo
@@ -2176,6 +2208,7 @@ honor
 honorable
 honors
 hood
+hoods
 hoot
 hoots
 hop
@@ -2183,6 +2216,8 @@ hope
 hora
 horas
 horn
+hornier
+horology
 horse
 hose
 hoses
@@ -2192,8 +2227,10 @@ hostel
 hosts
 hot
 hotbed
+hotdog
 hotel
 hotels
+hotly
 hots
 hour
 house
@@ -2248,6 +2285,8 @@ ill
 im
 imbue
 in
+inch
+inches
 indie
 induce
 inert
@@ -2255,6 +2294,7 @@ infer
 infers
 infest
 info
+inhere
 ink
 inn
 inns
@@ -2518,6 +2558,7 @@ logged
 logo
 logos
 logs
+logy
 loin
 loins
 loiter
@@ -2551,6 +2592,7 @@ loots
 lop
 lope
 lord
+lords
 lore
 lorn
 lose
@@ -2591,6 +2633,7 @@ ludo
 lug
 luge
 lugged
+lugs
 lull
 lulled
 lulls
@@ -2618,11 +2661,14 @@ made
 mag
 mage
 magus
+main
 mame
 man
 mana
 mane
 manga
+mange
+manger
 mango
 mangy
 map
@@ -2639,7 +2685,11 @@ match
 mate
 mated
 math
+mating
 mats
+matte
+matted
+matter
 matzo
 matzoh
 may
@@ -2678,6 +2728,8 @@ mingle
 mini
 minis
 mint
+minted
+minter
 mints
 minty
 miser
@@ -2824,9 +2876,13 @@ nib
 nibs
 nice
 nicer
+niche
+niches
 nick
 nicked
 nickel
+niece
+nieces
 nil
 nine
 nip
@@ -2866,6 +2922,7 @@ nose
 noses
 nosey
 nosh
+nosy
 not
 notable
 notary
@@ -2973,6 +3030,7 @@ orate
 orb
 orbs
 orc
+orcs
 ordeal
 order
 ordinal
@@ -2982,7 +3040,9 @@ organ
 orgy
 ornate
 ornery
+orris
 ors
+osier
 other
 others
 otter
@@ -2998,6 +3058,7 @@ out
 outage
 outages
 outdo
+outdoor
 outed
 outer
 outfit
@@ -3108,6 +3169,7 @@ peg
 pelt
 pen
 penal
+pence
 pend
 pends
 peneus
@@ -3126,6 +3188,7 @@ perplexions
 peruse
 pet
 petrol
+phi
 pi
 piano
 pianos
@@ -3136,8 +3199,10 @@ pica
 picot
 pics
 pie
+piece
 pied
 pier
+pierce
 piers
 pies
 pig
@@ -3145,6 +3210,7 @@ pile
 pilot
 pilots
 pin
+pincer
 pine
 pines
 pins
@@ -3190,16 +3256,19 @@ pock
 pod
 poem
 poet
+poi
 polar
 pole
 polity
 poll
 poly
+ponce
 pone
 poo
 poor
 pore
 pores
+porn
 port
 pot
 potent
@@ -3217,6 +3286,7 @@ prat
 prawn
 prawns
 pray
+preach
 preen
 prep
 pres
@@ -3234,6 +3304,7 @@ pries
 prince
 princes
 princess
+prion
 prix
 pro
 prob
@@ -3284,6 +3355,7 @@ race
 raced
 racer
 racers
+races
 rack
 racy
 rad
@@ -3357,6 +3429,7 @@ ray
 rays
 re
 reach
+reaches
 react
 read
 readout
@@ -3384,6 +3457,7 @@ rebut
 rec
 recant
 recent
+recon
 recoup
 recreate
 rectum
@@ -3413,9 +3487,11 @@ refit
 refuse
 refute
 refutes
+reg
 regard
 rehab
 reheat
+rehire
 rein
 reins
 relabel
@@ -3508,6 +3584,9 @@ rho
 rhos
 rib
 rice
+rices
+rich
+riches
 rid
 riddle
 ride
@@ -3539,6 +3618,7 @@ ripe
 ripen
 ripens
 riper
+rips
 rise
 risen
 riser
@@ -3581,11 +3661,13 @@ roofs
 room
 rooms
 roost
+roosts
 root
 rooted
 roots
 rope
 rose
+rosier
 rosy
 rot
 rota
@@ -3689,6 +3771,7 @@ salt
 salted
 salter
 salts
+salty
 salute
 saluted
 salutes
@@ -3758,14 +3841,18 @@ scarab
 scarabs
 scare
 scared
+scarp
 scat
 scene
 scenery
 scent
 schmo
 school
+scion
 scone
 scoot
+score
+scorer
 scorn
 scram
 scramble
@@ -3778,6 +3865,7 @@ screen
 screw
 screws
 scribe
+scrip
 scrub
 scrubs
 scuba
@@ -3905,7 +3993,10 @@ shells
 sherbet
 shes
 shew
+shier
 shies
+shin
+shire
 shoal
 shock
 shod
@@ -3917,11 +4008,15 @@ shoo
 shoon
 shoos
 shoot
+shoots
 shop
 shore
+shorn
 short
 shot
+shots
 should
+shout
 show
 shut
 sic
@@ -3930,6 +4025,7 @@ side
 sidebar
 sidemen
 sides
+sierra
 sift
 sifter
 silo
@@ -3937,6 +4033,7 @@ silt
 sim
 sims
 sin
+since
 sine
 sinew
 sinewy
@@ -3988,6 +4085,7 @@ slats
 slatted
 slay
 slaying
+slays
 sled
 sleds
 sleet
@@ -4007,10 +4105,12 @@ sloths
 slots
 slotted
 slug
+slugs
 slur
 slush
 slut
 sluts
+sly
 smite
 smith
 smooch
@@ -4078,6 +4178,7 @@ soled
 soles
 soli
 solo
+solos
 solute
 some
 son
@@ -4087,6 +4188,7 @@ sonata
 sonatas
 song
 songs
+sonic
 sons
 soon
 sooner
@@ -4134,7 +4236,11 @@ spend
 spender
 spenders
 spends
+spice
+spire
+spirea
 splay
+sprain
 spray
 spread
 spree
@@ -4192,6 +4298,7 @@ states
 stats
 status
 stay
+stays
 stead
 steal
 steals
@@ -4246,6 +4353,7 @@ stormy
 story
 stout
 stouter
+stouts
 stow
 strafe
 strand
@@ -4273,6 +4381,7 @@ stunt
 sty
 stye
 styes
+stylus
 sub
 subarea
 subareas
@@ -4392,6 +4501,7 @@ tame
 tamed
 tamer
 tames
+taming
 tams
 tan
 tang
@@ -4576,8 +4686,12 @@ time
 times
 tin
 tine
+ting
+tinge
+tinged
 tins
 tint
+tinted
 tints
 tiny
 tip
@@ -4758,6 +4872,7 @@ tucks
 tuft
 tufts
 tug
+tugs
 tulle
 tum
 tumor
@@ -5007,6 +5122,7 @@ were
 west
 wet
 wets
+wetting
 what
 whit
 who
