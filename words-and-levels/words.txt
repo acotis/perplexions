@@ -8067,6 +8067,7 @@ ceding
 ceilidh
 ceiling
 ceilings
+cel
 celandine
 celeb
 celebrant
@@ -8107,6 +8108,7 @@ cellulite
 cellulitis
 celluloid
 cellulose
+cels
 cement
 cemented
 cementing
