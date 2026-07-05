@@ -17290,6 +17290,7 @@ elliptically
 ells
 elm
 elms
+elo
 elocution
 elodea
 elongate
@@ -17304,6 +17305,7 @@ eloping
 eloquence
 eloquent
 eloquently
+elos
 else
 elsewhere
 elucidate
@@ -20008,10 +20010,12 @@ fibrous
 fibs
 fibula
 fibular
+fic
 fiche
 fiches
 fickle
 fickleness
+fics
 fiction
 fictional
 fictionalized
