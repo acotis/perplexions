@@ -206,7 +206,7 @@ a {
 }
 
 #credits-btn .btn-icon {
-  transform: translateX(calc(3rem * -0.02));
+  transform: translateX(calc(3rem * -0.0175));
 }
 
 #settings-btn {
