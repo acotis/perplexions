@@ -415,6 +415,16 @@ a {
   transition: opacity 0.3s ease;
 }
 
+/* Invisible input blocker for the gap between clearing a level and the end
+   card appearing. Sits above the menu buttons (z-index 10) and the canvas so
+   nothing is clickable; toggled from display:none in JS. */
+#input-shield {
+  position: fixed;
+  inset: 0;
+  z-index: 15;
+  display: none;
+}
+
 #credits-overlay.overlay-visible,
 #settings-overlay.overlay-visible,
 #howto-overlay.overlay-visible,

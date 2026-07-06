@@ -272,6 +272,15 @@ const endCardOverlay = document.createElement('div');
 endCardOverlay.id = 'end-card-overlay';
 document.body.appendChild(endCardOverlay);
 
+// Transparent full-screen shield that swallows every pointer event during the
+// gap between clearing a level and the end card appearing. Without it, the
+// chevrons/undo and the menu buttons stay live in that window (see
+// completeLevel), letting the player navigate away or stack a menu under the
+// end card. The end-card overlay takes over the blocking once the card shows.
+const inputShield = document.createElement('div');
+inputShield.id = 'input-shield';
+document.body.appendChild(inputShield);
+
 endCardOverlay.addEventListener('click', () => {
   if (currentParsedLevel && currentLevelDate) {
     startLevel(currentParsedLevel, currentLevelDate, hardMode);
@@ -448,12 +457,17 @@ function showEndCard() {
   hardModeTag.hidden = !hardMode;
   endCard.removeAttribute('hidden');
   showOverlay(endCardOverlay);
+  // The end-card overlay now blocks input; hand off from the shield.
+  inputShield.style.display = 'none';
   updateEmojiHashFontSize();
   redraw();
 }
 function hideEndCard() {
   endCard.setAttribute('hidden', '');
   hideOverlay(endCardOverlay);
+  // Safety net: if the level is reset during the limbo window (before the end
+  // card shows), make sure the shield doesn't stay up blocking input.
+  inputShield.style.display = 'none';
   copyBtn.style.width = '';
   copyBtn.style.backgroundColor = '';
   copyBtn.style.color = '';
@@ -692,6 +706,7 @@ interface FallingTile {
 // celebratory full-screen splash from the cursor.
 function completeLevel() {
   levelComplete = true;
+  inputShield.style.display = 'block';
   setTimeout(showEndCard, 2000);
   addSplash(cursorX, cursorY, 1200, Math.hypot(canvasW, canvasH));
 }
