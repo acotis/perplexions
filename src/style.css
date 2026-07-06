@@ -84,7 +84,7 @@ a {
   left: 50%;
   top: 40vh;
   transform: translate(-50%, -40%);
-  width: clamp(50vw, 350px, 85vw);
+  width: min(350px, 85vw);
   background: var(--surface);
   border: 1px solid var(--surface-border);
   box-shadow: 0 4px 24px var(--surface-shadow);
@@ -95,7 +95,7 @@ a {
   justify-content: center;
   gap: 1.5rem;
   font-family: sans-serif;
-  padding: 2.5rem 2rem 3.1rem;
+  padding: 2.5rem 2rem 3.3rem;
 }
 
 #end-card[hidden] { display: none; }
@@ -272,7 +272,7 @@ a {
   left: 50%;
   top: 40vh;
   transform: translate(-50%, -40%);
-  width: clamp(50vw, 350px, 85vw);
+  width: min(450px, 85vw);
   background: var(--surface);
   border: 1px solid var(--surface-border);
   box-shadow: 0 4px 24px var(--surface-shadow);
