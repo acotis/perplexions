@@ -249,12 +249,14 @@ a {
   color: var(--btn-icon);
 }
 
-/* On narrow screens, lay the buttons out horizontally (Tutorial, Settings,
-   Credits from left to right) instead of stacked vertically. */
+/* On narrow screens, lay the buttons out horizontally instead of stacked. The
+   row is reversed relative to the vertical order so the tutorial (question
+   mark) button stays tucked into the corner (Credits, Settings, Tutorial from
+   left to right). */
 @media (max-width: 599px) {
   #settings-btn { top: 1rem; right: 4.9075rem; }
-  #howto-btn    { top: 1rem; right: 8.815rem; }
-  #credits-btn  { top: 1rem; right: 1rem; }
+  #howto-btn    { top: 1rem; right: 1rem; }
+  #credits-btn  { top: 1rem; right: 8.815rem; }
 }
 
 #credits-card,
