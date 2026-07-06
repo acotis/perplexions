@@ -441,15 +441,10 @@ function buildEmojiHash(): string[] {
 }
 
 function showEndCard() {
-  // Experimental levels are playtesting-only: never persist completion data.
+  // The clear was persisted in completeLevel; reflect it in the on-board
+  // "cleared on" sub-label now, so its timing matches the card's appearance.
   if (currentLevelDate && !isExperimental) {
-    const record = getLevelRecord(currentLevelDate);
-    const slug = formatDate(new Date());
-    const updates: Partial<LevelRecord> = {};
-    if (!record.cleared) updates.cleared = slug;
-    if (hardMode && !record.clearedHard) updates.clearedHard = slug;
-    if (Object.keys(updates).length > 0) updateLevelRecord(currentLevelDate, updates);
-    clearedOnStr = clearedOnLabelFor({ ...record, ...updates });
+    clearedOnStr = clearedOnLabelFor(getLevelRecord(currentLevelDate));
   }
   solutionHashEmojis.textContent = buildEmojiHash().join('');
   updateCopyButtonColor();
@@ -711,6 +706,17 @@ interface FallingTile {
 // celebratory full-screen splash from the cursor.
 function completeLevel() {
   levelComplete = true;
+  // Persist the clear as soon as the level is finished, not when the end card
+  // shows, so navigating away during the reveal delay still records it.
+  // Experimental levels are playtesting-only: never persist completion data.
+  if (currentLevelDate && !isExperimental) {
+    const record = getLevelRecord(currentLevelDate);
+    const slug = formatDate(new Date());
+    const updates: Partial<LevelRecord> = {};
+    if (!record.cleared) updates.cleared = slug;
+    if (hardMode && !record.clearedHard) updates.clearedHard = slug;
+    if (Object.keys(updates).length > 0) updateLevelRecord(currentLevelDate, updates);
+  }
   inputShield.style.display = 'block';
   endCardTimer = setTimeout(showEndCard, 2000);
   addSplash(cursorX, cursorY, 1200, Math.hypot(canvasW, canvasH));
