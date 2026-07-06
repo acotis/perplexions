@@ -43,6 +43,7 @@ abut
 abuts
 abutted
 ace
+aced
 aces
 acetone
 ache
@@ -56,6 +57,7 @@ acorns
 acre
 acreage
 acres
+acrid
 act
 acts
 ad
@@ -214,16 +216,21 @@ any
 aorta
 aortas
 ape
+apes
 apian
 apish
 apl
 app
 appal
+apps
 apron
 aprons
+apse
 apt
 arable
 arc
+arcade
+arcades
 arced
 arch
 arches
@@ -268,11 +275,14 @@ ashcan
 ashen
 ashes
 ashlar
+ashore
+ashy
 aside
 asides
 asinine
 ask
 asp
+aspen
 asps
 ass
 assent
@@ -555,6 +565,7 @@ betel
 bets
 bettor
 bettors
+bey
 beyond
 bi
 bias
@@ -786,6 +797,7 @@ burnt
 burp
 burps
 burr
+burro
 burrs
 burs
 bursa
@@ -798,6 +810,7 @@ bused
 buses
 bush
 bushed
+bushy
 busied
 busier
 busies
@@ -815,6 +828,7 @@ butte
 butted
 button
 buy
+buyer
 buys
 by
 bye
@@ -825,6 +839,8 @@ cab
 cable
 cabled
 cabs
+cad
+cadre
 cafe
 cafes
 cage
@@ -855,6 +871,7 @@ car
 carat
 carats
 card
+carder
 cards
 care
 cared
@@ -866,6 +883,7 @@ carer
 carers
 cares
 cargo
+caries
 caron
 carp
 carpi
@@ -879,6 +897,7 @@ carton
 cartoon
 carts
 case
+cased
 cash
 cask
 cast
@@ -934,6 +953,7 @@ chute
 ciao
 cider
 ciders
+cigar
 circle
 circled
 cirrus
@@ -1075,6 +1095,7 @@ craft
 crafts
 crafty
 crag
+crags
 cram
 cramp
 crane
@@ -1190,8 +1211,11 @@ cutter
 cutters
 dab
 dabs
+dace
 dag
 dags
+dairies
+dais
 dale
 dales
 dam
@@ -1297,6 +1321,7 @@ dewy
 dhow
 dice
 diced
+dices
 did
 die
 dies
@@ -1321,6 +1346,7 @@ dirge
 dis
 disabuse
 disburse
+disc
 dispensary
 disuse
 diva
@@ -1390,6 +1416,7 @@ dove
 down
 drab
 drag
+drags
 drat
 draw
 drawer
@@ -1592,6 +1619,7 @@ erroneous
 error
 errs
 erst
+espy
 essay
 essays
 estate
@@ -1607,6 +1635,8 @@ ethanol
 ether
 ethereal
 ethos
+euphony
+euro
 eve
 even
 event
@@ -2343,6 +2373,8 @@ homo
 homos
 hon
 hone
+honer
+hones
 honor
 honorable
 honors
@@ -2358,6 +2390,8 @@ hora
 horas
 horn
 hornier
+horns
+horny
 horology
 horse
 hose
@@ -2404,6 +2438,8 @@ hutch
 huts
 hymn
 hymns
+hype
+hyper
 i
 ice
 iced
@@ -2444,11 +2480,14 @@ inhere
 ink
 inn
 inns
+inrush
 ins
 insert
 inset
+inshore
 insult
 insure
+insurer
 insures
 inter
 into
@@ -3184,6 +3223,7 @@ one
 onerous
 ones
 only
+onrush
 onset
 onsets
 onto
@@ -3269,6 +3309,7 @@ owners
 ox
 oxen
 oxide
+oy
 oyster
 pa
 pack
@@ -3297,7 +3338,9 @@ pap
 papa
 papal
 papas
+paper
 papist
+paps
 par
 para
 paras
@@ -3327,6 +3370,9 @@ pause
 paw
 pawn
 pay
+payer
+payphone
+pays
 pea
 peach
 peachy
@@ -3356,6 +3402,8 @@ peneus
 pens
 pent
 peon
+peons
+peony
 pep
 per
 perch
@@ -3369,6 +3417,8 @@ peruse
 pet
 petrol
 phi
+phone
+phony
 pi
 piano
 pianos
@@ -3523,6 +3573,8 @@ purrs
 purse
 purses
 pus
+push
+pushy
 put
 puzzle
 puzzler
@@ -3530,6 +3582,7 @@ puzzles
 pylon
 pyre
 pyres
+pyx
 qua
 quack
 quacks
@@ -3542,6 +3595,7 @@ raced
 racer
 racers
 races
+racier
 rack
 racy
 rad
@@ -3563,11 +3617,15 @@ ragout
 rags
 rah
 raid
+raider
 raids
 rail
 rain
 rains
 rainy
+raise
+raised
+raiser
 rake
 raked
 ram
@@ -3710,11 +3768,14 @@ renters
 rents
 rep
 repair
+repay
+repays
 reps
 reptile
 reptiles
 reran
 rerun
+reruns
 res
 resale
 rescue
@@ -3775,6 +3836,8 @@ rials
 rib
 ribs
 rice
+ricer
+ricers
 rices
 rich
 riches
@@ -3785,6 +3848,7 @@ rider
 riders
 rides
 ridge
+ridges
 rids
 rife
 riff
@@ -3798,6 +3862,7 @@ rigor
 rigors
 rigour
 rigours
+rigs
 rile
 riled
 riles
@@ -3940,6 +4005,8 @@ sabre
 sabres
 sac
 sack
+sacra
+sacred
 sad
 sadhu
 sadhus
@@ -3994,6 +4061,7 @@ sanity
 sank
 sans
 sap
+sapper
 sapphire
 sappy
 saran
@@ -4027,11 +4095,13 @@ saver
 saw
 sawed
 sawn
+sax
 say
 sayer
 saying
 says
 scab
+scad
 scale
 scalp
 scan
@@ -4041,6 +4111,7 @@ scarab
 scarabs
 scare
 scared
+scarier
 scarp
 scat
 scene
@@ -4137,6 +4208,7 @@ send
 sender
 senders
 sends
+senior
 senor
 senora
 sens
@@ -4204,6 +4276,9 @@ shew
 shier
 shies
 shin
+shine
+shiner
+shiny
 shire
 shoal
 shoals
@@ -4228,7 +4303,11 @@ should
 shout
 show
 shows
+shrine
+shrub
 shut
+shy
+shyer
 sic
 sick
 side
@@ -4441,6 +4520,8 @@ sowed
 sower
 soy
 soya
+spa
+spay
 spear
 spears
 specs
@@ -4469,6 +4550,7 @@ spur
 spurn
 spurns
 spurs
+spy
 stab
 stable
 stabled
@@ -4644,6 +4726,7 @@ surer
 surf
 surface
 surge
+surrey
 sus
 sushi
 suspend
@@ -4674,6 +4757,7 @@ swords
 swore
 sworn
 syn
+syphon
 syrup
 syrups
 systole
@@ -5255,6 +5339,7 @@ wage
 waged
 wager
 wages
+wags
 wail
 wailer
 wails
@@ -5444,6 +5529,7 @@ yall
 yam
 yams
 yap
+yaps
 yard
 yards
 yarn
@@ -5480,6 +5566,7 @@ yours
 yoyo
 yum
 yup
+yuppy
 zap
 zeal
 zero
