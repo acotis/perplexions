@@ -191,9 +191,22 @@ a {
   mask-size: contain;
 }
 
+/* Per-icon horizontal nudges, expressed as a fraction of the button width
+   (3rem) so they scale with the button. Tuned by eye for optical centering. */
 #howto-btn .btn-icon {
-  width: 1.19em;
-  height: 1.19em;
+  width: 1.1305em;
+  height: 1.1305em;
+  transform: translateX(calc(3rem * 0.02));
+}
+
+#settings-btn .btn-icon {
+  width: 1.12em;
+  height: 1.12em;
+  transform: translateX(calc(3rem * 0.0075));
+}
+
+#credits-btn .btn-icon {
+  transform: translateX(calc(3rem * -0.02));
 }
 
 #settings-btn {
