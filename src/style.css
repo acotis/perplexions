@@ -300,7 +300,8 @@ a {
 }
 
 #credits-card ul {
-  padding-left: 1.4em;
+  /* Cap the indent on narrow screens so it doesn't dominate the card. */
+  padding-left: min(2em, 6vw);
 }
 
 #credits-card[hidden],
