@@ -95,7 +95,7 @@ a {
   justify-content: center;
   gap: 1.5rem;
   font-family: sans-serif;
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 2rem 3.1rem;
 }
 
 #end-card[hidden] { display: none; }
@@ -110,7 +110,7 @@ a {
 }
 
 #end-card h1 {
-  margin: -0.5rem 0 0;
+  margin: -0.55rem 0 0;
 }
 
 #hard-mode-tag {
@@ -488,6 +488,7 @@ a {
 #replay {
   font-size: 0.75rem;
   padding: 0.4em 1em;
+  margin-top: -0.4rem;
 }
 
 #end-card #replay-no-hash {
