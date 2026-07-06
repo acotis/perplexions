@@ -95,7 +95,7 @@ a {
   justify-content: center;
   gap: 1.5rem;
   font-family: sans-serif;
-  padding: 2.5rem 2rem 3.2rem;
+  padding: 2.5rem 2rem 3.1rem;
 }
 
 #end-card[hidden] { display: none; }
