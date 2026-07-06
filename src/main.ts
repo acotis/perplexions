@@ -362,7 +362,7 @@ function setButtonIcon(selector: string, file: string) {
 }
 setButtonIcon('#credits-btn .btn-icon', 'credits.svg');
 setButtonIcon('#settings-btn .btn-icon', 'settings.svg');
-setButtonIcon('#howto-btn .btn-icon', 'tutorial.svg');
+setButtonIcon('#howto-btn .btn-icon', 'help.svg');
 
 document.getElementById('settings-btn')!.addEventListener('click', () => {
   settingsCard.hidden = false;
