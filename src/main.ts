@@ -360,9 +360,9 @@ function setButtonIcon(selector: string, file: string) {
   icon.style.setProperty('-webkit-mask-image', url);
   icon.style.setProperty('mask-image', url);
 }
-setButtonIcon('#credits-btn .btn-icon', 'question.svg');
-setButtonIcon('#settings-btn .btn-icon', 'gear.svg');
-setButtonIcon('#howto-btn .btn-icon', 'book.svg');
+setButtonIcon('#credits-btn .btn-icon', 'credits.svg');
+setButtonIcon('#settings-btn .btn-icon', 'settings.svg');
+setButtonIcon('#howto-btn .btn-icon', 'tutorial.svg');
 
 document.getElementById('settings-btn')!.addEventListener('click', () => {
   settingsCard.hidden = false;
