@@ -133,6 +133,7 @@ let cursorX = 0;
 let cursorY = 0;
 let animating = false;
 let levelComplete = false;
+let endCardTimer: ReturnType<typeof setTimeout> | null = null;
 let history: Tile[][] = [];
 let wordHistory: string[] = [];
 let currentParsedLevel: ParsedLevel | null = null;
@@ -457,7 +458,9 @@ function showEndCard() {
   hardModeTag.hidden = !hardMode;
   endCard.removeAttribute('hidden');
   showOverlay(endCardOverlay);
-  // The end-card overlay now blocks input; hand off from the shield.
+  // The end-card overlay now blocks input; hand off from the shield. The timer
+  // has fired, so drop the reference (the reveal is no longer pending).
+  endCardTimer = null;
   inputShield.style.display = 'none';
   updateEmojiHashFontSize();
   redraw();
@@ -465,8 +468,10 @@ function showEndCard() {
 function hideEndCard() {
   endCard.setAttribute('hidden', '');
   hideOverlay(endCardOverlay);
-  // Safety net: if the level is reset during the limbo window (before the end
-  // card shows), make sure the shield doesn't stay up blocking input.
+  // If the level is reset during the limbo window (before the end card shows),
+  // cancel the pending reveal so it can't fire on the newly-loaded level, and
+  // make sure the shield doesn't stay up blocking input.
+  if (endCardTimer !== null) { clearTimeout(endCardTimer); endCardTimer = null; }
   inputShield.style.display = 'none';
   copyBtn.style.width = '';
   copyBtn.style.backgroundColor = '';
@@ -707,7 +712,7 @@ interface FallingTile {
 function completeLevel() {
   levelComplete = true;
   inputShield.style.display = 'block';
-  setTimeout(showEndCard, 2000);
+  endCardTimer = setTimeout(showEndCard, 2000);
   addSplash(cursorX, cursorY, 1200, Math.hypot(canvasW, canvasH));
 }
 
