@@ -174,6 +174,7 @@ anarchy
 and
 ands
 anew
+angel
 anger
 angle
 angler
@@ -276,6 +277,7 @@ asps
 ass
 assent
 asset
+asshole
 assuage
 aster
 asters
@@ -1338,6 +1340,7 @@ does
 doesnt
 dog
 doge
+doges
 dogged
 doggie
 dogs
@@ -1590,6 +1593,7 @@ error
 errs
 erst
 essay
+essays
 estate
 ester
 esters
@@ -1895,6 +1899,7 @@ gads
 gaff
 gag
 gaiety
+gait
 gal
 gala
 galas
@@ -1948,6 +1953,7 @@ gears
 gee
 geese
 gel
+geld
 gels
 gelt
 gem
@@ -2037,6 +2043,7 @@ goblet
 goblets
 gobs
 god
+godless
 godly
 gods
 godson
@@ -2057,6 +2064,8 @@ goodly
 goods
 goof
 goofs
+google
+googles
 googly
 goon
 goons
@@ -2121,6 +2130,8 @@ grog
 groin
 groom
 gross
+grosses
+grossest
 grossly
 grotto
 grotty
@@ -2322,6 +2333,7 @@ holdall
 hole
 holed
 holes
+holey
 holler
 hols
 holy
@@ -2353,6 +2365,7 @@ hoses
 host
 hostage
 hostel
+hostess
 hosts
 hot
 hotbed
@@ -2414,6 +2427,8 @@ igloo
 ilk
 ill
 im
+image
+imaged
 imbue
 in
 inch
@@ -2620,6 +2635,7 @@ lest
 let
 lethal
 lets
+letting
 levee
 levees
 level
@@ -2744,6 +2760,7 @@ loser
 losers
 loses
 loss
+losses
 lost
 lot
 loth
@@ -2805,6 +2822,7 @@ made
 mag
 mage
 magus
+maim
 main
 mame
 man
@@ -2815,6 +2833,7 @@ mange
 manger
 mango
 mangy
+mantel
 map
 mar
 march
@@ -2828,6 +2847,7 @@ mat
 match
 mate
 mated
+mater
 math
 mating
 mats
@@ -2974,6 +2994,7 @@ nasal
 nasals
 nasty
 natal
+natter
 natty
 natural
 naturals
@@ -3654,6 +3675,7 @@ refute
 refutes
 reg
 regard
+regatta
 rehab
 reheat
 rehire
@@ -3837,9 +3859,12 @@ roost
 roosts
 root
 rooted
+rootless
+rootlets
 roots
 rope
 rose
+roses
 rosier
 rosy
 rot
@@ -4572,6 +4597,8 @@ stunt
 sty
 stye
 styes
+style
+styles
 stylus
 sub
 subarea
@@ -4649,6 +4676,7 @@ sworn
 syn
 syrup
 syrups
+systole
 ta
 tab
 tabla
@@ -4674,6 +4702,7 @@ tags
 tail
 tailor
 taint
+tainted
 take
 taker
 talc
@@ -4697,6 +4726,7 @@ taming
 tams
 tan
 tang
+tangelo
 tangle
 tangles
 tango
