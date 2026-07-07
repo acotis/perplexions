@@ -892,6 +892,11 @@ function dateSeed(date: Date): number {
   return hashString(s);
 }
 
+// Days that get a hand-picked color instead of their seeded random one.
+function isSpecialColorDay(date: Date): boolean {
+  return date.getFullYear() === 2026 && date.getMonth() === 6 && date.getDate() === 8;
+}
+
 let dateStr = '';
 let isExperimental = false;
 
@@ -966,7 +971,10 @@ function startLevel(parsed: ParsedLevel, date: Date, forceHardMode?: boolean) {
   levelNumRows = numRows;
   tiles = applyGravity(loadedTiles);
   levelTiles = tiles;
-  color = randomLevelColor(dateSeed(date));
+  // One-off: Jul 8, 2026 borrows the color that May 26, 2026 would have gotten.
+  color = isSpecialColorDay(date)
+    ? randomLevelColor(dateSeed(new Date(2026, 4, 26)))
+    : randomLevelColor(dateSeed(date));
   history = [];
   wordHistory = [];
   const record = getLevelRecord(date);
