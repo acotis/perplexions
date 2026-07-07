@@ -19886,7 +19886,6 @@ fends
 fenestration
 fennel
 fens
-fer
 feral
 ferment
 fermentation
@@ -53781,7 +53780,6 @@ terms
 tern
 ternary
 terns
-terr
 terrace
 terraced
 terraces

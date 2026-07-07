@@ -242,6 +242,7 @@ areal
 areas
 arena
 arenas
+arent
 ares
 argon
 aria
@@ -1614,6 +1615,7 @@ ergo
 erode
 erodes
 err
+errant
 errata
 erroneous
 error
@@ -1682,6 +1684,7 @@ far
 farce
 fare
 fares
+faro
 farrow
 fast
 fat
@@ -1860,6 +1863,7 @@ footsie
 footwear
 fop
 for
+fora
 forage
 foray
 forays
@@ -2281,6 +2285,7 @@ healers
 heals
 heap
 hear
+hearer
 hears
 hearse
 heart
@@ -2313,6 +2318,7 @@ herbal
 herbals
 here
 herein
+hereof
 hernia
 hero
 heroes
@@ -3643,6 +3649,7 @@ rani
 rank
 ranks
 rant
+ranter
 rants
 rap
 rape
@@ -3723,6 +3730,7 @@ reef
 reefs
 reel
 reels
+ref
 refill
 refine
 refiner
@@ -4908,6 +4916,7 @@ tent
 tents
 tenure
 term
+tern
 terrace
 terrify
 terse
@@ -4935,6 +4944,7 @@ themes
 then
 theorem
 there
+thereof
 these
 theses
 thesis
