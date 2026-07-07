@@ -331,8 +331,10 @@ showHashCompletedCheckbox.checked = getSetting('show-hash', true);
 showHashFirstCheckbox.checked = getSetting('show-hash-first', false);
 hardModeCheckbox.checked = getSetting('hard-mode', false);
 
-const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches ?? false;
-darkModeCheckbox.checked = getSetting('dark-mode', prefersDark);
+// Default to dark mode on first visit (until the user toggles it, which
+// persists): most players prefer dark, and the majority never change their
+// system's light default. Overrides the system's prefers-color-scheme.
+darkModeCheckbox.checked = getSetting('dark-mode', true);
 setDarkMode(darkModeCheckbox.checked);
 
 showHashCompletedCheckbox.addEventListener('change', () => {
