@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perplexions has moved</title>
+    <style>
+      html { color-scheme: light dark; }
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 32rem;
+        margin: 20vh auto 0;
+        padding: 0 1.5rem;
+        text-align: center;
+        line-height: 1.5;
+      }
+      a { color: inherit; }
+      #debug {
+        margin-top: 1.5rem;
+        font-family: ui-monospace, monospace;
+        font-size: 0.8rem;
+        word-break: break-all;
+        text-align: left;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Perplexions has moved to <strong>perplexions.io</strong>.</p>
+    <p>Taking you there now (and bringing your progress along)…</p>
+    <p><a id="manual" href="https://perplexions.io/">Continue to perplexions.io</a></p>
+    <pre id="debug" hidden></pre>
+
+    <script>
+      // Standalone redirect for the old fire.casa/perplexions origin. It packages
+      // this origin's localStorage into a `transfer` URL param and sends the
+      // player to perplexions.io, where the game unpacks and merges it.
+      //
+      // The encoder below is a hand-ported copy of encodeTransfer() in
+      // src/transfer.ts and MUST stay in sync with it. Keep the format trivial;
+      // the round-trip test in src/transfer.test.ts guards the canonical side.
+      (function () {
+        var STORAGE_PREFIX = 'perplexions-';
+        var SETTINGS_PREFIX = 'perplexions-setting-';
+        var SETTING_KEYS = ['show-hash', 'show-hash-first', 'hard-mode', 'dark-mode'];
+        var DAY_MS = 86400000;
+        var SLUG_RE = /^\d{4}-\d{2}-\d{2}$/;
+
+        function pad2(n) { return String(n).padStart(2, '0'); }
+        function slugToMs(slug) {
+          var p = slug.split('-').map(Number);
+          return Date.UTC(p[0], p[1] - 1, p[2]);
+        }
+        function msToSlug(ms) {
+          var dt = new Date(ms);
+          return dt.getUTCFullYear() + '-' + pad2(dt.getUTCMonth() + 1) + '-' + pad2(dt.getUTCDate());
+        }
+        function compact(slug) { return slug.replace(/-/g, ''); }
+        function levelSlugFromKey(key) {
+          if (key.indexOf(STORAGE_PREFIX) !== 0 || key.indexOf(SETTINGS_PREFIX) === 0) return null;
+          var slug = key.slice(STORAGE_PREFIX.length);
+          return SLUG_RE.test(slug) ? slug : null;
+        }
+
+        function encodeTransfer(entries) {
+          var bySlug = {};
+          var slugs = [];
+          Object.keys(entries).forEach(function (key) {
+            var slug = levelSlugFromKey(key);
+            if (!slug) return;
+            var rec;
+            try { rec = JSON.parse(entries[key]); } catch (e) { return; }
+            if (rec && (rec.cleared || rec.clearedHard)) { bySlug[slug] = rec; slugs.push(slug); }
+          });
+
+          var base = '', levels = '';
+          if (slugs.length > 0) {
+            var msList = slugs.map(slugToMs);
+            var minMs = Math.min.apply(null, msList);
+            var maxMs = Math.max.apply(null, msList);
+            base = compact(msToSlug(minMs));
+            var out = [];
+            for (var ms = minMs; ms <= maxMs; ms += DAY_MS) {
+              var rec = bySlug[msToSlug(ms)];
+              var c = rec && rec.cleared ? compact(rec.cleared) : 'X';
+              var h = rec && rec.clearedHard ? compact(rec.clearedHard) : 'X';
+              out.push(c + ',' + h);
+            }
+            while (out.length > 0 && out[out.length - 1] === 'X,X') out.pop();
+            levels = out.join('/');
+          }
+
+          var settings = [];
+          SETTING_KEYS.forEach(function (key) {
+            var val = entries[SETTINGS_PREFIX + key];
+            if (val === undefined) return;
+            settings.push(key + ':' + (val === 'true' ? 1 : 0));
+          });
+
+          return '1~' + base + '~' + levels + '~' + settings.join(',');
+        }
+
+        function collectEntries() {
+          var entries = {};
+          for (var i = 0; i < localStorage.length; i++) {
+            var key = localStorage.key(i);
+            if (key && key.indexOf(STORAGE_PREFIX) === 0) entries[key] = localStorage.getItem(key);
+          }
+          return entries;
+        }
+
+        function buildTarget() {
+          var payload;
+          try { payload = encodeTransfer(collectEntries()); } catch (e) { payload = null; }
+          // Strip the old base path (the game is a single page + query params, so
+          // this is normally /perplexions/ -> /).
+          var path = location.pathname.replace(/^\/perplexions/, '');
+          if (path === '') path = '/';
+          var params = new URLSearchParams(location.search);
+          params.delete('no-redirect');
+          if (payload) params.set('transfer', payload);
+          var query = params.toString();
+          return 'https://perplexions.io' + path + (query ? '?' + query : '') + location.hash;
+        }
+
+        var target = buildTarget();
+        document.getElementById('manual').href = target;
+
+        // Add ?no-redirect to the old URL to inspect the target instead of going.
+        if (new URLSearchParams(location.search).has('no-redirect')) {
+          var dbg = document.getElementById('debug');
+          dbg.hidden = false;
+          dbg.textContent = target;
+        } else {
+          location.replace(target);
+        }
+      })();
+    </script>
+  </body>
+</html>
