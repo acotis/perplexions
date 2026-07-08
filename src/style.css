@@ -196,17 +196,17 @@ a {
 #howto-btn .btn-icon {
   width: 1.1305em;
   height: 1.1305em;
-  transform: translateX(calc(3rem * 0.02));
+  transform: translateX(calc(3rem * 0.0175));
 }
 
 #settings-btn .btn-icon {
   width: 1.12em;
   height: 1.12em;
-  transform: translateX(calc(3rem * 0.0075));
+  transform: translateX(calc(3rem * 0.005));
 }
 
 #credits-btn .btn-icon {
-  transform: translateX(calc(3rem * -0.0175));
+  transform: translate(calc(3rem * -0.0225), calc(3rem * 0.01));
 }
 
 #settings-btn {
