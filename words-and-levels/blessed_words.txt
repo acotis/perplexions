@@ -1256,6 +1256,7 @@ dealt
 dean
 deans
 dear
+dearer
 dearest
 dears
 dearth
@@ -1302,7 +1303,11 @@ dengue
 denies
 dens
 deny
+deport
+depot
+depots
 derby
+derp
 desert
 deserts
 desire
@@ -1396,15 +1401,20 @@ dong
 donor
 dons
 dont
+doodle
+doodler
 doom
 door
 doors
+dope
+doper
 dorm
 dorsal
 dose
 doses
 dot
 dote
+doted
 dotes
 dots
 dotty
@@ -1439,8 +1449,12 @@ drip
 droll
 drone
 drool
+drooled
 drools
+droop
+droops
 drop
+drops
 dross
 drown
 drub
@@ -1617,6 +1631,7 @@ erodes
 err
 errant
 errata
+erred
 erroneous
 error
 errs
@@ -2626,6 +2641,7 @@ lays
 lea
 leach
 lead
+leader
 leads
 leaf
 leafy
@@ -2671,6 +2687,8 @@ lens
 lenses
 lent
 lentil
+lept
+lepta
 less
 lessen
 lesser
@@ -2796,6 +2814,7 @@ looters
 loots
 lop
 lope
+loped
 lord
 lords
 lore
@@ -3238,13 +3257,17 @@ onyx
 oodles
 oof
 ooh
+oops
 op
 opal
 ope
+oped
 open
 openly
 opera
+ops
 opt
+opts
 or
 oral
 orals
@@ -3255,6 +3278,7 @@ orc
 orcs
 ordeal
 order
+ordered
 ordinal
 ore
 ores
@@ -3265,6 +3289,7 @@ ornery
 orris
 ors
 osier
+ostler
 other
 others
 otter
@@ -3385,6 +3410,7 @@ peachy
 peal
 pear
 pearl
+pearls
 pears
 peas
 peat
@@ -3399,6 +3425,7 @@ peers
 pees
 peg
 pelt
+pelts
 pen
 penal
 pence
@@ -3419,9 +3446,14 @@ perp
 perplex
 perplexion
 perplexions
+pert
 peruse
+pest
+pesto
 pet
+petard
 petrol
+pets
 phi
 phone
 phony
@@ -3477,7 +3509,11 @@ plays
 playtest
 playtesting
 plea
+plead
+pleader
 pleat
+pleated
+pleats
 plenty
 plenum
 plot
@@ -3509,14 +3545,18 @@ pone
 poo
 poor
 pore
+pored
 pores
 porn
 port
+ports
+post
 pot
 potent
 potential
 potentially
 potently
+pots
 pouch
 pour
 pout
@@ -3525,6 +3565,9 @@ pow
 prank
 pranks
 prat
+prate
+prater
+prats
 prawn
 prawns
 pray
@@ -3533,6 +3576,7 @@ preen
 prep
 pres
 press
+presto
 prewar
 prey
 preys
@@ -3683,6 +3727,7 @@ reach
 reaches
 react
 read
+reader
 readout
 readouts
 reads
@@ -3782,6 +3827,7 @@ reps
 reptile
 reptiles
 reran
+reread
 rerun
 reruns
 res
@@ -3805,11 +3851,13 @@ resit
 resold
 resolute
 rest
+restart
 restate
 restated
 rested
 restful
 restore
+restored
 rests
 result
 retail
@@ -3821,6 +3869,9 @@ retell
 retells
 retold
 retool
+retooled
+retort
+retorts
 retrace
 retro
 return
@@ -3932,10 +3983,12 @@ roost
 roosts
 root
 rooted
+rooter
 rootless
 rootlets
 roots
 rope
+roped
 rose
 roses
 rosier
@@ -3948,6 +4001,8 @@ rotate
 rotated
 rotates
 rote
+rotor
+rotors
 rots
 rotted
 rotten
@@ -4165,6 +4220,7 @@ seals
 seam
 seams
 sear
+seared
 sears
 seas
 season
@@ -4233,6 +4289,7 @@ serifs
 serine
 serous
 serrate
+serrated
 sesame
 set
 sets
@@ -4389,6 +4446,7 @@ sled
 sleds
 sleet
 sleeve
+slept
 slew
 slip
 slob
@@ -4397,6 +4455,9 @@ sloe
 slog
 slogan
 slogans
+slop
+slope
+sloped
 slosh
 sloshed
 slot
@@ -4476,6 +4537,8 @@ soils
 sol
 solar
 sold
+solder
+soldered
 sole
 soled
 soles
@@ -4502,6 +4565,7 @@ soothe
 soothed
 soother
 sooty
+sop
 sorbet
 sore
 sorer
@@ -4545,7 +4609,12 @@ spice
 spire
 spirea
 splay
+spoor
+spore
+sport
+spot
 sprain
+sprat
 spray
 spread
 spree
@@ -4587,6 +4656,7 @@ standouts
 stands
 star
 stare
+stared
 stares
 starry
 stars
@@ -4600,6 +4670,7 @@ stashed
 stat
 state
 stated
+stater
 states
 stats
 status
@@ -4618,6 +4689,8 @@ stellar
 stem
 stems
 steno
+step
+stereo
 stern
 sterner
 stet
@@ -4650,8 +4723,11 @@ stooge
 stooges
 stool
 stools
+stoop
+stop
 storage
 store
+stored
 storer
 stores
 storm
@@ -4667,6 +4743,7 @@ strands
 strata
 stray
 street
+strep
 strewn
 strife
 strobe
@@ -4675,6 +4752,7 @@ stroll
 strolled
 strolls
 strong
+strop
 strum
 stub
 stuck
@@ -4840,6 +4918,7 @@ taro
 tarot
 tarots
 tarp
+tarps
 tarred
 tars
 tarsal
@@ -4872,6 +4951,7 @@ teal
 team
 teapot
 tear
+teared
 tearless
 tears
 teas
@@ -5067,6 +5147,7 @@ tons
 tonsure
 too
 tool
+tooled
 tools
 toot
 tooted
@@ -5076,10 +5157,14 @@ tootle
 toots
 tootsie
 top
+tops
 tor
 torah
 tore
 torn
+torpedo
+torpedos
+torpor
 torrent
 torrid
 tors
@@ -5160,6 +5245,8 @@ trod
 troll
 trolled
 trolls
+troop
+trope
 trot
 trots
 trout
