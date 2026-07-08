@@ -19288,6 +19288,7 @@ exulting
 exults
 exurban
 exurbs
+ey
 eye
 eyeball
 eyeballing
@@ -24656,6 +24657,8 @@ heftier
 hefty
 hegemonic
 hegemony
+heh
+hehe
 heifer
 heifers
 height
@@ -60278,6 +60281,7 @@ yawning
 yawns
 yaws
 yay
+ye
 yeah
 yeahs
 year
@@ -60296,6 +60300,7 @@ years
 yeast
 yeasts
 yeasty
+yee
 yell
 yelled
 yelling
