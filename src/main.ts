@@ -7,6 +7,11 @@ import type { GridLayout, Color, SplashState } from './render';
 import { currentPalette, isDark, setDarkMode } from './theme';
 import { setupHowtoTutorial } from './tutorial';
 import { hashString } from './hash';
+import { importTransfer, STORAGE_PREFIX, SETTINGS_PREFIX } from './transfer';
+
+// Absorb any localStorage handed over from the old fire.casa origin (see
+// transfer.ts) before any settings or level records are read below.
+importTransfer();
 
 let showEmojiHash = false;
 let hardMode = false;
@@ -208,8 +213,6 @@ function addSplash(x: number, y: number, duration: number, maxRadius: number) {
 
 // --- local storage ---
 
-const STORAGE_PREFIX = 'perplexions-';
-
 interface LevelRecord {
   cleared?: string;
   clearedHard?: string;
@@ -306,8 +309,6 @@ const settingsCard = document.getElementById('settings-card')!;
 const settingsOverlay = document.createElement('div');
 settingsOverlay.id = 'settings-overlay';
 document.body.appendChild(settingsOverlay);
-
-const SETTINGS_PREFIX = 'perplexions-setting-';
 
 function getSetting(key: string, fallback: boolean): boolean {
   try {
