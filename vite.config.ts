@@ -58,6 +58,6 @@ function experimentalLevels(): Plugin {
 }
 
 export default defineConfig({
-  base: '/perplexions/',
+  base: '/',
   plugins: [experimentalLevels(), watchWordsAndLevels()],
 });
