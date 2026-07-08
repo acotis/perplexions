@@ -1,8 +1,8 @@
 ——————————
-sta
-loot
-dere
-prid
+sto
+lost
+cere
+irpd
 ——————————
 ste
 look

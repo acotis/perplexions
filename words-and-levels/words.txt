@@ -8206,7 +8206,6 @@ ceremony
 cerise
 cerium
 cermet
-cert
 certain
 certainly
 certainties
@@ -8223,7 +8222,6 @@ certifies
 certify
 certifying
 certitude
-certs
 cerulean
 cervical
 cervix
@@ -36154,7 +36152,6 @@ operator
 operators
 operetta
 operettas
-opes
 ophthalmic
 ophthalmologist
 ophthalmologists
@@ -50202,7 +50199,6 @@ spellers
 spelling
 spellings
 spells
-spelt
 spelunking
 spend
 spendable
