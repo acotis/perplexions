@@ -95,7 +95,7 @@ a {
   justify-content: center;
   gap: 1.5rem;
   font-family: sans-serif;
-  padding: 2.5rem 2rem 3.1rem;
+  padding: 2.5rem 2rem 3.25rem;
 }
 
 #end-card[hidden] { display: none; }
@@ -114,7 +114,7 @@ a {
 }
 
 #hard-mode-tag {
-  margin-top: calc(-1.5rem + 0.2rem);
+  margin-top: calc(-1.6rem + 0.2rem);
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.08em;
