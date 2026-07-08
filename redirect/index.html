@@ -112,15 +112,13 @@
         function buildTarget() {
           var payload;
           try { payload = encodeTransfer(collectEntries()); } catch (e) { payload = null; }
-          // Strip the old base path (the game is a single page + query params, so
-          // this is normally /perplexions/ -> /).
-          var path = location.pathname.replace(/^\/perplexions/, '');
-          if (path === '') path = '/';
+          // The game is a single page + query params, so we always land on the
+          // root; just carry the query params (e.g. ?date=) and hash across.
           var params = new URLSearchParams(location.search);
           params.delete('no-redirect');
           if (payload) params.set('transfer', payload);
           var query = params.toString();
-          return 'https://perplexions.io' + path + (query ? '?' + query : '') + location.hash;
+          return 'https://perplexions.io/' + (query ? '?' + query : '') + location.hash;
         }
 
         var target = buildTarget();

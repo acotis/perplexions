@@ -8,9 +8,9 @@ What it does, on load:
 1. Reads this origin's `localStorage` (all `perplexions-*` keys).
 2. Packs it into a `transfer` URL param using an inline copy of
    `encodeTransfer()` from `src/transfer.ts`.
-3. Redirects to `https://perplexions.io<path><query>`, stripping the old
-   `/perplexions` base path and preserving any existing query params (e.g.
-   `?date=…`) and hash. The game on the new origin unpacks and merges the
+3. Redirects to `https://perplexions.io/`, preserving any existing query params
+   (e.g. `?date=…`) and hash. The game is a single page + query params, so it
+   always lands on the root. The game on the new origin unpacks and merges the
    `transfer` param into its own `localStorage`.
 
 ## Deploying
