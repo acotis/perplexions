@@ -878,10 +878,16 @@ window.addEventListener('popstate', () => {
 
 const dateParam = new URLSearchParams(window.location.search).get('date');
 
-// Share links once pointed at the root (/?date=...). Rewrite such URLs to the
-// current /puzzle/ format so the address bar matches what we'd share today.
-// (Cosmetic: link crawlers fetch the root page regardless, and the bare root
-// without a date stays put — it's the homepage.)
+// LEGACY SUPPORT: share links generated before 2026-07-09 pointed at the root
+// (/?date=...), and such links live forever in old Discord messages, BlueSky
+// posts, etc. — so ?date= must keep working on the root page, not just under
+// /puzzle/. Today that support is automatic (both paths serve the same HTML,
+// and date handling is path-agnostic), but if that architecture ever changes,
+// root ?date= links must still load — or at least redirect to — the right
+// level. Here we rewrite such URLs to the current /puzzle/ format so the
+// address bar matches what we'd share today. (Cosmetic: link crawlers fetch
+// the root page regardless, and the bare root without a date stays put —
+// it's the homepage.)
 if (dateParam !== null && window.location.pathname !== '/puzzle/') {
   window.history.replaceState(null, '', `/puzzle/${window.location.search}`);
 }
