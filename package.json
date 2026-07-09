@@ -8,6 +8,7 @@
     "dev": "vite",
     "prebuild": "node scripts/split-levels.js words-and-levels/levels.txt",
     "build": "tsc && vite build",
+    "postbuild": "node scripts/build-share-page.js",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"

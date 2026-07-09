@@ -429,7 +429,10 @@ function buildResultsString(): string {
   const dateLabel = `${date.getFullYear()} ${month} ${date.getDate()}${hardMode ? ' (hard mode)' : ''}`;
   const dateSlug = formatDate(date);
   const wordEmojis = wordHistory.map(w => WORD_EMOJIS[hashString(`${dateSlug} ${w}`) % WORD_EMOJIS.length]);
-  return [`Perplexions ${dateLabel} — ${wordEmojis.join(' ')}`, `https://perplexions.io/?date=${dateSlug}`].join('\n');
+  // Share links use the /puzzle/ path: it serves the same app, but its HTML
+  // has no social-embed tags, so pasted results don't unfurl (see
+  // scripts/build-share-page.js). The bare-domain page keeps the embed tags.
+  return [`Perplexions ${dateLabel} — ${wordEmojis.join(' ')}`, `https://perplexions.io/puzzle/?date=${dateSlug}`].join('\n');
 }
 
 copyBtn.addEventListener('click', () => {
@@ -533,7 +536,7 @@ function navigateByDays(delta: number) {
     const params = new URLSearchParams();
     params.set('date', formatDate(date));
     if (devPasswordParam) params.set('dev-password', devPasswordParam);
-    window.history.pushState(null, '', `?${params}`);
+    window.history.pushState(null, '', `/puzzle/?${params}`);
   }).catch(() => {
     if (delta < 0) hasPrevLevel = false;
     if (delta > 0) hasNextLevel = false;
@@ -874,6 +877,15 @@ window.addEventListener('popstate', () => {
 // --- init ---
 
 const dateParam = new URLSearchParams(window.location.search).get('date');
+
+// Share links once pointed at the root (/?date=...). Rewrite such URLs to the
+// current /puzzle/ format so the address bar matches what we'd share today.
+// (Cosmetic: link crawlers fetch the root page regardless, and the bare root
+// without a date stays put — it's the homepage.)
+if (dateParam !== null && window.location.pathname !== '/puzzle/') {
+  window.history.replaceState(null, '', `/puzzle/${window.location.search}`);
+}
+
 const today = new Date();
 const effectiveToday = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 12);
 
@@ -1037,7 +1049,9 @@ async function init() {
       date = requested;
     } catch {
       dateParamFailed = true;
-      window.history.replaceState(null, '', window.location.pathname);
+      // Send failed date-param arrivals home to the canonical root, not the
+      // /puzzle/ path the rewrite above may have put in the address bar.
+      window.history.replaceState(null, '', '/');
     }
   }
 
@@ -1065,7 +1079,7 @@ async function init() {
             date = bestDate;
             const p = new URLSearchParams(window.location.search);
             p.set('date', formatDate(bestDate));
-            window.history.replaceState(null, '', `?${p}`);
+            window.history.replaceState(null, '', `/puzzle/?${p}`);
             showToast(dateParamFailed
               ? "Couldn't load requested level or today's level — loaded latest published level instead"
               : "Couldn't load today's level — loaded latest published level instead");
