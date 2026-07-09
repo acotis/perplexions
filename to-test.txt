@@ -2,12 +2,14 @@
 Here are all types of links to Perplexions:
     Fire Bare:  https://fire.casa/perplexions
     Fire Dated: https://fire.casa/perplexions/?date=YYYY-MM-DD
+    Migration:  https://fire.casa/migrate-perplexions-data
     Bare:       https://perplexions.io/
     Old Dated:  https://perplexions.io/?date=YYYY-MM-DD
     New Dated:  https://perplexions.io/puzzle/?date=YYYY-MM-DD
 
-Fire Bare: should redirect into Bare with ?transfer
-Fire Dated: should redirect into Old Dated with ?transfer
+Fire Bare: auto-rewritten by GitHub
+Fire Dated: auto-rewritten by GitHub
+Migration: should redirect into Bare
 
 Bare: should work
 Old Dated: should rewrite into New Dated
