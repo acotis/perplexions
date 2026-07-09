@@ -892,6 +892,14 @@ if (dateParam !== null && window.location.pathname !== '/puzzle/') {
   window.history.replaceState(null, '', `/puzzle/${window.location.search}`);
 }
 
+// Conversely, a dateless /puzzle/ URL has no reason to exist — it's just the
+// homepage under the wrong path. Send it home (preserving any other params,
+// e.g. dev-password). Matching /puzzle without the trailing slash too costs
+// nothing, though in production GitHub Pages already redirects it to /puzzle/.
+if (dateParam === null && /^\/puzzle\/?$/.test(window.location.pathname)) {
+  window.history.replaceState(null, '', `/${window.location.search}`);
+}
+
 const today = new Date();
 const effectiveToday = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 12);
 
