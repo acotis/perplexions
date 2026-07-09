@@ -23078,6 +23078,9 @@ governs
 gown
 gowned
 gowns
+goy
+goyim
+goys
 grab
 grabbed
 grabber
