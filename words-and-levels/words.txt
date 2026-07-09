@@ -37999,6 +37999,7 @@ pebble
 pebbled
 pebbles
 pebbly
+pec
 pecan
 pecans
 peccadilloes
