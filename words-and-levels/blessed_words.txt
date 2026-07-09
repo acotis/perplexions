@@ -92,6 +92,7 @@ aghast
 ago
 agora
 agree
+agreed
 agrees
 ague
 ah
@@ -155,6 +156,7 @@ alt
 altar
 altars
 alter
+altered
 alters
 alto
 altogether
@@ -169,6 +171,7 @@ amen
 amend
 amends
 amiss
+ammo
 amp
 an
 anal
@@ -1412,6 +1415,7 @@ doge
 doges
 dogged
 doggie
+dogma
 dogs
 doh
 dolce
@@ -1582,6 +1586,7 @@ eggs
 ego
 egos
 egress
+egret
 eh
 eider
 eiders
@@ -2011,6 +2016,7 @@ galoshes
 gals
 game
 gamed
+gamer
 games
 gar
 garb
@@ -2083,6 +2089,7 @@ give
 glad
 glade
 glades
+glam
 gland
 glans
 glare
@@ -2090,6 +2097,7 @@ glares
 glasnost
 glass
 glassed
+gleam
 glean
 gleans
 glee
@@ -2201,6 +2209,7 @@ grayer
 grays
 great
 grebe
+greed
 green
 greener
 greens
@@ -2619,6 +2628,7 @@ ladle
 ladles
 lads
 lag
+lager
 lagoon
 lags
 lain
@@ -2626,8 +2636,11 @@ lair
 lairs
 laity
 lake
+lam
 lamb
 lambs
+lame
+lamer
 lanai
 lanais
 lance
@@ -2720,6 +2733,7 @@ leg
 legal
 legals
 legate
+legato
 legit
 legs
 lei
@@ -2787,11 +2801,13 @@ literate
 liters
 llano
 llanos
+lmao
 lo
 load
 loads
 loadstar
 loaf
+loam
 loan
 loaned
 loaner
@@ -2836,6 +2852,8 @@ lolled
 lone
 loner
 long
+longed
+longer
 longs
 loo
 look
@@ -2937,6 +2955,7 @@ mage
 magus
 maim
 main
+male
 mame
 man
 mana
@@ -2973,6 +2992,7 @@ may
 me
 mead
 meads
+meager
 meal
 mean
 meaner
@@ -2987,12 +3007,16 @@ meg
 mega
 melee
 melt
+memo
 men
 mend
 mends
 menu
+meow
 mercy
 mere
+merge
+merged
 merry
 mesa
 mesh
@@ -3036,8 +3060,11 @@ mogul
 moi
 moist
 mole
+molt
+molter
 mom
 money
+monger
 monist
 moo
 mooch
@@ -3059,6 +3086,7 @@ mosses
 most
 mot
 mote
+motel
 moth
 mother
 moths
@@ -3188,6 +3216,7 @@ noels
 noise
 noises
 noisy
+nom
 non
 nonce
 none
@@ -3289,6 +3318,7 @@ oldest
 oldsters
 oleo
 oles
+omega
 omen
 omens
 on
@@ -3882,6 +3912,8 @@ refuse
 refute
 refutes
 reg
+regal
+regale
 regard
 regatta
 rehab
