@@ -1,0 +1,10 @@
+
+Here are all types of links to Perplexions:
+    Fire bare:  https://fire.casa/perplexions
+    Fire dated: https://fire.casa/perplexions/?date=YYYY-MM-DD
+    Bare:       https://perplexions.io/
+    Old dated:  https://perplexions.io/?date=YYYY-MM-DD
+    New dated:  https://perplexions.io/puzzle/?date=YYYY-MM-DD
+
+old share links should still work
+
