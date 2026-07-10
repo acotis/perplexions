@@ -304,7 +304,7 @@ export function drawHashEmojis(ctx: CanvasRenderingContext2D, layout: GridLayout
   const floorX1 = layout.offsetX - tileSize / 6 - pitch * 0.2;
   const fontSize = Math.min(pitch / 3, canvasH * 0.04);
   ctx.save();
-  ctx.font = `${fontSize}px sans-serif`;
+  ctx.font = `${fontSize}px 'Perplexions Emoji', sans-serif`;
   ctx.textAlign = 'left';
   ctx.textBaseline = 'top';
   let x = floorX1 + fontSize * 0.85 - fontSize * 0.1;

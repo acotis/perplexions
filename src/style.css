@@ -4,6 +4,17 @@
   padding: 0;
 }
 
+/* Emoji font built by scripts/build-emoji-font.sh from Twemoji artwork.
+   Covers exactly the WORD_EMOJIS set; kept ahead of the system emoji font
+   wherever hash emojis render, because the two ZWJ head-shake emoji
+   (Emoji 15.1) fall apart into their component emojis on OSes whose system
+   font predates them (Windows 10, older iOS/Android). */
+@font-face {
+  font-family: 'Perplexions Emoji';
+  src: url('./assets/perplexions-emoji.woff2') format('woff2');
+  font-display: swap;
+}
+
 :root {
   --bg: #fff;
   --text: #222;
@@ -505,6 +516,7 @@ a {
 
 #solution-hash-emojis {
   display: block;
+  font-family: 'Perplexions Emoji', sans-serif;
   font-size: 2.2rem;
   letter-spacing: 0.1em;
   text-align: center;

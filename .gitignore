@@ -18,6 +18,9 @@ public/levels/
 public/words.txt
 dev-levels/
 
+# Working files of scripts/build-emoji-font.sh (output woff2 is committed)
+scripts/emoji-font-build/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

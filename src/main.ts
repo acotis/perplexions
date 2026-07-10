@@ -190,6 +190,11 @@ function renderFrame(now = performance.now(), overrides: Parameters<typeof rende
 
 function redraw() { renderFrame(); }
 
+// Canvas text drawn before a webfont finishes loading keeps the fallback
+// font, so repaint the emoji hash once the emoji font arrives. (DOM text
+// reflows on its own; only the canvas needs this.)
+document.fonts.load("1rem 'Perplexions Emoji'").then(() => { if (layout) redraw(); });
+
 function runSplashLoop() {
   if (splashLoopRunning || animating) return;
   if (splashes.length === 0) { redraw(); return; }
