@@ -19732,6 +19732,7 @@ faxes
 faxing
 fay
 fayer
+fays
 faze
 fazed
 fealty
@@ -19987,6 +19988,7 @@ few
 fewer
 fewest
 fey
+feys
 fez
 fiasco
 fiascos
@@ -24351,7 +24353,6 @@ hatemongers
 hater
 haters
 hates
-hath
 hating
 hatpin
 hatpins
@@ -28442,6 +28443,7 @@ irk
 irked
 irks
 irksome
+irl
 iron
 ironclad
 ironclads

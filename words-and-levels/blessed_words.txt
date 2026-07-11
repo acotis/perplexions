@@ -1393,6 +1393,7 @@ dies
 diet
 dig
 digit
+digs
 dill
 din
 dinar
@@ -1402,6 +1403,7 @@ diner
 diners
 dines
 ding
+dings
 dingus
 dins
 dint
@@ -1414,6 +1416,7 @@ dis
 disabuse
 disburse
 disc
+dish
 dispensary
 disuse
 diva
@@ -2100,6 +2103,7 @@ gesture
 get
 gets
 geyser
+ghee
 ghetto
 ghettos
 ghost
@@ -2112,7 +2116,9 @@ gifts
 gig
 gilt
 gin
+gins
 gird
+girds
 girl
 giro
 gist
@@ -2257,6 +2263,7 @@ grid
 grieve
 grieved
 grin
+grins
 grit
 groan
 grog
@@ -2400,7 +2407,10 @@ hed
 hedge
 hedged
 hedges
+heed
 heel
+heh
+hehe
 heir
 held
 hell
@@ -2431,6 +2441,7 @@ hew
 hex
 hey
 hi
+hid
 hie
 him
 hint
@@ -3225,6 +3236,7 @@ net
 netball
 nether
 nets
+netted
 nettle
 nettles
 neuter
@@ -3246,6 +3258,8 @@ nicked
 nickel
 niece
 nieces
+nigh
+night
 nil
 nine
 nip
@@ -4138,6 +4152,7 @@ rifles
 rift
 rifts
 rig
+right
 rigor
 rigors
 rigour
@@ -4147,6 +4162,8 @@ rile
 riled
 riles
 rind
+ring
+rings
 rink
 rinse
 riot
@@ -4577,7 +4594,9 @@ shears
 shebang
 shed
 sheds
+sheen
 sheer
+sheet
 shelf
 shell
 shelled
@@ -4630,6 +4649,9 @@ sides
 sierra
 sift
 sifter
+sigh
+sight
+sign
 silo
 silos
 silt
@@ -5301,6 +5323,8 @@ tense
 tenser
 tenses
 tent
+tenth
+tenths
 tents
 tenure
 term
@@ -5343,6 +5367,7 @@ theta
 they
 thin
 thins
+third
 this
 tho
 thole
