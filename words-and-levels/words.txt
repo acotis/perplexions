@@ -17907,7 +17907,6 @@ enrollments
 enrolls
 enrolment
 enrolments
-enrols
 ens
 ensconced
 ensemble
@@ -29168,7 +29167,6 @@ kegs
 kelp
 kelvin
 kelvins
-ken
 kennel
 kennels
 kenning

@@ -61,11 +61,16 @@ acrid
 act
 acts
 ad
+add
+adder
+adds
 adept
 adepts
 ado
 adobe
 adobes
+adopt
+adopts
 adorable
 adore
 adores
@@ -1248,6 +1253,10 @@ cutters
 dab
 dabs
 dace
+dad
+dado
+dados
+dads
 dag
 dags
 dairies
@@ -1260,10 +1269,15 @@ damns
 dams
 dane
 danes
+dank
 dare
+dared
 dares
+dark
+darker
 darn
 dart
+darter
 darts
 dash
 dasher
@@ -1313,6 +1327,8 @@ debut
 debuts
 deck
 decry
+deed
+deeds
 deem
 deems
 deep
@@ -1337,6 +1353,8 @@ den
 dengue
 denies
 dens
+dent
+dents
 deny
 deport
 deports
@@ -1344,6 +1362,7 @@ depot
 depots
 derby
 derp
+derps
 desert
 deserts
 desire
@@ -1386,9 +1405,11 @@ ding
 dingus
 dins
 dint
+diode
 dip
 dire
 dirge
+dirt
 dis
 disabuse
 disburse
@@ -1405,6 +1426,8 @@ dobs
 doc
 dock
 docs
+dodo
+dodos
 doe
 doer
 doers
@@ -1440,6 +1463,7 @@ donates
 done
 dong
 donor
+donors
 dons
 dont
 doodle
@@ -1450,6 +1474,7 @@ doors
 dope
 doper
 dopes
+dork
 dorm
 dorsal
 dose
@@ -1470,6 +1495,8 @@ down
 drab
 drag
 drags
+drake
+drank
 drat
 draw
 drawer
@@ -1478,6 +1505,8 @@ drawl
 drawled
 drawn
 draws
+dread
+dreads
 dream
 dreams
 drear
@@ -1490,6 +1519,7 @@ drill
 drip
 droll
 drone
+droned
 drool
 drooled
 drools
@@ -1575,6 +1605,7 @@ edge
 edged
 edges
 edit
+eek
 eel
 eels
 eerie
@@ -1590,6 +1621,8 @@ egret
 eh
 eider
 eiders
+eke
+eked
 eland
 elate
 elated
@@ -2528,6 +2561,7 @@ idle
 idled
 idler
 idol
+idols
 ids
 if
 ifs
@@ -2579,6 +2613,7 @@ irises
 irk
 irked
 iron
+ironed
 irons
 irony
 is
@@ -2588,6 +2623,7 @@ ism
 isms
 isnt
 it
+itd
 item
 items
 its
@@ -2596,17 +2632,25 @@ juke
 jut
 jute
 kale
+kart
+karts
 keen
+keno
 kern
 key
 knap
+knead
+kneads
 knee
 knees
 knew
 knot
+knots
 know
 knower
 krill
+krone
+kronor
 la
 lab
 label
@@ -2770,6 +2814,7 @@ lick
 licked
 licker
 lid
+lido
 lie
 lien
 lies
@@ -2788,6 +2833,7 @@ lint
 lion
 lions
 lip
+lira
 list
 listen
 listener
@@ -2804,6 +2850,7 @@ llanos
 lmao
 lo
 load
+loader
 loads
 loadstar
 loaf
@@ -2857,6 +2904,9 @@ longer
 longs
 loo
 look
+looked
+looker
+lookers
 loom
 looms
 loon
@@ -2882,6 +2932,7 @@ loped
 lopes
 lops
 lord
+lorded
 lords
 lore
 lorn
@@ -3123,12 +3174,14 @@ nags
 nah
 naif
 nail
+naked
 name
 named
 nan
 nap
 nape
 narc
+nark
 narrow
 nary
 nasal
@@ -3222,6 +3275,7 @@ nonce
 none
 noodle
 noodles
+nook
 noon
 noose
 nooses
@@ -3310,6 +3364,7 @@ oil
 oiled
 oiler
 oils
+ok
 okra
 old
 olden
@@ -3346,6 +3401,7 @@ openly
 opera
 ops
 opt
+opted
 optic
 optics
 opts
@@ -3353,6 +3409,8 @@ or
 oral
 orals
 orate
+orator
+orators
 orb
 orbs
 orc
@@ -3584,7 +3642,11 @@ piper
 pis
 piss
 pistol
+piston
 pit
+pita
+piton
+pits
 pizza
 pizzas
 place
@@ -3611,6 +3673,10 @@ pleated
 pleats
 plenty
 plenum
+plod
+plodder
+plonk
+plonked
 plot
 plots
 plug
@@ -3625,6 +3691,7 @@ ply
 poach
 pock
 pod
+pods
 poem
 poet
 poetic
@@ -3640,6 +3707,9 @@ poll
 poly
 pom
 ponce
+pond
+ponder
+ponds
 pone
 poo
 pool
@@ -3650,6 +3720,7 @@ pore
 pored
 pores
 porn
+porno
 port
 ported
 ports
@@ -3716,12 +3787,15 @@ prob
 proctor
 proctored
 prod
+prods
 progress
 prole
 proles
 prone
+pronto
 pros
 prose
+proton
 prow
 prune
 pruner
@@ -3774,6 +3848,8 @@ rack
 racy
 rad
 radian
+radio
+radios
 radius
 radon
 rads
@@ -3815,6 +3891,7 @@ rang
 rangy
 rani
 rank
+ranked
 ranks
 rant
 ranter
@@ -3836,6 +3913,7 @@ rated
 rater
 rates
 ratio
+ration
 rats
 rattan
 ratted
@@ -3888,6 +3966,7 @@ recur
 recurs
 recuse
 red
+redder
 redo
 redone
 redraw
@@ -3900,6 +3979,7 @@ reeds
 reedy
 reef
 reefs
+reek
 reel
 reels
 ref
@@ -4006,6 +4086,7 @@ retch
 retell
 retells
 retold
+retook
 retool
 retooled
 retort
@@ -4040,6 +4121,7 @@ rices
 rich
 riches
 rid
+ridden
 riddle
 ride
 rider
@@ -4103,7 +4185,10 @@ rockers
 rocks
 rod
 rode
+rodent
+rodents
 rodeo
+rodeos
 rods
 roe
 roes
@@ -4117,6 +4202,7 @@ rondo
 rood
 roof
 roofs
+rook
 room
 rooms
 roost
@@ -4568,6 +4654,7 @@ sires
 sirs
 sis
 sit
+sitar
 site
 sites
 sits
@@ -4610,6 +4697,7 @@ sleet
 sleeve
 slept
 slew
+slid
 slip
 slit
 slits
@@ -4680,9 +4768,11 @@ snowed
 snub
 so
 soak
+soaked
 soap
 soapy
 soar
+soared
 soars
 sob
 sober
@@ -4693,6 +4783,7 @@ sock
 sod
 soda
 sodas
+sodden
 sods
 sofa
 sofas
@@ -4710,6 +4801,7 @@ sole
 soled
 soles
 soli
+solid
 solo
 solos
 solute
@@ -4783,6 +4875,9 @@ splay
 spoil
 spoils
 spoilt
+spook
+spooked
+spoon
 spoor
 spore
 sport
@@ -4792,6 +4887,7 @@ sprain
 sprat
 spray
 spread
+spreader
 spree
 sprees
 spry
@@ -4819,6 +4915,8 @@ stages
 stags
 stain
 stair
+stake
+staked
 stale
 stall
 stalled
@@ -4829,10 +4927,12 @@ stand
 standout
 standouts
 stands
+stank
 star
 stare
 stared
 stares
+stark
 starry
 stars
 start
@@ -4852,6 +4952,7 @@ status
 stay
 stays
 stead
+steak
 steal
 steals
 stealth
@@ -4892,12 +4993,17 @@ stoat
 stoats
 stoic
 stoics
+stoke
+stoked
+stoker
 stole
 stolen
 stoles
+stolid
 stolon
 stolons
 stone
+stoned
 stoner
 stones
 stoning
@@ -4918,6 +5024,7 @@ stored
 storer
 stores
 stories
+stork
 storm
 stormy
 story
@@ -4930,12 +5037,17 @@ strand
 strands
 strata
 stray
+streak
+streaked
 street
 strep
 strewn
 strife
+strip
 strobe
 strode
+stroke
+stroked
 stroll
 strolled
 strolls
@@ -5062,7 +5174,9 @@ tailor
 taint
 tainted
 take
+taken
 taker
+takers
 talc
 tale
 talent
@@ -5091,6 +5205,7 @@ tango
 tangos
 tangs
 tank
+tanked
 tanker
 tanks
 tans
@@ -5103,14 +5218,17 @@ tarantula
 tarantulas
 tare
 tares
+tarn
 taro
 tarot
 tarots
 tarp
+tarpon
 tarps
 tarred
 tars
 tarsal
+tarsi
 tart
 tartan
 tartans
@@ -5136,6 +5254,7 @@ taut
 tea
 teabag
 teabags
+teak
 teal
 team
 teapot
@@ -5284,6 +5403,7 @@ tinted
 tints
 tiny
 tip
+tirade
 tire
 tiro
 tiros
@@ -5314,6 +5434,7 @@ toiler
 toilers
 toils
 toke
+token
 told
 tole
 toll
@@ -5331,6 +5452,7 @@ ton
 tonal
 tonally
 tone
+toned
 toner
 tones
 tong
@@ -5340,6 +5462,7 @@ toning
 tons
 tonsure
 too
+took
 tool
 tooled
 tools
@@ -5351,13 +5474,16 @@ tootle
 toots
 tootsie
 top
+topi
 tops
 tor
 torah
 tore
+toreador
 torn
 torpedo
 torpedos
+torpid
 torpor
 torrent
 torrid
@@ -5407,6 +5533,7 @@ trace
 tracer
 trad
 trade
+trader
 trades
 trail
 trailer
@@ -5431,12 +5558,15 @@ treats
 treble
 trebled
 tree
+treed
 trees
+trek
 tress
 trestle
 trestles
 trial
 trio
+trip
 trod
 troll
 trolled
