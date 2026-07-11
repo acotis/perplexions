@@ -31130,7 +31130,6 @@ low
 lowboy
 lowbrow
 lowdown
-lowed
 lower
 lowercase
 lowered
@@ -52845,7 +52844,6 @@ swordsmanship
 swordsmen
 swore
 sworn
-swot
 swum
 swung
 sybarite
@@ -53929,7 +53927,6 @@ theatrically
 theatricals
 theatrics
 thee
-thees
 theft
 thefts
 their
@@ -54035,7 +54032,6 @@ thesis
 thespian
 thespians
 theta
-thew
 they
 theyd
 theyll
@@ -59269,7 +59265,6 @@ what
 whatchamacallit
 whatever
 whatnot
-whats
 whatsit
 whatsoever
 wheal
@@ -59865,8 +59860,6 @@ wok
 woke
 woken
 woks
-wold
-wolds
 wolf
 wolfed
 wolfhound
@@ -60338,7 +60331,6 @@ yet
 yeti
 yew
 yews
-yid
 yield
 yielded
 yielding
