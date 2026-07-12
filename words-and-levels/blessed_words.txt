@@ -116,6 +116,7 @@ aint
 air
 airbus
 aired
+airgun
 airless
 airs
 airshow
@@ -137,6 +138,8 @@ algae
 algal
 algebra
 algebras
+alibi
+alit
 all
 allay
 allele
@@ -322,7 +325,9 @@ atop
 ats
 attar
 attend
+auburn
 auger
+augur
 aunt
 aunts
 aura
@@ -421,6 +426,7 @@ bans
 banter
 bap
 bar
+barb
 bard
 bardic
 bards
@@ -593,6 +599,7 @@ bey
 beyond
 bi
 bias
+bib
 bid
 bide
 bides
@@ -604,6 +611,7 @@ big
 biggie
 bigot
 bin
+bind
 bing
 binge
 bins
@@ -636,6 +644,8 @@ bleep
 blend
 bless
 blessed
+blind
+blini
 bloat
 bloated
 bloc
@@ -653,6 +663,7 @@ blow
 blows
 blue
 blur
+blurb
 blush
 blushed
 boa
@@ -734,6 +745,7 @@ brag
 brags
 braid
 braids
+brain
 bran
 brand
 brandies
@@ -765,6 +777,8 @@ briars
 bride
 brides
 brie
+brig
+brigand
 brine
 bro
 broad
@@ -788,19 +802,23 @@ bruised
 bruiser
 bruisers
 bruises
+bruit
 brush
 brushed
 brutal
 brute
 brutes
+bub
 bud
 buds
 bug
+built
 bulge
 bull
 bum
 bums
 bun
+bung
 buns
 bunt
 buoy
@@ -808,6 +826,7 @@ bur
 burden
 burdens
 burg
+burial
 buried
 buries
 burl
@@ -1411,6 +1430,7 @@ dieted
 diets
 dig
 digit
+digital
 digs
 dill
 din
@@ -1518,6 +1538,7 @@ down
 drab
 drag
 drags
+drain
 drake
 drank
 drat
@@ -1563,6 +1584,7 @@ dryed
 dryer
 dual
 dub
+dubbin
 dubs
 duck
 duct
@@ -1571,12 +1593,14 @@ duds
 due
 dues
 dug
+duh
 dull
 dulled
 duller
 dun
 dune
 dunes
+dung
 dunner
 dunno
 duns
@@ -2066,6 +2090,7 @@ gads
 gaff
 gag
 gaiety
+gain
 gait
 gal
 gala
@@ -2113,6 +2138,7 @@ gather
 gathers
 gator
 gators
+gaunt
 gay
 gayer
 gayest
@@ -2146,6 +2172,7 @@ ghostly
 ghosts
 ghoul
 ghouls
+giant
 gift
 gifts
 gig
@@ -2156,6 +2183,7 @@ gird
 girds
 girl
 giro
+girt
 gist
 git
 gite
@@ -2176,6 +2204,8 @@ glean
 gleans
 glee
 glen
+glib
+glint
 gloat
 gloated
 gloats
@@ -2272,6 +2302,7 @@ grail
 grain
 gram
 gran
+grand
 grape
 grate
 grateful
@@ -2298,6 +2329,7 @@ grid
 grieve
 grieved
 grin
+grind
 grins
 grit
 groan
@@ -2320,6 +2352,7 @@ grub
 grudge
 grunt
 grunts
+guard
 guide
 guile
 guilt
@@ -2328,6 +2361,7 @@ gulps
 gum
 gums
 gun
+guru
 gush
 gushes
 gust
@@ -2339,6 +2373,7 @@ guy
 gym
 gyro
 ha
+habit
 hack
 had
 haft
@@ -2383,6 +2418,7 @@ hangs
 hap
 harass
 harassed
+hard
 hare
 hares
 harp
@@ -2407,6 +2443,7 @@ hatted
 haul
 hauled
 hauls
+haunt
 haw
 hawed
 haws
@@ -2486,7 +2523,9 @@ hi
 hid
 hide
 hie
+hilt
 him
+hind
 hint
 hints
 hip
@@ -2586,6 +2625,8 @@ hull
 hulled
 hum
 humor
+hung
+hunt
 hurl
 hurled
 hurt
@@ -2637,7 +2678,9 @@ infer
 infers
 infest
 info
+inhabit
 inhere
+inhibit
 ink
 inn
 inns
@@ -2667,6 +2710,7 @@ iris
 irises
 irk
 irked
+irl
 iron
 ironed
 irons
@@ -2887,6 +2931,7 @@ linear
 liner
 liners
 lines
+ling
 lint
 lion
 lions
@@ -3374,6 +3419,7 @@ nun
 nurse
 nus
 nut
+nutria
 nuts
 nutter
 oaf
@@ -3903,6 +3949,9 @@ quick
 quit
 quite
 quits
+rabbi
+rabbit
+rabid
 race
 raced
 racer
@@ -4204,6 +4253,7 @@ rift
 rifts
 rig
 right
+rigid
 rigor
 rigors
 rigour
@@ -5270,6 +5320,7 @@ tale
 talent
 talents
 tales
+tali
 tall
 taller
 tallest
@@ -5456,6 +5507,7 @@ throat
 throne
 throng
 thru
+thud
 thug
 thugs
 thus
@@ -5463,6 +5515,7 @@ thy
 thyme
 ti
 tibia
+tibial
 tic
 tick
 tics
@@ -5663,6 +5716,7 @@ tress
 trestle
 trestles
 trial
+trig
 trio
 trip
 trod
@@ -5681,6 +5735,7 @@ trowel
 true
 truer
 truest
+trug
 trust
 trustee
 try
@@ -5706,7 +5761,9 @@ tulle
 tum
 tumor
 tums
+tun
 tuna
+tundra
 tune
 tuneful
 tuner
@@ -5715,6 +5772,7 @@ tunic
 turban
 turbans
 turbo
+turd
 turf
 turn
 turner
@@ -5748,6 +5806,7 @@ twos
 type
 typo
 udder
+ugh
 uh
 ulcer
 ulna
@@ -5767,6 +5826,7 @@ undo
 undone
 unearned
 unfit
+unhurt
 uni
 unit
 unite
@@ -5775,6 +5835,7 @@ units
 unity
 unladen
 unlearn
+unlit
 unload
 unread
 unreal
@@ -5800,6 +5861,7 @@ urge
 urged
 urgent
 uric
+urinal
 urine
 url
 urls
