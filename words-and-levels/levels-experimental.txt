@@ -1,11 +1,4 @@
 ——————————
- hu
-dni
-url
-dba
-bti
-igi
-——————————
 i
 c
 nl
