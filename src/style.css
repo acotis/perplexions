@@ -213,11 +213,11 @@ a {
 #settings-btn .btn-icon {
   width: 1.12em;
   height: 1.12em;
-  transform: translateX(calc(3rem * 0.005));
+  transform: translateX(calc(3rem * -0.0025));
 }
 
 #credits-btn .btn-icon {
-  transform: translate(calc(3rem * -0.0225), calc(3rem * 0.01));
+  transform: translate(calc(3rem * -0.03), calc(3rem * 0.0225));
 }
 
 #settings-btn {
