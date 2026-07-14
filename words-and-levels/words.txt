@@ -8967,6 +8967,7 @@ cicatrix
 cicerone
 cider
 ciders
+cig
 cigar
 cigaret
 cigarets
@@ -8974,6 +8975,7 @@ cigarette
 cigarettes
 cigarillos
 cigars
+cigs
 cilantro
 cilia
 cilium
@@ -34812,6 +34814,10 @@ nerd
 nerdier
 nerds
 nerdy
+nerf
+nerfed
+nerfing
+nerfs
 nerve
 nerved
 nerveless
