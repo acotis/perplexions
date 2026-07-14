@@ -8986,7 +8986,6 @@ cinching
 cinchona
 cinder
 cinders
-cine
 cinema
 cinemas
 cinematic
@@ -30432,7 +30431,6 @@ lids
 lie
 lied
 lieder
-lief
 liefer
 liege
 lien
@@ -30633,7 +30631,6 @@ linking
 links
 linkup
 linnet
-lino
 linoleum
 linseed
 lint
@@ -32789,7 +32786,6 @@ miasma
 mic
 mica
 mice
-mick
 mickey
 mickeys
 micks
@@ -35134,7 +35130,6 @@ noel
 noels
 noggin
 noise
-noised
 noiseless
 noiselessly
 noisemaker
