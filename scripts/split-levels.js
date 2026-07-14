@@ -75,7 +75,7 @@ const nextDay = writeLevels(splitChunks(readFileSync(inputFile, 'utf8')), join(p
 // last official level, but land OUTSIDE public/ in dev-levels/ so they're never
 // copied into a production build or served by the deployed site. Only the
 // dev-only Vite middleware serves them, gated in-app behind the dev password.
-const experimentalFile = join(dirname(inputFile), 'levels-experimental.txt');
+const experimentalFile = join(dirname(inputFile), 'experimental-levels.txt');
 if (existsSync(experimentalFile)) {
   writeLevels(splitChunks(readFileSync(experimentalFile, 'utf8')), join(__dirname, '..', 'dev-levels'), nextDay);
 }
