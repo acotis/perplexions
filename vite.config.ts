@@ -35,7 +35,7 @@ function watchWordsAndLevels(): Plugin {
   };
 }
 
-// Dev-only: serve experimental level files at /levels-experimental/<date>.txt.
+// Dev-only: serve experimental level files at /experimental-levels/<date>.txt.
 // These live in dev-levels/ (outside public/), so they are never part of a
 // production build and the deployed site simply 404s them. The app only
 // requests them once the dev password unlocks dev mode.
@@ -45,7 +45,7 @@ function experimentalLevels(): Plugin {
     apply: 'serve',
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
-        const match = req.url?.match(/\/levels-experimental\/(\d{4}-\d{2}-\d{2}\.txt)(?:[?#]|$)/);
+        const match = req.url?.match(/\/experimental-levels\/(\d{4}-\d{2}-\d{2}\.txt)(?:[?#]|$)/);
         if (!match) return next();
         if (req.method !== 'GET' && req.method !== 'HEAD') return next();
         const file = join(devLevelsDir, match[1]);

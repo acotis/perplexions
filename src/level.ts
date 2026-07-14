@@ -61,7 +61,7 @@ const existsCache = new Map<string, boolean>();
 // serves outside public/. Official levels are always tried first.
 function levelUrls(key: string, dev: boolean): string[] {
   const urls = [import.meta.env.BASE_URL + `levels/${key}.txt`];
-  if (dev) urls.push(import.meta.env.BASE_URL + `levels-experimental/${key}.txt`);
+  if (dev) urls.push(import.meta.env.BASE_URL + `experimental-levels/${key}.txt`);
   return urls;
 }
 
