@@ -35473,7 +35473,6 @@ now
 nowadays
 noway
 nowhere
-nowise
 noxious
 nozzle
 nozzles
@@ -49243,7 +49242,6 @@ smirk
 smirked
 smirking
 smirks
-smit
 smite
 smites
 smith
@@ -54104,6 +54102,8 @@ tho
 thole
 thong
 thongs
+thonk
+thonks
 thoracic
 thorax
 thorium
@@ -54433,7 +54433,6 @@ timidly
 timing
 timings
 timorous
-timothy
 timpani
 tin
 tincture

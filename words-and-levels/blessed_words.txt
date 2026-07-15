@@ -1749,6 +1749,7 @@ ember
 emend
 emir
 emit
+emits
 emo
 ems
 emu
@@ -1832,6 +1833,7 @@ ethanol
 ether
 ethereal
 ethos
+ethyl
 euphony
 euro
 eve
@@ -2656,6 +2658,7 @@ hon
 hone
 honer
 hones
+honk
 honor
 honorable
 honors
@@ -2698,6 +2701,7 @@ hovels
 how
 howd
 howl
+howls
 hows
 hub
 hubs
@@ -2807,6 +2811,7 @@ irony
 is
 isle
 isles
+islet
 ism
 isms
 isnt
@@ -2837,6 +2842,7 @@ knot
 knots
 know
 knower
+knows
 krill
 krone
 kronor
@@ -3287,6 +3293,8 @@ mess
 messiah
 met
 meta
+meth
+mew
 mi
 mic
 mice
@@ -3297,6 +3305,9 @@ mien
 mil
 mile
 miler
+milk
+milky
+mils
 mine
 miner
 mines
@@ -3314,6 +3325,7 @@ misers
 miss
 misses
 mist
+misty
 mite
 mites
 mitt
@@ -3340,12 +3352,16 @@ moi
 moil
 moist
 mole
+moles
+molest
 molt
 molter
 mom
 money
 monger
 monist
+monk
+month
 moo
 mooch
 mood
@@ -3367,13 +3383,18 @@ most
 mot
 mote
 motel
+motet
 moth
 mother
 moths
 motif
+motile
 mots
 mount
 mouth
+mow
+mown
+mows
 mu
 much
 mud
@@ -3506,6 +3527,7 @@ noise
 noises
 noisy
 nom
+noms
 non
 nonce
 none
@@ -3605,6 +3627,7 @@ oiler
 oiling
 oilmen
 oils
+oily
 ok
 okra
 old
@@ -3617,6 +3640,8 @@ oles
 omega
 omen
 omens
+omit
+omits
 on
 once
 one
@@ -4891,10 +4916,13 @@ sifter
 sigh
 sight
 sign
+silk
+silky
 silo
 silos
 silt
 silted
+silty
 sim
 simile
 sims
@@ -4964,6 +4992,8 @@ sleeve
 slept
 slew
 slid
+slim
+slimy
 slip
 slit
 slits
@@ -4997,6 +5027,7 @@ sluts
 sly
 smite
 smith
+smithy
 smooch
 smooth
 smooths
@@ -5121,6 +5152,7 @@ south
 sow
 sowed
 sower
+sown
 soy
 soya
 spa
@@ -5342,6 +5374,7 @@ stye
 styes
 style
 styles
+styli
 stylus
 sub
 subarea
@@ -5418,6 +5451,7 @@ sweeter
 sweets
 swift
 swill
+swim
 swine
 swoon
 sword
@@ -5636,6 +5670,7 @@ this
 tho
 thole
 thong
+thonk
 thorn
 those
 thou
@@ -5685,6 +5720,7 @@ till
 tilt
 tilts
 time
+timely
 times
 tin
 tine
@@ -5707,6 +5743,7 @@ tit
 titan
 titans
 tithe
+title
 tits
 to
 toad
@@ -5728,6 +5765,7 @@ together
 toil
 toiler
 toilers
+toilet
 toils
 toke
 token
@@ -5804,6 +5842,7 @@ totally
 totals
 tote
 toted
+totem
 totes
 tots
 tour
@@ -5949,6 +5988,7 @@ twines
 twist
 twister
 twit
+twits
 two
 twos
 type
@@ -6192,6 +6232,7 @@ whit
 who
 whod
 whos
+why
 wick
 wicks
 wide
@@ -6216,6 +6257,7 @@ will
 wilt
 wilted
 wilts
+wily
 win
 wind
 winder
@@ -6236,6 +6278,7 @@ wires
 wiry
 wise
 wised
+wisely
 wiser
 wises
 wist
@@ -6252,6 +6295,8 @@ wolf
 wolfish
 wolfs
 won
+wonk
+wont
 woo
 wood
 wooer
@@ -6329,11 +6374,13 @@ yob
 yobs
 yoga
 yoke
+yolk
 yonder
 you
 your
 yours
 yow
+yowl
 yoyo
 yum
 yup
