@@ -207,7 +207,7 @@ a {
 #howto-btn .btn-icon {
   width: 1.1305em;
   height: 1.1305em;
-  transform: translateX(calc(3rem * 0.0175));
+  transform: translateX(calc(3rem * 0.0225));
 }
 
 #settings-btn .btn-icon {
@@ -217,7 +217,7 @@ a {
 }
 
 #credits-btn .btn-icon {
-  transform: translate(calc(3rem * -0.03), calc(3rem * 0.0225));
+  transform: translate(calc(3rem * -0.03), calc(3rem * 0.025));
 }
 
 #settings-btn {
