@@ -182,7 +182,17 @@ function activeSplashStates(now: number): SplashState[] {
   splashes = splashes.filter(s => s.startTime + s.duration > now);
   return splashes
     .filter(s => s.startTime <= now)
-    .map(s => ({ x: s.x, y: s.y, progress: (now - s.startTime) / s.duration, maxRadius: s.maxRadius }));
+    .map(s => {
+      const p = (now - s.startTime) / s.duration;
+      return {
+        x: s.x,
+        y: s.y,
+        progress: p,
+        // Ease-out-expo: most of the expansion lands in the first ~20% of the
+        // splash's life, which reads as a shockwave rather than a steady wipe.
+        radius: 1.5 * s.maxRadius * (1 - Math.pow(2, -1.4 * p)),
+      };
+    });
 }
 
 // The on-screen candy color, enriched for dark mode (see toDarkLevelColor).

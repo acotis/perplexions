@@ -155,7 +155,7 @@ export interface SplashState {
   x: number;
   y: number;
   progress: number; // 0 to 1
-  maxRadius: number;
+  radius: number;
 }
 
 export interface RenderOptions {
@@ -170,10 +170,10 @@ export interface RenderOptions {
 
 function drawSplash(ctx: CanvasRenderingContext2D, splash: SplashState, color: Color) {
   ctx.save();
-  ctx.globalAlpha = (1 - splash.progress * splash.progress) * 0.6;
+  ctx.globalAlpha = (1 - splash.progress) * 0.8;
   ctx.fillStyle = rgb(color);
   ctx.beginPath();
-  ctx.arc(splash.x, splash.y, splash.maxRadius * splash.progress, 0, Math.PI * 2);
+  ctx.arc(splash.x, splash.y, splash.radius, 0, Math.PI * 2);
   ctx.fill();
   ctx.restore();
 }
