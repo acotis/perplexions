@@ -424,6 +424,7 @@ ban
 banal
 band
 bands
+bandy
 bane
 banes
 bang
@@ -742,6 +743,7 @@ bot
 botnet
 bots
 bottle
+bouncy
 bout
 bow
 bowl
@@ -892,6 +894,7 @@ byes
 byte
 bytes
 cab
+cabin
 cable
 cabled
 cabs
@@ -916,7 +919,9 @@ canasta
 canastas
 candid
 candle
+candy
 cane
+caned
 canes
 canoe
 canon
@@ -1077,9 +1082,13 @@ coast
 coat
 coats
 cob
+coca
+cocci
 cod
+coda
 coddle
 code
+coed
 coerce
 coercing
 coexist
@@ -1119,11 +1128,13 @@ comp
 con
 cone
 cones
+coney
 conger
 conic
 cons
 console
 context
+cony
 coo
 cooed
 cook
@@ -1272,6 +1283,7 @@ cube
 cubed
 cuber
 cubes
+cubic
 cubs
 cuckoo
 cuckoos
@@ -1317,6 +1329,8 @@ cutest
 cuts
 cutter
 cutters
+cyan
+cynic
 dab
 dabs
 dace
@@ -1400,6 +1414,7 @@ debtors
 debts
 debut
 debuts
+decay
 deck
 decks
 decry
@@ -1661,6 +1676,7 @@ dull
 dulled
 duller
 dun
+dunce
 dune
 dunes
 dung
@@ -3615,6 +3631,7 @@ oath
 oaths
 oats
 obese
+obey
 obi
 obis
 oblate
@@ -3732,6 +3749,7 @@ others
 otter
 otters
 ouch
+ounce
 our
 ours
 oust
@@ -6362,6 +6380,7 @@ worn
 worry
 worst
 wort
+wound
 wow
 wowed
 wows
@@ -6424,6 +6443,7 @@ yoke
 yolk
 yonder
 you
+youd
 your
 yours
 yow
