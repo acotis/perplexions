@@ -80,6 +80,27 @@ let undoIconLoaded = false;
 undoIcon.onload = () => { undoIconLoaded = true; };
 undoIcon.src = import.meta.env.BASE_URL + 'undo.svg';
 
+// Light-gray copy of the (solid black) undo icon for dark mode, tinted via
+// source-in compositing on an offscreen canvas. ctx.filter would be simpler,
+// but WebKit never shipped it, so on iOS the filter silently no-ops and the
+// icon stayed black on the dark background.
+let darkUndoIconCanvas: HTMLCanvasElement | null = null;
+
+function darkUndoIcon(sizePx: number): HTMLCanvasElement {
+  if (darkUndoIconCanvas && darkUndoIconCanvas.width === sizePx) return darkUndoIconCanvas;
+  const off = document.createElement('canvas');
+  off.width = sizePx;
+  off.height = sizePx;
+  const octx = off.getContext('2d')!;
+  octx.drawImage(undoIcon, 0, 0, sizePx, sizePx);
+  octx.globalCompositeOperation = 'source-in';
+  // Matches what invert(1) brightness(0.82) produced from solid black.
+  octx.fillStyle = 'rgb(209,209,209)';
+  octx.fillRect(0, 0, sizePx, sizePx);
+  darkUndoIconCanvas = off;
+  return off;
+}
+
 let undoIconFirstShownTime: number | null = null;
 let undoIconFadeComplete = false;
 let undoIconFadeLoopRunning = false;
@@ -114,10 +135,11 @@ function drawUndoIcon() {
 
   ctx.save();
   ctx.globalAlpha = alpha;
-  // The icon art is solid black; in dark mode invert it to a light gray so it
-  // reads against the dark background.
-  if (isDark()) ctx.filter = 'invert(1) brightness(0.82)';
-  ctx.drawImage(undoIcon, pad, pad, size, size);
+  // The icon art is solid black; in dark mode swap in the light-gray copy so
+  // it reads against the dark background.
+  const dpr = window.devicePixelRatio || 1;
+  const icon = isDark() ? darkUndoIcon(Math.max(1, Math.round(size * dpr))) : undoIcon;
+  ctx.drawImage(icon, pad, pad, size, size);
   ctx.restore();
   undoIconHit = { x: 0, y: 0, w: size + pad * 2, h: size + pad * 2 };
 }
