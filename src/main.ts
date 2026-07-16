@@ -393,11 +393,30 @@ document.body.appendChild(howtoOverlay);
 
 const howtoTutorial = setupHowtoTutorial(document.getElementById('howto-canvas') as HTMLCanvasElement);
 
-document.getElementById('howto-btn')!.addEventListener('click', () => {
+const howtoBtn = document.getElementById('howto-btn')!;
+howtoBtn.addEventListener('click', () => {
   howtoCard.hidden = false;
   showOverlay(howtoOverlay);
   howtoTutorial.start();
 });
+
+// Pop the how-to card automatically on a player's first visit, exactly as if
+// they'd clicked the button. Any pre-existing perplexions- key (level records,
+// settings, data migrated from fire.casa) marks a returning player from before
+// this flag existed — set the flag silently for them rather than re-showing a
+// tutorial they've already seen. If localStorage is unavailable we can't
+// remember having shown it, so never auto-show rather than nag every visit.
+function maybeShowFirstVisitHowto() {
+  try {
+    if (getSetting('seen-howto', false)) return;
+    let returning = false;
+    for (let i = 0; i < localStorage.length; i++) {
+      if (localStorage.key(i)?.startsWith(STORAGE_PREFIX)) { returning = true; break; }
+    }
+    setSetting('seen-howto', true);
+    if (!returning) howtoBtn.click();
+  } catch {}
+}
 
 howtoOverlay.addEventListener('click', () => {
   hideOverlay(howtoOverlay);
@@ -733,7 +752,7 @@ function completeLevel() {
   addSplash(cursorX, cursorY, 1200, Math.hypot(canvasW, canvasH));
 }
 
-function runFallAnimation(fallingTiles: FallingTile[]) {
+function runFallAnimation(fallingTiles: FallingTile[], onSettled?: () => void) {
   animating = true;
   const yMap = new Map<Tile, number>(fallingTiles.map(ft => [ft.tile, ft.pixelY]));
   let lastTime = performance.now();
@@ -763,6 +782,7 @@ function runFallAnimation(fallingTiles: FallingTile[]) {
       animating = false;
       if (tiles.length === 0) completeLevel();
       runSplashLoop();
+      onSettled?.();
     } else {
       requestAnimationFrame(frame);
     }
@@ -771,13 +791,19 @@ function runFallAnimation(fallingTiles: FallingTile[]) {
   requestAnimationFrame(frame);
 }
 
+// One-shot hook fired when the next entry drop finishes settling. init uses
+// it to pop the first-visit tutorial only once the tiles have landed.
+let onNextDropSettled: (() => void) | null = null;
+
 function startDropAnimation() {
+  const onSettled = onNextDropSettled ?? undefined;
+  onNextDropSettled = null;
   runFallAnimation(tiles.map(tile => {
     const targetPixelY = tilePixelY(tile, layout);
     const fallDistance = layout.offsetY + layout.maxY * (TILE_SIZE + GAP) + TILE_SIZE
       + (tile.x - layout.minX + 1) * COLUMN_STAGGER + FALL_ENTRY_EXTRA + tile.y * PITCH * 0.5;
     return { tile, pixelY: targetPixelY - fallDistance, velocityY: 0, targetPixelY, settled: false };
-  }));
+  }), onSettled);
 }
 
 function startCascadeAnimation() {
@@ -1109,12 +1135,17 @@ async function init() {
       if (!parsed) {
         words = await wordsPromise;
         showCanvasError("Couldn't load today's puzzle.");
+        // Still tutorial-worthy: a first-timer may land here via a share link
+        // to a level not yet published in their time zone.
+        maybeShowFirstVisitHowto();
         return;
       }
     }
   }
 
   words = await wordsPromise;
+  // The extra beat lets the landed board register before the card covers it.
+  onNextDropSettled = () => setTimeout(maybeShowFirstVisitHowto, 750);
   startLevel(parsed, date);
 }
 
