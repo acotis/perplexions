@@ -8,6 +8,7 @@ abashed
 abate
 abated
 abates
+abbot
 abed
 abet
 abets
@@ -286,6 +287,7 @@ arson
 art
 artless
 arts
+arum
 as
 ascot
 ash
@@ -328,6 +330,7 @@ atop
 ats
 attar
 attend
+attends
 auburn
 auger
 augur
@@ -367,12 +370,15 @@ aye
 ayes
 baa
 baas
+babe
+babel
 back
 backed
 backs
 backward
 backwards
 bad
+baddie
 bade
 badly
 bae
@@ -603,6 +609,7 @@ beyond
 bi
 bias
 bib
+bibs
 bid
 bide
 bides
@@ -625,6 +632,7 @@ birds
 bit
 bite
 bits
+bitten
 bitty
 blade
 blades
@@ -731,7 +739,9 @@ boss
 bosses
 bossy
 bot
+botnet
 bots
+bottle
 bout
 bow
 bowl
@@ -1451,12 +1461,15 @@ dev
 dew
 dewy
 dhow
+dial
+dibs
 dice
 diced
 dices
 dick
 dicks
 did
+dido
 die
 died
 dies
@@ -1478,6 +1491,7 @@ dine
 diner
 diners
 dines
+dinette
 ding
 dingle
 dings
@@ -1505,6 +1519,7 @@ dive
 do
 doable
 dob
+dobbin
 dobro
 dobs
 doc
@@ -1693,6 +1708,8 @@ eaten
 eater
 eaters
 eats
+ebb
+ebbs
 echo
 echos
 ecru
@@ -2463,6 +2480,7 @@ hack
 had
 haft
 hag
+haggis
 hags
 hair
 hairs
@@ -2561,6 +2579,8 @@ heat
 heated
 heater
 heaters
+heath
+heaths
 heats
 hed
 hedge
@@ -2611,6 +2631,7 @@ hie
 hilt
 him
 hind
+hinge
 hint
 hints
 hip
@@ -2774,6 +2795,7 @@ inhabit
 inhere
 inhibit
 ink
+inlet
 inn
 inns
 inrush
@@ -2870,6 +2892,7 @@ lag
 lager
 lagoon
 lags
+laid
 lain
 lair
 lairs
@@ -2985,6 +3008,7 @@ lens
 lenses
 lent
 lentil
+lento
 leper
 lepers
 lept
@@ -3178,6 +3202,7 @@ lout
 louts
 love
 loved
+lover
 low
 lower
 lowers
@@ -3240,6 +3265,7 @@ mar
 march
 mare
 marry
+mart
 mas
 mason
 mass
@@ -3415,6 +3441,8 @@ myst
 myth
 naan
 nab
+nabob
+nabobs
 nabs
 nacho
 nachos
@@ -3422,6 +3450,7 @@ nadir
 nag
 nags
 nah
+naiad
 naif
 nail
 naked
@@ -3592,12 +3621,14 @@ oblate
 oboe
 oboes
 obsess
+obtain
 obtuse
 ocean
 oceans
 ocelot
 octal
 odd
+oddball
 odder
 odds
 ode
@@ -3732,6 +3763,8 @@ outwit
 ova
 oven
 over
+overt
+overture
 ow
 owe
 owed
@@ -3859,6 +3892,7 @@ perplexion
 perplexions
 pert
 peruse
+perv
 peso
 pesos
 pest
@@ -3873,6 +3907,7 @@ petrel
 petrels
 petrol
 pets
+phat
 phi
 phone
 phony
@@ -4166,7 +4201,6 @@ rant
 ranter
 rants
 rap
-rape
 rapt
 rare
 rarer
@@ -4209,6 +4243,7 @@ reams
 reap
 rear
 reared
+rearm
 rears
 reason
 reasons
@@ -4378,6 +4413,7 @@ rhea
 rheostat
 rheostats
 rhesus
+rheum
 rho
 rhos
 rial
@@ -4408,6 +4444,7 @@ rifles
 rift
 rifts
 rig
+rigged
 right
 rigid
 rigor
@@ -4422,7 +4459,9 @@ riling
 rim
 rime
 rind
+rinds
 ring
+ringed
 rings
 rink
 rinse
@@ -4651,6 +4690,7 @@ sassy
 sat
 sate
 sated
+sateen
 sates
 satin
 satiny
@@ -4853,6 +4893,7 @@ shawl
 she
 shear
 shears
+sheath
 shebang
 shed
 sheds
@@ -4916,6 +4957,7 @@ sifter
 sigh
 sight
 sign
+signet
 silk
 silky
 silo
@@ -5484,6 +5526,7 @@ tacks
 taco
 tad
 tag
+tagged
 tags
 tail
 tailor
@@ -5530,6 +5573,7 @@ tansy
 tap
 tape
 taped
+taper
 tar
 tarantula
 tarantulas
@@ -5609,6 +5653,7 @@ telly
 ten
 tenable
 tend
+tends
 tenet
 tenets
 tenor
@@ -5663,8 +5708,10 @@ theta
 they
 thief
 thin
+thing
 thins
 third
+thirds
 this
 tho
 thole
@@ -5872,6 +5919,7 @@ trail
 trailer
 trailers
 train
+tram
 trance
 trances
 trans
@@ -6078,6 +6126,7 @@ veg
 veggie
 vend
 vent
+vert
 vertical
 very
 vest
@@ -6093,6 +6142,7 @@ vier
 vies
 vigor
 vixen
+vol
 vole
 wack
 wad
