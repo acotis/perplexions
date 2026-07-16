@@ -174,6 +174,11 @@ let hasNextLevel = false;
 
 // --- splashes ---
 
+// How long a burst lives. The radius curve and alpha fade are both functions
+// of p = elapsed / duration, so this stretches the whole animation uniformly
+// without changing its shape.
+const SPLASH_DURATION_MS = 1600;
+
 interface Splash { x: number; y: number; startTime: number; duration: number; maxRadius: number; }
 let splashes: Splash[] = [];
 let splashLoopRunning = false;
@@ -190,7 +195,7 @@ function activeSplashStates(now: number): SplashState[] {
         progress: p,
         // Ease-out-expo: most of the expansion lands in the first ~20% of the
         // splash's life, which reads as a shockwave rather than a steady wipe.
-        radius: 1.5 * s.maxRadius * (1 - Math.pow(2, -1.4 * p)),
+        radius: 1.75 * s.maxRadius * (1 - Math.pow(2, -1 * p)),
       };
     });
 }
@@ -254,6 +259,8 @@ function addSplash(x: number, y: number, duration: number, maxRadius: number) {
 // through the real activeSplashStates/drawSplash pipeline, at the same
 // duration and maxRadius completeLevel uses.
 const SPLASH_DEMO = true;
+// Pause between one demo burst dying and the next firing.
+const SPLASH_DEMO_GAP_MS = 400;
 
 function runSplashDemo() {
   for (const id of ['credits-btn', 'settings-btn', 'howto-btn']) {
@@ -269,12 +276,12 @@ function runSplashDemo() {
       x: canvasW * (0.2 + Math.random() * 0.6),
       y: canvasH * (0.2 + Math.random() * 0.6),
       startTime: performance.now(),
-      duration: 1200,
+      duration: SPLASH_DURATION_MS,
       maxRadius: Math.hypot(canvasW, canvasH),
     });
   };
   fire();
-  setInterval(fire, 1600);
+  setInterval(fire, SPLASH_DURATION_MS + SPLASH_DEMO_GAP_MS);
 
   function frame(now: number) {
     ctx.save();
@@ -821,7 +828,7 @@ function completeLevel() {
   }
   inputShield.style.display = 'block';
   endCardTimer = setTimeout(showEndCard, 2000);
-  addSplash(cursorX, cursorY, 1200, Math.hypot(canvasW, canvasH));
+  addSplash(cursorX, cursorY, SPLASH_DURATION_MS, Math.hypot(canvasW, canvasH));
 }
 
 function runFallAnimation(fallingTiles: FallingTile[], onSettled?: () => void) {

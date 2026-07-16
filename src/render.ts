@@ -170,7 +170,7 @@ export interface RenderOptions {
 
 export function drawSplash(ctx: CanvasRenderingContext2D, splash: SplashState, color: Color) {
   ctx.save();
-  ctx.globalAlpha = (1 - splash.progress) * 0.8;
+  ctx.globalAlpha = (1 - splash.progress ** .6) * 0.9;
   ctx.fillStyle = rgb(color);
   ctx.beginPath();
   ctx.arc(splash.x, splash.y, splash.radius, 0, Math.PI * 2);
