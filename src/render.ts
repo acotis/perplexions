@@ -327,8 +327,14 @@ export function render(
   const { hoveredTile = null, chain = [], cursorX = 0, cursorY = 0, splashes = [], getTilePixelY, hardMode = false } = options;
   const { pitch, tileSize } = layout;
 
+  // Clear in buffer coordinates: canvas.width/height are device pixels, and
+  // under the dpr transform a fillRect with those values under-covers the
+  // visible area whenever dpr < 1 (browser zoomed out), leaving stale pixels.
+  ctx.save();
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
   ctx.fillStyle = palette.background;
   ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+  ctx.restore();
 
   for (const splash of splashes) drawSplash(ctx, splash, color);
 

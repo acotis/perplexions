@@ -342,7 +342,12 @@ export function setupHowtoTutorial(canvas: HTMLCanvasElement) {
 
   function stop() {
     if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; }
+    // Clear in buffer coordinates: under the dpr transform, buffer-sized
+    // dimensions under-cover the visible area whenever dpr < 1 (zoomed out).
+    ctx.save();
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.restore();
   }
 
   return { start, stop };
