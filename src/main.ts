@@ -1,7 +1,7 @@
 import './style.css';
 import { loadWords } from './words';
 import { loadLevel, levelFileExists, formatDate, applyGravity } from './level';
-import { randomLevelColor, toDarkLevelColor, luma, computeLayout, tileAtPixel, tilePixelX, tilePixelY, render, drawHashEmojis, setPitch, TILE_SIZE, GAP } from './render';
+import { randomLevelColor, toDarkLevelColor, luma, computeLayout, tileAtPixel, tilePixelX, tilePixelY, render, drawSplash, drawHashEmojis, setPitch, TILE_SIZE, GAP } from './render';
 import type { Tile, ParsedLevel } from './level';
 import type { GridLayout, Color, SplashState } from './render';
 import { currentPalette, isDark, setDarkMode } from './theme';
@@ -246,6 +246,46 @@ function runSplashLoop() {
 function addSplash(x: number, y: number, duration: number, maxRadius: number) {
   splashes.push({ x, y, startTime: performance.now(), duration, maxRadius });
   if (!animating) runSplashLoop();
+}
+
+// TEMPORARY (splash-tuning branch): when enabled, init() skips the game
+// entirely and fires end-of-level color bursts one after another on an empty
+// canvas, so the splash curves above can be eyeballed in isolation. Goes
+// through the real activeSplashStates/drawSplash pipeline, at the same
+// duration and maxRadius completeLevel uses.
+const SPLASH_DEMO = true;
+
+function runSplashDemo() {
+  for (const id of ['credits-btn', 'settings-btn', 'howto-btn']) {
+    document.getElementById(id)!.style.display = 'none';
+  }
+  const resize = () => setCanvasSize(Math.round(window.innerWidth * 0.9), Math.round(window.innerHeight * 0.70));
+  resize();
+  window.addEventListener('resize', resize);
+
+  const fire = () => {
+    color = randomLevelColor((Math.random() * 2 ** 32) >>> 0);
+    splashes.push({
+      x: canvasW * (0.2 + Math.random() * 0.6),
+      y: canvasH * (0.2 + Math.random() * 0.6),
+      startTime: performance.now(),
+      duration: 1200,
+      maxRadius: Math.hypot(canvasW, canvasH),
+    });
+  };
+  fire();
+  setInterval(fire, 1600);
+
+  function frame(now: number) {
+    ctx.save();
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.fillStyle = currentPalette().background;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.restore();
+    for (const s of activeSplashStates(now)) drawSplash(ctx, s, themedColor());
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
 }
 
 // --- local storage ---
@@ -1112,6 +1152,7 @@ function showCanvasError(msg: string) {
 }
 
 async function init() {
+  if (SPLASH_DEMO) { runSplashDemo(); return; }
   devMode = await devPasswordPromise;
   const wordsPromise = loadWords();
   const todayNoon = effectiveToday;

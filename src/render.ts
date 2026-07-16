@@ -168,7 +168,7 @@ export interface RenderOptions {
   hardMode?: boolean;
 }
 
-function drawSplash(ctx: CanvasRenderingContext2D, splash: SplashState, color: Color) {
+export function drawSplash(ctx: CanvasRenderingContext2D, splash: SplashState, color: Color) {
   ctx.save();
   ctx.globalAlpha = (1 - splash.progress) * 0.8;
   ctx.fillStyle = rgb(color);
