@@ -8,6 +8,7 @@ import { currentPalette, isDark, setDarkMode } from './theme';
 import { setupHowtoTutorial } from './tutorial';
 import { hashString } from './hash';
 import { importTransfer, STORAGE_PREFIX, SETTINGS_PREFIX } from './transfer';
+import { SPLASH_DURATION_MS, splashMaxRadius, splashRadius } from './splash';
 
 // Absorb any localStorage handed over from the old fire.casa origin (see
 // transfer.ts) before any settings or level records are read below.
@@ -173,11 +174,8 @@ let hasPrevLevel = false;
 let hasNextLevel = false;
 
 // --- splashes ---
-
-// How long a burst lives. The radius curve and alpha fade are both functions
-// of p = elapsed / duration, so this stretches the whole animation uniformly
-// without changing its shape.
-const SPLASH_DURATION_MS = 1600;
+// (All tuning knobs — duration, radius/alpha curves, max radius — live in
+// splash.ts. This section is just the animation bookkeeping.)
 
 interface Splash { x: number; y: number; startTime: number; duration: number; maxRadius: number; }
 let splashes: Splash[] = [];
@@ -193,9 +191,7 @@ function activeSplashStates(now: number): SplashState[] {
         x: s.x,
         y: s.y,
         progress: p,
-        // Ease-out-expo: most of the expansion lands in the first ~20% of the
-        // splash's life, which reads as a shockwave rather than a steady wipe.
-        radius: 1.75 * s.maxRadius * (1 - Math.pow(2, -1 * p)),
+        radius: splashRadius(p, s.maxRadius),
       };
     });
 }
@@ -258,7 +254,7 @@ function addSplash(x: number, y: number, duration: number, maxRadius: number) {
 // canvas, so the splash curves above can be eyeballed in isolation. Goes
 // through the real activeSplashStates/drawSplash pipeline, at the same
 // duration and maxRadius completeLevel uses.
-const SPLASH_DEMO = true;
+const SPLASH_DEMO = false;
 // Pause between one demo burst dying and the next firing.
 const SPLASH_DEMO_GAP_MS = 400;
 
@@ -277,7 +273,7 @@ function runSplashDemo() {
       y: canvasH * (0.2 + Math.random() * 0.6),
       startTime: performance.now(),
       duration: SPLASH_DURATION_MS,
-      maxRadius: Math.hypot(canvasW, canvasH),
+      maxRadius: splashMaxRadius(canvasW, canvasH),
     });
   };
   fire();
@@ -828,7 +824,7 @@ function completeLevel() {
   }
   inputShield.style.display = 'block';
   endCardTimer = setTimeout(showEndCard, 2000);
-  addSplash(cursorX, cursorY, SPLASH_DURATION_MS, Math.hypot(canvasW, canvasH));
+  addSplash(cursorX, cursorY, SPLASH_DURATION_MS, splashMaxRadius(canvasW, canvasH));
 }
 
 function runFallAnimation(fallingTiles: FallingTile[], onSettled?: () => void) {
