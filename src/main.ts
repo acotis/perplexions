@@ -172,6 +172,10 @@ let rightChevronHit: { x: number; y: number; w: number; h: number } | null = nul
 let undoIconHit: { x: number; y: number; w: number; h: number } | null = null;
 let hasPrevLevel = false;
 let hasNextLevel = false;
+// Center of the last tile of the last word committed; the splash in
+// completeLevel originates here rather than at the cursor.
+let lastWordEndX = 0;
+let lastWordEndY = 0;
 
 // --- splashes ---
 // (All tuning knobs — duration, radius/alpha curves, max radius — live in
@@ -674,6 +678,13 @@ function commitChain(rehover: boolean) {
   if (words.has(word)) {
     history.push(tiles);
     wordHistory.push(word.toUpperCase());
+    // Remembered in case this word empties the board: completeLevel fires
+    // asynchronously (after the cascade settles), by which point chain has
+    // been cleared and the tile itself is gone, so its center must be
+    // captured now.
+    const lastTile = chain[chain.length - 1];
+    lastWordEndX = tilePixelX(lastTile, layout) + TILE_SIZE / 2;
+    lastWordEndY = tilePixelY(lastTile, layout) + TILE_SIZE / 2;
     const removed = new Set(chain);
     tiles = tiles.filter(t => !removed.has(t));
     chain = [];
@@ -808,7 +819,7 @@ interface FallingTile {
 }
 
 // Marks the level finished: reveals the end card after a beat and fires the
-// celebratory full-screen splash from the cursor.
+// celebratory full-screen splash from the last tile of the last word.
 function completeLevel() {
   levelComplete = true;
   // Persist the clear as soon as the level is finished, not when the end card
@@ -824,7 +835,7 @@ function completeLevel() {
   }
   inputShield.style.display = 'block';
   endCardTimer = setTimeout(showEndCard, 2000);
-  addSplash(cursorX, cursorY, SPLASH_DURATION_MS, splashMaxRadius(canvasW, canvasH));
+  addSplash(lastWordEndX, lastWordEndY, SPLASH_DURATION_MS, splashMaxRadius(canvasW, canvasH));
 }
 
 function runFallAnimation(fallingTiles: FallingTile[], onSettled?: () => void) {
