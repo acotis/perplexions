@@ -5,7 +5,7 @@
 
 // Stretching the duration slows the whole animation uniformly without
 // changing its shape, since both curves are functions of p.
-export const SPLASH_DURATION_MS = 1400;
+export const SPLASH_DURATION_MS = 2400;
 
 // The burst fires from the cursor; the canvas diagonal is the largest radius
 // ever needed to cover the whole canvas from any point in it.
@@ -16,9 +16,9 @@ export function splashMaxRadius(canvasW: number, canvasH: number): number {
 // Ease-out-expo expansion: most of the growth lands early in the splash's
 // life, which reads as a shockwave rather than a steady wipe.
 export function splashRadius(p: number, maxRadius: number): number {
-  return 1.75 * maxRadius * (1 - Math.pow(2, -1 * p));
+  return maxRadius * (1 - 2 ** (-p * 3));
 }
 
 export function splashAlpha(p: number): number {
-  return (1 - p ** 0.6) * 0.8;
+  return (1 - p) * 0.5
 }
