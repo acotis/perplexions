@@ -3413,7 +3413,6 @@ avast
 avatar
 avatars
 avaunt
-ave
 avenge
 avenged
 avenger
@@ -4449,7 +4448,6 @@ beetle
 beetles
 beetroot
 beets
-beeves
 befall
 befallen
 befalling
@@ -16858,7 +16856,6 @@ eaters
 eatery
 eating
 eats
-eave
 eaves
 eavesdrop
 eavesdropped
@@ -29909,7 +29906,6 @@ laureate
 laureates
 laurel
 laurels
-lav
 lava
 lavage
 lavalier
@@ -29926,7 +29922,6 @@ lavishes
 lavishing
 lavishly
 lavishness
-lavs
 law
 lawbreaker
 lawbreakers
@@ -40776,7 +40771,6 @@ previews
 previous
 previously
 prevision
-prevue
 prewar
 prey
 preyed
@@ -44555,7 +44549,6 @@ rerouting
 rerun
 rerunning
 reruns
-res
 resalable
 resale
 resales
@@ -57903,14 +57896,11 @@ vector
 vectored
 vectoring
 vectors
-vee
 veejay
-veep
 veer
 veered
 veering
 veers
-vees
 veg
 vegan
 veganism

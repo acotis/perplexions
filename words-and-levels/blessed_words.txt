@@ -301,6 +301,7 @@ aside
 asides
 asinine
 ask
+asleep
 asp
 aspen
 asps
@@ -342,6 +343,7 @@ austral
 author
 auto
 autos
+aver
 avian
 aviator
 avid
@@ -534,6 +536,7 @@ beats
 beau
 beaus
 beaut
+beaver
 bed
 bedhead
 bedroom
@@ -588,6 +591,7 @@ bents
 berate
 berated
 berates
+bereave
 berg
 berry
 berth
@@ -605,6 +609,7 @@ betel
 bets
 bettor
 bettors
+bevel
 bey
 beyond
 bi
@@ -674,6 +679,7 @@ blouse
 blow
 blows
 blue
+bluer
 blur
 blurb
 blush
@@ -785,6 +791,8 @@ breaths
 bred
 breed
 breeds
+breve
+breves
 brew
 brews
 briar
@@ -846,6 +854,7 @@ buried
 buries
 burl
 burled
+burls
 burn
 burned
 burner
@@ -1091,6 +1100,7 @@ code
 coed
 coerce
 coercing
+coeval
 coexist
 cog
 cohere
@@ -1154,7 +1164,11 @@ copra
 cops
 copse
 copter
+copula
+copulas
 cor
+corbel
+corbels
 cord
 cords
 core
@@ -1190,6 +1204,10 @@ count
 counter
 counts
 coup
+coupe
+coupes
+couple
+couples
 course
 cousin
 cow
@@ -1724,6 +1742,7 @@ eaten
 eater
 eaters
 eats
+eaves
 ebb
 ebbs
 echo
@@ -1776,6 +1795,7 @@ elodea
 elope
 elos
 else
+elves
 em
 embargo
 ember
@@ -1872,6 +1892,7 @@ euro
 eve
 even
 event
+ever
 eves
 ew
 ewe
@@ -2966,6 +2987,7 @@ latter
 lattes
 laud
 laurel
+lave
 law
 lawn
 laws
@@ -3000,6 +3022,9 @@ leashes
 least
 leather
 leathers
+leave
+leaver
+leaves
 lech
 led
 lede
@@ -3044,6 +3069,7 @@ levees
 level
 leveled
 levels
+lever
 lewd
 liar
 lice
@@ -3868,6 +3894,7 @@ pea
 peach
 peachy
 peal
+peals
 pear
 pearl
 pearls
@@ -3880,10 +3907,14 @@ pedicure
 pee
 peed
 peel
+peeler
+peels
 peen
 peer
 peers
 pees
+peeve
+peeves
 peg
 pelt
 pelts
@@ -3911,6 +3942,7 @@ perplexions
 pert
 peruse
 perv
+pervs
 peso
 pesos
 pest
@@ -3987,9 +4019,14 @@ playtesting
 plea
 plead
 pleader
+pleas
+please
 pleat
 pleated
 pleats
+plebe
+plebes
+plebs
 plenty
 plenum
 plod
@@ -4127,6 +4164,8 @@ pubes
 pubs
 puce
 pug
+pule
+pulse
 pun
 puns
 puny
@@ -4304,6 +4343,8 @@ reefs
 reek
 reel
 reels
+reeve
+reeves
 ref
 refill
 refine
@@ -4367,7 +4408,6 @@ reran
 reread
 rerun
 reruns
-res
 resale
 rescue
 rescuer
@@ -4421,6 +4461,14 @@ return
 reunite
 reuse
 rev
+revalue
+reveal
+revel
+revels
+reverb
+revs
+revue
+revues
 reward
 rewards
 rewind
@@ -4593,6 +4641,7 @@ rube
 rubes
 rubies
 ruble
+rubles
 rubric
 rubs
 ruby
@@ -4607,6 +4656,7 @@ ruin
 ruins
 rule
 ruled
+ruler
 rules
 rum
 run
@@ -4671,6 +4721,8 @@ salty
 salute
 saluted
 salutes
+salve
+salver
 same
 samosa
 sand
@@ -4766,6 +4818,7 @@ scored
 scorer
 scores
 scorn
+scour
 scram
 scramble
 scrambled
@@ -4875,6 +4928,8 @@ serine
 serous
 serrate
 serrated
+serve
+server
 sesame
 set
 sets
@@ -4884,6 +4939,9 @@ settings
 settle
 settled
 setts
+sever
+severe
+severer
 sew
 seward
 sewed
@@ -5041,12 +5099,15 @@ slates
 slather
 slats
 slatted
+slave
+slaver
 slaw
 slay
 slaying
 slays
 sled
 sleds
+sleep
 sleet
 sleeve
 slept
@@ -5081,6 +5142,7 @@ slows
 slug
 slugs
 slur
+slurp
 slush
 slut
 sluts
@@ -6136,14 +6198,21 @@ uteri
 uterus
 utter
 utters
+vale
+value
+valuer
 van
 vans
+vase
 veal
-vee
+veer
 veg
 veggie
+vela
 vend
 vent
+verb
+verbs
 vert
 vertical
 very
