@@ -98,9 +98,12 @@ agate
 agates
 age
 aged
+agent
+agents
 ages
 aghast
 ago
+agony
 agora
 agree
 agreed
@@ -1781,6 +1784,7 @@ eider
 eiders
 eke
 eked
+ekes
 eland
 elate
 elated
@@ -1789,6 +1793,7 @@ elbows
 eld
 eldest
 elect
+elegy
 elf
 elfish
 elide
@@ -1913,6 +1918,8 @@ exits
 extol
 ey
 eye
+eyelet
+eyelets
 eyes
 fa
 fab
@@ -2258,6 +2265,7 @@ gases
 gash
 gashed
 gashes
+gasket
 gate
 gateau
 gated
@@ -2273,6 +2281,7 @@ gayest
 gear
 gears
 gee
+geek
 geese
 gel
 geld
@@ -2289,6 +2298,7 @@ genomics
 genre
 gens
 gent
+gents
 geode
 geodes
 germ
@@ -2894,16 +2904,29 @@ juke
 jut
 jute
 kale
+kana
 kart
 karts
+keel
+keels
 keen
+keenly
+keens
+keg
+kegs
 keno
 kern
+ketone
 key
+keynote
+keys
+keystone
 knap
 knead
 kneads
 knee
+kneel
+kneels
 knees
 knew
 knot
@@ -2944,6 +2967,7 @@ lair
 lairs
 laity
 lake
+lakes
 lam
 lama
 lamb
@@ -2960,6 +2984,7 @@ landless
 lands
 lane
 lanes
+lank
 lap
 lapin
 lard
@@ -3013,6 +3038,9 @@ leads
 leaf
 leafy
 leak
+leakage
+leakages
+leaks
 lean
 leaned
 leaner
@@ -3040,6 +3068,8 @@ led
 lede
 lee
 leech
+leek
+leeks
 leer
 lees
 left
@@ -3630,6 +3660,7 @@ normal
 north
 nose
 nosed
+nosegay
 noses
 nosey
 nosh
@@ -3663,6 +3694,7 @@ oafish
 oafs
 oak
 oaken
+oaks
 oar
 oared
 oars
@@ -3719,6 +3751,8 @@ oilmen
 oils
 oily
 ok
+okay
+okays
 okra
 old
 olden
@@ -3741,6 +3775,7 @@ only
 onrush
 onset
 onsets
+onstage
 onto
 onus
 onyx
@@ -4722,6 +4757,7 @@ said
 sail
 sails
 saint
+sake
 salad
 salads
 sale
@@ -4754,6 +4790,7 @@ sander
 sandlot
 sands
 sane
+sanely
 saner
 sanest
 sang
@@ -4777,6 +4814,7 @@ sash
 sass
 sassy
 sat
+satay
 sate
 sated
 sateen
@@ -5097,12 +5135,16 @@ sixes
 sixteen
 sixty
 sizzle
+ska
+skate
+skeet
 ski
 slab
 slabs
 slag
 slags
 slain
+slake
 slam
 slang
 slant
@@ -5126,6 +5168,7 @@ slaying
 slays
 sled
 sleds
+sleek
 sleep
 sleet
 sleeve
@@ -5404,6 +5447,7 @@ sted
 steed
 steeds
 steel
+steely
 steer
 steerage
 stellar
@@ -5635,6 +5679,7 @@ take
 taken
 taker
 takers
+takes
 talc
 tale
 talent
@@ -5663,6 +5708,7 @@ tangles
 tango
 tangos
 tangs
+tangy
 tank
 tanked
 tanker
@@ -5740,6 +5786,8 @@ teed
 teem
 teen
 teens
+teensy
+teeny
 tees
 teeter
 teeth
@@ -5759,6 +5807,7 @@ tenor
 tenors
 tens
 tense
+tensely
 tenser
 tenses
 tent
@@ -5938,6 +5987,7 @@ tonic
 toning
 tons
 tonsure
+tony
 too
 took
 tool
@@ -6490,6 +6540,7 @@ yaks
 yall
 yam
 yams
+yank
 yap
 yaps
 yard
