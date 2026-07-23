@@ -53,6 +53,7 @@ aches
 achoo
 achy
 acid
+acids
 acne
 acorn
 acorns
@@ -940,6 +941,7 @@ caned
 canes
 canoe
 canon
+canopy
 cans
 cant
 canto
@@ -1172,6 +1174,7 @@ copse
 copter
 copula
 copulas
+copy
 cor
 corbel
 corbels
@@ -4076,6 +4079,7 @@ poll
 poly
 pom
 ponce
+poncy
 pond
 ponder
 ponds
