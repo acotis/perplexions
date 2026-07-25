@@ -1242,7 +1242,6 @@ ajar
 akimbo
 akin
 alabaster
-alack
 alacrity
 alarm
 alarmed
@@ -15743,7 +15742,6 @@ ditzy
 diuretic
 diuretics
 diurnal
-div
 diva
 divalent
 divan
@@ -28606,7 +28604,6 @@ itineraries
 itinerary
 its
 itself
-iv
 ive
 ivies
 ivories
@@ -29368,7 +29365,6 @@ kitchens
 kitchenware
 kite
 kites
-kith
 kiting
 kits
 kitsch
@@ -38112,7 +38108,6 @@ pegs
 peignoir
 pejorative
 pejoratively
-peke
 pekinese
 pekingese
 pekoe
@@ -47902,7 +47897,6 @@ shew
 shewed
 shewing
 shewn
-shews
 shh
 shiatsu
 shibboleth
@@ -48308,9 +48302,11 @@ shying
 shyly
 shyness
 shyster
+sib
 sibilant
 sibling
 siblings
+sibs
 sibyl
 sic
 sick
@@ -48331,7 +48327,6 @@ sicknesses
 sicko
 sickos
 sickroom
-sics
 side
 sidearm
 sidearms
@@ -50229,7 +50224,6 @@ spices
 spicier
 spiciness
 spicing
-spick
 spicule
 spicules
 spicy
@@ -51371,8 +51365,6 @@ storekeepers
 storeroom
 storerooms
 stores
-storey
-storeys
 storied
 stories
 storing
@@ -53496,7 +53488,6 @@ technologists
 technology
 technophobe
 technophobes
-techs
 tectonic
 tectonics
 ted
@@ -57675,7 +57666,6 @@ uttermost
 utters
 uveitis
 uvula
-vac
 vacancies
 vacancy
 vacant
@@ -57701,7 +57691,6 @@ vacillate
 vacillated
 vacillating
 vacillation
-vacs
 vacua
 vacuity
 vacuole

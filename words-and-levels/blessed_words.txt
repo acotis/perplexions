@@ -132,6 +132,7 @@ airshow
 airshows
 airy
 aisle
+akin
 alarm
 alas
 alb
@@ -150,6 +151,7 @@ algebra
 algebras
 alibi
 alit
+alive
 all
 allay
 allele
@@ -235,6 +237,7 @@ ants
 antsy
 anus
 anuses
+anvil
 any
 aorta
 aortas
@@ -353,6 +356,8 @@ aver
 avian
 aviator
 avid
+avoid
+avoided
 aw
 award
 awardee
@@ -925,10 +930,12 @@ cage
 cake
 calf
 calico
+calk
 call
 calla
 caller
 calm
+calve
 cam
 came
 cams
@@ -997,6 +1004,7 @@ cave
 caved
 caviar
 caviare
+cavil
 caw
 caws
 cay
@@ -1021,13 +1029,19 @@ chasm
 chasms
 chat
 chats
+check
+cheek
 cheer
 chemo
+chest
+chew
+chews
 chi
 chin
 chirp
 chis
 chisel
+chit
 choir
 choler
 chop
@@ -1035,8 +1049,11 @@ chore
 chow
 chows
 chrome
+chuck
+chucks
 chum
 chute
+chutes
 ciao
 cider
 ciders
@@ -1052,6 +1069,7 @@ cites
 clad
 clan
 clang
+clank
 clans
 clap
 clarion
@@ -1090,6 +1108,7 @@ clots
 cloud
 clout
 clouts
+clove
 clown
 clue
 clues
@@ -1353,6 +1372,7 @@ curse
 cursed
 curses
 cusp
+cusps
 cut
 cute
 cutest
@@ -1376,6 +1396,7 @@ dale
 dales
 dam
 dame
+damn
 damns
 dams
 dance
@@ -1599,6 +1620,8 @@ dolor
 dolt
 dolts
 dom
+domain
+domains
 dome
 domed
 doming
@@ -1858,6 +1881,7 @@ entry
 eon
 eons
 epic
+epics
 epicure
 epicurean
 epoch
@@ -1882,6 +1906,7 @@ erroneous
 error
 errs
 erst
+eschew
 esoteric
 esprit
 espy
@@ -1894,11 +1919,15 @@ estrous
 estuary
 eta
 etas
+etch
 etcher
+etches
 ethane
 ethanol
 ether
 ethereal
+ethic
+ethics
 ethos
 ethyl
 euphony
@@ -1908,6 +1937,7 @@ even
 event
 ever
 eves
+evil
 ew
 ewe
 ewes
@@ -2638,6 +2668,8 @@ heaters
 heath
 heaths
 heats
+heck
+hectic
 hed
 hedge
 hedged
@@ -2684,6 +2716,7 @@ hi
 hid
 hide
 hie
+hike
 hilt
 him
 hind
@@ -2692,6 +2725,7 @@ hint
 hints
 hip
 hippy
+hips
 hire
 hires
 his
@@ -2813,6 +2847,7 @@ ices
 ick
 icon
 iconic
+ictus
 icy
 id
 idea
@@ -2895,6 +2930,8 @@ isms
 isnt
 isomer
 it
+itch
+itches
 itd
 item
 items
@@ -2912,16 +2949,27 @@ keels
 keen
 keenly
 keens
+keep
+keeps
 keg
 kegs
 keno
+kepi
+kept
 kern
+ketch
 ketone
 key
 keynote
 keys
 keystone
+kin
+kip
+kips
+kit
+kits
 knap
+knave
 knead
 kneads
 knee
@@ -2934,6 +2982,7 @@ knots
 know
 knower
 knows
+kola
 krill
 krone
 kronor
@@ -2949,6 +2998,7 @@ labs
 lac
 lace
 laces
+lack
 lacy
 lad
 lade
@@ -3022,6 +3072,7 @@ latter
 lattes
 laud
 laurel
+lava
 lave
 law
 lawn
@@ -3163,6 +3214,7 @@ literary
 literate
 liters
 lithe
+live
 llano
 llanos
 lmao
@@ -3331,6 +3383,7 @@ mage
 magus
 maim
 main
+mains
 male
 mama
 mame
@@ -3516,6 +3569,7 @@ muffins
 mug
 mugged
 mule
+mum
 mun
 mus
 muse
@@ -3540,6 +3594,7 @@ nah
 naiad
 naif
 nail
+naive
 naked
 name
 named
@@ -3560,6 +3615,8 @@ natural
 naturals
 nature
 natures
+nave
+navel
 navy
 nay
 nays
@@ -3643,6 +3700,7 @@ noise
 noises
 noisy
 nom
+nomad
 noms
 non
 nonce
@@ -3750,6 +3808,7 @@ oiling
 oilmen
 oils
 oily
+oink
 ok
 okay
 okays
@@ -3796,6 +3855,7 @@ opted
 optic
 optics
 opts
+opus
 or
 oral
 orals
@@ -3856,6 +3916,7 @@ outset
 outta
 outwit
 ova
+oval
 oven
 over
 overt
@@ -3881,6 +3942,7 @@ pack
 pact
 pacts
 pad
+pads
 paean
 pah
 paige
@@ -3953,10 +4015,13 @@ pears
 peas
 peat
 peaty
+pec
+peck
 pecs
 pedicure
 pee
 peed
+peek
 peel
 peeler
 peels
@@ -4008,7 +4073,10 @@ petrel
 petrels
 petrol
 pets
+pew
+pews
 phat
+phew
 phi
 phone
 phony
@@ -4019,6 +4087,10 @@ piazza
 piazzas
 pic
 pica
+pick
+picket
+pickets
+picks
 picot
 pics
 pie
@@ -4029,6 +4101,8 @@ pierce
 piers
 pies
 pig
+pike
+pikes
 pile
 pilot
 pilots
@@ -4043,10 +4117,15 @@ pipe
 piper
 pis
 piss
+piste
+pistes
 pistol
 piston
 pit
 pita
+pitch
+pitches
+pith
 piton
 pits
 pizza
@@ -4215,9 +4294,13 @@ pub
 pubes
 pubs
 puce
+puck
+pucks
 pug
 pule
 pulse
+puma
+pumas
 pun
 puns
 puny
@@ -4234,6 +4317,9 @@ pus
 push
 pushy
 put
+puts
+putt
+putts
 puzzle
 puzzler
 puzzles
@@ -4758,6 +4844,7 @@ sail
 sails
 saint
 sake
+saki
 salad
 salads
 sale
@@ -4778,6 +4865,7 @@ saluted
 salutes
 salve
 salver
+salvo
 same
 samosa
 sand
@@ -4801,6 +4889,7 @@ sap
 sapper
 sapphire
 sappy
+saps
 saran
 sardine
 sardines
@@ -4972,6 +5061,7 @@ senora
 sens
 sent
 sentry
+septet
 septic
 sera
 sere
@@ -4996,6 +5086,8 @@ settings
 settle
 settled
 setts
+setup
+setups
 sever
 severe
 severer
@@ -5031,8 +5123,10 @@ shebang
 shed
 sheds
 sheen
+sheep
 sheer
 sheet
+sheets
 shelf
 shell
 shelled
@@ -5047,7 +5141,9 @@ shin
 shine
 shiner
 shiny
+ship
 shire
+shit
 shoal
 shoals
 shock
@@ -5073,7 +5169,11 @@ show
 shows
 shrine
 shrub
+shtick
+shuck
+shucks
 shut
+shuts
 shy
 shyer
 sic
@@ -5113,6 +5213,7 @@ singed
 singer
 single
 sip
+sips
 sir
 sire
 sired
@@ -5139,6 +5240,8 @@ ska
 skate
 skeet
 ski
+skip
+skips
 slab
 slabs
 slag
@@ -5218,7 +5321,9 @@ smooths
 smote
 smug
 smut
+snack
 snag
+snail
 snake
 snap
 snappy
@@ -5227,6 +5332,7 @@ snarl
 snarls
 sneak
 sneer
+snick
 snide
 sniff
 sniffed
@@ -5340,10 +5446,12 @@ sown
 soy
 soya
 spa
+spas
 spay
 spear
 spears
 spec
+speck
 specs
 sped
 speed
@@ -5353,9 +5461,18 @@ spend
 spender
 spenders
 spends
+spew
+spews
 spice
+spices
+spies
+spike
+spikes
 spire
 spirea
+spit
+spite
+spits
 splay
 spoil
 spoils
@@ -5448,6 +5565,8 @@ steed
 steeds
 steel
 steely
+steep
+steeps
 steer
 steerage
 stellar
@@ -5567,6 +5686,9 @@ subareas
 submit
 subs
 subside
+such
+suck
+sucks
 sucre
 suction
 sudan
@@ -5589,6 +5711,10 @@ sultanas
 sultanate
 sultans
 sum
+summon
+sumo
+sump
+sums
 sun
 sunday
 sundry
@@ -5634,10 +5760,13 @@ sweeps
 sweet
 sweeter
 sweets
+swept
 swift
 swill
 swim
 swine
+swipe
+swipes
 swoon
 sword
 swords
@@ -5889,6 +6018,9 @@ tibia
 tibial
 tic
 tick
+ticket
+tickets
+ticks
 tics
 tide
 tided
@@ -5927,6 +6059,7 @@ tinted
 tints
 tiny
 tip
+tips
 tirade
 tire
 tiro
@@ -6123,6 +6256,7 @@ try
 tryst
 tsar
 tsars
+tsetse
 tub
 tuba
 tubal
@@ -6168,6 +6302,7 @@ tutelage
 tutor
 tutors
 tuts
+tutti
 twain
 twas
 twee
@@ -6197,6 +6332,7 @@ ulster
 ultra
 ultras
 um
+ump
 unaware
 unawares
 unbar
@@ -6232,8 +6368,11 @@ untrue
 unwed
 unwise
 up
+upon
 uproar
 ups
+upset
+uptick
 ur
 urban
 urbane
@@ -6267,6 +6406,7 @@ uteri
 uterus
 utter
 utters
+vain
 vale
 value
 valuer
@@ -6277,6 +6417,9 @@ veal
 veer
 veg
 veggie
+veil
+vein
+veins
 vela
 vend
 vent
@@ -6290,6 +6433,7 @@ vet
 veto
 vex
 via
+vial
 vibe
 video
 vie
@@ -6297,7 +6441,14 @@ vied
 vier
 vies
 vigor
+vile
+viol
+viola
+violas
 vixen
+void
+voided
+voile
 vol
 vole
 wack
@@ -6417,11 +6568,13 @@ wen
 wend
 wends
 went
+wept
 were
 west
 wet
 wetly
 wets
+wettest
 wetting
 what
 wheat
@@ -6438,6 +6591,8 @@ whod
 whos
 why
 wick
+wicket
+wickets
 wicks
 wide
 widen
@@ -6476,6 +6631,8 @@ wink
 wins
 winter
 wintry
+wipe
+wipes
 wire
 wired
 wires
@@ -6485,8 +6642,13 @@ wised
 wisely
 wiser
 wises
+wish
+wisp
+wisps
 wist
 wit
+witch
+witches
 with
 withe
 wits
