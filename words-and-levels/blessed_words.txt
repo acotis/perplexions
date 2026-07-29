@@ -457,15 +457,20 @@ bardic
 bards
 bare
 bared
+barely
 barer
 bares
 barest
+barley
 barn
+barney
+barneys
 barns
 baron
 baroness
 baronet
 barons
+barony
 barre
 barred
 barren
@@ -476,6 +481,7 @@ basal
 basalt
 base
 based
+basely
 baser
 bases
 basest
@@ -593,6 +599,7 @@ belle
 belled
 belles
 bells
+belly
 belong
 below
 belt
@@ -739,8 +746,13 @@ bolts
 bolus
 bond
 bone
+boner
+boners
+bones
+boney
 bong
 bongo
+bony
 boo
 boob
 boobs
@@ -767,6 +779,7 @@ borer
 borers
 bores
 born
+borne
 boron
 boss
 bosses
@@ -803,6 +816,8 @@ brass
 brat
 brats
 brawn
+bray
+brays
 bread
 breads
 breadth
@@ -1785,6 +1800,7 @@ ear
 eared
 earl
 earls
+early
 earn
 earned
 earner
@@ -1811,6 +1827,7 @@ eats
 eaves
 ebb
 ebbs
+ebony
 echo
 echos
 ecru
@@ -3139,6 +3156,7 @@ leans
 leap
 leapt
 learn
+learns
 leas
 lease
 leased
@@ -3267,6 +3285,7 @@ loam
 loan
 loaned
 loaner
+loaners
 loans
 loath
 loathe
@@ -3308,7 +3327,9 @@ lol
 loll
 lolled
 lone
+lonely
 loner
+loners
 long
 longed
 longer
@@ -3665,6 +3686,7 @@ near
 neared
 nearer
 nearest
+nearly
 nears
 neat
 neater
@@ -4557,6 +4579,7 @@ relabel
 relate
 related
 relates
+relay
 release
 relent
 relents
@@ -4565,6 +4588,7 @@ relics
 relit
 reload
 reloads
+rely
 rem
 remap
 remote
@@ -5115,6 +5139,7 @@ senior
 senor
 senora
 sens
+sense
 sent
 sentry
 septa
@@ -5423,6 +5448,7 @@ soared
 soars
 sob
 sober
+soberly
 sobers
 sobs
 soc
@@ -5448,6 +5474,7 @@ solder
 soldered
 sole
 soled
+solely
 soles
 soli
 solid
