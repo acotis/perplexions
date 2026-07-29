@@ -1237,7 +1237,6 @@ airworthy
 airy
 aisle
 aisles
-aitch
 ajar
 akimbo
 akin
@@ -40041,7 +40040,6 @@ positivists
 positron
 positrons
 posits
-poss
 posse
 posses
 possess
@@ -49545,7 +49543,6 @@ sobers
 sobriety
 sobriquet
 sobs
-soc
 soccer
 sociability
 sociable

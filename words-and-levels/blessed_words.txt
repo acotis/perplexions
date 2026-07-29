@@ -254,6 +254,7 @@ apron
 aprons
 apse
 apt
+apter
 arable
 arc
 arcade
@@ -318,6 +319,7 @@ ass
 assent
 asset
 asshole
+associate
 assuage
 aster
 asters
@@ -555,6 +557,7 @@ bedroom
 beds
 bedsit
 bedsits
+bedsores
 bedstead
 bee
 beech
@@ -650,6 +653,9 @@ bird
 birds
 bit
 bite
+biter
+biters
+bites
 bits
 bitten
 bitty
@@ -753,7 +759,13 @@ bootees
 boots
 booty
 bop
+bops
+border
 bore
+bored
+borer
+borers
+bores
 born
 boron
 boss
@@ -988,8 +1000,11 @@ cartoon
 carts
 case
 cased
+cases
 cash
+cashes
 cask
+cassia
 cast
 caste
 caster
@@ -1000,6 +1015,7 @@ caters
 cation
 cats
 cause
+causes
 cave
 caved
 caviar
@@ -1008,6 +1024,8 @@ cavil
 caw
 caws
 cay
+cease
+ceases
 cedar
 cedars
 cede
@@ -1024,15 +1042,21 @@ cent
 cents
 chaff
 chair
+chaise
+chaises
 chaos
+chase
+chases
 chasm
 chasms
 chat
 chats
+cheat
 check
 cheek
 cheer
 chemo
+chess
 chest
 chew
 chews
@@ -1046,6 +1070,7 @@ choir
 choler
 chop
 chore
+chose
 chow
 chows
 chrome
@@ -1482,6 +1507,8 @@ defeat
 defeats
 define
 degas
+deist
+deists
 deli
 dell
 dells
@@ -1566,6 +1593,8 @@ dins
 dint
 diode
 dip
+dips
+dipso
 dire
 dirge
 dirt
@@ -1684,12 +1713,14 @@ dream
 dreams
 drear
 dreary
+dress
 drew
 drier
 driers
 dries
 drill
 drip
+drips
 droll
 drone
 droned
@@ -1908,6 +1939,7 @@ errs
 erst
 eschew
 esoteric
+espied
 esprit
 espy
 essay
@@ -2568,6 +2600,8 @@ haft
 hag
 haggis
 hags
+hah
+haha
 hair
 hairs
 halal
@@ -2614,6 +2648,8 @@ harp
 hart
 harts
 has
+hash
+hashes
 hasnt
 hassle
 hassled
@@ -2731,6 +2767,7 @@ hires
 his
 hiss
 hisses
+hist
 hit
 hits
 hm
@@ -2820,6 +2857,7 @@ hue
 hues
 hug
 hugs
+huh
 hula
 hull
 hulled
@@ -2832,6 +2870,7 @@ hurled
 hurt
 husband
 husbands
+hush
 hussar
 hut
 hutch
@@ -3615,6 +3654,7 @@ natural
 naturals
 nature
 natures
+nausea
 nave
 navel
 navy
@@ -3992,6 +4032,7 @@ pasta
 pastas
 pat
 pate
+pates
 path
 patio
 patrol
@@ -4117,6 +4158,7 @@ pipe
 piper
 pis
 piss
+pisser
 piste
 pistes
 pistol
@@ -4214,8 +4256,10 @@ ports
 pose
 posed
 poser
+poses
 posit
 posits
+posse
 post
 posted
 poster
@@ -4246,6 +4290,7 @@ prep
 pres
 preset
 presets
+preside
 presort
 presorted
 press
@@ -4271,6 +4316,8 @@ priors
 prix
 pro
 prob
+probe
+probed
 proctor
 proctored
 prod
@@ -4396,6 +4443,7 @@ rant
 ranter
 rants
 rap
+raps
 rapt
 rare
 rarer
@@ -4472,6 +4520,7 @@ redone
 redraw
 redrawn
 redraws
+redress
 reds
 reduce
 reed
@@ -4569,6 +4618,7 @@ resolute
 resort
 resorted
 resorts
+respire
 rest
 restart
 restate
@@ -4587,6 +4637,8 @@ retake
 retch
 retell
 retells
+retire
+retired
 retold
 retook
 retool
@@ -4679,6 +4731,7 @@ ripe
 ripen
 ripens
 riper
+ripest
 rips
 rise
 risen
@@ -4686,6 +4739,7 @@ riser
 risers
 rises
 rite
+rites
 road
 roads
 roam
@@ -4823,9 +4877,11 @@ sabot
 sabre
 sabres
 sac
+sachet
 sack
 sacra
 sacred
+sacs
 sad
 sadhu
 sadhus
@@ -5061,6 +5117,7 @@ senora
 sens
 sent
 sentry
+septa
 septet
 septic
 sera
@@ -5104,6 +5161,7 @@ shade
 shads
 shag
 shags
+shah
 shale
 shall
 shalt
@@ -5172,10 +5230,12 @@ shrub
 shtick
 shuck
 shucks
+shush
 shut
 shuts
 shy
 shyer
+sib
 sic
 sick
 side
@@ -5446,7 +5506,12 @@ sown
 soy
 soya
 spa
+spar
 spas
+spat
+spate
+spates
+spats
 spay
 spear
 spears
@@ -5465,6 +5530,8 @@ spew
 spews
 spice
 spices
+spider
+spied
 spies
 spike
 spikes
@@ -5482,6 +5549,7 @@ spooked
 spoon
 spoor
 spore
+spores
 sport
 spot
 spots
@@ -5653,6 +5721,7 @@ streaked
 street
 strep
 strewn
+stride
 strife
 strip
 strobe
@@ -5796,6 +5865,7 @@ tabs
 tack
 tacks
 taco
+tacos
 tad
 tag
 tagged
@@ -5848,6 +5918,9 @@ tap
 tape
 taped
 taper
+tapers
+tapes
+taps
 tar
 tarantula
 tarantulas
@@ -5944,10 +6017,12 @@ tenth
 tenths
 tents
 tenure
+tepid
 term
 tern
 terrace
 terrify
+terror
 terse
 test
 testable
@@ -6062,6 +6137,7 @@ tip
 tips
 tirade
 tire
+tired
 tiro
 tiros
 tit
@@ -6230,6 +6306,7 @@ tress
 trestle
 trestles
 trial
+trier
 trig
 trio
 trip
@@ -6632,6 +6709,8 @@ wins
 winter
 wintry
 wipe
+wiper
+wipers
 wipes
 wire
 wired
@@ -6680,6 +6759,7 @@ world
 worm
 worn
 worry
+worse
 worst
 wort
 wound
@@ -6691,6 +6771,14 @@ wreck
 wreckage
 wren
 wrest
+wrist
+wrists
+writ
+write
+writer
+writers
+writes
+writs
 wrote
 wry
 wuss
