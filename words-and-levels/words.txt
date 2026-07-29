@@ -14724,7 +14724,6 @@ didgeridoo
 didgeridoos
 didnt
 dido
-didst
 die
 died
 diehard
@@ -47883,7 +47882,6 @@ shepherds
 sherbert
 sherbet
 sherbets
-sherd
 sherds
 sheriff
 sheriffs

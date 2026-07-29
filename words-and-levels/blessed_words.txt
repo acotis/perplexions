@@ -8,7 +8,9 @@ abashed
 abate
 abated
 abates
+abbey
 abbot
+abeam
 abed
 abet
 abets
@@ -66,7 +68,10 @@ actor
 acts
 ad
 add
+added
+addend
 adder
+addle
 adds
 adept
 adepts
@@ -115,9 +120,11 @@ ahead
 ahoy
 aid
 aide
+aided
 aides
 aids
 ail
+ailed
 ails
 aim
 aims
@@ -190,6 +197,8 @@ ambler
 amen
 amend
 amends
+amine
+amir
 amiss
 ammo
 amp
@@ -199,7 +208,9 @@ analog
 analogs
 anarchy
 and
+andante
 ands
+anemia
 anew
 angel
 anger
@@ -212,10 +223,13 @@ angostura
 angry
 angst
 ani
+anime
+anise
 ankle
 annal
 anneal
 annealed
+annelid
 annex
 annual
 annul
@@ -281,6 +295,7 @@ arisen
 arises
 ark
 arm
+army
 arose
 arouse
 aroused
@@ -387,6 +402,7 @@ baa
 baas
 babe
 babel
+baby
 back
 backed
 backs
@@ -452,6 +468,8 @@ banter
 bap
 bar
 barb
+barber
+barbie
 bard
 bardic
 bards
@@ -462,6 +480,8 @@ barer
 bares
 barest
 barley
+barmen
+barmy
 barn
 barney
 barneys
@@ -806,6 +826,7 @@ brags
 braid
 braids
 brain
+brainy
 bran
 brand
 brandies
@@ -844,7 +865,9 @@ brides
 brie
 brig
 brigand
+brim
 brine
+briny
 bro
 broad
 broadest
@@ -942,6 +965,7 @@ buys
 by
 bye
 byes
+byre
 byte
 bytes
 cab
@@ -1040,10 +1064,12 @@ caw
 caws
 cay
 cease
+ceased
 ceases
 cedar
 cedars
 cede
+ceded
 ceder
 cedes
 ceding
@@ -1118,9 +1144,14 @@ clause
 claw
 claws
 clay
+clean
+cleaned
+cleans
+cleanse
 clear
 cleared
 cleat
+cleats
 clef
 cleft
 cleric
@@ -1128,6 +1159,7 @@ clerk
 click
 clicked
 client
+clients
 cliff
 cliffs
 clip
@@ -1441,6 +1473,7 @@ damns
 dams
 dance
 dances
+dandies
 dane
 danes
 dang
@@ -1475,6 +1508,8 @@ dawns
 day
 days
 dead
+deaden
+deadline
 deadly
 deaf
 deal
@@ -1508,6 +1543,9 @@ debuts
 decay
 deck
 decks
+decline
+declined
+declines
 decry
 deed
 deeds
@@ -1525,6 +1563,7 @@ degas
 deist
 deists
 deli
+delis
 dell
 dells
 delta
@@ -1536,9 +1575,12 @@ demons
 demos
 den
 dengue
+denied
 denies
 dens
+dense
 dent
+dented
 dents
 deny
 deport
@@ -1558,6 +1600,7 @@ despoil
 despot
 despotic
 despots
+detail
 deter
 deters
 detest
@@ -1577,6 +1620,7 @@ dices
 dick
 dicks
 did
+didnt
 dido
 die
 died
@@ -1589,6 +1633,7 @@ digit
 digital
 digs
 dill
+dills
 dim
 dime
 dimer
@@ -1596,6 +1641,7 @@ din
 dinar
 dinars
 dine
+dined
 diner
 diners
 dines
@@ -1622,6 +1668,7 @@ dish
 disk
 dispensary
 diss
+distend
 disuse
 ditsy
 diva
@@ -1734,6 +1781,7 @@ drier
 driers
 dries
 drill
+drills
 drip
 drips
 droll
@@ -1831,6 +1879,7 @@ ebony
 echo
 echos
 ecru
+eddies
 edema
 edge
 edged
@@ -1902,6 +1951,7 @@ enacts
 enclose
 end
 endear
+ended
 enders
 endless
 endorse
@@ -1915,6 +1965,8 @@ enrage
 ens
 ensue
 ensure
+entail
+entailed
 enter
 enteral
 enters
@@ -2316,6 +2368,7 @@ gallant
 gallants
 galleon
 galleons
+galley
 gallon
 gallons
 galls
@@ -2734,6 +2787,7 @@ heels
 heh
 hehe
 heir
+heirs
 heist
 held
 hell
@@ -2748,6 +2802,7 @@ heralds
 herb
 herbal
 herbals
+herd
 here
 herein
 hereof
@@ -2878,12 +2933,14 @@ huh
 hula
 hull
 hulled
+hulls
 hum
 humor
 hung
 hunt
 hurl
 hurled
+hurls
 hurt
 husband
 husbands
@@ -2897,6 +2954,7 @@ hymns
 hype
 hyper
 i
+ibex
 ice
 iced
 ices
@@ -2913,6 +2971,7 @@ ides
 idle
 idled
 idler
+idles
 idol
 idols
 ids
@@ -2922,11 +2981,14 @@ igloo
 ilea
 ilk
 ill
+ills
 im
 image
 imaged
+imam
 imbue
 in
+inane
 inch
 inches
 indie
@@ -2944,12 +3006,14 @@ inhibit
 ink
 inlet
 inn
+innate
 inns
 inrush
 ins
 insert
 inset
 inshore
+instead
 insult
 insure
 insurer
@@ -2993,6 +3057,7 @@ item
 items
 its
 ive
+josh
 juke
 jut
 jute
@@ -3140,6 +3205,7 @@ lea
 leach
 lead
 leaded
+leaden
 leader
 leads
 leaf
@@ -3184,6 +3250,7 @@ left
 lefty
 leg
 legal
+legally
 legals
 legate
 legato
@@ -3193,6 +3260,7 @@ lei
 leis
 lemon
 lend
+lends
 lens
 lenses
 lent
@@ -3219,20 +3287,25 @@ leveled
 levels
 lever
 lewd
+lexis
 liar
 lice
+license
+licensed
 lich
 lick
 licked
 licker
 licks
 lid
+lidded
 lido
 lids
 lie
 lied
 liege
 lien
+liens
 lies
 lieu
 life
@@ -3244,9 +3317,13 @@ liming
 limn
 limo
 limos
+linden
 line
 lineage
 linear
+lined
+linen
+linens
 liner
 liners
 lines
@@ -3461,6 +3538,8 @@ map
 mar
 march
 mare
+maria
+marina
 marl
 marrow
 marry
@@ -3484,6 +3563,7 @@ matzo
 matzoh
 maw
 may
+maybe
 me
 mead
 meads
@@ -3492,6 +3572,7 @@ meal
 mean
 meaner
 means
+meany
 meat
 meats
 meaty
@@ -3534,6 +3615,7 @@ miler
 milk
 milky
 mils
+mime
 mine
 miner
 mines
@@ -3545,7 +3627,9 @@ minted
 minter
 mints
 minty
+minx
 mire
+miry
 miser
 misers
 miss
@@ -3557,6 +3641,7 @@ mites
 mitt
 mitts
 mix
+mixer
 mixes
 moan
 moans
@@ -3638,6 +3723,7 @@ mute
 muzzle
 muzzles
 my
+myna
 myst
 myth
 naan
@@ -3654,11 +3740,13 @@ nah
 naiad
 naif
 nail
+nailed
 naive
 naked
 name
 named
 nan
+nans
 nap
 nape
 narc
@@ -3683,6 +3771,7 @@ nay
 nays
 neap
 near
+nearby
 neared
 nearer
 nearest
@@ -3726,6 +3815,7 @@ nib
 nibs
 nice
 nicer
+nicest
 niche
 niches
 nick
@@ -3796,6 +3886,7 @@ noting
 now
 nu
 nub
+nubby
 nubs
 nuclear
 nude
@@ -4449,6 +4540,7 @@ raked
 ram
 ramble
 rambled
+ramie
 ramp
 rams
 ran
@@ -4590,7 +4682,9 @@ reload
 reloads
 rely
 rem
+remain
 remap
+remix
 remote
 renal
 rend
@@ -4737,6 +4831,8 @@ rile
 riled
 riles
 riling
+rill
+rills
 rim
 rime
 rind
@@ -4888,6 +4984,7 @@ ruse
 ruses
 rush
 rushed
+rusher
 rust
 rusted
 rut
@@ -4907,6 +5004,8 @@ sacra
 sacred
 sacs
 sad
+sadden
+saddle
 sadhu
 sadhus
 safe
@@ -4921,6 +5020,7 @@ sago
 sags
 said
 sail
+sailed
 sails
 saint
 sake
@@ -5135,7 +5235,9 @@ send
 sender
 senders
 sends
+senile
 senior
+senna
 senor
 senora
 sens
@@ -5250,6 +5352,7 @@ should
 shout
 show
 shows
+shrill
 shrine
 shrub
 shtick
@@ -5268,7 +5371,10 @@ sidebar
 sided
 sidemen
 sides
+sidle
+sidled
 siege
+sienna
 sierra
 sift
 sifter
@@ -5276,6 +5382,7 @@ sigh
 sight
 sign
 signet
+silent
 silk
 silky
 silo
@@ -5393,6 +5500,7 @@ slug
 slugs
 slur
 slurp
+slurs
 slush
 slut
 sluts
@@ -5603,6 +5711,7 @@ stabler
 stables
 stabs
 stack
+stadia
 staff
 staffs
 stag
@@ -5650,6 +5759,7 @@ status
 stay
 stays
 stead
+steadied
 steady
 steak
 steal
@@ -5898,6 +6008,7 @@ tag
 tagged
 tags
 tail
+tailed
 tailor
 taint
 tainted
@@ -5939,6 +6050,7 @@ tank
 tanked
 tanker
 tanks
+tanned
 tans
 tansy
 tap
@@ -6029,6 +6141,7 @@ telly
 ten
 tenable
 tend
+tended
 tends
 tenet
 tenets
@@ -6036,9 +6149,11 @@ tenor
 tenors
 tens
 tense
+tensed
 tensely
 tenser
 tenses
+tensile
 tent
 tenth
 tenths
@@ -6481,6 +6596,7 @@ ur
 urban
 urbane
 urea
+uremia
 urethane
 urge
 urged
@@ -6716,7 +6832,9 @@ wig
 wild
 wilds
 wile
+wiles
 will
+wills
 wilt
 wilted
 wilts
