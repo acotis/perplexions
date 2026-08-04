@@ -1837,7 +1837,6 @@ anemometer
 anemometers
 anemone
 anemones
-anent
 anesthesia
 anesthesiologist
 anesthesiologists
@@ -30559,7 +30558,6 @@ limpid
 limping
 limply
 limps
-linage
 linchpin
 linden
 lindens
@@ -31649,7 +31647,6 @@ mammon
 mammoth
 mammoths
 mammy
-mams
 man
 mana
 manacled
@@ -35057,7 +35054,6 @@ nisei
 nit
 nite
 niter
-nites
 nitpick
 nitpicker
 nitpickers
@@ -56896,7 +56892,6 @@ unions
 unique
 uniquely
 uniqueness
-unis
 unisex
 unison
 unit

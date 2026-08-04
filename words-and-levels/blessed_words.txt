@@ -56,6 +56,7 @@ achoo
 achy
 acid
 acids
+acme
 acne
 acorn
 acorns
@@ -88,6 +89,7 @@ adroit
 ads
 adsorb
 adult
+adults
 aegis
 aerate
 aerated
@@ -157,6 +159,8 @@ algal
 algebra
 algebras
 alibi
+alien
+aline
 alit
 alive
 all
@@ -207,6 +211,7 @@ anal
 analog
 analogs
 anarchy
+anatomy
 and
 andante
 ands
@@ -247,6 +252,7 @@ anti
 antis
 antler
 antlers
+antonym
 ants
 antsy
 anus
@@ -411,6 +417,7 @@ backwards
 bad
 baddie
 bade
+badge
 badly
 bae
 baffle
@@ -553,6 +560,7 @@ be
 beach
 beacon
 bead
+beaded
 beadle
 beadles
 beads
@@ -561,6 +569,7 @@ beagle
 beagles
 beam
 bean
+beanie
 beans
 bear
 beard
@@ -572,6 +581,7 @@ beat
 beaten
 beater
 beaters
+beating
 beats
 beau
 beaus
@@ -604,6 +614,7 @@ beget
 begged
 begot
 begs
+beguile
 begum
 behalf
 behead
@@ -611,6 +622,7 @@ beheld
 behest
 behold
 beige
+being
 belated
 belay
 belch
@@ -625,6 +637,7 @@ below
 belt
 belted
 belts
+beluga
 bench
 bend
 bends
@@ -669,6 +682,7 @@ biff
 big
 biggie
 bigot
+bile
 bin
 bind
 bing
@@ -687,6 +701,7 @@ bits
 bitten
 bitty
 blade
+bladed
 blades
 blag
 blah
@@ -705,6 +720,7 @@ bleats
 bled
 bleep
 blend
+blended
 bless
 blessed
 blind
@@ -725,7 +741,9 @@ blouse
 blow
 blows
 blue
+blued
 bluer
+bluet
 blur
 blurb
 blush
@@ -898,6 +916,8 @@ brute
 brutes
 bub
 bud
+budge
+budged
 buds
 bug
 built
@@ -951,6 +971,7 @@ buss
 bussed
 bust
 busted
+bustle
 busy
 but
 butane
@@ -1063,6 +1084,8 @@ cavil
 caw
 caws
 cay
+cayman
+cays
 cease
 ceased
 ceases
@@ -1233,7 +1256,9 @@ comas
 comb
 come
 comer
+comes
 comet
+comfy
 comic
 coming
 comp
@@ -1244,6 +1269,7 @@ coney
 conger
 conic
 cons
+consent
 console
 context
 cony
@@ -1300,7 +1326,10 @@ cosine
 cost
 costed
 costs
+cosy
 cot
+cote
+cotes
 cots
 could
 count
@@ -1453,6 +1482,7 @@ cutter
 cutters
 cyan
 cynic
+cyst
 dab
 dabs
 dace
@@ -1477,6 +1507,7 @@ dandies
 dane
 danes
 dang
+danged
 dangle
 dangles
 dank
@@ -1502,12 +1533,15 @@ dater
 daters
 dates
 daub
+daubed
 dauber
 dawn
 dawns
 day
 days
 dead
+deadbeat
+deadbeats
 deaden
 deadline
 deadly
@@ -1515,6 +1549,7 @@ deaf
 deal
 dealer
 dealers
+dealing
 deals
 dealt
 dean
@@ -1533,11 +1568,13 @@ debater
 debaters
 debates
 debit
+debits
 debris
 debt
 debtor
 debtors
 debts
+debug
 debut
 debuts
 decay
@@ -1575,6 +1612,8 @@ demons
 demos
 den
 dengue
+denial
+denials
 denied
 denies
 dens
@@ -1813,10 +1852,15 @@ ducat
 duck
 duct
 dud
+dude
 duds
 due
 duel
+dueling
+duels
 dues
+duet
+duets
 dug
 duh
 dull
@@ -1832,6 +1876,8 @@ dunno
 duns
 duo
 duos
+dust
+dusting
 dweeb
 dwell
 dye
@@ -1865,12 +1911,14 @@ eased
 easel
 easels
 eases
+easing
 east
 easy
 eat
 eaten
 eater
 eaters
+eating
 eats
 eaves
 ebb
@@ -1892,6 +1940,7 @@ eels
 eerie
 eff
 effing
+egad
 egg
 egged
 eggs
@@ -1929,6 +1978,8 @@ elodea
 elope
 elos
 else
+elude
+eluded
 elves
 em
 embargo
@@ -1956,6 +2007,7 @@ enders
 endless
 endorse
 ends
+endued
 endure
 enema
 enemas
@@ -1964,6 +2016,7 @@ engram
 enrage
 ens
 ensue
+ensued
 ensure
 entail
 entailed
@@ -2357,7 +2410,10 @@ gaff
 gag
 gaiety
 gain
+gained
+gains
 gait
+gaits
 gal
 gala
 galas
@@ -2423,7 +2479,11 @@ gem
 gems
 gen
 gene
+genes
+genial
 genie
+genital
+genius
 genocide
 genocides
 genomics
@@ -2431,6 +2491,7 @@ genre
 gens
 gent
 gents
+genus
 geode
 geodes
 germ
@@ -2520,6 +2581,7 @@ gnat
 gnats
 gnome
 gnu
+gnus
 go
 goad
 goads
@@ -2643,14 +2705,19 @@ grudge
 grunt
 grunts
 guard
+guest
 guide
 guile
 guilt
+guinea
+guineas
+guise
 gulp
 gulps
 gum
 gums
 gun
+guns
 guru
 gush
 gushes
@@ -3014,6 +3081,7 @@ insert
 inset
 inshore
 instead
+insula
 insult
 insure
 insurer
@@ -3042,6 +3110,7 @@ ironed
 irons
 irony
 is
+island
 isle
 isles
 islet
@@ -3113,6 +3182,7 @@ label
 labeled
 labelled
 labels
+labia
 labor
 labors
 labs
@@ -3123,6 +3193,7 @@ lack
 lacy
 lad
 lade
+laded
 laden
 lades
 ladle
@@ -3151,6 +3222,7 @@ lance
 lances
 lancet
 land
+landed
 landless
 lands
 lane
@@ -3173,6 +3245,7 @@ lass
 lasso
 last
 lasted
+lasting
 lasts
 lat
 latch
@@ -3192,6 +3265,7 @@ latte
 latter
 lattes
 laud
+lauded
 laurel
 lava
 lave
@@ -3210,6 +3284,8 @@ leader
 leads
 leaf
 leafy
+league
+leagues
 leak
 leakage
 leakages
@@ -3231,6 +3307,7 @@ leases
 leash
 leashed
 leashes
+leasing
 least
 leather
 leathers
@@ -3498,6 +3575,7 @@ lumen
 lunar
 lung
 lunge
+lunged
 lure
 lures
 lurid
@@ -3506,12 +3584,14 @@ lusher
 lust
 lusted
 luster
+lusting
 lusts
 lusty
 lute
 lutes
 lye
 ma
+mac
 mace
 mad
 made
@@ -3523,17 +3603,25 @@ main
 mains
 male
 mama
+mamas
 mame
 man
 mana
 mane
+manes
 manga
 mange
 manger
 mango
 mangy
 manor
+mans
+manse
+manta
+mantas
 mantel
+mantes
+many
 map
 mar
 march
@@ -3545,6 +3633,7 @@ marrow
 marry
 mart
 mas
+mascot
 mason
 mass
 mast
@@ -3553,6 +3642,7 @@ match
 mate
 mated
 mater
+mates
 math
 mating
 mats
@@ -3564,6 +3654,7 @@ matzoh
 maw
 may
 maybe
+mayo
 me
 mead
 meads
@@ -3572,6 +3663,7 @@ meal
 mean
 meaner
 means
+meant
 meany
 meat
 meats
@@ -3584,6 +3676,7 @@ mega
 melee
 melt
 memo
+memos
 men
 mend
 mends
@@ -3694,6 +3787,7 @@ most
 mot
 mote
 motel
+motes
 motet
 moth
 mother
@@ -3745,6 +3839,7 @@ naive
 naked
 name
 named
+names
 nan
 nans
 nap
@@ -3891,6 +3986,8 @@ nubs
 nuclear
 nude
 nudes
+nudge
+nudged
 null
 numb
 nun
@@ -5038,6 +5135,8 @@ salsa
 salt
 salted
 salter
+saltine
+salting
 salts
 salty
 salute
@@ -5089,6 +5188,7 @@ sated
 sateen
 sates
 satin
+sating
 satiny
 sauce
 sauced
@@ -5176,7 +5276,9 @@ sealer
 sealers
 seals
 seam
+seaman
 seams
+seamy
 sear
 seared
 sears
@@ -5496,8 +5598,10 @@ slots
 slotted
 slow
 slows
+sludge
 slug
 slugs
+slung
 slur
 slurp
 slurs
@@ -5546,6 +5650,7 @@ snouts
 snow
 snowed
 snub
+snug
 so
 soak
 soaked
@@ -5721,6 +5826,7 @@ stages
 stags
 staid
 stain
+stained
 stair
 stake
 staked
@@ -5765,6 +5871,7 @@ steak
 steal
 steals
 stealth
+steam
 sted
 steed
 steeds
@@ -5774,6 +5881,7 @@ steep
 steeps
 steer
 steerage
+stein
 stellar
 stem
 stems
@@ -5889,6 +5997,7 @@ stylus
 sub
 subarea
 subareas
+sublet
 submit
 subs
 subside
@@ -5908,6 +6017,7 @@ suggest
 suggestion
 suggestions
 suggests
+suing
 suit
 suite
 sullen
@@ -5925,6 +6035,7 @@ sun
 sunday
 sundry
 sunflower
+sung
 sunrise
 suns
 sup
@@ -5979,6 +6090,7 @@ swords
 swore
 sworn
 syn
+sync
 syphon
 syrup
 syrups
@@ -6126,6 +6238,8 @@ tee
 teed
 teem
 teen
+teenage
+teenaged
 teens
 teensy
 teeny
@@ -6562,6 +6676,7 @@ undies
 undo
 undone
 unearned
+unease
 unfit
 unhurt
 uni
@@ -6579,6 +6694,7 @@ unreal
 unrest
 unripe
 unseat
+unset
 unsure
 untie
 until
@@ -6621,6 +6737,7 @@ users
 uses
 usher
 ushers
+using
 usual
 uteri
 uterus
