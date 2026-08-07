@@ -38237,7 +38237,6 @@ pepperoni
 peppers
 peppery
 peppy
-peps
 pepsin
 peptic
 peptide
@@ -41538,7 +41537,6 @@ pseudonyms
 pseudoscience
 pshaw
 psi
-psis
 psittacosis
 psoriasis
 psst
@@ -52392,7 +52390,6 @@ supervisors
 supervisory
 superwoman
 supine
-supped
 supper
 suppers
 suppertime
@@ -60358,7 +60355,6 @@ yuck
 yucky
 yuk
 yukky
-yule
 yuletide
 yum
 yummy

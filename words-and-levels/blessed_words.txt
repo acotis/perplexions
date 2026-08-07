@@ -676,6 +676,7 @@ bid
 bide
 bides
 bidet
+bidets
 bids
 bier
 biff
@@ -690,6 +691,8 @@ binge
 bins
 bio
 bios
+biped
+bipeds
 bird
 birds
 bit
@@ -725,6 +728,10 @@ bless
 blessed
 blind
 blini
+blip
+blips
+blister
+blisters
 bloat
 bloated
 bloc
@@ -780,6 +787,7 @@ boll
 bolls
 bologna
 bolt
+bolted
 bolts
 bolus
 bond
@@ -828,6 +836,7 @@ bots
 bottle
 bouncy
 bout
+bouts
 bow
 bowl
 bows
@@ -995,6 +1004,7 @@ cable
 cabled
 cabs
 cad
+cadet
 cadre
 cafe
 cafes
@@ -1010,6 +1020,8 @@ calm
 calve
 cam
 came
+camp
+camped
 cams
 can
 canal
@@ -1028,6 +1040,8 @@ cans
 cant
 canto
 cap
+cape
+caped
 capo
 car
 carat
@@ -1154,6 +1168,7 @@ cirrus
 cis
 cit
 cite
+cited
 cites
 clad
 clan
@@ -1186,6 +1201,7 @@ clients
 cliff
 cliffs
 clip
+clips
 cloak
 clod
 cloister
@@ -1500,6 +1516,8 @@ dam
 dame
 damn
 damns
+damp
+dampen
 dams
 dance
 dances
@@ -1577,6 +1595,7 @@ debts
 debug
 debut
 debuts
+decamp
 decay
 deck
 decks
@@ -1693,6 +1712,7 @@ dins
 dint
 diode
 dip
+dipper
 dips
 dipso
 dire
@@ -1999,6 +2019,7 @@ enablers
 enables
 enact
 enacts
+encamp
 enclose
 end
 endear
@@ -3410,7 +3431,11 @@ lint
 lion
 lions
 lip
+lipped
+lips
 lira
+lisle
+lisp
 list
 listed
 listen
@@ -3516,6 +3541,7 @@ lop
 lope
 loped
 lopes
+lopped
 lops
 lord
 lorded
@@ -3608,12 +3634,14 @@ mame
 man
 mana
 mane
+maned
 manes
 manga
 mange
 manger
 mango
 mangy
+manic
 manor
 mans
 manse
@@ -3669,6 +3697,7 @@ meat
 meats
 meaty
 med
+medic
 meed
 meet
 meg
@@ -3693,6 +3722,7 @@ mess
 messiah
 met
 meta
+mete
 meth
 mew
 mi
@@ -4071,6 +4101,7 @@ oldsters
 oleo
 oles
 omega
+omelet
 omen
 omens
 omit
@@ -4188,6 +4219,8 @@ oxide
 oy
 oyster
 pa
+pace
+paced
 pack
 pact
 pacts
@@ -4267,8 +4300,10 @@ peas
 peat
 peaty
 pec
+pecan
 peck
 pecs
+pectin
 pedicure
 pee
 peed
@@ -4355,6 +4390,9 @@ pig
 pike
 pikes
 pile
+piles
+pill
+pills
 pilot
 pilots
 pin
@@ -4372,6 +4410,7 @@ pisser
 piste
 pistes
 pistol
+pistols
 piston
 pit
 pita
@@ -4411,10 +4450,16 @@ plebes
 plebs
 plenty
 plenum
+plied
+pliers
+plies
 plod
 plodder
+plods
 plonk
 plonked
+plop
+plops
 plot
 plots
 plug
@@ -4549,18 +4594,26 @@ pry
 psi
 pub
 pubes
+pubis
 pubs
 puce
 puck
 pucks
 pug
 pule
+pulp
+pulped
+pulps
 pulse
 puma
 pumas
 pun
 puns
 puny
+pup
+pupil
+pupils
+pups
 pure
 puree
 purees
@@ -4728,6 +4781,8 @@ red
 redder
 redo
 redone
+redoubt
+redoubts
 redraw
 redrawn
 redraws
@@ -5319,6 +5374,7 @@ seers
 sees
 seesaw
 seethe
+segue
 seine
 seiner
 seiners
@@ -5466,6 +5522,7 @@ shuts
 shy
 shyer
 sib
+sibs
 sic
 sick
 side
@@ -5487,10 +5544,12 @@ signet
 silent
 silk
 silky
+sill
 silo
 silos
 silt
 silted
+silts
 silty
 sim
 simile
@@ -5507,6 +5566,8 @@ singed
 singer
 single
 sip
+sipped
+sipper
 sips
 sir
 sire
@@ -5516,6 +5577,7 @@ sirens
 sires
 sirs
 sis
+sister
 sit
 sitar
 site
@@ -5572,9 +5634,14 @@ sleeve
 slept
 slew
 slid
+slide
+slider
 slim
 slimy
 slip
+slipped
+slipper
+slips
 slit
 slits
 slob
@@ -5588,6 +5655,7 @@ slop
 slope
 sloped
 slopes
+slopped
 slops
 slosh
 sloshed
@@ -5691,6 +5759,8 @@ solely
 soles
 soli
 solid
+solider
+solids
 soling
 solo
 solos
@@ -5733,6 +5803,8 @@ soul
 soulful
 souls
 soup
+souped
+soups
 sour
 source
 soured
@@ -5772,15 +5844,20 @@ spice
 spices
 spider
 spied
+spiel
 spies
 spike
 spikes
+spill
+spilt
 spire
 spirea
 spit
 spite
 spits
 splay
+split
+splits
 spoil
 spoils
 spoilt
@@ -5940,6 +6017,8 @@ stoop
 stooped
 stoops
 stop
+stopped
+stopper
 stops
 storage
 store
@@ -6020,6 +6099,7 @@ suggests
 suing
 suit
 suite
+suits
 sullen
 sultan
 sultana
@@ -6043,6 +6123,9 @@ super
 superb
 supers
 supine
+supper
+suppers
+suppose
 supra
 sure
 surer
@@ -6148,6 +6231,7 @@ tamed
 tamer
 tames
 taming
+tamp
 tams
 tan
 tang
@@ -6252,6 +6336,7 @@ teller
 tells
 telltale
 telly
+temp
 ten
 tenable
 tend
@@ -6390,6 +6475,8 @@ tinted
 tints
 tiny
 tip
+tipped
+tipper
 tips
 tirade
 tire
@@ -6467,6 +6554,9 @@ toots
 tootsie
 top
 topi
+topped
+topper
+toppers
 tops
 tor
 torah
@@ -6657,6 +6747,7 @@ type
 typo
 udder
 ugh
+ugly
 uh
 ulcer
 ulna
@@ -6704,9 +6795,14 @@ unwed
 unwise
 up
 upon
+upped
+upper
+uppers
 uproar
 ups
 upset
+upsets
+upside
 uptick
 ur
 urban
