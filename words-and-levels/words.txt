@@ -45587,8 +45587,6 @@ romanticize
 romanticized
 romanticizing
 romantics
-romeo
-romeos
 romp
 romped
 romper
@@ -54248,7 +54246,6 @@ thwart
 thwarted
 thwarting
 thwarts
-thy
 thyme
 thymine
 thymus

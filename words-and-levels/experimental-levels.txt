@@ -33,10 +33,6 @@ suent
  greo
 clost
 ——————————
-  fs
-recane
-etalso
-——————————
   id
  knai
 agrar

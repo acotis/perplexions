@@ -26,6 +26,7 @@ able
 abler
 ablest
 abnormal
+aboard
 abode
 abort
 aborts
@@ -49,6 +50,7 @@ abutted
 ace
 aced
 aces
+acetate
 acetone
 ache
 aches
@@ -96,6 +98,7 @@ aerated
 aerie
 afar
 afire
+afoot
 afoul
 afro
 aft
@@ -112,6 +115,7 @@ aghast
 ago
 agony
 agora
+agrarian
 agree
 agreed
 agrees
@@ -124,6 +128,7 @@ aid
 aide
 aided
 aides
+aiding
 aids
 ail
 ailed
@@ -276,6 +281,8 @@ apse
 apt
 apter
 arable
+arbiter
+arbiters
 arc
 arcade
 arcades
@@ -318,6 +325,7 @@ arson
 art
 artless
 arts
+arty
 arum
 as
 ascot
@@ -332,6 +340,7 @@ aside
 asides
 asinine
 ask
+asks
 asleep
 asp
 aspen
@@ -504,6 +513,7 @@ barren
 barres
 barrow
 bars
+barter
 basal
 basalt
 base
@@ -515,7 +525,9 @@ basest
 bash
 bashed
 bashes
+basic
 basin
+basis
 bask
 bass
 basset
@@ -670,6 +682,7 @@ bey
 beyond
 bi
 bias
+biases
 bib
 bibs
 bid
@@ -757,6 +770,8 @@ blush
 blushed
 boa
 boar
+board
+boards
 boars
 boas
 boast
@@ -791,6 +806,7 @@ bolted
 bolts
 bolus
 bond
+bonds
 bone
 boner
 boners
@@ -844,6 +860,10 @@ box
 boy
 boys
 bra
+brace
+braces
+bract
+bracts
 brad
 brads
 brae
@@ -854,6 +874,7 @@ braid
 braids
 brain
 brainy
+braise
 bran
 brand
 brandies
@@ -999,6 +1020,7 @@ byre
 byte
 bytes
 cab
+cabaret
 cabin
 cable
 cabled
@@ -1016,6 +1038,7 @@ calk
 call
 calla
 caller
+calls
 calm
 calve
 cam
@@ -1034,6 +1057,7 @@ cane
 caned
 canes
 canoe
+canoes
 canon
 canopy
 cans
@@ -1082,7 +1106,10 @@ cassia
 cast
 caste
 caster
+castes
+casts
 cat
+catch
 cater
 caterer
 caters
@@ -1118,11 +1145,16 @@ cels
 census
 cent
 cents
+cerise
 chaff
 chair
 chaise
 chaises
 chaos
+char
+chars
+chart
+charts
 chase
 chases
 chasm
@@ -1178,6 +1210,7 @@ clans
 clap
 clarion
 clash
+class
 clause
 claw
 claws
@@ -1200,11 +1233,16 @@ client
 clients
 cliff
 cliffs
+clime
+climes
 clip
 clips
 cloak
 clod
+clog
+clogs
 cloister
+cloisters
 clop
 close
 closed
@@ -1212,15 +1250,18 @@ closer
 closes
 closest
 closet
+closets
 closure
 clot
 cloth
+cloths
 clots
 cloud
 clout
 clouts
 clove
 clown
+cloy
 clue
 clues
 cluster
@@ -1431,6 +1472,9 @@ crisp
 crisped
 crisper
 croak
+croft
+crofts
+croon
 crop
 crops
 crow
@@ -1506,6 +1550,7 @@ dad
 dado
 dados
 dads
+daft
 dag
 dags
 dairies
@@ -1717,6 +1762,7 @@ dips
 dipso
 dire
 dirge
+dirk
 dirt
 dis
 disabuse
@@ -1814,6 +1860,8 @@ douse
 dove
 down
 drab
+draft
+drafts
 drag
 dragon
 drags
@@ -1931,6 +1979,7 @@ eased
 easel
 easels
 eases
+easiest
 easing
 east
 easy
@@ -2069,12 +2118,15 @@ erect
 erects
 erg
 ergo
+ergot
+ergs
 erode
 erodes
 erotic
 err
 errant
 errata
+erratic
 erred
 erroneous
 error
@@ -2159,6 +2211,7 @@ famed
 fames
 fan
 fang
+fans
 far
 farce
 fare
@@ -2180,6 +2233,7 @@ fears
 feast
 feat
 feats
+fecal
 fed
 feds
 fee
@@ -2212,6 +2266,7 @@ fest
 fester
 festoon
 feta
+fetal
 fetid
 fetus
 few
@@ -2276,6 +2331,7 @@ flails
 flair
 flairs
 flan
+flans
 flap
 flash
 flat
@@ -2345,6 +2401,8 @@ fondle
 fondled
 font
 fonts
+food
+foods
 fool
 fools
 foot
@@ -2535,6 +2593,7 @@ giant
 gift
 gifts
 gig
+gigs
 gilt
 gin
 gins
@@ -2545,6 +2604,7 @@ girds
 girl
 girlie
 giro
+giros
 girt
 gist
 git
@@ -2582,8 +2642,12 @@ globe
 globes
 globs
 glom
+gloms
+gloom
+glories
 gloss
 glossed
+glosses
 glossy
 glottal
 glue
@@ -2650,6 +2714,7 @@ gored
 gores
 gorge
 gorged
+gorges
 gorse
 gory
 gosh
@@ -2701,15 +2766,21 @@ greys
 grid
 grieve
 grieved
+grim
+grime
+grimes
 grin
 grind
 grins
+grist
 grit
 groan
 grog
 groin
 groom
+grooms
 gross
+grosser
 grosses
 grossest
 grossly
@@ -3014,6 +3085,7 @@ hows
 hub
 hubs
 hue
+hued
 hues
 hug
 hugs
@@ -3066,6 +3138,7 @@ ids
 if
 ifs
 igloo
+igloos
 ilea
 ilk
 ill
@@ -3139,12 +3212,14 @@ ism
 isms
 isnt
 isomer
+isomers
 it
 itch
 itches
 itd
 item
 items
+iterate
 its
 ive
 josh
@@ -3153,6 +3228,7 @@ jut
 jute
 kale
 kana
+karat
 kart
 karts
 keel
@@ -3174,7 +3250,11 @@ key
 keynote
 keys
 keystone
+kid
 kin
+kind
+kinda
+king
 kip
 kips
 kit
@@ -3251,6 +3331,7 @@ lanes
 lank
 lap
 lapin
+larch
 lard
 large
 larger
@@ -3411,6 +3492,7 @@ lift
 lilac
 lilt
 lime
+limes
 liming
 limn
 limo
@@ -3547,8 +3629,10 @@ lord
 lorded
 lords
 lore
+loris
 lorn
 lorries
+lorry
 lose
 loser
 losers
@@ -3752,12 +3836,16 @@ mints
 minty
 minx
 mire
+mires
 miry
 miser
 misers
 miss
 misses
 mist
+mister
+misters
+mists
 misty
 mite
 mites
@@ -3781,10 +3869,13 @@ mode
 modes
 mods
 mog
+mogs
 mogul
 moi
 moil
+moire
 moist
+moister
 mole
 moles
 molest
@@ -3800,6 +3891,7 @@ moo
 mooch
 mood
 moor
+moors
 moos
 moose
 moot
@@ -3808,6 +3900,8 @@ moots
 mop
 mope
 more
+mores
+morose
 mosaic
 mosey
 mosh
@@ -3824,6 +3918,8 @@ mother
 moths
 motif
 motile
+motor
+motors
 mots
 mount
 mouth
@@ -4154,6 +4250,7 @@ ordinal
 ore
 ores
 organ
+orgies
 orgy
 oriel
 ornate
@@ -4161,6 +4258,7 @@ ornery
 orris
 ors
 osier
+osmosis
 ostler
 other
 others
@@ -4647,13 +4745,17 @@ quits
 rabbi
 rabbit
 rabid
+rabies
 race
 raced
 racer
 racers
 races
 racier
+racist
+racists
 rack
+racks
 racy
 rad
 radian
@@ -4677,6 +4779,7 @@ rags
 rah
 raid
 raider
+raiding
 raids
 rail
 rain
@@ -4685,8 +4788,11 @@ rainy
 raise
 raised
 raiser
+raisers
+raises
 rake
 raked
+rally
 ram
 ramble
 rambled
@@ -4721,6 +4827,7 @@ ratbag
 rate
 rated
 rater
+raters
 rates
 ratio
 ration
@@ -4738,6 +4845,7 @@ re
 reach
 reaches
 react
+reacts
 read
 reader
 readout
@@ -4746,6 +4854,7 @@ reads
 ready
 real
 realm
+realness
 ream
 reams
 reap
@@ -4766,11 +4875,17 @@ rebus
 rebut
 rec
 recant
+recast
+recasts
 recent
+recite
+recites
 recon
 record
 recoup
 recreate
+recta
+rectal
 recto
 rector
 rectum
@@ -4805,6 +4920,7 @@ refine
 refiner
 refinery
 refit
+refs
 refuse
 refute
 refutes
@@ -4836,8 +4952,10 @@ rely
 rem
 remain
 remap
+remiss
 remix
 remote
+rems
 renal
 rend
 rends
@@ -4882,6 +5000,7 @@ resets
 reside
 resin
 resist
+resists
 resit
 resold
 resolute
@@ -4918,6 +5037,7 @@ retorted
 retorts
 retrace
 retro
+retros
 return
 reunite
 reuse
@@ -4962,6 +5082,7 @@ riders
 rides
 ridge
 ridges
+riding
 rids
 rife
 riff
@@ -4987,6 +5108,8 @@ rill
 rills
 rim
 rime
+rimes
+rims
 rind
 rinds
 ring
@@ -5040,6 +5163,8 @@ rodeos
 rods
 roe
 roes
+roger
+rogers
 roil
 role
 roles
@@ -5052,9 +5177,11 @@ roof
 roofs
 rook
 room
+roomier
 rooms
 roost
 rooster
+roosters
 roosts
 root
 rooted
@@ -5072,6 +5199,7 @@ rose
 roses
 rosier
 roster
+rosters
 rosy
 rot
 rota
@@ -5152,6 +5280,7 @@ sabres
 sac
 sachet
 sack
+sacks
 sacra
 sacred
 sacs
@@ -5161,6 +5290,7 @@ saddle
 sadhu
 sadhus
 safe
+safer
 safes
 safest
 sag
@@ -5264,10 +5394,12 @@ sayer
 saying
 says
 scab
+scabies
 scad
 scale
 scalp
 scan
+scans
 scant
 scar
 scarab
@@ -5276,7 +5408,9 @@ scare
 scared
 scarier
 scarp
+scars
 scat
+scats
 scene
 scenery
 scent
@@ -5348,6 +5482,7 @@ seaweed
 seaweeds
 sec
 secant
+secret
 secs
 sect
 sector
@@ -5483,6 +5618,7 @@ shies
 shin
 shine
 shiner
+shins
 shiny
 ship
 shire
@@ -5535,6 +5671,7 @@ sidled
 siege
 sienna
 sierra
+siesta
 sift
 sifter
 sigh
@@ -5578,6 +5715,7 @@ sires
 sirs
 sis
 sister
+sisters
 sit
 sitar
 site
@@ -5680,6 +5818,7 @@ sly
 smite
 smith
 smithy
+smog
 smooch
 smooth
 smooths
@@ -5796,6 +5935,8 @@ sorry
 sort
 sorta
 sorted
+sorter
+sorters
 sorts
 sos
 sot
@@ -5893,6 +6034,7 @@ stabler
 stables
 stabs
 stack
+stacks
 stadia
 staff
 staffs
@@ -5927,6 +6069,7 @@ starry
 stars
 start
 started
+starter
 startle
 startled
 starts
@@ -5991,6 +6134,7 @@ stirred
 stirs
 stoat
 stoats
+stogie
 stoic
 stoics
 stoke
@@ -6028,6 +6172,7 @@ stores
 stories
 stork
 storm
+storms
 stormy
 story
 stout
@@ -6044,6 +6189,7 @@ streak
 streaked
 street
 strep
+stress
 strewn
 stride
 strife
@@ -6198,6 +6344,7 @@ tack
 tacks
 taco
 tacos
+tact
 tad
 tag
 tagged
@@ -6269,12 +6416,15 @@ tarp
 tarpon
 tarps
 tarred
+tarry
 tars
 tarsal
 tarsi
 tart
 tartan
 tartans
+tarter
+tartly
 tarts
 taser
 tasers
@@ -6360,6 +6510,7 @@ tents
 tenure
 tepid
 term
+terms
 tern
 terrace
 terrify
@@ -6430,6 +6581,7 @@ thugs
 thus
 thyme
 ti
+tiara
 tibia
 tibial
 tic
@@ -6481,6 +6633,7 @@ tips
 tirade
 tire
 tired
+tires
 tiro
 tiros
 tit
@@ -6560,6 +6713,7 @@ toppers
 tops
 tor
 torah
+torch
 tore
 toreador
 torn
@@ -6581,6 +6735,7 @@ tosh
 toss
 tossed
 tosser
+tossers
 tosses
 tot
 total
@@ -6615,6 +6770,9 @@ toy
 toys
 trace
 tracer
+track
+tracks
+tract
 trad
 trade
 trader
@@ -6623,6 +6781,8 @@ trail
 trailer
 trailers
 train
+trait
+traits
 tram
 trance
 trances
@@ -6648,6 +6808,8 @@ tree
 treed
 trees
 trek
+tremor
+tremors
 tress
 trestle
 trestles
@@ -6660,6 +6822,7 @@ trod
 troll
 trolled
 trolls
+trolly
 troop
 trooped
 trope
@@ -6669,6 +6832,7 @@ trots
 trout
 trow
 trowel
+troy
 true
 truer
 truest
