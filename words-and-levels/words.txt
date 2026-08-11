@@ -16514,6 +16514,7 @@ drywall
 dual
 dualism
 duality
+duals
 dub
 dubbed
 dubber
