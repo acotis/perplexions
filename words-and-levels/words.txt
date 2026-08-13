@@ -9671,7 +9671,6 @@ codpiece
 cods
 codswallop
 coed
-coeds
 coeducation
 coeducational
 coefficient
@@ -14697,7 +14696,6 @@ dicks
 dicky
 dicotyledonous
 dicotyledons
-dict
 dicta
 dictate
 dictated
@@ -22226,7 +22224,6 @@ gawky
 gay
 gayer
 gayest
-gayety
 gayly
 gayness
 gays
@@ -27388,7 +27385,6 @@ ingot
 ingots
 ingrain
 ingrained
-ingrate
 ingrates
 ingratiate
 ingratiating
@@ -29131,7 +29127,6 @@ katydids
 kayak
 kayaking
 kayaks
-kayo
 kazoo
 kazoos
 kebab
@@ -43204,7 +43199,6 @@ reconnoiter
 reconquer
 reconquered
 reconquest
-recons
 reconsider
 reconsideration
 reconsidered
@@ -56060,7 +56054,6 @@ tyrannous
 tyranny
 tyrant
 tyrants
-tyro
 tyros
 tzar
 tzatziki
