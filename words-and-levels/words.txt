@@ -12808,7 +12808,6 @@ cursor
 cursorily
 cursors
 cursory
-curst
 curt
 curtail
 curtailed
@@ -16206,7 +16205,6 @@ downwind
 downy
 dowries
 dowry
-dowse
 dowser
 dowsers
 dowsing
@@ -16660,7 +16658,6 @@ durance
 duration
 duress
 during
-durst
 durum
 dusk
 dusky
@@ -29971,7 +29968,6 @@ laziness
 lazing
 lazy
 lazybones
-lbw
 lea
 leach
 leached
@@ -32734,7 +32730,6 @@ methodology
 methods
 methotrexate
 methought
-meths
 methyl
 meticulous
 meticulously
@@ -36009,7 +36004,6 @@ olives
 ombudsman
 ombudsmen
 omega
-omegas
 omelet
 omelets
 omelette
@@ -39195,7 +39189,6 @@ pivotal
 pivoted
 pivoting
 pivots
-pix
 pixel
 pixels
 pixie
@@ -41526,7 +41519,6 @@ psalm
 psalmist
 psalms
 psaltery
-pseud
 pseudo
 pseudonym
 pseudonymous
@@ -43016,7 +43008,6 @@ recapturing
 recast
 recasting
 recasts
-recce
 recede
 receded
 recedes
@@ -55626,7 +55617,6 @@ trow
 trowel
 trowels
 troy
-troys
 truancy
 truant
 truants
@@ -55907,8 +55897,6 @@ tux
 tuxedo
 tuxedos
 tuxes
-tv
-tvs
 twaddle
 twain
 twang
@@ -57871,7 +57859,6 @@ veg
 vegan
 veganism
 vegans
-veges
 vegetable
 vegetables
 vegetarian
@@ -60396,7 +60383,6 @@ zeros
 zest
 zesty
 zeta
-zetas
 zigzag
 zigzagged
 zigzagging
