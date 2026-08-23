@@ -22453,6 +22453,7 @@ gerunds
 gestalt
 gestapo
 gestate
+gestates
 gestating
 gestation
 gestational
