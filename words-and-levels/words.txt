@@ -26188,7 +26188,6 @@ ignores
 ignoring
 iguana
 iguanas
-ikon
 ilea
 ileitis
 ileum
@@ -27704,7 +27703,6 @@ inspiring
 inspirit
 instabilities
 instability
-instal
 install
 installation
 installations
@@ -32764,7 +32762,6 @@ mice
 mickey
 mickeys
 micks
-micra
 micro
 microbe
 microbes
@@ -32812,7 +32809,6 @@ microphone
 microphones
 microprocessor
 microprocessors
-micros
 microscope
 microscopes
 microscopic
@@ -55377,7 +55373,6 @@ tress
 tresses
 trestle
 trestles
-trews
 trey
 treys
 triad
@@ -55505,7 +55500,6 @@ tripling
 triply
 tripod
 tripods
-tripos
 tripped
 tripper
 trippers
@@ -59246,7 +59240,6 @@ whelps
 when
 whence
 whenever
-whens
 whensoever
 where
 whereabouts
@@ -60058,7 +60051,6 @@ wrappers
 wrapping
 wrappings
 wraps
-wrapt
 wrasse
 wrasses
 wrath

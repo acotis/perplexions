@@ -156,6 +156,7 @@ airbus
 aired
 airgun
 airless
+airport
 airs
 airshow
 airshows
@@ -182,6 +183,7 @@ alias
 alibi
 alibis
 alien
+align
 aline
 alit
 alive
@@ -205,6 +207,8 @@ aloft
 aloha
 alone
 along
+aloof
+aloofness
 aloud
 alp
 alps
@@ -330,6 +334,7 @@ arcade
 arcades
 arced
 arch
+archer
 arches
 arcs
 ardor
@@ -352,6 +357,8 @@ arises
 ark
 arm
 armed
+armor
+armpit
 arms
 army
 arose
@@ -398,6 +405,7 @@ assert
 asses
 asset
 asshole
+assign
 assist
 assists
 associate
@@ -413,6 +421,7 @@ astral
 astute
 at
 ate
+atheist
 athlete
 atlas
 atlases
@@ -531,6 +540,7 @@ baled
 baler
 balers
 bales
+balk
 ball
 ballad
 ballads
@@ -687,6 +697,7 @@ beau
 beaus
 beaut
 beaver
+beck
 bed
 bedhead
 bedroom
@@ -816,6 +827,7 @@ bits
 bitten
 bitty
 biz
+black
 blade
 bladed
 blades
@@ -833,6 +845,7 @@ blasts
 blatant
 blaze
 bleach
+bleak
 bleat
 bleats
 bled
@@ -869,8 +882,12 @@ blows
 blue
 blued
 bluer
+blues
+bluest
 bluet
 bluish
+blunt
+blunts
 blur
 blurb
 blurs
@@ -965,6 +982,7 @@ bouncy
 bout
 bouts
 bow
+bower
 bowl
 bows
 box
@@ -1002,6 +1020,7 @@ braze
 bread
 breads
 breadth
+break
 bream
 breast
 breasted
@@ -1148,6 +1167,7 @@ cable
 cabled
 cabs
 cacao
+cackle
 cacti
 cactus
 cactuses
@@ -1167,6 +1187,7 @@ calico
 calk
 call
 calla
+callable
 callas
 caller
 calls
@@ -1219,6 +1240,7 @@ cards
 care
 cared
 careen
+careens
 career
 careers
 careful
@@ -1228,15 +1250,19 @@ cares
 caret
 cargo
 caries
+carnal
 caron
 carp
 carpi
 carps
+carrel
 carrot
 carrots
 carry
 cars
 cart
+cartel
+carter
 carton
 cartoon
 carts
@@ -1262,6 +1288,7 @@ caterer
 caters
 cation
 cats
+caulk
 causal
 cause
 causes
@@ -1280,6 +1307,7 @@ cease
 ceased
 ceases
 ceca
+cecal
 cedar
 cedars
 cede
@@ -1291,7 +1319,9 @@ cel
 celeb
 celesta
 cell
+cellar
 cello
+cellular
 cels
 censer
 census
@@ -1305,24 +1335,32 @@ chaff
 chair
 chaise
 chaises
+chalet
+chalets
 chant
 chaos
 char
 chard
 chars
 chart
+charter
 charts
 chase
+chaser
 chases
 chasm
 chasms
+chaste
 chat
 chats
 cheat
+cheats
 check
 cheek
 cheer
+cheers
 chemo
+chert
 chess
 chest
 chests
@@ -1339,8 +1377,12 @@ chits
 choir
 choler
 chop
+choral
 chore
+chorea
+chores
 chose
+chosen
 chow
 chows
 chrome
@@ -1368,6 +1410,7 @@ cite
 cited
 cites
 city
+clack
 clad
 clam
 clams
@@ -1443,12 +1486,14 @@ clutter
 coal
 coals
 coarse
+coarsen
 coarser
 coast
 coaster
 coat
 coats
 cob
+cobs
 coca
 cocci
 cod
@@ -1585,10 +1630,12 @@ corrals
 corrie
 corries
 corrode
+corrupt
 corset
 cosh
 cosine
 cost
+costar
 costed
 costs
 cosy
@@ -1612,6 +1659,8 @@ cousin
 cow
 coward
 cowards
+cowed
+cower
 coy
 coyote
 coyotes
@@ -1638,6 +1687,7 @@ cranes
 crania
 crap
 crape
+craps
 crash
 crass
 crate
@@ -1665,6 +1715,7 @@ credo
 creed
 creeds
 creel
+creels
 creep
 creeps
 cremated
@@ -1686,18 +1737,23 @@ crier
 criers
 cries
 crime
+crimp
+crimps
+crimson
 cringe
 cripes
 crises
 crisp
 crisped
 crisper
+crispy
 croak
 croci
 croft
 crofts
 crone
 crones
+crony
 croon
 crop
 crops
@@ -1705,6 +1761,7 @@ cross
 croup
 crow
 crowd
+crown
 crud
 cruet
 cruise
@@ -1717,6 +1774,7 @@ cruses
 crust
 crusty
 cry
+crypt
 cub
 cube
 cubed
@@ -1731,6 +1789,8 @@ cuddle
 cue
 cued
 cues
+cuff
+cuffs
 cull
 culled
 cult
@@ -1782,6 +1842,7 @@ cuter
 cutest
 cutie
 cuties
+cutoff
 cuts
 cutter
 cutters
@@ -1915,7 +1976,10 @@ defeat
 defeats
 defer
 define
+deft
 degas
+deign
+deigns
 deism
 deist
 deists
@@ -1931,6 +1995,7 @@ demo
 demon
 demons
 demos
+demote
 demur
 demure
 den
@@ -1959,6 +2024,7 @@ derp
 derps
 desert
 deserts
+design
 desire
 desires
 desk
@@ -2033,6 +2099,7 @@ dips
 dipso
 dire
 dirge
+dirges
 dirk
 dirt
 dis
@@ -2070,6 +2137,7 @@ doers
 does
 doeskin
 doesnt
+doff
 dog
 doge
 doges
@@ -2096,6 +2164,7 @@ domain
 domains
 dome
 domed
+domes
 doming
 dominion
 domino
@@ -2147,6 +2216,7 @@ dour
 douse
 dove
 dowel
+dower
 down
 downs
 dox
@@ -2177,6 +2247,7 @@ dreamer
 dreams
 drear
 dreary
+dregs
 dress
 drew
 drier
@@ -2205,6 +2276,7 @@ drug
 druggie
 drum
 drums
+drupe
 dry
 dryed
 dryer
@@ -2248,6 +2320,7 @@ duns
 duo
 duos
 dupe
+duper
 dupes
 dusk
 dust
@@ -2383,6 +2456,7 @@ emit
 emits
 emo
 emote
+emotes
 ems
 emu
 emus
@@ -2468,6 +2542,8 @@ error
 errs
 ersatz
 erst
+erupt
+erupts
 eschew
 esoteric
 espied
@@ -2607,6 +2683,7 @@ fell
 fella
 fells
 felon
+felons
 fem
 femur
 fen
@@ -2622,9 +2699,12 @@ ferrets
 ferric
 ferrous
 ferry
+fess
+fessed
 fest
 fester
 festoon
+fests
 feta
 fetal
 fetid
@@ -2648,6 +2728,7 @@ fierce
 fiery
 fiesta
 fife
+fifes
 fig
 fight
 figs
@@ -2679,10 +2760,12 @@ fire
 fires
 firm
 firs
+first
 fish
 fishbowl
 fisher
 fist
+fists
 fit
 fits
 fitter
@@ -2699,8 +2782,12 @@ flan
 flans
 flap
 flare
+flares
 flash
+flasher
 flat
+flatcar
+flats
 flaw
 flaws
 flay
@@ -2710,6 +2797,9 @@ fleas
 fled
 flee
 fleecy
+flees
+fleet
+fleets
 flesh
 flick
 flicked
@@ -2731,6 +2821,8 @@ floe
 floor
 floors
 flop
+floss
+flossing
 flout
 flow
 flower
@@ -2748,6 +2840,7 @@ flute
 flutes
 fly
 foal
+foaling
 foals
 foam
 fob
@@ -2777,6 +2870,7 @@ fonts
 food
 foods
 fool
+fooling
 fools
 foot
 footer
@@ -2801,6 +2895,8 @@ fort
 forte
 fortes
 forts
+fossa
+fossil
 foster
 fosterer
 foul
@@ -3436,6 +3532,7 @@ heron
 herons
 heros
 hers
+herself
 hertz
 hes
 hetero
@@ -3524,6 +3621,8 @@ horas
 horde
 hordes
 horn
+hornet
+hornets
 hornier
 horns
 horny
@@ -3599,6 +3698,7 @@ ices
 icing
 icings
 ick
+icky
 icon
 iconic
 icons
@@ -3634,8 +3734,11 @@ imaged
 imam
 imbue
 imp
+impair
 impasto
 impost
+imprint
+imprison
 imps
 in
 inane
@@ -3662,6 +3765,7 @@ inhabit
 inhere
 inhibit
 ink
+inky
 inlet
 inlets
 inmost
@@ -3817,6 +3921,7 @@ know
 knower
 knows
 kola
+korma
 krill
 krone
 kronor
@@ -3883,6 +3988,7 @@ lands
 lane
 lanes
 lank
+lanolin
 lap
 lapin
 laps
@@ -3907,6 +4013,7 @@ lasting
 lasts
 lat
 latch
+latches
 late
 later
 lateral
@@ -3945,6 +4052,7 @@ leaden
 leader
 leads
 leaf
+leafs
 leafy
 league
 leagues
@@ -4004,6 +4112,7 @@ leisure
 lemma
 lemmas
 lemon
+lemons
 lend
 lends
 lens
@@ -4087,6 +4196,7 @@ ling
 linger
 lint
 lion
+lioness
 lions
 lip
 lipped
@@ -4187,9 +4297,11 @@ loos
 loose
 loosed
 loosen
+loosens
 looser
 looses
 loosest
+loosing
 loot
 looted
 looter
@@ -4289,6 +4401,7 @@ maces
 mack
 macro
 macron
+macros
 macs
 mad
 made
@@ -4308,6 +4421,7 @@ mains
 maize
 male
 males
+malign
 mall
 malls
 malt
@@ -4377,6 +4491,7 @@ masher
 mason
 masons
 mass
+massing
 mast
 masted
 master
@@ -4468,8 +4583,11 @@ merry
 mesa
 mesas
 mesh
+meson
+mesons
 mess
 messiah
+messing
 met
 meta
 mete
@@ -4484,10 +4602,14 @@ method
 mew
 mi
 mic
+mica
 mice
 micks
+micro
+micron
 mics
 mid
+midst
 mien
 mil
 mile
@@ -4508,6 +4630,7 @@ mingle
 mini
 minion
 minis
+mink
 mint
 minted
 minter
@@ -4520,6 +4643,7 @@ miry
 miser
 misers
 miss
+missed
 misses
 mist
 mister
@@ -4548,6 +4672,7 @@ mod
 mode
 modern
 modes
+modest
 mods
 mog
 mogs
@@ -4574,6 +4699,10 @@ month
 moo
 mooch
 mood
+mooing
+moon
+moonless
+moons
 moor
 moors
 moos
@@ -4734,6 +4863,7 @@ nettles
 neuter
 nevi
 new
+newbie
 newer
 newest
 news
@@ -4786,6 +4916,7 @@ noel
 noels
 noise
 noises
+noisome
 noisy
 nom
 nomad
@@ -4881,7 +5012,10 @@ ocean
 oceanic
 oceans
 ocelot
+ocher
+ochre
 octal
+octane
 ocular
 odd
 oddball
@@ -4895,10 +5029,12 @@ odors
 of
 off
 offal
+offed
 office
 officer
 offs
 offset
+offsets
 offsite
 oft
 often
@@ -5052,6 +5188,7 @@ owl
 owlet
 owls
 own
+owned
 owner
 owners
 owning
@@ -5069,6 +5206,7 @@ pack
 packed
 pact
 pacts
+pacy
 pad
 pads
 paean
@@ -5120,6 +5258,7 @@ parky
 parlor
 parole
 paroles
+parrot
 parry
 pars
 parse
@@ -5150,6 +5289,7 @@ pave
 paves
 paw
 pawn
+paws
 pay
 payer
 payphone
@@ -5275,6 +5415,8 @@ pill
 pills
 pilot
 pilots
+pimp
+pimps
 pin
 pincer
 pincers
@@ -5284,6 +5426,9 @@ ping
 pings
 pinion
 pink
+pinko
+pinkos
+pinky
 pins
 pint
 pinto
@@ -5295,6 +5440,8 @@ pioneers
 pip
 pipe
 piper
+pipit
+pips
 pis
 piss
 pisser
@@ -5382,6 +5529,7 @@ poets
 poi
 point
 points
+poky
 polar
 pole
 polecat
@@ -5392,6 +5540,7 @@ poll
 polo
 poly
 pom
+pomp
 poms
 ponce
 poncy
@@ -5401,14 +5550,19 @@ ponds
 pone
 pones
 pong
+pony
 poo
 pool
 pools
 poor
 poos
+pop
+pops
 pore
 pored
 pores
+pork
+porky
 porn
 porno
 port
@@ -5428,6 +5582,7 @@ postal
 posted
 poster
 posts
+posy
 pot
 potent
 potential
@@ -5444,6 +5599,7 @@ pours
 pout
 pouter
 pow
+power
 pram
 prams
 prance
@@ -5474,6 +5630,7 @@ prey
 preys
 price
 prices
+prick
 pride
 prides
 pried
@@ -5481,13 +5638,20 @@ prier
 pries
 priest
 priests
+prim
+primary
+primp
 prince
 princes
 princess
+print
 prion
 prions
 prior
 priors
+priory
+prism
+prison
 prix
 pro
 prob
@@ -5503,6 +5667,9 @@ prof
 progress
 prole
 proles
+prom
+prompt
+proms
 prone
 pronto
 proof
@@ -5513,6 +5680,7 @@ pros
 prose
 proton
 prow
+prude
 prune
 pruner
 pruners
@@ -5667,12 +5835,14 @@ rants
 rap
 raps
 rapt
+raptor
 rare
 rarer
 rares
 rarest
 rascal
 rash
+rasher
 rashes
 rasp
 raster
@@ -5702,6 +5872,7 @@ raven
 raw
 rawer
 ray
+rayon
 rays
 raze
 re
@@ -5814,6 +5985,7 @@ regard
 regatta
 reggae
 rehab
+rehear
 reheat
 rehire
 reign
@@ -5961,6 +6133,7 @@ rewards
 rewind
 rewinds
 rewire
+reword
 rewrote
 rhea
 rheostat
@@ -5993,10 +6166,12 @@ riding
 rids
 rife
 riff
+riffed
 riffs
 rifle
 rifles
 rift
+rifted
 rifts
 rig
 rigged
@@ -6027,6 +6202,7 @@ rinse
 rinsed
 rinses
 riot
+rioted
 rioters
 riotous
 riots
@@ -6088,6 +6264,8 @@ roles
 roll
 rolled
 rolls
+romp
+romps
 rondo
 rood
 roof
@@ -6112,6 +6290,8 @@ roped
 roper
 ropers
 ropes
+ropy
+rosary
 rose
 roses
 rosette
@@ -6119,6 +6299,7 @@ rosier
 rosin
 roster
 rosters
+rostra
 rosy
 rot
 rota
@@ -6165,10 +6346,13 @@ ruby
 ruck
 rucks
 rude
+ruder
 rue
 rued
 rueful
 rues
+ruff
+ruffs
 rug
 rugged
 ruin
@@ -6358,6 +6542,8 @@ scald
 scale
 scalp
 scam
+scamp
+scampi
 scan
 scanner
 scans
@@ -6380,6 +6566,7 @@ schmo
 school
 schools
 scion
+scoff
 scone
 scoop
 scoot
@@ -6410,13 +6597,19 @@ screen
 screw
 screws
 scribe
+scrim
+scrimp
 scrip
+script
 scrod
 scrub
 scrubs
+scruff
 scuba
 scud
 scuds
+scuff
+scurf
 scurried
 scurry
 sea
@@ -6427,12 +6620,14 @@ sealants
 sealed
 sealer
 sealers
+sealing
 seals
 seam
 seaman
 seams
 seamy
 sear
+search
 seared
 searing
 sears
@@ -6511,6 +6706,7 @@ senor
 senora
 sens
 sense
+sensing
 sent
 sentry
 septa
@@ -6572,6 +6768,7 @@ shams
 shant
 sharable
 share
+sharer
 sharp
 shat
 shawl
@@ -6659,6 +6856,7 @@ sierra
 siesta
 sift
 sifter
+sifts
 sigh
 sight
 sign
@@ -6742,7 +6940,9 @@ slag
 slags
 slain
 slake
+slalom
 slam
+slams
 slang
 slant
 slants
@@ -6779,6 +6979,7 @@ slide
 slider
 slim
 slimy
+sling
 slip
 slipped
 slipper
@@ -6819,12 +7020,15 @@ slush
 slut
 sluts
 sly
+smack
+smirk
 smite
 smith
 smithy
 smog
 smoke
 smoker
+smoky
 smooch
 smooth
 smooths
@@ -6846,6 +7050,7 @@ snare
 snares
 snarl
 snarls
+snatch
 sneak
 sneer
 sneered
@@ -6916,6 +7121,7 @@ soldered
 sole
 soled
 solely
+solemn
 soles
 soli
 solid
@@ -6923,6 +7129,7 @@ solider
 solids
 soling
 solo
+soloing
 solos
 solute
 solve
@@ -7027,6 +7234,7 @@ spies
 spike
 spikes
 spiking
+spiky
 spill
 spilt
 spin
@@ -7034,8 +7242,10 @@ spine
 spines
 spinet
 spins
+spiny
 spire
 spirea
+spirit
 spit
 spite
 spits
@@ -7071,6 +7281,7 @@ spur
 spurn
 spurns
 spurs
+spurt
 spy
 stab
 stable
@@ -7184,6 +7395,8 @@ stews
 stick
 sties
 stiff
+stiffed
+stiffs
 stile
 stiles
 still
@@ -7264,9 +7477,11 @@ stream
 street
 strep
 stress
+strew
 strewn
 stria
 striae
+strict
 stride
 strife
 string
@@ -7383,6 +7598,7 @@ swab
 swabs
 swain
 swan
+swap
 sward
 swards
 swat
@@ -7720,11 +7936,13 @@ thins
 third
 thirds
 this
+thistle
 tho
 thole
 thong
 thonk
 thorn
+thorns
 those
 thousand
 thrall
@@ -7735,8 +7953,10 @@ threat
 threats
 three
 throat
+throes
 throne
 throng
+throw
 thru
 thud
 thug
@@ -7831,6 +8051,7 @@ toerag
 toes
 toff
 toffs
+tofu
 toga
 togas
 together
@@ -7954,6 +8175,10 @@ toy
 toys
 trace
 tracer
+tracers
+traces
+trachea
+tracheal
 track
 tracks
 tract
@@ -7975,6 +8200,7 @@ trance
 trances
 trans
 trap
+traps
 trash
 trashed
 trashes
@@ -8000,23 +8226,29 @@ trek
 treks
 tremor
 tremors
+trend
 tress
 trestle
 trestles
 trey
 trial
+trick
 trier
 tries
 trig
+trim
+trims
 trio
 trios
 trip
+trips
 trite
 trod
 troll
 trolled
 trolls
 trolly
+tromp
 troop
 trooped
 trope
@@ -8070,6 +8302,7 @@ tumor
 tums
 tun
 tuna
+tunas
 tundra
 tune
 tuneful
@@ -8110,6 +8343,7 @@ tweed
 tweeds
 tween
 tweet
+twerp
 twice
 twin
 twine
@@ -8186,6 +8420,8 @@ unto
 untrue
 unwed
 unwise
+unwrap
+unwraps
 up
 upon
 upped
@@ -8197,6 +8433,7 @@ upset
 upsets
 upside
 uptick
+uptown
 ur
 urban
 urbane
@@ -8348,6 +8585,7 @@ want
 wanted
 wanting
 wanton
+wants
 war
 ward
 warden
@@ -8436,6 +8674,7 @@ wets
 wettest
 wetting
 what
+wheal
 wheat
 whee
 wheel
@@ -8445,9 +8684,13 @@ whet
 whets
 whew
 whey
+whist
+whistle
 whit
+whits
 who
 whod
+whorl
 whos
 why
 wick
@@ -8558,6 +8801,7 @@ worry
 worse
 worst
 wort
+worth
 wound
 wove
 woven
@@ -8566,6 +8810,8 @@ wowed
 wowing
 wows
 wrack
+wrap
+wraps
 wreak
 wreck
 wreckage
@@ -8581,12 +8827,14 @@ writes
 writs
 wrote
 wry
+wurst
 wuss
 wusses
 wussies
 xi
 xis
 ya
+yack
 yak
 yaks
 yall
@@ -8629,6 +8877,8 @@ yews
 yield
 yielded
 yin
+yip
+yips
 yo
 yob
 yobs

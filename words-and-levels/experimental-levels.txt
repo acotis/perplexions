@@ -20,12 +20,6 @@ ralu
 blal
 ceck
 ——————————
-a s
-ndb
-upt
-rro
-ewcie
-——————————
    t
   rr
   sa
