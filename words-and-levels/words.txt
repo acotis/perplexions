@@ -8563,6 +8563,8 @@ cheesiness
 cheesy
 cheetah
 cheetahs
+cheevo
+cheevos
 chef
 chefs
 chemical
