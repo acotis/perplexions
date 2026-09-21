@@ -1179,6 +1179,7 @@ cafe
 cafes
 cage
 cages
+cairn
 cake
 caked
 calamity
@@ -1229,6 +1230,7 @@ caped
 capitol
 capitols
 capo
+capon
 capos
 car
 carafe
@@ -1271,6 +1273,7 @@ cased
 cases
 cash
 cashes
+casino
 cask
 cassia
 cast
@@ -4896,6 +4899,7 @@ nite
 niter
 nitrate
 nitrates
+nitric
 nitro
 nits
 nitwit
