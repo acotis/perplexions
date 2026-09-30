@@ -259,6 +259,7 @@ anemia
 anemic
 anew
 angel
+angels
 anger
 angle
 angler
@@ -348,6 +349,8 @@ arent
 ares
 argent
 argon
+argue
+argues
 aria
 arias
 arid
@@ -567,6 +570,8 @@ bandy
 bane
 banes
 bang
+banged
+banger
 bangle
 bangles
 bangs
@@ -588,6 +593,9 @@ barely
 barer
 bares
 barest
+barge
+barged
+barges
 barley
 barmen
 barmy
@@ -2018,10 +2026,12 @@ dents
 deny
 deport
 deports
+depose
 deposit
 deposited
 depot
 depots
+depute
 derby
 derp
 derps
@@ -2181,11 +2191,14 @@ donation
 done
 dong
 dongle
+dongs
 donned
 donor
 donors
 dons
 dont
+donut
+donuts
 doodle
 doodler
 doom
@@ -2390,6 +2403,7 @@ eddies
 edema
 edge
 edged
+edger
 edges
 edit
 edited
@@ -2424,6 +2438,7 @@ elated
 elbow
 elbows
 eld
+elder
 eldest
 elect
 election
@@ -2577,6 +2592,7 @@ ethos
 ethyl
 euphony
 euro
+euros
 eve
 even
 event
@@ -3085,6 +3101,7 @@ gesture
 get
 gets
 getting
+getup
 geyser
 ghee
 ghetto
@@ -3231,6 +3248,7 @@ gores
 gorge
 gorged
 gorges
+gorp
 gorse
 gory
 gosh
@@ -3327,6 +3345,8 @@ grotty
 group
 groups
 grouse
+grout
+grouts
 grow
 grower
 growl
@@ -3334,9 +3354,11 @@ growled
 growler
 grub
 grudge
+gruel
 grunt
 grunts
 guard
+guess
 guest
 guide
 guile
@@ -3357,6 +3379,7 @@ gust
 gusto
 gusts
 gut
+gutless
 guts
 guy
 gym
@@ -4092,6 +4115,9 @@ leaves
 lech
 led
 lede
+ledge
+ledger
+ledges
 lee
 leech
 leek
@@ -4846,6 +4872,7 @@ needy
 neg
 negate
 negates
+negs
 neon
 nerd
 nerds
@@ -4974,6 +5001,7 @@ nude
 nudes
 nudge
 nudged
+nudges
 nudist
 nudists
 null
@@ -5237,6 +5265,7 @@ pan
 pane
 panes
 pang
+pangs
 panic
 panics
 pans
@@ -5576,6 +5605,7 @@ pose
 posed
 poser
 poses
+poseur
 posies
 posit
 posited
@@ -5586,6 +5616,9 @@ postal
 posted
 poster
 posts
+posture
+postured
+postures
 posy
 pot
 potent
@@ -5599,9 +5632,11 @@ pounces
 pound
 pounds
 pour
+poured
 pours
 pout
 pouter
+pouts
 pow
 power
 pram
@@ -5609,6 +5644,7 @@ prams
 prance
 prancer
 prances
+prang
 prank
 pranks
 prat
@@ -5675,6 +5711,8 @@ prom
 prompt
 proms
 prone
+prong
+prongs
 pronto
 proof
 proofs
@@ -5683,9 +5721,12 @@ props
 pros
 prose
 proton
+proud
 prow
 prude
+prudes
 prune
+pruned
 pruner
 pruners
 prunes
@@ -5699,6 +5740,7 @@ puce
 puck
 pucks
 pug
+pugs
 pule
 pull
 pulls
@@ -5723,9 +5765,13 @@ pupils
 pups
 pure
 puree
+pureed
 purees
 purer
 purest
+purge
+purged
+purges
 purine
 purl
 purls
@@ -5737,6 +5783,7 @@ purses
 pus
 push
 pushy
+puss
 put
 puts
 putt
@@ -5827,6 +5874,7 @@ rand
 ranee
 rang
 range
+ranged
 ranges
 rangy
 rani
@@ -6044,12 +6092,15 @@ repay
 repays
 repel
 repels
+repose
 reprice
 reprise
 reprises
 reps
 reptile
 reptiles
+repute
+reputed
 reran
 reread
 rerun
@@ -6323,6 +6374,7 @@ rouge
 roulette
 rouse
 roused
+rouses
 rout
 route
 routed
@@ -6359,6 +6411,7 @@ ruff
 ruffs
 rug
 rugged
+rugs
 ruin
 ruins
 rule
@@ -6372,6 +6425,8 @@ rums
 run
 rune
 runes
+rung
+rungs
 runic
 runner
 runners
@@ -6380,6 +6435,7 @@ runt
 runts
 runway
 rupee
+rupees
 rural
 ruse
 ruses
@@ -6388,6 +6444,7 @@ rushed
 rusher
 rusk
 rusks
+russet
 rust
 rusted
 rusts
@@ -6970,6 +7027,7 @@ slayer
 slaying
 slays
 sled
+sledge
 sleds
 sleek
 sleep
@@ -7514,6 +7572,7 @@ stuffed
 stuffing
 stuffs
 stun
+stung
 stunk
 stuns
 stunt
@@ -7593,6 +7652,8 @@ surer
 surf
 surface
 surge
+surged
+surges
 surly
 surrey
 sus
@@ -8142,6 +8203,7 @@ tossed
 tosser
 tossers
 tosses
+tossup
 tot
 total
 totaled
@@ -8155,6 +8217,7 @@ totes
 toting
 tots
 tour
+toured
 tourney
 tourneys
 tours
@@ -8309,6 +8372,7 @@ tuna
 tunas
 tundra
 tune
+tuned
 tuneful
 tuner
 tunes
@@ -8323,6 +8387,7 @@ turds
 tureen
 turf
 turn
+turned
 turner
 turnout
 turns
@@ -8449,6 +8514,7 @@ urethane
 urge
 urged
 urgent
+urges
 uric
 urinal
 urine
