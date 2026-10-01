@@ -49,6 +49,8 @@ abut
 abuts
 abutted
 academe
+accept
+accepted
 accuse
 accuses
 ace
@@ -71,6 +73,7 @@ acreage
 acres
 acrid
 act
+acted
 actor
 acts
 acumen
@@ -384,6 +387,7 @@ arts
 arty
 arum
 as
+ascent
 ascot
 ash
 ashcan
@@ -399,6 +403,7 @@ ask
 asks
 asleep
 asp
+aspect
 aspen
 aspic
 asps
@@ -579,6 +584,7 @@ bani
 bans
 banter
 bap
+baps
 bar
 barb
 barber
@@ -629,10 +635,12 @@ bashes
 basic
 basil
 basin
+basins
 basis
 bask
 bass
 basset
+bassi
 basso
 bassoon
 bast
@@ -811,18 +819,23 @@ bigot
 bile
 bin
 bind
+binds
 bing
 binge
 bingo
 binning
 bins
 bio
+biopsy
 bios
 biotin
 biped
 bipeds
 bird
 birds
+bison
+bisons
+bistro
 bit
 bitch
 bitched
@@ -835,6 +848,7 @@ bits
 bitten
 bitty
 biz
+blab
 black
 blade
 bladed
@@ -865,9 +879,11 @@ blessed
 blew
 blight
 blind
+blinds
 blini
 blip
 blips
+bliss
 blister
 blisters
 bloat
@@ -1163,6 +1179,7 @@ buys
 by
 bye
 byes
+bypass
 byre
 byte
 bytes
@@ -1208,6 +1225,7 @@ came
 camel
 camels
 cameo
+cameos
 camera
 camp
 camped
@@ -1232,6 +1250,7 @@ canopy
 cans
 cant
 canto
+cantos
 cap
 cape
 caped
@@ -1240,6 +1259,7 @@ capitols
 capo
 capon
 capos
+caps
 car
 carafe
 carat
@@ -1369,6 +1389,7 @@ cheats
 check
 cheek
 cheer
+cheering
 cheers
 chemo
 chert
@@ -1380,6 +1401,7 @@ chew
 chews
 chi
 chin
+chine
 chirp
 chis
 chisel
@@ -1424,15 +1446,18 @@ city
 clack
 clad
 clam
+clamp
 clams
 clan
 clang
 clank
 clans
 clap
+claps
 claret
 clarion
 clash
+clasp
 class
 clause
 claw
@@ -1471,6 +1496,7 @@ clog
 clogs
 cloister
 cloisters
+clone
 clop
 close
 closed
@@ -1493,6 +1519,7 @@ cloy
 clue
 clues
 cluster
+clutch
 clutter
 coal
 coals
@@ -1557,7 +1584,11 @@ comet
 comfy
 comic
 coming
+comma
+commas
+comment
 comp
+comps
 con
 conceal
 concealer
@@ -1580,6 +1611,7 @@ conman
 cons
 consent
 console
+contempt
 context
 cony
 coo
@@ -1590,6 +1622,7 @@ cooler
 coop
 cooped
 cooper
+coops
 coos
 coot
 coots
@@ -1962,6 +1995,7 @@ debuts
 decaf
 decamp
 decay
+decent
 deck
 decking
 decks
@@ -2035,6 +2069,7 @@ depute
 derby
 derp
 derps
+descent
 desert
 deserts
 design
@@ -2047,6 +2082,7 @@ despot
 despotic
 despots
 detail
+detect
 deter
 deterred
 deters
@@ -2082,6 +2118,7 @@ dig
 digit
 digital
 digs
+dilator
 dill
 dills
 dim
@@ -2127,6 +2164,8 @@ dispensary
 diss
 distal
 distend
+distil
+distils
 disuse
 ditsy
 diva
@@ -2168,6 +2207,7 @@ doling
 doll
 dollar
 dollars
+dolled
 dolls
 dolor
 dolt
@@ -2346,6 +2386,8 @@ dusty
 duty
 dweeb
 dwell
+dwelled
+dwells
 dwelt
 dye
 dyed
@@ -2496,6 +2538,7 @@ endless
 endorse
 endorsing
 endow
+endows
 ends
 endued
 endure
@@ -2890,6 +2933,7 @@ fonts
 food
 foods
 fool
+fooled
 fooling
 fools
 foot
@@ -2924,6 +2968,7 @@ fouled
 four
 fours
 fowl
+fowls
 fox
 foxed
 foxes
@@ -3773,6 +3818,7 @@ imps
 in
 inane
 inapt
+inborn
 incense
 incest
 inch
@@ -3860,6 +3906,7 @@ islet
 ism
 isms
 isnt
+isobar
 isomer
 isomers
 issue
@@ -3999,9 +4046,12 @@ lamas
 lamb
 lambs
 lame
+lament
 lamer
 lames
 lamest
+lamp
+lamps
 lams
 lanai
 lanais
@@ -4022,6 +4072,8 @@ lanolin
 lap
 lapin
 laps
+laptop
+laptops
 larch
 lard
 large
@@ -4045,6 +4097,7 @@ lat
 latch
 latches
 late
+latent
 later
 lateral
 laterals
@@ -4328,6 +4381,7 @@ loons
 loony
 loop
 looped
+loops
 loos
 loose
 loosed
@@ -4408,10 +4462,12 @@ lulled
 lulls
 lumen
 lunar
+lunch
 lung
 lunge
 lunged
 lupin
+lurch
 lure
 lures
 lurid
@@ -4629,6 +4685,8 @@ messiah
 messing
 met
 meta
+metal
+metals
 mete
 meted
 meter
@@ -4733,6 +4791,7 @@ molest
 molt
 molter
 mom
+moment
 moms
 money
 monger
@@ -4889,6 +4948,7 @@ neg
 negate
 negates
 negs
+neigh
 neon
 nerd
 nerds
@@ -4953,6 +5013,7 @@ noble
 nobler
 nobles
 noblest
+nobly
 nobs
 nod
 nodal
@@ -5028,6 +5089,7 @@ nurse
 nurser
 nus
 nut
+nutcase
 nutria
 nuts
 nutter
@@ -5041,6 +5103,7 @@ oar
 oared
 oars
 oases
+oasis
 oat
 oaten
 oath
@@ -5064,6 +5127,7 @@ ocher
 ochre
 octal
 octane
+octet
 ocular
 odd
 oddball
@@ -5276,7 +5340,11 @@ paled
 pales
 palest
 palm
+palms
+palmtop
+palmtops
 pals
+palsy
 pan
 pane
 panes
@@ -5324,6 +5392,7 @@ pastas
 pasts
 pat
 pate
+patent
 pates
 path
 patina
@@ -5344,6 +5413,8 @@ payer
 payphone
 pays
 pea
+peace
+peaces
 peach
 peachy
 peal
@@ -5484,6 +5555,7 @@ pinto
 pintos
 pints
 piny
+pinyin
 pioneer
 pioneers
 pip
@@ -5522,6 +5594,7 @@ plastic
 plastics
 plat
 plate
+platen
 plats
 platy
 play
@@ -5590,6 +5663,8 @@ polo
 poly
 pom
 pomp
+pompom
+pompoms
 poms
 ponce
 poncy
@@ -5603,9 +5678,12 @@ pony
 poo
 pool
 pools
+poop
+poops
 poor
 poos
 pop
+pope
 pops
 pore
 pored
@@ -5747,6 +5825,7 @@ pruner
 pruners
 prunes
 pry
+psalm
 psi
 pub
 pubes
@@ -5822,6 +5901,7 @@ quorate
 quota
 quote
 rabbi
+rabbis
 rabbit
 rabid
 rabies
@@ -5874,6 +5954,8 @@ raised
 raiser
 raisers
 raises
+raisin
+raisins
 rake
 raked
 rally
@@ -5913,6 +5995,7 @@ rash
 rasher
 rashes
 rasp
+raspy
 raster
 rat
 ratbag
@@ -6217,6 +6300,7 @@ rhos
 rial
 rials
 rib
+ribbon
 ribs
 rice
 ricer
@@ -6314,6 +6398,8 @@ rob
 robe
 robed
 robes
+robin
+robins
 robs
 rock
 rocker
@@ -7026,6 +7112,7 @@ slang
 slant
 slants
 slap
+slaps
 slash
 slashed
 slasher
@@ -7087,6 +7174,7 @@ sloths
 slots
 slotted
 slow
+slowed
 slowest
 slows
 sludge
@@ -7143,6 +7231,7 @@ snipe
 snips
 snit
 snob
+snobby
 snobs
 snog
 snood
@@ -7209,6 +7298,7 @@ solider
 solids
 soling
 solo
+soloed
 soloing
 solos
 solute
@@ -7276,6 +7366,7 @@ sows
 soy
 soya
 spa
+space
 spam
 spams
 span
@@ -7339,6 +7430,7 @@ spoils
 spoilt
 spook
 spooked
+spool
 spoon
 spoor
 spore
@@ -7702,6 +7794,9 @@ sweeps
 sweet
 sweeter
 sweets
+swell
+swelled
+swells
 swept
 swift
 swill
@@ -7714,7 +7809,9 @@ swished
 switch
 switched
 switches
+swollen
 swoon
+swooned
 sword
 swords
 swore
@@ -7727,6 +7824,7 @@ syrups
 systole
 ta
 tab
+tabby
 tabla
 tablas
 table
@@ -7928,8 +8026,13 @@ tells
 telltale
 telly
 temp
+tempo
+tempos
+temps
+tempt
 ten
 tenable
+tench
 tend
 tended
 tender
@@ -8172,6 +8275,8 @@ tonic
 tonics
 toning
 tons
+tonsil
+tonsils
 tonsure
 tony
 too
@@ -8448,6 +8553,7 @@ two
 twos
 type
 typo
+typos
 tyros
 tzar
 udder
@@ -8501,6 +8607,7 @@ unsent
 unset
 unspent
 unsure
+untested
 untie
 unties
 until
@@ -8746,6 +8853,8 @@ weld
 welded
 welds
 well
+welled
+wells
 welt
 welted
 welts
@@ -8872,10 +8981,13 @@ wont
 wonton
 woo
 wood
+wooden
+wooed
 wooer
 wooers
 woof
 wool
+woolen
 woolies
 woos
 word

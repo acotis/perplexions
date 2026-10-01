@@ -37348,7 +37348,6 @@ panthers
 pantie
 panties
 panting
-panto
 pantomime
 pantomimes
 pantries
@@ -37965,7 +37964,6 @@ peas
 peasant
 peasantry
 peasants
-pease
 peat
 peaty
 pebble
@@ -39817,7 +39815,6 @@ pompadour
 pompano
 pompom
 pompoms
-pompon
 pompons
 pomposity
 pompous
