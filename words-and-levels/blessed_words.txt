@@ -118,6 +118,7 @@ afoul
 afro
 aft
 after
+again
 agar
 agate
 agates
@@ -264,6 +265,7 @@ anew
 angel
 angels
 anger
+angers
 angle
 angler
 anglers
@@ -1922,6 +1924,8 @@ dane
 danes
 dang
 danged
+danger
+dangers
 dangle
 dangles
 dank
@@ -2446,7 +2450,9 @@ edema
 edge
 edged
 edger
+edgers
 edges
+edgier
 edit
 edited
 edits
@@ -3107,6 +3113,7 @@ gay
 gayer
 gayest
 gear
+geared
 gearing
 gears
 gecko
@@ -3870,6 +3877,8 @@ insure
 insurer
 insures
 intact
+integer
+integers
 integrate
 inter
 inters
@@ -4951,6 +4960,7 @@ negs
 neigh
 neon
 nerd
+nerdier
 nerds
 nerf
 nerfs
@@ -5922,6 +5932,7 @@ racy
 rad
 radar
 radian
+radii
 radio
 radios
 radius
@@ -5990,6 +6001,7 @@ rare
 rarer
 rares
 rarest
+raring
 rascal
 rash
 rasher
@@ -6033,6 +6045,8 @@ react
 reacts
 read
 reader
+readier
+reading
 readout
 readouts
 reads
@@ -6053,6 +6067,7 @@ reams
 reap
 rear
 reared
+rearing
 rearm
 rears
 reason
@@ -6135,6 +6150,7 @@ regale
 regard
 regatta
 reggae
+regret
 rehab
 rehear
 reheat
@@ -6353,6 +6369,8 @@ rind
 rinds
 ring
 ringed
+ringer
+ringers
 rings
 rink
 rinse
@@ -7771,6 +7789,7 @@ sushi
 suspend
 swab
 swabs
+swag
 swain
 swan
 swap
@@ -7782,6 +7801,7 @@ swats
 sway
 swear
 swearer
+swearing
 sweat
 sweated
 sweater
@@ -8163,6 +8183,7 @@ tics
 tide
 tided
 tides
+tidier
 tidy
 tie
 tied
@@ -8400,6 +8421,7 @@ trawler
 tray
 trays
 tread
+treading
 treadle
 treads
 treason
@@ -8422,9 +8444,12 @@ tress
 trestle
 trestles
 trey
+triad
+triage
 trial
 trick
 trier
+triers
 tries
 trig
 trim
@@ -8744,6 +8769,8 @@ wag
 wage
 waged
 wager
+wagered
+wagers
 wages
 wags
 wail
@@ -8827,6 +8854,8 @@ weans
 wear
 wearer
 wearers
+wearied
+wearing
 wears
 weary
 web
