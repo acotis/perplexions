@@ -75,6 +75,7 @@ acrid
 act
 acted
 actor
+actors
 acts
 acumen
 acute
@@ -1252,6 +1253,7 @@ canopy
 cans
 cant
 canto
+cantor
 cantos
 cap
 cape
@@ -1312,6 +1314,7 @@ caster
 castes
 castle
 castles
+castor
 casts
 casual
 cat
@@ -3875,6 +3878,7 @@ insula
 insult
 insure
 insurer
+insurers
 insures
 intact
 integer
@@ -6492,8 +6496,10 @@ rots
 rotted
 rotten
 rotter
+rotund
 rouge
 roulette
+round
 rouse
 roused
 rouses
