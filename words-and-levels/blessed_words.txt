@@ -79,6 +79,7 @@ actors
 acts
 acumen
 acute
+acyl
 ad
 add
 added
@@ -152,6 +153,7 @@ aiding
 aids
 ail
 ailed
+ailing
 ails
 aim
 aims
@@ -160,6 +162,7 @@ air
 airbus
 aired
 airgun
+airguns
 airless
 airport
 airs
@@ -189,6 +192,7 @@ alibi
 alibis
 alien
 align
+aligns
 aline
 alit
 alive
@@ -228,6 +232,9 @@ alto
 altogether
 altos
 alts
+alum
+alumni
+alums
 am
 amaze
 amber
@@ -322,6 +329,7 @@ aortas
 ape
 aped
 apes
+aphid
 apian
 apish
 apl
@@ -717,6 +725,7 @@ beaus
 beaut
 beaver
 beck
+becks
 bed
 bedhead
 bedroom
@@ -743,10 +752,13 @@ beg
 begat
 beget
 begged
+begin
+begins
 begot
 begs
 beguile
 begum
+begun
 behalf
 behead
 beheld
@@ -754,6 +766,7 @@ behest
 behold
 beige
 being
+beings
 belated
 belay
 belch
@@ -761,6 +774,7 @@ bell
 belle
 belled
 belles
+belling
 bells
 belly
 belong
@@ -800,6 +814,7 @@ bets
 bettor
 bettors
 bevel
+bewail
 bey
 beyond
 bi
@@ -819,7 +834,14 @@ big
 biggie
 bight
 bigot
+biking
 bile
+bilge
+bilk
+bill
+billed
+billing
+bills
 bin
 bind
 binds
@@ -874,6 +896,7 @@ bleak
 bleat
 bleats
 bled
+bleed
 bleep
 blend
 blended
@@ -884,6 +907,8 @@ blight
 blind
 blinds
 blini
+blink
+blinks
 blip
 blips
 bliss
@@ -912,6 +937,7 @@ bluer
 blues
 bluest
 bluet
+bluing
 bluish
 blunt
 blunts
@@ -1106,18 +1132,29 @@ brutal
 brute
 brutes
 bub
+buck
+bucking
+buckling
+bucks
 bud
 budge
 budged
 buds
 bug
+bugs
 built
 bulge
+bulk
+bulking
+bulks
 bull
+bulling
+bulls
 bum
 bums
 bun
 bung
+bunged
 buns
 bunt
 buoy
@@ -1222,6 +1259,7 @@ caller
 calls
 calm
 calve
+calved
 calves
 cam
 came
@@ -1351,12 +1389,15 @@ ceded
 ceder
 cedes
 ceding
+ceiling
 cel
 celeb
 celesta
 cell
 cellar
+celli
 cello
+cells
 cellular
 cels
 censer
@@ -1375,6 +1416,7 @@ chalet
 chalets
 chant
 chaos
+chap
 char
 chard
 chars
@@ -1388,6 +1430,7 @@ chasm
 chasms
 chaste
 chat
+chatline
 chats
 cheat
 cheats
@@ -1405,13 +1448,19 @@ chevron
 chew
 chews
 chi
+chid
+chide
+child
+chile
 chin
 chine
+chip
 chirp
 chis
 chisel
 chit
 chits
+choc
 choir
 choler
 chop
@@ -1427,6 +1476,8 @@ chrome
 chuck
 chucks
 chum
+chunk
+chunked
 chute
 chutes
 ciao
@@ -1483,6 +1534,7 @@ cleave
 cleaves
 clef
 cleft
+clench
 cleric
 clerk
 click
@@ -1493,6 +1545,10 @@ cliff
 cliffs
 clime
 climes
+cling
+clings
+clinic
+clink
 clip
 clips
 cloak
@@ -1521,10 +1577,14 @@ clouts
 clove
 clown
 cloy
+club
 clue
+clued
 clues
+clunk
 cluster
 clutch
+clutched
 clutter
 coal
 coals
@@ -1710,6 +1770,7 @@ coward
 cowards
 cowed
 cower
+cowl
 coy
 coyote
 coyotes
@@ -1810,6 +1871,7 @@ cross
 croup
 crow
 crowd
+crowed
 crown
 crud
 cruet
@@ -1830,18 +1892,25 @@ cubed
 cuber
 cubes
 cubic
+cubing
 cubs
 cuckoo
 cuckoos
 cud
 cuddle
+cudgel
+cudgels
 cue
 cued
+cueing
 cues
 cuff
 cuffs
+cuing
 cull
 culled
+culling
+culls
 cult
 cults
 cum
@@ -1961,6 +2030,7 @@ dawn
 dawns
 day
 days
+deacon
 dead
 deadbeat
 deadbeats
@@ -2000,6 +2070,7 @@ debug
 debut
 debuts
 decaf
+decal
 decamp
 decay
 decent
@@ -2030,6 +2101,7 @@ defer
 define
 deft
 degas
+deicing
 deign
 deigns
 deism
@@ -2041,6 +2113,7 @@ dell
 dells
 delta
 deltas
+delve
 demand
 demean
 demo
@@ -2062,6 +2135,7 @@ denotes
 dens
 dense
 dent
+dental
 dented
 dents
 deny
@@ -2088,7 +2162,9 @@ despoil
 despot
 despotic
 despots
+detach
 detail
+detain
 detect
 deter
 deterred
@@ -2174,6 +2250,8 @@ distend
 distil
 distils
 disuse
+ditch
+ditched
 ditsy
 diva
 dive
@@ -2350,6 +2428,9 @@ dubbin
 dubs
 ducat
 duck
+ducking
+duckling
+ducks
 duct
 ducts
 dud
@@ -2358,6 +2439,7 @@ duds
 due
 duel
 dueling
+duelling
 duels
 duenna
 dues
@@ -2368,6 +2450,8 @@ duh
 dull
 dulled
 duller
+dulling
+dulls
 duly
 dump
 dumps
@@ -2377,6 +2461,8 @@ dunce
 dune
 dunes
 dung
+dunk
+dunked
 dunner
 dunno
 duns
@@ -2390,6 +2476,7 @@ dust
 dusting
 dusts
 dusty
+dutch
 duty
 dweeb
 dwell
@@ -2456,6 +2543,7 @@ edger
 edgers
 edges
 edgier
+edict
 edit
 edited
 edits
@@ -2501,6 +2589,7 @@ elide
 elided
 elite
 elk
+elks
 ell
 ells
 elm
@@ -2557,6 +2646,7 @@ energy
 engram
 enmity
 ennui
+enplaned
 enrage
 enrages
 ens
@@ -2632,6 +2722,7 @@ estuary
 eta
 etas
 etch
+etched
 etcher
 etches
 eternal
@@ -2796,6 +2887,7 @@ fiches
 fics
 fief
 fiefs
+field
 fierce
 fiery
 fiesta
@@ -3080,6 +3172,7 @@ gamin
 gammon
 gang
 gangs
+gap
 gar
 garb
 garbed
@@ -3125,6 +3218,7 @@ geek
 geese
 gel
 geld
+gelling
 gels
 gelt
 gem
@@ -3177,7 +3271,10 @@ gifts
 gig
 gigs
 gild
+gill
+gillie
 gilt
+gilts
 gimme
 gin
 ginger
@@ -3188,6 +3285,7 @@ girdles
 girds
 girl
 girlie
+girls
 giro
 giros
 girt
@@ -3385,6 +3483,7 @@ grimes
 grin
 grind
 grins
+grip
 grist
 grit
 grits
@@ -3425,6 +3524,8 @@ guilt
 guinea
 guineas
 guise
+gull
+gulls
 gulp
 gulps
 gum
@@ -3455,6 +3556,8 @@ haggis
 hags
 hah
 haha
+hail
+hailed
 hair
 hairs
 hake
@@ -3516,6 +3619,8 @@ hasted
 hasten
 hastens
 hat
+hatch
+hatched
 hate
 hated
 hater
@@ -3593,6 +3698,7 @@ hem
 heme
 hems
 hen
+hence
 henna
 hens
 her
@@ -3638,6 +3744,7 @@ him
 hind
 hinge
 hint
+hinted
 hints
 hip
 hippy
@@ -3649,6 +3756,8 @@ hiss
 hisses
 hist
 hit
+hitch
+hitched
 hits
 hm
 hoarse
@@ -3753,6 +3862,7 @@ hulls
 hum
 humor
 hung
+hunk
 hunt
 hunted
 hunter
@@ -3833,8 +3943,10 @@ incense
 incest
 inch
 inches
+include
 incur
 incurs
+indict
 indie
 induce
 induces
@@ -3851,7 +3963,9 @@ inhabit
 inhere
 inhibit
 ink
+inks
 inky
+inlaid
 inlet
 inlets
 inmost
@@ -3874,7 +3988,9 @@ insomnia
 instar
 instate
 instead
+instil
 insula
+insular
 insult
 insure
 insurer
@@ -3979,8 +4095,15 @@ keys
 keystone
 khan
 kick
+kicks
 kid
 kids
+kill
+killed
+killing
+kills
+kiln
+kilns
 kin
 kind
 kinda
@@ -3988,6 +4111,8 @@ kine
 kines
 king
 kings
+kink
+kinks
 kiosk
 kip
 kips
@@ -4029,6 +4154,7 @@ labors
 labs
 lac
 lace
+laced
 laces
 lack
 lacked
@@ -4108,6 +4234,7 @@ lasting
 lasts
 lat
 latch
+latched
 latches
 late
 latent
@@ -4293,8 +4420,12 @@ linens
 liner
 liners
 lines
+lineup
 ling
 linger
+lings
+link
+links
 lint
 lion
 lioness
@@ -4312,6 +4443,7 @@ listener
 lister
 lists
 lit
+litchi
 lite
 liter
 literacy
@@ -4461,8 +4593,10 @@ luaus
 lube
 lubed
 lubes
+lubing
 lucid
 luck
+lucking
 lucks
 lucre
 ludo
@@ -4476,9 +4610,11 @@ lulls
 lumen
 lunar
 lunch
+lunched
 lung
 lunge
 lunged
+lungs
 lupin
 lurch
 lure
@@ -4498,6 +4634,7 @@ lute
 lutes
 lye
 lyre
+lyric
 ma
 mac
 mace
@@ -4733,6 +4870,7 @@ milky
 mill
 mills
 mils
+milt
 mime
 mind
 minds
@@ -4869,12 +5007,18 @@ muffin
 muffins
 mug
 mugged
+mugs
 mule
 mum
 mun
+mural
+murals
 murder
 mus
 muse
+musing
+muslin
+muss
 must
 musty
 mute
@@ -5086,6 +5230,7 @@ nuance
 nuances
 nub
 nubby
+nubile
 nubs
 nuclear
 nude
@@ -5099,6 +5244,7 @@ null
 numb
 nun
 nuns
+nuptial
 nurse
 nurser
 nus
@@ -5340,9 +5486,12 @@ pah
 paid
 paige
 pail
+pails
 pain
+pained
 pains
 paint
+painted
 paints
 pair
 pairs
@@ -5353,6 +5502,8 @@ pale
 paled
 pales
 palest
+paling
+palings
 palm
 palms
 palmtop
@@ -5361,6 +5512,7 @@ pals
 palsy
 pan
 pane
+panel
 panes
 pang
 pangs
@@ -5368,6 +5520,7 @@ panic
 panics
 pans
 pant
+panted
 pants
 pap
 papa
@@ -5394,6 +5547,7 @@ parry
 pars
 parse
 parser
+parsing
 part
 parts
 pas
@@ -5405,6 +5559,8 @@ pasta
 pastas
 pasts
 pat
+patch
+patched
 pate
 patent
 pates
@@ -5417,6 +5573,7 @@ patois
 patrol
 pats
 pause
+pausing
 pave
 paves
 paw
@@ -5445,6 +5602,7 @@ pecan
 peck
 pecks
 pecs
+pectic
 pectin
 pedicure
 pee
@@ -5510,6 +5668,7 @@ pews
 phat
 phew
 phi
+phial
 phone
 phony
 pi
@@ -5544,7 +5703,11 @@ pigskins
 pike
 pikes
 pile
+piled
 piles
+pileup
+piling
+pilings
 pill
 pills
 pilot
@@ -5554,7 +5717,9 @@ pimps
 pin
 pincer
 pincers
+pinch
 pine
+pined
 pines
 ping
 pings
@@ -5590,6 +5755,7 @@ pit
 pita
 pitas
 pitch
+pitched
 pitches
 pith
 piton
@@ -5599,9 +5765,16 @@ pizza
 pizzas
 place
 placebo
+placed
+placid
+plaice
+plaid
+plain
+plaint
 plait
 plan
 plane
+planed
 planet
 plant
 plastic
@@ -5650,6 +5823,8 @@ plumbing
 plume
 pluming
 plunge
+plunk
+plunked
 plus
 ply
 poach
@@ -5786,6 +5961,7 @@ prier
 pries
 priest
 priests
+prig
 prim
 primary
 primp
@@ -5864,6 +6040,7 @@ pump
 pumped
 pumps
 pun
+punk
 puns
 puny
 pup
@@ -6327,6 +6504,7 @@ ricer
 ricers
 rices
 rich
+richer
 riches
 rick
 rid
@@ -6397,6 +6575,7 @@ risen
 riser
 risers
 rises
+rising
 risk
 rite
 rites
@@ -6798,6 +6977,7 @@ scuba
 scud
 scuds
 scuff
+scull
 scurf
 scurried
 scurry
@@ -7116,6 +7296,7 @@ ska
 skate
 skeet
 ski
+skied
 skiing
 skin
 skins
@@ -7165,12 +7346,16 @@ sleeve
 slept
 slew
 slews
+slice
+sliced
+slick
 slid
 slide
 slider
 slim
 slimy
 sling
+slink
 slip
 slipped
 slipper
@@ -7204,6 +7389,7 @@ slows
 sludge
 slug
 slugs
+slum
 slung
 slur
 slurp
@@ -7694,6 +7880,7 @@ strong
 strop
 struck
 strum
+strung
 strut
 struts
 stub
@@ -7741,6 +7928,8 @@ sued
 suede
 sues
 suet
+sugar
+sugars
 suggest
 suggestion
 suggestions
@@ -7770,6 +7959,7 @@ sundry
 sunflower
 sung
 sunk
+sunlit
 sunrise
 suns
 sup
@@ -7877,7 +8067,9 @@ tagger
 tags
 tail
 tailed
+tailing
 tailor
+tails
 taint
 tainted
 tainting
@@ -7960,6 +8152,7 @@ tarry
 tars
 tarsal
 tarsi
+tarsus
 tart
 tartan
 tartans
@@ -8001,6 +8194,7 @@ taxon
 tea
 teabag
 teabags
+teach
 teacup
 teak
 teal
@@ -8204,8 +8398,10 @@ tigress
 til
 tilde
 tile
+tiled
 tiler
 tiles
+tiling
 till
 tilt
 tilts
@@ -8249,6 +8445,7 @@ titans
 tithe
 titian
 title
+titling
 tits
 titter
 to
@@ -8453,6 +8650,8 @@ trey
 triad
 triage
 trial
+trialing
+trials
 trick
 trier
 triers
@@ -8487,10 +8686,13 @@ true
 truer
 truest
 trug
+truing
+truism
 truly
 trunk
 trunks
 truss
+trussing
 trust
 trustee
 trusts
@@ -8518,6 +8720,7 @@ tuft
 tufts
 tug
 tugs
+tulip
 tulle
 tum
 tumor
@@ -8628,6 +8831,7 @@ unlearn
 unlit
 unload
 unmet
+unplaced
 unread
 unreal
 unrest
@@ -8649,6 +8853,8 @@ unwise
 unwrap
 unwraps
 up
+upend
+upland
 upon
 upped
 upper
@@ -8694,6 +8900,7 @@ usher
 ushers
 using
 usual
+usurp
 uteri
 uterus
 utter
@@ -8722,6 +8929,7 @@ vein
 veining
 veins
 vela
+veld
 vend
 vent
 verb
@@ -8742,6 +8950,8 @@ vie
 vied
 vier
 vies
+view
+viewed
 vigor
 vile
 vine
@@ -8790,6 +9000,7 @@ waiters
 waiting
 waits
 waive
+waived
 wake
 waken
 wale
@@ -8854,6 +9065,7 @@ we
 weak
 weaken
 weaker
+weal
 wean
 weaned
 weans
@@ -8880,6 +9092,7 @@ weep
 weeps
 weer
 wees
+weevil
 weir
 weird
 weirs
@@ -8906,6 +9119,7 @@ wetly
 wets
 wettest
 wetting
+weve
 what
 wheal
 wheat
@@ -8956,6 +9170,7 @@ wilted
 wilts
 wily
 win
+wince
 wind
 winder
 winders
