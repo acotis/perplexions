@@ -21664,7 +21664,6 @@ frontispiece
 frontrunner
 frontrunners
 fronts
-frosh
 frost
 frostbite
 frostbitten
@@ -31638,7 +31637,6 @@ mammography
 mammon
 mammoth
 mammoths
-mammy
 man
 mana
 manacled
@@ -41524,7 +41522,6 @@ pshaw
 psi
 psittacosis
 psoriasis
-psst
 psych
 psyche
 psyched
@@ -42412,7 +42409,6 @@ railroads
 rails
 railway
 railways
-raiment
 rain
 rainbow
 rainbows
@@ -53696,7 +53692,6 @@ tenuously
 tenure
 tenured
 tenures
-tepee
 tepid
 tequila
 tequilas
