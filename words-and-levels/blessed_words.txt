@@ -2708,6 +2708,7 @@ epic
 epics
 epicure
 epicurean
+epitaph
 epoch
 epochal
 era
@@ -3660,6 +3661,7 @@ hangout
 hangouts
 hangs
 hap
+happen
 harass
 harassed
 harassing
@@ -3690,6 +3692,7 @@ hated
 hater
 haters
 hates
+hatpin
 hats
 hatted
 hatter
@@ -3813,6 +3816,7 @@ hint
 hinted
 hints
 hip
+hipped
 hippy
 hips
 hire
@@ -4056,6 +4060,7 @@ inner
 inning
 innit
 inns
+input
 inrush
 ins
 inseam
@@ -5182,6 +5187,7 @@ nan
 nans
 nap
 nape
+napped
 naps
 narc
 nark
@@ -5280,6 +5286,7 @@ night
 nil
 nine
 nip
+nipped
 nips
 nisei
 nit
@@ -5881,8 +5888,10 @@ pioneer
 pioneers
 pip
 pipe
+piped
 piper
 pipit
+pipped
 pips
 pis
 piss
@@ -6200,6 +6209,8 @@ pump
 pumped
 pumps
 pun
+punch
+punched
 punk
 puns
 puny
@@ -8342,6 +8353,7 @@ taped
 taper
 tapers
 tapes
+tapped
 taps
 tar
 tarantula
