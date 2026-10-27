@@ -132,6 +132,7 @@ agents
 ages
 aghast
 aging
+aglow
 ago
 agony
 agora
@@ -176,6 +177,7 @@ alarm
 alas
 alb
 albs
+alder
 ale
 alehouse
 alert
@@ -595,7 +597,9 @@ baluster
 balustrade
 ban
 banal
+banana
 band
+bandana
 bands
 bandy
 bane
@@ -964,6 +968,7 @@ blushed
 boa
 boar
 board
+boarder
 boards
 boars
 boas
@@ -1156,6 +1161,8 @@ budge
 budged
 buds
 bug
+bugle
+bugler
 bugs
 built
 bulge
@@ -1177,6 +1184,10 @@ bur
 burden
 burdens
 burg
+burger
+burglar
+burglary
+burgled
 burial
 buried
 buries
@@ -1672,6 +1683,11 @@ comma
 commas
 comment
 comp
+comped
+compel
+compile
+compiled
+complied
 comps
 con
 conceal
@@ -1714,6 +1730,7 @@ cop
 cope
 coped
 copes
+copied
 copra
 cops
 copse
@@ -2074,6 +2091,7 @@ dearer
 dearest
 dears
 dearth
+deary
 death
 deaths
 debar
@@ -2232,6 +2250,7 @@ dills
 dim
 dime
 dimer
+dimple
 dims
 din
 dinar
@@ -2661,6 +2680,7 @@ enact
 enacts
 encamp
 enclose
+encode
 end
 endear
 ended
@@ -2783,6 +2803,7 @@ evil
 ew
 ewe
 ewer
+ewers
 ewes
 ex
 exact
@@ -3267,6 +3288,7 @@ gaunt
 gave
 gavel
 gavels
+gawk
 gay
 gayer
 gayest
@@ -3373,6 +3395,8 @@ glass
 glassed
 gleam
 glean
+gleaner
+gleaners
 gleans
 glee
 glen
@@ -3399,6 +3423,9 @@ glossed
 glosses
 glossy
 glottal
+glow
+glower
+glowers
 glue
 glued
 glues
@@ -3647,6 +3674,7 @@ ham
 hams
 hamster
 hand
+handier
 handle
 handler
 handlers
@@ -3666,6 +3694,8 @@ harass
 harassed
 harassing
 hard
+harder
+hardier
 hare
 harem
 hares
@@ -3831,6 +3861,8 @@ hitch
 hitched
 hits
 hm
+hoard
+hoarder
 hoarse
 hoarser
 hob
@@ -3877,6 +3909,7 @@ hood
 hoods
 hoof
 hoofs
+hook
 hoot
 hoots
 hop
@@ -3917,6 +3950,8 @@ hovels
 how
 howd
 howl
+howler
+howlers
 howls
 hows
 hub
@@ -4007,6 +4042,7 @@ immerse
 imp
 impair
 impasto
+impel
 import
 impose
 imposer
@@ -4043,6 +4079,7 @@ ingot
 inhabit
 inhale
 inhaled
+inhaler
 inhere
 inhibit
 ink
@@ -4257,8 +4294,10 @@ lades
 ladle
 ladles
 lads
+lady
 lag
 lager
+lagers
 lagoon
 lags
 laid
@@ -4292,6 +4331,7 @@ lancet
 lancets
 land
 landed
+lander
 landless
 lands
 lane
@@ -4305,6 +4345,8 @@ laptop
 laptops
 larch
 lard
+larder
+lardy
 large
 larger
 largo
@@ -4503,6 +4545,7 @@ limiter
 limn
 limo
 limos
+limp
 linden
 line
 lineage
@@ -4606,6 +4649,7 @@ loners
 long
 longed
 longer
+longest
 longs
 loo
 look
@@ -4908,6 +4952,7 @@ meg
 mega
 megaton
 megs
+meld
 melee
 melon
 melons
@@ -4981,6 +5026,7 @@ mien
 migrate
 migration
 mil
+mild
 mile
 miler
 miles
@@ -5046,6 +5092,7 @@ mocked
 mocks
 mod
 mode
+model
 modern
 modes
 modest
@@ -5058,6 +5105,7 @@ moil
 moire
 moist
 moister
+mold
 mole
 moles
 molest
@@ -5092,6 +5140,7 @@ mooted
 moots
 mop
 mope
+moped
 mops
 more
 morel
@@ -5261,6 +5310,7 @@ neuter
 nevi
 new
 newbie
+newel
 newer
 newest
 news
@@ -5359,6 +5409,7 @@ nouns
 nova
 novae
 now
+nozzle
 nu
 nuance
 nuances
@@ -5467,6 +5518,7 @@ old
 olden
 older
 oldest
+oldie
 oldsters
 oleo
 oles
@@ -5733,9 +5785,11 @@ peaces
 peach
 peachy
 peal
+pealed
 peals
 pear
 pearl
+pearled
 pearls
 pears
 peas
@@ -6228,6 +6282,7 @@ purer
 purest
 purge
 purged
+purger
 purges
 purine
 purl
@@ -6501,6 +6556,7 @@ regain
 regains
 regal
 regale
+regales
 regard
 regatta
 reggae
@@ -6675,6 +6731,7 @@ rheostat
 rheostats
 rhesus
 rheum
+rhino
 rho
 rhos
 rial
@@ -7309,8 +7366,10 @@ sever
 severe
 severer
 sew
+sewage
 seward
 sewed
+sewer
 sewn
 sews
 sex
@@ -7358,6 +7417,7 @@ shells
 sherbet
 shes
 shew
+shewn
 shied
 shier
 shies
@@ -7394,6 +7454,8 @@ should
 shout
 shouts
 show
+shower
+shown
 shows
 shrill
 shrine
@@ -7588,6 +7650,7 @@ slots
 slotted
 slow
 slowed
+slower
 slowest
 slows
 sludge
@@ -8588,11 +8651,13 @@ threads
 threat
 threats
 three
+threw
 throat
 throes
 throne
 throng
 throw
+thrown
 thru
 thrum
 thrust
@@ -8919,6 +8984,7 @@ trout
 trouts
 trow
 trowel
+trowels
 troy
 truck
 trucks
@@ -9100,6 +9166,7 @@ unwrap
 unwraps
 up
 upend
+upgrade
 upland
 upon
 upped
@@ -9350,6 +9417,7 @@ welds
 well
 welled
 wells
+welsh
 welt
 welted
 welts
@@ -9470,6 +9538,7 @@ woad
 woe
 woeful
 woes
+wok
 wolf
 wolfish
 wolfs
@@ -9498,6 +9567,7 @@ worm
 worn
 worry
 worse
+worsen
 worst
 wort
 worth
@@ -9612,6 +9682,8 @@ zilch
 zinc
 zine
 zip
+zone
+zoned
 zoo
 zoom
 zooms
