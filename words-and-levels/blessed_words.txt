@@ -81,6 +81,8 @@ acumen
 acute
 acyl
 ad
+adage
+adages
 add
 added
 addend
@@ -109,6 +111,11 @@ adsorb
 adult
 adults
 advent
+adverse
+advise
+adviser
+advisers
+advises
 aegis
 aerate
 aerated
@@ -127,6 +134,7 @@ agates
 agave
 age
 aged
+ageist
 agent
 agents
 ages
@@ -468,6 +476,7 @@ atone
 atones
 atoning
 atop
+atria
 atrium
 atriums
 ats
@@ -498,6 +507,12 @@ auto
 autos
 avast
 aver
+average
+avers
+averse
+avert
+averted
+averts
 avian
 aviator
 avid
@@ -1003,6 +1018,7 @@ bolt
 bolted
 bolts
 bolus
+bomb
 bond
 bonds
 bone
@@ -1670,6 +1686,7 @@ colts
 coma
 comas
 comb
+combat
 come
 comer
 comes
@@ -1798,6 +1815,7 @@ coupe
 coupes
 couple
 couples
+coupon
 course
 courser
 court
@@ -2191,6 +2209,8 @@ depot
 depots
 depute
 derby
+derive
+derives
 derp
 derps
 descent
@@ -2218,6 +2238,9 @@ detour
 detours
 deuce
 dev
+devise
+devises
+devs
 dew
 dewy
 dhow
@@ -2275,6 +2298,7 @@ dipper
 dips
 dipso
 dire
+direst
 dirge
 dirges
 dirk
@@ -2300,6 +2324,8 @@ ditched
 ditsy
 diva
 dive
+dives
+divest
 do
 doable
 dob
@@ -2439,10 +2465,13 @@ drew
 drier
 driers
 dries
+driest
 drill
 drills
 drip
 drips
+drive
+drives
 droll
 drone
 droned
@@ -2452,6 +2481,7 @@ drools
 droop
 droops
 drop
+dropout
 drops
 dross
 drove
@@ -2794,6 +2824,10 @@ ethyl
 euphony
 euro
 euros
+evade
+evader
+evaders
+evades
 eve
 even
 event
@@ -2820,6 +2854,7 @@ expats
 extol
 ey
 eye
+eyed
 eyelet
 eyelets
 eyes
@@ -3515,6 +3550,7 @@ grace
 grad
 grade
 grades
+grads
 graft
 grafts
 grail
@@ -3541,6 +3577,10 @@ gratin
 grating
 gratings
 gratis
+grave
+graves
+gravest
+gravies
 gravity
 gray
 grayer
@@ -3565,6 +3605,7 @@ grey
 greyer
 greys
 grid
+grids
 grieve
 grieved
 grim
@@ -4176,9 +4217,13 @@ iterate
 iterates
 its
 ive
+jeer
+jeers
 jest
+jester
 jests
 jet
+jets
 jib
 jibe
 josh
@@ -4215,6 +4260,7 @@ ketch
 ketone
 kettle
 key
+keyed
 keynote
 keys
 keystone
@@ -4222,6 +4268,8 @@ khan
 kick
 kicks
 kid
+kidney
+kidneys
 kids
 kill
 killed
@@ -6093,7 +6141,9 @@ porky
 porn
 porno
 port
+portal
 ported
+portly
 ports
 pose
 posed
@@ -6441,6 +6491,7 @@ rattles
 ratty
 rave
 raven
+raves
 raw
 rawer
 ray
@@ -6609,6 +6660,7 @@ renews
 rennet
 renounce
 rent
+rental
 rented
 renter
 renters
@@ -6716,6 +6768,8 @@ revels
 reverb
 revere
 revert
+revise
+revises
 revs
 revue
 revues
@@ -6819,6 +6873,11 @@ rising
 risk
 rite
 rites
+rive
+rives
+rivet
+riveted
+rivets
 roach
 road
 roads
@@ -7024,6 +7083,7 @@ sadden
 saddle
 sadhu
 sadhus
+sadist
 sadly
 safe
 safer
@@ -7138,7 +7198,9 @@ saurian
 savage
 savages
 save
+saved
 saver
+savers
 saves
 saw
 sawed
@@ -7347,6 +7409,7 @@ serrate
 serrated
 serve
 server
+serves
 sesame
 set
 sets
@@ -7559,6 +7622,8 @@ sixty
 sizzle
 ska
 skate
+skated
+skater
 skeet
 skew
 ski
@@ -7569,6 +7634,7 @@ skins
 skint
 skip
 skips
+sky
 slab
 slabs
 slack
@@ -8046,6 +8112,7 @@ stern
 sterna
 sterner
 sterns
+steroid
 stet
 stets
 stetson
@@ -8143,10 +8210,12 @@ stria
 striae
 strict
 stride
+strides
 strife
 string
 strings
 strip
+strive
 strobe
 strode
 stroke
@@ -8317,6 +8386,8 @@ swore
 sworn
 syn
 sync
+synod
+synoptic
 syphon
 syrup
 syrups
@@ -8950,6 +9021,7 @@ trestles
 trey
 treys
 triad
+triads
 triage
 trial
 trialing
@@ -8978,6 +9050,7 @@ trooped
 troops
 trope
 tropes
+tropic
 trot
 trots
 trout
@@ -9095,6 +9168,7 @@ twit
 twits
 two
 twos
+tyke
 type
 typo
 typos
@@ -9229,12 +9303,15 @@ van
 vane
 vans
 var
+vars
 vase
 vases
 vast
+vaster
 vat
 veal
 veer
+veers
 veg
 veggie
 vegs
@@ -9248,13 +9325,21 @@ vend
 vent
 verb
 verbs
+verge
+verges
+verse
+versed
+verses
 vert
 vertical
 very
 vest
 vestal
+vested
+vests
 vet
 veto
+vets
 vex
 via
 vial
@@ -9273,6 +9358,13 @@ vino
 viol
 viola
 violas
+visa
+visage
+visas
+vise
+vised
+vises
+vista
 vixen
 void
 voided
