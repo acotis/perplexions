@@ -3084,6 +3084,8 @@ floe
 floor
 floors
 flop
+flora
+floral
 floss
 flossing
 flout
@@ -4219,6 +4221,8 @@ its
 ive
 jeer
 jeers
+jell
+jello
 jest
 jester
 jests
@@ -4226,6 +4230,7 @@ jet
 jets
 jib
 jibe
+job
 josh
 juke
 jump
@@ -6915,6 +6920,7 @@ rodeos
 rods
 roe
 roes
+rofl
 roger
 rogers
 roil
