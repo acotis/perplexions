@@ -319,6 +319,7 @@ anoints
 anon
 anorak
 another
+answer
 ant
 ante
 anted
@@ -626,6 +627,9 @@ bangle
 bangles
 bangs
 bani
+bank
+banker
+banks
 bans
 banter
 bap
@@ -683,6 +687,8 @@ basin
 basins
 basis
 bask
+basket
+basks
 bass
 basset
 bassi
@@ -774,6 +780,7 @@ beef
 beefy
 been
 beep
+beeper
 beeps
 beer
 beers
@@ -1370,6 +1377,7 @@ carp
 carpi
 carps
 carrel
+carried
 carrot
 carrots
 carry
@@ -1674,6 +1682,7 @@ cola
 colas
 cold
 colder
+colds
 colic
 coll
 collar
@@ -2208,6 +2217,7 @@ deposited
 depot
 depots
 depute
+derail
 derby
 derive
 derives
@@ -3731,6 +3741,9 @@ hang
 hangout
 hangouts
 hangs
+hank
+hanker
+hanks
 hap
 happen
 harass
@@ -3777,6 +3790,7 @@ haw
 hawed
 hawk
 haws
+hawser
 hay
 haze
 hazzan
@@ -3801,6 +3815,7 @@ heard
 hearer
 hears
 hearse
+hearses
 heart
 heartland
 heartless
@@ -4252,6 +4267,8 @@ keener
 keenly
 keens
 keep
+keeper
+keepers
 keeps
 keg
 kegs
@@ -5783,6 +5800,8 @@ para
 paras
 parch
 pare
+parent
+parents
 parer
 pares
 park
@@ -5796,6 +5815,7 @@ parry
 pars
 parse
 parser
+parses
 parsing
 part
 parts
@@ -5803,9 +5823,13 @@ pas
 pascal
 pasha
 pass
+passer
 past
 pasta
 pastas
+paste
+pastern
+pastes
 pasts
 pat
 patch
@@ -5827,6 +5851,7 @@ pave
 paves
 paw
 pawn
+pawns
 paws
 pay
 payer
@@ -5859,6 +5884,7 @@ pedicure
 pee
 peed
 peek
+peeks
 peel
 peeler
 peels
@@ -5868,6 +5894,7 @@ peers
 pees
 peeve
 peeves
+peewee
 peg
 pegs
 pekoe
@@ -5918,13 +5945,18 @@ petrels
 petrol
 pets
 pew
+pewee
 pews
+phase
+phases
 phat
 phew
 phi
 phial
 phone
 phony
+phrase
+phrases
 pi
 pianist
 piano
@@ -5981,6 +6013,7 @@ pinion
 pink
 pinko
 pinkos
+pinks
 pinky
 pinnate
 pinned
@@ -6419,6 +6452,7 @@ raider
 raiding
 raids
 rail
+railed
 rain
 rains
 rainy
@@ -6590,6 +6624,7 @@ reedy
 reef
 reefs
 reek
+reeks
 reel
 reels
 reenter
@@ -6618,6 +6653,7 @@ regatta
 reggae
 regret
 rehab
+rehabs
 rehear
 reheat
 rehire
@@ -6678,6 +6714,7 @@ repays
 repel
 repels
 repent
+repents
 report
 reports
 repose
@@ -6876,6 +6913,7 @@ risers
 rises
 rising
 risk
+risks
 rite
 rites
 rive
@@ -7191,6 +7229,7 @@ sating
 satiny
 satire
 satires
+satori
 satyr
 satyrs
 sauce
@@ -7249,6 +7288,7 @@ school
 schools
 scion
 scoff
+scold
 scone
 scoop
 scoot
@@ -7348,6 +7388,7 @@ seeds
 seedy
 seeing
 seek
+seeks
 seem
 seems
 seen
@@ -7398,7 +7439,10 @@ septa
 septet
 septic
 sera
+serape
+seraph
 sere
+serene
 serenity
 serf
 serge
@@ -7411,6 +7455,7 @@ serine
 sermon
 serous
 serpent
+serpents
 serrate
 serrated
 serve
@@ -7439,6 +7484,7 @@ sewage
 seward
 sewed
 sewer
+sewers
 sewn
 sews
 sex
@@ -7594,6 +7640,7 @@ singes
 single
 sings
 sink
+sinks
 sins
 sinus
 sip
@@ -7631,7 +7678,12 @@ skate
 skated
 skater
 skeet
+skein
+skeins
 skew
+skewer
+skewers
+skews
 ski
 skied
 skiing
@@ -7775,12 +7827,14 @@ snatch
 sneak
 sneer
 sneered
+sneers
 snick
 snide
 sniff
 sniffed
 snip
 snipe
+snipes
 snips
 snit
 snob
@@ -8096,6 +8150,7 @@ steel
 steels
 steely
 steep
+steeper
 steeps
 steer
 steerage
@@ -8180,6 +8235,7 @@ store
 stored
 storer
 stores
+storied
 stories
 stork
 storm
@@ -8346,6 +8402,8 @@ swabs
 swag
 swain
 swan
+swank
+swans
 swap
 sward
 swards
@@ -8364,6 +8422,7 @@ sweaty
 swede
 swedes
 sweep
+sweeper
 sweeps
 sweet
 sweeter
@@ -8973,6 +9032,8 @@ tracheal
 track
 tracks
 tract
+tractor
+tracts
 trad
 trade
 trader
@@ -9402,6 +9463,7 @@ wagers
 wages
 wags
 wail
+wailed
 wailer
 wails
 wain
@@ -9433,6 +9495,9 @@ wane
 waned
 wanes
 waning
+wank
+wanker
+wanks
 want
 wanted
 wanting
@@ -9464,6 +9529,7 @@ wast
 waste
 wasted
 waster
+wastes
 water
 waters
 watt
@@ -9501,6 +9567,7 @@ weedy
 week
 weeks
 weep
+weeper
 weeps
 weer
 wees
@@ -9526,7 +9593,10 @@ wens
 went
 wept
 were
+werent
 west
+western
+westerns
 wet
 wetly
 wets
@@ -9540,10 +9610,19 @@ whee
 wheel
 wheels
 when
+where
+whereas
+wheres
 whet
 whets
 whew
 whey
+whine
+whines
+whip
+whir
+whisk
+whisks
 whist
 whistle
 whit
@@ -9568,11 +9647,15 @@ widows
 width
 wield
 wielded
+wields
 wiener
 wieners
 wife
 wig
 wild
+wildcat
+wildcats
+wilder
 wilds
 wile
 wiles
@@ -9597,6 +9680,7 @@ wing
 wining
 wink
 winkle
+winks
 winning
 winnow
 wino
@@ -9683,6 +9767,7 @@ wreak
 wreck
 wreckage
 wren
+wrens
 wrest
 wrinkle
 wrist
@@ -9750,6 +9835,7 @@ yips
 yo
 yob
 yobs
+yodel
 yoga
 yoke
 yolk

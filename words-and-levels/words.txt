@@ -38718,7 +38718,6 @@ philosophies
 philosophize
 philosophizing
 philosophy
-phis
 phish
 phishing
 phlebitis
@@ -44258,7 +44257,6 @@ reparable
 reparation
 reparations
 repartee
-repast
 repatriate
 repatriated
 repatriates
