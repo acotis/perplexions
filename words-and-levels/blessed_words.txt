@@ -2254,6 +2254,7 @@ devs
 dew
 dewy
 dhow
+dhows
 dial
 diatom
 diatoms
@@ -2496,6 +2497,7 @@ drops
 dross
 drove
 drown
+drowns
 drub
 drubs
 drug
@@ -3757,7 +3759,10 @@ harem
 hares
 hark
 harp
+harrow
+harrows
 harry
+harsh
 hart
 harts
 has
@@ -3817,6 +3822,8 @@ hears
 hearse
 hearses
 heart
+hearth
+hearths
 heartland
 heartless
 hearts
@@ -5311,6 +5318,7 @@ naps
 narc
 nark
 narrow
+narrows
 nary
 nasal
 nasals
@@ -6488,6 +6496,7 @@ rank
 ranked
 ranks
 rant
+ranted
 ranter
 rants
 rap
@@ -7572,6 +7581,7 @@ show
 shower
 shown
 shows
+shred
 shrill
 shrine
 shrub
@@ -8782,18 +8792,23 @@ thou
 thousand
 thrall
 thralls
+thrash
+thrashed
 thread
 threads
 threat
 threats
 three
+thresh
 threw
 throat
 throes
 throne
+thrones
 throng
 throw
 thrown
+throws
 thru
 thrum
 thrust
@@ -9725,8 +9740,10 @@ wolf
 wolfish
 wolfs
 won
+wonder
 wonk
 wont
+wonted
 wonton
 woo
 wood
