@@ -20,6 +20,7 @@ abhor
 abhors
 abide
 abides
+abiding
 ablate
 ablated
 ablaze
@@ -131,6 +132,7 @@ afro
 aft
 after
 again
+agape
 agar
 agate
 agates
@@ -176,6 +178,7 @@ airbus
 aired
 airgun
 airguns
+airing
 airless
 airmen
 airport
@@ -504,6 +507,7 @@ auburn
 auger
 augers
 augur
+august
 auk
 aunt
 aunts
@@ -642,6 +646,7 @@ bani
 bank
 banker
 banks
+banning
 bans
 banter
 bap
@@ -839,6 +844,7 @@ beluga
 bench
 bend
 bends
+benign
 bent
 bents
 berate
@@ -880,7 +886,9 @@ bide
 bides
 bidet
 bidets
+biding
 bids
+biennia
 bier
 biff
 big
@@ -910,6 +918,7 @@ biotin
 biped
 bipeds
 bird
+birding
 birds
 bison
 bisons
@@ -1049,6 +1058,8 @@ bong
 bongo
 boning
 bonnie
+bonus
+bonuses
 bony
 boo
 boob
@@ -1150,13 +1161,16 @@ briar
 briars
 bride
 brides
+bridge
 brie
+brief
 brig
 brigand
 bright
 brigs
 brim
 brine
+bring
 briny
 bro
 broad
@@ -2820,6 +2834,9 @@ epicurean
 epitaph
 epoch
 epochal
+equal
+equine
+equip
 era
 eras
 erase
@@ -2908,6 +2925,7 @@ exalt
 exalting
 exam
 excel
+excels
 exec
 execs
 execute
@@ -2949,6 +2967,7 @@ fain
 fair
 fairer
 fairest
+fairing
 fairs
 fairy
 fall
@@ -2960,9 +2979,11 @@ fame
 famed
 fames
 families
+famine
 famous
 fan
 fang
+fanning
 fans
 far
 farad
@@ -2984,6 +3005,7 @@ fateful
 fates
 fats
 fatso
+faun
 fawn
 fax
 faxed
@@ -2995,6 +3017,7 @@ feast
 feat
 feats
 fecal
+feces
 fed
 feds
 fee
@@ -3020,6 +3043,7 @@ felting
 fem
 femur
 fen
+fence
 fend
 fender
 fends
@@ -3046,6 +3070,8 @@ feted
 fetid
 fettle
 fetus
+feud
+feuding
 few
 fewer
 fewest
@@ -3053,6 +3079,7 @@ fiasco
 fiat
 fib
 fiber
+fibrin
 fibs
 fic
 fiche
@@ -3090,12 +3117,14 @@ finer
 finery
 fines
 finest
+fining
 finis
 fins
 fir
 fire
 fired
 fires
+firing
 firm
 firmed
 firms
@@ -3145,6 +3174,7 @@ fleet
 fleets
 flesh
 flex
+flexes
 flick
 flicked
 flicker
@@ -3157,6 +3187,7 @@ fling
 flint
 flints
 flip
+flips
 flit
 flits
 float
@@ -3301,14 +3332,17 @@ frosts
 froth
 fry
 fryer
+fudge
 fuel
 fuels
+fug
 full
 fuller
 fume
 fumed
 fun
 fund
+fungi
 fur
 furl
 furled
@@ -3440,6 +3474,7 @@ genes
 genial
 genie
 genies
+genii
 genital
 genius
 genocide
@@ -3482,6 +3517,7 @@ gigs
 gild
 gill
 gillie
+gills
 gilt
 gilts
 gimme
@@ -3541,6 +3577,7 @@ globs
 glom
 gloms
 gloom
+glop
 glories
 glory
 gloss
@@ -3698,6 +3735,7 @@ greyer
 greys
 grid
 grids
+grief
 grieve
 grieved
 grim
@@ -3741,6 +3779,7 @@ grudge
 gruel
 grunt
 grunts
+guanine
 guard
 guess
 guest
@@ -3757,6 +3796,8 @@ gulps
 gum
 gums
 gun
+gunman
+gunmen
 guns
 guru
 gush
@@ -4175,6 +4216,7 @@ igloos
 ignite
 ignites
 ignition
+iguana
 ilea
 ilia
 ilk
@@ -4225,6 +4267,7 @@ infest
 info
 ingest
 ingot
+ingots
 inhabit
 inhale
 inhaled
@@ -4247,6 +4290,7 @@ inning
 innit
 inns
 input
+inputs
 inrush
 ins
 inseam
@@ -4341,6 +4385,8 @@ jib
 jibe
 job
 josh
+juice
+juicy
 juke
 jump
 jumped
@@ -4759,6 +4805,7 @@ lip
 lipped
 lips
 lira
+liras
 lisle
 lisp
 list
@@ -4912,6 +4959,7 @@ louts
 love
 loved
 lover
+loves
 low
 lower
 lowers
@@ -4936,6 +4984,7 @@ lugs
 lull
 lulled
 lulls
+lulu
 lumber
 lumen
 lump
@@ -4948,6 +4997,7 @@ lunge
 lunged
 lungs
 lupin
+lupus
 lurch
 lure
 lures
@@ -4981,6 +5031,7 @@ macs
 mad
 made
 mads
+mafia
 mag
 mage
 mages
@@ -5031,6 +5082,7 @@ manned
 manner
 mannered
 manners
+manning
 manor
 manors
 mans
@@ -5044,6 +5096,7 @@ mantes
 manure
 manured
 manures
+manuring
 many
 map
 mapped
@@ -5127,6 +5180,7 @@ meander
 meandered
 meaner
 meanest
+meaning
 means
 meant
 meany
@@ -5245,6 +5299,7 @@ mingle
 mini
 minim
 minima
+mining
 minion
 minis
 mink
@@ -5304,11 +5359,13 @@ moi
 moil
 moire
 moist
+moisten
 moister
 mold
 mole
 moles
 molest
+moll
 molt
 molter
 mom
@@ -5322,6 +5379,7 @@ monger
 monist
 monk
 mono
+monsoon
 monster
 month
 moo
@@ -5365,6 +5423,9 @@ mothered
 moths
 motif
 motile
+motion
+motive
+motives
 motor
 motors
 mots
@@ -5373,6 +5434,10 @@ mottos
 mount
 mouth
 mouths
+move
+moves
+movie
+movies
 mow
 mown
 mows
@@ -5438,6 +5503,7 @@ name
 named
 names
 nan
+nana
 nans
 nap
 nape
@@ -5561,6 +5627,7 @@ nitro
 nits
 nitwit
 nix
+nixes
 no
 nob
 noble
@@ -5639,12 +5706,14 @@ nudist
 nudists
 nuke
 null
+nulls
 numb
 nun
 nuns
 nuptial
 nurse
 nurser
+nurture
 nus
 nut
 nutcase
@@ -5855,6 +5924,7 @@ ova
 oval
 ovation
 oven
+ovens
 over
 overt
 overture
@@ -6076,6 +6146,7 @@ peony
 people
 peopled
 pep
+pepsin
 per
 perch
 peril
@@ -6158,6 +6229,9 @@ pileup
 piling
 pilings
 pill
+pillar
+pillars
+pilling
 pills
 pilot
 pilots
@@ -6193,7 +6267,9 @@ pip
 pipe
 piped
 piper
+pipes
 pipit
+pipits
 pipped
 pips
 pis
@@ -6215,6 +6291,10 @@ pith
 piton
 pitons
 pits
+pitta
+pixel
+pixels
+pixy
 pizza
 pizzas
 place
@@ -6245,6 +6325,7 @@ playing!
 plays
 playtest
 playtesting
+plaza
 plea
 plead
 pleader
@@ -6273,6 +6354,7 @@ plops
 plot
 plots
 plug
+plugs
 plum
 plumb
 plumbing
@@ -6308,6 +6390,8 @@ poled
 poles
 polity
 poll
+polling
+polls
 polo
 poly
 pom
@@ -6334,6 +6418,8 @@ poorer
 poos
 pop
 pope
+popes
+poplin
 pops
 pore
 pored
@@ -6354,6 +6440,7 @@ posers
 poses
 poseur
 posies
+posing
 posit
 posited
 posits
@@ -6363,6 +6450,7 @@ post
 postal
 posted
 poster
+posting
 posts
 posture
 postured
@@ -6510,6 +6598,7 @@ pulp
 pulped
 pulps
 pulsar
+pulsars
 pulse
 puma
 pumas
@@ -6521,10 +6610,13 @@ punch
 punched
 punk
 puns
+punt
+punts
 puny
 pup
 pupa
 pupae
+pupal
 pupil
 pupils
 pups
@@ -6539,6 +6631,7 @@ purged
 purger
 purges
 purine
+purist
 purl
 purls
 purr
@@ -6567,6 +6660,14 @@ quacks
 quart
 quartet
 quick
+quiet
+quilt
+quilter
+quin
+quint
+quip
+quire
+quirt
 quit
 quite
 quits
@@ -6623,6 +6724,7 @@ raiding
 raids
 rail
 railed
+rails
 rain
 rains
 rainy
@@ -6904,6 +7006,8 @@ reptile
 reptiles
 repute
 reputed
+require
+requite
 reran
 reread
 rerun
@@ -6924,6 +7028,7 @@ reset
 resets
 resetting
 reside
+resign
 resin
 resins
 resist
@@ -7094,6 +7199,7 @@ risk
 risks
 rite
 rites
+ritual
 rive
 rives
 rivet
@@ -7276,6 +7382,7 @@ runts
 runway
 rupee
 rupees
+rupture
 rural
 ruse
 ruses
@@ -7799,12 +7906,15 @@ sigh
 sighs
 sight
 sign
+signer
 signet
 signs
+silence
 silent
 silk
 silky
 sill
+sills
 silo
 silos
 silt
@@ -7856,6 +7966,7 @@ sitar
 site
 sited
 sites
+siting
 sits
 sitter
 sitters
@@ -8054,6 +8165,7 @@ snouts
 snow
 snowed
 snub
+snubs
 snug
 so
 soak
@@ -8221,6 +8333,7 @@ spines
 spinet
 spins
 spiny
+spiral
 spire
 spirea
 spirit
@@ -8230,11 +8343,13 @@ spits
 splat
 splats
 splay
+spleen
 split
 splits
 spoil
 spoils
 spoilt
+sponge
 spook
 spooked
 spool
@@ -8247,6 +8362,7 @@ sports
 sporty
 spot
 spots
+spout
 sprain
 sprat
 spray
@@ -8254,6 +8370,9 @@ spread
 spreader
 spree
 sprees
+sprig
+spring
+sprog
 spry
 spud
 spuds
@@ -8264,6 +8383,7 @@ spurn
 spurns
 spurs
 spurt
+spurts
 spy
 stab
 stable
@@ -8313,6 +8433,7 @@ stared
 stares
 staring
 stark
+starring
 starry
 stars
 start
@@ -8322,6 +8443,7 @@ starting
 startle
 startled
 starts
+startup
 stash
 stashed
 stat
@@ -8448,6 +8570,7 @@ story
 stout
 stouter
 stouts
+stove
 stow
 stowed
 stows
@@ -8457,6 +8580,7 @@ strains
 strait
 strand
 strands
+strap
 strat
 strata
 strati
@@ -8480,6 +8604,8 @@ strife
 string
 strings
 strip
+stripe
+strips
 strive
 strobe
 strode
@@ -8511,6 +8637,7 @@ stunk
 stuns
 stunt
 stunts
+stupor
 sty
 stye
 styes
@@ -8773,6 +8900,7 @@ tarp
 tarpon
 tarps
 tarred
+tarring
 tarry
 tars
 tarsal
@@ -8909,6 +9037,7 @@ tenser
 tenses
 tensile
 tensing
+tension
 tent
 tenth
 tenths
@@ -9262,6 +9391,7 @@ trades
 trail
 trailer
 trailers
+trails
 train
 trains
 trait
@@ -9321,12 +9451,17 @@ trier
 triers
 tries
 trig
+trill
+trills
 trim
 trimmer
 trims
 trio
 trios
 trip
+tripe
+triple
+triples
 trips
 trite
 trod
@@ -9343,6 +9478,7 @@ tropes
 tropic
 trot
 trots
+troupe
 trout
 trouts
 trow
@@ -9395,6 +9531,7 @@ tufts
 tug
 tugs
 tulip
+tulips
 tulle
 tum
 tumor
@@ -9407,6 +9544,7 @@ tune
 tuned
 tuneful
 tuner
+tuners
 tunes
 tunic
 tunics
@@ -9484,6 +9622,7 @@ umps
 unaware
 unawares
 unbar
+unbind
 uncle
 unclear
 uncles
@@ -9543,8 +9682,11 @@ ups
 upset
 upsets
 upside
+upstart
+upstarts
 uptick
 uptown
+upturn
 ur
 urban
 urbane
@@ -9652,6 +9794,7 @@ view
 viewed
 vigor
 vile
+vim
 vine
 vino
 viol
@@ -9673,6 +9816,9 @@ voided
 voile
 vol
 vole
+vomit
+vote
+votes
 vow
 vowing
 wack
