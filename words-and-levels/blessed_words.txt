@@ -60,6 +60,7 @@ acetate
 acetone
 ache
 aches
+aching
 achoo
 achy
 acid
@@ -74,6 +75,7 @@ acres
 acrid
 act
 acted
+acting
 actor
 actors
 acts
@@ -307,6 +309,7 @@ anion
 anions
 anise
 ankle
+ankles
 annal
 anneal
 annealed
@@ -552,6 +555,7 @@ axel
 axiom
 axioms
 axis
+axle
 axon
 axons
 ay
@@ -1332,6 +1336,7 @@ camped
 cams
 can
 canal
+canals
 canard
 canasta
 canastas
@@ -1428,6 +1433,10 @@ cause
 causes
 cave
 caved
+caver
+cavern
+caverns
+cavers
 caves
 caviar
 caviare
@@ -1468,6 +1477,7 @@ cereal
 cereals
 cerise
 cermet
+chafe
 chaff
 chair
 chaise
@@ -1499,6 +1509,7 @@ cheek
 cheer
 cheering
 cheers
+chef
 chemo
 chert
 chess
@@ -1510,6 +1521,7 @@ chews
 chi
 chid
 chide
+chief
 child
 chile
 chin
@@ -2779,6 +2791,8 @@ enrage
 enrages
 ens
 ensign
+enslave
+enslaves
 ensue
 ensued
 ensure
@@ -2856,6 +2870,7 @@ etch
 etched
 etcher
 etches
+etching
 eternal
 eternity
 ethane
@@ -2875,6 +2890,7 @@ evaders
 evades
 eve
 even
+evens
 event
 ever
 eves
@@ -2886,8 +2902,12 @@ ewers
 ewes
 ex
 exact
+exacting
 exacts
+exalt
+exalting
 exam
+excel
 exec
 execs
 execute
@@ -2982,9 +3002,11 @@ feed
 feeding
 feeds
 feel
+feeling
 feels
 fees
 feet
+feign
 feint
 feints
 feline
@@ -2993,6 +3015,8 @@ fella
 fells
 felon
 felons
+felt
+felting
 fem
 femur
 fen
@@ -3016,6 +3040,8 @@ festoon
 fests
 feta
 fetal
+fetch
+fetching
 feted
 fetid
 fettle
@@ -3106,6 +3132,7 @@ flatcar
 flats
 flaw
 flaws
+flax
 flay
 flays
 flea
@@ -3117,6 +3144,7 @@ flees
 fleet
 fleets
 flesh
+flex
 flick
 flicked
 flicker
@@ -3125,6 +3153,7 @@ flier
 fliers
 flies
 flight
+fling
 flint
 flints
 flip
@@ -3776,6 +3805,7 @@ halt
 halted
 halter
 halters
+halting
 halts
 ham
 hams
@@ -3835,6 +3865,7 @@ hated
 hater
 haters
 hates
+hating
 hatpin
 hats
 hatted
@@ -3959,6 +3990,7 @@ hilt
 him
 hind
 hinge
+hinges
 hint
 hinted
 hints
@@ -4380,8 +4412,11 @@ kit
 kite
 kites
 kits
+knack
+knacks
 knap
 knave
+knaves
 knead
 kneads
 knee
@@ -4422,6 +4457,7 @@ laced
 laces
 lack
 lacked
+lacks
 lactose
 lacy
 lad
@@ -4492,6 +4528,7 @@ large
 larger
 largo
 lark
+larva
 lasagna
 lasagne
 laser
@@ -4500,6 +4537,7 @@ lash
 lashed
 lashes
 lass
+lasses
 lasso
 last
 lasted
@@ -4509,6 +4547,7 @@ lat
 latch
 latched
 latches
+latching
 late
 latent
 later
@@ -4520,6 +4559,7 @@ lathe
 lather
 lathers
 lathes
+lathing
 laths
 lats
 latte
@@ -4534,6 +4574,7 @@ lave
 law
 lawn
 laws
+lax
 lay
 layer
 layers
@@ -4580,6 +4621,8 @@ least
 leather
 leathers
 leave
+leaven
+leavens
 leaver
 leaves
 lech
@@ -5419,8 +5462,11 @@ naturals
 nature
 natures
 nausea
+naval
 nave
 navel
+navels
+naves
 navy
 nay
 nays
@@ -5431,6 +5477,7 @@ neared
 nearer
 nearest
 nearly
+nearness
 nears
 neat
 neater
@@ -5457,6 +5504,8 @@ nerdier
 nerds
 nerf
 nerfs
+nerve
+nerves
 nest
 nested
 nestle
@@ -6652,7 +6701,9 @@ rattled
 rattles
 ratty
 rave
+ravel
 raven
+ravens
 raves
 raw
 rawer
@@ -6858,6 +6909,7 @@ reread
 rerun
 reruns
 resale
+resales
 rescue
 rescuer
 rescuers
@@ -7293,6 +7345,7 @@ salons
 saloon
 saloons
 salsa
+salsas
 salt
 salted
 salter
@@ -7836,6 +7889,7 @@ sky
 slab
 slabs
 slack
+slacks
 slag
 slags
 slain
@@ -7860,6 +7914,7 @@ slats
 slatted
 slave
 slaver
+slavers
 slaves
 slaw
 slay
@@ -7953,6 +8008,7 @@ smug
 smut
 smutty
 snack
+snacks
 snag
 snags
 snail
@@ -7966,6 +8022,7 @@ snarl
 snarls
 snatch
 sneak
+sneaks
 sneer
 sneered
 sneers
@@ -8763,6 +8820,7 @@ tea
 teabag
 teabags
 teach
+teaching
 teacup
 teak
 teal
@@ -9535,11 +9593,14 @@ value
 valuer
 van
 vane
+vanes
 vans
 var
 vars
 vase
 vases
+vassal
+vassals
 vast
 vaster
 vat
@@ -9555,7 +9616,9 @@ vein
 veining
 veins
 vela
+velar
 veld
+venal
 vend
 vent
 verb
